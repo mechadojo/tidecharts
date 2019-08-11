@@ -40982,11 +40982,11 @@ u=b-35-2
 t=b-2
 b=a.Z$.a
 if(typeof b!=="number")return b.m()
-s=b+96.5
+s=b+87.5
 r=(u+t)/2
-q=s-96.5
+q=s-87.5
 p=q-17
-o=s+96.5
+o=s+87.5
 n=o+17
 m=t+1
 l=a.e==d.b.e
@@ -41015,8 +41015,8 @@ b.a=b.aD$?"solidTimesCircle":"times"
 b.c="tab-close"
 b.e="tab:"+H.h(a.e)
 d.kp(a0,b,b.aD$?16:12)
-a.bO$=Q.fQ(new Q.x(s,r),35,193)
-h=Q.fQ(new Q.x(s+3,r),25,123)
+a.bO$=Q.fQ(new Q.x(s,r),35,175)
+h=Q.fQ(new Q.x(s+3,r),25,105)
 if(a!=null){b="Untitled ["+H.h(a.e)+"]"
 g=U.qY("...",c,c,c,Q.r_(c,d.dx,b),C.ae,C.x,1,C.an)
 b=h.c
@@ -41037,7 +41037,7 @@ if(g.length===0)return 0
 t=c.a
 if(typeof a!=="number")return a.m()
 if(typeof t!=="number")return t.k()
-q=C.a_.cr((t-(a+42+50))/193)
+q=C.a_.cr((t-(a+42+50))/175)
 if(q===0)q=1
 if(g.length>=q){p=C.a.o3(g,new O.vZ(i))
 if(p>=q){t=H.j([],h)
@@ -41052,7 +41052,7 @@ t=n.c
 if(t==null){t=C.D.cN(1537)
 m=$.aaI[C.i.d5(t,1537)]
 t=m}n.c=t
-a+=193}l=H.j([],h)
+a+=175}l=H.j([],h)
 for(h=H.n(o,0),g=new H.dI(o,[h]),h=new H.cb(g,g.gp(g),[h]),k=null;h.u();){j=h.d
 if(j.e==u.e){k=j
 continue}C.a.h(l,j)}for(h=l.length,r=0;r<l.length;l.length===h||(0,H.K)(l),++r)i.uV(l[r],b,c)
@@ -41083,7 +41083,7 @@ a.fo(i.y)
 u=g-2
 a.bN(new Q.R(0,u,h,g),i.ch)
 g=u-17.5
-t=new Q.x(12.5,g)
+t=new Q.x(5,g)
 s=i.b
 r=s.f
 if(r!=null&&r.length!==0){q=i.id
@@ -41096,7 +41096,7 @@ o=p.c
 r=p.a
 if(typeof o!=="number")return o.k()
 if(typeof r!=="number")return H.e(r)
-t=new Q.x(12.5+(o-r+12),g+0)}for(g=s.b,r=g.length,n=0;n<g.length;g.length===r||(0,H.K)(g),++n){m=g[n]
+t=new Q.x(5+(o-r+12),g+0)}for(g=s.b,r=g.length,n=0;n<g.length;g.length===r||(0,H.K)(g),++n){m=g[n]
 q=m.c
 if(q==="tab-new"||q==="tab-next"||q==="tab-prev")continue
 m.Z$=t
@@ -41108,7 +41108,7 @@ if(typeof o!=="number")return o.m()
 t=new Q.x(q+25,o+0)}g=t.a
 l=i.Gv(g,a,b)
 if(s.c.length!==0){if(typeof g!=="number")return g.m()
-t=new Q.x(g+l*193+25,t.b)}else a.dg(new Q.x(0,u),new Q.x(h,u),i.cx)
+t=new Q.x(g+l*175+25,t.b)}else a.dg(new Q.x(0,u),new Q.x(h,u),i.cx)
 if(l<s.c.length){h=s.b
 g=H.n(h,0)
 k=P.aS(new H.dR(h,H.f(new O.w_(),{func:1,ret:P.J,args:[g]}),[g]),!0,g)
@@ -41343,7 +41343,7 @@ k=k.a
 q=new M.pr(u.a,k,q.a)
 q.d=s
 j.c=q
-u.f="0.1"
+u.f="0.02"
 m=H.f(l.gHS(),m)
 q=u.a$
 q.toString
