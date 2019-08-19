@@ -7,6 +7,8 @@
     - [TideChartCommand](#.TideChartCommand)
     - [TideChartCommentBox](#.TideChartCommentBox)
     - [TideChartCommentBoxCommand](#.TideChartCommentBoxCommand)
+    - [TideChartContext](#.TideChartContext)
+    - [TideChartContextChange](#.TideChartContextChange)
     - [TideChartData](#.TideChartData)
     - [TideChartFile](#.TideChartFile)
     - [TideChartFileCurrent](#.TideChartFileCurrent)
@@ -18,6 +20,7 @@
     - [TideChartLibrary](#.TideChartLibrary)
     - [TideChartLink](#.TideChartLink)
     - [TideChartLinkCommand](#.TideChartLinkCommand)
+    - [TideChartLogEntry](#.TideChartLogEntry)
     - [TideChartMessage](#.TideChartMessage)
     - [TideChartMethod](#.TideChartMethod)
     - [TideChartMoveCommand](#.TideChartMoveCommand)
@@ -36,6 +39,7 @@
     - [TideChartWidget](#.TideChartWidget)
     - [TideChartWidgetCommand](#.TideChartWidgetCommand)
   
+    - [TideChartLogLevel](#.TideChartLogLevel)
   
   
   
@@ -126,6 +130,53 @@
 
 
 
+<a name=".TideChartContext"></a>
+
+### TideChartContext
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) |  | unique identifier for the execution context |
+| index | [int64](#int64) |  | next site or message index to be assigned |
+| timestamp | [int64](#int64) |  | current time of the execution context |
+| version | [string](#string) |  | current version of the chart being executed |
+| sites | [TideChartSite](#TideChartSite) | repeated | list of all the sites in the execution context |
+| messages | [TideChartMessage](#TideChartMessage) | repeated | list of all the messages in the execution context |
+| global | [TideChartProperty](#TideChartProperty) | repeated | a set of properties representing global state |
+| startTime | [int64](#int64) |  | timestamp execution was started |
+| startIndex | [int64](#int64) |  | smallest index in the execution context (offset used for relative index) |
+| active | [int64](#int64) | repeated | relative index of messages that are currently active |
+| waiting | [int64](#int64) | repeated | relative index of messages that are blocking for some condition |
+| paused | [int64](#int64) | repeated | relative index of sites that are paused (debugging) |
+| disabled | [int64](#int64) | repeated | relative index of sites that are disabled (debugging) |
+| events | [TideChartContextChange](#TideChartContextChange) | repeated | lost of context status change events (start / stop, debugging events, etc.) |
+| log | [TideChartLogEntry](#TideChartLogEntry) | repeated | list of all the log entries from the execution context |
+
+
+
+
+
+
+<a name=".TideChartContextChange"></a>
+
+### TideChartContextChange
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| index | [int64](#int64) |  |  |
+| timestamp | [int64](#int64) |  |  |
+| type | [string](#string) |  |  |
+| props | [TideChartProperty](#TideChartProperty) | repeated |  |
+
+
+
+
+
+
 <a name=".TideChartData"></a>
 
 ### TideChartData
@@ -146,7 +197,6 @@
 | props | [TideChartProperty](#TideChartProperty) | repeated | configuration properties for the entire chart |
 | notes | [TideChartNote](#TideChartNote) | repeated | note discussion for the entire chart |
 | library | [TideChartLibrary](#TideChartLibrary) | repeated | source of node templates that can be added to graphs |
-| global | [TideChartProperty](#TideChartProperty) | repeated | global state variables shared by all graphs |
 
 
 
@@ -171,6 +221,7 @@
 | working | [TideChartCommand](#TideChartCommand) | repeated | uncommitted local changes |
 | remote | [TideChartCommand](#TideChartCommand) | repeated | unmerged changes committed remotely |
 | history | [TideChartData](#TideChartData) | repeated | previous saved versions of the chart |
+| context | [TideChartContext](#TideChartContext) | repeated | saved execution context (used by chart emulation, snapshots and debugging) |
 
 
 
@@ -276,7 +327,7 @@ Read only the file header information
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| cmds | [TideChartCommand](#TideChartCommand) | repeated | a collection of updates that are applied atomically |
+| commands | [TideChartCommand](#TideChartCommand) | repeated | a collection of updates that are applied atomically |
 
 
 
@@ -363,6 +414,28 @@ Read only the commit headers
 | fromLink | [TideChartLink](#TideChartLink) |  | previous version of the link |
 | toLink | [TideChartLink](#TideChartLink) |  | new version of the link |
 | type | [string](#string) |  | type of update: add, update or remove |
+
+
+
+
+
+
+<a name=".TideChartLogEntry"></a>
+
+### TideChartLogEntry
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| index | [int64](#int64) |  | context index at the time the log entry was created |
+| timestamp | [int64](#int64) |  | timestamp when the log entry was created |
+| source | [int64](#int64) |  | source site that produced the log entry |
+| level | [TideChartLogLevel](#TideChartLogLevel) |  | log level of the entry |
+| tags | [string](#string) | repeated | tags associated with log entry used for filtering |
+| message | [string](#string) |  | content of the log entry |
+| refs | [int64](#int64) | repeated | log entries can reference messages by index |
+| props | [TideChartProperty](#TideChartProperty) | repeated | additional properties or saved state for the log entry |
 
 
 
@@ -670,6 +743,7 @@ a recursive data type that provides configuration values for graphs, regions and
 | region | [string](#string) |  | region-name - region scripts can generate messages |
 | node | [string](#string) |  | node-name - node actions and node ports an generate messages |
 | port | [string](#string) |  | port-name - ports can generate and receive messages |
+| local | [TideChartProperty](#TideChartProperty) | repeated | a set of properties that represents local state for the site |
 
 
 
@@ -740,6 +814,28 @@ a recursive data type that provides configuration values for graphs, regions and
 
 
  
+
+
+<a name=".TideChartLogLevel"></a>
+
+### TideChartLogLevel
+
+
+| Name | Number | Description |
+| ---- | ------ | ----------- |
+| none | 0 | used for filtering to exclude all log levels |
+| fatal | 1 | an error condition that cannot be recovered |
+| error | 2 | a condition that should never happen |
+| exception | 3 | a condition occured that needs to be handled |
+| warning | 4 | a condition that might be a problem |
+| info | 5 | a normal log message |
+| message | 6 | a normal log message with lower level for filtering |
+| debug | 7 | a message that is usually only displayed during testing |
+| check | 8 | message due to assertion checks |
+| verbose | 9 | the most detailed log messages |
+| trace | 10 | traces message passing |
+| all | 11 | used for filtering to include all log levels |
+
 
  
 

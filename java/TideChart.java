@@ -12,6 +12,290 @@ public final class TideChart {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  /**
+   * Protobuf enum {@code TideChartLogLevel}
+   */
+  public enum TideChartLogLevel
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <pre>
+     * used for filtering to exclude all log levels
+     * </pre>
+     *
+     * <code>none = 0;</code>
+     */
+    none(0),
+    /**
+     * <pre>
+     * an error condition that cannot be recovered
+     * </pre>
+     *
+     * <code>fatal = 1;</code>
+     */
+    fatal(1),
+    /**
+     * <pre>
+     * a condition that should never happen 
+     * </pre>
+     *
+     * <code>error = 2;</code>
+     */
+    error(2),
+    /**
+     * <pre>
+     * a condition occured that needs to be handled
+     * </pre>
+     *
+     * <code>exception = 3;</code>
+     */
+    exception(3),
+    /**
+     * <pre>
+     * a condition that might be a problem 
+     * </pre>
+     *
+     * <code>warning = 4;</code>
+     */
+    warning(4),
+    /**
+     * <pre>
+     * a normal log message 
+     * </pre>
+     *
+     * <code>info = 5;</code>
+     */
+    info(5),
+    /**
+     * <pre>
+     * a normal log message with lower level for filtering 
+     * </pre>
+     *
+     * <code>message = 6;</code>
+     */
+    message(6),
+    /**
+     * <pre>
+     * a message that is usually only displayed during testing
+     * </pre>
+     *
+     * <code>debug = 7;</code>
+     */
+    debug(7),
+    /**
+     * <pre>
+     * message due to assertion checks 
+     * </pre>
+     *
+     * <code>check = 8;</code>
+     */
+    check(8),
+    /**
+     * <pre>
+     * the most detailed log messages
+     * </pre>
+     *
+     * <code>verbose = 9;</code>
+     */
+    verbose(9),
+    /**
+     * <pre>
+     * traces message passing
+     * </pre>
+     *
+     * <code>trace = 10;</code>
+     */
+    trace(10),
+    /**
+     * <pre>
+     * used for filtering to include all log levels
+     * </pre>
+     *
+     * <code>all = 11;</code>
+     */
+    all(11),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <pre>
+     * used for filtering to exclude all log levels
+     * </pre>
+     *
+     * <code>none = 0;</code>
+     */
+    public static final int none_VALUE = 0;
+    /**
+     * <pre>
+     * an error condition that cannot be recovered
+     * </pre>
+     *
+     * <code>fatal = 1;</code>
+     */
+    public static final int fatal_VALUE = 1;
+    /**
+     * <pre>
+     * a condition that should never happen 
+     * </pre>
+     *
+     * <code>error = 2;</code>
+     */
+    public static final int error_VALUE = 2;
+    /**
+     * <pre>
+     * a condition occured that needs to be handled
+     * </pre>
+     *
+     * <code>exception = 3;</code>
+     */
+    public static final int exception_VALUE = 3;
+    /**
+     * <pre>
+     * a condition that might be a problem 
+     * </pre>
+     *
+     * <code>warning = 4;</code>
+     */
+    public static final int warning_VALUE = 4;
+    /**
+     * <pre>
+     * a normal log message 
+     * </pre>
+     *
+     * <code>info = 5;</code>
+     */
+    public static final int info_VALUE = 5;
+    /**
+     * <pre>
+     * a normal log message with lower level for filtering 
+     * </pre>
+     *
+     * <code>message = 6;</code>
+     */
+    public static final int message_VALUE = 6;
+    /**
+     * <pre>
+     * a message that is usually only displayed during testing
+     * </pre>
+     *
+     * <code>debug = 7;</code>
+     */
+    public static final int debug_VALUE = 7;
+    /**
+     * <pre>
+     * message due to assertion checks 
+     * </pre>
+     *
+     * <code>check = 8;</code>
+     */
+    public static final int check_VALUE = 8;
+    /**
+     * <pre>
+     * the most detailed log messages
+     * </pre>
+     *
+     * <code>verbose = 9;</code>
+     */
+    public static final int verbose_VALUE = 9;
+    /**
+     * <pre>
+     * traces message passing
+     * </pre>
+     *
+     * <code>trace = 10;</code>
+     */
+    public static final int trace_VALUE = 10;
+    /**
+     * <pre>
+     * used for filtering to include all log levels
+     * </pre>
+     *
+     * <code>all = 11;</code>
+     */
+    public static final int all_VALUE = 11;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TideChartLogLevel valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TideChartLogLevel forNumber(int value) {
+      switch (value) {
+        case 0: return none;
+        case 1: return fatal;
+        case 2: return error;
+        case 3: return exception;
+        case 4: return warning;
+        case 5: return info;
+        case 6: return message;
+        case 7: return debug;
+        case 8: return check;
+        case 9: return verbose;
+        case 10: return trace;
+        case 11: return all;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<TideChartLogLevel>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        TideChartLogLevel> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<TideChartLogLevel>() {
+            public TideChartLogLevel findValueByNumber(int number) {
+              return TideChartLogLevel.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return TideChart.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final TideChartLogLevel[] VALUES = values();
+
+    public static TideChartLogLevel valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private TideChartLogLevel(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:TideChartLogLevel)
+  }
+
   public interface TideChartPropertyOrBuilder extends
       // @@protoc_insertion_point(interface_extends:TideChartProperty)
       com.google.protobuf.MessageOrBuilder {
@@ -28410,43 +28694,43 @@ public final class TideChart {
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
     java.util.List<TideChart.TideChartCommand> 
-        getCmdsList();
+        getCommandsList();
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
-    TideChart.TideChartCommand getCmds(int index);
+    TideChart.TideChartCommand getCommands(int index);
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
-    int getCmdsCount();
+    int getCommandsCount();
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
     java.util.List<? extends TideChart.TideChartCommandOrBuilder> 
-        getCmdsOrBuilderList();
+        getCommandsOrBuilderList();
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
-    TideChart.TideChartCommandOrBuilder getCmdsOrBuilder(
+    TideChart.TideChartCommandOrBuilder getCommandsOrBuilder(
         int index);
   }
   /**
@@ -28462,7 +28746,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartGroupCommand() {
-      cmds_ = java.util.Collections.emptyList();
+      commands_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -28498,10 +28782,10 @@ public final class TideChart {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cmds_ = new java.util.ArrayList<TideChart.TideChartCommand>();
+                commands_ = new java.util.ArrayList<TideChart.TideChartCommand>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              cmds_.add(
+              commands_.add(
                   input.readMessage(TideChart.TideChartCommand.parser(), extensionRegistry));
               break;
             }
@@ -28521,7 +28805,7 @@ public final class TideChart {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          cmds_ = java.util.Collections.unmodifiableList(cmds_);
+          commands_ = java.util.Collections.unmodifiableList(commands_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -28540,59 +28824,59 @@ public final class TideChart {
               TideChart.TideChartGroupCommand.class, TideChart.TideChartGroupCommand.Builder.class);
     }
 
-    public static final int CMDS_FIELD_NUMBER = 1;
-    private java.util.List<TideChart.TideChartCommand> cmds_;
+    public static final int COMMANDS_FIELD_NUMBER = 1;
+    private java.util.List<TideChart.TideChartCommand> commands_;
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
-    public java.util.List<TideChart.TideChartCommand> getCmdsList() {
-      return cmds_;
+    public java.util.List<TideChart.TideChartCommand> getCommandsList() {
+      return commands_;
     }
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
     public java.util.List<? extends TideChart.TideChartCommandOrBuilder> 
-        getCmdsOrBuilderList() {
-      return cmds_;
+        getCommandsOrBuilderList() {
+      return commands_;
     }
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
-    public int getCmdsCount() {
-      return cmds_.size();
+    public int getCommandsCount() {
+      return commands_.size();
     }
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
-    public TideChart.TideChartCommand getCmds(int index) {
-      return cmds_.get(index);
+    public TideChart.TideChartCommand getCommands(int index) {
+      return commands_.get(index);
     }
     /**
      * <pre>
      * a collection of updates that are applied atomically
      * </pre>
      *
-     * <code>repeated .TideChartCommand cmds = 1;</code>
+     * <code>repeated .TideChartCommand commands = 1;</code>
      */
-    public TideChart.TideChartCommandOrBuilder getCmdsOrBuilder(
+    public TideChart.TideChartCommandOrBuilder getCommandsOrBuilder(
         int index) {
-      return cmds_.get(index);
+      return commands_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -28609,8 +28893,8 @@ public final class TideChart {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < cmds_.size(); i++) {
-        output.writeMessage(1, cmds_.get(i));
+      for (int i = 0; i < commands_.size(); i++) {
+        output.writeMessage(1, commands_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -28621,9 +28905,9 @@ public final class TideChart {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < cmds_.size(); i++) {
+      for (int i = 0; i < commands_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, cmds_.get(i));
+          .computeMessageSize(1, commands_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -28640,8 +28924,8 @@ public final class TideChart {
       }
       TideChart.TideChartGroupCommand other = (TideChart.TideChartGroupCommand) obj;
 
-      if (!getCmdsList()
-          .equals(other.getCmdsList())) return false;
+      if (!getCommandsList()
+          .equals(other.getCommandsList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -28653,9 +28937,9 @@ public final class TideChart {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCmdsCount() > 0) {
-        hash = (37 * hash) + CMDS_FIELD_NUMBER;
-        hash = (53 * hash) + getCmdsList().hashCode();
+      if (getCommandsCount() > 0) {
+        hash = (37 * hash) + COMMANDS_FIELD_NUMBER;
+        hash = (53 * hash) + getCommandsList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -28785,17 +29069,17 @@ public final class TideChart {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getCmdsFieldBuilder();
+          getCommandsFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (cmdsBuilder_ == null) {
-          cmds_ = java.util.Collections.emptyList();
+        if (commandsBuilder_ == null) {
+          commands_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          cmdsBuilder_.clear();
+          commandsBuilder_.clear();
         }
         return this;
       }
@@ -28824,14 +29108,14 @@ public final class TideChart {
       public TideChart.TideChartGroupCommand buildPartial() {
         TideChart.TideChartGroupCommand result = new TideChart.TideChartGroupCommand(this);
         int from_bitField0_ = bitField0_;
-        if (cmdsBuilder_ == null) {
+        if (commandsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            cmds_ = java.util.Collections.unmodifiableList(cmds_);
+            commands_ = java.util.Collections.unmodifiableList(commands_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.cmds_ = cmds_;
+          result.commands_ = commands_;
         } else {
-          result.cmds_ = cmdsBuilder_.build();
+          result.commands_ = commandsBuilder_.build();
         }
         onBuilt();
         return result;
@@ -28881,29 +29165,29 @@ public final class TideChart {
 
       public Builder mergeFrom(TideChart.TideChartGroupCommand other) {
         if (other == TideChart.TideChartGroupCommand.getDefaultInstance()) return this;
-        if (cmdsBuilder_ == null) {
-          if (!other.cmds_.isEmpty()) {
-            if (cmds_.isEmpty()) {
-              cmds_ = other.cmds_;
+        if (commandsBuilder_ == null) {
+          if (!other.commands_.isEmpty()) {
+            if (commands_.isEmpty()) {
+              commands_ = other.commands_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureCmdsIsMutable();
-              cmds_.addAll(other.cmds_);
+              ensureCommandsIsMutable();
+              commands_.addAll(other.commands_);
             }
             onChanged();
           }
         } else {
-          if (!other.cmds_.isEmpty()) {
-            if (cmdsBuilder_.isEmpty()) {
-              cmdsBuilder_.dispose();
-              cmdsBuilder_ = null;
-              cmds_ = other.cmds_;
+          if (!other.commands_.isEmpty()) {
+            if (commandsBuilder_.isEmpty()) {
+              commandsBuilder_.dispose();
+              commandsBuilder_ = null;
+              commands_ = other.commands_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              cmdsBuilder_ = 
+              commandsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCmdsFieldBuilder() : null;
+                   getCommandsFieldBuilder() : null;
             } else {
-              cmdsBuilder_.addAllMessages(other.cmds_);
+              commandsBuilder_.addAllMessages(other.commands_);
             }
           }
         }
@@ -28937,30 +29221,30 @@ public final class TideChart {
       }
       private int bitField0_;
 
-      private java.util.List<TideChart.TideChartCommand> cmds_ =
+      private java.util.List<TideChart.TideChartCommand> commands_ =
         java.util.Collections.emptyList();
-      private void ensureCmdsIsMutable() {
+      private void ensureCommandsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          cmds_ = new java.util.ArrayList<TideChart.TideChartCommand>(cmds_);
+          commands_ = new java.util.ArrayList<TideChart.TideChartCommand>(commands_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartCommand, TideChart.TideChartCommand.Builder, TideChart.TideChartCommandOrBuilder> cmdsBuilder_;
+          TideChart.TideChartCommand, TideChart.TideChartCommand.Builder, TideChart.TideChartCommandOrBuilder> commandsBuilder_;
 
       /**
        * <pre>
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public java.util.List<TideChart.TideChartCommand> getCmdsList() {
-        if (cmdsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(cmds_);
+      public java.util.List<TideChart.TideChartCommand> getCommandsList() {
+        if (commandsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(commands_);
         } else {
-          return cmdsBuilder_.getMessageList();
+          return commandsBuilder_.getMessageList();
         }
       }
       /**
@@ -28968,13 +29252,13 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public int getCmdsCount() {
-        if (cmdsBuilder_ == null) {
-          return cmds_.size();
+      public int getCommandsCount() {
+        if (commandsBuilder_ == null) {
+          return commands_.size();
         } else {
-          return cmdsBuilder_.getCount();
+          return commandsBuilder_.getCount();
         }
       }
       /**
@@ -28982,13 +29266,13 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public TideChart.TideChartCommand getCmds(int index) {
-        if (cmdsBuilder_ == null) {
-          return cmds_.get(index);
+      public TideChart.TideChartCommand getCommands(int index) {
+        if (commandsBuilder_ == null) {
+          return commands_.get(index);
         } else {
-          return cmdsBuilder_.getMessage(index);
+          return commandsBuilder_.getMessage(index);
         }
       }
       /**
@@ -28996,19 +29280,19 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder setCmds(
+      public Builder setCommands(
           int index, TideChart.TideChartCommand value) {
-        if (cmdsBuilder_ == null) {
+        if (commandsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCmdsIsMutable();
-          cmds_.set(index, value);
+          ensureCommandsIsMutable();
+          commands_.set(index, value);
           onChanged();
         } else {
-          cmdsBuilder_.setMessage(index, value);
+          commandsBuilder_.setMessage(index, value);
         }
         return this;
       }
@@ -29017,16 +29301,16 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder setCmds(
+      public Builder setCommands(
           int index, TideChart.TideChartCommand.Builder builderForValue) {
-        if (cmdsBuilder_ == null) {
-          ensureCmdsIsMutable();
-          cmds_.set(index, builderForValue.build());
+        if (commandsBuilder_ == null) {
+          ensureCommandsIsMutable();
+          commands_.set(index, builderForValue.build());
           onChanged();
         } else {
-          cmdsBuilder_.setMessage(index, builderForValue.build());
+          commandsBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
@@ -29035,18 +29319,18 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder addCmds(TideChart.TideChartCommand value) {
-        if (cmdsBuilder_ == null) {
+      public Builder addCommands(TideChart.TideChartCommand value) {
+        if (commandsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCmdsIsMutable();
-          cmds_.add(value);
+          ensureCommandsIsMutable();
+          commands_.add(value);
           onChanged();
         } else {
-          cmdsBuilder_.addMessage(value);
+          commandsBuilder_.addMessage(value);
         }
         return this;
       }
@@ -29055,19 +29339,19 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder addCmds(
+      public Builder addCommands(
           int index, TideChart.TideChartCommand value) {
-        if (cmdsBuilder_ == null) {
+        if (commandsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCmdsIsMutable();
-          cmds_.add(index, value);
+          ensureCommandsIsMutable();
+          commands_.add(index, value);
           onChanged();
         } else {
-          cmdsBuilder_.addMessage(index, value);
+          commandsBuilder_.addMessage(index, value);
         }
         return this;
       }
@@ -29076,16 +29360,16 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder addCmds(
+      public Builder addCommands(
           TideChart.TideChartCommand.Builder builderForValue) {
-        if (cmdsBuilder_ == null) {
-          ensureCmdsIsMutable();
-          cmds_.add(builderForValue.build());
+        if (commandsBuilder_ == null) {
+          ensureCommandsIsMutable();
+          commands_.add(builderForValue.build());
           onChanged();
         } else {
-          cmdsBuilder_.addMessage(builderForValue.build());
+          commandsBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
@@ -29094,16 +29378,16 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder addCmds(
+      public Builder addCommands(
           int index, TideChart.TideChartCommand.Builder builderForValue) {
-        if (cmdsBuilder_ == null) {
-          ensureCmdsIsMutable();
-          cmds_.add(index, builderForValue.build());
+        if (commandsBuilder_ == null) {
+          ensureCommandsIsMutable();
+          commands_.add(index, builderForValue.build());
           onChanged();
         } else {
-          cmdsBuilder_.addMessage(index, builderForValue.build());
+          commandsBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
@@ -29112,17 +29396,17 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder addAllCmds(
+      public Builder addAllCommands(
           java.lang.Iterable<? extends TideChart.TideChartCommand> values) {
-        if (cmdsBuilder_ == null) {
-          ensureCmdsIsMutable();
+        if (commandsBuilder_ == null) {
+          ensureCommandsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, cmds_);
+              values, commands_);
           onChanged();
         } else {
-          cmdsBuilder_.addAllMessages(values);
+          commandsBuilder_.addAllMessages(values);
         }
         return this;
       }
@@ -29131,15 +29415,15 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder clearCmds() {
-        if (cmdsBuilder_ == null) {
-          cmds_ = java.util.Collections.emptyList();
+      public Builder clearCommands() {
+        if (commandsBuilder_ == null) {
+          commands_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          cmdsBuilder_.clear();
+          commandsBuilder_.clear();
         }
         return this;
       }
@@ -29148,15 +29432,15 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public Builder removeCmds(int index) {
-        if (cmdsBuilder_ == null) {
-          ensureCmdsIsMutable();
-          cmds_.remove(index);
+      public Builder removeCommands(int index) {
+        if (commandsBuilder_ == null) {
+          ensureCommandsIsMutable();
+          commands_.remove(index);
           onChanged();
         } else {
-          cmdsBuilder_.remove(index);
+          commandsBuilder_.remove(index);
         }
         return this;
       }
@@ -29165,24 +29449,24 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public TideChart.TideChartCommand.Builder getCmdsBuilder(
+      public TideChart.TideChartCommand.Builder getCommandsBuilder(
           int index) {
-        return getCmdsFieldBuilder().getBuilder(index);
+        return getCommandsFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public TideChart.TideChartCommandOrBuilder getCmdsOrBuilder(
+      public TideChart.TideChartCommandOrBuilder getCommandsOrBuilder(
           int index) {
-        if (cmdsBuilder_ == null) {
-          return cmds_.get(index);  } else {
-          return cmdsBuilder_.getMessageOrBuilder(index);
+        if (commandsBuilder_ == null) {
+          return commands_.get(index);  } else {
+          return commandsBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
@@ -29190,14 +29474,14 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
       public java.util.List<? extends TideChart.TideChartCommandOrBuilder> 
-           getCmdsOrBuilderList() {
-        if (cmdsBuilder_ != null) {
-          return cmdsBuilder_.getMessageOrBuilderList();
+           getCommandsOrBuilderList() {
+        if (commandsBuilder_ != null) {
+          return commandsBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(cmds_);
+          return java.util.Collections.unmodifiableList(commands_);
         }
       }
       /**
@@ -29205,10 +29489,10 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public TideChart.TideChartCommand.Builder addCmdsBuilder() {
-        return getCmdsFieldBuilder().addBuilder(
+      public TideChart.TideChartCommand.Builder addCommandsBuilder() {
+        return getCommandsFieldBuilder().addBuilder(
             TideChart.TideChartCommand.getDefaultInstance());
       }
       /**
@@ -29216,11 +29500,11 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
-      public TideChart.TideChartCommand.Builder addCmdsBuilder(
+      public TideChart.TideChartCommand.Builder addCommandsBuilder(
           int index) {
-        return getCmdsFieldBuilder().addBuilder(
+        return getCommandsFieldBuilder().addBuilder(
             index, TideChart.TideChartCommand.getDefaultInstance());
       }
       /**
@@ -29228,25 +29512,25 @@ public final class TideChart {
        * a collection of updates that are applied atomically
        * </pre>
        *
-       * <code>repeated .TideChartCommand cmds = 1;</code>
+       * <code>repeated .TideChartCommand commands = 1;</code>
        */
       public java.util.List<TideChart.TideChartCommand.Builder> 
-           getCmdsBuilderList() {
-        return getCmdsFieldBuilder().getBuilderList();
+           getCommandsBuilderList() {
+        return getCommandsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           TideChart.TideChartCommand, TideChart.TideChartCommand.Builder, TideChart.TideChartCommandOrBuilder> 
-          getCmdsFieldBuilder() {
-        if (cmdsBuilder_ == null) {
-          cmdsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getCommandsFieldBuilder() {
+        if (commandsBuilder_ == null) {
+          commandsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartCommand, TideChart.TideChartCommand.Builder, TideChart.TideChartCommandOrBuilder>(
-                  cmds_,
+                  commands_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          cmds_ = null;
+          commands_ = null;
         }
-        return cmdsBuilder_;
+        return commandsBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -49027,6 +49311,50 @@ public final class TideChart {
      */
     com.google.protobuf.ByteString
         getPortBytes();
+
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getLocalList();
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    TideChart.TideChartProperty getLocal(int index);
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    int getLocalCount();
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getLocalOrBuilderList();
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getLocalOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code TideChartSite}
@@ -49051,6 +49379,7 @@ public final class TideChart {
       region_ = "";
       node_ = "";
       port_ = "";
+      local_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -49155,6 +49484,15 @@ public final class TideChart {
               port_ = s;
               break;
             }
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                local_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              local_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -49175,6 +49513,9 @@ public final class TideChart {
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           scope_ = scope_.getUnmodifiableView();
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          local_ = java.util.Collections.unmodifiableList(local_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -49642,6 +49983,61 @@ public final class TideChart {
       }
     }
 
+    public static final int LOCAL_FIELD_NUMBER = 12;
+    private java.util.List<TideChart.TideChartProperty> local_;
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getLocalList() {
+      return local_;
+    }
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getLocalOrBuilderList() {
+      return local_;
+    }
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    public int getLocalCount() {
+      return local_.size();
+    }
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    public TideChart.TideChartProperty getLocal(int index) {
+      return local_.get(index);
+    }
+    /**
+     * <pre>
+     * a set of properties that represents local state for the site
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty local = 12;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getLocalOrBuilder(
+        int index) {
+      return local_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -49688,6 +50084,9 @@ public final class TideChart {
       }
       if (!getPortBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 11, port_);
+      }
+      for (int i = 0; i < local_.size(); i++) {
+        output.writeMessage(12, local_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -49738,6 +50137,10 @@ public final class TideChart {
       if (!getPortBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, port_);
       }
+      for (int i = 0; i < local_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, local_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -49775,6 +50178,8 @@ public final class TideChart {
           .equals(other.getNode())) return false;
       if (!getPort()
           .equals(other.getPort())) return false;
+      if (!getLocalList()
+          .equals(other.getLocalList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -49813,6 +50218,10 @@ public final class TideChart {
       hash = (53 * hash) + getNode().hashCode();
       hash = (37 * hash) + PORT_FIELD_NUMBER;
       hash = (53 * hash) + getPort().hashCode();
+      if (getLocalCount() > 0) {
+        hash = (37 * hash) + LOCAL_FIELD_NUMBER;
+        hash = (53 * hash) + getLocalList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -49942,6 +50351,7 @@ public final class TideChart {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getStackFieldBuilder();
+          getLocalFieldBuilder();
         }
       }
       @java.lang.Override
@@ -49973,6 +50383,12 @@ public final class TideChart {
 
         port_ = "";
 
+        if (localBuilder_ == null) {
+          local_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          localBuilder_.clear();
+        }
         return this;
       }
 
@@ -50023,6 +50439,15 @@ public final class TideChart {
         result.region_ = region_;
         result.node_ = node_;
         result.port_ = port_;
+        if (localBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            local_ = java.util.Collections.unmodifiableList(local_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.local_ = local_;
+        } else {
+          result.local_ = localBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -50141,6 +50566,32 @@ public final class TideChart {
         if (!other.getPort().isEmpty()) {
           port_ = other.port_;
           onChanged();
+        }
+        if (localBuilder_ == null) {
+          if (!other.local_.isEmpty()) {
+            if (local_.isEmpty()) {
+              local_ = other.local_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureLocalIsMutable();
+              local_.addAll(other.local_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.local_.isEmpty()) {
+            if (localBuilder_.isEmpty()) {
+              localBuilder_.dispose();
+              localBuilder_ = null;
+              local_ = other.local_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              localBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLocalFieldBuilder() : null;
+            } else {
+              localBuilder_.addAllMessages(other.local_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -51362,6 +51813,318 @@ public final class TideChart {
         port_ = value;
         onChanged();
         return this;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> local_ =
+        java.util.Collections.emptyList();
+      private void ensureLocalIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          local_ = new java.util.ArrayList<TideChart.TideChartProperty>(local_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> localBuilder_;
+
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getLocalList() {
+        if (localBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(local_);
+        } else {
+          return localBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public int getLocalCount() {
+        if (localBuilder_ == null) {
+          return local_.size();
+        } else {
+          return localBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public TideChart.TideChartProperty getLocal(int index) {
+        if (localBuilder_ == null) {
+          return local_.get(index);
+        } else {
+          return localBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder setLocal(
+          int index, TideChart.TideChartProperty value) {
+        if (localBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLocalIsMutable();
+          local_.set(index, value);
+          onChanged();
+        } else {
+          localBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder setLocal(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (localBuilder_ == null) {
+          ensureLocalIsMutable();
+          local_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          localBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder addLocal(TideChart.TideChartProperty value) {
+        if (localBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLocalIsMutable();
+          local_.add(value);
+          onChanged();
+        } else {
+          localBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder addLocal(
+          int index, TideChart.TideChartProperty value) {
+        if (localBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLocalIsMutable();
+          local_.add(index, value);
+          onChanged();
+        } else {
+          localBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder addLocal(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (localBuilder_ == null) {
+          ensureLocalIsMutable();
+          local_.add(builderForValue.build());
+          onChanged();
+        } else {
+          localBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder addLocal(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (localBuilder_ == null) {
+          ensureLocalIsMutable();
+          local_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          localBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder addAllLocal(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (localBuilder_ == null) {
+          ensureLocalIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, local_);
+          onChanged();
+        } else {
+          localBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder clearLocal() {
+        if (localBuilder_ == null) {
+          local_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          localBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public Builder removeLocal(int index) {
+        if (localBuilder_ == null) {
+          ensureLocalIsMutable();
+          local_.remove(index);
+          onChanged();
+        } else {
+          localBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public TideChart.TideChartProperty.Builder getLocalBuilder(
+          int index) {
+        return getLocalFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getLocalOrBuilder(
+          int index) {
+        if (localBuilder_ == null) {
+          return local_.get(index);  } else {
+          return localBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getLocalOrBuilderList() {
+        if (localBuilder_ != null) {
+          return localBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(local_);
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public TideChart.TideChartProperty.Builder addLocalBuilder() {
+        return getLocalFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public TideChart.TideChartProperty.Builder addLocalBuilder(
+          int index) {
+        return getLocalFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * a set of properties that represents local state for the site
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty local = 12;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getLocalBuilderList() {
+        return getLocalFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getLocalFieldBuilder() {
+        if (localBuilder_ == null) {
+          localBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  local_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          local_ = null;
+        }
+        return localBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -53204,6 +53967,7382 @@ public final class TideChart {
 
   }
 
+  public interface TideChartContextChangeOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:TideChartContextChange)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int64 index = 1;</code>
+     */
+    long getIndex();
+
+    /**
+     * <code>int64 timestamp = 2;</code>
+     */
+    long getTimestamp();
+
+    /**
+     * <code>string type = 3;</code>
+     */
+    java.lang.String getType();
+    /**
+     * <code>string type = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getTypeBytes();
+
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getPropsList();
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    TideChart.TideChartProperty getProps(int index);
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    int getPropsCount();
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getPropsOrBuilderList();
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code TideChartContextChange}
+   */
+  public  static final class TideChartContextChange extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:TideChartContextChange)
+      TideChartContextChangeOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use TideChartContextChange.newBuilder() to construct.
+    private TideChartContextChange(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private TideChartContextChange() {
+      type_ = "";
+      props_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new TideChartContextChange();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private TideChartContextChange(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              index_ = input.readInt64();
+              break;
+            }
+            case 16: {
+
+              timestamp_ = input.readInt64();
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              type_ = s;
+              break;
+            }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              props_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          props_ = java.util.Collections.unmodifiableList(props_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return TideChart.internal_static_TideChartContextChange_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return TideChart.internal_static_TideChartContextChange_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              TideChart.TideChartContextChange.class, TideChart.TideChartContextChange.Builder.class);
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 1;
+    private long index_;
+    /**
+     * <code>int64 index = 1;</code>
+     */
+    public long getIndex() {
+      return index_;
+    }
+
+    public static final int TIMESTAMP_FIELD_NUMBER = 2;
+    private long timestamp_;
+    /**
+     * <code>int64 timestamp = 2;</code>
+     */
+    public long getTimestamp() {
+      return timestamp_;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 3;
+    private volatile java.lang.Object type_;
+    /**
+     * <code>string type = 3;</code>
+     */
+    public java.lang.String getType() {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        type_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string type = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTypeBytes() {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        type_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PROPS_FIELD_NUMBER = 4;
+    private java.util.List<TideChart.TideChartProperty> props_;
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getPropsList() {
+      return props_;
+    }
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getPropsOrBuilderList() {
+      return props_;
+    }
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    public int getPropsCount() {
+      return props_.size();
+    }
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    public TideChart.TideChartProperty getProps(int index) {
+      return props_.get(index);
+    }
+    /**
+     * <code>repeated .TideChartProperty props = 4;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
+        int index) {
+      return props_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (index_ != 0L) {
+        output.writeInt64(1, index_);
+      }
+      if (timestamp_ != 0L) {
+        output.writeInt64(2, timestamp_);
+      }
+      if (!getTypeBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      }
+      for (int i = 0; i < props_.size(); i++) {
+        output.writeMessage(4, props_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (index_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, index_);
+      }
+      if (timestamp_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, timestamp_);
+      }
+      if (!getTypeBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      }
+      for (int i = 0; i < props_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, props_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof TideChart.TideChartContextChange)) {
+        return super.equals(obj);
+      }
+      TideChart.TideChartContextChange other = (TideChart.TideChartContextChange) obj;
+
+      if (getIndex()
+          != other.getIndex()) return false;
+      if (getTimestamp()
+          != other.getTimestamp()) return false;
+      if (!getType()
+          .equals(other.getType())) return false;
+      if (!getPropsList()
+          .equals(other.getPropsList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getIndex());
+      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTimestamp());
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getType().hashCode();
+      if (getPropsCount() > 0) {
+        hash = (37 * hash) + PROPS_FIELD_NUMBER;
+        hash = (53 * hash) + getPropsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static TideChart.TideChartContextChange parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartContextChange parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartContextChange parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartContextChange parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartContextChange parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartContextChange parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartContextChange parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartContextChange parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static TideChart.TideChartContextChange parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartContextChange parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static TideChart.TideChartContextChange parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartContextChange parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(TideChart.TideChartContextChange prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code TideChartContextChange}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:TideChartContextChange)
+        TideChart.TideChartContextChangeOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return TideChart.internal_static_TideChartContextChange_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return TideChart.internal_static_TideChartContextChange_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                TideChart.TideChartContextChange.class, TideChart.TideChartContextChange.Builder.class);
+      }
+
+      // Construct using TideChart.TideChartContextChange.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getPropsFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        index_ = 0L;
+
+        timestamp_ = 0L;
+
+        type_ = "";
+
+        if (propsBuilder_ == null) {
+          props_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          propsBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return TideChart.internal_static_TideChartContextChange_descriptor;
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartContextChange getDefaultInstanceForType() {
+        return TideChart.TideChartContextChange.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartContextChange build() {
+        TideChart.TideChartContextChange result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartContextChange buildPartial() {
+        TideChart.TideChartContextChange result = new TideChart.TideChartContextChange(this);
+        int from_bitField0_ = bitField0_;
+        result.index_ = index_;
+        result.timestamp_ = timestamp_;
+        result.type_ = type_;
+        if (propsBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            props_ = java.util.Collections.unmodifiableList(props_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.props_ = props_;
+        } else {
+          result.props_ = propsBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof TideChart.TideChartContextChange) {
+          return mergeFrom((TideChart.TideChartContextChange)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(TideChart.TideChartContextChange other) {
+        if (other == TideChart.TideChartContextChange.getDefaultInstance()) return this;
+        if (other.getIndex() != 0L) {
+          setIndex(other.getIndex());
+        }
+        if (other.getTimestamp() != 0L) {
+          setTimestamp(other.getTimestamp());
+        }
+        if (!other.getType().isEmpty()) {
+          type_ = other.type_;
+          onChanged();
+        }
+        if (propsBuilder_ == null) {
+          if (!other.props_.isEmpty()) {
+            if (props_.isEmpty()) {
+              props_ = other.props_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensurePropsIsMutable();
+              props_.addAll(other.props_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.props_.isEmpty()) {
+            if (propsBuilder_.isEmpty()) {
+              propsBuilder_.dispose();
+              propsBuilder_ = null;
+              props_ = other.props_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              propsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getPropsFieldBuilder() : null;
+            } else {
+              propsBuilder_.addAllMessages(other.props_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        TideChart.TideChartContextChange parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (TideChart.TideChartContextChange) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private long index_ ;
+      /**
+       * <code>int64 index = 1;</code>
+       */
+      public long getIndex() {
+        return index_;
+      }
+      /**
+       * <code>int64 index = 1;</code>
+       */
+      public Builder setIndex(long value) {
+        
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 index = 1;</code>
+       */
+      public Builder clearIndex() {
+        
+        index_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long timestamp_ ;
+      /**
+       * <code>int64 timestamp = 2;</code>
+       */
+      public long getTimestamp() {
+        return timestamp_;
+      }
+      /**
+       * <code>int64 timestamp = 2;</code>
+       */
+      public Builder setTimestamp(long value) {
+        
+        timestamp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 timestamp = 2;</code>
+       */
+      public Builder clearTimestamp() {
+        
+        timestamp_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object type_ = "";
+      /**
+       * <code>string type = 3;</code>
+       */
+      public java.lang.String getType() {
+        java.lang.Object ref = type_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          type_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string type = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTypeBytes() {
+        java.lang.Object ref = type_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          type_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string type = 3;</code>
+       */
+      public Builder setType(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string type = 3;</code>
+       */
+      public Builder clearType() {
+        
+        type_ = getDefaultInstance().getType();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string type = 3;</code>
+       */
+      public Builder setTypeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        type_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> props_ =
+        java.util.Collections.emptyList();
+      private void ensurePropsIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> propsBuilder_;
+
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getPropsList() {
+        if (propsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(props_);
+        } else {
+          return propsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public int getPropsCount() {
+        if (propsBuilder_ == null) {
+          return props_.size();
+        } else {
+          return propsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public TideChart.TideChartProperty getProps(int index) {
+        if (propsBuilder_ == null) {
+          return props_.get(index);
+        } else {
+          return propsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder setProps(
+          int index, TideChart.TideChartProperty value) {
+        if (propsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePropsIsMutable();
+          props_.set(index, value);
+          onChanged();
+        } else {
+          propsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder setProps(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          propsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder addProps(TideChart.TideChartProperty value) {
+        if (propsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePropsIsMutable();
+          props_.add(value);
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder addProps(
+          int index, TideChart.TideChartProperty value) {
+        if (propsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePropsIsMutable();
+          props_.add(index, value);
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder addProps(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.add(builderForValue.build());
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder addProps(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder addAllProps(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, props_);
+          onChanged();
+        } else {
+          propsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder clearProps() {
+        if (propsBuilder_ == null) {
+          props_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          propsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public Builder removeProps(int index) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.remove(index);
+          onChanged();
+        } else {
+          propsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public TideChart.TideChartProperty.Builder getPropsBuilder(
+          int index) {
+        return getPropsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
+          int index) {
+        if (propsBuilder_ == null) {
+          return props_.get(index);  } else {
+          return propsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getPropsOrBuilderList() {
+        if (propsBuilder_ != null) {
+          return propsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(props_);
+        }
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public TideChart.TideChartProperty.Builder addPropsBuilder() {
+        return getPropsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public TideChart.TideChartProperty.Builder addPropsBuilder(
+          int index) {
+        return getPropsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .TideChartProperty props = 4;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getPropsBuilderList() {
+        return getPropsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getPropsFieldBuilder() {
+        if (propsBuilder_ == null) {
+          propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  props_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          props_ = null;
+        }
+        return propsBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:TideChartContextChange)
+    }
+
+    // @@protoc_insertion_point(class_scope:TideChartContextChange)
+    private static final TideChart.TideChartContextChange DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new TideChart.TideChartContextChange();
+    }
+
+    public static TideChart.TideChartContextChange getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TideChartContextChange>
+        PARSER = new com.google.protobuf.AbstractParser<TideChartContextChange>() {
+      @java.lang.Override
+      public TideChartContextChange parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new TideChartContextChange(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<TideChartContextChange> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TideChartContextChange> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public TideChart.TideChartContextChange getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface TideChartLogEntryOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:TideChartLogEntry)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * context index at the time the log entry was created
+     * </pre>
+     *
+     * <code>int64 index = 1;</code>
+     */
+    long getIndex();
+
+    /**
+     * <pre>
+     * timestamp when the log entry was created 
+     * </pre>
+     *
+     * <code>int64 timestamp = 2;</code>
+     */
+    long getTimestamp();
+
+    /**
+     * <pre>
+     * source site that produced the log entry
+     * </pre>
+     *
+     * <code>int64 source = 3;</code>
+     */
+    long getSource();
+
+    /**
+     * <pre>
+     * log level of the entry
+     * </pre>
+     *
+     * <code>.TideChartLogLevel level = 4;</code>
+     */
+    int getLevelValue();
+    /**
+     * <pre>
+     * log level of the entry
+     * </pre>
+     *
+     * <code>.TideChartLogLevel level = 4;</code>
+     */
+    TideChart.TideChartLogLevel getLevel();
+
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    java.util.List<java.lang.String>
+        getTagsList();
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    int getTagsCount();
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    java.lang.String getTags(int index);
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getTagsBytes(int index);
+
+    /**
+     * <pre>
+     * content of the log entry
+     * </pre>
+     *
+     * <code>string message = 6;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <pre>
+     * content of the log entry
+     * </pre>
+     *
+     * <code>string message = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+
+    /**
+     * <pre>
+     * log entries can reference messages by index
+     * </pre>
+     *
+     * <code>repeated int64 refs = 7;</code>
+     */
+    java.util.List<java.lang.Long> getRefsList();
+    /**
+     * <pre>
+     * log entries can reference messages by index
+     * </pre>
+     *
+     * <code>repeated int64 refs = 7;</code>
+     */
+    int getRefsCount();
+    /**
+     * <pre>
+     * log entries can reference messages by index
+     * </pre>
+     *
+     * <code>repeated int64 refs = 7;</code>
+     */
+    long getRefs(int index);
+
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getPropsList();
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    TideChart.TideChartProperty getProps(int index);
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    int getPropsCount();
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getPropsOrBuilderList();
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code TideChartLogEntry}
+   */
+  public  static final class TideChartLogEntry extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:TideChartLogEntry)
+      TideChartLogEntryOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use TideChartLogEntry.newBuilder() to construct.
+    private TideChartLogEntry(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private TideChartLogEntry() {
+      level_ = 0;
+      tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      message_ = "";
+      refs_ = emptyLongList();
+      props_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new TideChartLogEntry();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private TideChartLogEntry(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              index_ = input.readInt64();
+              break;
+            }
+            case 16: {
+
+              timestamp_ = input.readInt64();
+              break;
+            }
+            case 24: {
+
+              source_ = input.readInt64();
+              break;
+            }
+            case 32: {
+              int rawValue = input.readEnum();
+
+              level_ = rawValue;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                tags_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              tags_.add(s);
+              break;
+            }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              message_ = s;
+              break;
+            }
+            case 56: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                refs_ = newLongList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              refs_.addLong(input.readInt64());
+              break;
+            }
+            case 58: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                refs_ = newLongList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                refs_.addLong(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              props_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          tags_ = tags_.getUnmodifiableView();
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          refs_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          props_ = java.util.Collections.unmodifiableList(props_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return TideChart.internal_static_TideChartLogEntry_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return TideChart.internal_static_TideChartLogEntry_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              TideChart.TideChartLogEntry.class, TideChart.TideChartLogEntry.Builder.class);
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 1;
+    private long index_;
+    /**
+     * <pre>
+     * context index at the time the log entry was created
+     * </pre>
+     *
+     * <code>int64 index = 1;</code>
+     */
+    public long getIndex() {
+      return index_;
+    }
+
+    public static final int TIMESTAMP_FIELD_NUMBER = 2;
+    private long timestamp_;
+    /**
+     * <pre>
+     * timestamp when the log entry was created 
+     * </pre>
+     *
+     * <code>int64 timestamp = 2;</code>
+     */
+    public long getTimestamp() {
+      return timestamp_;
+    }
+
+    public static final int SOURCE_FIELD_NUMBER = 3;
+    private long source_;
+    /**
+     * <pre>
+     * source site that produced the log entry
+     * </pre>
+     *
+     * <code>int64 source = 3;</code>
+     */
+    public long getSource() {
+      return source_;
+    }
+
+    public static final int LEVEL_FIELD_NUMBER = 4;
+    private int level_;
+    /**
+     * <pre>
+     * log level of the entry
+     * </pre>
+     *
+     * <code>.TideChartLogLevel level = 4;</code>
+     */
+    public int getLevelValue() {
+      return level_;
+    }
+    /**
+     * <pre>
+     * log level of the entry
+     * </pre>
+     *
+     * <code>.TideChartLogLevel level = 4;</code>
+     */
+    public TideChart.TideChartLogLevel getLevel() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartLogLevel result = TideChart.TideChartLogLevel.valueOf(level_);
+      return result == null ? TideChart.TideChartLogLevel.UNRECOGNIZED : result;
+    }
+
+    public static final int TAGS_FIELD_NUMBER = 5;
+    private com.google.protobuf.LazyStringList tags_;
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getTagsList() {
+      return tags_;
+    }
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    public int getTagsCount() {
+      return tags_.size();
+    }
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    public java.lang.String getTags(int index) {
+      return tags_.get(index);
+    }
+    /**
+     * <pre>
+     * tags associated with log entry used for filtering
+     * </pre>
+     *
+     * <code>repeated string tags = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTagsBytes(int index) {
+      return tags_.getByteString(index);
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 6;
+    private volatile java.lang.Object message_;
+    /**
+     * <pre>
+     * content of the log entry
+     * </pre>
+     *
+     * <code>string message = 6;</code>
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        message_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * content of the log entry
+     * </pre>
+     *
+     * <code>string message = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int REFS_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.LongList refs_;
+    /**
+     * <pre>
+     * log entries can reference messages by index
+     * </pre>
+     *
+     * <code>repeated int64 refs = 7;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getRefsList() {
+      return refs_;
+    }
+    /**
+     * <pre>
+     * log entries can reference messages by index
+     * </pre>
+     *
+     * <code>repeated int64 refs = 7;</code>
+     */
+    public int getRefsCount() {
+      return refs_.size();
+    }
+    /**
+     * <pre>
+     * log entries can reference messages by index
+     * </pre>
+     *
+     * <code>repeated int64 refs = 7;</code>
+     */
+    public long getRefs(int index) {
+      return refs_.getLong(index);
+    }
+    private int refsMemoizedSerializedSize = -1;
+
+    public static final int PROPS_FIELD_NUMBER = 8;
+    private java.util.List<TideChart.TideChartProperty> props_;
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getPropsList() {
+      return props_;
+    }
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getPropsOrBuilderList() {
+      return props_;
+    }
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    public int getPropsCount() {
+      return props_.size();
+    }
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    public TideChart.TideChartProperty getProps(int index) {
+      return props_.get(index);
+    }
+    /**
+     * <pre>
+     * additional properties or saved state for the log entry
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty props = 8;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
+        int index) {
+      return props_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (index_ != 0L) {
+        output.writeInt64(1, index_);
+      }
+      if (timestamp_ != 0L) {
+        output.writeInt64(2, timestamp_);
+      }
+      if (source_ != 0L) {
+        output.writeInt64(3, source_);
+      }
+      if (level_ != TideChart.TideChartLogLevel.none.getNumber()) {
+        output.writeEnum(4, level_);
+      }
+      for (int i = 0; i < tags_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, tags_.getRaw(i));
+      }
+      if (!getMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, message_);
+      }
+      if (getRefsList().size() > 0) {
+        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(refsMemoizedSerializedSize);
+      }
+      for (int i = 0; i < refs_.size(); i++) {
+        output.writeInt64NoTag(refs_.getLong(i));
+      }
+      for (int i = 0; i < props_.size(); i++) {
+        output.writeMessage(8, props_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (index_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, index_);
+      }
+      if (timestamp_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, timestamp_);
+      }
+      if (source_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, source_);
+      }
+      if (level_ != TideChart.TideChartLogLevel.none.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(4, level_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < tags_.size(); i++) {
+          dataSize += computeStringSizeNoTag(tags_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getTagsList().size();
+      }
+      if (!getMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, message_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < refs_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(refs_.getLong(i));
+        }
+        size += dataSize;
+        if (!getRefsList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        refsMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < props_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, props_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof TideChart.TideChartLogEntry)) {
+        return super.equals(obj);
+      }
+      TideChart.TideChartLogEntry other = (TideChart.TideChartLogEntry) obj;
+
+      if (getIndex()
+          != other.getIndex()) return false;
+      if (getTimestamp()
+          != other.getTimestamp()) return false;
+      if (getSource()
+          != other.getSource()) return false;
+      if (level_ != other.level_) return false;
+      if (!getTagsList()
+          .equals(other.getTagsList())) return false;
+      if (!getMessage()
+          .equals(other.getMessage())) return false;
+      if (!getRefsList()
+          .equals(other.getRefsList())) return false;
+      if (!getPropsList()
+          .equals(other.getPropsList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getIndex());
+      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTimestamp());
+      hash = (37 * hash) + SOURCE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getSource());
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + level_;
+      if (getTagsCount() > 0) {
+        hash = (37 * hash) + TAGS_FIELD_NUMBER;
+        hash = (53 * hash) + getTagsList().hashCode();
+      }
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage().hashCode();
+      if (getRefsCount() > 0) {
+        hash = (37 * hash) + REFS_FIELD_NUMBER;
+        hash = (53 * hash) + getRefsList().hashCode();
+      }
+      if (getPropsCount() > 0) {
+        hash = (37 * hash) + PROPS_FIELD_NUMBER;
+        hash = (53 * hash) + getPropsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static TideChart.TideChartLogEntry parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static TideChart.TideChartLogEntry parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartLogEntry parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartLogEntry parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(TideChart.TideChartLogEntry prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code TideChartLogEntry}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:TideChartLogEntry)
+        TideChart.TideChartLogEntryOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return TideChart.internal_static_TideChartLogEntry_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return TideChart.internal_static_TideChartLogEntry_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                TideChart.TideChartLogEntry.class, TideChart.TideChartLogEntry.Builder.class);
+      }
+
+      // Construct using TideChart.TideChartLogEntry.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getPropsFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        index_ = 0L;
+
+        timestamp_ = 0L;
+
+        source_ = 0L;
+
+        level_ = 0;
+
+        tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = "";
+
+        refs_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (propsBuilder_ == null) {
+          props_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          propsBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return TideChart.internal_static_TideChartLogEntry_descriptor;
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartLogEntry getDefaultInstanceForType() {
+        return TideChart.TideChartLogEntry.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartLogEntry build() {
+        TideChart.TideChartLogEntry result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartLogEntry buildPartial() {
+        TideChart.TideChartLogEntry result = new TideChart.TideChartLogEntry(this);
+        int from_bitField0_ = bitField0_;
+        result.index_ = index_;
+        result.timestamp_ = timestamp_;
+        result.source_ = source_;
+        result.level_ = level_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          tags_ = tags_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.tags_ = tags_;
+        result.message_ = message_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          refs_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.refs_ = refs_;
+        if (propsBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            props_ = java.util.Collections.unmodifiableList(props_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.props_ = props_;
+        } else {
+          result.props_ = propsBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof TideChart.TideChartLogEntry) {
+          return mergeFrom((TideChart.TideChartLogEntry)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(TideChart.TideChartLogEntry other) {
+        if (other == TideChart.TideChartLogEntry.getDefaultInstance()) return this;
+        if (other.getIndex() != 0L) {
+          setIndex(other.getIndex());
+        }
+        if (other.getTimestamp() != 0L) {
+          setTimestamp(other.getTimestamp());
+        }
+        if (other.getSource() != 0L) {
+          setSource(other.getSource());
+        }
+        if (other.level_ != 0) {
+          setLevelValue(other.getLevelValue());
+        }
+        if (!other.tags_.isEmpty()) {
+          if (tags_.isEmpty()) {
+            tags_ = other.tags_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureTagsIsMutable();
+            tags_.addAll(other.tags_);
+          }
+          onChanged();
+        }
+        if (!other.getMessage().isEmpty()) {
+          message_ = other.message_;
+          onChanged();
+        }
+        if (!other.refs_.isEmpty()) {
+          if (refs_.isEmpty()) {
+            refs_ = other.refs_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureRefsIsMutable();
+            refs_.addAll(other.refs_);
+          }
+          onChanged();
+        }
+        if (propsBuilder_ == null) {
+          if (!other.props_.isEmpty()) {
+            if (props_.isEmpty()) {
+              props_ = other.props_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensurePropsIsMutable();
+              props_.addAll(other.props_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.props_.isEmpty()) {
+            if (propsBuilder_.isEmpty()) {
+              propsBuilder_.dispose();
+              propsBuilder_ = null;
+              props_ = other.props_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              propsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getPropsFieldBuilder() : null;
+            } else {
+              propsBuilder_.addAllMessages(other.props_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        TideChart.TideChartLogEntry parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (TideChart.TideChartLogEntry) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private long index_ ;
+      /**
+       * <pre>
+       * context index at the time the log entry was created
+       * </pre>
+       *
+       * <code>int64 index = 1;</code>
+       */
+      public long getIndex() {
+        return index_;
+      }
+      /**
+       * <pre>
+       * context index at the time the log entry was created
+       * </pre>
+       *
+       * <code>int64 index = 1;</code>
+       */
+      public Builder setIndex(long value) {
+        
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * context index at the time the log entry was created
+       * </pre>
+       *
+       * <code>int64 index = 1;</code>
+       */
+      public Builder clearIndex() {
+        
+        index_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long timestamp_ ;
+      /**
+       * <pre>
+       * timestamp when the log entry was created 
+       * </pre>
+       *
+       * <code>int64 timestamp = 2;</code>
+       */
+      public long getTimestamp() {
+        return timestamp_;
+      }
+      /**
+       * <pre>
+       * timestamp when the log entry was created 
+       * </pre>
+       *
+       * <code>int64 timestamp = 2;</code>
+       */
+      public Builder setTimestamp(long value) {
+        
+        timestamp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * timestamp when the log entry was created 
+       * </pre>
+       *
+       * <code>int64 timestamp = 2;</code>
+       */
+      public Builder clearTimestamp() {
+        
+        timestamp_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long source_ ;
+      /**
+       * <pre>
+       * source site that produced the log entry
+       * </pre>
+       *
+       * <code>int64 source = 3;</code>
+       */
+      public long getSource() {
+        return source_;
+      }
+      /**
+       * <pre>
+       * source site that produced the log entry
+       * </pre>
+       *
+       * <code>int64 source = 3;</code>
+       */
+      public Builder setSource(long value) {
+        
+        source_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * source site that produced the log entry
+       * </pre>
+       *
+       * <code>int64 source = 3;</code>
+       */
+      public Builder clearSource() {
+        
+        source_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int level_ = 0;
+      /**
+       * <pre>
+       * log level of the entry
+       * </pre>
+       *
+       * <code>.TideChartLogLevel level = 4;</code>
+       */
+      public int getLevelValue() {
+        return level_;
+      }
+      /**
+       * <pre>
+       * log level of the entry
+       * </pre>
+       *
+       * <code>.TideChartLogLevel level = 4;</code>
+       */
+      public Builder setLevelValue(int value) {
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * log level of the entry
+       * </pre>
+       *
+       * <code>.TideChartLogLevel level = 4;</code>
+       */
+      public TideChart.TideChartLogLevel getLevel() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartLogLevel result = TideChart.TideChartLogLevel.valueOf(level_);
+        return result == null ? TideChart.TideChartLogLevel.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * log level of the entry
+       * </pre>
+       *
+       * <code>.TideChartLogLevel level = 4;</code>
+       */
+      public Builder setLevel(TideChart.TideChartLogLevel value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        level_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * log level of the entry
+       * </pre>
+       *
+       * <code>.TideChartLogLevel level = 4;</code>
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringList tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureTagsIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          tags_ = new com.google.protobuf.LazyStringArrayList(tags_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getTagsList() {
+        return tags_.getUnmodifiableView();
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public int getTagsCount() {
+        return tags_.size();
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public java.lang.String getTags(int index) {
+        return tags_.get(index);
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTagsBytes(int index) {
+        return tags_.getByteString(index);
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public Builder setTags(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureTagsIsMutable();
+        tags_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public Builder addTags(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureTagsIsMutable();
+        tags_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public Builder addAllTags(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureTagsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, tags_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public Builder clearTags() {
+        tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * tags associated with log entry used for filtering
+       * </pre>
+       *
+       * <code>repeated string tags = 5;</code>
+       */
+      public Builder addTagsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureTagsIsMutable();
+        tags_.add(value);
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <pre>
+       * content of the log entry
+       * </pre>
+       *
+       * <code>string message = 6;</code>
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * content of the log entry
+       * </pre>
+       *
+       * <code>string message = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * content of the log entry
+       * </pre>
+       *
+       * <code>string message = 6;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * content of the log entry
+       * </pre>
+       *
+       * <code>string message = 6;</code>
+       */
+      public Builder clearMessage() {
+        
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * content of the log entry
+       * </pre>
+       *
+       * <code>string message = 6;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList refs_ = emptyLongList();
+      private void ensureRefsIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          refs_ = mutableCopy(refs_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <pre>
+       * log entries can reference messages by index
+       * </pre>
+       *
+       * <code>repeated int64 refs = 7;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getRefsList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(refs_) : refs_;
+      }
+      /**
+       * <pre>
+       * log entries can reference messages by index
+       * </pre>
+       *
+       * <code>repeated int64 refs = 7;</code>
+       */
+      public int getRefsCount() {
+        return refs_.size();
+      }
+      /**
+       * <pre>
+       * log entries can reference messages by index
+       * </pre>
+       *
+       * <code>repeated int64 refs = 7;</code>
+       */
+      public long getRefs(int index) {
+        return refs_.getLong(index);
+      }
+      /**
+       * <pre>
+       * log entries can reference messages by index
+       * </pre>
+       *
+       * <code>repeated int64 refs = 7;</code>
+       */
+      public Builder setRefs(
+          int index, long value) {
+        ensureRefsIsMutable();
+        refs_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * log entries can reference messages by index
+       * </pre>
+       *
+       * <code>repeated int64 refs = 7;</code>
+       */
+      public Builder addRefs(long value) {
+        ensureRefsIsMutable();
+        refs_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * log entries can reference messages by index
+       * </pre>
+       *
+       * <code>repeated int64 refs = 7;</code>
+       */
+      public Builder addAllRefs(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureRefsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, refs_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * log entries can reference messages by index
+       * </pre>
+       *
+       * <code>repeated int64 refs = 7;</code>
+       */
+      public Builder clearRefs() {
+        refs_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> props_ =
+        java.util.Collections.emptyList();
+      private void ensurePropsIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> propsBuilder_;
+
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getPropsList() {
+        if (propsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(props_);
+        } else {
+          return propsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public int getPropsCount() {
+        if (propsBuilder_ == null) {
+          return props_.size();
+        } else {
+          return propsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public TideChart.TideChartProperty getProps(int index) {
+        if (propsBuilder_ == null) {
+          return props_.get(index);
+        } else {
+          return propsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder setProps(
+          int index, TideChart.TideChartProperty value) {
+        if (propsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePropsIsMutable();
+          props_.set(index, value);
+          onChanged();
+        } else {
+          propsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder setProps(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          propsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder addProps(TideChart.TideChartProperty value) {
+        if (propsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePropsIsMutable();
+          props_.add(value);
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder addProps(
+          int index, TideChart.TideChartProperty value) {
+        if (propsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePropsIsMutable();
+          props_.add(index, value);
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder addProps(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.add(builderForValue.build());
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder addProps(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          propsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder addAllProps(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, props_);
+          onChanged();
+        } else {
+          propsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder clearProps() {
+        if (propsBuilder_ == null) {
+          props_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          propsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public Builder removeProps(int index) {
+        if (propsBuilder_ == null) {
+          ensurePropsIsMutable();
+          props_.remove(index);
+          onChanged();
+        } else {
+          propsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public TideChart.TideChartProperty.Builder getPropsBuilder(
+          int index) {
+        return getPropsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
+          int index) {
+        if (propsBuilder_ == null) {
+          return props_.get(index);  } else {
+          return propsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getPropsOrBuilderList() {
+        if (propsBuilder_ != null) {
+          return propsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(props_);
+        }
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public TideChart.TideChartProperty.Builder addPropsBuilder() {
+        return getPropsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public TideChart.TideChartProperty.Builder addPropsBuilder(
+          int index) {
+        return getPropsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * additional properties or saved state for the log entry
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty props = 8;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getPropsBuilderList() {
+        return getPropsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getPropsFieldBuilder() {
+        if (propsBuilder_ == null) {
+          propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  props_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          props_ = null;
+        }
+        return propsBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:TideChartLogEntry)
+    }
+
+    // @@protoc_insertion_point(class_scope:TideChartLogEntry)
+    private static final TideChart.TideChartLogEntry DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new TideChart.TideChartLogEntry();
+    }
+
+    public static TideChart.TideChartLogEntry getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TideChartLogEntry>
+        PARSER = new com.google.protobuf.AbstractParser<TideChartLogEntry>() {
+      @java.lang.Override
+      public TideChartLogEntry parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new TideChartLogEntry(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<TideChartLogEntry> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TideChartLogEntry> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public TideChart.TideChartLogEntry getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface TideChartContextOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:TideChartContext)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * unique identifier for the execution context
+     * </pre>
+     *
+     * <code>string id = 1;</code>
+     */
+    java.lang.String getId();
+    /**
+     * <pre>
+     * unique identifier for the execution context
+     * </pre>
+     *
+     * <code>string id = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getIdBytes();
+
+    /**
+     * <pre>
+     * next site or message index to be assigned
+     * </pre>
+     *
+     * <code>int64 index = 2;</code>
+     */
+    long getIndex();
+
+    /**
+     * <pre>
+     * current time of the execution context
+     * </pre>
+     *
+     * <code>int64 timestamp = 3;</code>
+     */
+    long getTimestamp();
+
+    /**
+     * <pre>
+     * current version of the chart being executed
+     * </pre>
+     *
+     * <code>string version = 4;</code>
+     */
+    java.lang.String getVersion();
+    /**
+     * <pre>
+     * current version of the chart being executed
+     * </pre>
+     *
+     * <code>string version = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getVersionBytes();
+
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    java.util.List<TideChart.TideChartSite> 
+        getSitesList();
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    TideChart.TideChartSite getSites(int index);
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    int getSitesCount();
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    java.util.List<? extends TideChart.TideChartSiteOrBuilder> 
+        getSitesOrBuilderList();
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    TideChart.TideChartSiteOrBuilder getSitesOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    java.util.List<TideChart.TideChartMessage> 
+        getMessagesList();
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    TideChart.TideChartMessage getMessages(int index);
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    int getMessagesCount();
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    java.util.List<? extends TideChart.TideChartMessageOrBuilder> 
+        getMessagesOrBuilderList();
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    TideChart.TideChartMessageOrBuilder getMessagesOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getGlobalList();
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    TideChart.TideChartProperty getGlobal(int index);
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    int getGlobalCount();
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getGlobalOrBuilderList();
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getGlobalOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * timestamp execution was started
+     * </pre>
+     *
+     * <code>int64 startTime = 8;</code>
+     */
+    long getStartTime();
+
+    /**
+     * <pre>
+     * smallest index in the execution context (offset used for relative index)
+     * </pre>
+     *
+     * <code>int64 startIndex = 9;</code>
+     */
+    long getStartIndex();
+
+    /**
+     * <pre>
+     * relative index of messages that are currently active         
+     * </pre>
+     *
+     * <code>repeated int64 active = 10;</code>
+     */
+    java.util.List<java.lang.Long> getActiveList();
+    /**
+     * <pre>
+     * relative index of messages that are currently active         
+     * </pre>
+     *
+     * <code>repeated int64 active = 10;</code>
+     */
+    int getActiveCount();
+    /**
+     * <pre>
+     * relative index of messages that are currently active         
+     * </pre>
+     *
+     * <code>repeated int64 active = 10;</code>
+     */
+    long getActive(int index);
+
+    /**
+     * <pre>
+     * relative index of messages that are blocking for some condition
+     * </pre>
+     *
+     * <code>repeated int64 waiting = 11;</code>
+     */
+    java.util.List<java.lang.Long> getWaitingList();
+    /**
+     * <pre>
+     * relative index of messages that are blocking for some condition
+     * </pre>
+     *
+     * <code>repeated int64 waiting = 11;</code>
+     */
+    int getWaitingCount();
+    /**
+     * <pre>
+     * relative index of messages that are blocking for some condition
+     * </pre>
+     *
+     * <code>repeated int64 waiting = 11;</code>
+     */
+    long getWaiting(int index);
+
+    /**
+     * <pre>
+     * relative index of sites that are paused (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 paused = 12;</code>
+     */
+    java.util.List<java.lang.Long> getPausedList();
+    /**
+     * <pre>
+     * relative index of sites that are paused (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 paused = 12;</code>
+     */
+    int getPausedCount();
+    /**
+     * <pre>
+     * relative index of sites that are paused (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 paused = 12;</code>
+     */
+    long getPaused(int index);
+
+    /**
+     * <pre>
+     * relative index of sites that are disabled (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 disabled = 13;</code>
+     */
+    java.util.List<java.lang.Long> getDisabledList();
+    /**
+     * <pre>
+     * relative index of sites that are disabled (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 disabled = 13;</code>
+     */
+    int getDisabledCount();
+    /**
+     * <pre>
+     * relative index of sites that are disabled (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 disabled = 13;</code>
+     */
+    long getDisabled(int index);
+
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    java.util.List<TideChart.TideChartContextChange> 
+        getEventsList();
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    TideChart.TideChartContextChange getEvents(int index);
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    int getEventsCount();
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    java.util.List<? extends TideChart.TideChartContextChangeOrBuilder> 
+        getEventsOrBuilderList();
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    TideChart.TideChartContextChangeOrBuilder getEventsOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    java.util.List<TideChart.TideChartLogEntry> 
+        getLogList();
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    TideChart.TideChartLogEntry getLog(int index);
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    int getLogCount();
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    java.util.List<? extends TideChart.TideChartLogEntryOrBuilder> 
+        getLogOrBuilderList();
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    TideChart.TideChartLogEntryOrBuilder getLogOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code TideChartContext}
+   */
+  public  static final class TideChartContext extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:TideChartContext)
+      TideChartContextOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use TideChartContext.newBuilder() to construct.
+    private TideChartContext(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private TideChartContext() {
+      id_ = "";
+      version_ = "";
+      sites_ = java.util.Collections.emptyList();
+      messages_ = java.util.Collections.emptyList();
+      global_ = java.util.Collections.emptyList();
+      active_ = emptyLongList();
+      waiting_ = emptyLongList();
+      paused_ = emptyLongList();
+      disabled_ = emptyLongList();
+      events_ = java.util.Collections.emptyList();
+      log_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new TideChartContext();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private TideChartContext(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              id_ = s;
+              break;
+            }
+            case 16: {
+
+              index_ = input.readInt64();
+              break;
+            }
+            case 24: {
+
+              timestamp_ = input.readInt64();
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              version_ = s;
+              break;
+            }
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                sites_ = new java.util.ArrayList<TideChart.TideChartSite>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              sites_.add(
+                  input.readMessage(TideChart.TideChartSite.parser(), extensionRegistry));
+              break;
+            }
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                messages_ = new java.util.ArrayList<TideChart.TideChartMessage>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              messages_.add(
+                  input.readMessage(TideChart.TideChartMessage.parser(), extensionRegistry));
+              break;
+            }
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                global_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              global_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
+            case 64: {
+
+              startTime_ = input.readInt64();
+              break;
+            }
+            case 72: {
+
+              startIndex_ = input.readInt64();
+              break;
+            }
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                active_ = newLongList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              active_.addLong(input.readInt64());
+              break;
+            }
+            case 82: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+                active_ = newLongList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                active_.addLong(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 88: {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+                waiting_ = newLongList();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              waiting_.addLong(input.readInt64());
+              break;
+            }
+            case 90: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
+                waiting_ = newLongList();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                waiting_.addLong(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+                paused_ = newLongList();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              paused_.addLong(input.readInt64());
+              break;
+            }
+            case 98: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000020) != 0) && input.getBytesUntilLimit() > 0) {
+                paused_ = newLongList();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                paused_.addLong(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 104: {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+                disabled_ = newLongList();
+                mutable_bitField0_ |= 0x00000040;
+              }
+              disabled_.addLong(input.readInt64());
+              break;
+            }
+            case 106: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000040) != 0) && input.getBytesUntilLimit() > 0) {
+                disabled_ = newLongList();
+                mutable_bitField0_ |= 0x00000040;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                disabled_.addLong(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
+                events_ = new java.util.ArrayList<TideChart.TideChartContextChange>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              events_.add(
+                  input.readMessage(TideChart.TideChartContextChange.parser(), extensionRegistry));
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+                log_ = new java.util.ArrayList<TideChart.TideChartLogEntry>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              log_.add(
+                  input.readMessage(TideChart.TideChartLogEntry.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          sites_ = java.util.Collections.unmodifiableList(sites_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          messages_ = java.util.Collections.unmodifiableList(messages_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          global_ = java.util.Collections.unmodifiableList(global_);
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          active_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+          waiting_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+          paused_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
+          disabled_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
+          events_ = java.util.Collections.unmodifiableList(events_);
+        }
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+          log_ = java.util.Collections.unmodifiableList(log_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return TideChart.internal_static_TideChartContext_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return TideChart.internal_static_TideChartContext_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              TideChart.TideChartContext.class, TideChart.TideChartContext.Builder.class);
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object id_;
+    /**
+     * <pre>
+     * unique identifier for the execution context
+     * </pre>
+     *
+     * <code>string id = 1;</code>
+     */
+    public java.lang.String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        id_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * unique identifier for the execution context
+     * </pre>
+     *
+     * <code>string id = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 2;
+    private long index_;
+    /**
+     * <pre>
+     * next site or message index to be assigned
+     * </pre>
+     *
+     * <code>int64 index = 2;</code>
+     */
+    public long getIndex() {
+      return index_;
+    }
+
+    public static final int TIMESTAMP_FIELD_NUMBER = 3;
+    private long timestamp_;
+    /**
+     * <pre>
+     * current time of the execution context
+     * </pre>
+     *
+     * <code>int64 timestamp = 3;</code>
+     */
+    public long getTimestamp() {
+      return timestamp_;
+    }
+
+    public static final int VERSION_FIELD_NUMBER = 4;
+    private volatile java.lang.Object version_;
+    /**
+     * <pre>
+     * current version of the chart being executed
+     * </pre>
+     *
+     * <code>string version = 4;</code>
+     */
+    public java.lang.String getVersion() {
+      java.lang.Object ref = version_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        version_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * current version of the chart being executed
+     * </pre>
+     *
+     * <code>string version = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getVersionBytes() {
+      java.lang.Object ref = version_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        version_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SITES_FIELD_NUMBER = 5;
+    private java.util.List<TideChart.TideChartSite> sites_;
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    public java.util.List<TideChart.TideChartSite> getSitesList() {
+      return sites_;
+    }
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartSiteOrBuilder> 
+        getSitesOrBuilderList() {
+      return sites_;
+    }
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    public int getSitesCount() {
+      return sites_.size();
+    }
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    public TideChart.TideChartSite getSites(int index) {
+      return sites_.get(index);
+    }
+    /**
+     * <pre>
+     * list of all the sites in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartSite sites = 5;</code>
+     */
+    public TideChart.TideChartSiteOrBuilder getSitesOrBuilder(
+        int index) {
+      return sites_.get(index);
+    }
+
+    public static final int MESSAGES_FIELD_NUMBER = 6;
+    private java.util.List<TideChart.TideChartMessage> messages_;
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    public java.util.List<TideChart.TideChartMessage> getMessagesList() {
+      return messages_;
+    }
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartMessageOrBuilder> 
+        getMessagesOrBuilderList() {
+      return messages_;
+    }
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    public int getMessagesCount() {
+      return messages_.size();
+    }
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    public TideChart.TideChartMessage getMessages(int index) {
+      return messages_.get(index);
+    }
+    /**
+     * <pre>
+     * list of all the messages in the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartMessage messages = 6;</code>
+     */
+    public TideChart.TideChartMessageOrBuilder getMessagesOrBuilder(
+        int index) {
+      return messages_.get(index);
+    }
+
+    public static final int GLOBAL_FIELD_NUMBER = 7;
+    private java.util.List<TideChart.TideChartProperty> global_;
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getGlobalList() {
+      return global_;
+    }
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getGlobalOrBuilderList() {
+      return global_;
+    }
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    public int getGlobalCount() {
+      return global_.size();
+    }
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    public TideChart.TideChartProperty getGlobal(int index) {
+      return global_.get(index);
+    }
+    /**
+     * <pre>
+     * a set of properties representing global state 
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty global = 7;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getGlobalOrBuilder(
+        int index) {
+      return global_.get(index);
+    }
+
+    public static final int STARTTIME_FIELD_NUMBER = 8;
+    private long startTime_;
+    /**
+     * <pre>
+     * timestamp execution was started
+     * </pre>
+     *
+     * <code>int64 startTime = 8;</code>
+     */
+    public long getStartTime() {
+      return startTime_;
+    }
+
+    public static final int STARTINDEX_FIELD_NUMBER = 9;
+    private long startIndex_;
+    /**
+     * <pre>
+     * smallest index in the execution context (offset used for relative index)
+     * </pre>
+     *
+     * <code>int64 startIndex = 9;</code>
+     */
+    public long getStartIndex() {
+      return startIndex_;
+    }
+
+    public static final int ACTIVE_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.LongList active_;
+    /**
+     * <pre>
+     * relative index of messages that are currently active         
+     * </pre>
+     *
+     * <code>repeated int64 active = 10;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getActiveList() {
+      return active_;
+    }
+    /**
+     * <pre>
+     * relative index of messages that are currently active         
+     * </pre>
+     *
+     * <code>repeated int64 active = 10;</code>
+     */
+    public int getActiveCount() {
+      return active_.size();
+    }
+    /**
+     * <pre>
+     * relative index of messages that are currently active         
+     * </pre>
+     *
+     * <code>repeated int64 active = 10;</code>
+     */
+    public long getActive(int index) {
+      return active_.getLong(index);
+    }
+    private int activeMemoizedSerializedSize = -1;
+
+    public static final int WAITING_FIELD_NUMBER = 11;
+    private com.google.protobuf.Internal.LongList waiting_;
+    /**
+     * <pre>
+     * relative index of messages that are blocking for some condition
+     * </pre>
+     *
+     * <code>repeated int64 waiting = 11;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getWaitingList() {
+      return waiting_;
+    }
+    /**
+     * <pre>
+     * relative index of messages that are blocking for some condition
+     * </pre>
+     *
+     * <code>repeated int64 waiting = 11;</code>
+     */
+    public int getWaitingCount() {
+      return waiting_.size();
+    }
+    /**
+     * <pre>
+     * relative index of messages that are blocking for some condition
+     * </pre>
+     *
+     * <code>repeated int64 waiting = 11;</code>
+     */
+    public long getWaiting(int index) {
+      return waiting_.getLong(index);
+    }
+    private int waitingMemoizedSerializedSize = -1;
+
+    public static final int PAUSED_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.LongList paused_;
+    /**
+     * <pre>
+     * relative index of sites that are paused (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 paused = 12;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getPausedList() {
+      return paused_;
+    }
+    /**
+     * <pre>
+     * relative index of sites that are paused (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 paused = 12;</code>
+     */
+    public int getPausedCount() {
+      return paused_.size();
+    }
+    /**
+     * <pre>
+     * relative index of sites that are paused (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 paused = 12;</code>
+     */
+    public long getPaused(int index) {
+      return paused_.getLong(index);
+    }
+    private int pausedMemoizedSerializedSize = -1;
+
+    public static final int DISABLED_FIELD_NUMBER = 13;
+    private com.google.protobuf.Internal.LongList disabled_;
+    /**
+     * <pre>
+     * relative index of sites that are disabled (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 disabled = 13;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getDisabledList() {
+      return disabled_;
+    }
+    /**
+     * <pre>
+     * relative index of sites that are disabled (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 disabled = 13;</code>
+     */
+    public int getDisabledCount() {
+      return disabled_.size();
+    }
+    /**
+     * <pre>
+     * relative index of sites that are disabled (debugging)
+     * </pre>
+     *
+     * <code>repeated int64 disabled = 13;</code>
+     */
+    public long getDisabled(int index) {
+      return disabled_.getLong(index);
+    }
+    private int disabledMemoizedSerializedSize = -1;
+
+    public static final int EVENTS_FIELD_NUMBER = 14;
+    private java.util.List<TideChart.TideChartContextChange> events_;
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    public java.util.List<TideChart.TideChartContextChange> getEventsList() {
+      return events_;
+    }
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartContextChangeOrBuilder> 
+        getEventsOrBuilderList() {
+      return events_;
+    }
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    public int getEventsCount() {
+      return events_.size();
+    }
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    public TideChart.TideChartContextChange getEvents(int index) {
+      return events_.get(index);
+    }
+    /**
+     * <pre>
+     * lost of context status change events (start / stop, debugging events, etc.)
+     * </pre>
+     *
+     * <code>repeated .TideChartContextChange events = 14;</code>
+     */
+    public TideChart.TideChartContextChangeOrBuilder getEventsOrBuilder(
+        int index) {
+      return events_.get(index);
+    }
+
+    public static final int LOG_FIELD_NUMBER = 15;
+    private java.util.List<TideChart.TideChartLogEntry> log_;
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    public java.util.List<TideChart.TideChartLogEntry> getLogList() {
+      return log_;
+    }
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartLogEntryOrBuilder> 
+        getLogOrBuilderList() {
+      return log_;
+    }
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    public int getLogCount() {
+      return log_.size();
+    }
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    public TideChart.TideChartLogEntry getLog(int index) {
+      return log_.get(index);
+    }
+    /**
+     * <pre>
+     * list of all the log entries from the execution context
+     * </pre>
+     *
+     * <code>repeated .TideChartLogEntry log = 15;</code>
+     */
+    public TideChart.TideChartLogEntryOrBuilder getLogOrBuilder(
+        int index) {
+      return log_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (!getIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
+      }
+      if (index_ != 0L) {
+        output.writeInt64(2, index_);
+      }
+      if (timestamp_ != 0L) {
+        output.writeInt64(3, timestamp_);
+      }
+      if (!getVersionBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, version_);
+      }
+      for (int i = 0; i < sites_.size(); i++) {
+        output.writeMessage(5, sites_.get(i));
+      }
+      for (int i = 0; i < messages_.size(); i++) {
+        output.writeMessage(6, messages_.get(i));
+      }
+      for (int i = 0; i < global_.size(); i++) {
+        output.writeMessage(7, global_.get(i));
+      }
+      if (startTime_ != 0L) {
+        output.writeInt64(8, startTime_);
+      }
+      if (startIndex_ != 0L) {
+        output.writeInt64(9, startIndex_);
+      }
+      if (getActiveList().size() > 0) {
+        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(activeMemoizedSerializedSize);
+      }
+      for (int i = 0; i < active_.size(); i++) {
+        output.writeInt64NoTag(active_.getLong(i));
+      }
+      if (getWaitingList().size() > 0) {
+        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(waitingMemoizedSerializedSize);
+      }
+      for (int i = 0; i < waiting_.size(); i++) {
+        output.writeInt64NoTag(waiting_.getLong(i));
+      }
+      if (getPausedList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(pausedMemoizedSerializedSize);
+      }
+      for (int i = 0; i < paused_.size(); i++) {
+        output.writeInt64NoTag(paused_.getLong(i));
+      }
+      if (getDisabledList().size() > 0) {
+        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(disabledMemoizedSerializedSize);
+      }
+      for (int i = 0; i < disabled_.size(); i++) {
+        output.writeInt64NoTag(disabled_.getLong(i));
+      }
+      for (int i = 0; i < events_.size(); i++) {
+        output.writeMessage(14, events_.get(i));
+      }
+      for (int i = 0; i < log_.size(); i++) {
+        output.writeMessage(15, log_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
+      }
+      if (index_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, index_);
+      }
+      if (timestamp_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, timestamp_);
+      }
+      if (!getVersionBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, version_);
+      }
+      for (int i = 0; i < sites_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, sites_.get(i));
+      }
+      for (int i = 0; i < messages_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, messages_.get(i));
+      }
+      for (int i = 0; i < global_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, global_.get(i));
+      }
+      if (startTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(8, startTime_);
+      }
+      if (startIndex_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(9, startIndex_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < active_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(active_.getLong(i));
+        }
+        size += dataSize;
+        if (!getActiveList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        activeMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < waiting_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(waiting_.getLong(i));
+        }
+        size += dataSize;
+        if (!getWaitingList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        waitingMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < paused_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(paused_.getLong(i));
+        }
+        size += dataSize;
+        if (!getPausedList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        pausedMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < disabled_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(disabled_.getLong(i));
+        }
+        size += dataSize;
+        if (!getDisabledList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        disabledMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < events_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, events_.get(i));
+      }
+      for (int i = 0; i < log_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, log_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof TideChart.TideChartContext)) {
+        return super.equals(obj);
+      }
+      TideChart.TideChartContext other = (TideChart.TideChartContext) obj;
+
+      if (!getId()
+          .equals(other.getId())) return false;
+      if (getIndex()
+          != other.getIndex()) return false;
+      if (getTimestamp()
+          != other.getTimestamp()) return false;
+      if (!getVersion()
+          .equals(other.getVersion())) return false;
+      if (!getSitesList()
+          .equals(other.getSitesList())) return false;
+      if (!getMessagesList()
+          .equals(other.getMessagesList())) return false;
+      if (!getGlobalList()
+          .equals(other.getGlobalList())) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
+      if (getStartIndex()
+          != other.getStartIndex()) return false;
+      if (!getActiveList()
+          .equals(other.getActiveList())) return false;
+      if (!getWaitingList()
+          .equals(other.getWaitingList())) return false;
+      if (!getPausedList()
+          .equals(other.getPausedList())) return false;
+      if (!getDisabledList()
+          .equals(other.getDisabledList())) return false;
+      if (!getEventsList()
+          .equals(other.getEventsList())) return false;
+      if (!getLogList()
+          .equals(other.getLogList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId().hashCode();
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getIndex());
+      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTimestamp());
+      hash = (37 * hash) + VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getVersion().hashCode();
+      if (getSitesCount() > 0) {
+        hash = (37 * hash) + SITES_FIELD_NUMBER;
+        hash = (53 * hash) + getSitesList().hashCode();
+      }
+      if (getMessagesCount() > 0) {
+        hash = (37 * hash) + MESSAGES_FIELD_NUMBER;
+        hash = (53 * hash) + getMessagesList().hashCode();
+      }
+      if (getGlobalCount() > 0) {
+        hash = (37 * hash) + GLOBAL_FIELD_NUMBER;
+        hash = (53 * hash) + getGlobalList().hashCode();
+      }
+      hash = (37 * hash) + STARTTIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getStartTime());
+      hash = (37 * hash) + STARTINDEX_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getStartIndex());
+      if (getActiveCount() > 0) {
+        hash = (37 * hash) + ACTIVE_FIELD_NUMBER;
+        hash = (53 * hash) + getActiveList().hashCode();
+      }
+      if (getWaitingCount() > 0) {
+        hash = (37 * hash) + WAITING_FIELD_NUMBER;
+        hash = (53 * hash) + getWaitingList().hashCode();
+      }
+      if (getPausedCount() > 0) {
+        hash = (37 * hash) + PAUSED_FIELD_NUMBER;
+        hash = (53 * hash) + getPausedList().hashCode();
+      }
+      if (getDisabledCount() > 0) {
+        hash = (37 * hash) + DISABLED_FIELD_NUMBER;
+        hash = (53 * hash) + getDisabledList().hashCode();
+      }
+      if (getEventsCount() > 0) {
+        hash = (37 * hash) + EVENTS_FIELD_NUMBER;
+        hash = (53 * hash) + getEventsList().hashCode();
+      }
+      if (getLogCount() > 0) {
+        hash = (37 * hash) + LOG_FIELD_NUMBER;
+        hash = (53 * hash) + getLogList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static TideChart.TideChartContext parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartContext parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartContext parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartContext parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartContext parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static TideChart.TideChartContext parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static TideChart.TideChartContext parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartContext parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static TideChart.TideChartContext parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartContext parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static TideChart.TideChartContext parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static TideChart.TideChartContext parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(TideChart.TideChartContext prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code TideChartContext}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:TideChartContext)
+        TideChart.TideChartContextOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return TideChart.internal_static_TideChartContext_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return TideChart.internal_static_TideChartContext_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                TideChart.TideChartContext.class, TideChart.TideChartContext.Builder.class);
+      }
+
+      // Construct using TideChart.TideChartContext.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getSitesFieldBuilder();
+          getMessagesFieldBuilder();
+          getGlobalFieldBuilder();
+          getEventsFieldBuilder();
+          getLogFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        id_ = "";
+
+        index_ = 0L;
+
+        timestamp_ = 0L;
+
+        version_ = "";
+
+        if (sitesBuilder_ == null) {
+          sites_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          sitesBuilder_.clear();
+        }
+        if (messagesBuilder_ == null) {
+          messages_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          messagesBuilder_.clear();
+        }
+        if (globalBuilder_ == null) {
+          global_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          globalBuilder_.clear();
+        }
+        startTime_ = 0L;
+
+        startIndex_ = 0L;
+
+        active_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        waiting_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000010);
+        paused_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000020);
+        disabled_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000040);
+        if (eventsBuilder_ == null) {
+          events_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+        } else {
+          eventsBuilder_.clear();
+        }
+        if (logBuilder_ == null) {
+          log_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        } else {
+          logBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return TideChart.internal_static_TideChartContext_descriptor;
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartContext getDefaultInstanceForType() {
+        return TideChart.TideChartContext.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartContext build() {
+        TideChart.TideChartContext result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public TideChart.TideChartContext buildPartial() {
+        TideChart.TideChartContext result = new TideChart.TideChartContext(this);
+        int from_bitField0_ = bitField0_;
+        result.id_ = id_;
+        result.index_ = index_;
+        result.timestamp_ = timestamp_;
+        result.version_ = version_;
+        if (sitesBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            sites_ = java.util.Collections.unmodifiableList(sites_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.sites_ = sites_;
+        } else {
+          result.sites_ = sitesBuilder_.build();
+        }
+        if (messagesBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            messages_ = java.util.Collections.unmodifiableList(messages_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.messages_ = messages_;
+        } else {
+          result.messages_ = messagesBuilder_.build();
+        }
+        if (globalBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            global_ = java.util.Collections.unmodifiableList(global_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.global_ = global_;
+        } else {
+          result.global_ = globalBuilder_.build();
+        }
+        result.startTime_ = startTime_;
+        result.startIndex_ = startIndex_;
+        if (((bitField0_ & 0x00000008) != 0)) {
+          active_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.active_ = active_;
+        if (((bitField0_ & 0x00000010) != 0)) {
+          waiting_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        }
+        result.waiting_ = waiting_;
+        if (((bitField0_ & 0x00000020) != 0)) {
+          paused_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        }
+        result.paused_ = paused_;
+        if (((bitField0_ & 0x00000040) != 0)) {
+          disabled_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000040);
+        }
+        result.disabled_ = disabled_;
+        if (eventsBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) != 0)) {
+            events_ = java.util.Collections.unmodifiableList(events_);
+            bitField0_ = (bitField0_ & ~0x00000080);
+          }
+          result.events_ = events_;
+        } else {
+          result.events_ = eventsBuilder_.build();
+        }
+        if (logBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) != 0)) {
+            log_ = java.util.Collections.unmodifiableList(log_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.log_ = log_;
+        } else {
+          result.log_ = logBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof TideChart.TideChartContext) {
+          return mergeFrom((TideChart.TideChartContext)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(TideChart.TideChartContext other) {
+        if (other == TideChart.TideChartContext.getDefaultInstance()) return this;
+        if (!other.getId().isEmpty()) {
+          id_ = other.id_;
+          onChanged();
+        }
+        if (other.getIndex() != 0L) {
+          setIndex(other.getIndex());
+        }
+        if (other.getTimestamp() != 0L) {
+          setTimestamp(other.getTimestamp());
+        }
+        if (!other.getVersion().isEmpty()) {
+          version_ = other.version_;
+          onChanged();
+        }
+        if (sitesBuilder_ == null) {
+          if (!other.sites_.isEmpty()) {
+            if (sites_.isEmpty()) {
+              sites_ = other.sites_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureSitesIsMutable();
+              sites_.addAll(other.sites_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.sites_.isEmpty()) {
+            if (sitesBuilder_.isEmpty()) {
+              sitesBuilder_.dispose();
+              sitesBuilder_ = null;
+              sites_ = other.sites_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              sitesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSitesFieldBuilder() : null;
+            } else {
+              sitesBuilder_.addAllMessages(other.sites_);
+            }
+          }
+        }
+        if (messagesBuilder_ == null) {
+          if (!other.messages_.isEmpty()) {
+            if (messages_.isEmpty()) {
+              messages_ = other.messages_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureMessagesIsMutable();
+              messages_.addAll(other.messages_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.messages_.isEmpty()) {
+            if (messagesBuilder_.isEmpty()) {
+              messagesBuilder_.dispose();
+              messagesBuilder_ = null;
+              messages_ = other.messages_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              messagesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMessagesFieldBuilder() : null;
+            } else {
+              messagesBuilder_.addAllMessages(other.messages_);
+            }
+          }
+        }
+        if (globalBuilder_ == null) {
+          if (!other.global_.isEmpty()) {
+            if (global_.isEmpty()) {
+              global_ = other.global_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureGlobalIsMutable();
+              global_.addAll(other.global_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.global_.isEmpty()) {
+            if (globalBuilder_.isEmpty()) {
+              globalBuilder_.dispose();
+              globalBuilder_ = null;
+              global_ = other.global_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              globalBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getGlobalFieldBuilder() : null;
+            } else {
+              globalBuilder_.addAllMessages(other.global_);
+            }
+          }
+        }
+        if (other.getStartTime() != 0L) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getStartIndex() != 0L) {
+          setStartIndex(other.getStartIndex());
+        }
+        if (!other.active_.isEmpty()) {
+          if (active_.isEmpty()) {
+            active_ = other.active_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureActiveIsMutable();
+            active_.addAll(other.active_);
+          }
+          onChanged();
+        }
+        if (!other.waiting_.isEmpty()) {
+          if (waiting_.isEmpty()) {
+            waiting_ = other.waiting_;
+            bitField0_ = (bitField0_ & ~0x00000010);
+          } else {
+            ensureWaitingIsMutable();
+            waiting_.addAll(other.waiting_);
+          }
+          onChanged();
+        }
+        if (!other.paused_.isEmpty()) {
+          if (paused_.isEmpty()) {
+            paused_ = other.paused_;
+            bitField0_ = (bitField0_ & ~0x00000020);
+          } else {
+            ensurePausedIsMutable();
+            paused_.addAll(other.paused_);
+          }
+          onChanged();
+        }
+        if (!other.disabled_.isEmpty()) {
+          if (disabled_.isEmpty()) {
+            disabled_ = other.disabled_;
+            bitField0_ = (bitField0_ & ~0x00000040);
+          } else {
+            ensureDisabledIsMutable();
+            disabled_.addAll(other.disabled_);
+          }
+          onChanged();
+        }
+        if (eventsBuilder_ == null) {
+          if (!other.events_.isEmpty()) {
+            if (events_.isEmpty()) {
+              events_ = other.events_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+            } else {
+              ensureEventsIsMutable();
+              events_.addAll(other.events_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.events_.isEmpty()) {
+            if (eventsBuilder_.isEmpty()) {
+              eventsBuilder_.dispose();
+              eventsBuilder_ = null;
+              events_ = other.events_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+              eventsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getEventsFieldBuilder() : null;
+            } else {
+              eventsBuilder_.addAllMessages(other.events_);
+            }
+          }
+        }
+        if (logBuilder_ == null) {
+          if (!other.log_.isEmpty()) {
+            if (log_.isEmpty()) {
+              log_ = other.log_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureLogIsMutable();
+              log_.addAll(other.log_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.log_.isEmpty()) {
+            if (logBuilder_.isEmpty()) {
+              logBuilder_.dispose();
+              logBuilder_ = null;
+              log_ = other.log_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              logBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLogFieldBuilder() : null;
+            } else {
+              logBuilder_.addAllMessages(other.log_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        TideChart.TideChartContext parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (TideChart.TideChartContext) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object id_ = "";
+      /**
+       * <pre>
+       * unique identifier for the execution context
+       * </pre>
+       *
+       * <code>string id = 1;</code>
+       */
+      public java.lang.String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * unique identifier for the execution context
+       * </pre>
+       *
+       * <code>string id = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getIdBytes() {
+        java.lang.Object ref = id_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          id_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * unique identifier for the execution context
+       * </pre>
+       *
+       * <code>string id = 1;</code>
+       */
+      public Builder setId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * unique identifier for the execution context
+       * </pre>
+       *
+       * <code>string id = 1;</code>
+       */
+      public Builder clearId() {
+        
+        id_ = getDefaultInstance().getId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * unique identifier for the execution context
+       * </pre>
+       *
+       * <code>string id = 1;</code>
+       */
+      public Builder setIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+
+      private long index_ ;
+      /**
+       * <pre>
+       * next site or message index to be assigned
+       * </pre>
+       *
+       * <code>int64 index = 2;</code>
+       */
+      public long getIndex() {
+        return index_;
+      }
+      /**
+       * <pre>
+       * next site or message index to be assigned
+       * </pre>
+       *
+       * <code>int64 index = 2;</code>
+       */
+      public Builder setIndex(long value) {
+        
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * next site or message index to be assigned
+       * </pre>
+       *
+       * <code>int64 index = 2;</code>
+       */
+      public Builder clearIndex() {
+        
+        index_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long timestamp_ ;
+      /**
+       * <pre>
+       * current time of the execution context
+       * </pre>
+       *
+       * <code>int64 timestamp = 3;</code>
+       */
+      public long getTimestamp() {
+        return timestamp_;
+      }
+      /**
+       * <pre>
+       * current time of the execution context
+       * </pre>
+       *
+       * <code>int64 timestamp = 3;</code>
+       */
+      public Builder setTimestamp(long value) {
+        
+        timestamp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * current time of the execution context
+       * </pre>
+       *
+       * <code>int64 timestamp = 3;</code>
+       */
+      public Builder clearTimestamp() {
+        
+        timestamp_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object version_ = "";
+      /**
+       * <pre>
+       * current version of the chart being executed
+       * </pre>
+       *
+       * <code>string version = 4;</code>
+       */
+      public java.lang.String getVersion() {
+        java.lang.Object ref = version_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          version_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * current version of the chart being executed
+       * </pre>
+       *
+       * <code>string version = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getVersionBytes() {
+        java.lang.Object ref = version_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          version_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * current version of the chart being executed
+       * </pre>
+       *
+       * <code>string version = 4;</code>
+       */
+      public Builder setVersion(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        version_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * current version of the chart being executed
+       * </pre>
+       *
+       * <code>string version = 4;</code>
+       */
+      public Builder clearVersion() {
+        
+        version_ = getDefaultInstance().getVersion();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * current version of the chart being executed
+       * </pre>
+       *
+       * <code>string version = 4;</code>
+       */
+      public Builder setVersionBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        version_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<TideChart.TideChartSite> sites_ =
+        java.util.Collections.emptyList();
+      private void ensureSitesIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          sites_ = new java.util.ArrayList<TideChart.TideChartSite>(sites_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartSite, TideChart.TideChartSite.Builder, TideChart.TideChartSiteOrBuilder> sitesBuilder_;
+
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public java.util.List<TideChart.TideChartSite> getSitesList() {
+        if (sitesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(sites_);
+        } else {
+          return sitesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public int getSitesCount() {
+        if (sitesBuilder_ == null) {
+          return sites_.size();
+        } else {
+          return sitesBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public TideChart.TideChartSite getSites(int index) {
+        if (sitesBuilder_ == null) {
+          return sites_.get(index);
+        } else {
+          return sitesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder setSites(
+          int index, TideChart.TideChartSite value) {
+        if (sitesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSitesIsMutable();
+          sites_.set(index, value);
+          onChanged();
+        } else {
+          sitesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder setSites(
+          int index, TideChart.TideChartSite.Builder builderForValue) {
+        if (sitesBuilder_ == null) {
+          ensureSitesIsMutable();
+          sites_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          sitesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder addSites(TideChart.TideChartSite value) {
+        if (sitesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSitesIsMutable();
+          sites_.add(value);
+          onChanged();
+        } else {
+          sitesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder addSites(
+          int index, TideChart.TideChartSite value) {
+        if (sitesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSitesIsMutable();
+          sites_.add(index, value);
+          onChanged();
+        } else {
+          sitesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder addSites(
+          TideChart.TideChartSite.Builder builderForValue) {
+        if (sitesBuilder_ == null) {
+          ensureSitesIsMutable();
+          sites_.add(builderForValue.build());
+          onChanged();
+        } else {
+          sitesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder addSites(
+          int index, TideChart.TideChartSite.Builder builderForValue) {
+        if (sitesBuilder_ == null) {
+          ensureSitesIsMutable();
+          sites_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          sitesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder addAllSites(
+          java.lang.Iterable<? extends TideChart.TideChartSite> values) {
+        if (sitesBuilder_ == null) {
+          ensureSitesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, sites_);
+          onChanged();
+        } else {
+          sitesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder clearSites() {
+        if (sitesBuilder_ == null) {
+          sites_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          sitesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public Builder removeSites(int index) {
+        if (sitesBuilder_ == null) {
+          ensureSitesIsMutable();
+          sites_.remove(index);
+          onChanged();
+        } else {
+          sitesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public TideChart.TideChartSite.Builder getSitesBuilder(
+          int index) {
+        return getSitesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public TideChart.TideChartSiteOrBuilder getSitesOrBuilder(
+          int index) {
+        if (sitesBuilder_ == null) {
+          return sites_.get(index);  } else {
+          return sitesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartSiteOrBuilder> 
+           getSitesOrBuilderList() {
+        if (sitesBuilder_ != null) {
+          return sitesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(sites_);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public TideChart.TideChartSite.Builder addSitesBuilder() {
+        return getSitesFieldBuilder().addBuilder(
+            TideChart.TideChartSite.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public TideChart.TideChartSite.Builder addSitesBuilder(
+          int index) {
+        return getSitesFieldBuilder().addBuilder(
+            index, TideChart.TideChartSite.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * list of all the sites in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartSite sites = 5;</code>
+       */
+      public java.util.List<TideChart.TideChartSite.Builder> 
+           getSitesBuilderList() {
+        return getSitesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartSite, TideChart.TideChartSite.Builder, TideChart.TideChartSiteOrBuilder> 
+          getSitesFieldBuilder() {
+        if (sitesBuilder_ == null) {
+          sitesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartSite, TideChart.TideChartSite.Builder, TideChart.TideChartSiteOrBuilder>(
+                  sites_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          sites_ = null;
+        }
+        return sitesBuilder_;
+      }
+
+      private java.util.List<TideChart.TideChartMessage> messages_ =
+        java.util.Collections.emptyList();
+      private void ensureMessagesIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          messages_ = new java.util.ArrayList<TideChart.TideChartMessage>(messages_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartMessage, TideChart.TideChartMessage.Builder, TideChart.TideChartMessageOrBuilder> messagesBuilder_;
+
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public java.util.List<TideChart.TideChartMessage> getMessagesList() {
+        if (messagesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(messages_);
+        } else {
+          return messagesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public int getMessagesCount() {
+        if (messagesBuilder_ == null) {
+          return messages_.size();
+        } else {
+          return messagesBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public TideChart.TideChartMessage getMessages(int index) {
+        if (messagesBuilder_ == null) {
+          return messages_.get(index);
+        } else {
+          return messagesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder setMessages(
+          int index, TideChart.TideChartMessage value) {
+        if (messagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMessagesIsMutable();
+          messages_.set(index, value);
+          onChanged();
+        } else {
+          messagesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder setMessages(
+          int index, TideChart.TideChartMessage.Builder builderForValue) {
+        if (messagesBuilder_ == null) {
+          ensureMessagesIsMutable();
+          messages_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          messagesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder addMessages(TideChart.TideChartMessage value) {
+        if (messagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMessagesIsMutable();
+          messages_.add(value);
+          onChanged();
+        } else {
+          messagesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder addMessages(
+          int index, TideChart.TideChartMessage value) {
+        if (messagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMessagesIsMutable();
+          messages_.add(index, value);
+          onChanged();
+        } else {
+          messagesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder addMessages(
+          TideChart.TideChartMessage.Builder builderForValue) {
+        if (messagesBuilder_ == null) {
+          ensureMessagesIsMutable();
+          messages_.add(builderForValue.build());
+          onChanged();
+        } else {
+          messagesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder addMessages(
+          int index, TideChart.TideChartMessage.Builder builderForValue) {
+        if (messagesBuilder_ == null) {
+          ensureMessagesIsMutable();
+          messages_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          messagesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder addAllMessages(
+          java.lang.Iterable<? extends TideChart.TideChartMessage> values) {
+        if (messagesBuilder_ == null) {
+          ensureMessagesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, messages_);
+          onChanged();
+        } else {
+          messagesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder clearMessages() {
+        if (messagesBuilder_ == null) {
+          messages_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          messagesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public Builder removeMessages(int index) {
+        if (messagesBuilder_ == null) {
+          ensureMessagesIsMutable();
+          messages_.remove(index);
+          onChanged();
+        } else {
+          messagesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public TideChart.TideChartMessage.Builder getMessagesBuilder(
+          int index) {
+        return getMessagesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public TideChart.TideChartMessageOrBuilder getMessagesOrBuilder(
+          int index) {
+        if (messagesBuilder_ == null) {
+          return messages_.get(index);  } else {
+          return messagesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartMessageOrBuilder> 
+           getMessagesOrBuilderList() {
+        if (messagesBuilder_ != null) {
+          return messagesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(messages_);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public TideChart.TideChartMessage.Builder addMessagesBuilder() {
+        return getMessagesFieldBuilder().addBuilder(
+            TideChart.TideChartMessage.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public TideChart.TideChartMessage.Builder addMessagesBuilder(
+          int index) {
+        return getMessagesFieldBuilder().addBuilder(
+            index, TideChart.TideChartMessage.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * list of all the messages in the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartMessage messages = 6;</code>
+       */
+      public java.util.List<TideChart.TideChartMessage.Builder> 
+           getMessagesBuilderList() {
+        return getMessagesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartMessage, TideChart.TideChartMessage.Builder, TideChart.TideChartMessageOrBuilder> 
+          getMessagesFieldBuilder() {
+        if (messagesBuilder_ == null) {
+          messagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartMessage, TideChart.TideChartMessage.Builder, TideChart.TideChartMessageOrBuilder>(
+                  messages_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          messages_ = null;
+        }
+        return messagesBuilder_;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> global_ =
+        java.util.Collections.emptyList();
+      private void ensureGlobalIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          global_ = new java.util.ArrayList<TideChart.TideChartProperty>(global_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> globalBuilder_;
+
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getGlobalList() {
+        if (globalBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(global_);
+        } else {
+          return globalBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public int getGlobalCount() {
+        if (globalBuilder_ == null) {
+          return global_.size();
+        } else {
+          return globalBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public TideChart.TideChartProperty getGlobal(int index) {
+        if (globalBuilder_ == null) {
+          return global_.get(index);
+        } else {
+          return globalBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder setGlobal(
+          int index, TideChart.TideChartProperty value) {
+        if (globalBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGlobalIsMutable();
+          global_.set(index, value);
+          onChanged();
+        } else {
+          globalBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder setGlobal(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (globalBuilder_ == null) {
+          ensureGlobalIsMutable();
+          global_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          globalBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder addGlobal(TideChart.TideChartProperty value) {
+        if (globalBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGlobalIsMutable();
+          global_.add(value);
+          onChanged();
+        } else {
+          globalBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder addGlobal(
+          int index, TideChart.TideChartProperty value) {
+        if (globalBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGlobalIsMutable();
+          global_.add(index, value);
+          onChanged();
+        } else {
+          globalBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder addGlobal(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (globalBuilder_ == null) {
+          ensureGlobalIsMutable();
+          global_.add(builderForValue.build());
+          onChanged();
+        } else {
+          globalBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder addGlobal(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (globalBuilder_ == null) {
+          ensureGlobalIsMutable();
+          global_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          globalBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder addAllGlobal(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (globalBuilder_ == null) {
+          ensureGlobalIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, global_);
+          onChanged();
+        } else {
+          globalBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder clearGlobal() {
+        if (globalBuilder_ == null) {
+          global_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          globalBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public Builder removeGlobal(int index) {
+        if (globalBuilder_ == null) {
+          ensureGlobalIsMutable();
+          global_.remove(index);
+          onChanged();
+        } else {
+          globalBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public TideChart.TideChartProperty.Builder getGlobalBuilder(
+          int index) {
+        return getGlobalFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getGlobalOrBuilder(
+          int index) {
+        if (globalBuilder_ == null) {
+          return global_.get(index);  } else {
+          return globalBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getGlobalOrBuilderList() {
+        if (globalBuilder_ != null) {
+          return globalBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(global_);
+        }
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public TideChart.TideChartProperty.Builder addGlobalBuilder() {
+        return getGlobalFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public TideChart.TideChartProperty.Builder addGlobalBuilder(
+          int index) {
+        return getGlobalFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * a set of properties representing global state 
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty global = 7;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getGlobalBuilderList() {
+        return getGlobalFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getGlobalFieldBuilder() {
+        if (globalBuilder_ == null) {
+          globalBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  global_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          global_ = null;
+        }
+        return globalBuilder_;
+      }
+
+      private long startTime_ ;
+      /**
+       * <pre>
+       * timestamp execution was started
+       * </pre>
+       *
+       * <code>int64 startTime = 8;</code>
+       */
+      public long getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <pre>
+       * timestamp execution was started
+       * </pre>
+       *
+       * <code>int64 startTime = 8;</code>
+       */
+      public Builder setStartTime(long value) {
+        
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * timestamp execution was started
+       * </pre>
+       *
+       * <code>int64 startTime = 8;</code>
+       */
+      public Builder clearStartTime() {
+        
+        startTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long startIndex_ ;
+      /**
+       * <pre>
+       * smallest index in the execution context (offset used for relative index)
+       * </pre>
+       *
+       * <code>int64 startIndex = 9;</code>
+       */
+      public long getStartIndex() {
+        return startIndex_;
+      }
+      /**
+       * <pre>
+       * smallest index in the execution context (offset used for relative index)
+       * </pre>
+       *
+       * <code>int64 startIndex = 9;</code>
+       */
+      public Builder setStartIndex(long value) {
+        
+        startIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * smallest index in the execution context (offset used for relative index)
+       * </pre>
+       *
+       * <code>int64 startIndex = 9;</code>
+       */
+      public Builder clearStartIndex() {
+        
+        startIndex_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList active_ = emptyLongList();
+      private void ensureActiveIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          active_ = mutableCopy(active_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+      /**
+       * <pre>
+       * relative index of messages that are currently active         
+       * </pre>
+       *
+       * <code>repeated int64 active = 10;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getActiveList() {
+        return ((bitField0_ & 0x00000008) != 0) ?
+                 java.util.Collections.unmodifiableList(active_) : active_;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are currently active         
+       * </pre>
+       *
+       * <code>repeated int64 active = 10;</code>
+       */
+      public int getActiveCount() {
+        return active_.size();
+      }
+      /**
+       * <pre>
+       * relative index of messages that are currently active         
+       * </pre>
+       *
+       * <code>repeated int64 active = 10;</code>
+       */
+      public long getActive(int index) {
+        return active_.getLong(index);
+      }
+      /**
+       * <pre>
+       * relative index of messages that are currently active         
+       * </pre>
+       *
+       * <code>repeated int64 active = 10;</code>
+       */
+      public Builder setActive(
+          int index, long value) {
+        ensureActiveIsMutable();
+        active_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are currently active         
+       * </pre>
+       *
+       * <code>repeated int64 active = 10;</code>
+       */
+      public Builder addActive(long value) {
+        ensureActiveIsMutable();
+        active_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are currently active         
+       * </pre>
+       *
+       * <code>repeated int64 active = 10;</code>
+       */
+      public Builder addAllActive(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureActiveIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, active_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are currently active         
+       * </pre>
+       *
+       * <code>repeated int64 active = 10;</code>
+       */
+      public Builder clearActive() {
+        active_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList waiting_ = emptyLongList();
+      private void ensureWaitingIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          waiting_ = mutableCopy(waiting_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+      /**
+       * <pre>
+       * relative index of messages that are blocking for some condition
+       * </pre>
+       *
+       * <code>repeated int64 waiting = 11;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getWaitingList() {
+        return ((bitField0_ & 0x00000010) != 0) ?
+                 java.util.Collections.unmodifiableList(waiting_) : waiting_;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are blocking for some condition
+       * </pre>
+       *
+       * <code>repeated int64 waiting = 11;</code>
+       */
+      public int getWaitingCount() {
+        return waiting_.size();
+      }
+      /**
+       * <pre>
+       * relative index of messages that are blocking for some condition
+       * </pre>
+       *
+       * <code>repeated int64 waiting = 11;</code>
+       */
+      public long getWaiting(int index) {
+        return waiting_.getLong(index);
+      }
+      /**
+       * <pre>
+       * relative index of messages that are blocking for some condition
+       * </pre>
+       *
+       * <code>repeated int64 waiting = 11;</code>
+       */
+      public Builder setWaiting(
+          int index, long value) {
+        ensureWaitingIsMutable();
+        waiting_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are blocking for some condition
+       * </pre>
+       *
+       * <code>repeated int64 waiting = 11;</code>
+       */
+      public Builder addWaiting(long value) {
+        ensureWaitingIsMutable();
+        waiting_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are blocking for some condition
+       * </pre>
+       *
+       * <code>repeated int64 waiting = 11;</code>
+       */
+      public Builder addAllWaiting(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureWaitingIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, waiting_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of messages that are blocking for some condition
+       * </pre>
+       *
+       * <code>repeated int64 waiting = 11;</code>
+       */
+      public Builder clearWaiting() {
+        waiting_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000010);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList paused_ = emptyLongList();
+      private void ensurePausedIsMutable() {
+        if (!((bitField0_ & 0x00000020) != 0)) {
+          paused_ = mutableCopy(paused_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+      /**
+       * <pre>
+       * relative index of sites that are paused (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 paused = 12;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getPausedList() {
+        return ((bitField0_ & 0x00000020) != 0) ?
+                 java.util.Collections.unmodifiableList(paused_) : paused_;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are paused (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 paused = 12;</code>
+       */
+      public int getPausedCount() {
+        return paused_.size();
+      }
+      /**
+       * <pre>
+       * relative index of sites that are paused (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 paused = 12;</code>
+       */
+      public long getPaused(int index) {
+        return paused_.getLong(index);
+      }
+      /**
+       * <pre>
+       * relative index of sites that are paused (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 paused = 12;</code>
+       */
+      public Builder setPaused(
+          int index, long value) {
+        ensurePausedIsMutable();
+        paused_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are paused (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 paused = 12;</code>
+       */
+      public Builder addPaused(long value) {
+        ensurePausedIsMutable();
+        paused_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are paused (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 paused = 12;</code>
+       */
+      public Builder addAllPaused(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensurePausedIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, paused_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are paused (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 paused = 12;</code>
+       */
+      public Builder clearPaused() {
+        paused_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000020);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList disabled_ = emptyLongList();
+      private void ensureDisabledIsMutable() {
+        if (!((bitField0_ & 0x00000040) != 0)) {
+          disabled_ = mutableCopy(disabled_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+      /**
+       * <pre>
+       * relative index of sites that are disabled (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 disabled = 13;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getDisabledList() {
+        return ((bitField0_ & 0x00000040) != 0) ?
+                 java.util.Collections.unmodifiableList(disabled_) : disabled_;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are disabled (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 disabled = 13;</code>
+       */
+      public int getDisabledCount() {
+        return disabled_.size();
+      }
+      /**
+       * <pre>
+       * relative index of sites that are disabled (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 disabled = 13;</code>
+       */
+      public long getDisabled(int index) {
+        return disabled_.getLong(index);
+      }
+      /**
+       * <pre>
+       * relative index of sites that are disabled (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 disabled = 13;</code>
+       */
+      public Builder setDisabled(
+          int index, long value) {
+        ensureDisabledIsMutable();
+        disabled_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are disabled (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 disabled = 13;</code>
+       */
+      public Builder addDisabled(long value) {
+        ensureDisabledIsMutable();
+        disabled_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are disabled (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 disabled = 13;</code>
+       */
+      public Builder addAllDisabled(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureDisabledIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, disabled_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * relative index of sites that are disabled (debugging)
+       * </pre>
+       *
+       * <code>repeated int64 disabled = 13;</code>
+       */
+      public Builder clearDisabled() {
+        disabled_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000040);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<TideChart.TideChartContextChange> events_ =
+        java.util.Collections.emptyList();
+      private void ensureEventsIsMutable() {
+        if (!((bitField0_ & 0x00000080) != 0)) {
+          events_ = new java.util.ArrayList<TideChart.TideChartContextChange>(events_);
+          bitField0_ |= 0x00000080;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartContextChange, TideChart.TideChartContextChange.Builder, TideChart.TideChartContextChangeOrBuilder> eventsBuilder_;
+
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public java.util.List<TideChart.TideChartContextChange> getEventsList() {
+        if (eventsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(events_);
+        } else {
+          return eventsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public int getEventsCount() {
+        if (eventsBuilder_ == null) {
+          return events_.size();
+        } else {
+          return eventsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public TideChart.TideChartContextChange getEvents(int index) {
+        if (eventsBuilder_ == null) {
+          return events_.get(index);
+        } else {
+          return eventsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder setEvents(
+          int index, TideChart.TideChartContextChange value) {
+        if (eventsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEventsIsMutable();
+          events_.set(index, value);
+          onChanged();
+        } else {
+          eventsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder setEvents(
+          int index, TideChart.TideChartContextChange.Builder builderForValue) {
+        if (eventsBuilder_ == null) {
+          ensureEventsIsMutable();
+          events_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          eventsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder addEvents(TideChart.TideChartContextChange value) {
+        if (eventsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEventsIsMutable();
+          events_.add(value);
+          onChanged();
+        } else {
+          eventsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder addEvents(
+          int index, TideChart.TideChartContextChange value) {
+        if (eventsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEventsIsMutable();
+          events_.add(index, value);
+          onChanged();
+        } else {
+          eventsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder addEvents(
+          TideChart.TideChartContextChange.Builder builderForValue) {
+        if (eventsBuilder_ == null) {
+          ensureEventsIsMutable();
+          events_.add(builderForValue.build());
+          onChanged();
+        } else {
+          eventsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder addEvents(
+          int index, TideChart.TideChartContextChange.Builder builderForValue) {
+        if (eventsBuilder_ == null) {
+          ensureEventsIsMutable();
+          events_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          eventsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder addAllEvents(
+          java.lang.Iterable<? extends TideChart.TideChartContextChange> values) {
+        if (eventsBuilder_ == null) {
+          ensureEventsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, events_);
+          onChanged();
+        } else {
+          eventsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder clearEvents() {
+        if (eventsBuilder_ == null) {
+          events_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+          onChanged();
+        } else {
+          eventsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public Builder removeEvents(int index) {
+        if (eventsBuilder_ == null) {
+          ensureEventsIsMutable();
+          events_.remove(index);
+          onChanged();
+        } else {
+          eventsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public TideChart.TideChartContextChange.Builder getEventsBuilder(
+          int index) {
+        return getEventsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public TideChart.TideChartContextChangeOrBuilder getEventsOrBuilder(
+          int index) {
+        if (eventsBuilder_ == null) {
+          return events_.get(index);  } else {
+          return eventsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartContextChangeOrBuilder> 
+           getEventsOrBuilderList() {
+        if (eventsBuilder_ != null) {
+          return eventsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(events_);
+        }
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public TideChart.TideChartContextChange.Builder addEventsBuilder() {
+        return getEventsFieldBuilder().addBuilder(
+            TideChart.TideChartContextChange.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public TideChart.TideChartContextChange.Builder addEventsBuilder(
+          int index) {
+        return getEventsFieldBuilder().addBuilder(
+            index, TideChart.TideChartContextChange.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * lost of context status change events (start / stop, debugging events, etc.)
+       * </pre>
+       *
+       * <code>repeated .TideChartContextChange events = 14;</code>
+       */
+      public java.util.List<TideChart.TideChartContextChange.Builder> 
+           getEventsBuilderList() {
+        return getEventsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartContextChange, TideChart.TideChartContextChange.Builder, TideChart.TideChartContextChangeOrBuilder> 
+          getEventsFieldBuilder() {
+        if (eventsBuilder_ == null) {
+          eventsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartContextChange, TideChart.TideChartContextChange.Builder, TideChart.TideChartContextChangeOrBuilder>(
+                  events_,
+                  ((bitField0_ & 0x00000080) != 0),
+                  getParentForChildren(),
+                  isClean());
+          events_ = null;
+        }
+        return eventsBuilder_;
+      }
+
+      private java.util.List<TideChart.TideChartLogEntry> log_ =
+        java.util.Collections.emptyList();
+      private void ensureLogIsMutable() {
+        if (!((bitField0_ & 0x00000100) != 0)) {
+          log_ = new java.util.ArrayList<TideChart.TideChartLogEntry>(log_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartLogEntry, TideChart.TideChartLogEntry.Builder, TideChart.TideChartLogEntryOrBuilder> logBuilder_;
+
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public java.util.List<TideChart.TideChartLogEntry> getLogList() {
+        if (logBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(log_);
+        } else {
+          return logBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public int getLogCount() {
+        if (logBuilder_ == null) {
+          return log_.size();
+        } else {
+          return logBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public TideChart.TideChartLogEntry getLog(int index) {
+        if (logBuilder_ == null) {
+          return log_.get(index);
+        } else {
+          return logBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder setLog(
+          int index, TideChart.TideChartLogEntry value) {
+        if (logBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLogIsMutable();
+          log_.set(index, value);
+          onChanged();
+        } else {
+          logBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder setLog(
+          int index, TideChart.TideChartLogEntry.Builder builderForValue) {
+        if (logBuilder_ == null) {
+          ensureLogIsMutable();
+          log_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          logBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder addLog(TideChart.TideChartLogEntry value) {
+        if (logBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLogIsMutable();
+          log_.add(value);
+          onChanged();
+        } else {
+          logBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder addLog(
+          int index, TideChart.TideChartLogEntry value) {
+        if (logBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLogIsMutable();
+          log_.add(index, value);
+          onChanged();
+        } else {
+          logBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder addLog(
+          TideChart.TideChartLogEntry.Builder builderForValue) {
+        if (logBuilder_ == null) {
+          ensureLogIsMutable();
+          log_.add(builderForValue.build());
+          onChanged();
+        } else {
+          logBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder addLog(
+          int index, TideChart.TideChartLogEntry.Builder builderForValue) {
+        if (logBuilder_ == null) {
+          ensureLogIsMutable();
+          log_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          logBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder addAllLog(
+          java.lang.Iterable<? extends TideChart.TideChartLogEntry> values) {
+        if (logBuilder_ == null) {
+          ensureLogIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, log_);
+          onChanged();
+        } else {
+          logBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder clearLog() {
+        if (logBuilder_ == null) {
+          log_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          logBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public Builder removeLog(int index) {
+        if (logBuilder_ == null) {
+          ensureLogIsMutable();
+          log_.remove(index);
+          onChanged();
+        } else {
+          logBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public TideChart.TideChartLogEntry.Builder getLogBuilder(
+          int index) {
+        return getLogFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public TideChart.TideChartLogEntryOrBuilder getLogOrBuilder(
+          int index) {
+        if (logBuilder_ == null) {
+          return log_.get(index);  } else {
+          return logBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartLogEntryOrBuilder> 
+           getLogOrBuilderList() {
+        if (logBuilder_ != null) {
+          return logBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(log_);
+        }
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public TideChart.TideChartLogEntry.Builder addLogBuilder() {
+        return getLogFieldBuilder().addBuilder(
+            TideChart.TideChartLogEntry.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public TideChart.TideChartLogEntry.Builder addLogBuilder(
+          int index) {
+        return getLogFieldBuilder().addBuilder(
+            index, TideChart.TideChartLogEntry.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * list of all the log entries from the execution context
+       * </pre>
+       *
+       * <code>repeated .TideChartLogEntry log = 15;</code>
+       */
+      public java.util.List<TideChart.TideChartLogEntry.Builder> 
+           getLogBuilderList() {
+        return getLogFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartLogEntry, TideChart.TideChartLogEntry.Builder, TideChart.TideChartLogEntryOrBuilder> 
+          getLogFieldBuilder() {
+        if (logBuilder_ == null) {
+          logBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartLogEntry, TideChart.TideChartLogEntry.Builder, TideChart.TideChartLogEntryOrBuilder>(
+                  log_,
+                  ((bitField0_ & 0x00000100) != 0),
+                  getParentForChildren(),
+                  isClean());
+          log_ = null;
+        }
+        return logBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:TideChartContext)
+    }
+
+    // @@protoc_insertion_point(class_scope:TideChartContext)
+    private static final TideChart.TideChartContext DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new TideChart.TideChartContext();
+    }
+
+    public static TideChart.TideChartContext getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TideChartContext>
+        PARSER = new com.google.protobuf.AbstractParser<TideChartContext>() {
+      @java.lang.Override
+      public TideChartContext parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new TideChartContext(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<TideChartContext> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TideChartContext> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public TideChart.TideChartContext getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface TideChartDataOrBuilder extends
       // @@protoc_insertion_point(interface_extends:TideChartData)
       com.google.protobuf.MessageOrBuilder {
@@ -53527,50 +61666,6 @@ public final class TideChart {
      */
     TideChart.TideChartLibraryOrBuilder getLibraryOrBuilder(
         int index);
-
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    java.util.List<TideChart.TideChartProperty> 
-        getGlobalList();
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    TideChart.TideChartProperty getGlobal(int index);
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    int getGlobalCount();
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
-        getGlobalOrBuilderList();
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    TideChart.TideChartPropertyOrBuilder getGlobalOrBuilder(
-        int index);
   }
   /**
    * Protobuf type {@code TideChartData}
@@ -53597,7 +61692,6 @@ public final class TideChart {
       props_ = java.util.Collections.emptyList();
       notes_ = java.util.Collections.emptyList();
       library_ = java.util.Collections.emptyList();
-      global_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -53715,15 +61809,6 @@ public final class TideChart {
                   input.readMessage(TideChart.TideChartLibrary.parser(), extensionRegistry));
               break;
             }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                global_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              global_.add(
-                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
-              break;
-            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -53750,9 +61835,6 @@ public final class TideChart {
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
           library_ = java.util.Collections.unmodifiableList(library_);
-        }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
-          global_ = java.util.Collections.unmodifiableList(global_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -54327,61 +62409,6 @@ public final class TideChart {
       return library_.get(index);
     }
 
-    public static final int GLOBAL_FIELD_NUMBER = 13;
-    private java.util.List<TideChart.TideChartProperty> global_;
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    public java.util.List<TideChart.TideChartProperty> getGlobalList() {
-      return global_;
-    }
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
-        getGlobalOrBuilderList() {
-      return global_;
-    }
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    public int getGlobalCount() {
-      return global_.size();
-    }
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    public TideChart.TideChartProperty getGlobal(int index) {
-      return global_.get(index);
-    }
-    /**
-     * <pre>
-     * global state variables shared by all graphs
-     * </pre>
-     *
-     * <code>repeated .TideChartProperty global = 13;</code>
-     */
-    public TideChart.TideChartPropertyOrBuilder getGlobalOrBuilder(
-        int index) {
-      return global_.get(index);
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -54432,9 +62459,6 @@ public final class TideChart {
       for (int i = 0; i < library_.size(); i++) {
         output.writeMessage(12, library_.get(i));
       }
-      for (int i = 0; i < global_.size(); i++) {
-        output.writeMessage(13, global_.get(i));
-      }
       unknownFields.writeTo(output);
     }
 
@@ -54484,10 +62508,6 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, library_.get(i));
       }
-      for (int i = 0; i < global_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, global_.get(i));
-      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -54527,8 +62547,6 @@ public final class TideChart {
           .equals(other.getNotesList())) return false;
       if (!getLibraryList()
           .equals(other.getLibraryList())) return false;
-      if (!getGlobalList()
-          .equals(other.getGlobalList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -54571,10 +62589,6 @@ public final class TideChart {
       if (getLibraryCount() > 0) {
         hash = (37 * hash) + LIBRARY_FIELD_NUMBER;
         hash = (53 * hash) + getLibraryList().hashCode();
-      }
-      if (getGlobalCount() > 0) {
-        hash = (37 * hash) + GLOBAL_FIELD_NUMBER;
-        hash = (53 * hash) + getGlobalList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -54708,7 +62722,6 @@ public final class TideChart {
           getPropsFieldBuilder();
           getNotesFieldBuilder();
           getLibraryFieldBuilder();
-          getGlobalFieldBuilder();
         }
       }
       @java.lang.Override
@@ -54753,12 +62766,6 @@ public final class TideChart {
           bitField0_ = (bitField0_ & ~0x00000008);
         } else {
           libraryBuilder_.clear();
-        }
-        if (globalBuilder_ == null) {
-          global_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-        } else {
-          globalBuilder_.clear();
         }
         return this;
       }
@@ -54830,15 +62837,6 @@ public final class TideChart {
           result.library_ = library_;
         } else {
           result.library_ = libraryBuilder_.build();
-        }
-        if (globalBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) != 0)) {
-            global_ = java.util.Collections.unmodifiableList(global_);
-            bitField0_ = (bitField0_ & ~0x00000010);
-          }
-          result.global_ = global_;
-        } else {
-          result.global_ = globalBuilder_.build();
         }
         onBuilt();
         return result;
@@ -55021,32 +63019,6 @@ public final class TideChart {
                    getLibraryFieldBuilder() : null;
             } else {
               libraryBuilder_.addAllMessages(other.library_);
-            }
-          }
-        }
-        if (globalBuilder_ == null) {
-          if (!other.global_.isEmpty()) {
-            if (global_.isEmpty()) {
-              global_ = other.global_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-            } else {
-              ensureGlobalIsMutable();
-              global_.addAll(other.global_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.global_.isEmpty()) {
-            if (globalBuilder_.isEmpty()) {
-              globalBuilder_.dispose();
-              globalBuilder_ = null;
-              global_ = other.global_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-              globalBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getGlobalFieldBuilder() : null;
-            } else {
-              globalBuilder_.addAllMessages(other.global_);
             }
           }
         }
@@ -57038,318 +65010,6 @@ public final class TideChart {
           library_ = null;
         }
         return libraryBuilder_;
-      }
-
-      private java.util.List<TideChart.TideChartProperty> global_ =
-        java.util.Collections.emptyList();
-      private void ensureGlobalIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
-          global_ = new java.util.ArrayList<TideChart.TideChartProperty>(global_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> globalBuilder_;
-
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public java.util.List<TideChart.TideChartProperty> getGlobalList() {
-        if (globalBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(global_);
-        } else {
-          return globalBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public int getGlobalCount() {
-        if (globalBuilder_ == null) {
-          return global_.size();
-        } else {
-          return globalBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public TideChart.TideChartProperty getGlobal(int index) {
-        if (globalBuilder_ == null) {
-          return global_.get(index);
-        } else {
-          return globalBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder setGlobal(
-          int index, TideChart.TideChartProperty value) {
-        if (globalBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureGlobalIsMutable();
-          global_.set(index, value);
-          onChanged();
-        } else {
-          globalBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder setGlobal(
-          int index, TideChart.TideChartProperty.Builder builderForValue) {
-        if (globalBuilder_ == null) {
-          ensureGlobalIsMutable();
-          global_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          globalBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder addGlobal(TideChart.TideChartProperty value) {
-        if (globalBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureGlobalIsMutable();
-          global_.add(value);
-          onChanged();
-        } else {
-          globalBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder addGlobal(
-          int index, TideChart.TideChartProperty value) {
-        if (globalBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureGlobalIsMutable();
-          global_.add(index, value);
-          onChanged();
-        } else {
-          globalBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder addGlobal(
-          TideChart.TideChartProperty.Builder builderForValue) {
-        if (globalBuilder_ == null) {
-          ensureGlobalIsMutable();
-          global_.add(builderForValue.build());
-          onChanged();
-        } else {
-          globalBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder addGlobal(
-          int index, TideChart.TideChartProperty.Builder builderForValue) {
-        if (globalBuilder_ == null) {
-          ensureGlobalIsMutable();
-          global_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          globalBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder addAllGlobal(
-          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
-        if (globalBuilder_ == null) {
-          ensureGlobalIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, global_);
-          onChanged();
-        } else {
-          globalBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder clearGlobal() {
-        if (globalBuilder_ == null) {
-          global_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-          onChanged();
-        } else {
-          globalBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public Builder removeGlobal(int index) {
-        if (globalBuilder_ == null) {
-          ensureGlobalIsMutable();
-          global_.remove(index);
-          onChanged();
-        } else {
-          globalBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public TideChart.TideChartProperty.Builder getGlobalBuilder(
-          int index) {
-        return getGlobalFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public TideChart.TideChartPropertyOrBuilder getGlobalOrBuilder(
-          int index) {
-        if (globalBuilder_ == null) {
-          return global_.get(index);  } else {
-          return globalBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
-           getGlobalOrBuilderList() {
-        if (globalBuilder_ != null) {
-          return globalBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(global_);
-        }
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public TideChart.TideChartProperty.Builder addGlobalBuilder() {
-        return getGlobalFieldBuilder().addBuilder(
-            TideChart.TideChartProperty.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public TideChart.TideChartProperty.Builder addGlobalBuilder(
-          int index) {
-        return getGlobalFieldBuilder().addBuilder(
-            index, TideChart.TideChartProperty.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * global state variables shared by all graphs
-       * </pre>
-       *
-       * <code>repeated .TideChartProperty global = 13;</code>
-       */
-      public java.util.List<TideChart.TideChartProperty.Builder> 
-           getGlobalBuilderList() {
-        return getGlobalFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
-          getGlobalFieldBuilder() {
-        if (globalBuilder_ == null) {
-          globalBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
-                  global_,
-                  ((bitField0_ & 0x00000010) != 0),
-                  getParentForChildren(),
-                  isClean());
-          global_ = null;
-        }
-        return globalBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -59482,6 +67142,50 @@ public final class TideChart {
      */
     TideChart.TideChartDataOrBuilder getHistoryOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    java.util.List<TideChart.TideChartContext> 
+        getContextList();
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    TideChart.TideChartContext getContext(int index);
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    int getContextCount();
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    java.util.List<? extends TideChart.TideChartContextOrBuilder> 
+        getContextOrBuilderList();
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    TideChart.TideChartContextOrBuilder getContextOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code TideChartFile}
@@ -59505,6 +67209,7 @@ public final class TideChart {
       working_ = java.util.Collections.emptyList();
       remote_ = java.util.Collections.emptyList();
       history_ = java.util.Collections.emptyList();
+      context_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -59614,6 +67319,15 @@ public final class TideChart {
                   input.readMessage(TideChart.TideChartData.parser(), extensionRegistry));
               break;
             }
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                context_ = new java.util.ArrayList<TideChart.TideChartContext>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              context_.add(
+                  input.readMessage(TideChart.TideChartContext.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -59637,6 +67351,9 @@ public final class TideChart {
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           history_ = java.util.Collections.unmodifiableList(history_);
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          context_ = java.util.Collections.unmodifiableList(context_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -60105,6 +67822,61 @@ public final class TideChart {
       return history_.get(index);
     }
 
+    public static final int CONTEXT_FIELD_NUMBER = 11;
+    private java.util.List<TideChart.TideChartContext> context_;
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    public java.util.List<TideChart.TideChartContext> getContextList() {
+      return context_;
+    }
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartContextOrBuilder> 
+        getContextOrBuilderList() {
+      return context_;
+    }
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    public int getContextCount() {
+      return context_.size();
+    }
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    public TideChart.TideChartContext getContext(int index) {
+      return context_.get(index);
+    }
+    /**
+     * <pre>
+     * saved execution context (used by chart emulation, snapshots and debugging)
+     * </pre>
+     *
+     * <code>repeated .TideChartContext context = 11;</code>
+     */
+    public TideChart.TideChartContextOrBuilder getContextOrBuilder(
+        int index) {
+      return context_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -60149,6 +67921,9 @@ public final class TideChart {
       for (int i = 0; i < history_.size(); i++) {
         output.writeMessage(10, history_.get(i));
       }
+      for (int i = 0; i < context_.size(); i++) {
+        output.writeMessage(11, context_.get(i));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -60192,6 +67967,10 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(10, history_.get(i));
       }
+      for (int i = 0; i < context_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, context_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -60230,6 +68009,8 @@ public final class TideChart {
           .equals(other.getRemoteList())) return false;
       if (!getHistoryList()
           .equals(other.getHistoryList())) return false;
+      if (!getContextList()
+          .equals(other.getContextList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -60268,6 +68049,10 @@ public final class TideChart {
       if (getHistoryCount() > 0) {
         hash = (37 * hash) + HISTORY_FIELD_NUMBER;
         hash = (53 * hash) + getHistoryList().hashCode();
+      }
+      if (getContextCount() > 0) {
+        hash = (37 * hash) + CONTEXT_FIELD_NUMBER;
+        hash = (53 * hash) + getContextList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -60400,6 +68185,7 @@ public final class TideChart {
           getWorkingFieldBuilder();
           getRemoteFieldBuilder();
           getHistoryFieldBuilder();
+          getContextFieldBuilder();
         }
       }
       @java.lang.Override
@@ -60440,6 +68226,12 @@ public final class TideChart {
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           historyBuilder_.clear();
+        }
+        if (contextBuilder_ == null) {
+          context_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        } else {
+          contextBuilder_.clear();
         }
         return this;
       }
@@ -60505,6 +68297,15 @@ public final class TideChart {
           result.history_ = history_;
         } else {
           result.history_ = historyBuilder_.build();
+        }
+        if (contextBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            context_ = java.util.Collections.unmodifiableList(context_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.context_ = context_;
+        } else {
+          result.context_ = contextBuilder_.build();
         }
         onBuilt();
         return result;
@@ -60656,6 +68457,32 @@ public final class TideChart {
                    getHistoryFieldBuilder() : null;
             } else {
               historyBuilder_.addAllMessages(other.history_);
+            }
+          }
+        }
+        if (contextBuilder_ == null) {
+          if (!other.context_.isEmpty()) {
+            if (context_.isEmpty()) {
+              context_ = other.context_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureContextIsMutable();
+              context_.addAll(other.context_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.context_.isEmpty()) {
+            if (contextBuilder_.isEmpty()) {
+              contextBuilder_.dispose();
+              contextBuilder_ = null;
+              context_ = other.context_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              contextBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getContextFieldBuilder() : null;
+            } else {
+              contextBuilder_.addAllMessages(other.context_);
             }
           }
         }
@@ -62310,6 +70137,318 @@ public final class TideChart {
           history_ = null;
         }
         return historyBuilder_;
+      }
+
+      private java.util.List<TideChart.TideChartContext> context_ =
+        java.util.Collections.emptyList();
+      private void ensureContextIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          context_ = new java.util.ArrayList<TideChart.TideChartContext>(context_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartContext, TideChart.TideChartContext.Builder, TideChart.TideChartContextOrBuilder> contextBuilder_;
+
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public java.util.List<TideChart.TideChartContext> getContextList() {
+        if (contextBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(context_);
+        } else {
+          return contextBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public int getContextCount() {
+        if (contextBuilder_ == null) {
+          return context_.size();
+        } else {
+          return contextBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public TideChart.TideChartContext getContext(int index) {
+        if (contextBuilder_ == null) {
+          return context_.get(index);
+        } else {
+          return contextBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder setContext(
+          int index, TideChart.TideChartContext value) {
+        if (contextBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureContextIsMutable();
+          context_.set(index, value);
+          onChanged();
+        } else {
+          contextBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder setContext(
+          int index, TideChart.TideChartContext.Builder builderForValue) {
+        if (contextBuilder_ == null) {
+          ensureContextIsMutable();
+          context_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          contextBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder addContext(TideChart.TideChartContext value) {
+        if (contextBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureContextIsMutable();
+          context_.add(value);
+          onChanged();
+        } else {
+          contextBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder addContext(
+          int index, TideChart.TideChartContext value) {
+        if (contextBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureContextIsMutable();
+          context_.add(index, value);
+          onChanged();
+        } else {
+          contextBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder addContext(
+          TideChart.TideChartContext.Builder builderForValue) {
+        if (contextBuilder_ == null) {
+          ensureContextIsMutable();
+          context_.add(builderForValue.build());
+          onChanged();
+        } else {
+          contextBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder addContext(
+          int index, TideChart.TideChartContext.Builder builderForValue) {
+        if (contextBuilder_ == null) {
+          ensureContextIsMutable();
+          context_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          contextBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder addAllContext(
+          java.lang.Iterable<? extends TideChart.TideChartContext> values) {
+        if (contextBuilder_ == null) {
+          ensureContextIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, context_);
+          onChanged();
+        } else {
+          contextBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder clearContext() {
+        if (contextBuilder_ == null) {
+          context_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          contextBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public Builder removeContext(int index) {
+        if (contextBuilder_ == null) {
+          ensureContextIsMutable();
+          context_.remove(index);
+          onChanged();
+        } else {
+          contextBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public TideChart.TideChartContext.Builder getContextBuilder(
+          int index) {
+        return getContextFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public TideChart.TideChartContextOrBuilder getContextOrBuilder(
+          int index) {
+        if (contextBuilder_ == null) {
+          return context_.get(index);  } else {
+          return contextBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartContextOrBuilder> 
+           getContextOrBuilderList() {
+        if (contextBuilder_ != null) {
+          return contextBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(context_);
+        }
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public TideChart.TideChartContext.Builder addContextBuilder() {
+        return getContextFieldBuilder().addBuilder(
+            TideChart.TideChartContext.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public TideChart.TideChartContext.Builder addContextBuilder(
+          int index) {
+        return getContextFieldBuilder().addBuilder(
+            index, TideChart.TideChartContext.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * saved execution context (used by chart emulation, snapshots and debugging)
+       * </pre>
+       *
+       * <code>repeated .TideChartContext context = 11;</code>
+       */
+      public java.util.List<TideChart.TideChartContext.Builder> 
+           getContextBuilderList() {
+        return getContextFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartContext, TideChart.TideChartContext.Builder, TideChart.TideChartContextOrBuilder> 
+          getContextFieldBuilder() {
+        if (contextBuilder_ == null) {
+          contextBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartContext, TideChart.TideChartContext.Builder, TideChart.TideChartContextOrBuilder>(
+                  context_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          context_ = null;
+        }
+        return contextBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -65677,6 +73816,21 @@ public final class TideChart {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_TideChartMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_TideChartContextChange_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_TideChartContextChange_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_TideChartLogEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_TideChartLogEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_TideChartContext_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_TideChartContext_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_TideChartData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -65781,89 +73935,110 @@ public final class TideChart {
       "\0132\026.TideChartGraphCommandH\000\022*\n\005props\030\014 \001" +
       "(\0132\031.TideChartPropertyCommandH\000\022%\n\004note\030" +
       "\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007comman" +
-      "d\"8\n\025TideChartGroupCommand\022\037\n\004cmds\030\001 \003(\013" +
-      "2\021.TideChartCommand\"h\n\024TideChartMoveComm" +
-      "and\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022\020\n\010f" +
-      "romPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toPosY\030" +
-      "\005 \001(\021\"~\n\032TideChartCommentBoxCommand\022)\n\013f" +
-      "romComment\030\001 \001(\0132\024.TideChartCommentBox\022\'" +
-      "\n\ttoComment\030\002 \001(\0132\024.TideChartCommentBox\022" +
-      "\014\n\004type\030\003 \001(\t\"p\n\026TideChartWidgetCommand\022" +
-      "$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n" +
-      "\010toWidget\030\002 \001(\0132\020.TideChartWidget\022\014\n\004typ" +
-      "e\030\003 \001(\t\"f\n\024TideChartPortCommand\022 \n\010fromP" +
-      "ort\030\001 \001(\0132\016.TideChartPort\022\036\n\006toPort\030\002 \001(" +
-      "\0132\016.TideChartPort\022\014\n\004type\030\003 \001(\t\"f\n\024TideC" +
-      "hartLinkCommand\022 \n\010fromLink\030\001 \001(\0132\016.Tide" +
-      "ChartLink\022\036\n\006toLink\030\002 \001(\0132\016.TideChartLin" +
-      "k\022\014\n\004type\030\003 \001(\t\"f\n\024TideChartNodeCommand\022" +
-      " \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036\n\006toN" +
-      "ode\030\002 \001(\0132\016.TideChartNode\022\014\n\004type\030\003 \001(\t\"" +
-      "p\n\026TideChartRegionCommand\022$\n\nfromRegion\030" +
-      "\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(" +
-      "\0132\020.TideChartRegion\022\014\n\004type\030\003 \001(\t\"k\n\025Tid" +
-      "eChartGraphCommand\022\"\n\tfromGraph\030\001 \001(\0132\017." +
-      "TideChartGraph\022 \n\007toGraph\030\002 \001(\0132\017.TideCh" +
-      "artGraph\022\014\n\004type\030\003 \001(\t\"\303\001\n\030TideChartProp" +
-      "ertyCommand\022%\n\tfromProps\030\001 \003(\0132\022.TideCha" +
-      "rtProperty\022#\n\007toProps\030\002 \003(\0132\022.TideChartP" +
-      "roperty\022\014\n\004type\030\003 \001(\t\022\016\n\004node\030\005 \001(\tH\000\022\020\n" +
-      "\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n\005gra" +
-      "ph\030\010 \001(\tH\000B\010\n\006target\"\200\001\n\024TideChartNoteCo" +
-      "mmand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote\022\014\n\004" +
-      "type\030\002 \001(\t\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001" +
-      "(\tH\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017Tide" +
-      "ChartMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n" +
-      "\007extends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inport" +
-      "s\030\005 \003(\0132\016.TideChartPort\022 \n\010outports\030\006 \003(" +
-      "\0132\016.TideChartPort\022\035\n\005props\030\007 \003(\0132\016.TideC" +
-      "hartPort\"\221\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t" +
-      "\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013createdD" +
-      "ate\030\005 \001(\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007version\030" +
-      "\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n" +
-      "\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 " +
-      "\001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006br" +
-      "anch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132" +
-      "\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020.Tid" +
-      "eChartMethod\"\305\001\n\rTideChartSite\022\r\n\005index\030" +
-      "\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004" +
-      "path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001" +
-      "(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005gra" +
-      "ph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014" +
-      "\n\004port\030\013 \001(\t\"\211\002\n\020TideChartMessage\022\r\n\005ind" +
-      "ex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 " +
-      "\001(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n" +
-      "\006target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\thol" +
-      "dToken\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004typ" +
-      "e\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030" +
-      "\016 \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content" +
-      "\"\311\002\n\rTideChartData\022\017\n\007version\030\001 \001(\t\022\016\n\006b" +
-      "ranch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001" +
-      "(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t" +
-      "\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(" +
-      "\t\022\037\n\006sheets\030\t \003(\0132\017.TideChartGraph\022!\n\005pr" +
-      "ops\030\n \003(\0132\022.TideChartProperty\022\035\n\005notes\030\013" +
-      " \003(\0132\016.TideChartNote\022\"\n\007library\030\014 \003(\0132\021." +
-      "TideChartLibrary\022\"\n\006global\030\r \003(\0132\022.TideC" +
-      "hartProperty\"\240\001\n\017TideChartHeader\022\017\n\007vers" +
-      "ion\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(" +
-      "\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010" +
-      "commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013co" +
-      "mmitNotes\030\010 \001(\t\"\370\001\n\rTideChartFile\022\n\n\002id\030" +
-      "\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006ori" +
-      "gin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodif" +
-      "iedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartDa" +
-      "ta\022\"\n\007working\030\010 \003(\0132\021.TideChartCommand\022!" +
-      "\n\006remote\030\t \003(\0132\021.TideChartCommand\022\037\n\007his" +
-      "tory\030\n \003(\0132\016.TideChartData\"w\n\023TideChartF" +
-      "ileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004p" +
-      "ath\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDat" +
-      "e\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227\001\n\024TideChar" +
-      "tFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014" +
-      "\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modified" +
-      "Date\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030" +
-      "\007 \001(\0132\016.TideChartDataB\013B\tTideChartb\006prot" +
-      "o3"
+      "d\"<\n\025TideChartGroupCommand\022#\n\010commands\030\001" +
+      " \003(\0132\021.TideChartCommand\"h\n\024TideChartMove" +
+      "Command\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022" +
+      "\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toP" +
+      "osY\030\005 \001(\021\"~\n\032TideChartCommentBoxCommand\022" +
+      ")\n\013fromComment\030\001 \001(\0132\024.TideChartCommentB" +
+      "ox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartComment" +
+      "Box\022\014\n\004type\030\003 \001(\t\"p\n\026TideChartWidgetComm" +
+      "and\022$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidge" +
+      "t\022\"\n\010toWidget\030\002 \001(\0132\020.TideChartWidget\022\014\n" +
+      "\004type\030\003 \001(\t\"f\n\024TideChartPortCommand\022 \n\010f" +
+      "romPort\030\001 \001(\0132\016.TideChartPort\022\036\n\006toPort\030" +
+      "\002 \001(\0132\016.TideChartPort\022\014\n\004type\030\003 \001(\t\"f\n\024T" +
+      "ideChartLinkCommand\022 \n\010fromLink\030\001 \001(\0132\016." +
+      "TideChartLink\022\036\n\006toLink\030\002 \001(\0132\016.TideChar" +
+      "tLink\022\014\n\004type\030\003 \001(\t\"f\n\024TideChartNodeComm" +
+      "and\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036\n" +
+      "\006toNode\030\002 \001(\0132\016.TideChartNode\022\014\n\004type\030\003 " +
+      "\001(\t\"p\n\026TideChartRegionCommand\022$\n\nfromReg" +
+      "ion\030\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030" +
+      "\002 \001(\0132\020.TideChartRegion\022\014\n\004type\030\003 \001(\t\"k\n" +
+      "\025TideChartGraphCommand\022\"\n\tfromGraph\030\001 \001(" +
+      "\0132\017.TideChartGraph\022 \n\007toGraph\030\002 \001(\0132\017.Ti" +
+      "deChartGraph\022\014\n\004type\030\003 \001(\t\"\303\001\n\030TideChart" +
+      "PropertyCommand\022%\n\tfromProps\030\001 \003(\0132\022.Tid" +
+      "eChartProperty\022#\n\007toProps\030\002 \003(\0132\022.TideCh" +
+      "artProperty\022\014\n\004type\030\003 \001(\t\022\016\n\004node\030\005 \001(\tH" +
+      "\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n" +
+      "\005graph\030\010 \001(\tH\000B\010\n\006target\"\200\001\n\024TideChartNo" +
+      "teCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote" +
+      "\022\014\n\004type\030\002 \001(\t\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region" +
+      "\030\004 \001(\tH\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017" +
+      "TideChartMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(" +
+      "\t\022\017\n\007extends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007in" +
+      "ports\030\005 \003(\0132\016.TideChartPort\022 \n\010outports\030" +
+      "\006 \003(\0132\016.TideChartPort\022\035\n\005props\030\007 \003(\0132\016.T" +
+      "ideChartPort\"\221\001\n\017TideChartSource\022\n\n\002id\030\001" +
+      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013crea" +
+      "tedDate\030\005 \001(\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007vers" +
+      "ion\030\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content" +
+      "\"\255\001\n\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004nam" +
+      "e\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016" +
+      "\n\006branch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 " +
+      "\003(\0132\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020" +
+      ".TideChartMethod\"\350\001\n\rTideChartSite\022\r\n\005in" +
+      "dex\030\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite" +
+      "\022\014\n\004path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event" +
+      "\030\005 \001(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n" +
+      "\005graph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001" +
+      "(\t\022\014\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideCh" +
+      "artProperty\"\211\002\n\020TideChartMessage\022\r\n\005inde" +
+      "x\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001" +
+      "(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006" +
+      "target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\thold" +
+      "Token\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type" +
+      "\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016" +
+      " \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"" +
+      "k\n\026TideChartContextChange\022\r\n\005index\030\001 \001(\003" +
+      "\022\021\n\ttimestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005pro" +
+      "ps\030\004 \003(\0132\022.TideChartProperty\"\270\001\n\021TideCha" +
+      "rtLogEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002" +
+      " \001(\003\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.Ti" +
+      "deChartLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message" +
+      "\030\006 \001(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.Ti" +
+      "deChartProperty\"\355\002\n\020TideChartContext\022\n\n\002" +
+      "id\030\001 \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001" +
+      "(\003\022\017\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.Tid" +
+      "eChartSite\022#\n\010messages\030\006 \003(\0132\021.TideChart" +
+      "Message\022\"\n\006global\030\007 \003(\0132\022.TideChartPrope" +
+      "rty\022\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001" +
+      "(\003\022\016\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006p" +
+      "aused\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030" +
+      "\016 \003(\0132\027.TideChartContextChange\022\037\n\003log\030\017 " +
+      "\003(\0132\022.TideChartLogEntry\"\245\002\n\rTideChartDat" +
+      "a\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006so" +
+      "urce\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030" +
+      "\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 " +
+      "\001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\013" +
+      "2\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.TideC" +
+      "hartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideChartN" +
+      "ote\022\"\n\007library\030\014 \003(\0132\021.TideChartLibrary\"" +
+      "\240\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006" +
+      "branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 " +
+      "\001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(" +
+      "\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001" +
+      "(\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
+      "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014" +
+      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035" +
+      "\n\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working" +
+      "\030\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(" +
+      "\0132\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016." +
+      "TideChartData\022\"\n\007context\030\013 \003(\0132\021.TideCha" +
+      "rtContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001" +
+      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006orig" +
+      "in\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifi" +
+      "edBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002i" +
+      "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006o" +
+      "rigin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmod" +
+      "ifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChart" +
+      "Data*\235\001\n\021TideChartLogLevel\022\010\n\004none\020\000\022\t\n\005" +
+      "fatal\020\001\022\t\n\005error\020\002\022\r\n\texception\020\003\022\013\n\007war" +
+      "ning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006\022\t\n\005debug\020\007" +
+      "\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005trace\020\n\022\007\n\003a" +
+      "ll\020\013B\013B\tTideChartb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -65934,7 +74109,7 @@ public final class TideChart {
     internal_static_TideChartGroupCommand_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartGroupCommand_descriptor,
-        new java.lang.String[] { "Cmds", });
+        new java.lang.String[] { "Commands", });
     internal_static_TideChartMoveCommand_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_TideChartMoveCommand_fieldAccessorTable = new
@@ -66018,39 +74193,57 @@ public final class TideChart {
     internal_static_TideChartSite_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartSite_descriptor,
-        new java.lang.String[] { "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port", });
+        new java.lang.String[] { "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port", "Local", });
     internal_static_TideChartMessage_descriptor =
       getDescriptor().getMessageTypes().get(25);
     internal_static_TideChartMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartMessage_descriptor,
         new java.lang.String[] { "Index", "Timestamp", "Origin", "Previous", "Source", "Target", "DelayUntil", "HoldToken", "CancelToken", "Type", "Version", "JsonContent", "MsgContent", "Content", });
-    internal_static_TideChartData_descriptor =
+    internal_static_TideChartContextChange_descriptor =
       getDescriptor().getMessageTypes().get(26);
+    internal_static_TideChartContextChange_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_TideChartContextChange_descriptor,
+        new java.lang.String[] { "Index", "Timestamp", "Type", "Props", });
+    internal_static_TideChartLogEntry_descriptor =
+      getDescriptor().getMessageTypes().get(27);
+    internal_static_TideChartLogEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_TideChartLogEntry_descriptor,
+        new java.lang.String[] { "Index", "Timestamp", "Source", "Level", "Tags", "Message", "Refs", "Props", });
+    internal_static_TideChartContext_descriptor =
+      getDescriptor().getMessageTypes().get(28);
+    internal_static_TideChartContext_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_TideChartContext_descriptor,
+        new java.lang.String[] { "Id", "Index", "Timestamp", "Version", "Sites", "Messages", "Global", "StartTime", "StartIndex", "Active", "Waiting", "Paused", "Disabled", "Events", "Log", });
+    internal_static_TideChartData_descriptor =
+      getDescriptor().getMessageTypes().get(29);
     internal_static_TideChartData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartData_descriptor,
-        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Global", });
+        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", });
     internal_static_TideChartHeader_descriptor =
-      getDescriptor().getMessageTypes().get(27);
+      getDescriptor().getMessageTypes().get(30);
     internal_static_TideChartHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartHeader_descriptor,
         new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", });
     internal_static_TideChartFile_descriptor =
-      getDescriptor().getMessageTypes().get(28);
+      getDescriptor().getMessageTypes().get(31);
     internal_static_TideChartFile_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFile_descriptor,
-        new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", });
+        new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", "Context", });
     internal_static_TideChartFileHeader_descriptor =
-      getDescriptor().getMessageTypes().get(29);
+      getDescriptor().getMessageTypes().get(32);
     internal_static_TideChartFileHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFileHeader_descriptor,
         new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", });
     internal_static_TideChartFileCurrent_descriptor =
-      getDescriptor().getMessageTypes().get(30);
+      getDescriptor().getMessageTypes().get(33);
     internal_static_TideChartFileCurrent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFileCurrent_descriptor,

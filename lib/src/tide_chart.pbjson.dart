@@ -5,6 +5,24 @@
 // @dart = 2.3
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
+const TideChartLogLevel$json = const {
+  '1': 'TideChartLogLevel',
+  '2': const [
+    const {'1': 'none', '2': 0},
+    const {'1': 'fatal', '2': 1},
+    const {'1': 'error', '2': 2},
+    const {'1': 'exception', '2': 3},
+    const {'1': 'warning', '2': 4},
+    const {'1': 'info', '2': 5},
+    const {'1': 'message', '2': 6},
+    const {'1': 'debug', '2': 7},
+    const {'1': 'check', '2': 8},
+    const {'1': 'verbose', '2': 9},
+    const {'1': 'trace', '2': 10},
+    const {'1': 'all', '2': 11},
+  ],
+};
+
 const TideChartProperty$json = const {
   '1': 'TideChartProperty',
   '2': const [
@@ -203,7 +221,7 @@ const TideChartCommand$json = const {
 const TideChartGroupCommand$json = const {
   '1': 'TideChartGroupCommand',
   '2': const [
-    const {'1': 'cmds', '3': 1, '4': 3, '5': 11, '6': '.TideChartCommand', '10': 'cmds'},
+    const {'1': 'commands', '3': 1, '4': 3, '5': 11, '6': '.TideChartCommand', '10': 'commands'},
   ],
 };
 
@@ -368,6 +386,7 @@ const TideChartSite$json = const {
     const {'1': 'region', '3': 9, '4': 1, '5': 9, '10': 'region'},
     const {'1': 'node', '3': 10, '4': 1, '5': 9, '10': 'node'},
     const {'1': 'port', '3': 11, '4': 1, '5': 9, '10': 'port'},
+    const {'1': 'local', '3': 12, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'local'},
   ],
 };
 
@@ -393,6 +412,51 @@ const TideChartMessage$json = const {
   ],
 };
 
+const TideChartContextChange$json = const {
+  '1': 'TideChartContextChange',
+  '2': const [
+    const {'1': 'index', '3': 1, '4': 1, '5': 3, '10': 'index'},
+    const {'1': 'timestamp', '3': 2, '4': 1, '5': 3, '10': 'timestamp'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'props', '3': 4, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
+  ],
+};
+
+const TideChartLogEntry$json = const {
+  '1': 'TideChartLogEntry',
+  '2': const [
+    const {'1': 'index', '3': 1, '4': 1, '5': 3, '10': 'index'},
+    const {'1': 'timestamp', '3': 2, '4': 1, '5': 3, '10': 'timestamp'},
+    const {'1': 'source', '3': 3, '4': 1, '5': 3, '10': 'source'},
+    const {'1': 'level', '3': 4, '4': 1, '5': 14, '6': '.TideChartLogLevel', '10': 'level'},
+    const {'1': 'tags', '3': 5, '4': 3, '5': 9, '10': 'tags'},
+    const {'1': 'message', '3': 6, '4': 1, '5': 9, '10': 'message'},
+    const {'1': 'refs', '3': 7, '4': 3, '5': 3, '10': 'refs'},
+    const {'1': 'props', '3': 8, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
+  ],
+};
+
+const TideChartContext$json = const {
+  '1': 'TideChartContext',
+  '2': const [
+    const {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
+    const {'1': 'index', '3': 2, '4': 1, '5': 3, '10': 'index'},
+    const {'1': 'timestamp', '3': 3, '4': 1, '5': 3, '10': 'timestamp'},
+    const {'1': 'version', '3': 4, '4': 1, '5': 9, '10': 'version'},
+    const {'1': 'sites', '3': 5, '4': 3, '5': 11, '6': '.TideChartSite', '10': 'sites'},
+    const {'1': 'messages', '3': 6, '4': 3, '5': 11, '6': '.TideChartMessage', '10': 'messages'},
+    const {'1': 'global', '3': 7, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'global'},
+    const {'1': 'startTime', '3': 8, '4': 1, '5': 3, '10': 'startTime'},
+    const {'1': 'startIndex', '3': 9, '4': 1, '5': 3, '10': 'startIndex'},
+    const {'1': 'active', '3': 10, '4': 3, '5': 3, '10': 'active'},
+    const {'1': 'waiting', '3': 11, '4': 3, '5': 3, '10': 'waiting'},
+    const {'1': 'paused', '3': 12, '4': 3, '5': 3, '10': 'paused'},
+    const {'1': 'disabled', '3': 13, '4': 3, '5': 3, '10': 'disabled'},
+    const {'1': 'events', '3': 14, '4': 3, '5': 11, '6': '.TideChartContextChange', '10': 'events'},
+    const {'1': 'log', '3': 15, '4': 3, '5': 11, '6': '.TideChartLogEntry', '10': 'log'},
+  ],
+};
+
 const TideChartData$json = const {
   '1': 'TideChartData',
   '2': const [
@@ -408,7 +472,6 @@ const TideChartData$json = const {
     const {'1': 'props', '3': 10, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
     const {'1': 'notes', '3': 11, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
     const {'1': 'library', '3': 12, '4': 3, '5': 11, '6': '.TideChartLibrary', '10': 'library'},
-    const {'1': 'global', '3': 13, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'global'},
   ],
 };
 
@@ -439,6 +502,7 @@ const TideChartFile$json = const {
     const {'1': 'working', '3': 8, '4': 3, '5': 11, '6': '.TideChartCommand', '10': 'working'},
     const {'1': 'remote', '3': 9, '4': 3, '5': 11, '6': '.TideChartCommand', '10': 'remote'},
     const {'1': 'history', '3': 10, '4': 3, '5': 11, '6': '.TideChartData', '10': 'history'},
+    const {'1': 'context', '3': 11, '4': 3, '5': 11, '6': '.TideChartContext', '10': 'context'},
   ],
 };
 

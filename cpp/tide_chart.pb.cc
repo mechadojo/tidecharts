@@ -18,10 +18,14 @@
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<16> scc_info_TideChartCommand_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TideChartCommentBox_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartCommentBoxCommand_tide_5fchart_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_TideChartContext_tide_5fchart_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartContextChange_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_TideChartData_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TideChartLibrary_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TideChartLink_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartLinkCommand_tide_5fchart_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartLogEntry_tide_5fchart_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TideChartMessage_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartMethod_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TideChartMoveCommand_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_TideChartNode_tide_5fchart_2eproto;
@@ -34,7 +38,7 @@ extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::in
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartPropertyCommand_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TideChartRegion_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartRegionCommand_tide_5fchart_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TideChartSite_tide_5fchart_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartSite_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TideChartSource_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartWidget_tide_5fchart_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_tide_5fchart_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartWidgetCommand_tide_5fchart_2eproto;
@@ -170,6 +174,18 @@ class TideChartMessageDefaultTypeInternal {
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr jsoncontent_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr msgcontent_;
 } _TideChartMessage_default_instance_;
+class TideChartContextChangeDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TideChartContextChange> _instance;
+} _TideChartContextChange_default_instance_;
+class TideChartLogEntryDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TideChartLogEntry> _instance;
+} _TideChartLogEntry_default_instance_;
+class TideChartContextDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TideChartContext> _instance;
+} _TideChartContext_default_instance_;
 class TideChartDataDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TideChartData> _instance;
@@ -267,6 +283,40 @@ static void InitDefaultsscc_info_TideChartCommentBoxCommand_tide_5fchart_2eproto
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_TideChartCommentBoxCommand_tide_5fchart_2eproto}, {
       &scc_info_TideChartCommentBox_tide_5fchart_2eproto.base,}};
 
+static void InitDefaultsscc_info_TideChartContext_tide_5fchart_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_TideChartContext_default_instance_;
+    new (ptr) ::TideChartContext();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::TideChartContext::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_TideChartContext_tide_5fchart_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsscc_info_TideChartContext_tide_5fchart_2eproto}, {
+      &scc_info_TideChartSite_tide_5fchart_2eproto.base,
+      &scc_info_TideChartMessage_tide_5fchart_2eproto.base,
+      &scc_info_TideChartProperty_tide_5fchart_2eproto.base,
+      &scc_info_TideChartContextChange_tide_5fchart_2eproto.base,
+      &scc_info_TideChartLogEntry_tide_5fchart_2eproto.base,}};
+
+static void InitDefaultsscc_info_TideChartContextChange_tide_5fchart_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_TideChartContextChange_default_instance_;
+    new (ptr) ::TideChartContextChange();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::TideChartContextChange::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartContextChange_tide_5fchart_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_TideChartContextChange_tide_5fchart_2eproto}, {
+      &scc_info_TideChartProperty_tide_5fchart_2eproto.base,}};
+
 static void InitDefaultsscc_info_TideChartData_tide_5fchart_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -296,10 +346,11 @@ static void InitDefaultsscc_info_TideChartFile_tide_5fchart_2eproto() {
   ::TideChartFile::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TideChartFile_tide_5fchart_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_TideChartFile_tide_5fchart_2eproto}, {
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_TideChartFile_tide_5fchart_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsscc_info_TideChartFile_tide_5fchart_2eproto}, {
       &scc_info_TideChartData_tide_5fchart_2eproto.base,
-      &scc_info_TideChartCommand_tide_5fchart_2eproto.base,}};
+      &scc_info_TideChartCommand_tide_5fchart_2eproto.base,
+      &scc_info_TideChartContext_tide_5fchart_2eproto.base,}};
 
 static void InitDefaultsscc_info_TideChartFileCurrent_tide_5fchart_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -388,6 +439,21 @@ static void InitDefaultsscc_info_TideChartLinkCommand_tide_5fchart_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartLinkCommand_tide_5fchart_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_TideChartLinkCommand_tide_5fchart_2eproto}, {
       &scc_info_TideChartLink_tide_5fchart_2eproto.base,}};
+
+static void InitDefaultsscc_info_TideChartLogEntry_tide_5fchart_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_TideChartLogEntry_default_instance_;
+    new (ptr) ::TideChartLogEntry();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::TideChartLogEntry::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartLogEntry_tide_5fchart_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_TideChartLogEntry_tide_5fchart_2eproto}, {
+      &scc_info_TideChartProperty_tide_5fchart_2eproto.base,}};
 
 static void InitDefaultsscc_info_TideChartMessage_tide_5fchart_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -594,8 +660,9 @@ static void InitDefaultsscc_info_TideChartSite_tide_5fchart_2eproto() {
   ::TideChartSite::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TideChartSite_tide_5fchart_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_TideChartSite_tide_5fchart_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TideChartSite_tide_5fchart_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_TideChartSite_tide_5fchart_2eproto}, {
+      &scc_info_TideChartProperty_tide_5fchart_2eproto.base,}};
 
 static void InitDefaultsscc_info_TideChartSource_tide_5fchart_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -641,8 +708,8 @@ static void InitDefaultsscc_info_TideChartWidgetCommand_tide_5fchart_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_TideChartWidgetCommand_tide_5fchart_2eproto}, {
       &scc_info_TideChartWidget_tide_5fchart_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tide_5fchart_2eproto[31];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tide_5fchart_2eproto = nullptr;
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tide_5fchart_2eproto[34];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_tide_5fchart_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_tide_5fchart_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -830,7 +897,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TideChartGroupCommand, cmds_),
+  PROTOBUF_FIELD_OFFSET(::TideChartGroupCommand, commands_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TideChartMoveCommand, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -975,6 +1042,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::TideChartSite, region_),
   PROTOBUF_FIELD_OFFSET(::TideChartSite, node_),
   PROTOBUF_FIELD_OFFSET(::TideChartSite, port_),
+  PROTOBUF_FIELD_OFFSET(::TideChartSite, local_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TideChartMessage, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -995,6 +1063,48 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   offsetof(::TideChartMessageDefaultTypeInternal, msgcontent_),
   PROTOBUF_FIELD_OFFSET(::TideChartMessage, content_),
   ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::TideChartContextChange, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::TideChartContextChange, index_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContextChange, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContextChange, type_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContextChange, props_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, index_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, source_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, level_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, tags_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, message_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, refs_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLogEntry, props_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, id_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, index_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, version_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, sites_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, messages_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, global_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, starttime_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, startindex_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, active_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, waiting_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, paused_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, disabled_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, events_),
+  PROTOBUF_FIELD_OFFSET(::TideChartContext, log_),
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TideChartData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -1011,7 +1121,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::TideChartData, props_),
   PROTOBUF_FIELD_OFFSET(::TideChartData, notes_),
   PROTOBUF_FIELD_OFFSET(::TideChartData, library_),
-  PROTOBUF_FIELD_OFFSET(::TideChartData, global_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TideChartHeader, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1040,6 +1149,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::TideChartFile, working_),
   PROTOBUF_FIELD_OFFSET(::TideChartFile, remote_),
   PROTOBUF_FIELD_OFFSET(::TideChartFile, history_),
+  PROTOBUF_FIELD_OFFSET(::TideChartFile, context_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TideChartFileHeader, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1090,12 +1200,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 287, -1, sizeof(::TideChartSource)},
   { 300, -1, sizeof(::TideChartLibrary)},
   { 313, -1, sizeof(::TideChartSite)},
-  { 329, -1, sizeof(::TideChartMessage)},
-  { 348, -1, sizeof(::TideChartData)},
-  { 366, -1, sizeof(::TideChartHeader)},
-  { 379, -1, sizeof(::TideChartFile)},
-  { 394, -1, sizeof(::TideChartFileHeader)},
-  { 405, -1, sizeof(::TideChartFileCurrent)},
+  { 330, -1, sizeof(::TideChartMessage)},
+  { 349, -1, sizeof(::TideChartContextChange)},
+  { 358, -1, sizeof(::TideChartLogEntry)},
+  { 371, -1, sizeof(::TideChartContext)},
+  { 391, -1, sizeof(::TideChartData)},
+  { 408, -1, sizeof(::TideChartHeader)},
+  { 421, -1, sizeof(::TideChartFile)},
+  { 437, -1, sizeof(::TideChartFileHeader)},
+  { 448, -1, sizeof(::TideChartFileCurrent)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1125,6 +1238,9 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartLibrary_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartSite_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartMessage_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartContextChange_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartLogEntry_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartContext_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartData_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartHeader_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_TideChartFile_default_instance_),
@@ -1204,96 +1320,119 @@ const char descriptor_table_protodef_tide_5fchart_2eproto[] PROTOBUF_SECTION_VAR
   "\0132\026.TideChartGraphCommandH\000\022*\n\005props\030\014 \001"
   "(\0132\031.TideChartPropertyCommandH\000\022%\n\004note\030"
   "\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007comman"
-  "d\"8\n\025TideChartGroupCommand\022\037\n\004cmds\030\001 \003(\013"
-  "2\021.TideChartCommand\"h\n\024TideChartMoveComm"
-  "and\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022\020\n\010f"
-  "romPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toPosY\030"
-  "\005 \001(\021\"~\n\032TideChartCommentBoxCommand\022)\n\013f"
-  "romComment\030\001 \001(\0132\024.TideChartCommentBox\022\'"
-  "\n\ttoComment\030\002 \001(\0132\024.TideChartCommentBox\022"
-  "\014\n\004type\030\003 \001(\t\"p\n\026TideChartWidgetCommand\022"
-  "$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n"
-  "\010toWidget\030\002 \001(\0132\020.TideChartWidget\022\014\n\004typ"
-  "e\030\003 \001(\t\"f\n\024TideChartPortCommand\022 \n\010fromP"
-  "ort\030\001 \001(\0132\016.TideChartPort\022\036\n\006toPort\030\002 \001("
-  "\0132\016.TideChartPort\022\014\n\004type\030\003 \001(\t\"f\n\024TideC"
-  "hartLinkCommand\022 \n\010fromLink\030\001 \001(\0132\016.Tide"
-  "ChartLink\022\036\n\006toLink\030\002 \001(\0132\016.TideChartLin"
-  "k\022\014\n\004type\030\003 \001(\t\"f\n\024TideChartNodeCommand\022"
-  " \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036\n\006toN"
-  "ode\030\002 \001(\0132\016.TideChartNode\022\014\n\004type\030\003 \001(\t\""
-  "p\n\026TideChartRegionCommand\022$\n\nfromRegion\030"
-  "\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001("
-  "\0132\020.TideChartRegion\022\014\n\004type\030\003 \001(\t\"k\n\025Tid"
-  "eChartGraphCommand\022\"\n\tfromGraph\030\001 \001(\0132\017."
-  "TideChartGraph\022 \n\007toGraph\030\002 \001(\0132\017.TideCh"
-  "artGraph\022\014\n\004type\030\003 \001(\t\"\303\001\n\030TideChartProp"
-  "ertyCommand\022%\n\tfromProps\030\001 \003(\0132\022.TideCha"
-  "rtProperty\022#\n\007toProps\030\002 \003(\0132\022.TideChartP"
-  "roperty\022\014\n\004type\030\003 \001(\t\022\016\n\004node\030\005 \001(\tH\000\022\020\n"
-  "\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n\005gra"
-  "ph\030\010 \001(\tH\000B\010\n\006target\"\200\001\n\024TideChartNoteCo"
-  "mmand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote\022\014\n\004"
-  "type\030\002 \001(\t\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001"
-  "(\tH\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017Tide"
-  "ChartMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n"
-  "\007extends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inport"
-  "s\030\005 \003(\0132\016.TideChartPort\022 \n\010outports\030\006 \003("
-  "\0132\016.TideChartPort\022\035\n\005props\030\007 \003(\0132\016.TideC"
-  "hartPort\"\221\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t"
-  "\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013createdD"
-  "ate\030\005 \001(\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007version\030"
-  "\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n"
-  "\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 "
-  "\001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006br"
-  "anch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132"
-  "\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020.Tid"
-  "eChartMethod\"\305\001\n\rTideChartSite\022\r\n\005index\030"
-  "\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004"
-  "path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001"
-  "(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005gra"
-  "ph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014"
-  "\n\004port\030\013 \001(\t\"\211\002\n\020TideChartMessage\022\r\n\005ind"
-  "ex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 "
-  "\001(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n"
-  "\006target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\thol"
-  "dToken\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004typ"
-  "e\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030"
-  "\016 \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content"
-  "\"\311\002\n\rTideChartData\022\017\n\007version\030\001 \001(\t\022\016\n\006b"
-  "ranch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001"
-  "(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t"
-  "\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001("
-  "\t\022\037\n\006sheets\030\t \003(\0132\017.TideChartGraph\022!\n\005pr"
-  "ops\030\n \003(\0132\022.TideChartProperty\022\035\n\005notes\030\013"
-  " \003(\0132\016.TideChartNote\022\"\n\007library\030\014 \003(\0132\021."
-  "TideChartLibrary\022\"\n\006global\030\r \003(\0132\022.TideC"
-  "hartProperty\"\240\001\n\017TideChartHeader\022\017\n\007vers"
-  "ion\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001("
-  "\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010"
-  "commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013co"
-  "mmitNotes\030\010 \001(\t\"\370\001\n\rTideChartFile\022\n\n\002id\030"
-  "\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006ori"
-  "gin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodif"
-  "iedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartDa"
-  "ta\022\"\n\007working\030\010 \003(\0132\021.TideChartCommand\022!"
-  "\n\006remote\030\t \003(\0132\021.TideChartCommand\022\037\n\007his"
-  "tory\030\n \003(\0132\016.TideChartData\"w\n\023TideChartF"
-  "ileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004p"
-  "ath\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDat"
-  "e\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227\001\n\024TideChar"
-  "tFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014"
-  "\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modified"
-  "Date\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030"
-  "\007 \001(\0132\016.TideChartDataB\013B\tTideChartb\006prot"
-  "o3"
+  "d\"<\n\025TideChartGroupCommand\022#\n\010commands\030\001"
+  " \003(\0132\021.TideChartCommand\"h\n\024TideChartMove"
+  "Command\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022"
+  "\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toP"
+  "osY\030\005 \001(\021\"~\n\032TideChartCommentBoxCommand\022"
+  ")\n\013fromComment\030\001 \001(\0132\024.TideChartCommentB"
+  "ox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartComment"
+  "Box\022\014\n\004type\030\003 \001(\t\"p\n\026TideChartWidgetComm"
+  "and\022$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidge"
+  "t\022\"\n\010toWidget\030\002 \001(\0132\020.TideChartWidget\022\014\n"
+  "\004type\030\003 \001(\t\"f\n\024TideChartPortCommand\022 \n\010f"
+  "romPort\030\001 \001(\0132\016.TideChartPort\022\036\n\006toPort\030"
+  "\002 \001(\0132\016.TideChartPort\022\014\n\004type\030\003 \001(\t\"f\n\024T"
+  "ideChartLinkCommand\022 \n\010fromLink\030\001 \001(\0132\016."
+  "TideChartLink\022\036\n\006toLink\030\002 \001(\0132\016.TideChar"
+  "tLink\022\014\n\004type\030\003 \001(\t\"f\n\024TideChartNodeComm"
+  "and\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036\n"
+  "\006toNode\030\002 \001(\0132\016.TideChartNode\022\014\n\004type\030\003 "
+  "\001(\t\"p\n\026TideChartRegionCommand\022$\n\nfromReg"
+  "ion\030\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030"
+  "\002 \001(\0132\020.TideChartRegion\022\014\n\004type\030\003 \001(\t\"k\n"
+  "\025TideChartGraphCommand\022\"\n\tfromGraph\030\001 \001("
+  "\0132\017.TideChartGraph\022 \n\007toGraph\030\002 \001(\0132\017.Ti"
+  "deChartGraph\022\014\n\004type\030\003 \001(\t\"\303\001\n\030TideChart"
+  "PropertyCommand\022%\n\tfromProps\030\001 \003(\0132\022.Tid"
+  "eChartProperty\022#\n\007toProps\030\002 \003(\0132\022.TideCh"
+  "artProperty\022\014\n\004type\030\003 \001(\t\022\016\n\004node\030\005 \001(\tH"
+  "\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n"
+  "\005graph\030\010 \001(\tH\000B\010\n\006target\"\200\001\n\024TideChartNo"
+  "teCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote"
+  "\022\014\n\004type\030\002 \001(\t\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region"
+  "\030\004 \001(\tH\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017"
+  "TideChartMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001("
+  "\t\022\017\n\007extends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007in"
+  "ports\030\005 \003(\0132\016.TideChartPort\022 \n\010outports\030"
+  "\006 \003(\0132\016.TideChartPort\022\035\n\005props\030\007 \003(\0132\016.T"
+  "ideChartPort\"\221\001\n\017TideChartSource\022\n\n\002id\030\001"
+  " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013crea"
+  "tedDate\030\005 \001(\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007vers"
+  "ion\030\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content"
+  "\"\255\001\n\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004nam"
+  "e\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016"
+  "\n\006branch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 "
+  "\003(\0132\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020"
+  ".TideChartMethod\"\350\001\n\rTideChartSite\022\r\n\005in"
+  "dex\030\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite"
+  "\022\014\n\004path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event"
+  "\030\005 \001(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n"
+  "\005graph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001"
+  "(\t\022\014\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideCh"
+  "artProperty\"\211\002\n\020TideChartMessage\022\r\n\005inde"
+  "x\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001"
+  "(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006"
+  "target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\thold"
+  "Token\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type"
+  "\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016"
+  " \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\""
+  "k\n\026TideChartContextChange\022\r\n\005index\030\001 \001(\003"
+  "\022\021\n\ttimestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005pro"
+  "ps\030\004 \003(\0132\022.TideChartProperty\"\270\001\n\021TideCha"
+  "rtLogEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002"
+  " \001(\003\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.Ti"
+  "deChartLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message"
+  "\030\006 \001(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.Ti"
+  "deChartProperty\"\355\002\n\020TideChartContext\022\n\n\002"
+  "id\030\001 \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001"
+  "(\003\022\017\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.Tid"
+  "eChartSite\022#\n\010messages\030\006 \003(\0132\021.TideChart"
+  "Message\022\"\n\006global\030\007 \003(\0132\022.TideChartPrope"
+  "rty\022\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001"
+  "(\003\022\016\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006p"
+  "aused\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030"
+  "\016 \003(\0132\027.TideChartContextChange\022\037\n\003log\030\017 "
+  "\003(\0132\022.TideChartLogEntry\"\245\002\n\rTideChartDat"
+  "a\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006so"
+  "urce\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030"
+  "\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 "
+  "\001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\013"
+  "2\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.TideC"
+  "hartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideChartN"
+  "ote\022\"\n\007library\030\014 \003(\0132\021.TideChartLibrary\""
+  "\240\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006"
+  "branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 "
+  "\001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001("
+  "\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001"
+  "(\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name"
+  "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014"
+  "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035"
+  "\n\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working"
+  "\030\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003("
+  "\0132\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016."
+  "TideChartData\022\"\n\007context\030\013 \003(\0132\021.TideCha"
+  "rtContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001"
+  " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006orig"
+  "in\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifi"
+  "edBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002i"
+  "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006o"
+  "rigin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmod"
+  "ifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChart"
+  "Data*\235\001\n\021TideChartLogLevel\022\010\n\004none\020\000\022\t\n\005"
+  "fatal\020\001\022\t\n\005error\020\002\022\r\n\texception\020\003\022\013\n\007war"
+  "ning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006\022\t\n\005debug\020\007"
+  "\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005trace\020\n\022\007\n\003a"
+  "ll\020\013B\013B\tTideChartb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_tide_5fchart_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tide_5fchart_2eproto_sccs[28] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tide_5fchart_2eproto_sccs[31] = {
   &scc_info_TideChartCommand_tide_5fchart_2eproto.base,
   &scc_info_TideChartCommentBox_tide_5fchart_2eproto.base,
   &scc_info_TideChartCommentBoxCommand_tide_5fchart_2eproto.base,
+  &scc_info_TideChartContext_tide_5fchart_2eproto.base,
+  &scc_info_TideChartContextChange_tide_5fchart_2eproto.base,
   &scc_info_TideChartData_tide_5fchart_2eproto.base,
   &scc_info_TideChartFile_tide_5fchart_2eproto.base,
   &scc_info_TideChartFileCurrent_tide_5fchart_2eproto.base,
@@ -1302,6 +1441,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tid
   &scc_info_TideChartLibrary_tide_5fchart_2eproto.base,
   &scc_info_TideChartLink_tide_5fchart_2eproto.base,
   &scc_info_TideChartLinkCommand_tide_5fchart_2eproto.base,
+  &scc_info_TideChartLogEntry_tide_5fchart_2eproto.base,
   &scc_info_TideChartMessage_tide_5fchart_2eproto.base,
   &scc_info_TideChartMethod_tide_5fchart_2eproto.base,
   &scc_info_TideChartMoveCommand_tide_5fchart_2eproto.base,
@@ -1323,14 +1463,38 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tid
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tide_5fchart_2eproto_once;
 static bool descriptor_table_tide_5fchart_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tide_5fchart_2eproto = {
-  &descriptor_table_tide_5fchart_2eproto_initialized, descriptor_table_protodef_tide_5fchart_2eproto, "tide_chart.proto", 6122,
-  &descriptor_table_tide_5fchart_2eproto_once, descriptor_table_tide_5fchart_2eproto_sccs, descriptor_table_tide_5fchart_2eproto_deps, 28, 0,
+  &descriptor_table_tide_5fchart_2eproto_initialized, descriptor_table_protodef_tide_5fchart_2eproto, "tide_chart.proto", 6985,
+  &descriptor_table_tide_5fchart_2eproto_once, descriptor_table_tide_5fchart_2eproto_sccs, descriptor_table_tide_5fchart_2eproto_deps, 31, 0,
   schemas, file_default_instances, TableStruct_tide_5fchart_2eproto::offsets,
-  file_level_metadata_tide_5fchart_2eproto, 31, file_level_enum_descriptors_tide_5fchart_2eproto, file_level_service_descriptors_tide_5fchart_2eproto,
+  file_level_metadata_tide_5fchart_2eproto, 34, file_level_enum_descriptors_tide_5fchart_2eproto, file_level_service_descriptors_tide_5fchart_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_tide_5fchart_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tide_5fchart_2eproto), true);
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* TideChartLogLevel_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_tide_5fchart_2eproto);
+  return file_level_enum_descriptors_tide_5fchart_2eproto[0];
+}
+bool TideChartLogLevel_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+      return true;
+    default:
+      return false;
+  }
+}
+
 
 // ===================================================================
 
@@ -10541,7 +10705,7 @@ TideChartGroupCommand::TideChartGroupCommand()
 TideChartGroupCommand::TideChartGroupCommand(const TideChartGroupCommand& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr),
-      cmds_(from.cmds_) {
+      commands_(from.commands_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TideChartGroupCommand)
 }
@@ -10573,7 +10737,7 @@ void TideChartGroupCommand::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cmds_.Clear();
+  commands_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -10585,13 +10749,13 @@ const char* TideChartGroupCommand::_InternalParse(const char* ptr, ::PROTOBUF_NA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .TideChartCommand cmds = 1;
+      // repeated .TideChartCommand commands = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_cmds(), ptr);
+            ptr = ctx->ParseMessage(add_commands(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
@@ -10627,11 +10791,11 @@ bool TideChartGroupCommand::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .TideChartCommand cmds = 1;
+      // repeated .TideChartCommand commands = 1;
       case 1: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_cmds()));
+                input, add_commands()));
         } else {
           goto handle_unusual;
         }
@@ -10665,12 +10829,12 @@ void TideChartGroupCommand::SerializeWithCachedSizes(
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .TideChartCommand cmds = 1;
+  // repeated .TideChartCommand commands = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->cmds_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->commands_size()); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       1,
-      this->cmds(static_cast<int>(i)),
+      this->commands(static_cast<int>(i)),
       output);
   }
 
@@ -10687,12 +10851,12 @@ void TideChartGroupCommand::SerializeWithCachedSizes(
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .TideChartCommand cmds = 1;
+  // repeated .TideChartCommand commands = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->cmds_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->commands_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->cmds(static_cast<int>(i)), target);
+        1, this->commands(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -10716,14 +10880,14 @@ size_t TideChartGroupCommand::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .TideChartCommand cmds = 1;
+  // repeated .TideChartCommand commands = 1;
   {
-    unsigned int count = static_cast<unsigned int>(this->cmds_size());
+    unsigned int count = static_cast<unsigned int>(this->commands_size());
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->cmds(static_cast<int>(i)));
+          this->commands(static_cast<int>(i)));
     }
   }
 
@@ -10754,7 +10918,7 @@ void TideChartGroupCommand::MergeFrom(const TideChartGroupCommand& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cmds_.MergeFrom(from.cmds_);
+  commands_.MergeFrom(from.commands_);
 }
 
 void TideChartGroupCommand::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -10778,7 +10942,7 @@ bool TideChartGroupCommand::IsInitialized() const {
 void TideChartGroupCommand::InternalSwap(TideChartGroupCommand* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  CastToBase(&cmds_)->InternalSwap(CastToBase(&other->cmds_));
+  CastToBase(&commands_)->InternalSwap(CastToBase(&other->commands_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TideChartGroupCommand::GetMetadata() const {
@@ -17194,7 +17358,8 @@ TideChartSite::TideChartSite(const TideChartSite& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr),
       stack_(from.stack_),
-      scope_(from.scope_) {
+      scope_(from.scope_),
+      local_(from.local_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from.path().empty()) {
@@ -17278,6 +17443,7 @@ void TideChartSite::Clear() {
 
   stack_.Clear();
   scope_.Clear();
+  local_.Clear();
   path_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   trigger_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   event_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -17383,6 +17549,18 @@ const char* TideChartSite::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_port(), ptr, ctx, "TideChartSite.port");
           CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartProperty local = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_local(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 98);
         } else goto handle_unusual;
         continue;
       default: {
@@ -17575,6 +17753,17 @@ bool TideChartSite::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated .TideChartProperty local = 12;
+      case 12: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (98 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_local()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -17706,6 +17895,15 @@ void TideChartSite::SerializeWithCachedSizes(
       11, this->port(), output);
   }
 
+  // repeated .TideChartProperty local = 12;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->local_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      12,
+      this->local(static_cast<int>(i)),
+      output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -17830,6 +18028,14 @@ void TideChartSite::SerializeWithCachedSizes(
         11, this->port(), target);
   }
 
+  // repeated .TideChartProperty local = 12;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->local_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        12, this->local(static_cast<int>(i)), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -17868,6 +18074,17 @@ size_t TideChartSite::ByteSizeLong() const {
   for (int i = 0, n = this->scope_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
       this->scope(i));
+  }
+
+  // repeated .TideChartProperty local = 12;
+  {
+    unsigned int count = static_cast<unsigned int>(this->local_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->local(static_cast<int>(i)));
+    }
   }
 
   // string path = 3;
@@ -17962,6 +18179,7 @@ void TideChartSite::MergeFrom(const TideChartSite& from) {
 
   stack_.MergeFrom(from.stack_);
   scope_.MergeFrom(from.scope_);
+  local_.MergeFrom(from.local_);
   if (from.path().size() > 0) {
 
     path_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.path_);
@@ -18022,6 +18240,7 @@ void TideChartSite::InternalSwap(TideChartSite* other) {
   _internal_metadata_.Swap(&other->_internal_metadata_);
   CastToBase(&stack_)->InternalSwap(CastToBase(&other->stack_));
   scope_.InternalSwap(CastToBase(&other->scope_));
+  CastToBase(&local_)->InternalSwap(CastToBase(&other->local_));
   path_.Swap(&other->path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   trigger_.Swap(&other->trigger_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -18886,6 +19105,2106 @@ void TideChartMessage::InternalSwap(TideChartMessage* other) {
 
 // ===================================================================
 
+void TideChartContextChange::InitAsDefaultInstance() {
+}
+class TideChartContextChange::_Internal {
+ public:
+};
+
+TideChartContextChange::TideChartContextChange()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:TideChartContextChange)
+}
+TideChartContextChange::TideChartContextChange(const TideChartContextChange& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      props_(from.props_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  type_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.type().empty()) {
+    type_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.type_);
+  }
+  ::memcpy(&index_, &from.index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&timestamp_) -
+    reinterpret_cast<char*>(&index_)) + sizeof(timestamp_));
+  // @@protoc_insertion_point(copy_constructor:TideChartContextChange)
+}
+
+void TideChartContextChange::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TideChartContextChange_tide_5fchart_2eproto.base);
+  type_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&timestamp_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(timestamp_));
+}
+
+TideChartContextChange::~TideChartContextChange() {
+  // @@protoc_insertion_point(destructor:TideChartContextChange)
+  SharedDtor();
+}
+
+void TideChartContextChange::SharedDtor() {
+  type_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void TideChartContextChange::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const TideChartContextChange& TideChartContextChange::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TideChartContextChange_tide_5fchart_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void TideChartContextChange::Clear() {
+// @@protoc_insertion_point(message_clear_start:TideChartContextChange)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  props_.Clear();
+  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&timestamp_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(timestamp_));
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TideChartContextChange::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int64 index = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 timestamp = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string type = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_type(), ptr, ctx, "TideChartContextChange.type");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartProperty props = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_props(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool TideChartContextChange::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:TideChartContextChange)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 index = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &index_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 timestamp = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &timestamp_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string type = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_type()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->type().data(), static_cast<int>(this->type().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "TideChartContextChange.type"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .TideChartProperty props = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_props()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:TideChartContextChange)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:TideChartContextChange)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void TideChartContextChange::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:TideChartContextChange)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 index = 1;
+  if (this->index() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->index(), output);
+  }
+
+  // int64 timestamp = 2;
+  if (this->timestamp() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->timestamp(), output);
+  }
+
+  // string type = 3;
+  if (this->type().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->type().data(), static_cast<int>(this->type().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartContextChange.type");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->type(), output);
+  }
+
+  // repeated .TideChartProperty props = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->props_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4,
+      this->props(static_cast<int>(i)),
+      output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:TideChartContextChange)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* TideChartContextChange::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:TideChartContextChange)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 index = 1;
+  if (this->index() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->index(), target);
+  }
+
+  // int64 timestamp = 2;
+  if (this->timestamp() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->timestamp(), target);
+  }
+
+  // string type = 3;
+  if (this->type().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->type().data(), static_cast<int>(this->type().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartContextChange.type");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->type(), target);
+  }
+
+  // repeated .TideChartProperty props = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->props_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        4, this->props(static_cast<int>(i)), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:TideChartContextChange)
+  return target;
+}
+
+size_t TideChartContextChange::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:TideChartContextChange)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .TideChartProperty props = 4;
+  {
+    unsigned int count = static_cast<unsigned int>(this->props_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->props(static_cast<int>(i)));
+    }
+  }
+
+  // string type = 3;
+  if (this->type().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->type());
+  }
+
+  // int64 index = 1;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->index());
+  }
+
+  // int64 timestamp = 2;
+  if (this->timestamp() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->timestamp());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TideChartContextChange::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:TideChartContextChange)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TideChartContextChange* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TideChartContextChange>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TideChartContextChange)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:TideChartContextChange)
+    MergeFrom(*source);
+  }
+}
+
+void TideChartContextChange::MergeFrom(const TideChartContextChange& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:TideChartContextChange)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  props_.MergeFrom(from.props_);
+  if (from.type().size() > 0) {
+
+    type_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.type_);
+  }
+  if (from.index() != 0) {
+    set_index(from.index());
+  }
+  if (from.timestamp() != 0) {
+    set_timestamp(from.timestamp());
+  }
+}
+
+void TideChartContextChange::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:TideChartContextChange)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TideChartContextChange::CopyFrom(const TideChartContextChange& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:TideChartContextChange)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TideChartContextChange::IsInitialized() const {
+  return true;
+}
+
+void TideChartContextChange::InternalSwap(TideChartContextChange* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  CastToBase(&props_)->InternalSwap(CastToBase(&other->props_));
+  type_.Swap(&other->type_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(index_, other->index_);
+  swap(timestamp_, other->timestamp_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata TideChartContextChange::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void TideChartLogEntry::InitAsDefaultInstance() {
+}
+class TideChartLogEntry::_Internal {
+ public:
+};
+
+TideChartLogEntry::TideChartLogEntry()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:TideChartLogEntry)
+}
+TideChartLogEntry::TideChartLogEntry(const TideChartLogEntry& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      tags_(from.tags_),
+      refs_(from.refs_),
+      props_(from.props_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.message().empty()) {
+    message_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.message_);
+  }
+  ::memcpy(&index_, &from.index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&level_) -
+    reinterpret_cast<char*>(&index_)) + sizeof(level_));
+  // @@protoc_insertion_point(copy_constructor:TideChartLogEntry)
+}
+
+void TideChartLogEntry::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TideChartLogEntry_tide_5fchart_2eproto.base);
+  message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&level_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(level_));
+}
+
+TideChartLogEntry::~TideChartLogEntry() {
+  // @@protoc_insertion_point(destructor:TideChartLogEntry)
+  SharedDtor();
+}
+
+void TideChartLogEntry::SharedDtor() {
+  message_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void TideChartLogEntry::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const TideChartLogEntry& TideChartLogEntry::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TideChartLogEntry_tide_5fchart_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void TideChartLogEntry::Clear() {
+// @@protoc_insertion_point(message_clear_start:TideChartLogEntry)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  tags_.Clear();
+  refs_.Clear();
+  props_.Clear();
+  message_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&level_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(level_));
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TideChartLogEntry::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int64 index = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 timestamp = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 source = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          source_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .TideChartLogLevel level = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+          set_level(static_cast<::TideChartLogLevel>(val));
+        } else goto handle_unusual;
+        continue;
+      // repeated string tags = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_tags(), ptr, ctx, "TideChartLogEntry.tags");
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 42);
+        } else goto handle_unusual;
+        continue;
+      // string message = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_message(), ptr, ctx, "TideChartLogEntry.message");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 refs = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(mutable_refs(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56) {
+          add_refs(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartProperty props = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_props(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 66);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool TideChartLogEntry::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:TideChartLogEntry)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 index = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &index_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 timestamp = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &timestamp_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 source = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &source_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .TideChartLogLevel level = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_level(static_cast< ::TideChartLogLevel >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string tags = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_tags()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->tags(this->tags_size() - 1).data(),
+            static_cast<int>(this->tags(this->tags_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "TideChartLogEntry.tags"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string message = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_message()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->message().data(), static_cast<int>(this->message().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "TideChartLogEntry.message"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 refs = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_refs())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 1, 58u, input, this->mutable_refs())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .TideChartProperty props = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_props()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:TideChartLogEntry)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:TideChartLogEntry)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void TideChartLogEntry::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:TideChartLogEntry)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 index = 1;
+  if (this->index() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->index(), output);
+  }
+
+  // int64 timestamp = 2;
+  if (this->timestamp() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->timestamp(), output);
+  }
+
+  // int64 source = 3;
+  if (this->source() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->source(), output);
+  }
+
+  // .TideChartLogLevel level = 4;
+  if (this->level() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      4, this->level(), output);
+  }
+
+  // repeated string tags = 5;
+  for (int i = 0, n = this->tags_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->tags(i).data(), static_cast<int>(this->tags(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartLogEntry.tags");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      5, this->tags(i), output);
+  }
+
+  // string message = 6;
+  if (this->message().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->message().data(), static_cast<int>(this->message().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartLogEntry.message");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      6, this->message(), output);
+  }
+
+  // repeated int64 refs = 7;
+  if (this->refs_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(7, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_refs_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->refs_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64NoTag(
+      this->refs(i), output);
+  }
+
+  // repeated .TideChartProperty props = 8;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->props_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8,
+      this->props(static_cast<int>(i)),
+      output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:TideChartLogEntry)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* TideChartLogEntry::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:TideChartLogEntry)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 index = 1;
+  if (this->index() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->index(), target);
+  }
+
+  // int64 timestamp = 2;
+  if (this->timestamp() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->timestamp(), target);
+  }
+
+  // int64 source = 3;
+  if (this->source() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->source(), target);
+  }
+
+  // .TideChartLogLevel level = 4;
+  if (this->level() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      4, this->level(), target);
+  }
+
+  // repeated string tags = 5;
+  for (int i = 0, n = this->tags_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->tags(i).data(), static_cast<int>(this->tags(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartLogEntry.tags");
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(5, this->tags(i), target);
+  }
+
+  // string message = 6;
+  if (this->message().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->message().data(), static_cast<int>(this->message().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartLogEntry.message");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        6, this->message(), target);
+  }
+
+  // repeated int64 refs = 7;
+  if (this->refs_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      7,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _refs_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->refs_, target);
+  }
+
+  // repeated .TideChartProperty props = 8;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->props_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        8, this->props(static_cast<int>(i)), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:TideChartLogEntry)
+  return target;
+}
+
+size_t TideChartLogEntry::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:TideChartLogEntry)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated string tags = 5;
+  total_size += 1 *
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->tags_size());
+  for (int i = 0, n = this->tags_size(); i < n; i++) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      this->tags(i));
+  }
+
+  // repeated int64 refs = 7;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->refs_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _refs_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .TideChartProperty props = 8;
+  {
+    unsigned int count = static_cast<unsigned int>(this->props_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->props(static_cast<int>(i)));
+    }
+  }
+
+  // string message = 6;
+  if (this->message().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->message());
+  }
+
+  // int64 index = 1;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->index());
+  }
+
+  // int64 timestamp = 2;
+  if (this->timestamp() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->timestamp());
+  }
+
+  // int64 source = 3;
+  if (this->source() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->source());
+  }
+
+  // .TideChartLogLevel level = 4;
+  if (this->level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->level());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TideChartLogEntry::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:TideChartLogEntry)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TideChartLogEntry* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TideChartLogEntry>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TideChartLogEntry)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:TideChartLogEntry)
+    MergeFrom(*source);
+  }
+}
+
+void TideChartLogEntry::MergeFrom(const TideChartLogEntry& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:TideChartLogEntry)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  tags_.MergeFrom(from.tags_);
+  refs_.MergeFrom(from.refs_);
+  props_.MergeFrom(from.props_);
+  if (from.message().size() > 0) {
+
+    message_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.message_);
+  }
+  if (from.index() != 0) {
+    set_index(from.index());
+  }
+  if (from.timestamp() != 0) {
+    set_timestamp(from.timestamp());
+  }
+  if (from.source() != 0) {
+    set_source(from.source());
+  }
+  if (from.level() != 0) {
+    set_level(from.level());
+  }
+}
+
+void TideChartLogEntry::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:TideChartLogEntry)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TideChartLogEntry::CopyFrom(const TideChartLogEntry& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:TideChartLogEntry)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TideChartLogEntry::IsInitialized() const {
+  return true;
+}
+
+void TideChartLogEntry::InternalSwap(TideChartLogEntry* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  tags_.InternalSwap(CastToBase(&other->tags_));
+  refs_.InternalSwap(&other->refs_);
+  CastToBase(&props_)->InternalSwap(CastToBase(&other->props_));
+  message_.Swap(&other->message_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(index_, other->index_);
+  swap(timestamp_, other->timestamp_);
+  swap(source_, other->source_);
+  swap(level_, other->level_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata TideChartLogEntry::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void TideChartContext::InitAsDefaultInstance() {
+}
+class TideChartContext::_Internal {
+ public:
+};
+
+TideChartContext::TideChartContext()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:TideChartContext)
+}
+TideChartContext::TideChartContext(const TideChartContext& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      sites_(from.sites_),
+      messages_(from.messages_),
+      global_(from.global_),
+      active_(from.active_),
+      waiting_(from.waiting_),
+      paused_(from.paused_),
+      disabled_(from.disabled_),
+      events_(from.events_),
+      log_(from.log_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.id().empty()) {
+    id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
+  }
+  version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.version().empty()) {
+    version_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.version_);
+  }
+  ::memcpy(&index_, &from.index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&startindex_) -
+    reinterpret_cast<char*>(&index_)) + sizeof(startindex_));
+  // @@protoc_insertion_point(copy_constructor:TideChartContext)
+}
+
+void TideChartContext::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TideChartContext_tide_5fchart_2eproto.base);
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&startindex_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(startindex_));
+}
+
+TideChartContext::~TideChartContext() {
+  // @@protoc_insertion_point(destructor:TideChartContext)
+  SharedDtor();
+}
+
+void TideChartContext::SharedDtor() {
+  id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  version_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void TideChartContext::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const TideChartContext& TideChartContext::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TideChartContext_tide_5fchart_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void TideChartContext::Clear() {
+// @@protoc_insertion_point(message_clear_start:TideChartContext)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  sites_.Clear();
+  messages_.Clear();
+  global_.Clear();
+  active_.Clear();
+  waiting_.Clear();
+  paused_.Clear();
+  disabled_.Clear();
+  events_.Clear();
+  log_.Clear();
+  id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  version_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&startindex_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(startindex_));
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TideChartContext::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_id(), ptr, ctx, "TideChartContext.id");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 index = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 timestamp = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string version = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_version(), ptr, ctx, "TideChartContext.version");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartSite sites = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_sites(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 42);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartMessage messages = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_messages(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 50);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartProperty global = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_global(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 58);
+        } else goto handle_unusual;
+        continue;
+      // int64 startTime = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          starttime_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 startIndex = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          startindex_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 active = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(mutable_active(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80) {
+          add_active(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 waiting = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(mutable_waiting(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88) {
+          add_waiting(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 paused = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(mutable_paused(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96) {
+          add_paused(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 disabled = 13;
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(mutable_disabled(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104) {
+          add_disabled(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartContextChange events = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_events(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 114);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartLogEntry log = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_log(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 122);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool TideChartContext::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:TideChartContext)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string id = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_id()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->id().data(), static_cast<int>(this->id().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "TideChartContext.id"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 index = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &index_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 timestamp = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &timestamp_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string version = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_version()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->version().data(), static_cast<int>(this->version().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "TideChartContext.version"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .TideChartSite sites = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_sites()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .TideChartMessage messages = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_messages()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .TideChartProperty global = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_global()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 startTime = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &starttime_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 startIndex = 9;
+      case 9: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &startindex_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 active = 10;
+      case 10: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (82 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_active())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (80 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 1, 82u, input, this->mutable_active())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 waiting = 11;
+      case 11: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_waiting())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 1, 90u, input, this->mutable_waiting())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 paused = 12;
+      case 12: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (98 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_paused())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 1, 98u, input, this->mutable_paused())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 disabled = 13;
+      case 13: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (106 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_disabled())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (104 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 1, 106u, input, this->mutable_disabled())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .TideChartContextChange events = 14;
+      case 14: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (114 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_events()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .TideChartLogEntry log = 15;
+      case 15: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (122 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_log()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:TideChartContext)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:TideChartContext)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void TideChartContext::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:TideChartContext)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string id = 1;
+  if (this->id().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->id().data(), static_cast<int>(this->id().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartContext.id");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->id(), output);
+  }
+
+  // int64 index = 2;
+  if (this->index() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->index(), output);
+  }
+
+  // int64 timestamp = 3;
+  if (this->timestamp() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->timestamp(), output);
+  }
+
+  // string version = 4;
+  if (this->version().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->version().data(), static_cast<int>(this->version().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartContext.version");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->version(), output);
+  }
+
+  // repeated .TideChartSite sites = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->sites_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5,
+      this->sites(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated .TideChartMessage messages = 6;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->messages_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6,
+      this->messages(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated .TideChartProperty global = 7;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->global_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      7,
+      this->global(static_cast<int>(i)),
+      output);
+  }
+
+  // int64 startTime = 8;
+  if (this->starttime() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->starttime(), output);
+  }
+
+  // int64 startIndex = 9;
+  if (this->startindex() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->startindex(), output);
+  }
+
+  // repeated int64 active = 10;
+  if (this->active_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(10, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_active_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->active_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64NoTag(
+      this->active(i), output);
+  }
+
+  // repeated int64 waiting = 11;
+  if (this->waiting_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(11, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_waiting_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->waiting_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64NoTag(
+      this->waiting(i), output);
+  }
+
+  // repeated int64 paused = 12;
+  if (this->paused_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(12, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_paused_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->paused_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64NoTag(
+      this->paused(i), output);
+  }
+
+  // repeated int64 disabled = 13;
+  if (this->disabled_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(13, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_disabled_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->disabled_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64NoTag(
+      this->disabled(i), output);
+  }
+
+  // repeated .TideChartContextChange events = 14;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->events_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      14,
+      this->events(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated .TideChartLogEntry log = 15;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->log_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      15,
+      this->log(static_cast<int>(i)),
+      output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:TideChartContext)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* TideChartContext::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:TideChartContext)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string id = 1;
+  if (this->id().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->id().data(), static_cast<int>(this->id().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartContext.id");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->id(), target);
+  }
+
+  // int64 index = 2;
+  if (this->index() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->index(), target);
+  }
+
+  // int64 timestamp = 3;
+  if (this->timestamp() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->timestamp(), target);
+  }
+
+  // string version = 4;
+  if (this->version().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->version().data(), static_cast<int>(this->version().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartContext.version");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        4, this->version(), target);
+  }
+
+  // repeated .TideChartSite sites = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->sites_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        5, this->sites(static_cast<int>(i)), target);
+  }
+
+  // repeated .TideChartMessage messages = 6;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->messages_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        6, this->messages(static_cast<int>(i)), target);
+  }
+
+  // repeated .TideChartProperty global = 7;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->global_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        7, this->global(static_cast<int>(i)), target);
+  }
+
+  // int64 startTime = 8;
+  if (this->starttime() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->starttime(), target);
+  }
+
+  // int64 startIndex = 9;
+  if (this->startindex() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->startindex(), target);
+  }
+
+  // repeated int64 active = 10;
+  if (this->active_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      10,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _active_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->active_, target);
+  }
+
+  // repeated int64 waiting = 11;
+  if (this->waiting_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      11,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _waiting_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->waiting_, target);
+  }
+
+  // repeated int64 paused = 12;
+  if (this->paused_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      12,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _paused_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->paused_, target);
+  }
+
+  // repeated int64 disabled = 13;
+  if (this->disabled_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      13,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _disabled_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->disabled_, target);
+  }
+
+  // repeated .TideChartContextChange events = 14;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->events_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        14, this->events(static_cast<int>(i)), target);
+  }
+
+  // repeated .TideChartLogEntry log = 15;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->log_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        15, this->log(static_cast<int>(i)), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:TideChartContext)
+  return target;
+}
+
+size_t TideChartContext::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:TideChartContext)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .TideChartSite sites = 5;
+  {
+    unsigned int count = static_cast<unsigned int>(this->sites_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->sites(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .TideChartMessage messages = 6;
+  {
+    unsigned int count = static_cast<unsigned int>(this->messages_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->messages(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .TideChartProperty global = 7;
+  {
+    unsigned int count = static_cast<unsigned int>(this->global_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->global(static_cast<int>(i)));
+    }
+  }
+
+  // repeated int64 active = 10;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->active_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _active_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int64 waiting = 11;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->waiting_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _waiting_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int64 paused = 12;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->paused_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _paused_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int64 disabled = 13;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->disabled_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _disabled_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .TideChartContextChange events = 14;
+  {
+    unsigned int count = static_cast<unsigned int>(this->events_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->events(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .TideChartLogEntry log = 15;
+  {
+    unsigned int count = static_cast<unsigned int>(this->log_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->log(static_cast<int>(i)));
+    }
+  }
+
+  // string id = 1;
+  if (this->id().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->id());
+  }
+
+  // string version = 4;
+  if (this->version().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->version());
+  }
+
+  // int64 index = 2;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->index());
+  }
+
+  // int64 timestamp = 3;
+  if (this->timestamp() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->timestamp());
+  }
+
+  // int64 startTime = 8;
+  if (this->starttime() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->starttime());
+  }
+
+  // int64 startIndex = 9;
+  if (this->startindex() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->startindex());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TideChartContext::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:TideChartContext)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TideChartContext* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TideChartContext>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TideChartContext)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:TideChartContext)
+    MergeFrom(*source);
+  }
+}
+
+void TideChartContext::MergeFrom(const TideChartContext& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:TideChartContext)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  sites_.MergeFrom(from.sites_);
+  messages_.MergeFrom(from.messages_);
+  global_.MergeFrom(from.global_);
+  active_.MergeFrom(from.active_);
+  waiting_.MergeFrom(from.waiting_);
+  paused_.MergeFrom(from.paused_);
+  disabled_.MergeFrom(from.disabled_);
+  events_.MergeFrom(from.events_);
+  log_.MergeFrom(from.log_);
+  if (from.id().size() > 0) {
+
+    id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
+  }
+  if (from.version().size() > 0) {
+
+    version_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.version_);
+  }
+  if (from.index() != 0) {
+    set_index(from.index());
+  }
+  if (from.timestamp() != 0) {
+    set_timestamp(from.timestamp());
+  }
+  if (from.starttime() != 0) {
+    set_starttime(from.starttime());
+  }
+  if (from.startindex() != 0) {
+    set_startindex(from.startindex());
+  }
+}
+
+void TideChartContext::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:TideChartContext)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TideChartContext::CopyFrom(const TideChartContext& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:TideChartContext)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TideChartContext::IsInitialized() const {
+  return true;
+}
+
+void TideChartContext::InternalSwap(TideChartContext* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  CastToBase(&sites_)->InternalSwap(CastToBase(&other->sites_));
+  CastToBase(&messages_)->InternalSwap(CastToBase(&other->messages_));
+  CastToBase(&global_)->InternalSwap(CastToBase(&other->global_));
+  active_.InternalSwap(&other->active_);
+  waiting_.InternalSwap(&other->waiting_);
+  paused_.InternalSwap(&other->paused_);
+  disabled_.InternalSwap(&other->disabled_);
+  CastToBase(&events_)->InternalSwap(CastToBase(&other->events_));
+  CastToBase(&log_)->InternalSwap(CastToBase(&other->log_));
+  id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  version_.Swap(&other->version_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(index_, other->index_);
+  swap(timestamp_, other->timestamp_);
+  swap(starttime_, other->starttime_);
+  swap(startindex_, other->startindex_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata TideChartContext::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 void TideChartData::InitAsDefaultInstance() {
 }
 class TideChartData::_Internal {
@@ -18903,8 +21222,7 @@ TideChartData::TideChartData(const TideChartData& from)
       sheets_(from.sheets_),
       props_(from.props_),
       notes_(from.notes_),
-      library_(from.library_),
-      global_(from.global_) {
+      library_(from.library_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from.version().empty()) {
@@ -18988,7 +21306,6 @@ void TideChartData::Clear() {
   props_.Clear();
   notes_.Clear();
   library_.Clear();
-  global_.Clear();
   version_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   branch_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   source_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -19110,18 +21427,6 @@ const char* TideChartData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 98);
-        } else goto handle_unusual;
-        continue;
-      // repeated .TideChartProperty global = 13;
-      case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(add_global(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 106);
         } else goto handle_unusual;
         continue;
       default: {
@@ -19318,17 +21623,6 @@ bool TideChartData::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .TideChartProperty global = 13;
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (106 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_global()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -19472,15 +21766,6 @@ void TideChartData::SerializeWithCachedSizes(
       output);
   }
 
-  // repeated .TideChartProperty global = 13;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->global_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      13,
-      this->global(static_cast<int>(i)),
-      output);
-  }
-
   if (_internal_metadata_.have_unknown_fields()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -19614,14 +21899,6 @@ void TideChartData::SerializeWithCachedSizes(
         12, this->library(static_cast<int>(i)), target);
   }
 
-  // repeated .TideChartProperty global = 13;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->global_size()); i < n; i++) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        13, this->global(static_cast<int>(i)), target);
-  }
-
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -19684,17 +21961,6 @@ size_t TideChartData::ByteSizeLong() const {
       total_size +=
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->library(static_cast<int>(i)));
-    }
-  }
-
-  // repeated .TideChartProperty global = 13;
-  {
-    unsigned int count = static_cast<unsigned int>(this->global_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->global(static_cast<int>(i)));
     }
   }
 
@@ -19785,7 +22051,6 @@ void TideChartData::MergeFrom(const TideChartData& from) {
   props_.MergeFrom(from.props_);
   notes_.MergeFrom(from.notes_);
   library_.MergeFrom(from.library_);
-  global_.MergeFrom(from.global_);
   if (from.version().size() > 0) {
 
     version_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.version_);
@@ -19845,7 +22110,6 @@ void TideChartData::InternalSwap(TideChartData* other) {
   CastToBase(&props_)->InternalSwap(CastToBase(&other->props_));
   CastToBase(&notes_)->InternalSwap(CastToBase(&other->notes_));
   CastToBase(&library_)->InternalSwap(CastToBase(&other->library_));
-  CastToBase(&global_)->InternalSwap(CastToBase(&other->global_));
   version_.Swap(&other->version_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   branch_.Swap(&other->branch_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -20604,7 +22868,8 @@ TideChartFile::TideChartFile(const TideChartFile& from)
       _internal_metadata_(nullptr),
       working_(from.working_),
       remote_(from.remote_),
-      history_(from.history_) {
+      history_(from.history_),
+      context_(from.context_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from.id().empty()) {
@@ -20682,6 +22947,7 @@ void TideChartFile::Clear() {
   working_.Clear();
   remote_.Clear();
   history_.Clear();
+  context_.Clear();
   id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   path_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -20786,6 +23052,18 @@ const char* TideChartFile::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 82);
+        } else goto handle_unusual;
+        continue;
+      // repeated .TideChartContext context = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_context(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 90);
         } else goto handle_unusual;
         continue;
       default: {
@@ -20952,6 +23230,17 @@ bool TideChartFile::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated .TideChartContext context = 11;
+      case 11: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_context()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -21072,6 +23361,15 @@ void TideChartFile::SerializeWithCachedSizes(
       output);
   }
 
+  // repeated .TideChartContext context = 11;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->context_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      11,
+      this->context(static_cast<int>(i)),
+      output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -21182,6 +23480,14 @@ void TideChartFile::SerializeWithCachedSizes(
         10, this->history(static_cast<int>(i)), target);
   }
 
+  // repeated .TideChartContext context = 11;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->context_size()); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        11, this->context(static_cast<int>(i)), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -21233,6 +23539,17 @@ size_t TideChartFile::ByteSizeLong() const {
       total_size +=
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->history(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .TideChartContext context = 11;
+  {
+    unsigned int count = static_cast<unsigned int>(this->context_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->context(static_cast<int>(i)));
     }
   }
 
@@ -21315,6 +23632,7 @@ void TideChartFile::MergeFrom(const TideChartFile& from) {
   working_.MergeFrom(from.working_);
   remote_.MergeFrom(from.remote_);
   history_.MergeFrom(from.history_);
+  context_.MergeFrom(from.context_);
   if (from.id().size() > 0) {
 
     id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
@@ -21368,6 +23686,7 @@ void TideChartFile::InternalSwap(TideChartFile* other) {
   CastToBase(&working_)->InternalSwap(CastToBase(&other->working_));
   CastToBase(&remote_)->InternalSwap(CastToBase(&other->remote_));
   CastToBase(&history_)->InternalSwap(CastToBase(&other->history_));
+  CastToBase(&context_)->InternalSwap(CastToBase(&other->context_));
   id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -22695,6 +25014,15 @@ template<> PROTOBUF_NOINLINE ::TideChartSite* Arena::CreateMaybeMessage< ::TideC
 }
 template<> PROTOBUF_NOINLINE ::TideChartMessage* Arena::CreateMaybeMessage< ::TideChartMessage >(Arena* arena) {
   return Arena::CreateInternal< ::TideChartMessage >(arena);
+}
+template<> PROTOBUF_NOINLINE ::TideChartContextChange* Arena::CreateMaybeMessage< ::TideChartContextChange >(Arena* arena) {
+  return Arena::CreateInternal< ::TideChartContextChange >(arena);
+}
+template<> PROTOBUF_NOINLINE ::TideChartLogEntry* Arena::CreateMaybeMessage< ::TideChartLogEntry >(Arena* arena) {
+  return Arena::CreateInternal< ::TideChartLogEntry >(arena);
+}
+template<> PROTOBUF_NOINLINE ::TideChartContext* Arena::CreateMaybeMessage< ::TideChartContext >(Arena* arena) {
+  return Arena::CreateInternal< ::TideChartContext >(arena);
 }
 template<> PROTOBUF_NOINLINE ::TideChartData* Arena::CreateMaybeMessage< ::TideChartData >(Arena* arena) {
   return Arena::CreateInternal< ::TideChartData >(arena);
