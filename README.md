@@ -97,10 +97,10 @@
 | icon | [string](#string) |  | icon name to use for the comment |
 | fontSize | [double](#double) |  | size of font to draw text |
 | fontStyle | [string](#string) |  | font style to use: Light, Regular, Bold, LightItalic, RegularItalic, BoldItalic |
-| alignment | [sint32](#sint32) |  | alignment of text within box (start (left):-1, middle:0, end (right):1) |
-| color | [int32](#int32) |  | color used to draw text - default is black |
+| alignment | [sint32](#sint32) | repeated | alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph] |
+| color | [int32](#int32) |  | color used to draw text / icon - default is black |
 | background | [int32](#int32) |  | color used to draw background - default is transparent |
-| border | [int32](#int32) |  | color used to draw border - default is none |
+| border | [int32](#int32) | repeated | style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)] |
 | raised | [bool](#bool) |  | flag to indicate if a drop shadow should be used |
 | reversed | [bool](#bool) |  | flag to indicate if the text requires left to right layout order |
 

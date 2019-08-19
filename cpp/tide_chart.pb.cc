@@ -1141,8 +1141,8 @@ const char descriptor_table_protodef_tide_5fchart_2eproto[] PROTOBUF_SECTION_VAR
   "\005width\030\005 \001(\005\022\016\n\006height\030\006 \001(\005\022\016\n\004text\030\007 \001"
   "(\tH\000\022\017\n\005image\030\010 \001(\014H\000\022\016\n\004icon\030\t \001(\tH\000\022\020\n"
   "\010fontSize\030\n \001(\001\022\021\n\tfontStyle\030\013 \001(\t\022\021\n\tal"
-  "ignment\030\014 \001(\021\022\r\n\005color\030\r \001(\005\022\022\n\nbackgrou"
-  "nd\030\016 \001(\005\022\016\n\006border\030\017 \001(\005\022\016\n\006raised\030\020 \001(\010"
+  "ignment\030\014 \003(\021\022\r\n\005color\030\r \001(\005\022\022\n\nbackgrou"
+  "nd\030\016 \001(\005\022\016\n\006border\030\017 \003(\005\022\016\n\006raised\030\020 \001(\010"
   "\022\020\n\010reversed\030\021 \001(\010B\t\n\007content\"\342\001\n\017TideCh"
   "artWidget\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n\005t"
   "itle\030\003 \001(\t\022\016\n\006region\030\004 \001(\t\022\014\n\004posX\030\005 \001(\021"
@@ -1803,7 +1803,9 @@ TideChartCommentBox::TideChartCommentBox()
 }
 TideChartCommentBox::TideChartCommentBox(const TideChartCommentBox& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
+      _internal_metadata_(nullptr),
+      alignment_(from.alignment_),
+      border_(from.border_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from.id().empty()) {
@@ -1904,6 +1906,8 @@ void TideChartCommentBox::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  alignment_.Clear();
+  border_.Clear();
   id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   region_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   fontstyle_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -1999,10 +2003,13 @@ const char* TideChartCommentBox::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // sint32 alignment = 12;
+      // repeated sint32 alignment = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          alignment_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarintZigZag32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedSInt32Parser(mutable_alignment(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96) {
+          add_alignment(::PROTOBUF_NAMESPACE_ID::internal::ReadVarintZigZag32(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2020,10 +2027,13 @@ const char* TideChartCommentBox::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 border = 15;
+      // repeated int32 border = 15;
       case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
-          border_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(mutable_border(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120) {
+          add_border(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2222,13 +2232,16 @@ bool TideChartCommentBox::MergePartialFromCodedStream(
         break;
       }
 
-      // sint32 alignment = 12;
+      // repeated sint32 alignment = 12;
       case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (98 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
                    ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_SINT32>(
-                 input, &alignment_)));
+                 input, this->mutable_alignment())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_SINT32>(
+                 1, 98u, input, this->mutable_alignment())));
         } else {
           goto handle_unusual;
         }
@@ -2261,13 +2274,16 @@ bool TideChartCommentBox::MergePartialFromCodedStream(
         break;
       }
 
-      // int32 border = 15;
+      // repeated int32 border = 15;
       case 15: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (120 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (122 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
                    ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &border_)));
+                 input, this->mutable_border())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (120 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 1, 122u, input, this->mutable_border())));
         } else {
           goto handle_unusual;
         }
@@ -2408,9 +2424,15 @@ void TideChartCommentBox::SerializeWithCachedSizes(
       11, this->fontstyle(), output);
   }
 
-  // sint32 alignment = 12;
-  if (this->alignment() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteSInt32(12, this->alignment(), output);
+  // repeated sint32 alignment = 12;
+  if (this->alignment_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(12, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_alignment_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->alignment_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteSInt32NoTag(
+      this->alignment(i), output);
   }
 
   // int32 color = 13;
@@ -2423,9 +2445,15 @@ void TideChartCommentBox::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(14, this->background(), output);
   }
 
-  // int32 border = 15;
-  if (this->border() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(15, this->border(), output);
+  // repeated int32 border = 15;
+  if (this->border_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(15, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_border_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->border_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32NoTag(
+      this->border(i), output);
   }
 
   // bool raised = 16;
@@ -2538,9 +2566,17 @@ void TideChartCommentBox::SerializeWithCachedSizes(
         11, this->fontstyle(), target);
   }
 
-  // sint32 alignment = 12;
-  if (this->alignment() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteSInt32ToArray(12, this->alignment(), target);
+  // repeated sint32 alignment = 12;
+  if (this->alignment_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      12,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _alignment_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteSInt32NoTagToArray(this->alignment_, target);
   }
 
   // int32 color = 13;
@@ -2553,9 +2589,17 @@ void TideChartCommentBox::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(14, this->background(), target);
   }
 
-  // int32 border = 15;
-  if (this->border() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(15, this->border(), target);
+  // repeated int32 border = 15;
+  if (this->border_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      15,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _border_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteInt32NoTagToArray(this->border_, target);
   }
 
   // bool raised = 16;
@@ -2588,6 +2632,36 @@ size_t TideChartCommentBox::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // repeated sint32 alignment = 12;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      SInt32Size(this->alignment_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _alignment_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int32 border = 15;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->border_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _border_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
 
   // string id = 1;
   if (this->id().size() > 0) {
@@ -2643,13 +2717,6 @@ size_t TideChartCommentBox::ByteSizeLong() const {
     total_size += 1 + 8;
   }
 
-  // sint32 alignment = 12;
-  if (this->alignment() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SInt32Size(
-        this->alignment());
-  }
-
   // int32 color = 13;
   if (this->color() != 0) {
     total_size += 1 +
@@ -2662,13 +2729,6 @@ size_t TideChartCommentBox::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->background());
-  }
-
-  // int32 border = 15;
-  if (this->border() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->border());
   }
 
   // bool raised = 16;
@@ -2734,6 +2794,8 @@ void TideChartCommentBox::MergeFrom(const TideChartCommentBox& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  alignment_.MergeFrom(from.alignment_);
+  border_.MergeFrom(from.border_);
   if (from.id().size() > 0) {
 
     id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
@@ -2761,17 +2823,11 @@ void TideChartCommentBox::MergeFrom(const TideChartCommentBox& from) {
   if (!(from.fontsize() <= 0 && from.fontsize() >= 0)) {
     set_fontsize(from.fontsize());
   }
-  if (from.alignment() != 0) {
-    set_alignment(from.alignment());
-  }
   if (from.color() != 0) {
     set_color(from.color());
   }
   if (from.background() != 0) {
     set_background(from.background());
-  }
-  if (from.border() != 0) {
-    set_border(from.border());
   }
   if (from.raised() != 0) {
     set_raised(from.raised());
@@ -2819,6 +2875,8 @@ bool TideChartCommentBox::IsInitialized() const {
 void TideChartCommentBox::InternalSwap(TideChartCommentBox* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  alignment_.InternalSwap(&other->alignment_);
+  border_.InternalSwap(&other->border_);
   id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   region_.Swap(&other->region_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -2830,10 +2888,8 @@ void TideChartCommentBox::InternalSwap(TideChartCommentBox* other) {
   swap(width_, other->width_);
   swap(height_, other->height_);
   swap(fontsize_, other->fontsize_);
-  swap(alignment_, other->alignment_);
   swap(color_, other->color_);
   swap(background_, other->background_);
-  swap(border_, other->border_);
   swap(raised_, other->raised_);
   swap(reversed_, other->reversed_);
   swap(content_, other->content_);

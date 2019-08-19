@@ -31,10 +31,10 @@ message TideChartCommentBox {
 
     double fontSize = 10;                       // size of font to draw text
     string fontStyle = 11;                      // font style to use: Light, Regular, Bold, LightItalic, RegularItalic, BoldItalic
-    sint32 alignment = 12;                      // alignment of text within box (start (left):-1, middle:0, end (right):1)
-    int32 color = 13;                           // color used to draw text - default is black
+    repeated sint32 alignment = 12;             // alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+    int32 color = 13;                           // color used to draw text / icon - default is black
     int32 background = 14;                      // color used to draw background - default is transparent
-    int32 border = 15;                          // color used to draw border - default is none
+    repeated int32 border = 15;                 // style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
     bool raised = 16;                           // flag to indicate if a drop shadow should be used
     bool reversed = 17;                         // flag to indicate if the text requires left to right layout order
 }

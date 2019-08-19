@@ -78,10 +78,10 @@ class TideChartCommentBox extends $pb.GeneratedMessage {
     ..aOS(9, 'icon')
     ..a<$core.double>(10, 'fontSize', $pb.PbFieldType.OD)
     ..aOS(11, 'fontStyle')
-    ..a<$core.int>(12, 'alignment', $pb.PbFieldType.OS3)
+    ..p<$core.int>(12, 'alignment', $pb.PbFieldType.PS3)
     ..a<$core.int>(13, 'color', $pb.PbFieldType.O3)
     ..a<$core.int>(14, 'background', $pb.PbFieldType.O3)
-    ..a<$core.int>(15, 'border', $pb.PbFieldType.O3)
+    ..p<$core.int>(15, 'border', $pb.PbFieldType.P3)
     ..aOB(16, 'raised')
     ..aOB(17, 'reversed')
     ..hasRequiredFields = false
@@ -159,10 +159,7 @@ class TideChartCommentBox extends $pb.GeneratedMessage {
   $core.bool hasFontStyle() => $_has(10);
   void clearFontStyle() => clearField(11);
 
-  $core.int get alignment => $_get(11, 0);
-  set alignment($core.int v) { $_setSignedInt32(11, v); }
-  $core.bool hasAlignment() => $_has(11);
-  void clearAlignment() => clearField(12);
+  $core.List<$core.int> get alignment => $_getList(11);
 
   $core.int get color => $_get(12, 0);
   set color($core.int v) { $_setSignedInt32(12, v); }
@@ -174,10 +171,7 @@ class TideChartCommentBox extends $pb.GeneratedMessage {
   $core.bool hasBackground() => $_has(13);
   void clearBackground() => clearField(14);
 
-  $core.int get border => $_get(14, 0);
-  set border($core.int v) { $_setSignedInt32(14, v); }
-  $core.bool hasBorder() => $_has(14);
-  void clearBorder() => clearField(15);
+  $core.List<$core.int> get border => $_getList(14);
 
   $core.bool get raised => $_get(15, false);
   set raised($core.bool v) { $_setBool(15, v); }

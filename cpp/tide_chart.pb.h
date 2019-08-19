@@ -479,6 +479,8 @@ class TideChartCommentBox :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kAlignmentFieldNumber = 12,
+    kBorderFieldNumber = 15,
     kIdFieldNumber = 1,
     kRegionFieldNumber = 2,
     kFontStyleFieldNumber = 11,
@@ -487,16 +489,36 @@ class TideChartCommentBox :
     kWidthFieldNumber = 5,
     kHeightFieldNumber = 6,
     kFontSizeFieldNumber = 10,
-    kAlignmentFieldNumber = 12,
     kColorFieldNumber = 13,
     kBackgroundFieldNumber = 14,
-    kBorderFieldNumber = 15,
     kRaisedFieldNumber = 16,
     kReversedFieldNumber = 17,
     kTextFieldNumber = 7,
     kImageFieldNumber = 8,
     kIconFieldNumber = 9,
   };
+  // repeated sint32 alignment = 12;
+  int alignment_size() const;
+  void clear_alignment();
+  ::PROTOBUF_NAMESPACE_ID::int32 alignment(int index) const;
+  void set_alignment(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_alignment(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      alignment() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_alignment();
+
+  // repeated int32 border = 15;
+  int border_size() const;
+  void clear_border();
+  ::PROTOBUF_NAMESPACE_ID::int32 border(int index) const;
+  void set_border(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_border(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      border() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_border();
+
   // string id = 1;
   void clear_id();
   const std::string& id() const;
@@ -555,11 +577,6 @@ class TideChartCommentBox :
   double fontsize() const;
   void set_fontsize(double value);
 
-  // sint32 alignment = 12;
-  void clear_alignment();
-  ::PROTOBUF_NAMESPACE_ID::int32 alignment() const;
-  void set_alignment(::PROTOBUF_NAMESPACE_ID::int32 value);
-
   // int32 color = 13;
   void clear_color();
   ::PROTOBUF_NAMESPACE_ID::int32 color() const;
@@ -569,11 +586,6 @@ class TideChartCommentBox :
   void clear_background();
   ::PROTOBUF_NAMESPACE_ID::int32 background() const;
   void set_background(::PROTOBUF_NAMESPACE_ID::int32 value);
-
-  // int32 border = 15;
-  void clear_border();
-  ::PROTOBUF_NAMESPACE_ID::int32 border() const;
-  void set_border(::PROTOBUF_NAMESPACE_ID::int32 value);
 
   // bool raised = 16;
   void clear_raised();
@@ -640,6 +652,10 @@ class TideChartCommentBox :
   inline void clear_has_content();
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > alignment_;
+  mutable std::atomic<int> _alignment_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > border_;
+  mutable std::atomic<int> _border_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr id_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr region_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr fontstyle_;
@@ -648,10 +664,8 @@ class TideChartCommentBox :
   ::PROTOBUF_NAMESPACE_ID::int32 width_;
   ::PROTOBUF_NAMESPACE_ID::int32 height_;
   double fontsize_;
-  ::PROTOBUF_NAMESPACE_ID::int32 alignment_;
   ::PROTOBUF_NAMESPACE_ID::int32 color_;
   ::PROTOBUF_NAMESPACE_ID::int32 background_;
-  ::PROTOBUF_NAMESPACE_ID::int32 border_;
   bool raised_;
   bool reversed_;
   union ContentUnion {
@@ -7828,18 +7842,34 @@ inline void TideChartCommentBox::set_allocated_fontstyle(std::string* fontstyle)
   // @@protoc_insertion_point(field_set_allocated:TideChartCommentBox.fontStyle)
 }
 
-// sint32 alignment = 12;
-inline void TideChartCommentBox::clear_alignment() {
-  alignment_ = 0;
+// repeated sint32 alignment = 12;
+inline int TideChartCommentBox::alignment_size() const {
+  return alignment_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 TideChartCommentBox::alignment() const {
+inline void TideChartCommentBox::clear_alignment() {
+  alignment_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TideChartCommentBox::alignment(int index) const {
   // @@protoc_insertion_point(field_get:TideChartCommentBox.alignment)
+  return alignment_.Get(index);
+}
+inline void TideChartCommentBox::set_alignment(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  alignment_.Set(index, value);
+  // @@protoc_insertion_point(field_set:TideChartCommentBox.alignment)
+}
+inline void TideChartCommentBox::add_alignment(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  alignment_.Add(value);
+  // @@protoc_insertion_point(field_add:TideChartCommentBox.alignment)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+TideChartCommentBox::alignment() const {
+  // @@protoc_insertion_point(field_list:TideChartCommentBox.alignment)
   return alignment_;
 }
-inline void TideChartCommentBox::set_alignment(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  alignment_ = value;
-  // @@protoc_insertion_point(field_set:TideChartCommentBox.alignment)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+TideChartCommentBox::mutable_alignment() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartCommentBox.alignment)
+  return &alignment_;
 }
 
 // int32 color = 13;
@@ -7870,18 +7900,34 @@ inline void TideChartCommentBox::set_background(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:TideChartCommentBox.background)
 }
 
-// int32 border = 15;
-inline void TideChartCommentBox::clear_border() {
-  border_ = 0;
+// repeated int32 border = 15;
+inline int TideChartCommentBox::border_size() const {
+  return border_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 TideChartCommentBox::border() const {
+inline void TideChartCommentBox::clear_border() {
+  border_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TideChartCommentBox::border(int index) const {
   // @@protoc_insertion_point(field_get:TideChartCommentBox.border)
+  return border_.Get(index);
+}
+inline void TideChartCommentBox::set_border(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  border_.Set(index, value);
+  // @@protoc_insertion_point(field_set:TideChartCommentBox.border)
+}
+inline void TideChartCommentBox::add_border(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  border_.Add(value);
+  // @@protoc_insertion_point(field_add:TideChartCommentBox.border)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+TideChartCommentBox::border() const {
+  // @@protoc_insertion_point(field_list:TideChartCommentBox.border)
   return border_;
 }
-inline void TideChartCommentBox::set_border(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  border_ = value;
-  // @@protoc_insertion_point(field_set:TideChartCommentBox.border)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+TideChartCommentBox::mutable_border() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartCommentBox.border)
+  return &border_;
 }
 
 // bool raised = 16;

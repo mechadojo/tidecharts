@@ -1589,16 +1589,32 @@ public final class TideChart {
 
     /**
      * <pre>
-     * alignment of text within box (start (left):-1, middle:0, end (right):1)
+     * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
      * </pre>
      *
-     * <code>sint32 alignment = 12;</code>
+     * <code>repeated sint32 alignment = 12;</code>
      */
-    int getAlignment();
+    java.util.List<java.lang.Integer> getAlignmentList();
+    /**
+     * <pre>
+     * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+     * </pre>
+     *
+     * <code>repeated sint32 alignment = 12;</code>
+     */
+    int getAlignmentCount();
+    /**
+     * <pre>
+     * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+     * </pre>
+     *
+     * <code>repeated sint32 alignment = 12;</code>
+     */
+    int getAlignment(int index);
 
     /**
      * <pre>
-     * color used to draw text - default is black
+     * color used to draw text / icon - default is black
      * </pre>
      *
      * <code>int32 color = 13;</code>
@@ -1616,12 +1632,28 @@ public final class TideChart {
 
     /**
      * <pre>
-     * color used to draw border - default is none
+     * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
      * </pre>
      *
-     * <code>int32 border = 15;</code>
+     * <code>repeated int32 border = 15;</code>
      */
-    int getBorder();
+    java.util.List<java.lang.Integer> getBorderList();
+    /**
+     * <pre>
+     * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+     * </pre>
+     *
+     * <code>repeated int32 border = 15;</code>
+     */
+    int getBorderCount();
+    /**
+     * <pre>
+     * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+     * </pre>
+     *
+     * <code>repeated int32 border = 15;</code>
+     */
+    int getBorder(int index);
 
     /**
      * <pre>
@@ -1659,6 +1691,8 @@ public final class TideChart {
       id_ = "";
       region_ = "";
       fontStyle_ = "";
+      alignment_ = emptyIntList();
+      border_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -1681,6 +1715,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -1752,8 +1787,24 @@ public final class TideChart {
               break;
             }
             case 96: {
-
-              alignment_ = input.readSInt32();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                alignment_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              alignment_.addInt(input.readSInt32());
+              break;
+            }
+            case 98: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                alignment_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                alignment_.addInt(input.readSInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             case 104: {
@@ -1767,8 +1818,24 @@ public final class TideChart {
               break;
             }
             case 120: {
-
-              border_ = input.readInt32();
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                border_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              border_.addInt(input.readInt32());
+              break;
+            }
+            case 122: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                border_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                border_.addInt(input.readInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             case 128: {
@@ -1796,6 +1863,12 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          alignment_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          border_.makeImmutable(); // C
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -2162,23 +2235,45 @@ public final class TideChart {
     }
 
     public static final int ALIGNMENT_FIELD_NUMBER = 12;
-    private int alignment_;
+    private com.google.protobuf.Internal.IntList alignment_;
     /**
      * <pre>
-     * alignment of text within box (start (left):-1, middle:0, end (right):1)
+     * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
      * </pre>
      *
-     * <code>sint32 alignment = 12;</code>
+     * <code>repeated sint32 alignment = 12;</code>
      */
-    public int getAlignment() {
+    public java.util.List<java.lang.Integer>
+        getAlignmentList() {
       return alignment_;
     }
+    /**
+     * <pre>
+     * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+     * </pre>
+     *
+     * <code>repeated sint32 alignment = 12;</code>
+     */
+    public int getAlignmentCount() {
+      return alignment_.size();
+    }
+    /**
+     * <pre>
+     * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+     * </pre>
+     *
+     * <code>repeated sint32 alignment = 12;</code>
+     */
+    public int getAlignment(int index) {
+      return alignment_.getInt(index);
+    }
+    private int alignmentMemoizedSerializedSize = -1;
 
     public static final int COLOR_FIELD_NUMBER = 13;
     private int color_;
     /**
      * <pre>
-     * color used to draw text - default is black
+     * color used to draw text / icon - default is black
      * </pre>
      *
      * <code>int32 color = 13;</code>
@@ -2201,17 +2296,39 @@ public final class TideChart {
     }
 
     public static final int BORDER_FIELD_NUMBER = 15;
-    private int border_;
+    private com.google.protobuf.Internal.IntList border_;
     /**
      * <pre>
-     * color used to draw border - default is none
+     * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
      * </pre>
      *
-     * <code>int32 border = 15;</code>
+     * <code>repeated int32 border = 15;</code>
      */
-    public int getBorder() {
+    public java.util.List<java.lang.Integer>
+        getBorderList() {
       return border_;
     }
+    /**
+     * <pre>
+     * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+     * </pre>
+     *
+     * <code>repeated int32 border = 15;</code>
+     */
+    public int getBorderCount() {
+      return border_.size();
+    }
+    /**
+     * <pre>
+     * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+     * </pre>
+     *
+     * <code>repeated int32 border = 15;</code>
+     */
+    public int getBorder(int index) {
+      return border_.getInt(index);
+    }
+    private int borderMemoizedSerializedSize = -1;
 
     public static final int RAISED_FIELD_NUMBER = 16;
     private boolean raised_;
@@ -2253,6 +2370,7 @@ public final class TideChart {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      getSerializedSize();
       if (!getIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
       }
@@ -2287,8 +2405,12 @@ public final class TideChart {
       if (!getFontStyleBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 11, fontStyle_);
       }
-      if (alignment_ != 0) {
-        output.writeSInt32(12, alignment_);
+      if (getAlignmentList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(alignmentMemoizedSerializedSize);
+      }
+      for (int i = 0; i < alignment_.size(); i++) {
+        output.writeSInt32NoTag(alignment_.getInt(i));
       }
       if (color_ != 0) {
         output.writeInt32(13, color_);
@@ -2296,8 +2418,12 @@ public final class TideChart {
       if (background_ != 0) {
         output.writeInt32(14, background_);
       }
-      if (border_ != 0) {
-        output.writeInt32(15, border_);
+      if (getBorderList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(borderMemoizedSerializedSize);
+      }
+      for (int i = 0; i < border_.size(); i++) {
+        output.writeInt32NoTag(border_.getInt(i));
       }
       if (raised_ != false) {
         output.writeBool(16, raised_);
@@ -2354,9 +2480,19 @@ public final class TideChart {
       if (!getFontStyleBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, fontStyle_);
       }
-      if (alignment_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeSInt32Size(12, alignment_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < alignment_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeSInt32SizeNoTag(alignment_.getInt(i));
+        }
+        size += dataSize;
+        if (!getAlignmentList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        alignmentMemoizedSerializedSize = dataSize;
       }
       if (color_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -2366,9 +2502,19 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(14, background_);
       }
-      if (border_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, border_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < border_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(border_.getInt(i));
+        }
+        size += dataSize;
+        if (!getBorderList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        borderMemoizedSerializedSize = dataSize;
       }
       if (raised_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -2410,14 +2556,14 @@ public final class TideChart {
               other.getFontSize())) return false;
       if (!getFontStyle()
           .equals(other.getFontStyle())) return false;
-      if (getAlignment()
-          != other.getAlignment()) return false;
+      if (!getAlignmentList()
+          .equals(other.getAlignmentList())) return false;
       if (getColor()
           != other.getColor()) return false;
       if (getBackground()
           != other.getBackground()) return false;
-      if (getBorder()
-          != other.getBorder()) return false;
+      if (!getBorderList()
+          .equals(other.getBorderList())) return false;
       if (getRaised()
           != other.getRaised()) return false;
       if (getReversed()
@@ -2467,14 +2613,18 @@ public final class TideChart {
           java.lang.Double.doubleToLongBits(getFontSize()));
       hash = (37 * hash) + FONTSTYLE_FIELD_NUMBER;
       hash = (53 * hash) + getFontStyle().hashCode();
-      hash = (37 * hash) + ALIGNMENT_FIELD_NUMBER;
-      hash = (53 * hash) + getAlignment();
+      if (getAlignmentCount() > 0) {
+        hash = (37 * hash) + ALIGNMENT_FIELD_NUMBER;
+        hash = (53 * hash) + getAlignmentList().hashCode();
+      }
       hash = (37 * hash) + COLOR_FIELD_NUMBER;
       hash = (53 * hash) + getColor();
       hash = (37 * hash) + BACKGROUND_FIELD_NUMBER;
       hash = (53 * hash) + getBackground();
-      hash = (37 * hash) + BORDER_FIELD_NUMBER;
-      hash = (53 * hash) + getBorder();
+      if (getBorderCount() > 0) {
+        hash = (37 * hash) + BORDER_FIELD_NUMBER;
+        hash = (53 * hash) + getBorderList().hashCode();
+      }
       hash = (37 * hash) + RAISED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getRaised());
@@ -2646,14 +2796,14 @@ public final class TideChart {
 
         fontStyle_ = "";
 
-        alignment_ = 0;
-
+        alignment_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         color_ = 0;
 
         background_ = 0;
 
-        border_ = 0;
-
+        border_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         raised_ = false;
 
         reversed_ = false;
@@ -2686,6 +2836,7 @@ public final class TideChart {
       @java.lang.Override
       public TideChart.TideChartCommentBox buildPartial() {
         TideChart.TideChartCommentBox result = new TideChart.TideChartCommentBox(this);
+        int from_bitField0_ = bitField0_;
         result.id_ = id_;
         result.region_ = region_;
         result.posX_ = posX_;
@@ -2703,9 +2854,17 @@ public final class TideChart {
         }
         result.fontSize_ = fontSize_;
         result.fontStyle_ = fontStyle_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          alignment_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
         result.alignment_ = alignment_;
         result.color_ = color_;
         result.background_ = background_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          border_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
         result.border_ = border_;
         result.raised_ = raised_;
         result.reversed_ = reversed_;
@@ -2785,8 +2944,15 @@ public final class TideChart {
           fontStyle_ = other.fontStyle_;
           onChanged();
         }
-        if (other.getAlignment() != 0) {
-          setAlignment(other.getAlignment());
+        if (!other.alignment_.isEmpty()) {
+          if (alignment_.isEmpty()) {
+            alignment_ = other.alignment_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureAlignmentIsMutable();
+            alignment_.addAll(other.alignment_);
+          }
+          onChanged();
         }
         if (other.getColor() != 0) {
           setColor(other.getColor());
@@ -2794,8 +2960,15 @@ public final class TideChart {
         if (other.getBackground() != 0) {
           setBackground(other.getBackground());
         }
-        if (other.getBorder() != 0) {
-          setBorder(other.getBorder());
+        if (!other.border_.isEmpty()) {
+          if (border_.isEmpty()) {
+            border_ = other.border_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureBorderIsMutable();
+            border_.addAll(other.border_);
+          }
+          onChanged();
         }
         if (other.getRaised() != false) {
           setRaised(other.getRaised());
@@ -2867,6 +3040,7 @@ public final class TideChart {
         return this;
       }
 
+      private int bitField0_;
 
       private java.lang.Object id_ = "";
       /**
@@ -3570,40 +3744,97 @@ public final class TideChart {
         return this;
       }
 
-      private int alignment_ ;
-      /**
-       * <pre>
-       * alignment of text within box (start (left):-1, middle:0, end (right):1)
-       * </pre>
-       *
-       * <code>sint32 alignment = 12;</code>
-       */
-      public int getAlignment() {
-        return alignment_;
+      private com.google.protobuf.Internal.IntList alignment_ = emptyIntList();
+      private void ensureAlignmentIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          alignment_ = mutableCopy(alignment_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
        * <pre>
-       * alignment of text within box (start (left):-1, middle:0, end (right):1)
+       * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
        * </pre>
        *
-       * <code>sint32 alignment = 12;</code>
+       * <code>repeated sint32 alignment = 12;</code>
        */
-      public Builder setAlignment(int value) {
-        
-        alignment_ = value;
+      public java.util.List<java.lang.Integer>
+          getAlignmentList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(alignment_) : alignment_;
+      }
+      /**
+       * <pre>
+       * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+       * </pre>
+       *
+       * <code>repeated sint32 alignment = 12;</code>
+       */
+      public int getAlignmentCount() {
+        return alignment_.size();
+      }
+      /**
+       * <pre>
+       * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+       * </pre>
+       *
+       * <code>repeated sint32 alignment = 12;</code>
+       */
+      public int getAlignment(int index) {
+        return alignment_.getInt(index);
+      }
+      /**
+       * <pre>
+       * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+       * </pre>
+       *
+       * <code>repeated sint32 alignment = 12;</code>
+       */
+      public Builder setAlignment(
+          int index, int value) {
+        ensureAlignmentIsMutable();
+        alignment_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * alignment of text within box (start (left):-1, middle:0, end (right):1)
+       * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
        * </pre>
        *
-       * <code>sint32 alignment = 12;</code>
+       * <code>repeated sint32 alignment = 12;</code>
+       */
+      public Builder addAlignment(int value) {
+        ensureAlignmentIsMutable();
+        alignment_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+       * </pre>
+       *
+       * <code>repeated sint32 alignment = 12;</code>
+       */
+      public Builder addAllAlignment(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureAlignmentIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, alignment_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
+       * </pre>
+       *
+       * <code>repeated sint32 alignment = 12;</code>
        */
       public Builder clearAlignment() {
-        
-        alignment_ = 0;
+        alignment_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
@@ -3611,7 +3842,7 @@ public final class TideChart {
       private int color_ ;
       /**
        * <pre>
-       * color used to draw text - default is black
+       * color used to draw text / icon - default is black
        * </pre>
        *
        * <code>int32 color = 13;</code>
@@ -3621,7 +3852,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * color used to draw text - default is black
+       * color used to draw text / icon - default is black
        * </pre>
        *
        * <code>int32 color = 13;</code>
@@ -3634,7 +3865,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * color used to draw text - default is black
+       * color used to draw text / icon - default is black
        * </pre>
        *
        * <code>int32 color = 13;</code>
@@ -3684,40 +3915,97 @@ public final class TideChart {
         return this;
       }
 
-      private int border_ ;
-      /**
-       * <pre>
-       * color used to draw border - default is none
-       * </pre>
-       *
-       * <code>int32 border = 15;</code>
-       */
-      public int getBorder() {
-        return border_;
+      private com.google.protobuf.Internal.IntList border_ = emptyIntList();
+      private void ensureBorderIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          border_ = mutableCopy(border_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
        * <pre>
-       * color used to draw border - default is none
+       * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
        * </pre>
        *
-       * <code>int32 border = 15;</code>
+       * <code>repeated int32 border = 15;</code>
        */
-      public Builder setBorder(int value) {
-        
-        border_ = value;
+      public java.util.List<java.lang.Integer>
+          getBorderList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(border_) : border_;
+      }
+      /**
+       * <pre>
+       * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+       * </pre>
+       *
+       * <code>repeated int32 border = 15;</code>
+       */
+      public int getBorderCount() {
+        return border_.size();
+      }
+      /**
+       * <pre>
+       * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+       * </pre>
+       *
+       * <code>repeated int32 border = 15;</code>
+       */
+      public int getBorder(int index) {
+        return border_.getInt(index);
+      }
+      /**
+       * <pre>
+       * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+       * </pre>
+       *
+       * <code>repeated int32 border = 15;</code>
+       */
+      public Builder setBorder(
+          int index, int value) {
+        ensureBorderIsMutable();
+        border_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * color used to draw border - default is none
+       * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
        * </pre>
        *
-       * <code>int32 border = 15;</code>
+       * <code>repeated int32 border = 15;</code>
+       */
+      public Builder addBorder(int value) {
+        ensureBorderIsMutable();
+        border_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+       * </pre>
+       *
+       * <code>repeated int32 border = 15;</code>
+       */
+      public Builder addAllBorder(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureBorderIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, border_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
+       * </pre>
+       *
+       * <code>repeated int32 border = 15;</code>
        */
       public Builder clearBorder() {
-        
-        border_ = 0;
+        border_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -65430,8 +65718,8 @@ public final class TideChart {
       "\005width\030\005 \001(\005\022\016\n\006height\030\006 \001(\005\022\016\n\004text\030\007 \001" +
       "(\tH\000\022\017\n\005image\030\010 \001(\014H\000\022\016\n\004icon\030\t \001(\tH\000\022\020\n" +
       "\010fontSize\030\n \001(\001\022\021\n\tfontStyle\030\013 \001(\t\022\021\n\tal" +
-      "ignment\030\014 \001(\021\022\r\n\005color\030\r \001(\005\022\022\n\nbackgrou" +
-      "nd\030\016 \001(\005\022\016\n\006border\030\017 \001(\005\022\016\n\006raised\030\020 \001(\010" +
+      "ignment\030\014 \003(\021\022\r\n\005color\030\r \001(\005\022\022\n\nbackgrou" +
+      "nd\030\016 \001(\005\022\016\n\006border\030\017 \003(\005\022\016\n\006raised\030\020 \001(\010" +
       "\022\020\n\010reversed\030\021 \001(\010B\t\n\007content\"\342\001\n\017TideCh" +
       "artWidget\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n\005t" +
       "itle\030\003 \001(\t\022\016\n\006region\030\004 \001(\t\022\014\n\004posX\030\005 \001(\021" +

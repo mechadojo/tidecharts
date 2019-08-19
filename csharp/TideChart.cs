@@ -29,8 +29,8 @@ public static partial class TideChartReflection {
           "ASgREgwKBHBvc1kYBCABKBESDQoFd2lkdGgYBSABKAUSDgoGaGVpZ2h0GAYg",
           "ASgFEg4KBHRleHQYByABKAlIABIPCgVpbWFnZRgIIAEoDEgAEg4KBGljb24Y",
           "CSABKAlIABIQCghmb250U2l6ZRgKIAEoARIRCglmb250U3R5bGUYCyABKAkS",
-          "EQoJYWxpZ25tZW50GAwgASgREg0KBWNvbG9yGA0gASgFEhIKCmJhY2tncm91",
-          "bmQYDiABKAUSDgoGYm9yZGVyGA8gASgFEg4KBnJhaXNlZBgQIAEoCBIQCghy",
+          "EQoJYWxpZ25tZW50GAwgAygREg0KBWNvbG9yGA0gASgFEhIKCmJhY2tncm91",
+          "bmQYDiABKAUSDgoGYm9yZGVyGA8gAygFEg4KBnJhaXNlZBgQIAEoCBIQCghy",
           "ZXZlcnNlZBgRIAEoCEIJCgdjb250ZW50IuIBCg9UaWRlQ2hhcnRXaWRnZXQS",
           "CgoCaWQYASABKAkSDAoEdHlwZRgCIAEoCRINCgV0aXRsZRgDIAEoCRIOCgZy",
           "ZWdpb24YBCABKAkSDAoEcG9zWBgFIAEoERIMCgRwb3NZGAYgASgREg0KBXdp",
@@ -452,10 +452,10 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     height_ = other.height_;
     fontSize_ = other.fontSize_;
     fontStyle_ = other.fontStyle_;
-    alignment_ = other.alignment_;
+    alignment_ = other.alignment_.Clone();
     color_ = other.color_;
     background_ = other.background_;
-    border_ = other.border_;
+    border_ = other.border_.Clone();
     raised_ = other.raised_;
     reversed_ = other.reversed_;
     switch (other.ContentCase) {
@@ -634,23 +634,22 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
 
   /// <summary>Field number for the "alignment" field.</summary>
   public const int AlignmentFieldNumber = 12;
-  private int alignment_;
+  private static readonly pb::FieldCodec<int> _repeated_alignment_codec
+      = pb::FieldCodec.ForSInt32(98);
+  private readonly pbc::RepeatedField<int> alignment_ = new pbc::RepeatedField<int>();
   /// <summary>
-  /// alignment of text within box (start (left):-1, middle:0, end (right):1)
+  /// alignment of content within box (top/left=-1, center = 0, bottom/right=1) as an array [horziontal, vertical, paragraph]
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int Alignment {
+  public pbc::RepeatedField<int> Alignment {
     get { return alignment_; }
-    set {
-      alignment_ = value;
-    }
   }
 
   /// <summary>Field number for the "color" field.</summary>
   public const int ColorFieldNumber = 13;
   private int color_;
   /// <summary>
-  /// color used to draw text - default is black
+  /// color used to draw text / icon - default is black
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int Color {
@@ -676,16 +675,15 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
 
   /// <summary>Field number for the "border" field.</summary>
   public const int BorderFieldNumber = 15;
-  private int border_;
+  private static readonly pb::FieldCodec<int> _repeated_border_codec
+      = pb::FieldCodec.ForInt32(122);
+  private readonly pbc::RepeatedField<int> border_ = new pbc::RepeatedField<int>();
   /// <summary>
-  /// color used to draw border - default is none
+  /// style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int Border {
+  public pbc::RepeatedField<int> Border {
     get { return border_; }
-    set {
-      border_ = value;
-    }
   }
 
   /// <summary>Field number for the "raised" field.</summary>
@@ -760,10 +758,10 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     if (Icon != other.Icon) return false;
     if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(FontSize, other.FontSize)) return false;
     if (FontStyle != other.FontStyle) return false;
-    if (Alignment != other.Alignment) return false;
+    if(!alignment_.Equals(other.alignment_)) return false;
     if (Color != other.Color) return false;
     if (Background != other.Background) return false;
-    if (Border != other.Border) return false;
+    if(!border_.Equals(other.border_)) return false;
     if (Raised != other.Raised) return false;
     if (Reversed != other.Reversed) return false;
     if (ContentCase != other.ContentCase) return false;
@@ -784,10 +782,10 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     if (contentCase_ == ContentOneofCase.Icon) hash ^= Icon.GetHashCode();
     if (FontSize != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(FontSize);
     if (FontStyle.Length != 0) hash ^= FontStyle.GetHashCode();
-    if (Alignment != 0) hash ^= Alignment.GetHashCode();
+    hash ^= alignment_.GetHashCode();
     if (Color != 0) hash ^= Color.GetHashCode();
     if (Background != 0) hash ^= Background.GetHashCode();
-    if (Border != 0) hash ^= Border.GetHashCode();
+    hash ^= border_.GetHashCode();
     if (Raised != false) hash ^= Raised.GetHashCode();
     if (Reversed != false) hash ^= Reversed.GetHashCode();
     hash ^= (int) contentCase_;
@@ -848,10 +846,7 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
       output.WriteRawTag(90);
       output.WriteString(FontStyle);
     }
-    if (Alignment != 0) {
-      output.WriteRawTag(96);
-      output.WriteSInt32(Alignment);
-    }
+    alignment_.WriteTo(output, _repeated_alignment_codec);
     if (Color != 0) {
       output.WriteRawTag(104);
       output.WriteInt32(Color);
@@ -860,10 +855,7 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
       output.WriteRawTag(112);
       output.WriteInt32(Background);
     }
-    if (Border != 0) {
-      output.WriteRawTag(120);
-      output.WriteInt32(Border);
-    }
+    border_.WriteTo(output, _repeated_border_codec);
     if (Raised != false) {
       output.WriteRawTag(128, 1);
       output.WriteBool(Raised);
@@ -913,18 +905,14 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     if (FontStyle.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(FontStyle);
     }
-    if (Alignment != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeSInt32Size(Alignment);
-    }
+    size += alignment_.CalculateSize(_repeated_alignment_codec);
     if (Color != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Color);
     }
     if (Background != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Background);
     }
-    if (Border != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Border);
-    }
+    size += border_.CalculateSize(_repeated_border_codec);
     if (Raised != false) {
       size += 2 + 1;
     }
@@ -966,18 +954,14 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     if (other.FontStyle.Length != 0) {
       FontStyle = other.FontStyle;
     }
-    if (other.Alignment != 0) {
-      Alignment = other.Alignment;
-    }
+    alignment_.Add(other.alignment_);
     if (other.Color != 0) {
       Color = other.Color;
     }
     if (other.Background != 0) {
       Background = other.Background;
     }
-    if (other.Border != 0) {
-      Border = other.Border;
-    }
+    border_.Add(other.border_);
     if (other.Raised != false) {
       Raised = other.Raised;
     }
@@ -1051,8 +1035,9 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
           FontStyle = input.ReadString();
           break;
         }
+        case 98:
         case 96: {
-          Alignment = input.ReadSInt32();
+          alignment_.AddEntriesFrom(input, _repeated_alignment_codec);
           break;
         }
         case 104: {
@@ -1063,8 +1048,9 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
           Background = input.ReadInt32();
           break;
         }
+        case 122:
         case 120: {
-          Border = input.ReadInt32();
+          border_.AddEntriesFrom(input, _repeated_border_codec);
           break;
         }
         case 128: {
