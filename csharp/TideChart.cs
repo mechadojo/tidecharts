@@ -24,179 +24,180 @@ public static partial class TideChartReflection {
         string.Concat(
           "ChB0aWRlX2NoYXJ0LnByb3RvImEKEVRpZGVDaGFydFByb3BlcnR5EgwKBG5h",
           "bWUYASABKAkSDAoEdHlwZRgCIAEoCRINCgV2YWx1ZRgDIAEoCRIhCgVwcm9w",
-          "cxgEIAMoCzISLlRpZGVDaGFydFByb3BlcnR5IrUCChNUaWRlQ2hhcnRDb21t",
+          "cxgEIAMoCzISLlRpZGVDaGFydFByb3BlcnR5IrkCChNUaWRlQ2hhcnRDb21t",
           "ZW50Qm94EgoKAmlkGAEgASgJEg4KBnJlZ2lvbhgCIAEoCRIMCgRwb3NYGAMg",
           "ASgREgwKBHBvc1kYBCABKBESDQoFd2lkdGgYBSABKAUSDgoGaGVpZ2h0GAYg",
           "ASgFEg4KBHRleHQYByABKAlIABIPCgVpbWFnZRgIIAEoDEgAEg4KBGljb24Y",
           "CSABKAlIABIQCghmb250U2l6ZRgKIAEoARIRCglmb250U3R5bGUYCyABKAkS",
           "EQoJYWxpZ25tZW50GAwgAygREg0KBWNvbG9yGA0gASgFEhIKCmJhY2tncm91",
-          "bmQYDiABKAUSDgoGYm9yZGVyGA8gAygFEg4KBnJhaXNlZBgQIAEoCBIQCghy",
-          "ZXZlcnNlZBgRIAEoCEIJCgdjb250ZW50IuIBCg9UaWRlQ2hhcnRXaWRnZXQS",
-          "CgoCaWQYASABKAkSDAoEdHlwZRgCIAEoCRINCgV0aXRsZRgDIAEoCRIOCgZy",
-          "ZWdpb24YBCABKAkSDAoEcG9zWBgFIAEoERIMCgRwb3NZGAYgASgREg0KBXdp",
-          "ZHRoGAcgASgFEg4KBmhlaWdodBgIIAEoBRIOCgRsaW5rGAkgASgJSAASDgoE",
-          "cG9ydBgKIAEoCUgAEg4KBG5vZGUYCyABKAlIABIhCgVwcm9wcxgMIAMoCzIS",
-          "LlRpZGVDaGFydFByb3BlcnR5QggKBnRhcmdldCKAAgoNVGlkZUNoYXJ0UG9y",
-          "dBIMCgR0eXBlGAEgASgJEgwKBG5hbWUYAiABKAkSDwoHb3JkaW5hbBgDIAEo",
-          "BRIPCgdkZWZhdWx0GAQgASgIEhAKCHJlcXVpcmVkGAUgASgIEg8KB2FsbG93",
-          "ZWQYBiADKAkSDAoEaGludBgHIAEoCRIkCghjb25zdGFudBgIIAEoCzISLlRp",
-          "ZGVDaGFydFByb3BlcnR5Eg8KB3RyaWdnZXIYCSABKAkSDgoGZmlsdGVyGAog",
-          "ASgJEg0KBWV2ZW50GAsgASgJEgwKBHN5bmMYDCABKAkSDQoFYmxvY2sYDSAB",
-          "KAgSDQoFcXVldWUYDiABKAgixQEKDVRpZGVDaGFydExpbmsSDwoHb3V0Tm9k",
-          "ZRgBIAEoCRIPCgdvdXRQb3J0GAIgASgJEg4KBmluTm9kZRgDIAEoCRIOCgZp",
-          "blBvcnQYBCABKAkSDQoFZ3JvdXAYBSABKAUSDQoFZGVsYXkYBiABKAUSDgoG",
-          "ZmlsdGVyGAcgASgJEg8KB2xvZ2dpbmcYECABKAgSEQoJZGVidWdnaW5nGBEg",
-          "ASgIEg4KBnBhdXNlZBgSIAEoCBIQCghkaXNhYmxlZBgTIAEoCCJ3Cg1UaWRl",
-          "Q2hhcnROb3RlEgoKAmlkGAEgASgJEg8KB3JlcGx5VG8YAiABKAkSEAoIY2hh",
-          "bmdlVG8YAyABKAkSDwoHY29udGVudBgEIAEoCRIRCgljcmVhdGVkQnkYBSAB",
-          "KAkSEwoLY3JlYXRlZERhdGUYBiABKAki7wIKDVRpZGVDaGFydE5vZGUSDAoE",
-          "bmFtZRgBIAEoCRIMCgR0eXBlGAIgASgJEgwKBHBvc1gYAyABKBESDAoEcG9z",
-          "WRgEIAEoERINCgV0aXRsZRgFIAEoCRIMCgRpY29uGAYgASgJEg8KB2xpYnJh",
-          "cnkYByABKAkSDgoGbWV0aG9kGAggASgJEg0KBWRlbGF5GAkgASgFEh8KB2lu",
-          "cG9ydHMYCiADKAsyDi5UaWRlQ2hhcnRQb3J0EiAKCG91dHBvcnRzGAsgAygL",
-          "Mg4uVGlkZUNoYXJ0UG9ydBIhCgVwcm9wcxgMIAMoCzISLlRpZGVDaGFydFBy",
-          "b3BlcnR5Eg8KB2xvZ2dpbmcYECABKAgSEQoJZGVidWdnaW5nGBEgASgIEg4K",
-          "BnBhdXNlZBgSIAEoCBIQCghkaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgUIAMo",
-          "CzIOLlRpZGVDaGFydE5vdGUSDgoGc2NyaXB0GBUgASgJIvMBCg9UaWRlQ2hh",
-          "cnRSZWdpb24SDAoEbmFtZRgBIAEoCRINCgV0aXRsZRgCIAEoCRINCgVub2Rl",
-          "cxgDIAMoCRINCgVncm91cBgEIAEoBRINCgVzY29wZRgFIAEoCRIhCgVwcm9w",
-          "cxgGIAMoCzISLlRpZGVDaGFydFByb3BlcnR5Eg8KB2xvZ2dpbmcYECABKAgS",
-          "EQoJZGVidWdnaW5nGBEgASgIEg4KBnBhdXNlZBgSIAEoCBIQCghkaXNhYmxl",
-          "ZBgTIAEoCBIdCgVub3RlcxgUIAMoCzIOLlRpZGVDaGFydE5vdGUSDgoGc2Ny",
-          "aXB0GBUgASgJItADCg5UaWRlQ2hhcnRHcmFwaBIKCgJpZBgBIAEoCRIMCgR0",
-          "eXBlGAIgASgJEgwKBG5hbWUYAyABKAkSDQoFdGl0bGUYBCABKAkSDwoHdmVy",
-          "c2lvbhgFIAEoCRIOCgZzb3VyY2UYBiABKAkSHQoFbm9kZXMYByADKAsyDi5U",
-          "aWRlQ2hhcnROb2RlEh0KBWxpbmtzGAggAygLMg4uVGlkZUNoYXJ0TGluaxIh",
-          "CgdyZWdpb25zGAkgAygLMhAuVGlkZUNoYXJ0UmVnaW9uEiYKCGNvbW1lbnRz",
-          "GAogAygLMhQuVGlkZUNoYXJ0Q29tbWVudEJveBIhCgd3aWRnZXRzGAsgAygL",
-          "MhAuVGlkZUNoYXJ0V2lkZ2V0EiEKBXByb3BzGAwgAygLMhIuVGlkZUNoYXJ0",
-          "UHJvcGVydHkSIgoHaGlzdG9yeRgNIAMoCzIRLlRpZGVDaGFydENvbW1hbmQS",
-          "DwoHbG9nZ2luZxgQIAEoCBIRCglkZWJ1Z2dpbmcYESABKAgSDgoGcGF1c2Vk",
-          "GBIgASgIEhAKCGRpc2FibGVkGBMgASgIEh0KBW5vdGVzGBQgAygLMg4uVGlk",
-          "ZUNoYXJ0Tm90ZRIOCgZzY3JpcHQYFSABKAkihQQKEFRpZGVDaGFydENvbW1h",
-          "bmQSDwoHdmVyc2lvbhgBIAEoCRIOCgZ0YXJnZXQYAiABKAkSJwoFZ3JvdXAY",
-          "AyABKAsyFi5UaWRlQ2hhcnRHcm91cENvbW1hbmRIABIlCgRtb3ZlGAQgASgL",
-          "MhUuVGlkZUNoYXJ0TW92ZUNvbW1hbmRIABIuCgdjb21tZW50GAUgASgLMhsu",
-          "VGlkZUNoYXJ0Q29tbWVudEJveENvbW1hbmRIABIpCgZ3aWRnZXQYBiABKAsy",
-          "Fy5UaWRlQ2hhcnRXaWRnZXRDb21tYW5kSAASJQoEcG9ydBgHIAEoCzIVLlRp",
-          "ZGVDaGFydFBvcnRDb21tYW5kSAASJQoEbGluaxgIIAEoCzIVLlRpZGVDaGFy",
-          "dExpbmtDb21tYW5kSAASJQoEbm9kZRgJIAEoCzIVLlRpZGVDaGFydE5vZGVD",
-          "b21tYW5kSAASKQoGcmVnaW9uGAogASgLMhcuVGlkZUNoYXJ0UmVnaW9uQ29t",
-          "bWFuZEgAEicKBWdyYXBoGAsgASgLMhYuVGlkZUNoYXJ0R3JhcGhDb21tYW5k",
-          "SAASKgoFcHJvcHMYDCABKAsyGS5UaWRlQ2hhcnRQcm9wZXJ0eUNvbW1hbmRI",
-          "ABIlCgRub3RlGA0gASgLMhUuVGlkZUNoYXJ0Tm90ZUNvbW1hbmRIAEIJCgdj",
-          "b21tYW5kIjwKFVRpZGVDaGFydEdyb3VwQ29tbWFuZBIjCghjb21tYW5kcxgB",
-          "IAMoCzIRLlRpZGVDaGFydENvbW1hbmQiaAoUVGlkZUNoYXJ0TW92ZUNvbW1h",
-          "bmQSDAoEbm9kZRgBIAEoCRIQCghmcm9tUG9zWBgCIAEoERIQCghmcm9tUG9z",
-          "WRgDIAEoERIOCgZ0b1Bvc1gYBCABKBESDgoGdG9Qb3NZGAUgASgRIpsBChpU",
-          "aWRlQ2hhcnRDb21tZW50Qm94Q29tbWFuZBIpCgtmcm9tQ29tbWVudBgBIAEo",
-          "CzIULlRpZGVDaGFydENvbW1lbnRCb3gSJwoJdG9Db21tZW50GAIgASgLMhQu",
-          "VGlkZUNoYXJ0Q29tbWVudEJveBIpCgR0eXBlGAMgASgOMhsuVGlkZUNoYXJ0",
-          "Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFdpZGdldENvbW1hbmQS",
-          "JAoKZnJvbVdpZGdldBgBIAEoCzIQLlRpZGVDaGFydFdpZGdldBIiCgh0b1dp",
-          "ZGdldBgCIAEoCzIQLlRpZGVDaGFydFdpZGdldBIpCgR0eXBlGAMgASgOMhsu",
-          "VGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUigwEKFFRpZGVDaGFydFBvcnRD",
-          "b21tYW5kEiAKCGZyb21Qb3J0GAEgASgLMg4uVGlkZUNoYXJ0UG9ydBIeCgZ0",
-          "b1BvcnQYAiABKAsyDi5UaWRlQ2hhcnRQb3J0EikKBHR5cGUYAyABKA4yGy5U",
-          "aWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZSKDAQoUVGlkZUNoYXJ0TGlua0Nv",
-          "bW1hbmQSIAoIZnJvbUxpbmsYASABKAsyDi5UaWRlQ2hhcnRMaW5rEh4KBnRv",
-          "TGluaxgCIAEoCzIOLlRpZGVDaGFydExpbmsSKQoEdHlwZRgDIAEoDjIbLlRp",
-          "ZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIoMBChRUaWRlQ2hhcnROb2RlQ29t",
-          "bWFuZBIgCghmcm9tTm9kZRgBIAEoCzIOLlRpZGVDaGFydE5vZGUSHgoGdG9O",
-          "b2RlGAIgASgLMg4uVGlkZUNoYXJ0Tm9kZRIpCgR0eXBlGAMgASgOMhsuVGlk",
-          "ZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFJlZ2lvbkNv",
-          "bW1hbmQSJAoKZnJvbVJlZ2lvbhgBIAEoCzIQLlRpZGVDaGFydFJlZ2lvbhIi",
-          "Cgh0b1JlZ2lvbhgCIAEoCzIQLlRpZGVDaGFydFJlZ2lvbhIpCgR0eXBlGAMg",
-          "ASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUiiAEKFVRpZGVDaGFy",
-          "dEdyYXBoQ29tbWFuZBIiCglmcm9tR3JhcGgYASABKAsyDy5UaWRlQ2hhcnRH",
-          "cmFwaBIgCgd0b0dyYXBoGAIgASgLMg8uVGlkZUNoYXJ0R3JhcGgSKQoEdHlw",
-          "ZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIuABChhUaWRl",
-          "Q2hhcnRQcm9wZXJ0eUNvbW1hbmQSJQoJZnJvbVByb3BzGAEgAygLMhIuVGlk",
-          "ZUNoYXJ0UHJvcGVydHkSIwoHdG9Qcm9wcxgCIAMoCzISLlRpZGVDaGFydFBy",
-          "b3BlcnR5EikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRl",
-          "VHlwZRIOCgRub2RlGAUgASgJSAASEAoGcmVnaW9uGAYgASgJSAASEAoGd2lk",
-          "Z2V0GAcgASgJSAASDwoFZ3JhcGgYCCABKAlIAEIICgZ0YXJnZXQinQEKFFRp",
-          "ZGVDaGFydE5vdGVDb21tYW5kEh0KBW5vdGVzGAEgAygLMg4uVGlkZUNoYXJ0",
-          "Tm90ZRIpCgR0eXBlGAIgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5",
-          "cGUSDgoEbm9kZRgDIAEoCUgAEhAKBnJlZ2lvbhgEIAEoCUgAEg8KBWdyYXBo",
-          "GAUgASgJSABCCAoGdGFyZ2V0Iq4BCg9UaWRlQ2hhcnRNZXRob2QSCgoCaWQY",
-          "ASABKAkSDAoEbmFtZRgCIAEoCRIPCgdleHRlbmRzGAMgASgJEg4KBnNjcmlw",
-          "dBgEIAEoCRIfCgdpbnBvcnRzGAUgAygLMg4uVGlkZUNoYXJ0UG9ydBIgCghv",
-          "dXRwb3J0cxgGIAMoCzIOLlRpZGVDaGFydFBvcnQSHQoFcHJvcHMYByADKAsy",
-          "Di5UaWRlQ2hhcnRQb3J0IpEBCg9UaWRlQ2hhcnRTb3VyY2USCgoCaWQYASAB",
-          "KAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEhMKC2NyZWF0ZWREYXRl",
-          "GAUgASgJEhEKCWNyZWF0ZWRCeRgGIAEoCRIRCgd2ZXJzaW9uGAcgASgJSAAS",
-          "EAoGc2NyaXB0GAggASgJSABCCQoHY29udGVudCKtAQoQVGlkZUNoYXJ0TGli",
-          "cmFyeRIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEg0KBXRpdGxlGAMgASgJ",
-          "Eg4KBm9yaWdpbhgEIAEoCRIOCgZicmFuY2gYBSABKAkSDAoEcGF0aBgGIAEo",
-          "CRIfCgVmaWxlcxgHIAMoCzIQLlRpZGVDaGFydFNvdXJjZRIhCgdtZXRob2Rz",
-          "GAggAygLMhAuVGlkZUNoYXJ0TWV0aG9kIugBCg1UaWRlQ2hhcnRTaXRlEg0K",
-          "BWluZGV4GAEgASgDEh0KBXN0YWNrGAIgAygLMg4uVGlkZUNoYXJ0U2l0ZRIM",
-          "CgRwYXRoGAMgASgJEg8KB3RyaWdnZXIYBCABKAkSDQoFZXZlbnQYBSABKAkS",
-          "DQoFc2NvcGUYBiADKAkSDgoGZmlsdGVyGAcgASgJEg0KBWdyYXBoGAggASgJ",
-          "Eg4KBnJlZ2lvbhgJIAEoCRIMCgRub2RlGAogASgJEgwKBHBvcnQYCyABKAkS",
-          "IQoFbG9jYWwYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eSKJAgoQVGlkZUNo",
-          "YXJ0TWVzc2FnZRINCgVpbmRleBgBIAEoAxIRCgl0aW1lc3RhbXAYAiABKAMS",
-          "DgoGb3JpZ2luGAQgASgDEhAKCHByZXZpb3VzGAUgASgDEg4KBnNvdXJjZRgH",
-          "IAEoAxIOCgZ0YXJnZXQYCCABKAMSEgoKZGVsYXlVbnRpbBgJIAEoAxIRCglo",
-          "b2xkVG9rZW4YCiABKAMSEwoLY2FuY2VsVG9rZW4YCyABKAMSDAoEdHlwZRgM",
-          "IAEoCRIPCgd2ZXJzaW9uGA0gASgFEhUKC2pzb25Db250ZW50GA4gASgJSAAS",
-          "FAoKbXNnQ29udGVudBgPIAEoDEgAQgkKB2NvbnRlbnQiawoWVGlkZUNoYXJ0",
-          "Q29udGV4dENoYW5nZRINCgVpbmRleBgBIAEoAxIRCgl0aW1lc3RhbXAYAiAB",
-          "KAMSDAoEdHlwZRgDIAEoCRIhCgVwcm9wcxgEIAMoCzISLlRpZGVDaGFydFBy",
-          "b3BlcnR5IrgBChFUaWRlQ2hhcnRMb2dFbnRyeRINCgVpbmRleBgBIAEoAxIR",
-          "Cgl0aW1lc3RhbXAYAiABKAMSDgoGc291cmNlGAMgASgDEiEKBWxldmVsGAQg",
-          "ASgOMhIuVGlkZUNoYXJ0TG9nTGV2ZWwSDAoEdGFncxgFIAMoCRIPCgdtZXNz",
-          "YWdlGAYgASgJEgwKBHJlZnMYByADKAMSIQoFcHJvcHMYCCADKAsyEi5UaWRl",
-          "Q2hhcnRQcm9wZXJ0eSLtAgoQVGlkZUNoYXJ0Q29udGV4dBIKCgJpZBgBIAEo",
-          "CRINCgVpbmRleBgCIAEoAxIRCgl0aW1lc3RhbXAYAyABKAMSDwoHdmVyc2lv",
-          "bhgEIAEoCRIdCgVzaXRlcxgFIAMoCzIOLlRpZGVDaGFydFNpdGUSIwoIbWVz",
-          "c2FnZXMYBiADKAsyES5UaWRlQ2hhcnRNZXNzYWdlEiIKBmdsb2JhbBgHIAMo",
-          "CzISLlRpZGVDaGFydFByb3BlcnR5EhEKCXN0YXJ0VGltZRgIIAEoAxISCgpz",
-          "dGFydEluZGV4GAkgASgDEg4KBmFjdGl2ZRgKIAMoAxIPCgd3YWl0aW5nGAsg",
-          "AygDEg4KBnBhdXNlZBgMIAMoAxIQCghkaXNhYmxlZBgNIAMoAxInCgZldmVu",
-          "dHMYDiADKAsyFy5UaWRlQ2hhcnRDb250ZXh0Q2hhbmdlEh8KA2xvZxgPIAMo",
-          "CzISLlRpZGVDaGFydExvZ0VudHJ5IqUCCg1UaWRlQ2hhcnREYXRhEg8KB3Zl",
-          "cnNpb24YASABKAkSDgoGYnJhbmNoGAIgASgJEg4KBnNvdXJjZRgDIAEoCRIN",
-          "CgVtZXJnZRgEIAEoCRISCgpjb21taXREYXRlGAUgASgJEhAKCGNvbW1pdEJ5",
-          "GAYgASgJEhIKCmNvbW1pdERlc2MYByABKAkSEwoLY29tbWl0Tm90ZXMYCCAB",
-          "KAkSHwoGc2hlZXRzGAkgAygLMg8uVGlkZUNoYXJ0R3JhcGgSIQoFcHJvcHMY",
-          "CiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIdCgVub3RlcxgLIAMoCzIOLlRp",
-          "ZGVDaGFydE5vdGUSIgoHbGlicmFyeRgMIAMoCzIRLlRpZGVDaGFydExpYnJh",
-          "cnkioAEKD1RpZGVDaGFydEhlYWRlchIPCgd2ZXJzaW9uGAEgASgJEg4KBmJy",
-          "YW5jaBgCIAEoCRIOCgZzb3VyY2UYAyABKAkSDQoFbWVyZ2UYBCABKAkSEgoK",
-          "Y29tbWl0RGF0ZRgFIAEoCRIQCghjb21taXRCeRgGIAEoCRISCgpjb21taXRE",
-          "ZXNjGAcgASgJEhMKC2NvbW1pdE5vdGVzGAggASgJIpwCCg1UaWRlQ2hhcnRG",
-          "aWxlEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEcGF0aBgDIAEoCRIO",
-          "CgZvcmlnaW4YBCABKAkSFAoMbW9kaWZpZWREYXRlGAUgASgJEhIKCm1vZGlm",
-          "aWVkQnkYBiABKAkSHQoFY2hhcnQYByABKAsyDi5UaWRlQ2hhcnREYXRhEiIK",
-          "B3dvcmtpbmcYCCADKAsyES5UaWRlQ2hhcnRDb21tYW5kEiEKBnJlbW90ZRgJ",
-          "IAMoCzIRLlRpZGVDaGFydENvbW1hbmQSHwoHaGlzdG9yeRgKIAMoCzIOLlRp",
-          "ZGVDaGFydERhdGESIgoHY29udGV4dBgLIAMoCzIRLlRpZGVDaGFydENvbnRl",
-          "eHQidwoTVGlkZUNoYXJ0RmlsZUhlYWRlchIKCgJpZBgBIAEoCRIMCgRuYW1l",
-          "GAIgASgJEgwKBHBhdGgYAyABKAkSDgoGb3JpZ2luGAQgASgJEhQKDG1vZGlm",
-          "aWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYgASgJIpcBChRUaWRlQ2hh",
-          "cnRGaWxlQ3VycmVudBIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEgwKBHBh",
-          "dGgYAyABKAkSDgoGb3JpZ2luGAQgASgJEhQKDG1vZGlmaWVkRGF0ZRgFIAEo",
-          "CRISCgptb2RpZmllZEJ5GAYgASgJEh0KBWNoYXJ0GAcgASgLMg4uVGlkZUNo",
-          "YXJ0RGF0YSo9ChpUaWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZRIHCgNhZGQQ",
-          "ABIKCgZyZW1vdmUQARIKCgZ1cGRhdGUQAiqdAQoRVGlkZUNoYXJ0TG9nTGV2",
-          "ZWwSCAoEbm9uZRAAEgkKBWZhdGFsEAESCQoFZXJyb3IQAhINCglleGNlcHRp",
-          "b24QAxILCgd3YXJuaW5nEAQSCAoEaW5mbxAFEgsKB21lc3NhZ2UQBhIJCgVk",
-          "ZWJ1ZxAHEgkKBWNoZWNrEAgSCwoHdmVyYm9zZRAJEgkKBXRyYWNlEAoSBwoD",
-          "YWxsEAtCC0IJVGlkZUNoYXJ0YgZwcm90bzM="));
+          "bmQYDiABKAUSDgoGYm9yZGVyGA8gAygFEhAKCGlzUmFpc2VkGBAgASgIEhIK",
+          "CmlzUmV2ZXJzZWQYESABKAhCCQoHY29udGVudCLiAQoPVGlkZUNoYXJ0V2lk",
+          "Z2V0EgoKAmlkGAEgASgJEgwKBHR5cGUYAiABKAkSDQoFdGl0bGUYAyABKAkS",
+          "DgoGcmVnaW9uGAQgASgJEgwKBHBvc1gYBSABKBESDAoEcG9zWRgGIAEoERIN",
+          "CgV3aWR0aBgHIAEoBRIOCgZoZWlnaHQYCCABKAUSDgoEbGluaxgJIAEoCUgA",
+          "Eg4KBHBvcnQYCiABKAlIABIOCgRub2RlGAsgASgJSAASIQoFcHJvcHMYDCAD",
+          "KAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eUIICgZ0YXJnZXQijQIKDVRpZGVDaGFy",
+          "dFBvcnQSDAoEdHlwZRgBIAEoCRIMCgRuYW1lGAIgASgJEg8KB29yZGluYWwY",
+          "AyABKAUSEQoJaXNEZWZhdWx0GAQgASgIEhIKCmlzUmVxdWlyZWQYBSABKAgS",
+          "DwoHYWxsb3dlZBgGIAMoCRIMCgRoaW50GAcgASgJEiQKCGNvbnN0YW50GAgg",
+          "ASgLMhIuVGlkZUNoYXJ0UHJvcGVydHkSDwoHdHJpZ2dlchgJIAEoCRIOCgZm",
+          "aWx0ZXIYCiABKAkSDQoFZXZlbnQYCyABKAkSDAoEc3luYxgMIAEoCRISCgpp",
+          "c0Jsb2NraW5nGA0gASgIEhEKCWlzUXVldWluZxgOIAEoCCLNAQoNVGlkZUNo",
+          "YXJ0TGluaxIPCgdvdXROb2RlGAEgASgJEg8KB291dFBvcnQYAiABKAkSDgoG",
+          "aW5Ob2RlGAMgASgJEg4KBmluUG9ydBgEIAEoCRINCgVncm91cBgFIAEoBRIN",
+          "CgVkZWxheRgGIAEoBRIOCgZmaWx0ZXIYByABKAkSEQoJaXNMb2dnaW5nGBAg",
+          "ASgIEhMKC2lzRGVidWdnaW5nGBEgASgIEhAKCGlzUGF1c2VkGBIgASgIEhIK",
+          "CmlzRGlzYWJsZWQYEyABKAgidwoNVGlkZUNoYXJ0Tm90ZRIKCgJpZBgBIAEo",
+          "CRIPCgdyZXBseVRvGAIgASgJEhAKCGNoYW5nZVRvGAMgASgJEg8KB2NvbnRl",
+          "bnQYBCABKAkSEQoJY3JlYXRlZEJ5GAUgASgJEhMKC2NyZWF0ZWREYXRlGAYg",
+          "ASgJIvcCCg1UaWRlQ2hhcnROb2RlEgwKBG5hbWUYASABKAkSDAoEdHlwZRgC",
+          "IAEoCRIMCgRwb3NYGAMgASgREgwKBHBvc1kYBCABKBESDQoFdGl0bGUYBSAB",
+          "KAkSDAoEaWNvbhgGIAEoCRIPCgdsaWJyYXJ5GAcgASgJEg4KBm1ldGhvZBgI",
+          "IAEoCRINCgVkZWxheRgJIAEoBRIfCgdpbnBvcnRzGAogAygLMg4uVGlkZUNo",
+          "YXJ0UG9ydBIgCghvdXRwb3J0cxgLIAMoCzIOLlRpZGVDaGFydFBvcnQSIQoF",
+          "cHJvcHMYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIRCglpc0xvZ2dpbmcY",
+          "ECABKAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoIaXNQYXVzZWQYEiABKAgS",
+          "EgoKaXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgUIAMoCzIOLlRpZGVDaGFy",
+          "dE5vdGUSDgoGc2NyaXB0GBUgASgJIvsBCg9UaWRlQ2hhcnRSZWdpb24SDAoE",
+          "bmFtZRgBIAEoCRINCgV0aXRsZRgCIAEoCRINCgVub2RlcxgDIAMoCRINCgVn",
+          "cm91cBgEIAEoBRINCgVzY29wZRgFIAEoCRIhCgVwcm9wcxgGIAMoCzISLlRp",
+          "ZGVDaGFydFByb3BlcnR5EhEKCWlzTG9nZ2luZxgQIAEoCBITCgtpc0RlYnVn",
+          "Z2luZxgRIAEoCBIQCghpc1BhdXNlZBgSIAEoCBISCgppc0Rpc2FibGVkGBMg",
+          "ASgIEh0KBW5vdGVzGBQgAygLMg4uVGlkZUNoYXJ0Tm90ZRIOCgZzY3JpcHQY",
+          "FSABKAki2AMKDlRpZGVDaGFydEdyYXBoEgoKAmlkGAEgASgJEgwKBHR5cGUY",
+          "AiABKAkSDAoEbmFtZRgDIAEoCRINCgV0aXRsZRgEIAEoCRIPCgd2ZXJzaW9u",
+          "GAUgASgJEg4KBnNvdXJjZRgGIAEoCRIdCgVub2RlcxgHIAMoCzIOLlRpZGVD",
+          "aGFydE5vZGUSHQoFbGlua3MYCCADKAsyDi5UaWRlQ2hhcnRMaW5rEiEKB3Jl",
+          "Z2lvbnMYCSADKAsyEC5UaWRlQ2hhcnRSZWdpb24SJgoIY29tbWVudHMYCiAD",
+          "KAsyFC5UaWRlQ2hhcnRDb21tZW50Qm94EiEKB3dpZGdldHMYCyADKAsyEC5U",
+          "aWRlQ2hhcnRXaWRnZXQSIQoFcHJvcHMYDCADKAsyEi5UaWRlQ2hhcnRQcm9w",
+          "ZXJ0eRIiCgdoaXN0b3J5GA0gAygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIRCglp",
+          "c0xvZ2dpbmcYECABKAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoIaXNQYXVz",
+          "ZWQYEiABKAgSEgoKaXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgUIAMoCzIO",
+          "LlRpZGVDaGFydE5vdGUSDgoGc2NyaXB0GBUgASgJIoUEChBUaWRlQ2hhcnRD",
+          "b21tYW5kEg8KB3ZlcnNpb24YASABKAkSDgoGdGFyZ2V0GAIgASgJEicKBWdy",
+          "b3VwGAMgASgLMhYuVGlkZUNoYXJ0R3JvdXBDb21tYW5kSAASJQoEbW92ZRgE",
+          "IAEoCzIVLlRpZGVDaGFydE1vdmVDb21tYW5kSAASLgoHY29tbWVudBgFIAEo",
+          "CzIbLlRpZGVDaGFydENvbW1lbnRCb3hDb21tYW5kSAASKQoGd2lkZ2V0GAYg",
+          "ASgLMhcuVGlkZUNoYXJ0V2lkZ2V0Q29tbWFuZEgAEiUKBHBvcnQYByABKAsy",
+          "FS5UaWRlQ2hhcnRQb3J0Q29tbWFuZEgAEiUKBGxpbmsYCCABKAsyFS5UaWRl",
+          "Q2hhcnRMaW5rQ29tbWFuZEgAEiUKBG5vZGUYCSABKAsyFS5UaWRlQ2hhcnRO",
+          "b2RlQ29tbWFuZEgAEikKBnJlZ2lvbhgKIAEoCzIXLlRpZGVDaGFydFJlZ2lv",
+          "bkNvbW1hbmRIABInCgVncmFwaBgLIAEoCzIWLlRpZGVDaGFydEdyYXBoQ29t",
+          "bWFuZEgAEioKBXByb3BzGAwgASgLMhkuVGlkZUNoYXJ0UHJvcGVydHlDb21t",
+          "YW5kSAASJQoEbm90ZRgNIAEoCzIVLlRpZGVDaGFydE5vdGVDb21tYW5kSABC",
+          "CQoHY29tbWFuZCI8ChVUaWRlQ2hhcnRHcm91cENvbW1hbmQSIwoIY29tbWFu",
+          "ZHMYASADKAsyES5UaWRlQ2hhcnRDb21tYW5kImgKFFRpZGVDaGFydE1vdmVD",
+          "b21tYW5kEgwKBG5vZGUYASABKAkSEAoIZnJvbVBvc1gYAiABKBESEAoIZnJv",
+          "bVBvc1kYAyABKBESDgoGdG9Qb3NYGAQgASgREg4KBnRvUG9zWRgFIAEoESKb",
+          "AQoaVGlkZUNoYXJ0Q29tbWVudEJveENvbW1hbmQSKQoLZnJvbUNvbW1lbnQY",
+          "ASABKAsyFC5UaWRlQ2hhcnRDb21tZW50Qm94EicKCXRvQ29tbWVudBgCIAEo",
+          "CzIULlRpZGVDaGFydENvbW1lbnRCb3gSKQoEdHlwZRgDIAEoDjIbLlRpZGVD",
+          "aGFydENvbW1hbmRVcGRhdGVUeXBlIo0BChZUaWRlQ2hhcnRXaWRnZXRDb21t",
+          "YW5kEiQKCmZyb21XaWRnZXQYASABKAsyEC5UaWRlQ2hhcnRXaWRnZXQSIgoI",
+          "dG9XaWRnZXQYAiABKAsyEC5UaWRlQ2hhcnRXaWRnZXQSKQoEdHlwZRgDIAEo",
+          "DjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIoMBChRUaWRlQ2hhcnRQ",
+          "b3J0Q29tbWFuZBIgCghmcm9tUG9ydBgBIAEoCzIOLlRpZGVDaGFydFBvcnQS",
+          "HgoGdG9Qb3J0GAIgASgLMg4uVGlkZUNoYXJ0UG9ydBIpCgR0eXBlGAMgASgO",
+          "MhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUigwEKFFRpZGVDaGFydExp",
+          "bmtDb21tYW5kEiAKCGZyb21MaW5rGAEgASgLMg4uVGlkZUNoYXJ0TGluaxIe",
+          "CgZ0b0xpbmsYAiABKAsyDi5UaWRlQ2hhcnRMaW5rEikKBHR5cGUYAyABKA4y",
+          "Gy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZSKDAQoUVGlkZUNoYXJ0Tm9k",
+          "ZUNvbW1hbmQSIAoIZnJvbU5vZGUYASABKAsyDi5UaWRlQ2hhcnROb2RlEh4K",
+          "BnRvTm9kZRgCIAEoCzIOLlRpZGVDaGFydE5vZGUSKQoEdHlwZRgDIAEoDjIb",
+          "LlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIo0BChZUaWRlQ2hhcnRSZWdp",
+          "b25Db21tYW5kEiQKCmZyb21SZWdpb24YASABKAsyEC5UaWRlQ2hhcnRSZWdp",
+          "b24SIgoIdG9SZWdpb24YAiABKAsyEC5UaWRlQ2hhcnRSZWdpb24SKQoEdHlw",
+          "ZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIogBChVUaWRl",
+          "Q2hhcnRHcmFwaENvbW1hbmQSIgoJZnJvbUdyYXBoGAEgASgLMg8uVGlkZUNo",
+          "YXJ0R3JhcGgSIAoHdG9HcmFwaBgCIAEoCzIPLlRpZGVDaGFydEdyYXBoEikK",
+          "BHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZSLgAQoY",
+          "VGlkZUNoYXJ0UHJvcGVydHlDb21tYW5kEiUKCWZyb21Qcm9wcxgBIAMoCzIS",
+          "LlRpZGVDaGFydFByb3BlcnR5EiMKB3RvUHJvcHMYAiADKAsyEi5UaWRlQ2hh",
+          "cnRQcm9wZXJ0eRIpCgR0eXBlGAMgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVw",
+          "ZGF0ZVR5cGUSDgoEbm9kZRgFIAEoCUgAEhAKBnJlZ2lvbhgGIAEoCUgAEhAK",
+          "BndpZGdldBgHIAEoCUgAEg8KBWdyYXBoGAggASgJSABCCAoGdGFyZ2V0Ip0B",
+          "ChRUaWRlQ2hhcnROb3RlQ29tbWFuZBIdCgVub3RlcxgBIAMoCzIOLlRpZGVD",
+          "aGFydE5vdGUSKQoEdHlwZRgCIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRh",
+          "dGVUeXBlEg4KBG5vZGUYAyABKAlIABIQCgZyZWdpb24YBCABKAlIABIPCgVn",
+          "cmFwaBgFIAEoCUgAQggKBnRhcmdldCKuAQoPVGlkZUNoYXJ0TWV0aG9kEgoK",
+          "AmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDwoHZXh0ZW5kcxgDIAEoCRIOCgZz",
+          "Y3JpcHQYBCABKAkSHwoHaW5wb3J0cxgFIAMoCzIOLlRpZGVDaGFydFBvcnQS",
+          "IAoIb3V0cG9ydHMYBiADKAsyDi5UaWRlQ2hhcnRQb3J0Eh0KBXByb3BzGAcg",
+          "AygLMg4uVGlkZUNoYXJ0UG9ydCKUAQoPVGlkZUNoYXJ0U291cmNlEgoKAmlk",
+          "GAEgASgJEgwKBG5hbWUYAiABKAkSDAoEcGF0aBgDIAEoCRIVCg1tb2RpZmll",
+          "ZGREYXRlGAUgASgJEhIKCm1vZGlmaWVkQnkYBiABKAkSEQoHdmVyc2lvbhgH",
+          "IAEoCUgAEhAKBnNjcmlwdBgIIAEoCUgAQgkKB2NvbnRlbnQirQEKEFRpZGVD",
+          "aGFydExpYnJhcnkSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRINCgV0aXRs",
+          "ZRgDIAEoCRIOCgZvcmlnaW4YBCABKAkSDgoGYnJhbmNoGAUgASgJEgwKBHBh",
+          "dGgYBiABKAkSHwoFZmlsZXMYByADKAsyEC5UaWRlQ2hhcnRTb3VyY2USIQoH",
+          "bWV0aG9kcxgIIAMoCzIQLlRpZGVDaGFydE1ldGhvZCLoAQoNVGlkZUNoYXJ0",
+          "U2l0ZRINCgVpbmRleBgBIAEoAxIdCgVzdGFjaxgCIAMoCzIOLlRpZGVDaGFy",
+          "dFNpdGUSDAoEcGF0aBgDIAEoCRIPCgd0cmlnZ2VyGAQgASgJEg0KBWV2ZW50",
+          "GAUgASgJEg0KBXNjb3BlGAYgAygJEg4KBmZpbHRlchgHIAEoCRINCgVncmFw",
+          "aBgIIAEoCRIOCgZyZWdpb24YCSABKAkSDAoEbm9kZRgKIAEoCRIMCgRwb3J0",
+          "GAsgASgJEiEKBWxvY2FsGAwgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkiiQIK",
+          "EFRpZGVDaGFydE1lc3NhZ2USDQoFaW5kZXgYASABKAMSEQoJdGltZXN0YW1w",
+          "GAIgASgDEg4KBm9yaWdpbhgEIAEoAxIQCghwcmV2aW91cxgFIAEoAxIOCgZz",
+          "b3VyY2UYByABKAMSDgoGdGFyZ2V0GAggASgDEhIKCmRlbGF5VW50aWwYCSAB",
+          "KAMSEQoJaG9sZFRva2VuGAogASgDEhMKC2NhbmNlbFRva2VuGAsgASgDEgwK",
+          "BHR5cGUYDCABKAkSDwoHdmVyc2lvbhgNIAEoBRIVCgtqc29uQ29udGVudBgO",
+          "IAEoCUgAEhQKCm1zZ0NvbnRlbnQYDyABKAxIAEIJCgdjb250ZW50ImsKFlRp",
+          "ZGVDaGFydENvbnRleHRDaGFuZ2USDQoFaW5kZXgYASABKAMSEQoJdGltZXN0",
+          "YW1wGAIgASgDEgwKBHR5cGUYAyABKAkSIQoFcHJvcHMYBCADKAsyEi5UaWRl",
+          "Q2hhcnRQcm9wZXJ0eSK4AQoRVGlkZUNoYXJ0TG9nRW50cnkSDQoFaW5kZXgY",
+          "ASABKAMSEQoJdGltZXN0YW1wGAIgASgDEg4KBnNvdXJjZRgDIAEoAxIhCgVs",
+          "ZXZlbBgEIAEoDjISLlRpZGVDaGFydExvZ0xldmVsEgwKBHRhZ3MYBSADKAkS",
+          "DwoHbWVzc2FnZRgGIAEoCRIMCgRyZWZzGAcgAygDEiEKBXByb3BzGAggAygL",
+          "MhIuVGlkZUNoYXJ0UHJvcGVydHki7QIKEFRpZGVDaGFydENvbnRleHQSCgoC",
+          "aWQYASABKAkSDQoFaW5kZXgYAiABKAMSEQoJdGltZXN0YW1wGAMgASgDEg8K",
+          "B3ZlcnNpb24YBCABKAkSHQoFc2l0ZXMYBSADKAsyDi5UaWRlQ2hhcnRTaXRl",
+          "EiMKCG1lc3NhZ2VzGAYgAygLMhEuVGlkZUNoYXJ0TWVzc2FnZRIiCgZnbG9i",
+          "YWwYByADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIRCglzdGFydFRpbWUYCCAB",
+          "KAMSEgoKc3RhcnRJbmRleBgJIAEoAxIOCgZhY3RpdmUYCiADKAMSDwoHd2Fp",
+          "dGluZxgLIAMoAxIOCgZwYXVzZWQYDCADKAMSEAoIZGlzYWJsZWQYDSADKAMS",
+          "JwoGZXZlbnRzGA4gAygLMhcuVGlkZUNoYXJ0Q29udGV4dENoYW5nZRIfCgNs",
+          "b2cYDyADKAsyEi5UaWRlQ2hhcnRMb2dFbnRyeSKlAgoNVGlkZUNoYXJ0RGF0",
+          "YRIPCgd2ZXJzaW9uGAEgASgJEg4KBmJyYW5jaBgCIAEoCRIOCgZzb3VyY2UY",
+          "AyABKAkSDQoFbWVyZ2UYBCABKAkSEgoKY29tbWl0RGF0ZRgFIAEoCRIQCghj",
+          "b21taXRCeRgGIAEoCRISCgpjb21taXREZXNjGAcgASgJEhMKC2NvbW1pdE5v",
+          "dGVzGAggASgJEh8KBnNoZWV0cxgJIAMoCzIPLlRpZGVDaGFydEdyYXBoEiEK",
+          "BXByb3BzGAogAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkSHQoFbm90ZXMYCyAD",
+          "KAsyDi5UaWRlQ2hhcnROb3RlEiIKB2xpYnJhcnkYDCADKAsyES5UaWRlQ2hh",
+          "cnRMaWJyYXJ5IqABCg9UaWRlQ2hhcnRIZWFkZXISDwoHdmVyc2lvbhgBIAEo",
+          "CRIOCgZicmFuY2gYAiABKAkSDgoGc291cmNlGAMgASgJEg0KBW1lcmdlGAQg",
+          "ASgJEhIKCmNvbW1pdERhdGUYBSABKAkSEAoIY29tbWl0QnkYBiABKAkSEgoK",
+          "Y29tbWl0RGVzYxgHIAEoCRITCgtjb21taXROb3RlcxgIIAEoCSKcAgoNVGlk",
+          "ZUNoYXJ0RmlsZRIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEgwKBHBhdGgY",
+          "AyABKAkSDgoGb3JpZ2luGAQgASgJEhQKDG1vZGlmaWVkRGF0ZRgFIAEoCRIS",
+          "Cgptb2RpZmllZEJ5GAYgASgJEh0KBWNoYXJ0GAcgASgLMg4uVGlkZUNoYXJ0",
+          "RGF0YRIiCgd3b3JraW5nGAggAygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIhCgZy",
+          "ZW1vdGUYCSADKAsyES5UaWRlQ2hhcnRDb21tYW5kEh8KB2hpc3RvcnkYCiAD",
+          "KAsyDi5UaWRlQ2hhcnREYXRhEiIKB2NvbnRleHQYCyADKAsyES5UaWRlQ2hh",
+          "cnRDb250ZXh0IncKE1RpZGVDaGFydEZpbGVIZWFkZXISCgoCaWQYASABKAkS",
+          "DAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4KBm9yaWdpbhgEIAEoCRIU",
+          "Cgxtb2RpZmllZERhdGUYBSABKAkSEgoKbW9kaWZpZWRCeRgGIAEoCSKXAQoU",
+          "VGlkZUNoYXJ0RmlsZUN1cnJlbnQSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEo",
+          "CRIMCgRwYXRoGAMgASgJEg4KBm9yaWdpbhgEIAEoCRIUCgxtb2RpZmllZERh",
+          "dGUYBSABKAkSEgoKbW9kaWZpZWRCeRgGIAEoCRIdCgVjaGFydBgHIAEoCzIO",
+          "LlRpZGVDaGFydERhdGEqPQoaVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUS",
+          "BwoDYWRkEAASCgoGcmVtb3ZlEAESCgoGdXBkYXRlEAIqnQEKEVRpZGVDaGFy",
+          "dExvZ0xldmVsEggKBG5vbmUQABIJCgVmYXRhbBABEgkKBWVycm9yEAISDQoJ",
+          "ZXhjZXB0aW9uEAMSCwoHd2FybmluZxAEEggKBGluZm8QBRILCgdtZXNzYWdl",
+          "EAYSCQoFZGVidWcQBxIJCgVjaGVjaxAIEgsKB3ZlcmJvc2UQCRIJCgV0cmFj",
+          "ZRAKEgcKA2FsbBALQgtCCVRpZGVDaGFydGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartCommandUpdateType), typeof(global::TideChartLogLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartProperty), global::TideChartProperty.Parser, new[]{ "Name", "Type", "Value", "Props" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBox), global::TideChartCommentBox.Parser, new[]{ "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "Raised", "Reversed" }, new[]{ "Content" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBox), global::TideChartCommentBox.Parser, new[]{ "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "IsRaised", "IsReversed" }, new[]{ "Content" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props" }, new[]{ "Target" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPort), global::TideChartPort.Parser, new[]{ "Type", "Name", "Ordinal", "Default", "Required", "Allowed", "Hint", "Constant", "Trigger", "Filter", "Event", "Sync", "Block", "Queue" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLink), global::TideChartLink.Parser, new[]{ "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Filter", "Logging", "Debugging", "Paused", "Disabled" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPort), global::TideChartPort.Parser, new[]{ "Type", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Constant", "Trigger", "Filter", "Event", "Sync", "IsBlocking", "IsQueuing" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLink), global::TideChartLink.Parser, new[]{ "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Filter", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNote), global::TideChartNote.Parser, new[]{ "Id", "ReplyTo", "ChangeTo", "Content", "CreatedBy", "CreatedDate" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNode), global::TideChartNode.Parser, new[]{ "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "Logging", "Debugging", "Paused", "Disabled", "Notes", "Script" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegion), global::TideChartRegion.Parser, new[]{ "Name", "Title", "Nodes", "Group", "Scope", "Props", "Logging", "Debugging", "Paused", "Disabled", "Notes", "Script" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraph), global::TideChartGraph.Parser, new[]{ "Id", "Type", "Name", "Title", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "Logging", "Debugging", "Paused", "Disabled", "Notes", "Script" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNode), global::TideChartNode.Parser, new[]{ "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegion), global::TideChartRegion.Parser, new[]{ "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraph), global::TideChartGraph.Parser, new[]{ "Id", "Type", "Name", "Title", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommand), global::TideChartCommand.Parser, new[]{ "Version", "Target", "Group", "Move", "Comment", "Widget", "Port", "Link", "Node", "Region", "Graph", "Props", "Note" }, new[]{ "Command" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGroupCommand), global::TideChartGroupCommand.Parser, new[]{ "Commands" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMoveCommand), global::TideChartMoveCommand.Parser, new[]{ "Node", "FromPosX", "FromPosY", "ToPosX", "ToPosY" }, null, null, null, null),
@@ -210,7 +211,7 @@ public static partial class TideChartReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPropertyCommand), global::TideChartPropertyCommand.Parser, new[]{ "FromProps", "ToProps", "Type", "Node", "Region", "Widget", "Graph" }, new[]{ "Target" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNoteCommand), global::TideChartNoteCommand.Parser, new[]{ "Notes", "Type", "Node", "Region", "Graph" }, new[]{ "Target" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMethod), global::TideChartMethod.Parser, new[]{ "Id", "Name", "Extends", "Script", "Inports", "Outports", "Props" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSource), global::TideChartSource.Parser, new[]{ "Id", "Name", "Path", "CreatedDate", "CreatedBy", "Version", "Script" }, new[]{ "Content" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSource), global::TideChartSource.Parser, new[]{ "Id", "Name", "Path", "ModifieddDate", "ModifiedBy", "Version", "Script" }, new[]{ "Content" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLibrary), global::TideChartLibrary.Parser, new[]{ "Id", "Name", "Title", "Origin", "Branch", "Path", "Files", "Methods" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSite), global::TideChartSite.Parser, new[]{ "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port", "Local" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMessage), global::TideChartMessage.Parser, new[]{ "Index", "Timestamp", "Origin", "Previous", "Source", "Target", "DelayUntil", "HoldToken", "CancelToken", "Type", "Version", "JsonContent", "MsgContent" }, new[]{ "Content" }, null, null, null),
@@ -545,8 +546,8 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     color_ = other.color_;
     background_ = other.background_;
     border_ = other.border_.Clone();
-    raised_ = other.raised_;
-    reversed_ = other.reversed_;
+    isRaised_ = other.isRaised_;
+    isReversed_ = other.isReversed_;
     switch (other.ContentCase) {
       case ContentOneofCase.Text:
         Text = other.Text;
@@ -775,31 +776,31 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     get { return border_; }
   }
 
-  /// <summary>Field number for the "raised" field.</summary>
-  public const int RaisedFieldNumber = 16;
-  private bool raised_;
+  /// <summary>Field number for the "isRaised" field.</summary>
+  public const int IsRaisedFieldNumber = 16;
+  private bool isRaised_;
   /// <summary>
   /// flag to indicate if a drop shadow should be used
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Raised {
-    get { return raised_; }
+  public bool IsRaised {
+    get { return isRaised_; }
     set {
-      raised_ = value;
+      isRaised_ = value;
     }
   }
 
-  /// <summary>Field number for the "reversed" field.</summary>
-  public const int ReversedFieldNumber = 17;
-  private bool reversed_;
+  /// <summary>Field number for the "isReversed" field.</summary>
+  public const int IsReversedFieldNumber = 17;
+  private bool isReversed_;
   /// <summary>
   /// flag to indicate if the text requires left to right layout order
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Reversed {
-    get { return reversed_; }
+  public bool IsReversed {
+    get { return isReversed_; }
     set {
-      reversed_ = value;
+      isReversed_ = value;
     }
   }
 
@@ -851,8 +852,8 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     if (Color != other.Color) return false;
     if (Background != other.Background) return false;
     if(!border_.Equals(other.border_)) return false;
-    if (Raised != other.Raised) return false;
-    if (Reversed != other.Reversed) return false;
+    if (IsRaised != other.IsRaised) return false;
+    if (IsReversed != other.IsReversed) return false;
     if (ContentCase != other.ContentCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -875,8 +876,8 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
     if (Color != 0) hash ^= Color.GetHashCode();
     if (Background != 0) hash ^= Background.GetHashCode();
     hash ^= border_.GetHashCode();
-    if (Raised != false) hash ^= Raised.GetHashCode();
-    if (Reversed != false) hash ^= Reversed.GetHashCode();
+    if (IsRaised != false) hash ^= IsRaised.GetHashCode();
+    if (IsReversed != false) hash ^= IsReversed.GetHashCode();
     hash ^= (int) contentCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -945,13 +946,13 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
       output.WriteInt32(Background);
     }
     border_.WriteTo(output, _repeated_border_codec);
-    if (Raised != false) {
+    if (IsRaised != false) {
       output.WriteRawTag(128, 1);
-      output.WriteBool(Raised);
+      output.WriteBool(IsRaised);
     }
-    if (Reversed != false) {
+    if (IsReversed != false) {
       output.WriteRawTag(136, 1);
-      output.WriteBool(Reversed);
+      output.WriteBool(IsReversed);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -1002,10 +1003,10 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Background);
     }
     size += border_.CalculateSize(_repeated_border_codec);
-    if (Raised != false) {
+    if (IsRaised != false) {
       size += 2 + 1;
     }
-    if (Reversed != false) {
+    if (IsReversed != false) {
       size += 2 + 1;
     }
     if (_unknownFields != null) {
@@ -1051,11 +1052,11 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
       Background = other.Background;
     }
     border_.Add(other.border_);
-    if (other.Raised != false) {
-      Raised = other.Raised;
+    if (other.IsRaised != false) {
+      IsRaised = other.IsRaised;
     }
-    if (other.Reversed != false) {
-      Reversed = other.Reversed;
+    if (other.IsReversed != false) {
+      IsReversed = other.IsReversed;
     }
     switch (other.ContentCase) {
       case ContentOneofCase.Text:
@@ -1143,11 +1144,11 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
           break;
         }
         case 128: {
-          Raised = input.ReadBool();
+          IsRaised = input.ReadBool();
           break;
         }
         case 136: {
-          Reversed = input.ReadBool();
+          IsReversed = input.ReadBool();
           break;
         }
       }
@@ -1683,8 +1684,8 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     type_ = other.type_;
     name_ = other.name_;
     ordinal_ = other.ordinal_;
-    default_ = other.default_;
-    required_ = other.required_;
+    isDefault_ = other.isDefault_;
+    isRequired_ = other.isRequired_;
     allowed_ = other.allowed_.Clone();
     hint_ = other.hint_;
     constant_ = other.constant_ != null ? other.constant_.Clone() : null;
@@ -1692,8 +1693,8 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     filter_ = other.filter_;
     event_ = other.event_;
     sync_ = other.sync_;
-    block_ = other.block_;
-    queue_ = other.queue_;
+    isBlocking_ = other.isBlocking_;
+    isQueuing_ = other.isQueuing_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -1744,31 +1745,31 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     }
   }
 
-  /// <summary>Field number for the "default" field.</summary>
-  public const int DefaultFieldNumber = 4;
-  private bool default_;
+  /// <summary>Field number for the "isDefault" field.</summary>
+  public const int IsDefaultFieldNumber = 4;
+  private bool isDefault_;
   /// <summary>
   /// used by methods to indicate which ports are used for default in/out routing
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Default {
-    get { return default_; }
+  public bool IsDefault {
+    get { return isDefault_; }
     set {
-      default_ = value;
+      isDefault_ = value;
     }
   }
 
-  /// <summary>Field number for the "required" field.</summary>
-  public const int RequiredFieldNumber = 5;
-  private bool required_;
+  /// <summary>Field number for the "isRequired" field.</summary>
+  public const int IsRequiredFieldNumber = 5;
+  private bool isRequired_;
   /// <summary>
   /// used by methods to indicate the port must exist
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Required {
-    get { return required_; }
+  public bool IsRequired {
+    get { return isRequired_; }
     set {
-      required_ = value;
+      isRequired_ = value;
     }
   }
 
@@ -1869,31 +1870,31 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     }
   }
 
-  /// <summary>Field number for the "block" field.</summary>
-  public const int BlockFieldNumber = 13;
-  private bool block_;
+  /// <summary>Field number for the "isBlocking" field.</summary>
+  public const int IsBlockingFieldNumber = 13;
+  private bool isBlocking_;
   /// <summary>
   /// determines if the port will block to wait for the rest of the port group
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Block {
-    get { return block_; }
+  public bool IsBlocking {
+    get { return isBlocking_; }
     set {
-      block_ = value;
+      isBlocking_ = value;
     }
   }
 
-  /// <summary>Field number for the "queue" field.</summary>
-  public const int QueueFieldNumber = 14;
-  private bool queue_;
+  /// <summary>Field number for the "isQueuing" field.</summary>
+  public const int IsQueuingFieldNumber = 14;
+  private bool isQueuing_;
   /// <summary>
   /// determines if messages should queue while blocking or replace with latest received
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Queue {
-    get { return queue_; }
+  public bool IsQueuing {
+    get { return isQueuing_; }
     set {
-      queue_ = value;
+      isQueuing_ = value;
     }
   }
 
@@ -1913,8 +1914,8 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (Type != other.Type) return false;
     if (Name != other.Name) return false;
     if (Ordinal != other.Ordinal) return false;
-    if (Default != other.Default) return false;
-    if (Required != other.Required) return false;
+    if (IsDefault != other.IsDefault) return false;
+    if (IsRequired != other.IsRequired) return false;
     if(!allowed_.Equals(other.allowed_)) return false;
     if (Hint != other.Hint) return false;
     if (!object.Equals(Constant, other.Constant)) return false;
@@ -1922,8 +1923,8 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (Filter != other.Filter) return false;
     if (Event != other.Event) return false;
     if (Sync != other.Sync) return false;
-    if (Block != other.Block) return false;
-    if (Queue != other.Queue) return false;
+    if (IsBlocking != other.IsBlocking) return false;
+    if (IsQueuing != other.IsQueuing) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -1933,8 +1934,8 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (Type.Length != 0) hash ^= Type.GetHashCode();
     if (Name.Length != 0) hash ^= Name.GetHashCode();
     if (Ordinal != 0) hash ^= Ordinal.GetHashCode();
-    if (Default != false) hash ^= Default.GetHashCode();
-    if (Required != false) hash ^= Required.GetHashCode();
+    if (IsDefault != false) hash ^= IsDefault.GetHashCode();
+    if (IsRequired != false) hash ^= IsRequired.GetHashCode();
     hash ^= allowed_.GetHashCode();
     if (Hint.Length != 0) hash ^= Hint.GetHashCode();
     if (constant_ != null) hash ^= Constant.GetHashCode();
@@ -1942,8 +1943,8 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (Filter.Length != 0) hash ^= Filter.GetHashCode();
     if (Event.Length != 0) hash ^= Event.GetHashCode();
     if (Sync.Length != 0) hash ^= Sync.GetHashCode();
-    if (Block != false) hash ^= Block.GetHashCode();
-    if (Queue != false) hash ^= Queue.GetHashCode();
+    if (IsBlocking != false) hash ^= IsBlocking.GetHashCode();
+    if (IsQueuing != false) hash ^= IsQueuing.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1969,13 +1970,13 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
       output.WriteRawTag(24);
       output.WriteInt32(Ordinal);
     }
-    if (Default != false) {
+    if (IsDefault != false) {
       output.WriteRawTag(32);
-      output.WriteBool(Default);
+      output.WriteBool(IsDefault);
     }
-    if (Required != false) {
+    if (IsRequired != false) {
       output.WriteRawTag(40);
-      output.WriteBool(Required);
+      output.WriteBool(IsRequired);
     }
     allowed_.WriteTo(output, _repeated_allowed_codec);
     if (Hint.Length != 0) {
@@ -2002,13 +2003,13 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
       output.WriteRawTag(98);
       output.WriteString(Sync);
     }
-    if (Block != false) {
+    if (IsBlocking != false) {
       output.WriteRawTag(104);
-      output.WriteBool(Block);
+      output.WriteBool(IsBlocking);
     }
-    if (Queue != false) {
+    if (IsQueuing != false) {
       output.WriteRawTag(112);
-      output.WriteBool(Queue);
+      output.WriteBool(IsQueuing);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -2027,10 +2028,10 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (Ordinal != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ordinal);
     }
-    if (Default != false) {
+    if (IsDefault != false) {
       size += 1 + 1;
     }
-    if (Required != false) {
+    if (IsRequired != false) {
       size += 1 + 1;
     }
     size += allowed_.CalculateSize(_repeated_allowed_codec);
@@ -2052,10 +2053,10 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (Sync.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Sync);
     }
-    if (Block != false) {
+    if (IsBlocking != false) {
       size += 1 + 1;
     }
-    if (Queue != false) {
+    if (IsQueuing != false) {
       size += 1 + 1;
     }
     if (_unknownFields != null) {
@@ -2078,11 +2079,11 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (other.Ordinal != 0) {
       Ordinal = other.Ordinal;
     }
-    if (other.Default != false) {
-      Default = other.Default;
+    if (other.IsDefault != false) {
+      IsDefault = other.IsDefault;
     }
-    if (other.Required != false) {
-      Required = other.Required;
+    if (other.IsRequired != false) {
+      IsRequired = other.IsRequired;
     }
     allowed_.Add(other.allowed_);
     if (other.Hint.Length != 0) {
@@ -2106,11 +2107,11 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
     if (other.Sync.Length != 0) {
       Sync = other.Sync;
     }
-    if (other.Block != false) {
-      Block = other.Block;
+    if (other.IsBlocking != false) {
+      IsBlocking = other.IsBlocking;
     }
-    if (other.Queue != false) {
-      Queue = other.Queue;
+    if (other.IsQueuing != false) {
+      IsQueuing = other.IsQueuing;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -2136,11 +2137,11 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
           break;
         }
         case 32: {
-          Default = input.ReadBool();
+          IsDefault = input.ReadBool();
           break;
         }
         case 40: {
-          Required = input.ReadBool();
+          IsRequired = input.ReadBool();
           break;
         }
         case 50: {
@@ -2175,11 +2176,11 @@ public sealed partial class TideChartPort : pb::IMessage<TideChartPort> {
           break;
         }
         case 104: {
-          Block = input.ReadBool();
+          IsBlocking = input.ReadBool();
           break;
         }
         case 112: {
-          Queue = input.ReadBool();
+          IsQueuing = input.ReadBool();
           break;
         }
       }
@@ -2220,10 +2221,10 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
     group_ = other.group_;
     delay_ = other.delay_;
     filter_ = other.filter_;
-    logging_ = other.logging_;
-    debugging_ = other.debugging_;
-    paused_ = other.paused_;
-    disabled_ = other.disabled_;
+    isLogging_ = other.isLogging_;
+    isDebugging_ = other.isDebugging_;
+    isPaused_ = other.isPaused_;
+    isDisabled_ = other.isDisabled_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -2330,59 +2331,59 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
     }
   }
 
-  /// <summary>Field number for the "logging" field.</summary>
-  public const int LoggingFieldNumber = 16;
-  private bool logging_;
+  /// <summary>Field number for the "isLogging" field.</summary>
+  public const int IsLoggingFieldNumber = 16;
+  private bool isLogging_;
   /// <summary>
   /// flag indicating this link will trace messages
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Logging {
-    get { return logging_; }
+  public bool IsLogging {
+    get { return isLogging_; }
     set {
-      logging_ = value;
+      isLogging_ = value;
     }
   }
 
-  /// <summary>Field number for the "debugging" field.</summary>
-  public const int DebuggingFieldNumber = 17;
-  private bool debugging_;
+  /// <summary>Field number for the "isDebugging" field.</summary>
+  public const int IsDebuggingFieldNumber = 17;
+  private bool isDebugging_;
   /// <summary>
   /// flag indicating this link is a debug breakpoint
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Debugging {
-    get { return debugging_; }
+  public bool IsDebugging {
+    get { return isDebugging_; }
     set {
-      debugging_ = value;
+      isDebugging_ = value;
     }
   }
 
-  /// <summary>Field number for the "paused" field.</summary>
-  public const int PausedFieldNumber = 18;
-  private bool paused_;
+  /// <summary>Field number for the "isPaused" field.</summary>
+  public const int IsPausedFieldNumber = 18;
+  private bool isPaused_;
   /// <summary>
   /// flag indicating this link is paused (messages are queued)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Paused {
-    get { return paused_; }
+  public bool IsPaused {
+    get { return isPaused_; }
     set {
-      paused_ = value;
+      isPaused_ = value;
     }
   }
 
-  /// <summary>Field number for the "disabled" field.</summary>
-  public const int DisabledFieldNumber = 19;
-  private bool disabled_;
+  /// <summary>Field number for the "isDisabled" field.</summary>
+  public const int IsDisabledFieldNumber = 19;
+  private bool isDisabled_;
   /// <summary>
   /// flag indicating this link is disabled (messages are dropped)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Disabled {
-    get { return disabled_; }
+  public bool IsDisabled {
+    get { return isDisabled_; }
     set {
-      disabled_ = value;
+      isDisabled_ = value;
     }
   }
 
@@ -2406,10 +2407,10 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
     if (Group != other.Group) return false;
     if (Delay != other.Delay) return false;
     if (Filter != other.Filter) return false;
-    if (Logging != other.Logging) return false;
-    if (Debugging != other.Debugging) return false;
-    if (Paused != other.Paused) return false;
-    if (Disabled != other.Disabled) return false;
+    if (IsLogging != other.IsLogging) return false;
+    if (IsDebugging != other.IsDebugging) return false;
+    if (IsPaused != other.IsPaused) return false;
+    if (IsDisabled != other.IsDisabled) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -2423,10 +2424,10 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
     if (Group != 0) hash ^= Group.GetHashCode();
     if (Delay != 0) hash ^= Delay.GetHashCode();
     if (Filter.Length != 0) hash ^= Filter.GetHashCode();
-    if (Logging != false) hash ^= Logging.GetHashCode();
-    if (Debugging != false) hash ^= Debugging.GetHashCode();
-    if (Paused != false) hash ^= Paused.GetHashCode();
-    if (Disabled != false) hash ^= Disabled.GetHashCode();
+    if (IsLogging != false) hash ^= IsLogging.GetHashCode();
+    if (IsDebugging != false) hash ^= IsDebugging.GetHashCode();
+    if (IsPaused != false) hash ^= IsPaused.GetHashCode();
+    if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -2468,21 +2469,21 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
       output.WriteRawTag(58);
       output.WriteString(Filter);
     }
-    if (Logging != false) {
+    if (IsLogging != false) {
       output.WriteRawTag(128, 1);
-      output.WriteBool(Logging);
+      output.WriteBool(IsLogging);
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       output.WriteRawTag(136, 1);
-      output.WriteBool(Debugging);
+      output.WriteBool(IsDebugging);
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       output.WriteRawTag(144, 1);
-      output.WriteBool(Paused);
+      output.WriteBool(IsPaused);
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       output.WriteRawTag(152, 1);
-      output.WriteBool(Disabled);
+      output.WriteBool(IsDisabled);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -2513,16 +2514,16 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
     if (Filter.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Filter);
     }
-    if (Logging != false) {
+    if (IsLogging != false) {
       size += 2 + 1;
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       size += 2 + 1;
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       size += 2 + 1;
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       size += 2 + 1;
     }
     if (_unknownFields != null) {
@@ -2557,17 +2558,17 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
     if (other.Filter.Length != 0) {
       Filter = other.Filter;
     }
-    if (other.Logging != false) {
-      Logging = other.Logging;
+    if (other.IsLogging != false) {
+      IsLogging = other.IsLogging;
     }
-    if (other.Debugging != false) {
-      Debugging = other.Debugging;
+    if (other.IsDebugging != false) {
+      IsDebugging = other.IsDebugging;
     }
-    if (other.Paused != false) {
-      Paused = other.Paused;
+    if (other.IsPaused != false) {
+      IsPaused = other.IsPaused;
     }
-    if (other.Disabled != false) {
-      Disabled = other.Disabled;
+    if (other.IsDisabled != false) {
+      IsDisabled = other.IsDisabled;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -2609,19 +2610,19 @@ public sealed partial class TideChartLink : pb::IMessage<TideChartLink> {
           break;
         }
         case 128: {
-          Logging = input.ReadBool();
+          IsLogging = input.ReadBool();
           break;
         }
         case 136: {
-          Debugging = input.ReadBool();
+          IsDebugging = input.ReadBool();
           break;
         }
         case 144: {
-          Paused = input.ReadBool();
+          IsPaused = input.ReadBool();
           break;
         }
         case 152: {
-          Disabled = input.ReadBool();
+          IsDisabled = input.ReadBool();
           break;
         }
       }
@@ -2954,10 +2955,10 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     inports_ = other.inports_.Clone();
     outports_ = other.outports_.Clone();
     props_ = other.props_.Clone();
-    logging_ = other.logging_;
-    debugging_ = other.debugging_;
-    paused_ = other.paused_;
-    disabled_ = other.disabled_;
+    isLogging_ = other.isLogging_;
+    isDebugging_ = other.isDebugging_;
+    isPaused_ = other.isPaused_;
+    isDisabled_ = other.isDisabled_;
     notes_ = other.notes_.Clone();
     script_ = other.script_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -3133,59 +3134,59 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     get { return props_; }
   }
 
-  /// <summary>Field number for the "logging" field.</summary>
-  public const int LoggingFieldNumber = 16;
-  private bool logging_;
+  /// <summary>Field number for the "isLogging" field.</summary>
+  public const int IsLoggingFieldNumber = 16;
+  private bool isLogging_;
   /// <summary>
   /// flag indicating this node will trace messages
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Logging {
-    get { return logging_; }
+  public bool IsLogging {
+    get { return isLogging_; }
     set {
-      logging_ = value;
+      isLogging_ = value;
     }
   }
 
-  /// <summary>Field number for the "debugging" field.</summary>
-  public const int DebuggingFieldNumber = 17;
-  private bool debugging_;
+  /// <summary>Field number for the "isDebugging" field.</summary>
+  public const int IsDebuggingFieldNumber = 17;
+  private bool isDebugging_;
   /// <summary>
   /// flag indicating this node is a debug breakpoint
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Debugging {
-    get { return debugging_; }
+  public bool IsDebugging {
+    get { return isDebugging_; }
     set {
-      debugging_ = value;
+      isDebugging_ = value;
     }
   }
 
-  /// <summary>Field number for the "paused" field.</summary>
-  public const int PausedFieldNumber = 18;
-  private bool paused_;
+  /// <summary>Field number for the "isPaused" field.</summary>
+  public const int IsPausedFieldNumber = 18;
+  private bool isPaused_;
   /// <summary>
   /// flag indicating this node is paused (messages are queued)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Paused {
-    get { return paused_; }
+  public bool IsPaused {
+    get { return isPaused_; }
     set {
-      paused_ = value;
+      isPaused_ = value;
     }
   }
 
-  /// <summary>Field number for the "disabled" field.</summary>
-  public const int DisabledFieldNumber = 19;
-  private bool disabled_;
+  /// <summary>Field number for the "isDisabled" field.</summary>
+  public const int IsDisabledFieldNumber = 19;
+  private bool isDisabled_;
   /// <summary>
   /// flag indicating this node is disabled (messages are dropped)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Disabled {
-    get { return disabled_; }
+  public bool IsDisabled {
+    get { return isDisabled_; }
     set {
-      disabled_ = value;
+      isDisabled_ = value;
     }
   }
 
@@ -3241,10 +3242,10 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     if(!inports_.Equals(other.inports_)) return false;
     if(!outports_.Equals(other.outports_)) return false;
     if(!props_.Equals(other.props_)) return false;
-    if (Logging != other.Logging) return false;
-    if (Debugging != other.Debugging) return false;
-    if (Paused != other.Paused) return false;
-    if (Disabled != other.Disabled) return false;
+    if (IsLogging != other.IsLogging) return false;
+    if (IsDebugging != other.IsDebugging) return false;
+    if (IsPaused != other.IsPaused) return false;
+    if (IsDisabled != other.IsDisabled) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if (Script != other.Script) return false;
     return Equals(_unknownFields, other._unknownFields);
@@ -3265,10 +3266,10 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     hash ^= inports_.GetHashCode();
     hash ^= outports_.GetHashCode();
     hash ^= props_.GetHashCode();
-    if (Logging != false) hash ^= Logging.GetHashCode();
-    if (Debugging != false) hash ^= Debugging.GetHashCode();
-    if (Paused != false) hash ^= Paused.GetHashCode();
-    if (Disabled != false) hash ^= Disabled.GetHashCode();
+    if (IsLogging != false) hash ^= IsLogging.GetHashCode();
+    if (IsDebugging != false) hash ^= IsDebugging.GetHashCode();
+    if (IsPaused != false) hash ^= IsPaused.GetHashCode();
+    if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     hash ^= notes_.GetHashCode();
     if (Script.Length != 0) hash ^= Script.GetHashCode();
     if (_unknownFields != null) {
@@ -3323,21 +3324,21 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     inports_.WriteTo(output, _repeated_inports_codec);
     outports_.WriteTo(output, _repeated_outports_codec);
     props_.WriteTo(output, _repeated_props_codec);
-    if (Logging != false) {
+    if (IsLogging != false) {
       output.WriteRawTag(128, 1);
-      output.WriteBool(Logging);
+      output.WriteBool(IsLogging);
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       output.WriteRawTag(136, 1);
-      output.WriteBool(Debugging);
+      output.WriteBool(IsDebugging);
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       output.WriteRawTag(144, 1);
-      output.WriteBool(Paused);
+      output.WriteBool(IsPaused);
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       output.WriteRawTag(152, 1);
-      output.WriteBool(Disabled);
+      output.WriteBool(IsDisabled);
     }
     notes_.WriteTo(output, _repeated_notes_codec);
     if (Script.Length != 0) {
@@ -3382,16 +3383,16 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     size += inports_.CalculateSize(_repeated_inports_codec);
     size += outports_.CalculateSize(_repeated_outports_codec);
     size += props_.CalculateSize(_repeated_props_codec);
-    if (Logging != false) {
+    if (IsLogging != false) {
       size += 2 + 1;
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       size += 2 + 1;
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       size += 2 + 1;
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       size += 2 + 1;
     }
     size += notes_.CalculateSize(_repeated_notes_codec);
@@ -3439,17 +3440,17 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     inports_.Add(other.inports_);
     outports_.Add(other.outports_);
     props_.Add(other.props_);
-    if (other.Logging != false) {
-      Logging = other.Logging;
+    if (other.IsLogging != false) {
+      IsLogging = other.IsLogging;
     }
-    if (other.Debugging != false) {
-      Debugging = other.Debugging;
+    if (other.IsDebugging != false) {
+      IsDebugging = other.IsDebugging;
     }
-    if (other.Paused != false) {
-      Paused = other.Paused;
+    if (other.IsPaused != false) {
+      IsPaused = other.IsPaused;
     }
-    if (other.Disabled != false) {
-      Disabled = other.Disabled;
+    if (other.IsDisabled != false) {
+      IsDisabled = other.IsDisabled;
     }
     notes_.Add(other.notes_);
     if (other.Script.Length != 0) {
@@ -3515,19 +3516,19 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
           break;
         }
         case 128: {
-          Logging = input.ReadBool();
+          IsLogging = input.ReadBool();
           break;
         }
         case 136: {
-          Debugging = input.ReadBool();
+          IsDebugging = input.ReadBool();
           break;
         }
         case 144: {
-          Paused = input.ReadBool();
+          IsPaused = input.ReadBool();
           break;
         }
         case 152: {
-          Disabled = input.ReadBool();
+          IsDisabled = input.ReadBool();
           break;
         }
         case 162: {
@@ -3575,10 +3576,10 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     group_ = other.group_;
     scope_ = other.scope_;
     props_ = other.props_.Clone();
-    logging_ = other.logging_;
-    debugging_ = other.debugging_;
-    paused_ = other.paused_;
-    disabled_ = other.disabled_;
+    isLogging_ = other.isLogging_;
+    isDebugging_ = other.isDebugging_;
+    isPaused_ = other.isPaused_;
+    isDisabled_ = other.isDisabled_;
     notes_ = other.notes_.Clone();
     script_ = other.script_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -3671,59 +3672,59 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     get { return props_; }
   }
 
-  /// <summary>Field number for the "logging" field.</summary>
-  public const int LoggingFieldNumber = 16;
-  private bool logging_;
+  /// <summary>Field number for the "isLogging" field.</summary>
+  public const int IsLoggingFieldNumber = 16;
+  private bool isLogging_;
   /// <summary>
   /// flag indicating this region will trace messages
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Logging {
-    get { return logging_; }
+  public bool IsLogging {
+    get { return isLogging_; }
     set {
-      logging_ = value;
+      isLogging_ = value;
     }
   }
 
-  /// <summary>Field number for the "debugging" field.</summary>
-  public const int DebuggingFieldNumber = 17;
-  private bool debugging_;
+  /// <summary>Field number for the "isDebugging" field.</summary>
+  public const int IsDebuggingFieldNumber = 17;
+  private bool isDebugging_;
   /// <summary>
   /// flag indicating this region is a debug breakpoint
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Debugging {
-    get { return debugging_; }
+  public bool IsDebugging {
+    get { return isDebugging_; }
     set {
-      debugging_ = value;
+      isDebugging_ = value;
     }
   }
 
-  /// <summary>Field number for the "paused" field.</summary>
-  public const int PausedFieldNumber = 18;
-  private bool paused_;
+  /// <summary>Field number for the "isPaused" field.</summary>
+  public const int IsPausedFieldNumber = 18;
+  private bool isPaused_;
   /// <summary>
   /// flag indicating this region is paused (messages are queued)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Paused {
-    get { return paused_; }
+  public bool IsPaused {
+    get { return isPaused_; }
     set {
-      paused_ = value;
+      isPaused_ = value;
     }
   }
 
-  /// <summary>Field number for the "disabled" field.</summary>
-  public const int DisabledFieldNumber = 19;
-  private bool disabled_;
+  /// <summary>Field number for the "isDisabled" field.</summary>
+  public const int IsDisabledFieldNumber = 19;
+  private bool isDisabled_;
   /// <summary>
   /// flag indicating this region is disabled (messages are dropped)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Disabled {
-    get { return disabled_; }
+  public bool IsDisabled {
+    get { return isDisabled_; }
     set {
-      disabled_ = value;
+      isDisabled_ = value;
     }
   }
 
@@ -3773,10 +3774,10 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     if (Group != other.Group) return false;
     if (Scope != other.Scope) return false;
     if(!props_.Equals(other.props_)) return false;
-    if (Logging != other.Logging) return false;
-    if (Debugging != other.Debugging) return false;
-    if (Paused != other.Paused) return false;
-    if (Disabled != other.Disabled) return false;
+    if (IsLogging != other.IsLogging) return false;
+    if (IsDebugging != other.IsDebugging) return false;
+    if (IsPaused != other.IsPaused) return false;
+    if (IsDisabled != other.IsDisabled) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if (Script != other.Script) return false;
     return Equals(_unknownFields, other._unknownFields);
@@ -3791,10 +3792,10 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     if (Group != 0) hash ^= Group.GetHashCode();
     if (Scope.Length != 0) hash ^= Scope.GetHashCode();
     hash ^= props_.GetHashCode();
-    if (Logging != false) hash ^= Logging.GetHashCode();
-    if (Debugging != false) hash ^= Debugging.GetHashCode();
-    if (Paused != false) hash ^= Paused.GetHashCode();
-    if (Disabled != false) hash ^= Disabled.GetHashCode();
+    if (IsLogging != false) hash ^= IsLogging.GetHashCode();
+    if (IsDebugging != false) hash ^= IsDebugging.GetHashCode();
+    if (IsPaused != false) hash ^= IsPaused.GetHashCode();
+    if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     hash ^= notes_.GetHashCode();
     if (Script.Length != 0) hash ^= Script.GetHashCode();
     if (_unknownFields != null) {
@@ -3828,21 +3829,21 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
       output.WriteString(Scope);
     }
     props_.WriteTo(output, _repeated_props_codec);
-    if (Logging != false) {
+    if (IsLogging != false) {
       output.WriteRawTag(128, 1);
-      output.WriteBool(Logging);
+      output.WriteBool(IsLogging);
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       output.WriteRawTag(136, 1);
-      output.WriteBool(Debugging);
+      output.WriteBool(IsDebugging);
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       output.WriteRawTag(144, 1);
-      output.WriteBool(Paused);
+      output.WriteBool(IsPaused);
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       output.WriteRawTag(152, 1);
-      output.WriteBool(Disabled);
+      output.WriteBool(IsDisabled);
     }
     notes_.WriteTo(output, _repeated_notes_codec);
     if (Script.Length != 0) {
@@ -3871,16 +3872,16 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Scope);
     }
     size += props_.CalculateSize(_repeated_props_codec);
-    if (Logging != false) {
+    if (IsLogging != false) {
       size += 2 + 1;
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       size += 2 + 1;
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       size += 2 + 1;
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       size += 2 + 1;
     }
     size += notes_.CalculateSize(_repeated_notes_codec);
@@ -3912,17 +3913,17 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
       Scope = other.Scope;
     }
     props_.Add(other.props_);
-    if (other.Logging != false) {
-      Logging = other.Logging;
+    if (other.IsLogging != false) {
+      IsLogging = other.IsLogging;
     }
-    if (other.Debugging != false) {
-      Debugging = other.Debugging;
+    if (other.IsDebugging != false) {
+      IsDebugging = other.IsDebugging;
     }
-    if (other.Paused != false) {
-      Paused = other.Paused;
+    if (other.IsPaused != false) {
+      IsPaused = other.IsPaused;
     }
-    if (other.Disabled != false) {
-      Disabled = other.Disabled;
+    if (other.IsDisabled != false) {
+      IsDisabled = other.IsDisabled;
     }
     notes_.Add(other.notes_);
     if (other.Script.Length != 0) {
@@ -3964,19 +3965,19 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
           break;
         }
         case 128: {
-          Logging = input.ReadBool();
+          IsLogging = input.ReadBool();
           break;
         }
         case 136: {
-          Debugging = input.ReadBool();
+          IsDebugging = input.ReadBool();
           break;
         }
         case 144: {
-          Paused = input.ReadBool();
+          IsPaused = input.ReadBool();
           break;
         }
         case 152: {
-          Disabled = input.ReadBool();
+          IsDisabled = input.ReadBool();
           break;
         }
         case 162: {
@@ -4031,10 +4032,10 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     widgets_ = other.widgets_.Clone();
     props_ = other.props_.Clone();
     history_ = other.history_.Clone();
-    logging_ = other.logging_;
-    debugging_ = other.debugging_;
-    paused_ = other.paused_;
-    disabled_ = other.disabled_;
+    isLogging_ = other.isLogging_;
+    isDebugging_ = other.isDebugging_;
+    isPaused_ = other.isPaused_;
+    isDisabled_ = other.isDisabled_;
     notes_ = other.notes_.Clone();
     script_ = other.script_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -4220,59 +4221,59 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     get { return history_; }
   }
 
-  /// <summary>Field number for the "logging" field.</summary>
-  public const int LoggingFieldNumber = 16;
-  private bool logging_;
+  /// <summary>Field number for the "isLogging" field.</summary>
+  public const int IsLoggingFieldNumber = 16;
+  private bool isLogging_;
   /// <summary>
   /// flag indicating this graph will trace messages
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Logging {
-    get { return logging_; }
+  public bool IsLogging {
+    get { return isLogging_; }
     set {
-      logging_ = value;
+      isLogging_ = value;
     }
   }
 
-  /// <summary>Field number for the "debugging" field.</summary>
-  public const int DebuggingFieldNumber = 17;
-  private bool debugging_;
+  /// <summary>Field number for the "isDebugging" field.</summary>
+  public const int IsDebuggingFieldNumber = 17;
+  private bool isDebugging_;
   /// <summary>
   /// flag indicating this graph is a debug breakpoint
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Debugging {
-    get { return debugging_; }
+  public bool IsDebugging {
+    get { return isDebugging_; }
     set {
-      debugging_ = value;
+      isDebugging_ = value;
     }
   }
 
-  /// <summary>Field number for the "paused" field.</summary>
-  public const int PausedFieldNumber = 18;
-  private bool paused_;
+  /// <summary>Field number for the "isPaused" field.</summary>
+  public const int IsPausedFieldNumber = 18;
+  private bool isPaused_;
   /// <summary>
   /// flag indicating this graph is paused (messages are queued)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Paused {
-    get { return paused_; }
+  public bool IsPaused {
+    get { return isPaused_; }
     set {
-      paused_ = value;
+      isPaused_ = value;
     }
   }
 
-  /// <summary>Field number for the "disabled" field.</summary>
-  public const int DisabledFieldNumber = 19;
-  private bool disabled_;
+  /// <summary>Field number for the "isDisabled" field.</summary>
+  public const int IsDisabledFieldNumber = 19;
+  private bool isDisabled_;
   /// <summary>
   /// flag indicating this graph is disabled (messages are dropped)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Disabled {
-    get { return disabled_; }
+  public bool IsDisabled {
+    get { return isDisabled_; }
     set {
-      disabled_ = value;
+      isDisabled_ = value;
     }
   }
 
@@ -4329,10 +4330,10 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     if(!widgets_.Equals(other.widgets_)) return false;
     if(!props_.Equals(other.props_)) return false;
     if(!history_.Equals(other.history_)) return false;
-    if (Logging != other.Logging) return false;
-    if (Debugging != other.Debugging) return false;
-    if (Paused != other.Paused) return false;
-    if (Disabled != other.Disabled) return false;
+    if (IsLogging != other.IsLogging) return false;
+    if (IsDebugging != other.IsDebugging) return false;
+    if (IsPaused != other.IsPaused) return false;
+    if (IsDisabled != other.IsDisabled) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if (Script != other.Script) return false;
     return Equals(_unknownFields, other._unknownFields);
@@ -4354,10 +4355,10 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     hash ^= widgets_.GetHashCode();
     hash ^= props_.GetHashCode();
     hash ^= history_.GetHashCode();
-    if (Logging != false) hash ^= Logging.GetHashCode();
-    if (Debugging != false) hash ^= Debugging.GetHashCode();
-    if (Paused != false) hash ^= Paused.GetHashCode();
-    if (Disabled != false) hash ^= Disabled.GetHashCode();
+    if (IsLogging != false) hash ^= IsLogging.GetHashCode();
+    if (IsDebugging != false) hash ^= IsDebugging.GetHashCode();
+    if (IsPaused != false) hash ^= IsPaused.GetHashCode();
+    if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     hash ^= notes_.GetHashCode();
     if (Script.Length != 0) hash ^= Script.GetHashCode();
     if (_unknownFields != null) {
@@ -4404,21 +4405,21 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     widgets_.WriteTo(output, _repeated_widgets_codec);
     props_.WriteTo(output, _repeated_props_codec);
     history_.WriteTo(output, _repeated_history_codec);
-    if (Logging != false) {
+    if (IsLogging != false) {
       output.WriteRawTag(128, 1);
-      output.WriteBool(Logging);
+      output.WriteBool(IsLogging);
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       output.WriteRawTag(136, 1);
-      output.WriteBool(Debugging);
+      output.WriteBool(IsDebugging);
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       output.WriteRawTag(144, 1);
-      output.WriteBool(Paused);
+      output.WriteBool(IsPaused);
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       output.WriteRawTag(152, 1);
-      output.WriteBool(Disabled);
+      output.WriteBool(IsDisabled);
     }
     notes_.WriteTo(output, _repeated_notes_codec);
     if (Script.Length != 0) {
@@ -4458,16 +4459,16 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     size += widgets_.CalculateSize(_repeated_widgets_codec);
     size += props_.CalculateSize(_repeated_props_codec);
     size += history_.CalculateSize(_repeated_history_codec);
-    if (Logging != false) {
+    if (IsLogging != false) {
       size += 2 + 1;
     }
-    if (Debugging != false) {
+    if (IsDebugging != false) {
       size += 2 + 1;
     }
-    if (Paused != false) {
+    if (IsPaused != false) {
       size += 2 + 1;
     }
-    if (Disabled != false) {
+    if (IsDisabled != false) {
       size += 2 + 1;
     }
     size += notes_.CalculateSize(_repeated_notes_codec);
@@ -4510,17 +4511,17 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     widgets_.Add(other.widgets_);
     props_.Add(other.props_);
     history_.Add(other.history_);
-    if (other.Logging != false) {
-      Logging = other.Logging;
+    if (other.IsLogging != false) {
+      IsLogging = other.IsLogging;
     }
-    if (other.Debugging != false) {
-      Debugging = other.Debugging;
+    if (other.IsDebugging != false) {
+      IsDebugging = other.IsDebugging;
     }
-    if (other.Paused != false) {
-      Paused = other.Paused;
+    if (other.IsPaused != false) {
+      IsPaused = other.IsPaused;
     }
-    if (other.Disabled != false) {
-      Disabled = other.Disabled;
+    if (other.IsDisabled != false) {
+      IsDisabled = other.IsDisabled;
     }
     notes_.Add(other.notes_);
     if (other.Script.Length != 0) {
@@ -4590,19 +4591,19 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
           break;
         }
         case 128: {
-          Logging = input.ReadBool();
+          IsLogging = input.ReadBool();
           break;
         }
         case 136: {
-          Debugging = input.ReadBool();
+          IsDebugging = input.ReadBool();
           break;
         }
         case 144: {
-          Paused = input.ReadBool();
+          IsPaused = input.ReadBool();
           break;
         }
         case 152: {
-          Disabled = input.ReadBool();
+          IsDisabled = input.ReadBool();
           break;
         }
         case 162: {
@@ -8001,8 +8002,8 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     id_ = other.id_;
     name_ = other.name_;
     path_ = other.path_;
-    createdDate_ = other.createdDate_;
-    createdBy_ = other.createdBy_;
+    modifieddDate_ = other.modifieddDate_;
+    modifiedBy_ = other.modifiedBy_;
     switch (other.ContentCase) {
       case ContentOneofCase.Version:
         Version = other.Version;
@@ -8062,31 +8063,31 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     }
   }
 
-  /// <summary>Field number for the "createdDate" field.</summary>
-  public const int CreatedDateFieldNumber = 5;
-  private string createdDate_ = "";
+  /// <summary>Field number for the "modifieddDate" field.</summary>
+  public const int ModifieddDateFieldNumber = 5;
+  private string modifieddDate_ = "";
   /// <summary>
-  /// date file version was created
+  /// date file version was modified
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedDate {
-    get { return createdDate_; }
+  public string ModifieddDate {
+    get { return modifieddDate_; }
     set {
-      createdDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifieddDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
-  /// <summary>Field number for the "createdBy" field.</summary>
-  public const int CreatedByFieldNumber = 6;
-  private string createdBy_ = "";
+  /// <summary>Field number for the "modifiedBy" field.</summary>
+  public const int ModifiedByFieldNumber = 6;
+  private string modifiedBy_ = "";
   /// <summary>
-  /// user that created this file version 
+  /// user that modified this file version 
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedBy {
-    get { return createdBy_; }
+  public string ModifiedBy {
+    get { return modifiedBy_; }
     set {
-      createdBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifiedBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -8153,8 +8154,8 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (Id != other.Id) return false;
     if (Name != other.Name) return false;
     if (Path != other.Path) return false;
-    if (CreatedDate != other.CreatedDate) return false;
-    if (CreatedBy != other.CreatedBy) return false;
+    if (ModifieddDate != other.ModifieddDate) return false;
+    if (ModifiedBy != other.ModifiedBy) return false;
     if (Version != other.Version) return false;
     if (Script != other.Script) return false;
     if (ContentCase != other.ContentCase) return false;
@@ -8167,8 +8168,8 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (Id.Length != 0) hash ^= Id.GetHashCode();
     if (Name.Length != 0) hash ^= Name.GetHashCode();
     if (Path.Length != 0) hash ^= Path.GetHashCode();
-    if (CreatedDate.Length != 0) hash ^= CreatedDate.GetHashCode();
-    if (CreatedBy.Length != 0) hash ^= CreatedBy.GetHashCode();
+    if (ModifieddDate.Length != 0) hash ^= ModifieddDate.GetHashCode();
+    if (ModifiedBy.Length != 0) hash ^= ModifiedBy.GetHashCode();
     if (contentCase_ == ContentOneofCase.Version) hash ^= Version.GetHashCode();
     if (contentCase_ == ContentOneofCase.Script) hash ^= Script.GetHashCode();
     hash ^= (int) contentCase_;
@@ -8197,13 +8198,13 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
       output.WriteRawTag(26);
       output.WriteString(Path);
     }
-    if (CreatedDate.Length != 0) {
+    if (ModifieddDate.Length != 0) {
       output.WriteRawTag(42);
-      output.WriteString(CreatedDate);
+      output.WriteString(ModifieddDate);
     }
-    if (CreatedBy.Length != 0) {
+    if (ModifiedBy.Length != 0) {
       output.WriteRawTag(50);
-      output.WriteString(CreatedBy);
+      output.WriteString(ModifiedBy);
     }
     if (contentCase_ == ContentOneofCase.Version) {
       output.WriteRawTag(58);
@@ -8230,11 +8231,11 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (Path.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Path);
     }
-    if (CreatedDate.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedDate);
+    if (ModifieddDate.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifieddDate);
     }
-    if (CreatedBy.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedBy);
+    if (ModifiedBy.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedBy);
     }
     if (contentCase_ == ContentOneofCase.Version) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Version);
@@ -8262,11 +8263,11 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (other.Path.Length != 0) {
       Path = other.Path;
     }
-    if (other.CreatedDate.Length != 0) {
-      CreatedDate = other.CreatedDate;
+    if (other.ModifieddDate.Length != 0) {
+      ModifieddDate = other.ModifieddDate;
     }
-    if (other.CreatedBy.Length != 0) {
-      CreatedBy = other.CreatedBy;
+    if (other.ModifiedBy.Length != 0) {
+      ModifiedBy = other.ModifiedBy;
     }
     switch (other.ContentCase) {
       case ContentOneofCase.Version:
@@ -8301,11 +8302,11 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
           break;
         }
         case 42: {
-          CreatedDate = input.ReadString();
+          ModifieddDate = input.ReadString();
           break;
         }
         case 50: {
-          CreatedBy = input.ReadString();
+          ModifiedBy = input.ReadString();
           break;
         }
         case 58: {

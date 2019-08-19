@@ -35,8 +35,8 @@ message TideChartCommentBox {
     int32 color = 13;                           // color used to draw text / icon - default is black
     int32 background = 14;                      // color used to draw background - default is transparent
     repeated int32 border = 15;                 // style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
-    bool raised = 16;                           // flag to indicate if a drop shadow should be used
-    bool reversed = 17;                         // flag to indicate if the text requires left to right layout order
+    bool isRaised = 16;                           // flag to indicate if a drop shadow should be used
+    bool isReversed = 17;                         // flag to indicate if the text requires left to right layout order
 }
 
 message TideChartWidget {
@@ -64,8 +64,8 @@ message TideChartPort {
     string name = 2;                            // port name (unique to node scope)
     int32 ordinal = 3;                          // position in the node's set of inports or outports
 
-    bool default  = 4;                          // used by methods to indicate which ports are used for default in/out routing
-    bool required = 5;                          // used by methods to indicate the port must exist
+    bool isDefault  = 4;                          // used by methods to indicate which ports are used for default in/out routing
+    bool isRequired = 5;                          // used by methods to indicate the port must exist
     repeated string allowed = 6;                // used by methods to define what value / message types are allowed to be
     string hint = 7;                            // used by methods to describe how a port should be used
 
@@ -75,8 +75,8 @@ message TideChartPort {
     string event = 11;                          // an event the outport automatically writes to
 
     string sync = 12;                           // creates a syncronizing group between ports
-    bool block = 13;                            // determines if the port will block to wait for the rest of the port group
-    bool queue = 14;                            // determines if messages should queue while blocking or replace with latest received
+    bool isBlocking = 13;                            // determines if the port will block to wait for the rest of the port group
+    bool isQueuing = 14;                            // determines if messages should queue while blocking or replace with latest received
 }
 
 message TideChartLink {
@@ -89,10 +89,10 @@ message TideChartLink {
     int32 delay = 6;                            // automatic time delay (msec) added to messages (equivalent to routing thru a delay node)
     string filter = 7;                          // a filter or conditional expression applied to messages on the link
 
-    bool logging = 16;                          // flag indicating this link will trace messages
-    bool debugging = 17;                        // flag indicating this link is a debug breakpoint
-    bool paused = 18;                           // flag indicating this link is paused (messages are queued)
-    bool disabled = 19;                         // flag indicating this link is disabled (messages are dropped)
+    bool isLogging = 16;                          // flag indicating this link will trace messages
+    bool isDebugging = 17;                        // flag indicating this link is a debug breakpoint
+    bool isPaused = 18;                           // flag indicating this link is paused (messages are queued)
+    bool isDisabled = 19;                         // flag indicating this link is disabled (messages are dropped)
 }
 
 message TideChartNote {
@@ -122,10 +122,10 @@ message TideChartNode {
     repeated TideChartPort outports = 11;       // node outports to connect outbound links
     repeated TideChartProperty props = 12;      // configuration properties for this node (combines with graph properties and region properties)
     
-    bool logging = 16;                          // flag indicating this node will trace messages
-    bool debugging = 17;                        // flag indicating this node is a debug breakpoint
-    bool paused = 18;                           // flag indicating this node is paused (messages are queued)
-    bool disabled = 19;                         // flag indicating this node is disabled (messages are dropped)
+    bool isLogging = 16;                          // flag indicating this node will trace messages
+    bool isDebugging = 17;                        // flag indicating this node is a debug breakpoint
+    bool isPaused = 18;                           // flag indicating this node is paused (messages are queued)
+    bool isDisabled = 19;                         // flag indicating this node is disabled (messages are dropped)
 
     repeated TideChartNote notes = 20;          // comments associated with this node
     string script = 21;                         // a user script of custom code to implement the node's action, filter or mux/demux operations
@@ -140,10 +140,10 @@ message TideChartRegion {
     string scope = 5;                           // an event scope used to limit (or exclude) events to route to only nodes in the region
     repeated TideChartProperty props = 6;       // a set of properties shared by all nodes in the region
 
-    bool logging = 16;                          // flag indicating this region will trace messages
-    bool debugging = 17;                        // flag indicating this region is a debug breakpoint
-    bool paused = 18;                           // flag indicating this region is paused (messages are queued)
-    bool disabled = 19;                         // flag indicating this region is disabled (messages are dropped)
+    bool isLogging = 16;                          // flag indicating this region will trace messages
+    bool isDebugging = 17;                        // flag indicating this region is a debug breakpoint
+    bool isPaused = 18;                           // flag indicating this region is paused (messages are queued)
+    bool isDisabled = 19;                         // flag indicating this region is disabled (messages are dropped)
 
     repeated TideChartNote notes = 20;          // comments associated with this region
     string script = 21;                         // a user script of custom code for the region (interacting with non-message based threads, scoped exception handling)
@@ -167,10 +167,10 @@ message TideChartGraph {
     repeated TideChartProperty props = 12;      // a set of properties shared by all nodes on the graph
     repeated TideChartCommand history = 13;     // all the changes made from source version to current version
             
-    bool logging = 16;                          // flag indicating this graph will trace messages
-    bool debugging = 17;                        // flag indicating this graph is a debug breakpoint
-    bool paused = 18;                           // flag indicating this graph is paused (messages are queued)
-    bool disabled = 19;                         // flag indicating this graph is disabled (messages are dropped)
+    bool isLogging = 16;                          // flag indicating this graph will trace messages
+    bool isDebugging = 17;                        // flag indicating this graph is a debug breakpoint
+    bool isPaused = 18;                           // flag indicating this graph is paused (messages are queued)
+    bool isDisabled = 19;                         // flag indicating this graph is disabled (messages are dropped)
     
     repeated TideChartNote notes = 20;          // comments associated with this graph
     string script = 21;                         // a user script of custom code for the graph (non-message based thread initialization, global exception handling)
@@ -307,8 +307,8 @@ message TideChartSource {
     string name = 2;                    // name of the source file 
     string path = 3;                    // relative path of the source file 
 
-    string createdDate = 5;             // date file version was created
-    string createdBy = 6;               // user that created this file version 
+    string modifieddDate = 5;           // date file version was modified
+    string modifiedBy = 6;              // user that modified this file version 
 
     oneof content {
         string version = 7;             // reference to the exact version of the file    

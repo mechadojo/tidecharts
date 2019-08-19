@@ -565,8 +565,8 @@ class TideChartCommentBox :
     kFontSizeFieldNumber = 10,
     kColorFieldNumber = 13,
     kBackgroundFieldNumber = 14,
-    kRaisedFieldNumber = 16,
-    kReversedFieldNumber = 17,
+    kIsRaisedFieldNumber = 16,
+    kIsReversedFieldNumber = 17,
     kTextFieldNumber = 7,
     kImageFieldNumber = 8,
     kIconFieldNumber = 9,
@@ -661,15 +661,15 @@ class TideChartCommentBox :
   ::PROTOBUF_NAMESPACE_ID::int32 background() const;
   void set_background(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // bool raised = 16;
-  void clear_raised();
-  bool raised() const;
-  void set_raised(bool value);
+  // bool isRaised = 16;
+  void clear_israised();
+  bool israised() const;
+  void set_israised(bool value);
 
-  // bool reversed = 17;
-  void clear_reversed();
-  bool reversed() const;
-  void set_reversed(bool value);
+  // bool isReversed = 17;
+  void clear_isreversed();
+  bool isreversed() const;
+  void set_isreversed(bool value);
 
   // string text = 7;
   private:
@@ -740,8 +740,8 @@ class TideChartCommentBox :
   double fontsize_;
   ::PROTOBUF_NAMESPACE_ID::int32 color_;
   ::PROTOBUF_NAMESPACE_ID::int32 background_;
-  bool raised_;
-  bool reversed_;
+  bool israised_;
+  bool isreversed_;
   union ContentUnion {
     ContentUnion() {}
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr text_;
@@ -1163,10 +1163,10 @@ class TideChartPort :
     kSyncFieldNumber = 12,
     kConstantFieldNumber = 8,
     kOrdinalFieldNumber = 3,
-    kDefaultFieldNumber = 4,
-    kRequiredFieldNumber = 5,
-    kBlockFieldNumber = 13,
-    kQueueFieldNumber = 14,
+    kIsDefaultFieldNumber = 4,
+    kIsRequiredFieldNumber = 5,
+    kIsBlockingFieldNumber = 13,
+    kIsQueuingFieldNumber = 14,
   };
   // repeated string allowed = 6;
   int allowed_size() const;
@@ -1275,25 +1275,25 @@ class TideChartPort :
   ::PROTOBUF_NAMESPACE_ID::int32 ordinal() const;
   void set_ordinal(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // bool default = 4;
-  void clear_default_();
-  bool default_() const;
-  void set_default_(bool value);
+  // bool isDefault = 4;
+  void clear_isdefault();
+  bool isdefault() const;
+  void set_isdefault(bool value);
 
-  // bool required = 5;
-  void clear_required();
-  bool required() const;
-  void set_required(bool value);
+  // bool isRequired = 5;
+  void clear_isrequired();
+  bool isrequired() const;
+  void set_isrequired(bool value);
 
-  // bool block = 13;
-  void clear_block();
-  bool block() const;
-  void set_block(bool value);
+  // bool isBlocking = 13;
+  void clear_isblocking();
+  bool isblocking() const;
+  void set_isblocking(bool value);
 
-  // bool queue = 14;
-  void clear_queue();
-  bool queue() const;
-  void set_queue(bool value);
+  // bool isQueuing = 14;
+  void clear_isqueuing();
+  bool isqueuing() const;
+  void set_isqueuing(bool value);
 
   // @@protoc_insertion_point(class_scope:TideChartPort)
  private:
@@ -1310,10 +1310,10 @@ class TideChartPort :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr sync_;
   ::TideChartProperty* constant_;
   ::PROTOBUF_NAMESPACE_ID::int32 ordinal_;
-  bool default__;
-  bool required_;
-  bool block_;
-  bool queue_;
+  bool isdefault_;
+  bool isrequired_;
+  bool isblocking_;
+  bool isqueuing_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -1439,10 +1439,10 @@ class TideChartLink :
     kFilterFieldNumber = 7,
     kGroupFieldNumber = 5,
     kDelayFieldNumber = 6,
-    kLoggingFieldNumber = 16,
-    kDebuggingFieldNumber = 17,
-    kPausedFieldNumber = 18,
-    kDisabledFieldNumber = 19,
+    kIsLoggingFieldNumber = 16,
+    kIsDebuggingFieldNumber = 17,
+    kIsPausedFieldNumber = 18,
+    kIsDisabledFieldNumber = 19,
   };
   // string outNode = 1;
   void clear_outnode();
@@ -1509,25 +1509,25 @@ class TideChartLink :
   ::PROTOBUF_NAMESPACE_ID::int32 delay() const;
   void set_delay(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // bool logging = 16;
-  void clear_logging();
-  bool logging() const;
-  void set_logging(bool value);
+  // bool isLogging = 16;
+  void clear_islogging();
+  bool islogging() const;
+  void set_islogging(bool value);
 
-  // bool debugging = 17;
-  void clear_debugging();
-  bool debugging() const;
-  void set_debugging(bool value);
+  // bool isDebugging = 17;
+  void clear_isdebugging();
+  bool isdebugging() const;
+  void set_isdebugging(bool value);
 
-  // bool paused = 18;
-  void clear_paused();
-  bool paused() const;
-  void set_paused(bool value);
+  // bool isPaused = 18;
+  void clear_ispaused();
+  bool ispaused() const;
+  void set_ispaused(bool value);
 
-  // bool disabled = 19;
-  void clear_disabled();
-  bool disabled() const;
-  void set_disabled(bool value);
+  // bool isDisabled = 19;
+  void clear_isdisabled();
+  bool isdisabled() const;
+  void set_isdisabled(bool value);
 
   // @@protoc_insertion_point(class_scope:TideChartLink)
  private:
@@ -1541,10 +1541,10 @@ class TideChartLink :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr filter_;
   ::PROTOBUF_NAMESPACE_ID::int32 group_;
   ::PROTOBUF_NAMESPACE_ID::int32 delay_;
-  bool logging_;
-  bool debugging_;
-  bool paused_;
-  bool disabled_;
+  bool islogging_;
+  bool isdebugging_;
+  bool ispaused_;
+  bool isdisabled_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -1879,10 +1879,10 @@ class TideChartNode :
     kPosXFieldNumber = 3,
     kPosYFieldNumber = 4,
     kDelayFieldNumber = 9,
-    kLoggingFieldNumber = 16,
-    kDebuggingFieldNumber = 17,
-    kPausedFieldNumber = 18,
-    kDisabledFieldNumber = 19,
+    kIsLoggingFieldNumber = 16,
+    kIsDebuggingFieldNumber = 17,
+    kIsPausedFieldNumber = 18,
+    kIsDisabledFieldNumber = 19,
   };
   // repeated .TideChartPort inports = 10;
   int inports_size() const;
@@ -2020,25 +2020,25 @@ class TideChartNode :
   ::PROTOBUF_NAMESPACE_ID::int32 delay() const;
   void set_delay(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // bool logging = 16;
-  void clear_logging();
-  bool logging() const;
-  void set_logging(bool value);
+  // bool isLogging = 16;
+  void clear_islogging();
+  bool islogging() const;
+  void set_islogging(bool value);
 
-  // bool debugging = 17;
-  void clear_debugging();
-  bool debugging() const;
-  void set_debugging(bool value);
+  // bool isDebugging = 17;
+  void clear_isdebugging();
+  bool isdebugging() const;
+  void set_isdebugging(bool value);
 
-  // bool paused = 18;
-  void clear_paused();
-  bool paused() const;
-  void set_paused(bool value);
+  // bool isPaused = 18;
+  void clear_ispaused();
+  bool ispaused() const;
+  void set_ispaused(bool value);
 
-  // bool disabled = 19;
-  void clear_disabled();
-  bool disabled() const;
-  void set_disabled(bool value);
+  // bool isDisabled = 19;
+  void clear_isdisabled();
+  bool isdisabled() const;
+  void set_isdisabled(bool value);
 
   // @@protoc_insertion_point(class_scope:TideChartNode)
  private:
@@ -2059,10 +2059,10 @@ class TideChartNode :
   ::PROTOBUF_NAMESPACE_ID::int32 posx_;
   ::PROTOBUF_NAMESPACE_ID::int32 posy_;
   ::PROTOBUF_NAMESPACE_ID::int32 delay_;
-  bool logging_;
-  bool debugging_;
-  bool paused_;
-  bool disabled_;
+  bool islogging_;
+  bool isdebugging_;
+  bool ispaused_;
+  bool isdisabled_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -2189,10 +2189,10 @@ class TideChartRegion :
     kScopeFieldNumber = 5,
     kScriptFieldNumber = 21,
     kGroupFieldNumber = 4,
-    kLoggingFieldNumber = 16,
-    kDebuggingFieldNumber = 17,
-    kPausedFieldNumber = 18,
-    kDisabledFieldNumber = 19,
+    kIsLoggingFieldNumber = 16,
+    kIsDebuggingFieldNumber = 17,
+    kIsPausedFieldNumber = 18,
+    kIsDisabledFieldNumber = 19,
   };
   // repeated string nodes = 3;
   int nodes_size() const;
@@ -2282,25 +2282,25 @@ class TideChartRegion :
   ::PROTOBUF_NAMESPACE_ID::int32 group() const;
   void set_group(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // bool logging = 16;
-  void clear_logging();
-  bool logging() const;
-  void set_logging(bool value);
+  // bool isLogging = 16;
+  void clear_islogging();
+  bool islogging() const;
+  void set_islogging(bool value);
 
-  // bool debugging = 17;
-  void clear_debugging();
-  bool debugging() const;
-  void set_debugging(bool value);
+  // bool isDebugging = 17;
+  void clear_isdebugging();
+  bool isdebugging() const;
+  void set_isdebugging(bool value);
 
-  // bool paused = 18;
-  void clear_paused();
-  bool paused() const;
-  void set_paused(bool value);
+  // bool isPaused = 18;
+  void clear_ispaused();
+  bool ispaused() const;
+  void set_ispaused(bool value);
 
-  // bool disabled = 19;
-  void clear_disabled();
-  bool disabled() const;
-  void set_disabled(bool value);
+  // bool isDisabled = 19;
+  void clear_isdisabled();
+  bool isdisabled() const;
+  void set_isdisabled(bool value);
 
   // @@protoc_insertion_point(class_scope:TideChartRegion)
  private:
@@ -2315,10 +2315,10 @@ class TideChartRegion :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr scope_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr script_;
   ::PROTOBUF_NAMESPACE_ID::int32 group_;
-  bool logging_;
-  bool debugging_;
-  bool paused_;
-  bool disabled_;
+  bool islogging_;
+  bool isdebugging_;
+  bool ispaused_;
+  bool isdisabled_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -2452,10 +2452,10 @@ class TideChartGraph :
     kVersionFieldNumber = 5,
     kSourceFieldNumber = 6,
     kScriptFieldNumber = 21,
-    kLoggingFieldNumber = 16,
-    kDebuggingFieldNumber = 17,
-    kPausedFieldNumber = 18,
-    kDisabledFieldNumber = 19,
+    kIsLoggingFieldNumber = 16,
+    kIsDebuggingFieldNumber = 17,
+    kIsPausedFieldNumber = 18,
+    kIsDisabledFieldNumber = 19,
   };
   // repeated .TideChartNode nodes = 7;
   int nodes_size() const;
@@ -2622,25 +2622,25 @@ class TideChartGraph :
   std::string* release_script();
   void set_allocated_script(std::string* script);
 
-  // bool logging = 16;
-  void clear_logging();
-  bool logging() const;
-  void set_logging(bool value);
+  // bool isLogging = 16;
+  void clear_islogging();
+  bool islogging() const;
+  void set_islogging(bool value);
 
-  // bool debugging = 17;
-  void clear_debugging();
-  bool debugging() const;
-  void set_debugging(bool value);
+  // bool isDebugging = 17;
+  void clear_isdebugging();
+  bool isdebugging() const;
+  void set_isdebugging(bool value);
 
-  // bool paused = 18;
-  void clear_paused();
-  bool paused() const;
-  void set_paused(bool value);
+  // bool isPaused = 18;
+  void clear_ispaused();
+  bool ispaused() const;
+  void set_ispaused(bool value);
 
-  // bool disabled = 19;
-  void clear_disabled();
-  bool disabled() const;
-  void set_disabled(bool value);
+  // bool isDisabled = 19;
+  void clear_isdisabled();
+  bool isdisabled() const;
+  void set_isdisabled(bool value);
 
   // @@protoc_insertion_point(class_scope:TideChartGraph)
  private:
@@ -2662,10 +2662,10 @@ class TideChartGraph :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr version_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr source_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr script_;
-  bool logging_;
-  bool debugging_;
-  bool paused_;
-  bool disabled_;
+  bool islogging_;
+  bool isdebugging_;
+  bool ispaused_;
+  bool isdisabled_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -5118,8 +5118,8 @@ class TideChartSource :
     kIdFieldNumber = 1,
     kNameFieldNumber = 2,
     kPathFieldNumber = 3,
-    kCreatedDateFieldNumber = 5,
-    kCreatedByFieldNumber = 6,
+    kModifieddDateFieldNumber = 5,
+    kModifiedByFieldNumber = 6,
     kVersionFieldNumber = 7,
     kScriptFieldNumber = 8,
   };
@@ -5156,27 +5156,27 @@ class TideChartSource :
   std::string* release_path();
   void set_allocated_path(std::string* path);
 
-  // string createdDate = 5;
-  void clear_createddate();
-  const std::string& createddate() const;
-  void set_createddate(const std::string& value);
-  void set_createddate(std::string&& value);
-  void set_createddate(const char* value);
-  void set_createddate(const char* value, size_t size);
-  std::string* mutable_createddate();
-  std::string* release_createddate();
-  void set_allocated_createddate(std::string* createddate);
+  // string modifieddDate = 5;
+  void clear_modifiedddate();
+  const std::string& modifiedddate() const;
+  void set_modifiedddate(const std::string& value);
+  void set_modifiedddate(std::string&& value);
+  void set_modifiedddate(const char* value);
+  void set_modifiedddate(const char* value, size_t size);
+  std::string* mutable_modifiedddate();
+  std::string* release_modifiedddate();
+  void set_allocated_modifiedddate(std::string* modifiedddate);
 
-  // string createdBy = 6;
-  void clear_createdby();
-  const std::string& createdby() const;
-  void set_createdby(const std::string& value);
-  void set_createdby(std::string&& value);
-  void set_createdby(const char* value);
-  void set_createdby(const char* value, size_t size);
-  std::string* mutable_createdby();
-  std::string* release_createdby();
-  void set_allocated_createdby(std::string* createdby);
+  // string modifiedBy = 6;
+  void clear_modifiedby();
+  const std::string& modifiedby() const;
+  void set_modifiedby(const std::string& value);
+  void set_modifiedby(std::string&& value);
+  void set_modifiedby(const char* value);
+  void set_modifiedby(const char* value, size_t size);
+  std::string* mutable_modifiedby();
+  std::string* release_modifiedby();
+  void set_allocated_modifiedby(std::string* modifiedby);
 
   // string version = 7;
   private:
@@ -5221,8 +5221,8 @@ class TideChartSource :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr id_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr path_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createddate_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createdby_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifiedddate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifiedby_;
   union ContentUnion {
     ContentUnion() {}
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr version_;
@@ -8637,32 +8637,32 @@ TideChartCommentBox::mutable_border() {
   return &border_;
 }
 
-// bool raised = 16;
-inline void TideChartCommentBox::clear_raised() {
-  raised_ = false;
+// bool isRaised = 16;
+inline void TideChartCommentBox::clear_israised() {
+  israised_ = false;
 }
-inline bool TideChartCommentBox::raised() const {
-  // @@protoc_insertion_point(field_get:TideChartCommentBox.raised)
-  return raised_;
+inline bool TideChartCommentBox::israised() const {
+  // @@protoc_insertion_point(field_get:TideChartCommentBox.isRaised)
+  return israised_;
 }
-inline void TideChartCommentBox::set_raised(bool value) {
+inline void TideChartCommentBox::set_israised(bool value) {
   
-  raised_ = value;
-  // @@protoc_insertion_point(field_set:TideChartCommentBox.raised)
+  israised_ = value;
+  // @@protoc_insertion_point(field_set:TideChartCommentBox.isRaised)
 }
 
-// bool reversed = 17;
-inline void TideChartCommentBox::clear_reversed() {
-  reversed_ = false;
+// bool isReversed = 17;
+inline void TideChartCommentBox::clear_isreversed() {
+  isreversed_ = false;
 }
-inline bool TideChartCommentBox::reversed() const {
-  // @@protoc_insertion_point(field_get:TideChartCommentBox.reversed)
-  return reversed_;
+inline bool TideChartCommentBox::isreversed() const {
+  // @@protoc_insertion_point(field_get:TideChartCommentBox.isReversed)
+  return isreversed_;
 }
-inline void TideChartCommentBox::set_reversed(bool value) {
+inline void TideChartCommentBox::set_isreversed(bool value) {
   
-  reversed_ = value;
-  // @@protoc_insertion_point(field_set:TideChartCommentBox.reversed)
+  isreversed_ = value;
+  // @@protoc_insertion_point(field_set:TideChartCommentBox.isReversed)
 }
 
 inline bool TideChartCommentBox::has_content() const {
@@ -9367,32 +9367,32 @@ inline void TideChartPort::set_ordinal(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:TideChartPort.ordinal)
 }
 
-// bool default = 4;
-inline void TideChartPort::clear_default_() {
-  default__ = false;
+// bool isDefault = 4;
+inline void TideChartPort::clear_isdefault() {
+  isdefault_ = false;
 }
-inline bool TideChartPort::default_() const {
-  // @@protoc_insertion_point(field_get:TideChartPort.default)
-  return default__;
+inline bool TideChartPort::isdefault() const {
+  // @@protoc_insertion_point(field_get:TideChartPort.isDefault)
+  return isdefault_;
 }
-inline void TideChartPort::set_default_(bool value) {
+inline void TideChartPort::set_isdefault(bool value) {
   
-  default__ = value;
-  // @@protoc_insertion_point(field_set:TideChartPort.default)
+  isdefault_ = value;
+  // @@protoc_insertion_point(field_set:TideChartPort.isDefault)
 }
 
-// bool required = 5;
-inline void TideChartPort::clear_required() {
-  required_ = false;
+// bool isRequired = 5;
+inline void TideChartPort::clear_isrequired() {
+  isrequired_ = false;
 }
-inline bool TideChartPort::required() const {
-  // @@protoc_insertion_point(field_get:TideChartPort.required)
-  return required_;
+inline bool TideChartPort::isrequired() const {
+  // @@protoc_insertion_point(field_get:TideChartPort.isRequired)
+  return isrequired_;
 }
-inline void TideChartPort::set_required(bool value) {
+inline void TideChartPort::set_isrequired(bool value) {
   
-  required_ = value;
-  // @@protoc_insertion_point(field_set:TideChartPort.required)
+  isrequired_ = value;
+  // @@protoc_insertion_point(field_set:TideChartPort.isRequired)
 }
 
 // repeated string allowed = 6;
@@ -9766,32 +9766,32 @@ inline void TideChartPort::set_allocated_sync(std::string* sync) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.sync)
 }
 
-// bool block = 13;
-inline void TideChartPort::clear_block() {
-  block_ = false;
+// bool isBlocking = 13;
+inline void TideChartPort::clear_isblocking() {
+  isblocking_ = false;
 }
-inline bool TideChartPort::block() const {
-  // @@protoc_insertion_point(field_get:TideChartPort.block)
-  return block_;
+inline bool TideChartPort::isblocking() const {
+  // @@protoc_insertion_point(field_get:TideChartPort.isBlocking)
+  return isblocking_;
 }
-inline void TideChartPort::set_block(bool value) {
+inline void TideChartPort::set_isblocking(bool value) {
   
-  block_ = value;
-  // @@protoc_insertion_point(field_set:TideChartPort.block)
+  isblocking_ = value;
+  // @@protoc_insertion_point(field_set:TideChartPort.isBlocking)
 }
 
-// bool queue = 14;
-inline void TideChartPort::clear_queue() {
-  queue_ = false;
+// bool isQueuing = 14;
+inline void TideChartPort::clear_isqueuing() {
+  isqueuing_ = false;
 }
-inline bool TideChartPort::queue() const {
-  // @@protoc_insertion_point(field_get:TideChartPort.queue)
-  return queue_;
+inline bool TideChartPort::isqueuing() const {
+  // @@protoc_insertion_point(field_get:TideChartPort.isQueuing)
+  return isqueuing_;
 }
-inline void TideChartPort::set_queue(bool value) {
+inline void TideChartPort::set_isqueuing(bool value) {
   
-  queue_ = value;
-  // @@protoc_insertion_point(field_set:TideChartPort.queue)
+  isqueuing_ = value;
+  // @@protoc_insertion_point(field_set:TideChartPort.isQueuing)
 }
 
 // -------------------------------------------------------------------
@@ -10081,60 +10081,60 @@ inline void TideChartLink::set_allocated_filter(std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:TideChartLink.filter)
 }
 
-// bool logging = 16;
-inline void TideChartLink::clear_logging() {
-  logging_ = false;
+// bool isLogging = 16;
+inline void TideChartLink::clear_islogging() {
+  islogging_ = false;
 }
-inline bool TideChartLink::logging() const {
-  // @@protoc_insertion_point(field_get:TideChartLink.logging)
-  return logging_;
+inline bool TideChartLink::islogging() const {
+  // @@protoc_insertion_point(field_get:TideChartLink.isLogging)
+  return islogging_;
 }
-inline void TideChartLink::set_logging(bool value) {
+inline void TideChartLink::set_islogging(bool value) {
   
-  logging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartLink.logging)
+  islogging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartLink.isLogging)
 }
 
-// bool debugging = 17;
-inline void TideChartLink::clear_debugging() {
-  debugging_ = false;
+// bool isDebugging = 17;
+inline void TideChartLink::clear_isdebugging() {
+  isdebugging_ = false;
 }
-inline bool TideChartLink::debugging() const {
-  // @@protoc_insertion_point(field_get:TideChartLink.debugging)
-  return debugging_;
+inline bool TideChartLink::isdebugging() const {
+  // @@protoc_insertion_point(field_get:TideChartLink.isDebugging)
+  return isdebugging_;
 }
-inline void TideChartLink::set_debugging(bool value) {
+inline void TideChartLink::set_isdebugging(bool value) {
   
-  debugging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartLink.debugging)
+  isdebugging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartLink.isDebugging)
 }
 
-// bool paused = 18;
-inline void TideChartLink::clear_paused() {
-  paused_ = false;
+// bool isPaused = 18;
+inline void TideChartLink::clear_ispaused() {
+  ispaused_ = false;
 }
-inline bool TideChartLink::paused() const {
-  // @@protoc_insertion_point(field_get:TideChartLink.paused)
-  return paused_;
+inline bool TideChartLink::ispaused() const {
+  // @@protoc_insertion_point(field_get:TideChartLink.isPaused)
+  return ispaused_;
 }
-inline void TideChartLink::set_paused(bool value) {
+inline void TideChartLink::set_ispaused(bool value) {
   
-  paused_ = value;
-  // @@protoc_insertion_point(field_set:TideChartLink.paused)
+  ispaused_ = value;
+  // @@protoc_insertion_point(field_set:TideChartLink.isPaused)
 }
 
-// bool disabled = 19;
-inline void TideChartLink::clear_disabled() {
-  disabled_ = false;
+// bool isDisabled = 19;
+inline void TideChartLink::clear_isdisabled() {
+  isdisabled_ = false;
 }
-inline bool TideChartLink::disabled() const {
-  // @@protoc_insertion_point(field_get:TideChartLink.disabled)
-  return disabled_;
+inline bool TideChartLink::isdisabled() const {
+  // @@protoc_insertion_point(field_get:TideChartLink.isDisabled)
+  return isdisabled_;
 }
-inline void TideChartLink::set_disabled(bool value) {
+inline void TideChartLink::set_isdisabled(bool value) {
   
-  disabled_ = value;
-  // @@protoc_insertion_point(field_set:TideChartLink.disabled)
+  isdisabled_ = value;
+  // @@protoc_insertion_point(field_set:TideChartLink.isDisabled)
 }
 
 // -------------------------------------------------------------------
@@ -10889,60 +10889,60 @@ TideChartNode::props() const {
   return props_;
 }
 
-// bool logging = 16;
-inline void TideChartNode::clear_logging() {
-  logging_ = false;
+// bool isLogging = 16;
+inline void TideChartNode::clear_islogging() {
+  islogging_ = false;
 }
-inline bool TideChartNode::logging() const {
-  // @@protoc_insertion_point(field_get:TideChartNode.logging)
-  return logging_;
+inline bool TideChartNode::islogging() const {
+  // @@protoc_insertion_point(field_get:TideChartNode.isLogging)
+  return islogging_;
 }
-inline void TideChartNode::set_logging(bool value) {
+inline void TideChartNode::set_islogging(bool value) {
   
-  logging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartNode.logging)
+  islogging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartNode.isLogging)
 }
 
-// bool debugging = 17;
-inline void TideChartNode::clear_debugging() {
-  debugging_ = false;
+// bool isDebugging = 17;
+inline void TideChartNode::clear_isdebugging() {
+  isdebugging_ = false;
 }
-inline bool TideChartNode::debugging() const {
-  // @@protoc_insertion_point(field_get:TideChartNode.debugging)
-  return debugging_;
+inline bool TideChartNode::isdebugging() const {
+  // @@protoc_insertion_point(field_get:TideChartNode.isDebugging)
+  return isdebugging_;
 }
-inline void TideChartNode::set_debugging(bool value) {
+inline void TideChartNode::set_isdebugging(bool value) {
   
-  debugging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartNode.debugging)
+  isdebugging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartNode.isDebugging)
 }
 
-// bool paused = 18;
-inline void TideChartNode::clear_paused() {
-  paused_ = false;
+// bool isPaused = 18;
+inline void TideChartNode::clear_ispaused() {
+  ispaused_ = false;
 }
-inline bool TideChartNode::paused() const {
-  // @@protoc_insertion_point(field_get:TideChartNode.paused)
-  return paused_;
+inline bool TideChartNode::ispaused() const {
+  // @@protoc_insertion_point(field_get:TideChartNode.isPaused)
+  return ispaused_;
 }
-inline void TideChartNode::set_paused(bool value) {
+inline void TideChartNode::set_ispaused(bool value) {
   
-  paused_ = value;
-  // @@protoc_insertion_point(field_set:TideChartNode.paused)
+  ispaused_ = value;
+  // @@protoc_insertion_point(field_set:TideChartNode.isPaused)
 }
 
-// bool disabled = 19;
-inline void TideChartNode::clear_disabled() {
-  disabled_ = false;
+// bool isDisabled = 19;
+inline void TideChartNode::clear_isdisabled() {
+  isdisabled_ = false;
 }
-inline bool TideChartNode::disabled() const {
-  // @@protoc_insertion_point(field_get:TideChartNode.disabled)
-  return disabled_;
+inline bool TideChartNode::isdisabled() const {
+  // @@protoc_insertion_point(field_get:TideChartNode.isDisabled)
+  return isdisabled_;
 }
-inline void TideChartNode::set_disabled(bool value) {
+inline void TideChartNode::set_isdisabled(bool value) {
   
-  disabled_ = value;
-  // @@protoc_insertion_point(field_set:TideChartNode.disabled)
+  isdisabled_ = value;
+  // @@protoc_insertion_point(field_set:TideChartNode.isDisabled)
 }
 
 // repeated .TideChartNote notes = 20;
@@ -11292,60 +11292,60 @@ TideChartRegion::props() const {
   return props_;
 }
 
-// bool logging = 16;
-inline void TideChartRegion::clear_logging() {
-  logging_ = false;
+// bool isLogging = 16;
+inline void TideChartRegion::clear_islogging() {
+  islogging_ = false;
 }
-inline bool TideChartRegion::logging() const {
-  // @@protoc_insertion_point(field_get:TideChartRegion.logging)
-  return logging_;
+inline bool TideChartRegion::islogging() const {
+  // @@protoc_insertion_point(field_get:TideChartRegion.isLogging)
+  return islogging_;
 }
-inline void TideChartRegion::set_logging(bool value) {
+inline void TideChartRegion::set_islogging(bool value) {
   
-  logging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartRegion.logging)
+  islogging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartRegion.isLogging)
 }
 
-// bool debugging = 17;
-inline void TideChartRegion::clear_debugging() {
-  debugging_ = false;
+// bool isDebugging = 17;
+inline void TideChartRegion::clear_isdebugging() {
+  isdebugging_ = false;
 }
-inline bool TideChartRegion::debugging() const {
-  // @@protoc_insertion_point(field_get:TideChartRegion.debugging)
-  return debugging_;
+inline bool TideChartRegion::isdebugging() const {
+  // @@protoc_insertion_point(field_get:TideChartRegion.isDebugging)
+  return isdebugging_;
 }
-inline void TideChartRegion::set_debugging(bool value) {
+inline void TideChartRegion::set_isdebugging(bool value) {
   
-  debugging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartRegion.debugging)
+  isdebugging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartRegion.isDebugging)
 }
 
-// bool paused = 18;
-inline void TideChartRegion::clear_paused() {
-  paused_ = false;
+// bool isPaused = 18;
+inline void TideChartRegion::clear_ispaused() {
+  ispaused_ = false;
 }
-inline bool TideChartRegion::paused() const {
-  // @@protoc_insertion_point(field_get:TideChartRegion.paused)
-  return paused_;
+inline bool TideChartRegion::ispaused() const {
+  // @@protoc_insertion_point(field_get:TideChartRegion.isPaused)
+  return ispaused_;
 }
-inline void TideChartRegion::set_paused(bool value) {
+inline void TideChartRegion::set_ispaused(bool value) {
   
-  paused_ = value;
-  // @@protoc_insertion_point(field_set:TideChartRegion.paused)
+  ispaused_ = value;
+  // @@protoc_insertion_point(field_set:TideChartRegion.isPaused)
 }
 
-// bool disabled = 19;
-inline void TideChartRegion::clear_disabled() {
-  disabled_ = false;
+// bool isDisabled = 19;
+inline void TideChartRegion::clear_isdisabled() {
+  isdisabled_ = false;
 }
-inline bool TideChartRegion::disabled() const {
-  // @@protoc_insertion_point(field_get:TideChartRegion.disabled)
-  return disabled_;
+inline bool TideChartRegion::isdisabled() const {
+  // @@protoc_insertion_point(field_get:TideChartRegion.isDisabled)
+  return isdisabled_;
 }
-inline void TideChartRegion::set_disabled(bool value) {
+inline void TideChartRegion::set_isdisabled(bool value) {
   
-  disabled_ = value;
-  // @@protoc_insertion_point(field_set:TideChartRegion.disabled)
+  isdisabled_ = value;
+  // @@protoc_insertion_point(field_set:TideChartRegion.isDisabled)
 }
 
 // repeated .TideChartNote notes = 20;
@@ -11949,60 +11949,60 @@ TideChartGraph::history() const {
   return history_;
 }
 
-// bool logging = 16;
-inline void TideChartGraph::clear_logging() {
-  logging_ = false;
+// bool isLogging = 16;
+inline void TideChartGraph::clear_islogging() {
+  islogging_ = false;
 }
-inline bool TideChartGraph::logging() const {
-  // @@protoc_insertion_point(field_get:TideChartGraph.logging)
-  return logging_;
+inline bool TideChartGraph::islogging() const {
+  // @@protoc_insertion_point(field_get:TideChartGraph.isLogging)
+  return islogging_;
 }
-inline void TideChartGraph::set_logging(bool value) {
+inline void TideChartGraph::set_islogging(bool value) {
   
-  logging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartGraph.logging)
+  islogging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartGraph.isLogging)
 }
 
-// bool debugging = 17;
-inline void TideChartGraph::clear_debugging() {
-  debugging_ = false;
+// bool isDebugging = 17;
+inline void TideChartGraph::clear_isdebugging() {
+  isdebugging_ = false;
 }
-inline bool TideChartGraph::debugging() const {
-  // @@protoc_insertion_point(field_get:TideChartGraph.debugging)
-  return debugging_;
+inline bool TideChartGraph::isdebugging() const {
+  // @@protoc_insertion_point(field_get:TideChartGraph.isDebugging)
+  return isdebugging_;
 }
-inline void TideChartGraph::set_debugging(bool value) {
+inline void TideChartGraph::set_isdebugging(bool value) {
   
-  debugging_ = value;
-  // @@protoc_insertion_point(field_set:TideChartGraph.debugging)
+  isdebugging_ = value;
+  // @@protoc_insertion_point(field_set:TideChartGraph.isDebugging)
 }
 
-// bool paused = 18;
-inline void TideChartGraph::clear_paused() {
-  paused_ = false;
+// bool isPaused = 18;
+inline void TideChartGraph::clear_ispaused() {
+  ispaused_ = false;
 }
-inline bool TideChartGraph::paused() const {
-  // @@protoc_insertion_point(field_get:TideChartGraph.paused)
-  return paused_;
+inline bool TideChartGraph::ispaused() const {
+  // @@protoc_insertion_point(field_get:TideChartGraph.isPaused)
+  return ispaused_;
 }
-inline void TideChartGraph::set_paused(bool value) {
+inline void TideChartGraph::set_ispaused(bool value) {
   
-  paused_ = value;
-  // @@protoc_insertion_point(field_set:TideChartGraph.paused)
+  ispaused_ = value;
+  // @@protoc_insertion_point(field_set:TideChartGraph.isPaused)
 }
 
-// bool disabled = 19;
-inline void TideChartGraph::clear_disabled() {
-  disabled_ = false;
+// bool isDisabled = 19;
+inline void TideChartGraph::clear_isdisabled() {
+  isdisabled_ = false;
 }
-inline bool TideChartGraph::disabled() const {
-  // @@protoc_insertion_point(field_get:TideChartGraph.disabled)
-  return disabled_;
+inline bool TideChartGraph::isdisabled() const {
+  // @@protoc_insertion_point(field_get:TideChartGraph.isDisabled)
+  return isdisabled_;
 }
-inline void TideChartGraph::set_disabled(bool value) {
+inline void TideChartGraph::set_isdisabled(bool value) {
   
-  disabled_ = value;
-  // @@protoc_insertion_point(field_set:TideChartGraph.disabled)
+  isdisabled_ = value;
+  // @@protoc_insertion_point(field_set:TideChartGraph.isDisabled)
 }
 
 // repeated .TideChartNote notes = 20;
@@ -14866,106 +14866,106 @@ inline void TideChartSource::set_allocated_path(std::string* path) {
   // @@protoc_insertion_point(field_set_allocated:TideChartSource.path)
 }
 
-// string createdDate = 5;
-inline void TideChartSource::clear_createddate() {
-  createddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifieddDate = 5;
+inline void TideChartSource::clear_modifiedddate() {
+  modifiedddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartSource::createddate() const {
-  // @@protoc_insertion_point(field_get:TideChartSource.createdDate)
-  return createddate_.GetNoArena();
+inline const std::string& TideChartSource::modifiedddate() const {
+  // @@protoc_insertion_point(field_get:TideChartSource.modifieddDate)
+  return modifiedddate_.GetNoArena();
 }
-inline void TideChartSource::set_createddate(const std::string& value) {
+inline void TideChartSource::set_modifiedddate(const std::string& value) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartSource.createdDate)
+  modifiedddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartSource.modifieddDate)
 }
-inline void TideChartSource::set_createddate(std::string&& value) {
+inline void TideChartSource::set_modifiedddate(std::string&& value) {
   
-  createddate_.SetNoArena(
+  modifiedddate_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartSource.createdDate)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartSource.modifieddDate)
 }
-inline void TideChartSource::set_createddate(const char* value) {
+inline void TideChartSource::set_modifiedddate(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartSource.createdDate)
+  modifiedddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartSource.modifieddDate)
 }
-inline void TideChartSource::set_createddate(const char* value, size_t size) {
+inline void TideChartSource::set_modifiedddate(const char* value, size_t size) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifiedddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartSource.createdDate)
+  // @@protoc_insertion_point(field_set_pointer:TideChartSource.modifieddDate)
 }
-inline std::string* TideChartSource::mutable_createddate() {
+inline std::string* TideChartSource::mutable_modifiedddate() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartSource.createdDate)
-  return createddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartSource.modifieddDate)
+  return modifiedddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartSource::release_createddate() {
-  // @@protoc_insertion_point(field_release:TideChartSource.createdDate)
+inline std::string* TideChartSource::release_modifiedddate() {
+  // @@protoc_insertion_point(field_release:TideChartSource.modifieddDate)
   
-  return createddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifiedddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartSource::set_allocated_createddate(std::string* createddate) {
-  if (createddate != nullptr) {
+inline void TideChartSource::set_allocated_modifiedddate(std::string* modifiedddate) {
+  if (modifiedddate != nullptr) {
     
   } else {
     
   }
-  createddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createddate);
-  // @@protoc_insertion_point(field_set_allocated:TideChartSource.createdDate)
+  modifiedddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifiedddate);
+  // @@protoc_insertion_point(field_set_allocated:TideChartSource.modifieddDate)
 }
 
-// string createdBy = 6;
-inline void TideChartSource::clear_createdby() {
-  createdby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifiedBy = 6;
+inline void TideChartSource::clear_modifiedby() {
+  modifiedby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartSource::createdby() const {
-  // @@protoc_insertion_point(field_get:TideChartSource.createdBy)
-  return createdby_.GetNoArena();
+inline const std::string& TideChartSource::modifiedby() const {
+  // @@protoc_insertion_point(field_get:TideChartSource.modifiedBy)
+  return modifiedby_.GetNoArena();
 }
-inline void TideChartSource::set_createdby(const std::string& value) {
+inline void TideChartSource::set_modifiedby(const std::string& value) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartSource.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartSource.modifiedBy)
 }
-inline void TideChartSource::set_createdby(std::string&& value) {
+inline void TideChartSource::set_modifiedby(std::string&& value) {
   
-  createdby_.SetNoArena(
+  modifiedby_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartSource.createdBy)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartSource.modifiedBy)
 }
-inline void TideChartSource::set_createdby(const char* value) {
+inline void TideChartSource::set_modifiedby(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartSource.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartSource.modifiedBy)
 }
-inline void TideChartSource::set_createdby(const char* value, size_t size) {
+inline void TideChartSource::set_modifiedby(const char* value, size_t size) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartSource.createdBy)
+  // @@protoc_insertion_point(field_set_pointer:TideChartSource.modifiedBy)
 }
-inline std::string* TideChartSource::mutable_createdby() {
+inline std::string* TideChartSource::mutable_modifiedby() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartSource.createdBy)
-  return createdby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartSource.modifiedBy)
+  return modifiedby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartSource::release_createdby() {
-  // @@protoc_insertion_point(field_release:TideChartSource.createdBy)
+inline std::string* TideChartSource::release_modifiedby() {
+  // @@protoc_insertion_point(field_release:TideChartSource.modifiedBy)
   
-  return createdby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifiedby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartSource::set_allocated_createdby(std::string* createdby) {
-  if (createdby != nullptr) {
+inline void TideChartSource::set_allocated_modifiedby(std::string* modifiedby) {
+  if (modifiedby != nullptr) {
     
   } else {
     
   }
-  createdby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createdby);
-  // @@protoc_insertion_point(field_set_allocated:TideChartSource.createdBy)
+  modifiedby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifiedby);
+  // @@protoc_insertion_point(field_set_allocated:TideChartSource.modifiedBy)
 }
 
 // string version = 7;

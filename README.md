@@ -106,8 +106,8 @@
 | color | [int32](#int32) |  | color used to draw text / icon - default is black |
 | background | [int32](#int32) |  | color used to draw background - default is transparent |
 | border | [int32](#int32) | repeated | style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)] |
-| raised | [bool](#bool) |  | flag to indicate if a drop shadow should be used |
-| reversed | [bool](#bool) |  | flag to indicate if the text requires left to right layout order |
+| isRaised | [bool](#bool) |  | flag to indicate if a drop shadow should be used |
+| isReversed | [bool](#bool) |  | flag to indicate if the text requires left to right layout order |
 
 
 
@@ -291,10 +291,10 @@ Read only the file header information
 | widgets | [TideChartWidget](#TideChartWidget) | repeated | interactive widgets for the graph (not part of the data flow graph: test instrudements, data visualization, debugging, etc.) |
 | props | [TideChartProperty](#TideChartProperty) | repeated | a set of properties shared by all nodes on the graph |
 | history | [TideChartCommand](#TideChartCommand) | repeated | all the changes made from source version to current version |
-| logging | [bool](#bool) |  | flag indicating this graph will trace messages |
-| debugging | [bool](#bool) |  | flag indicating this graph is a debug breakpoint |
-| paused | [bool](#bool) |  | flag indicating this graph is paused (messages are queued) |
-| disabled | [bool](#bool) |  | flag indicating this graph is disabled (messages are dropped) |
+| isLogging | [bool](#bool) |  | flag indicating this graph will trace messages |
+| isDebugging | [bool](#bool) |  | flag indicating this graph is a debug breakpoint |
+| isPaused | [bool](#bool) |  | flag indicating this graph is paused (messages are queued) |
+| isDisabled | [bool](#bool) |  | flag indicating this graph is disabled (messages are dropped) |
 | notes | [TideChartNote](#TideChartNote) | repeated | comments associated with this graph |
 | script | [string](#string) |  | a user script of custom code for the graph (non-message based thread initialization, global exception handling) |
 
@@ -394,10 +394,10 @@ Read only the commit headers
 | group | [int32](#int32) |  | links can be associated into groups (usually just determins color) |
 | delay | [int32](#int32) |  | automatic time delay (msec) added to messages (equivalent to routing thru a delay node) |
 | filter | [string](#string) |  | a filter or conditional expression applied to messages on the link |
-| logging | [bool](#bool) |  | flag indicating this link will trace messages |
-| debugging | [bool](#bool) |  | flag indicating this link is a debug breakpoint |
-| paused | [bool](#bool) |  | flag indicating this link is paused (messages are queued) |
-| disabled | [bool](#bool) |  | flag indicating this link is disabled (messages are dropped) |
+| isLogging | [bool](#bool) |  | flag indicating this link will trace messages |
+| isDebugging | [bool](#bool) |  | flag indicating this link is a debug breakpoint |
+| isPaused | [bool](#bool) |  | flag indicating this link is paused (messages are queued) |
+| isDisabled | [bool](#bool) |  | flag indicating this link is disabled (messages are dropped) |
 
 
 
@@ -530,10 +530,10 @@ Read only the commit headers
 | inports | [TideChartPort](#TideChartPort) | repeated | node inports to connect inbound links |
 | outports | [TideChartPort](#TideChartPort) | repeated | node outports to connect outbound links |
 | props | [TideChartProperty](#TideChartProperty) | repeated | configuration properties for this node (combines with graph properties and region properties) |
-| logging | [bool](#bool) |  | flag indicating this node will trace messages |
-| debugging | [bool](#bool) |  | flag indicating this node is a debug breakpoint |
-| paused | [bool](#bool) |  | flag indicating this node is paused (messages are queued) |
-| disabled | [bool](#bool) |  | flag indicating this node is disabled (messages are dropped) |
+| isLogging | [bool](#bool) |  | flag indicating this node will trace messages |
+| isDebugging | [bool](#bool) |  | flag indicating this node is a debug breakpoint |
+| isPaused | [bool](#bool) |  | flag indicating this node is paused (messages are queued) |
+| isDisabled | [bool](#bool) |  | flag indicating this node is disabled (messages are dropped) |
 | notes | [TideChartNote](#TideChartNote) | repeated | comments associated with this node |
 | script | [string](#string) |  | a user script of custom code to implement the node&#39;s action, filter or mux/demux operations |
 
@@ -609,8 +609,8 @@ Read only the commit headers
 | type | [string](#string) |  | type of port: inport, outport |
 | name | [string](#string) |  | port name (unique to node scope) |
 | ordinal | [int32](#int32) |  | position in the node&#39;s set of inports or outports |
-| default | [bool](#bool) |  | used by methods to indicate which ports are used for default in/out routing |
-| required | [bool](#bool) |  | used by methods to indicate the port must exist |
+| isDefault | [bool](#bool) |  | used by methods to indicate which ports are used for default in/out routing |
+| isRequired | [bool](#bool) |  | used by methods to indicate the port must exist |
 | allowed | [string](#string) | repeated | used by methods to define what value / message types are allowed to be |
 | hint | [string](#string) |  | used by methods to describe how a port should be used |
 | constant | [TideChartProperty](#TideChartProperty) |  | a constant value applied to the inport |
@@ -618,8 +618,8 @@ Read only the commit headers
 | filter | [string](#string) |  | a filter or conditional expressions applied to messages received or sent |
 | event | [string](#string) |  | an event the outport automatically writes to |
 | sync | [string](#string) |  | creates a syncronizing group between ports |
-| block | [bool](#bool) |  | determines if the port will block to wait for the rest of the port group |
-| queue | [bool](#bool) |  | determines if messages should queue while blocking or replace with latest received |
+| isBlocking | [bool](#bool) |  | determines if the port will block to wait for the rest of the port group |
+| isQueuing | [bool](#bool) |  | determines if messages should queue while blocking or replace with latest received |
 
 
 
@@ -696,10 +696,10 @@ a recursive data type that provides configuration values for graphs, regions and
 | group | [int32](#int32) |  | regions can be associated into groups (usually just determines color) |
 | scope | [string](#string) |  | an event scope used to limit (or exclude) events to route to only nodes in the region |
 | props | [TideChartProperty](#TideChartProperty) | repeated | a set of properties shared by all nodes in the region |
-| logging | [bool](#bool) |  | flag indicating this region will trace messages |
-| debugging | [bool](#bool) |  | flag indicating this region is a debug breakpoint |
-| paused | [bool](#bool) |  | flag indicating this region is paused (messages are queued) |
-| disabled | [bool](#bool) |  | flag indicating this region is disabled (messages are dropped) |
+| isLogging | [bool](#bool) |  | flag indicating this region will trace messages |
+| isDebugging | [bool](#bool) |  | flag indicating this region is a debug breakpoint |
+| isPaused | [bool](#bool) |  | flag indicating this region is paused (messages are queued) |
+| isDisabled | [bool](#bool) |  | flag indicating this region is disabled (messages are dropped) |
 | notes | [TideChartNote](#TideChartNote) | repeated | comments associated with this region |
 | script | [string](#string) |  | a user script of custom code for the region (interacting with non-message based threads, scoped exception handling) |
 
@@ -762,8 +762,8 @@ a recursive data type that provides configuration values for graphs, regions and
 | id | [string](#string) |  | unique id for this source file |
 | name | [string](#string) |  | name of the source file |
 | path | [string](#string) |  | relative path of the source file |
-| createdDate | [string](#string) |  | date file version was created |
-| createdBy | [string](#string) |  | user that created this file version |
+| modifieddDate | [string](#string) |  | date file version was modified |
+| modifiedBy | [string](#string) |  | user that modified this file version |
 | version | [string](#string) |  | reference to the exact version of the file |
 | script | [string](#string) |  | contents of the file |
 

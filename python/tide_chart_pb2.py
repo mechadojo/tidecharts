@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=_b('B\tTideChart'),
-  serialized_pb=_b('\n\x10tide_chart.proto\"a\n\x11TideChartProperty\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\r\n\x05value\x18\x03 \x01(\t\x12!\n\x05props\x18\x04 \x03(\x0b\x32\x12.TideChartProperty\"\xb5\x02\n\x13TideChartCommentBox\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06region\x18\x02 \x01(\t\x12\x0c\n\x04posX\x18\x03 \x01(\x11\x12\x0c\n\x04posY\x18\x04 \x01(\x11\x12\r\n\x05width\x18\x05 \x01(\x05\x12\x0e\n\x06height\x18\x06 \x01(\x05\x12\x0e\n\x04text\x18\x07 \x01(\tH\x00\x12\x0f\n\x05image\x18\x08 \x01(\x0cH\x00\x12\x0e\n\x04icon\x18\t \x01(\tH\x00\x12\x10\n\x08\x66ontSize\x18\n \x01(\x01\x12\x11\n\tfontStyle\x18\x0b \x01(\t\x12\x11\n\talignment\x18\x0c \x03(\x11\x12\r\n\x05\x63olor\x18\r \x01(\x05\x12\x12\n\nbackground\x18\x0e \x01(\x05\x12\x0e\n\x06\x62order\x18\x0f \x03(\x05\x12\x0e\n\x06raised\x18\x10 \x01(\x08\x12\x10\n\x08reversed\x18\x11 \x01(\x08\x42\t\n\x07\x63ontent\"\xe2\x01\n\x0fTideChartWidget\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\t\x12\x0e\n\x06region\x18\x04 \x01(\t\x12\x0c\n\x04posX\x18\x05 \x01(\x11\x12\x0c\n\x04posY\x18\x06 \x01(\x11\x12\r\n\x05width\x18\x07 \x01(\x05\x12\x0e\n\x06height\x18\x08 \x01(\x05\x12\x0e\n\x04link\x18\t \x01(\tH\x00\x12\x0e\n\x04port\x18\n \x01(\tH\x00\x12\x0e\n\x04node\x18\x0b \x01(\tH\x00\x12!\n\x05props\x18\x0c \x03(\x0b\x32\x12.TideChartPropertyB\x08\n\x06target\"\x80\x02\n\rTideChartPort\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07ordinal\x18\x03 \x01(\x05\x12\x0f\n\x07\x64\x65\x66\x61ult\x18\x04 \x01(\x08\x12\x10\n\x08required\x18\x05 \x01(\x08\x12\x0f\n\x07\x61llowed\x18\x06 \x03(\t\x12\x0c\n\x04hint\x18\x07 \x01(\t\x12$\n\x08\x63onstant\x18\x08 \x01(\x0b\x32\x12.TideChartProperty\x12\x0f\n\x07trigger\x18\t \x01(\t\x12\x0e\n\x06\x66ilter\x18\n \x01(\t\x12\r\n\x05\x65vent\x18\x0b \x01(\t\x12\x0c\n\x04sync\x18\x0c \x01(\t\x12\r\n\x05\x62lock\x18\r \x01(\x08\x12\r\n\x05queue\x18\x0e \x01(\x08\"\xc5\x01\n\rTideChartLink\x12\x0f\n\x07outNode\x18\x01 \x01(\t\x12\x0f\n\x07outPort\x18\x02 \x01(\t\x12\x0e\n\x06inNode\x18\x03 \x01(\t\x12\x0e\n\x06inPort\x18\x04 \x01(\t\x12\r\n\x05group\x18\x05 \x01(\x05\x12\r\n\x05\x64\x65lay\x18\x06 \x01(\x05\x12\x0e\n\x06\x66ilter\x18\x07 \x01(\t\x12\x0f\n\x07logging\x18\x10 \x01(\x08\x12\x11\n\tdebugging\x18\x11 \x01(\x08\x12\x0e\n\x06paused\x18\x12 \x01(\x08\x12\x10\n\x08\x64isabled\x18\x13 \x01(\x08\"w\n\rTideChartNote\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0f\n\x07replyTo\x18\x02 \x01(\t\x12\x10\n\x08\x63hangeTo\x18\x03 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x04 \x01(\t\x12\x11\n\tcreatedBy\x18\x05 \x01(\t\x12\x13\n\x0b\x63reatedDate\x18\x06 \x01(\t\"\xef\x02\n\rTideChartNode\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\x0c\n\x04posX\x18\x03 \x01(\x11\x12\x0c\n\x04posY\x18\x04 \x01(\x11\x12\r\n\x05title\x18\x05 \x01(\t\x12\x0c\n\x04icon\x18\x06 \x01(\t\x12\x0f\n\x07library\x18\x07 \x01(\t\x12\x0e\n\x06method\x18\x08 \x01(\t\x12\r\n\x05\x64\x65lay\x18\t \x01(\x05\x12\x1f\n\x07inports\x18\n \x03(\x0b\x32\x0e.TideChartPort\x12 \n\x08outports\x18\x0b \x03(\x0b\x32\x0e.TideChartPort\x12!\n\x05props\x18\x0c \x03(\x0b\x32\x12.TideChartProperty\x12\x0f\n\x07logging\x18\x10 \x01(\x08\x12\x11\n\tdebugging\x18\x11 \x01(\x08\x12\x0e\n\x06paused\x18\x12 \x01(\x08\x12\x10\n\x08\x64isabled\x18\x13 \x01(\x08\x12\x1d\n\x05notes\x18\x14 \x03(\x0b\x32\x0e.TideChartNote\x12\x0e\n\x06script\x18\x15 \x01(\t\"\xf3\x01\n\x0fTideChartRegion\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\r\n\x05nodes\x18\x03 \x03(\t\x12\r\n\x05group\x18\x04 \x01(\x05\x12\r\n\x05scope\x18\x05 \x01(\t\x12!\n\x05props\x18\x06 \x03(\x0b\x32\x12.TideChartProperty\x12\x0f\n\x07logging\x18\x10 \x01(\x08\x12\x11\n\tdebugging\x18\x11 \x01(\x08\x12\x0e\n\x06paused\x18\x12 \x01(\x08\x12\x10\n\x08\x64isabled\x18\x13 \x01(\x08\x12\x1d\n\x05notes\x18\x14 \x03(\x0b\x32\x0e.TideChartNote\x12\x0e\n\x06script\x18\x15 \x01(\t\"\xd0\x03\n\x0eTideChartGraph\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\r\n\x05title\x18\x04 \x01(\t\x12\x0f\n\x07version\x18\x05 \x01(\t\x12\x0e\n\x06source\x18\x06 \x01(\t\x12\x1d\n\x05nodes\x18\x07 \x03(\x0b\x32\x0e.TideChartNode\x12\x1d\n\x05links\x18\x08 \x03(\x0b\x32\x0e.TideChartLink\x12!\n\x07regions\x18\t \x03(\x0b\x32\x10.TideChartRegion\x12&\n\x08\x63omments\x18\n \x03(\x0b\x32\x14.TideChartCommentBox\x12!\n\x07widgets\x18\x0b \x03(\x0b\x32\x10.TideChartWidget\x12!\n\x05props\x18\x0c \x03(\x0b\x32\x12.TideChartProperty\x12\"\n\x07history\x18\r \x03(\x0b\x32\x11.TideChartCommand\x12\x0f\n\x07logging\x18\x10 \x01(\x08\x12\x11\n\tdebugging\x18\x11 \x01(\x08\x12\x0e\n\x06paused\x18\x12 \x01(\x08\x12\x10\n\x08\x64isabled\x18\x13 \x01(\x08\x12\x1d\n\x05notes\x18\x14 \x03(\x0b\x32\x0e.TideChartNote\x12\x0e\n\x06script\x18\x15 \x01(\t\"\x85\x04\n\x10TideChartCommand\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t\x12\'\n\x05group\x18\x03 \x01(\x0b\x32\x16.TideChartGroupCommandH\x00\x12%\n\x04move\x18\x04 \x01(\x0b\x32\x15.TideChartMoveCommandH\x00\x12.\n\x07\x63omment\x18\x05 \x01(\x0b\x32\x1b.TideChartCommentBoxCommandH\x00\x12)\n\x06widget\x18\x06 \x01(\x0b\x32\x17.TideChartWidgetCommandH\x00\x12%\n\x04port\x18\x07 \x01(\x0b\x32\x15.TideChartPortCommandH\x00\x12%\n\x04link\x18\x08 \x01(\x0b\x32\x15.TideChartLinkCommandH\x00\x12%\n\x04node\x18\t \x01(\x0b\x32\x15.TideChartNodeCommandH\x00\x12)\n\x06region\x18\n \x01(\x0b\x32\x17.TideChartRegionCommandH\x00\x12\'\n\x05graph\x18\x0b \x01(\x0b\x32\x16.TideChartGraphCommandH\x00\x12*\n\x05props\x18\x0c \x01(\x0b\x32\x19.TideChartPropertyCommandH\x00\x12%\n\x04note\x18\r \x01(\x0b\x32\x15.TideChartNoteCommandH\x00\x42\t\n\x07\x63ommand\"<\n\x15TideChartGroupCommand\x12#\n\x08\x63ommands\x18\x01 \x03(\x0b\x32\x11.TideChartCommand\"h\n\x14TideChartMoveCommand\x12\x0c\n\x04node\x18\x01 \x01(\t\x12\x10\n\x08\x66romPosX\x18\x02 \x01(\x11\x12\x10\n\x08\x66romPosY\x18\x03 \x01(\x11\x12\x0e\n\x06toPosX\x18\x04 \x01(\x11\x12\x0e\n\x06toPosY\x18\x05 \x01(\x11\"\x9b\x01\n\x1aTideChartCommentBoxCommand\x12)\n\x0b\x66romComment\x18\x01 \x01(\x0b\x32\x14.TideChartCommentBox\x12\'\n\ttoComment\x18\x02 \x01(\x0b\x32\x14.TideChartCommentBox\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x8d\x01\n\x16TideChartWidgetCommand\x12$\n\nfromWidget\x18\x01 \x01(\x0b\x32\x10.TideChartWidget\x12\"\n\x08toWidget\x18\x02 \x01(\x0b\x32\x10.TideChartWidget\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x83\x01\n\x14TideChartPortCommand\x12 \n\x08\x66romPort\x18\x01 \x01(\x0b\x32\x0e.TideChartPort\x12\x1e\n\x06toPort\x18\x02 \x01(\x0b\x32\x0e.TideChartPort\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x83\x01\n\x14TideChartLinkCommand\x12 \n\x08\x66romLink\x18\x01 \x01(\x0b\x32\x0e.TideChartLink\x12\x1e\n\x06toLink\x18\x02 \x01(\x0b\x32\x0e.TideChartLink\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x83\x01\n\x14TideChartNodeCommand\x12 \n\x08\x66romNode\x18\x01 \x01(\x0b\x32\x0e.TideChartNode\x12\x1e\n\x06toNode\x18\x02 \x01(\x0b\x32\x0e.TideChartNode\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x8d\x01\n\x16TideChartRegionCommand\x12$\n\nfromRegion\x18\x01 \x01(\x0b\x32\x10.TideChartRegion\x12\"\n\x08toRegion\x18\x02 \x01(\x0b\x32\x10.TideChartRegion\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x88\x01\n\x15TideChartGraphCommand\x12\"\n\tfromGraph\x18\x01 \x01(\x0b\x32\x0f.TideChartGraph\x12 \n\x07toGraph\x18\x02 \x01(\x0b\x32\x0f.TideChartGraph\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\xe0\x01\n\x18TideChartPropertyCommand\x12%\n\tfromProps\x18\x01 \x03(\x0b\x32\x12.TideChartProperty\x12#\n\x07toProps\x18\x02 \x03(\x0b\x32\x12.TideChartProperty\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\x12\x0e\n\x04node\x18\x05 \x01(\tH\x00\x12\x10\n\x06region\x18\x06 \x01(\tH\x00\x12\x10\n\x06widget\x18\x07 \x01(\tH\x00\x12\x0f\n\x05graph\x18\x08 \x01(\tH\x00\x42\x08\n\x06target\"\x9d\x01\n\x14TideChartNoteCommand\x12\x1d\n\x05notes\x18\x01 \x03(\x0b\x32\x0e.TideChartNote\x12)\n\x04type\x18\x02 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\x12\x0e\n\x04node\x18\x03 \x01(\tH\x00\x12\x10\n\x06region\x18\x04 \x01(\tH\x00\x12\x0f\n\x05graph\x18\x05 \x01(\tH\x00\x42\x08\n\x06target\"\xae\x01\n\x0fTideChartMethod\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07\x65xtends\x18\x03 \x01(\t\x12\x0e\n\x06script\x18\x04 \x01(\t\x12\x1f\n\x07inports\x18\x05 \x03(\x0b\x32\x0e.TideChartPort\x12 \n\x08outports\x18\x06 \x03(\x0b\x32\x0e.TideChartPort\x12\x1d\n\x05props\x18\x07 \x03(\x0b\x32\x0e.TideChartPort\"\x91\x01\n\x0fTideChartSource\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x13\n\x0b\x63reatedDate\x18\x05 \x01(\t\x12\x11\n\tcreatedBy\x18\x06 \x01(\t\x12\x11\n\x07version\x18\x07 \x01(\tH\x00\x12\x10\n\x06script\x18\x08 \x01(\tH\x00\x42\t\n\x07\x63ontent\"\xad\x01\n\x10TideChartLibrary\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x0e\n\x06\x62ranch\x18\x05 \x01(\t\x12\x0c\n\x04path\x18\x06 \x01(\t\x12\x1f\n\x05\x66iles\x18\x07 \x03(\x0b\x32\x10.TideChartSource\x12!\n\x07methods\x18\x08 \x03(\x0b\x32\x10.TideChartMethod\"\xe8\x01\n\rTideChartSite\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x1d\n\x05stack\x18\x02 \x03(\x0b\x32\x0e.TideChartSite\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0f\n\x07trigger\x18\x04 \x01(\t\x12\r\n\x05\x65vent\x18\x05 \x01(\t\x12\r\n\x05scope\x18\x06 \x03(\t\x12\x0e\n\x06\x66ilter\x18\x07 \x01(\t\x12\r\n\x05graph\x18\x08 \x01(\t\x12\x0e\n\x06region\x18\t \x01(\t\x12\x0c\n\x04node\x18\n \x01(\t\x12\x0c\n\x04port\x18\x0b \x01(\t\x12!\n\x05local\x18\x0c \x03(\x0b\x32\x12.TideChartProperty\"\x89\x02\n\x10TideChartMessage\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\x12\x0e\n\x06origin\x18\x04 \x01(\x03\x12\x10\n\x08previous\x18\x05 \x01(\x03\x12\x0e\n\x06source\x18\x07 \x01(\x03\x12\x0e\n\x06target\x18\x08 \x01(\x03\x12\x12\n\ndelayUntil\x18\t \x01(\x03\x12\x11\n\tholdToken\x18\n \x01(\x03\x12\x13\n\x0b\x63\x61ncelToken\x18\x0b \x01(\x03\x12\x0c\n\x04type\x18\x0c \x01(\t\x12\x0f\n\x07version\x18\r \x01(\x05\x12\x15\n\x0bjsonContent\x18\x0e \x01(\tH\x00\x12\x14\n\nmsgContent\x18\x0f \x01(\x0cH\x00\x42\t\n\x07\x63ontent\"k\n\x16TideChartContextChange\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\x12\x0c\n\x04type\x18\x03 \x01(\t\x12!\n\x05props\x18\x04 \x03(\x0b\x32\x12.TideChartProperty\"\xb8\x01\n\x11TideChartLogEntry\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\x12\x0e\n\x06source\x18\x03 \x01(\x03\x12!\n\x05level\x18\x04 \x01(\x0e\x32\x12.TideChartLogLevel\x12\x0c\n\x04tags\x18\x05 \x03(\t\x12\x0f\n\x07message\x18\x06 \x01(\t\x12\x0c\n\x04refs\x18\x07 \x03(\x03\x12!\n\x05props\x18\x08 \x03(\x0b\x32\x12.TideChartProperty\"\xed\x02\n\x10TideChartContext\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05index\x18\x02 \x01(\x03\x12\x11\n\ttimestamp\x18\x03 \x01(\x03\x12\x0f\n\x07version\x18\x04 \x01(\t\x12\x1d\n\x05sites\x18\x05 \x03(\x0b\x32\x0e.TideChartSite\x12#\n\x08messages\x18\x06 \x03(\x0b\x32\x11.TideChartMessage\x12\"\n\x06global\x18\x07 \x03(\x0b\x32\x12.TideChartProperty\x12\x11\n\tstartTime\x18\x08 \x01(\x03\x12\x12\n\nstartIndex\x18\t \x01(\x03\x12\x0e\n\x06\x61\x63tive\x18\n \x03(\x03\x12\x0f\n\x07waiting\x18\x0b \x03(\x03\x12\x0e\n\x06paused\x18\x0c \x03(\x03\x12\x10\n\x08\x64isabled\x18\r \x03(\x03\x12\'\n\x06\x65vents\x18\x0e \x03(\x0b\x32\x17.TideChartContextChange\x12\x1f\n\x03log\x18\x0f \x03(\x0b\x32\x12.TideChartLogEntry\"\xa5\x02\n\rTideChartData\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x0e\n\x06\x62ranch\x18\x02 \x01(\t\x12\x0e\n\x06source\x18\x03 \x01(\t\x12\r\n\x05merge\x18\x04 \x01(\t\x12\x12\n\ncommitDate\x18\x05 \x01(\t\x12\x10\n\x08\x63ommitBy\x18\x06 \x01(\t\x12\x12\n\ncommitDesc\x18\x07 \x01(\t\x12\x13\n\x0b\x63ommitNotes\x18\x08 \x01(\t\x12\x1f\n\x06sheets\x18\t \x03(\x0b\x32\x0f.TideChartGraph\x12!\n\x05props\x18\n \x03(\x0b\x32\x12.TideChartProperty\x12\x1d\n\x05notes\x18\x0b \x03(\x0b\x32\x0e.TideChartNote\x12\"\n\x07library\x18\x0c \x03(\x0b\x32\x11.TideChartLibrary\"\xa0\x01\n\x0fTideChartHeader\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x0e\n\x06\x62ranch\x18\x02 \x01(\t\x12\x0e\n\x06source\x18\x03 \x01(\t\x12\r\n\x05merge\x18\x04 \x01(\t\x12\x12\n\ncommitDate\x18\x05 \x01(\t\x12\x10\n\x08\x63ommitBy\x18\x06 \x01(\t\x12\x12\n\ncommitDesc\x18\x07 \x01(\t\x12\x13\n\x0b\x63ommitNotes\x18\x08 \x01(\t\"\x9c\x02\n\rTideChartFile\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x14\n\x0cmodifiedDate\x18\x05 \x01(\t\x12\x12\n\nmodifiedBy\x18\x06 \x01(\t\x12\x1d\n\x05\x63hart\x18\x07 \x01(\x0b\x32\x0e.TideChartData\x12\"\n\x07working\x18\x08 \x03(\x0b\x32\x11.TideChartCommand\x12!\n\x06remote\x18\t \x03(\x0b\x32\x11.TideChartCommand\x12\x1f\n\x07history\x18\n \x03(\x0b\x32\x0e.TideChartData\x12\"\n\x07\x63ontext\x18\x0b \x03(\x0b\x32\x11.TideChartContext\"w\n\x13TideChartFileHeader\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x14\n\x0cmodifiedDate\x18\x05 \x01(\t\x12\x12\n\nmodifiedBy\x18\x06 \x01(\t\"\x97\x01\n\x14TideChartFileCurrent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x14\n\x0cmodifiedDate\x18\x05 \x01(\t\x12\x12\n\nmodifiedBy\x18\x06 \x01(\t\x12\x1d\n\x05\x63hart\x18\x07 \x01(\x0b\x32\x0e.TideChartData*=\n\x1aTideChartCommandUpdateType\x12\x07\n\x03\x61\x64\x64\x10\x00\x12\n\n\x06remove\x10\x01\x12\n\n\x06update\x10\x02*\x9d\x01\n\x11TideChartLogLevel\x12\x08\n\x04none\x10\x00\x12\t\n\x05\x66\x61tal\x10\x01\x12\t\n\x05\x65rror\x10\x02\x12\r\n\texception\x10\x03\x12\x0b\n\x07warning\x10\x04\x12\x08\n\x04info\x10\x05\x12\x0b\n\x07message\x10\x06\x12\t\n\x05\x64\x65\x62ug\x10\x07\x12\t\n\x05\x63heck\x10\x08\x12\x0b\n\x07verbose\x10\t\x12\t\n\x05trace\x10\n\x12\x07\n\x03\x61ll\x10\x0b\x42\x0b\x42\tTideChartb\x06proto3')
+  serialized_pb=_b('\n\x10tide_chart.proto\"a\n\x11TideChartProperty\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\r\n\x05value\x18\x03 \x01(\t\x12!\n\x05props\x18\x04 \x03(\x0b\x32\x12.TideChartProperty\"\xb9\x02\n\x13TideChartCommentBox\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06region\x18\x02 \x01(\t\x12\x0c\n\x04posX\x18\x03 \x01(\x11\x12\x0c\n\x04posY\x18\x04 \x01(\x11\x12\r\n\x05width\x18\x05 \x01(\x05\x12\x0e\n\x06height\x18\x06 \x01(\x05\x12\x0e\n\x04text\x18\x07 \x01(\tH\x00\x12\x0f\n\x05image\x18\x08 \x01(\x0cH\x00\x12\x0e\n\x04icon\x18\t \x01(\tH\x00\x12\x10\n\x08\x66ontSize\x18\n \x01(\x01\x12\x11\n\tfontStyle\x18\x0b \x01(\t\x12\x11\n\talignment\x18\x0c \x03(\x11\x12\r\n\x05\x63olor\x18\r \x01(\x05\x12\x12\n\nbackground\x18\x0e \x01(\x05\x12\x0e\n\x06\x62order\x18\x0f \x03(\x05\x12\x10\n\x08isRaised\x18\x10 \x01(\x08\x12\x12\n\nisReversed\x18\x11 \x01(\x08\x42\t\n\x07\x63ontent\"\xe2\x01\n\x0fTideChartWidget\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\t\x12\x0e\n\x06region\x18\x04 \x01(\t\x12\x0c\n\x04posX\x18\x05 \x01(\x11\x12\x0c\n\x04posY\x18\x06 \x01(\x11\x12\r\n\x05width\x18\x07 \x01(\x05\x12\x0e\n\x06height\x18\x08 \x01(\x05\x12\x0e\n\x04link\x18\t \x01(\tH\x00\x12\x0e\n\x04port\x18\n \x01(\tH\x00\x12\x0e\n\x04node\x18\x0b \x01(\tH\x00\x12!\n\x05props\x18\x0c \x03(\x0b\x32\x12.TideChartPropertyB\x08\n\x06target\"\x8d\x02\n\rTideChartPort\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07ordinal\x18\x03 \x01(\x05\x12\x11\n\tisDefault\x18\x04 \x01(\x08\x12\x12\n\nisRequired\x18\x05 \x01(\x08\x12\x0f\n\x07\x61llowed\x18\x06 \x03(\t\x12\x0c\n\x04hint\x18\x07 \x01(\t\x12$\n\x08\x63onstant\x18\x08 \x01(\x0b\x32\x12.TideChartProperty\x12\x0f\n\x07trigger\x18\t \x01(\t\x12\x0e\n\x06\x66ilter\x18\n \x01(\t\x12\r\n\x05\x65vent\x18\x0b \x01(\t\x12\x0c\n\x04sync\x18\x0c \x01(\t\x12\x12\n\nisBlocking\x18\r \x01(\x08\x12\x11\n\tisQueuing\x18\x0e \x01(\x08\"\xcd\x01\n\rTideChartLink\x12\x0f\n\x07outNode\x18\x01 \x01(\t\x12\x0f\n\x07outPort\x18\x02 \x01(\t\x12\x0e\n\x06inNode\x18\x03 \x01(\t\x12\x0e\n\x06inPort\x18\x04 \x01(\t\x12\r\n\x05group\x18\x05 \x01(\x05\x12\r\n\x05\x64\x65lay\x18\x06 \x01(\x05\x12\x0e\n\x06\x66ilter\x18\x07 \x01(\t\x12\x11\n\tisLogging\x18\x10 \x01(\x08\x12\x13\n\x0bisDebugging\x18\x11 \x01(\x08\x12\x10\n\x08isPaused\x18\x12 \x01(\x08\x12\x12\n\nisDisabled\x18\x13 \x01(\x08\"w\n\rTideChartNote\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0f\n\x07replyTo\x18\x02 \x01(\t\x12\x10\n\x08\x63hangeTo\x18\x03 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x04 \x01(\t\x12\x11\n\tcreatedBy\x18\x05 \x01(\t\x12\x13\n\x0b\x63reatedDate\x18\x06 \x01(\t\"\xf7\x02\n\rTideChartNode\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\x0c\n\x04posX\x18\x03 \x01(\x11\x12\x0c\n\x04posY\x18\x04 \x01(\x11\x12\r\n\x05title\x18\x05 \x01(\t\x12\x0c\n\x04icon\x18\x06 \x01(\t\x12\x0f\n\x07library\x18\x07 \x01(\t\x12\x0e\n\x06method\x18\x08 \x01(\t\x12\r\n\x05\x64\x65lay\x18\t \x01(\x05\x12\x1f\n\x07inports\x18\n \x03(\x0b\x32\x0e.TideChartPort\x12 \n\x08outports\x18\x0b \x03(\x0b\x32\x0e.TideChartPort\x12!\n\x05props\x18\x0c \x03(\x0b\x32\x12.TideChartProperty\x12\x11\n\tisLogging\x18\x10 \x01(\x08\x12\x13\n\x0bisDebugging\x18\x11 \x01(\x08\x12\x10\n\x08isPaused\x18\x12 \x01(\x08\x12\x12\n\nisDisabled\x18\x13 \x01(\x08\x12\x1d\n\x05notes\x18\x14 \x03(\x0b\x32\x0e.TideChartNote\x12\x0e\n\x06script\x18\x15 \x01(\t\"\xfb\x01\n\x0fTideChartRegion\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\r\n\x05nodes\x18\x03 \x03(\t\x12\r\n\x05group\x18\x04 \x01(\x05\x12\r\n\x05scope\x18\x05 \x01(\t\x12!\n\x05props\x18\x06 \x03(\x0b\x32\x12.TideChartProperty\x12\x11\n\tisLogging\x18\x10 \x01(\x08\x12\x13\n\x0bisDebugging\x18\x11 \x01(\x08\x12\x10\n\x08isPaused\x18\x12 \x01(\x08\x12\x12\n\nisDisabled\x18\x13 \x01(\x08\x12\x1d\n\x05notes\x18\x14 \x03(\x0b\x32\x0e.TideChartNote\x12\x0e\n\x06script\x18\x15 \x01(\t\"\xd8\x03\n\x0eTideChartGraph\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\r\n\x05title\x18\x04 \x01(\t\x12\x0f\n\x07version\x18\x05 \x01(\t\x12\x0e\n\x06source\x18\x06 \x01(\t\x12\x1d\n\x05nodes\x18\x07 \x03(\x0b\x32\x0e.TideChartNode\x12\x1d\n\x05links\x18\x08 \x03(\x0b\x32\x0e.TideChartLink\x12!\n\x07regions\x18\t \x03(\x0b\x32\x10.TideChartRegion\x12&\n\x08\x63omments\x18\n \x03(\x0b\x32\x14.TideChartCommentBox\x12!\n\x07widgets\x18\x0b \x03(\x0b\x32\x10.TideChartWidget\x12!\n\x05props\x18\x0c \x03(\x0b\x32\x12.TideChartProperty\x12\"\n\x07history\x18\r \x03(\x0b\x32\x11.TideChartCommand\x12\x11\n\tisLogging\x18\x10 \x01(\x08\x12\x13\n\x0bisDebugging\x18\x11 \x01(\x08\x12\x10\n\x08isPaused\x18\x12 \x01(\x08\x12\x12\n\nisDisabled\x18\x13 \x01(\x08\x12\x1d\n\x05notes\x18\x14 \x03(\x0b\x32\x0e.TideChartNote\x12\x0e\n\x06script\x18\x15 \x01(\t\"\x85\x04\n\x10TideChartCommand\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t\x12\'\n\x05group\x18\x03 \x01(\x0b\x32\x16.TideChartGroupCommandH\x00\x12%\n\x04move\x18\x04 \x01(\x0b\x32\x15.TideChartMoveCommandH\x00\x12.\n\x07\x63omment\x18\x05 \x01(\x0b\x32\x1b.TideChartCommentBoxCommandH\x00\x12)\n\x06widget\x18\x06 \x01(\x0b\x32\x17.TideChartWidgetCommandH\x00\x12%\n\x04port\x18\x07 \x01(\x0b\x32\x15.TideChartPortCommandH\x00\x12%\n\x04link\x18\x08 \x01(\x0b\x32\x15.TideChartLinkCommandH\x00\x12%\n\x04node\x18\t \x01(\x0b\x32\x15.TideChartNodeCommandH\x00\x12)\n\x06region\x18\n \x01(\x0b\x32\x17.TideChartRegionCommandH\x00\x12\'\n\x05graph\x18\x0b \x01(\x0b\x32\x16.TideChartGraphCommandH\x00\x12*\n\x05props\x18\x0c \x01(\x0b\x32\x19.TideChartPropertyCommandH\x00\x12%\n\x04note\x18\r \x01(\x0b\x32\x15.TideChartNoteCommandH\x00\x42\t\n\x07\x63ommand\"<\n\x15TideChartGroupCommand\x12#\n\x08\x63ommands\x18\x01 \x03(\x0b\x32\x11.TideChartCommand\"h\n\x14TideChartMoveCommand\x12\x0c\n\x04node\x18\x01 \x01(\t\x12\x10\n\x08\x66romPosX\x18\x02 \x01(\x11\x12\x10\n\x08\x66romPosY\x18\x03 \x01(\x11\x12\x0e\n\x06toPosX\x18\x04 \x01(\x11\x12\x0e\n\x06toPosY\x18\x05 \x01(\x11\"\x9b\x01\n\x1aTideChartCommentBoxCommand\x12)\n\x0b\x66romComment\x18\x01 \x01(\x0b\x32\x14.TideChartCommentBox\x12\'\n\ttoComment\x18\x02 \x01(\x0b\x32\x14.TideChartCommentBox\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x8d\x01\n\x16TideChartWidgetCommand\x12$\n\nfromWidget\x18\x01 \x01(\x0b\x32\x10.TideChartWidget\x12\"\n\x08toWidget\x18\x02 \x01(\x0b\x32\x10.TideChartWidget\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x83\x01\n\x14TideChartPortCommand\x12 \n\x08\x66romPort\x18\x01 \x01(\x0b\x32\x0e.TideChartPort\x12\x1e\n\x06toPort\x18\x02 \x01(\x0b\x32\x0e.TideChartPort\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x83\x01\n\x14TideChartLinkCommand\x12 \n\x08\x66romLink\x18\x01 \x01(\x0b\x32\x0e.TideChartLink\x12\x1e\n\x06toLink\x18\x02 \x01(\x0b\x32\x0e.TideChartLink\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x83\x01\n\x14TideChartNodeCommand\x12 \n\x08\x66romNode\x18\x01 \x01(\x0b\x32\x0e.TideChartNode\x12\x1e\n\x06toNode\x18\x02 \x01(\x0b\x32\x0e.TideChartNode\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x8d\x01\n\x16TideChartRegionCommand\x12$\n\nfromRegion\x18\x01 \x01(\x0b\x32\x10.TideChartRegion\x12\"\n\x08toRegion\x18\x02 \x01(\x0b\x32\x10.TideChartRegion\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\x88\x01\n\x15TideChartGraphCommand\x12\"\n\tfromGraph\x18\x01 \x01(\x0b\x32\x0f.TideChartGraph\x12 \n\x07toGraph\x18\x02 \x01(\x0b\x32\x0f.TideChartGraph\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\"\xe0\x01\n\x18TideChartPropertyCommand\x12%\n\tfromProps\x18\x01 \x03(\x0b\x32\x12.TideChartProperty\x12#\n\x07toProps\x18\x02 \x03(\x0b\x32\x12.TideChartProperty\x12)\n\x04type\x18\x03 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\x12\x0e\n\x04node\x18\x05 \x01(\tH\x00\x12\x10\n\x06region\x18\x06 \x01(\tH\x00\x12\x10\n\x06widget\x18\x07 \x01(\tH\x00\x12\x0f\n\x05graph\x18\x08 \x01(\tH\x00\x42\x08\n\x06target\"\x9d\x01\n\x14TideChartNoteCommand\x12\x1d\n\x05notes\x18\x01 \x03(\x0b\x32\x0e.TideChartNote\x12)\n\x04type\x18\x02 \x01(\x0e\x32\x1b.TideChartCommandUpdateType\x12\x0e\n\x04node\x18\x03 \x01(\tH\x00\x12\x10\n\x06region\x18\x04 \x01(\tH\x00\x12\x0f\n\x05graph\x18\x05 \x01(\tH\x00\x42\x08\n\x06target\"\xae\x01\n\x0fTideChartMethod\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07\x65xtends\x18\x03 \x01(\t\x12\x0e\n\x06script\x18\x04 \x01(\t\x12\x1f\n\x07inports\x18\x05 \x03(\x0b\x32\x0e.TideChartPort\x12 \n\x08outports\x18\x06 \x03(\x0b\x32\x0e.TideChartPort\x12\x1d\n\x05props\x18\x07 \x03(\x0b\x32\x0e.TideChartPort\"\x94\x01\n\x0fTideChartSource\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x15\n\rmodifieddDate\x18\x05 \x01(\t\x12\x12\n\nmodifiedBy\x18\x06 \x01(\t\x12\x11\n\x07version\x18\x07 \x01(\tH\x00\x12\x10\n\x06script\x18\x08 \x01(\tH\x00\x42\t\n\x07\x63ontent\"\xad\x01\n\x10TideChartLibrary\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x0e\n\x06\x62ranch\x18\x05 \x01(\t\x12\x0c\n\x04path\x18\x06 \x01(\t\x12\x1f\n\x05\x66iles\x18\x07 \x03(\x0b\x32\x10.TideChartSource\x12!\n\x07methods\x18\x08 \x03(\x0b\x32\x10.TideChartMethod\"\xe8\x01\n\rTideChartSite\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x1d\n\x05stack\x18\x02 \x03(\x0b\x32\x0e.TideChartSite\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0f\n\x07trigger\x18\x04 \x01(\t\x12\r\n\x05\x65vent\x18\x05 \x01(\t\x12\r\n\x05scope\x18\x06 \x03(\t\x12\x0e\n\x06\x66ilter\x18\x07 \x01(\t\x12\r\n\x05graph\x18\x08 \x01(\t\x12\x0e\n\x06region\x18\t \x01(\t\x12\x0c\n\x04node\x18\n \x01(\t\x12\x0c\n\x04port\x18\x0b \x01(\t\x12!\n\x05local\x18\x0c \x03(\x0b\x32\x12.TideChartProperty\"\x89\x02\n\x10TideChartMessage\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\x12\x0e\n\x06origin\x18\x04 \x01(\x03\x12\x10\n\x08previous\x18\x05 \x01(\x03\x12\x0e\n\x06source\x18\x07 \x01(\x03\x12\x0e\n\x06target\x18\x08 \x01(\x03\x12\x12\n\ndelayUntil\x18\t \x01(\x03\x12\x11\n\tholdToken\x18\n \x01(\x03\x12\x13\n\x0b\x63\x61ncelToken\x18\x0b \x01(\x03\x12\x0c\n\x04type\x18\x0c \x01(\t\x12\x0f\n\x07version\x18\r \x01(\x05\x12\x15\n\x0bjsonContent\x18\x0e \x01(\tH\x00\x12\x14\n\nmsgContent\x18\x0f \x01(\x0cH\x00\x42\t\n\x07\x63ontent\"k\n\x16TideChartContextChange\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\x12\x0c\n\x04type\x18\x03 \x01(\t\x12!\n\x05props\x18\x04 \x03(\x0b\x32\x12.TideChartProperty\"\xb8\x01\n\x11TideChartLogEntry\x12\r\n\x05index\x18\x01 \x01(\x03\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\x12\x0e\n\x06source\x18\x03 \x01(\x03\x12!\n\x05level\x18\x04 \x01(\x0e\x32\x12.TideChartLogLevel\x12\x0c\n\x04tags\x18\x05 \x03(\t\x12\x0f\n\x07message\x18\x06 \x01(\t\x12\x0c\n\x04refs\x18\x07 \x03(\x03\x12!\n\x05props\x18\x08 \x03(\x0b\x32\x12.TideChartProperty\"\xed\x02\n\x10TideChartContext\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05index\x18\x02 \x01(\x03\x12\x11\n\ttimestamp\x18\x03 \x01(\x03\x12\x0f\n\x07version\x18\x04 \x01(\t\x12\x1d\n\x05sites\x18\x05 \x03(\x0b\x32\x0e.TideChartSite\x12#\n\x08messages\x18\x06 \x03(\x0b\x32\x11.TideChartMessage\x12\"\n\x06global\x18\x07 \x03(\x0b\x32\x12.TideChartProperty\x12\x11\n\tstartTime\x18\x08 \x01(\x03\x12\x12\n\nstartIndex\x18\t \x01(\x03\x12\x0e\n\x06\x61\x63tive\x18\n \x03(\x03\x12\x0f\n\x07waiting\x18\x0b \x03(\x03\x12\x0e\n\x06paused\x18\x0c \x03(\x03\x12\x10\n\x08\x64isabled\x18\r \x03(\x03\x12\'\n\x06\x65vents\x18\x0e \x03(\x0b\x32\x17.TideChartContextChange\x12\x1f\n\x03log\x18\x0f \x03(\x0b\x32\x12.TideChartLogEntry\"\xa5\x02\n\rTideChartData\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x0e\n\x06\x62ranch\x18\x02 \x01(\t\x12\x0e\n\x06source\x18\x03 \x01(\t\x12\r\n\x05merge\x18\x04 \x01(\t\x12\x12\n\ncommitDate\x18\x05 \x01(\t\x12\x10\n\x08\x63ommitBy\x18\x06 \x01(\t\x12\x12\n\ncommitDesc\x18\x07 \x01(\t\x12\x13\n\x0b\x63ommitNotes\x18\x08 \x01(\t\x12\x1f\n\x06sheets\x18\t \x03(\x0b\x32\x0f.TideChartGraph\x12!\n\x05props\x18\n \x03(\x0b\x32\x12.TideChartProperty\x12\x1d\n\x05notes\x18\x0b \x03(\x0b\x32\x0e.TideChartNote\x12\"\n\x07library\x18\x0c \x03(\x0b\x32\x11.TideChartLibrary\"\xa0\x01\n\x0fTideChartHeader\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x0e\n\x06\x62ranch\x18\x02 \x01(\t\x12\x0e\n\x06source\x18\x03 \x01(\t\x12\r\n\x05merge\x18\x04 \x01(\t\x12\x12\n\ncommitDate\x18\x05 \x01(\t\x12\x10\n\x08\x63ommitBy\x18\x06 \x01(\t\x12\x12\n\ncommitDesc\x18\x07 \x01(\t\x12\x13\n\x0b\x63ommitNotes\x18\x08 \x01(\t\"\x9c\x02\n\rTideChartFile\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x14\n\x0cmodifiedDate\x18\x05 \x01(\t\x12\x12\n\nmodifiedBy\x18\x06 \x01(\t\x12\x1d\n\x05\x63hart\x18\x07 \x01(\x0b\x32\x0e.TideChartData\x12\"\n\x07working\x18\x08 \x03(\x0b\x32\x11.TideChartCommand\x12!\n\x06remote\x18\t \x03(\x0b\x32\x11.TideChartCommand\x12\x1f\n\x07history\x18\n \x03(\x0b\x32\x0e.TideChartData\x12\"\n\x07\x63ontext\x18\x0b \x03(\x0b\x32\x11.TideChartContext\"w\n\x13TideChartFileHeader\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x14\n\x0cmodifiedDate\x18\x05 \x01(\t\x12\x12\n\nmodifiedBy\x18\x06 \x01(\t\"\x97\x01\n\x14TideChartFileCurrent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04path\x18\x03 \x01(\t\x12\x0e\n\x06origin\x18\x04 \x01(\t\x12\x14\n\x0cmodifiedDate\x18\x05 \x01(\t\x12\x12\n\nmodifiedBy\x18\x06 \x01(\t\x12\x1d\n\x05\x63hart\x18\x07 \x01(\x0b\x32\x0e.TideChartData*=\n\x1aTideChartCommandUpdateType\x12\x07\n\x03\x61\x64\x64\x10\x00\x12\n\n\x06remove\x10\x01\x12\n\n\x06update\x10\x02*\x9d\x01\n\x11TideChartLogLevel\x12\x08\n\x04none\x10\x00\x12\t\n\x05\x66\x61tal\x10\x01\x12\t\n\x05\x65rror\x10\x02\x12\r\n\texception\x10\x03\x12\x0b\n\x07warning\x10\x04\x12\x08\n\x04info\x10\x05\x12\x0b\n\x07message\x10\x06\x12\t\n\x05\x64\x65\x62ug\x10\x07\x12\t\n\x05\x63heck\x10\x08\x12\x0b\n\x07verbose\x10\t\x12\t\n\x05trace\x10\n\x12\x07\n\x03\x61ll\x10\x0b\x42\x0b\x42\tTideChartb\x06proto3')
 )
 
 _TIDECHARTCOMMANDUPDATETYPE = _descriptor.EnumDescriptor(
@@ -45,8 +45,8 @@ _TIDECHARTCOMMANDUPDATETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7074,
-  serialized_end=7135,
+  serialized_start=7126,
+  serialized_end=7187,
 )
 _sym_db.RegisterEnumDescriptor(_TIDECHARTCOMMANDUPDATETYPE)
 
@@ -108,8 +108,8 @@ _TIDECHARTLOGLEVEL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7138,
-  serialized_end=7295,
+  serialized_start=7190,
+  serialized_end=7347,
 )
 _sym_db.RegisterEnumDescriptor(_TIDECHARTLOGLEVEL)
 
@@ -297,14 +297,14 @@ _TIDECHARTCOMMENTBOX = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='raised', full_name='TideChartCommentBox.raised', index=15,
+      name='isRaised', full_name='TideChartCommentBox.isRaised', index=15,
       number=16, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='reversed', full_name='TideChartCommentBox.reversed', index=16,
+      name='isReversed', full_name='TideChartCommentBox.isReversed', index=16,
       number=17, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -326,7 +326,7 @@ _TIDECHARTCOMMENTBOX = _descriptor.Descriptor(
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=120,
-  serialized_end=429,
+  serialized_end=433,
 )
 
 
@@ -436,8 +436,8 @@ _TIDECHARTWIDGET = _descriptor.Descriptor(
       name='target', full_name='TideChartWidget.target',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=432,
-  serialized_end=658,
+  serialized_start=436,
+  serialized_end=662,
 )
 
 
@@ -470,14 +470,14 @@ _TIDECHARTPORT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='default', full_name='TideChartPort.default', index=3,
+      name='isDefault', full_name='TideChartPort.isDefault', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='required', full_name='TideChartPort.required', index=4,
+      name='isRequired', full_name='TideChartPort.isRequired', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -533,14 +533,14 @@ _TIDECHARTPORT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='block', full_name='TideChartPort.block', index=12,
+      name='isBlocking', full_name='TideChartPort.isBlocking', index=12,
       number=13, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='queue', full_name='TideChartPort.queue', index=13,
+      name='isQueuing', full_name='TideChartPort.isQueuing', index=13,
       number=14, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -558,8 +558,8 @@ _TIDECHARTPORT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=661,
-  serialized_end=917,
+  serialized_start=665,
+  serialized_end=934,
 )
 
 
@@ -620,28 +620,28 @@ _TIDECHARTLINK = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='logging', full_name='TideChartLink.logging', index=7,
+      name='isLogging', full_name='TideChartLink.isLogging', index=7,
       number=16, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='debugging', full_name='TideChartLink.debugging', index=8,
+      name='isDebugging', full_name='TideChartLink.isDebugging', index=8,
       number=17, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='paused', full_name='TideChartLink.paused', index=9,
+      name='isPaused', full_name='TideChartLink.isPaused', index=9,
       number=18, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='disabled', full_name='TideChartLink.disabled', index=10,
+      name='isDisabled', full_name='TideChartLink.isDisabled', index=10,
       number=19, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -659,8 +659,8 @@ _TIDECHARTLINK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=920,
-  serialized_end=1117,
+  serialized_start=937,
+  serialized_end=1142,
 )
 
 
@@ -725,8 +725,8 @@ _TIDECHARTNOTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1119,
-  serialized_end=1238,
+  serialized_start=1144,
+  serialized_end=1263,
 )
 
 
@@ -822,28 +822,28 @@ _TIDECHARTNODE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='logging', full_name='TideChartNode.logging', index=12,
+      name='isLogging', full_name='TideChartNode.isLogging', index=12,
       number=16, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='debugging', full_name='TideChartNode.debugging', index=13,
+      name='isDebugging', full_name='TideChartNode.isDebugging', index=13,
       number=17, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='paused', full_name='TideChartNode.paused', index=14,
+      name='isPaused', full_name='TideChartNode.isPaused', index=14,
       number=18, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='disabled', full_name='TideChartNode.disabled', index=15,
+      name='isDisabled', full_name='TideChartNode.isDisabled', index=15,
       number=19, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -875,8 +875,8 @@ _TIDECHARTNODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1241,
-  serialized_end=1608,
+  serialized_start=1266,
+  serialized_end=1641,
 )
 
 
@@ -930,28 +930,28 @@ _TIDECHARTREGION = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='logging', full_name='TideChartRegion.logging', index=6,
+      name='isLogging', full_name='TideChartRegion.isLogging', index=6,
       number=16, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='debugging', full_name='TideChartRegion.debugging', index=7,
+      name='isDebugging', full_name='TideChartRegion.isDebugging', index=7,
       number=17, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='paused', full_name='TideChartRegion.paused', index=8,
+      name='isPaused', full_name='TideChartRegion.isPaused', index=8,
       number=18, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='disabled', full_name='TideChartRegion.disabled', index=9,
+      name='isDisabled', full_name='TideChartRegion.isDisabled', index=9,
       number=19, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -983,8 +983,8 @@ _TIDECHARTREGION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1611,
-  serialized_end=1854,
+  serialized_start=1644,
+  serialized_end=1895,
 )
 
 
@@ -1087,28 +1087,28 @@ _TIDECHARTGRAPH = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='logging', full_name='TideChartGraph.logging', index=13,
+      name='isLogging', full_name='TideChartGraph.isLogging', index=13,
       number=16, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='debugging', full_name='TideChartGraph.debugging', index=14,
+      name='isDebugging', full_name='TideChartGraph.isDebugging', index=14,
       number=17, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='paused', full_name='TideChartGraph.paused', index=15,
+      name='isPaused', full_name='TideChartGraph.isPaused', index=15,
       number=18, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='disabled', full_name='TideChartGraph.disabled', index=16,
+      name='isDisabled', full_name='TideChartGraph.isDisabled', index=16,
       number=19, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -1140,8 +1140,8 @@ _TIDECHARTGRAPH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1857,
-  serialized_end=2321,
+  serialized_start=1898,
+  serialized_end=2370,
 )
 
 
@@ -1258,8 +1258,8 @@ _TIDECHARTCOMMAND = _descriptor.Descriptor(
       name='command', full_name='TideChartCommand.command',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=2324,
-  serialized_end=2841,
+  serialized_start=2373,
+  serialized_end=2890,
 )
 
 
@@ -1289,8 +1289,8 @@ _TIDECHARTGROUPCOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2843,
-  serialized_end=2903,
+  serialized_start=2892,
+  serialized_end=2952,
 )
 
 
@@ -1348,8 +1348,8 @@ _TIDECHARTMOVECOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2905,
-  serialized_end=3009,
+  serialized_start=2954,
+  serialized_end=3058,
 )
 
 
@@ -1393,8 +1393,8 @@ _TIDECHARTCOMMENTBOXCOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3012,
-  serialized_end=3167,
+  serialized_start=3061,
+  serialized_end=3216,
 )
 
 
@@ -1438,8 +1438,8 @@ _TIDECHARTWIDGETCOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3170,
-  serialized_end=3311,
+  serialized_start=3219,
+  serialized_end=3360,
 )
 
 
@@ -1483,8 +1483,8 @@ _TIDECHARTPORTCOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3314,
-  serialized_end=3445,
+  serialized_start=3363,
+  serialized_end=3494,
 )
 
 
@@ -1528,8 +1528,8 @@ _TIDECHARTLINKCOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3448,
-  serialized_end=3579,
+  serialized_start=3497,
+  serialized_end=3628,
 )
 
 
@@ -1573,8 +1573,8 @@ _TIDECHARTNODECOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3582,
-  serialized_end=3713,
+  serialized_start=3631,
+  serialized_end=3762,
 )
 
 
@@ -1618,8 +1618,8 @@ _TIDECHARTREGIONCOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3716,
-  serialized_end=3857,
+  serialized_start=3765,
+  serialized_end=3906,
 )
 
 
@@ -1663,8 +1663,8 @@ _TIDECHARTGRAPHCOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3860,
-  serialized_end=3996,
+  serialized_start=3909,
+  serialized_end=4045,
 )
 
 
@@ -1739,8 +1739,8 @@ _TIDECHARTPROPERTYCOMMAND = _descriptor.Descriptor(
       name='target', full_name='TideChartPropertyCommand.target',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=3999,
-  serialized_end=4223,
+  serialized_start=4048,
+  serialized_end=4272,
 )
 
 
@@ -1801,8 +1801,8 @@ _TIDECHARTNOTECOMMAND = _descriptor.Descriptor(
       name='target', full_name='TideChartNoteCommand.target',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=4226,
-  serialized_end=4383,
+  serialized_start=4275,
+  serialized_end=4432,
 )
 
 
@@ -1874,8 +1874,8 @@ _TIDECHARTMETHOD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4386,
-  serialized_end=4560,
+  serialized_start=4435,
+  serialized_end=4609,
 )
 
 
@@ -1908,14 +1908,14 @@ _TIDECHARTSOURCE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='createdDate', full_name='TideChartSource.createdDate', index=3,
+      name='modifieddDate', full_name='TideChartSource.modifieddDate', index=3,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='createdBy', full_name='TideChartSource.createdBy', index=4,
+      name='modifiedBy', full_name='TideChartSource.modifiedBy', index=4,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1950,8 +1950,8 @@ _TIDECHARTSOURCE = _descriptor.Descriptor(
       name='content', full_name='TideChartSource.content',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=4563,
-  serialized_end=4708,
+  serialized_start=4612,
+  serialized_end=4760,
 )
 
 
@@ -2030,8 +2030,8 @@ _TIDECHARTLIBRARY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4711,
-  serialized_end=4884,
+  serialized_start=4763,
+  serialized_end=4936,
 )
 
 
@@ -2138,8 +2138,8 @@ _TIDECHARTSITE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4887,
-  serialized_end=5119,
+  serialized_start=4939,
+  serialized_end=5171,
 )
 
 
@@ -2256,8 +2256,8 @@ _TIDECHARTMESSAGE = _descriptor.Descriptor(
       name='content', full_name='TideChartMessage.content',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=5122,
-  serialized_end=5387,
+  serialized_start=5174,
+  serialized_end=5439,
 )
 
 
@@ -2308,8 +2308,8 @@ _TIDECHARTCONTEXTCHANGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5389,
-  serialized_end=5496,
+  serialized_start=5441,
+  serialized_end=5548,
 )
 
 
@@ -2388,8 +2388,8 @@ _TIDECHARTLOGENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5499,
-  serialized_end=5683,
+  serialized_start=5551,
+  serialized_end=5735,
 )
 
 
@@ -2517,8 +2517,8 @@ _TIDECHARTCONTEXT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5686,
-  serialized_end=6051,
+  serialized_start=5738,
+  serialized_end=6103,
 )
 
 
@@ -2625,8 +2625,8 @@ _TIDECHARTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6054,
-  serialized_end=6347,
+  serialized_start=6106,
+  serialized_end=6399,
 )
 
 
@@ -2705,8 +2705,8 @@ _TIDECHARTHEADER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6350,
-  serialized_end=6510,
+  serialized_start=6402,
+  serialized_end=6562,
 )
 
 
@@ -2806,8 +2806,8 @@ _TIDECHARTFILE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6513,
-  serialized_end=6797,
+  serialized_start=6565,
+  serialized_end=6849,
 )
 
 
@@ -2872,8 +2872,8 @@ _TIDECHARTFILEHEADER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6799,
-  serialized_end=6918,
+  serialized_start=6851,
+  serialized_end=6970,
 )
 
 
@@ -2945,8 +2945,8 @@ _TIDECHARTFILECURRENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6921,
-  serialized_end=7072,
+  serialized_start=6973,
+  serialized_end=7124,
 )
 
 _TIDECHARTPROPERTY.fields_by_name['props'].message_type = _TIDECHARTPROPERTY

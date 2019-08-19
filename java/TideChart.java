@@ -2051,18 +2051,18 @@ public final class TideChart {
      * flag to indicate if a drop shadow should be used
      * </pre>
      *
-     * <code>bool raised = 16;</code>
+     * <code>bool isRaised = 16;</code>
      */
-    boolean getRaised();
+    boolean getIsRaised();
 
     /**
      * <pre>
      * flag to indicate if the text requires left to right layout order
      * </pre>
      *
-     * <code>bool reversed = 17;</code>
+     * <code>bool isReversed = 17;</code>
      */
-    boolean getReversed();
+    boolean getIsReversed();
 
     public TideChart.TideChartCommentBox.ContentCase getContentCase();
   }
@@ -2231,12 +2231,12 @@ public final class TideChart {
             }
             case 128: {
 
-              raised_ = input.readBool();
+              isRaised_ = input.readBool();
               break;
             }
             case 136: {
 
-              reversed_ = input.readBool();
+              isReversed_ = input.readBool();
               break;
             }
             default: {
@@ -2721,30 +2721,30 @@ public final class TideChart {
     }
     private int borderMemoizedSerializedSize = -1;
 
-    public static final int RAISED_FIELD_NUMBER = 16;
-    private boolean raised_;
+    public static final int ISRAISED_FIELD_NUMBER = 16;
+    private boolean isRaised_;
     /**
      * <pre>
      * flag to indicate if a drop shadow should be used
      * </pre>
      *
-     * <code>bool raised = 16;</code>
+     * <code>bool isRaised = 16;</code>
      */
-    public boolean getRaised() {
-      return raised_;
+    public boolean getIsRaised() {
+      return isRaised_;
     }
 
-    public static final int REVERSED_FIELD_NUMBER = 17;
-    private boolean reversed_;
+    public static final int ISREVERSED_FIELD_NUMBER = 17;
+    private boolean isReversed_;
     /**
      * <pre>
      * flag to indicate if the text requires left to right layout order
      * </pre>
      *
-     * <code>bool reversed = 17;</code>
+     * <code>bool isReversed = 17;</code>
      */
-    public boolean getReversed() {
-      return reversed_;
+    public boolean getIsReversed() {
+      return isReversed_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2816,11 +2816,11 @@ public final class TideChart {
       for (int i = 0; i < border_.size(); i++) {
         output.writeInt32NoTag(border_.getInt(i));
       }
-      if (raised_ != false) {
-        output.writeBool(16, raised_);
+      if (isRaised_ != false) {
+        output.writeBool(16, isRaised_);
       }
-      if (reversed_ != false) {
-        output.writeBool(17, reversed_);
+      if (isReversed_ != false) {
+        output.writeBool(17, isReversed_);
       }
       unknownFields.writeTo(output);
     }
@@ -2907,13 +2907,13 @@ public final class TideChart {
         }
         borderMemoizedSerializedSize = dataSize;
       }
-      if (raised_ != false) {
+      if (isRaised_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(16, raised_);
+          .computeBoolSize(16, isRaised_);
       }
-      if (reversed_ != false) {
+      if (isReversed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(17, reversed_);
+          .computeBoolSize(17, isReversed_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2955,10 +2955,10 @@ public final class TideChart {
           != other.getBackground()) return false;
       if (!getBorderList()
           .equals(other.getBorderList())) return false;
-      if (getRaised()
-          != other.getRaised()) return false;
-      if (getReversed()
-          != other.getReversed()) return false;
+      if (getIsRaised()
+          != other.getIsRaised()) return false;
+      if (getIsReversed()
+          != other.getIsReversed()) return false;
       if (!getContentCase().equals(other.getContentCase())) return false;
       switch (contentCase_) {
         case 7:
@@ -3016,12 +3016,12 @@ public final class TideChart {
         hash = (37 * hash) + BORDER_FIELD_NUMBER;
         hash = (53 * hash) + getBorderList().hashCode();
       }
-      hash = (37 * hash) + RAISED_FIELD_NUMBER;
+      hash = (37 * hash) + ISRAISED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getRaised());
-      hash = (37 * hash) + REVERSED_FIELD_NUMBER;
+          getIsRaised());
+      hash = (37 * hash) + ISREVERSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getReversed());
+          getIsReversed());
       switch (contentCase_) {
         case 7:
           hash = (37 * hash) + TEXT_FIELD_NUMBER;
@@ -3195,9 +3195,9 @@ public final class TideChart {
 
         border_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        raised_ = false;
+        isRaised_ = false;
 
-        reversed_ = false;
+        isReversed_ = false;
 
         contentCase_ = 0;
         content_ = null;
@@ -3257,8 +3257,8 @@ public final class TideChart {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.border_ = border_;
-        result.raised_ = raised_;
-        result.reversed_ = reversed_;
+        result.isRaised_ = isRaised_;
+        result.isReversed_ = isReversed_;
         result.contentCase_ = contentCase_;
         onBuilt();
         return result;
@@ -3361,11 +3361,11 @@ public final class TideChart {
           }
           onChanged();
         }
-        if (other.getRaised() != false) {
-          setRaised(other.getRaised());
+        if (other.getIsRaised() != false) {
+          setIsRaised(other.getIsRaised());
         }
-        if (other.getReversed() != false) {
-          setReversed(other.getReversed());
+        if (other.getIsReversed() != false) {
+          setIsReversed(other.getIsReversed());
         }
         switch (other.getContentCase()) {
           case TEXT: {
@@ -4401,27 +4401,27 @@ public final class TideChart {
         return this;
       }
 
-      private boolean raised_ ;
+      private boolean isRaised_ ;
       /**
        * <pre>
        * flag to indicate if a drop shadow should be used
        * </pre>
        *
-       * <code>bool raised = 16;</code>
+       * <code>bool isRaised = 16;</code>
        */
-      public boolean getRaised() {
-        return raised_;
+      public boolean getIsRaised() {
+        return isRaised_;
       }
       /**
        * <pre>
        * flag to indicate if a drop shadow should be used
        * </pre>
        *
-       * <code>bool raised = 16;</code>
+       * <code>bool isRaised = 16;</code>
        */
-      public Builder setRaised(boolean value) {
+      public Builder setIsRaised(boolean value) {
         
-        raised_ = value;
+        isRaised_ = value;
         onChanged();
         return this;
       }
@@ -4430,36 +4430,36 @@ public final class TideChart {
        * flag to indicate if a drop shadow should be used
        * </pre>
        *
-       * <code>bool raised = 16;</code>
+       * <code>bool isRaised = 16;</code>
        */
-      public Builder clearRaised() {
+      public Builder clearIsRaised() {
         
-        raised_ = false;
+        isRaised_ = false;
         onChanged();
         return this;
       }
 
-      private boolean reversed_ ;
+      private boolean isReversed_ ;
       /**
        * <pre>
        * flag to indicate if the text requires left to right layout order
        * </pre>
        *
-       * <code>bool reversed = 17;</code>
+       * <code>bool isReversed = 17;</code>
        */
-      public boolean getReversed() {
-        return reversed_;
+      public boolean getIsReversed() {
+        return isReversed_;
       }
       /**
        * <pre>
        * flag to indicate if the text requires left to right layout order
        * </pre>
        *
-       * <code>bool reversed = 17;</code>
+       * <code>bool isReversed = 17;</code>
        */
-      public Builder setReversed(boolean value) {
+      public Builder setIsReversed(boolean value) {
         
-        reversed_ = value;
+        isReversed_ = value;
         onChanged();
         return this;
       }
@@ -4468,11 +4468,11 @@ public final class TideChart {
        * flag to indicate if the text requires left to right layout order
        * </pre>
        *
-       * <code>bool reversed = 17;</code>
+       * <code>bool isReversed = 17;</code>
        */
-      public Builder clearReversed() {
+      public Builder clearIsReversed() {
         
-        reversed_ = false;
+        isReversed_ = false;
         onChanged();
         return this;
       }
@@ -7171,18 +7171,18 @@ public final class TideChart {
      * used by methods to indicate which ports are used for default in/out routing
      * </pre>
      *
-     * <code>bool default = 4;</code>
+     * <code>bool isDefault = 4;</code>
      */
-    boolean getDefault();
+    boolean getIsDefault();
 
     /**
      * <pre>
      * used by methods to indicate the port must exist
      * </pre>
      *
-     * <code>bool required = 5;</code>
+     * <code>bool isRequired = 5;</code>
      */
-    boolean getRequired();
+    boolean getIsRequired();
 
     /**
      * <pre>
@@ -7339,18 +7339,18 @@ public final class TideChart {
      * determines if the port will block to wait for the rest of the port group
      * </pre>
      *
-     * <code>bool block = 13;</code>
+     * <code>bool isBlocking = 13;</code>
      */
-    boolean getBlock();
+    boolean getIsBlocking();
 
     /**
      * <pre>
      * determines if messages should queue while blocking or replace with latest received
      * </pre>
      *
-     * <code>bool queue = 14;</code>
+     * <code>bool isQueuing = 14;</code>
      */
-    boolean getQueue();
+    boolean getIsQueuing();
   }
   /**
    * Protobuf type {@code TideChartPort}
@@ -7425,12 +7425,12 @@ public final class TideChart {
             }
             case 32: {
 
-              default_ = input.readBool();
+              isDefault_ = input.readBool();
               break;
             }
             case 40: {
 
-              required_ = input.readBool();
+              isRequired_ = input.readBool();
               break;
             }
             case 50: {
@@ -7487,12 +7487,12 @@ public final class TideChart {
             }
             case 104: {
 
-              block_ = input.readBool();
+              isBlocking_ = input.readBool();
               break;
             }
             case 112: {
 
-              queue_ = input.readBool();
+              isQueuing_ = input.readBool();
               break;
             }
             default: {
@@ -7627,30 +7627,30 @@ public final class TideChart {
       return ordinal_;
     }
 
-    public static final int DEFAULT_FIELD_NUMBER = 4;
-    private boolean default_;
+    public static final int ISDEFAULT_FIELD_NUMBER = 4;
+    private boolean isDefault_;
     /**
      * <pre>
      * used by methods to indicate which ports are used for default in/out routing
      * </pre>
      *
-     * <code>bool default = 4;</code>
+     * <code>bool isDefault = 4;</code>
      */
-    public boolean getDefault() {
-      return default_;
+    public boolean getIsDefault() {
+      return isDefault_;
     }
 
-    public static final int REQUIRED_FIELD_NUMBER = 5;
-    private boolean required_;
+    public static final int ISREQUIRED_FIELD_NUMBER = 5;
+    private boolean isRequired_;
     /**
      * <pre>
      * used by methods to indicate the port must exist
      * </pre>
      *
-     * <code>bool required = 5;</code>
+     * <code>bool isRequired = 5;</code>
      */
-    public boolean getRequired() {
-      return required_;
+    public boolean getIsRequired() {
+      return isRequired_;
     }
 
     public static final int ALLOWED_FIELD_NUMBER = 6;
@@ -7941,30 +7941,30 @@ public final class TideChart {
       }
     }
 
-    public static final int BLOCK_FIELD_NUMBER = 13;
-    private boolean block_;
+    public static final int ISBLOCKING_FIELD_NUMBER = 13;
+    private boolean isBlocking_;
     /**
      * <pre>
      * determines if the port will block to wait for the rest of the port group
      * </pre>
      *
-     * <code>bool block = 13;</code>
+     * <code>bool isBlocking = 13;</code>
      */
-    public boolean getBlock() {
-      return block_;
+    public boolean getIsBlocking() {
+      return isBlocking_;
     }
 
-    public static final int QUEUE_FIELD_NUMBER = 14;
-    private boolean queue_;
+    public static final int ISQUEUING_FIELD_NUMBER = 14;
+    private boolean isQueuing_;
     /**
      * <pre>
      * determines if messages should queue while blocking or replace with latest received
      * </pre>
      *
-     * <code>bool queue = 14;</code>
+     * <code>bool isQueuing = 14;</code>
      */
-    public boolean getQueue() {
-      return queue_;
+    public boolean getIsQueuing() {
+      return isQueuing_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -7990,11 +7990,11 @@ public final class TideChart {
       if (ordinal_ != 0) {
         output.writeInt32(3, ordinal_);
       }
-      if (default_ != false) {
-        output.writeBool(4, default_);
+      if (isDefault_ != false) {
+        output.writeBool(4, isDefault_);
       }
-      if (required_ != false) {
-        output.writeBool(5, required_);
+      if (isRequired_ != false) {
+        output.writeBool(5, isRequired_);
       }
       for (int i = 0; i < allowed_.size(); i++) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, allowed_.getRaw(i));
@@ -8017,11 +8017,11 @@ public final class TideChart {
       if (!getSyncBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 12, sync_);
       }
-      if (block_ != false) {
-        output.writeBool(13, block_);
+      if (isBlocking_ != false) {
+        output.writeBool(13, isBlocking_);
       }
-      if (queue_ != false) {
-        output.writeBool(14, queue_);
+      if (isQueuing_ != false) {
+        output.writeBool(14, isQueuing_);
       }
       unknownFields.writeTo(output);
     }
@@ -8042,13 +8042,13 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(3, ordinal_);
       }
-      if (default_ != false) {
+      if (isDefault_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, default_);
+          .computeBoolSize(4, isDefault_);
       }
-      if (required_ != false) {
+      if (isRequired_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, required_);
+          .computeBoolSize(5, isRequired_);
       }
       {
         int dataSize = 0;
@@ -8077,13 +8077,13 @@ public final class TideChart {
       if (!getSyncBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, sync_);
       }
-      if (block_ != false) {
+      if (isBlocking_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, block_);
+          .computeBoolSize(13, isBlocking_);
       }
-      if (queue_ != false) {
+      if (isQueuing_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, queue_);
+          .computeBoolSize(14, isQueuing_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -8106,10 +8106,10 @@ public final class TideChart {
           .equals(other.getName())) return false;
       if (getOrdinal()
           != other.getOrdinal()) return false;
-      if (getDefault()
-          != other.getDefault()) return false;
-      if (getRequired()
-          != other.getRequired()) return false;
+      if (getIsDefault()
+          != other.getIsDefault()) return false;
+      if (getIsRequired()
+          != other.getIsRequired()) return false;
       if (!getAllowedList()
           .equals(other.getAllowedList())) return false;
       if (!getHint()
@@ -8127,10 +8127,10 @@ public final class TideChart {
           .equals(other.getEvent())) return false;
       if (!getSync()
           .equals(other.getSync())) return false;
-      if (getBlock()
-          != other.getBlock()) return false;
-      if (getQueue()
-          != other.getQueue()) return false;
+      if (getIsBlocking()
+          != other.getIsBlocking()) return false;
+      if (getIsQueuing()
+          != other.getIsQueuing()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -8148,12 +8148,12 @@ public final class TideChart {
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + ORDINAL_FIELD_NUMBER;
       hash = (53 * hash) + getOrdinal();
-      hash = (37 * hash) + DEFAULT_FIELD_NUMBER;
+      hash = (37 * hash) + ISDEFAULT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDefault());
-      hash = (37 * hash) + REQUIRED_FIELD_NUMBER;
+          getIsDefault());
+      hash = (37 * hash) + ISREQUIRED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getRequired());
+          getIsRequired());
       if (getAllowedCount() > 0) {
         hash = (37 * hash) + ALLOWED_FIELD_NUMBER;
         hash = (53 * hash) + getAllowedList().hashCode();
@@ -8172,12 +8172,12 @@ public final class TideChart {
       hash = (53 * hash) + getEvent().hashCode();
       hash = (37 * hash) + SYNC_FIELD_NUMBER;
       hash = (53 * hash) + getSync().hashCode();
-      hash = (37 * hash) + BLOCK_FIELD_NUMBER;
+      hash = (37 * hash) + ISBLOCKING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getBlock());
-      hash = (37 * hash) + QUEUE_FIELD_NUMBER;
+          getIsBlocking());
+      hash = (37 * hash) + ISQUEUING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getQueue());
+          getIsQueuing());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -8317,9 +8317,9 @@ public final class TideChart {
 
         ordinal_ = 0;
 
-        default_ = false;
+        isDefault_ = false;
 
-        required_ = false;
+        isRequired_ = false;
 
         allowed_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -8339,9 +8339,9 @@ public final class TideChart {
 
         sync_ = "";
 
-        block_ = false;
+        isBlocking_ = false;
 
-        queue_ = false;
+        isQueuing_ = false;
 
         return this;
       }
@@ -8373,8 +8373,8 @@ public final class TideChart {
         result.type_ = type_;
         result.name_ = name_;
         result.ordinal_ = ordinal_;
-        result.default_ = default_;
-        result.required_ = required_;
+        result.isDefault_ = isDefault_;
+        result.isRequired_ = isRequired_;
         if (((bitField0_ & 0x00000001) != 0)) {
           allowed_ = allowed_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -8390,8 +8390,8 @@ public final class TideChart {
         result.filter_ = filter_;
         result.event_ = event_;
         result.sync_ = sync_;
-        result.block_ = block_;
-        result.queue_ = queue_;
+        result.isBlocking_ = isBlocking_;
+        result.isQueuing_ = isQueuing_;
         onBuilt();
         return result;
       }
@@ -8451,11 +8451,11 @@ public final class TideChart {
         if (other.getOrdinal() != 0) {
           setOrdinal(other.getOrdinal());
         }
-        if (other.getDefault() != false) {
-          setDefault(other.getDefault());
+        if (other.getIsDefault() != false) {
+          setIsDefault(other.getIsDefault());
         }
-        if (other.getRequired() != false) {
-          setRequired(other.getRequired());
+        if (other.getIsRequired() != false) {
+          setIsRequired(other.getIsRequired());
         }
         if (!other.allowed_.isEmpty()) {
           if (allowed_.isEmpty()) {
@@ -8490,11 +8490,11 @@ public final class TideChart {
           sync_ = other.sync_;
           onChanged();
         }
-        if (other.getBlock() != false) {
-          setBlock(other.getBlock());
+        if (other.getIsBlocking() != false) {
+          setIsBlocking(other.getIsBlocking());
         }
-        if (other.getQueue() != false) {
-          setQueue(other.getQueue());
+        if (other.getIsQueuing() != false) {
+          setIsQueuing(other.getIsQueuing());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -8742,27 +8742,27 @@ public final class TideChart {
         return this;
       }
 
-      private boolean default_ ;
+      private boolean isDefault_ ;
       /**
        * <pre>
        * used by methods to indicate which ports are used for default in/out routing
        * </pre>
        *
-       * <code>bool default = 4;</code>
+       * <code>bool isDefault = 4;</code>
        */
-      public boolean getDefault() {
-        return default_;
+      public boolean getIsDefault() {
+        return isDefault_;
       }
       /**
        * <pre>
        * used by methods to indicate which ports are used for default in/out routing
        * </pre>
        *
-       * <code>bool default = 4;</code>
+       * <code>bool isDefault = 4;</code>
        */
-      public Builder setDefault(boolean value) {
+      public Builder setIsDefault(boolean value) {
         
-        default_ = value;
+        isDefault_ = value;
         onChanged();
         return this;
       }
@@ -8771,36 +8771,36 @@ public final class TideChart {
        * used by methods to indicate which ports are used for default in/out routing
        * </pre>
        *
-       * <code>bool default = 4;</code>
+       * <code>bool isDefault = 4;</code>
        */
-      public Builder clearDefault() {
+      public Builder clearIsDefault() {
         
-        default_ = false;
+        isDefault_ = false;
         onChanged();
         return this;
       }
 
-      private boolean required_ ;
+      private boolean isRequired_ ;
       /**
        * <pre>
        * used by methods to indicate the port must exist
        * </pre>
        *
-       * <code>bool required = 5;</code>
+       * <code>bool isRequired = 5;</code>
        */
-      public boolean getRequired() {
-        return required_;
+      public boolean getIsRequired() {
+        return isRequired_;
       }
       /**
        * <pre>
        * used by methods to indicate the port must exist
        * </pre>
        *
-       * <code>bool required = 5;</code>
+       * <code>bool isRequired = 5;</code>
        */
-      public Builder setRequired(boolean value) {
+      public Builder setIsRequired(boolean value) {
         
-        required_ = value;
+        isRequired_ = value;
         onChanged();
         return this;
       }
@@ -8809,11 +8809,11 @@ public final class TideChart {
        * used by methods to indicate the port must exist
        * </pre>
        *
-       * <code>bool required = 5;</code>
+       * <code>bool isRequired = 5;</code>
        */
-      public Builder clearRequired() {
+      public Builder clearIsRequired() {
         
-        required_ = false;
+        isRequired_ = false;
         onChanged();
         return this;
       }
@@ -9546,27 +9546,27 @@ public final class TideChart {
         return this;
       }
 
-      private boolean block_ ;
+      private boolean isBlocking_ ;
       /**
        * <pre>
        * determines if the port will block to wait for the rest of the port group
        * </pre>
        *
-       * <code>bool block = 13;</code>
+       * <code>bool isBlocking = 13;</code>
        */
-      public boolean getBlock() {
-        return block_;
+      public boolean getIsBlocking() {
+        return isBlocking_;
       }
       /**
        * <pre>
        * determines if the port will block to wait for the rest of the port group
        * </pre>
        *
-       * <code>bool block = 13;</code>
+       * <code>bool isBlocking = 13;</code>
        */
-      public Builder setBlock(boolean value) {
+      public Builder setIsBlocking(boolean value) {
         
-        block_ = value;
+        isBlocking_ = value;
         onChanged();
         return this;
       }
@@ -9575,36 +9575,36 @@ public final class TideChart {
        * determines if the port will block to wait for the rest of the port group
        * </pre>
        *
-       * <code>bool block = 13;</code>
+       * <code>bool isBlocking = 13;</code>
        */
-      public Builder clearBlock() {
+      public Builder clearIsBlocking() {
         
-        block_ = false;
+        isBlocking_ = false;
         onChanged();
         return this;
       }
 
-      private boolean queue_ ;
+      private boolean isQueuing_ ;
       /**
        * <pre>
        * determines if messages should queue while blocking or replace with latest received
        * </pre>
        *
-       * <code>bool queue = 14;</code>
+       * <code>bool isQueuing = 14;</code>
        */
-      public boolean getQueue() {
-        return queue_;
+      public boolean getIsQueuing() {
+        return isQueuing_;
       }
       /**
        * <pre>
        * determines if messages should queue while blocking or replace with latest received
        * </pre>
        *
-       * <code>bool queue = 14;</code>
+       * <code>bool isQueuing = 14;</code>
        */
-      public Builder setQueue(boolean value) {
+      public Builder setIsQueuing(boolean value) {
         
-        queue_ = value;
+        isQueuing_ = value;
         onChanged();
         return this;
       }
@@ -9613,11 +9613,11 @@ public final class TideChart {
        * determines if messages should queue while blocking or replace with latest received
        * </pre>
        *
-       * <code>bool queue = 14;</code>
+       * <code>bool isQueuing = 14;</code>
        */
-      public Builder clearQueue() {
+      public Builder clearIsQueuing() {
         
-        queue_ = false;
+        isQueuing_ = false;
         onChanged();
         return this;
       }
@@ -9791,36 +9791,36 @@ public final class TideChart {
      * flag indicating this link will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    boolean getLogging();
+    boolean getIsLogging();
 
     /**
      * <pre>
      * flag indicating this link is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    boolean getDebugging();
+    boolean getIsDebugging();
 
     /**
      * <pre>
      * flag indicating this link is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    boolean getPaused();
+    boolean getIsPaused();
 
     /**
      * <pre>
      * flag indicating this link is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    boolean getDisabled();
+    boolean getIsDisabled();
   }
   /**
    * Protobuf type {@code TideChartLink}
@@ -9914,22 +9914,22 @@ public final class TideChart {
             }
             case 128: {
 
-              logging_ = input.readBool();
+              isLogging_ = input.readBool();
               break;
             }
             case 136: {
 
-              debugging_ = input.readBool();
+              isDebugging_ = input.readBool();
               break;
             }
             case 144: {
 
-              paused_ = input.readBool();
+              isPaused_ = input.readBool();
               break;
             }
             case 152: {
 
-              disabled_ = input.readBool();
+              isDisabled_ = input.readBool();
               break;
             }
             default: {
@@ -10200,56 +10200,56 @@ public final class TideChart {
       }
     }
 
-    public static final int LOGGING_FIELD_NUMBER = 16;
-    private boolean logging_;
+    public static final int ISLOGGING_FIELD_NUMBER = 16;
+    private boolean isLogging_;
     /**
      * <pre>
      * flag indicating this link will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    public boolean getLogging() {
-      return logging_;
+    public boolean getIsLogging() {
+      return isLogging_;
     }
 
-    public static final int DEBUGGING_FIELD_NUMBER = 17;
-    private boolean debugging_;
+    public static final int ISDEBUGGING_FIELD_NUMBER = 17;
+    private boolean isDebugging_;
     /**
      * <pre>
      * flag indicating this link is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    public boolean getDebugging() {
-      return debugging_;
+    public boolean getIsDebugging() {
+      return isDebugging_;
     }
 
-    public static final int PAUSED_FIELD_NUMBER = 18;
-    private boolean paused_;
+    public static final int ISPAUSED_FIELD_NUMBER = 18;
+    private boolean isPaused_;
     /**
      * <pre>
      * flag indicating this link is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    public boolean getPaused() {
-      return paused_;
+    public boolean getIsPaused() {
+      return isPaused_;
     }
 
-    public static final int DISABLED_FIELD_NUMBER = 19;
-    private boolean disabled_;
+    public static final int ISDISABLED_FIELD_NUMBER = 19;
+    private boolean isDisabled_;
     /**
      * <pre>
      * flag indicating this link is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    public boolean getDisabled() {
-      return disabled_;
+    public boolean getIsDisabled() {
+      return isDisabled_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -10287,17 +10287,17 @@ public final class TideChart {
       if (!getFilterBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, filter_);
       }
-      if (logging_ != false) {
-        output.writeBool(16, logging_);
+      if (isLogging_ != false) {
+        output.writeBool(16, isLogging_);
       }
-      if (debugging_ != false) {
-        output.writeBool(17, debugging_);
+      if (isDebugging_ != false) {
+        output.writeBool(17, isDebugging_);
       }
-      if (paused_ != false) {
-        output.writeBool(18, paused_);
+      if (isPaused_ != false) {
+        output.writeBool(18, isPaused_);
       }
-      if (disabled_ != false) {
-        output.writeBool(19, disabled_);
+      if (isDisabled_ != false) {
+        output.writeBool(19, isDisabled_);
       }
       unknownFields.writeTo(output);
     }
@@ -10331,21 +10331,21 @@ public final class TideChart {
       if (!getFilterBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, filter_);
       }
-      if (logging_ != false) {
+      if (isLogging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(16, logging_);
+          .computeBoolSize(16, isLogging_);
       }
-      if (debugging_ != false) {
+      if (isDebugging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(17, debugging_);
+          .computeBoolSize(17, isDebugging_);
       }
-      if (paused_ != false) {
+      if (isPaused_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(18, paused_);
+          .computeBoolSize(18, isPaused_);
       }
-      if (disabled_ != false) {
+      if (isDisabled_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(19, disabled_);
+          .computeBoolSize(19, isDisabled_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -10376,14 +10376,14 @@ public final class TideChart {
           != other.getDelay()) return false;
       if (!getFilter()
           .equals(other.getFilter())) return false;
-      if (getLogging()
-          != other.getLogging()) return false;
-      if (getDebugging()
-          != other.getDebugging()) return false;
-      if (getPaused()
-          != other.getPaused()) return false;
-      if (getDisabled()
-          != other.getDisabled()) return false;
+      if (getIsLogging()
+          != other.getIsLogging()) return false;
+      if (getIsDebugging()
+          != other.getIsDebugging()) return false;
+      if (getIsPaused()
+          != other.getIsPaused()) return false;
+      if (getIsDisabled()
+          != other.getIsDisabled()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -10409,18 +10409,18 @@ public final class TideChart {
       hash = (53 * hash) + getDelay();
       hash = (37 * hash) + FILTER_FIELD_NUMBER;
       hash = (53 * hash) + getFilter().hashCode();
-      hash = (37 * hash) + LOGGING_FIELD_NUMBER;
+      hash = (37 * hash) + ISLOGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLogging());
-      hash = (37 * hash) + DEBUGGING_FIELD_NUMBER;
+          getIsLogging());
+      hash = (37 * hash) + ISDEBUGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDebugging());
-      hash = (37 * hash) + PAUSED_FIELD_NUMBER;
+          getIsDebugging());
+      hash = (37 * hash) + ISPAUSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPaused());
-      hash = (37 * hash) + DISABLED_FIELD_NUMBER;
+          getIsPaused());
+      hash = (37 * hash) + ISDISABLED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDisabled());
+          getIsDisabled());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -10568,13 +10568,13 @@ public final class TideChart {
 
         filter_ = "";
 
-        logging_ = false;
+        isLogging_ = false;
 
-        debugging_ = false;
+        isDebugging_ = false;
 
-        paused_ = false;
+        isPaused_ = false;
 
-        disabled_ = false;
+        isDisabled_ = false;
 
         return this;
       }
@@ -10609,10 +10609,10 @@ public final class TideChart {
         result.group_ = group_;
         result.delay_ = delay_;
         result.filter_ = filter_;
-        result.logging_ = logging_;
-        result.debugging_ = debugging_;
-        result.paused_ = paused_;
-        result.disabled_ = disabled_;
+        result.isLogging_ = isLogging_;
+        result.isDebugging_ = isDebugging_;
+        result.isPaused_ = isPaused_;
+        result.isDisabled_ = isDisabled_;
         onBuilt();
         return result;
       }
@@ -10687,17 +10687,17 @@ public final class TideChart {
           filter_ = other.filter_;
           onChanged();
         }
-        if (other.getLogging() != false) {
-          setLogging(other.getLogging());
+        if (other.getIsLogging() != false) {
+          setIsLogging(other.getIsLogging());
         }
-        if (other.getDebugging() != false) {
-          setDebugging(other.getDebugging());
+        if (other.getIsDebugging() != false) {
+          setIsDebugging(other.getIsDebugging());
         }
-        if (other.getPaused() != false) {
-          setPaused(other.getPaused());
+        if (other.getIsPaused() != false) {
+          setIsPaused(other.getIsPaused());
         }
-        if (other.getDisabled() != false) {
-          setDisabled(other.getDisabled());
+        if (other.getIsDisabled() != false) {
+          setIsDisabled(other.getIsDisabled());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -11249,65 +11249,65 @@ public final class TideChart {
         return this;
       }
 
-      private boolean logging_ ;
+      private boolean isLogging_ ;
       /**
        * <pre>
        * flag indicating this link will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public boolean getLogging() {
-        return logging_;
-      }
-      /**
-       * <pre>
-       * flag indicating this link will trace messages
-       * </pre>
-       *
-       * <code>bool logging = 16;</code>
-       */
-      public Builder setLogging(boolean value) {
-        
-        logging_ = value;
-        onChanged();
-        return this;
+      public boolean getIsLogging() {
+        return isLogging_;
       }
       /**
        * <pre>
        * flag indicating this link will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public Builder clearLogging() {
+      public Builder setIsLogging(boolean value) {
         
-        logging_ = false;
+        isLogging_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * flag indicating this link will trace messages
+       * </pre>
+       *
+       * <code>bool isLogging = 16;</code>
+       */
+      public Builder clearIsLogging() {
+        
+        isLogging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean debugging_ ;
+      private boolean isDebugging_ ;
       /**
        * <pre>
        * flag indicating this link is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public boolean getDebugging() {
-        return debugging_;
+      public boolean getIsDebugging() {
+        return isDebugging_;
       }
       /**
        * <pre>
        * flag indicating this link is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder setDebugging(boolean value) {
+      public Builder setIsDebugging(boolean value) {
         
-        debugging_ = value;
+        isDebugging_ = value;
         onChanged();
         return this;
       }
@@ -11316,36 +11316,36 @@ public final class TideChart {
        * flag indicating this link is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder clearDebugging() {
+      public Builder clearIsDebugging() {
         
-        debugging_ = false;
+        isDebugging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean paused_ ;
+      private boolean isPaused_ ;
       /**
        * <pre>
        * flag indicating this link is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public boolean getPaused() {
-        return paused_;
+      public boolean getIsPaused() {
+        return isPaused_;
       }
       /**
        * <pre>
        * flag indicating this link is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder setPaused(boolean value) {
+      public Builder setIsPaused(boolean value) {
         
-        paused_ = value;
+        isPaused_ = value;
         onChanged();
         return this;
       }
@@ -11354,36 +11354,36 @@ public final class TideChart {
        * flag indicating this link is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder clearPaused() {
+      public Builder clearIsPaused() {
         
-        paused_ = false;
+        isPaused_ = false;
         onChanged();
         return this;
       }
 
-      private boolean disabled_ ;
+      private boolean isDisabled_ ;
       /**
        * <pre>
        * flag indicating this link is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public boolean getDisabled() {
-        return disabled_;
+      public boolean getIsDisabled() {
+        return isDisabled_;
       }
       /**
        * <pre>
        * flag indicating this link is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder setDisabled(boolean value) {
+      public Builder setIsDisabled(boolean value) {
         
-        disabled_ = value;
+        isDisabled_ = value;
         onChanged();
         return this;
       }
@@ -11392,11 +11392,11 @@ public final class TideChart {
        * flag indicating this link is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder clearDisabled() {
+      public Builder clearIsDisabled() {
         
-        disabled_ = false;
+        isDisabled_ = false;
         onChanged();
         return this;
       }
@@ -13185,36 +13185,36 @@ public final class TideChart {
      * flag indicating this node will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    boolean getLogging();
+    boolean getIsLogging();
 
     /**
      * <pre>
      * flag indicating this node is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    boolean getDebugging();
+    boolean getIsDebugging();
 
     /**
      * <pre>
      * flag indicating this node is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    boolean getPaused();
+    boolean getIsPaused();
 
     /**
      * <pre>
      * flag indicating this node is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    boolean getDisabled();
+    boolean getIsDisabled();
 
     /**
      * <pre>
@@ -13415,22 +13415,22 @@ public final class TideChart {
             }
             case 128: {
 
-              logging_ = input.readBool();
+              isLogging_ = input.readBool();
               break;
             }
             case 136: {
 
-              debugging_ = input.readBool();
+              isDebugging_ = input.readBool();
               break;
             }
             case 144: {
 
-              paused_ = input.readBool();
+              isPaused_ = input.readBool();
               break;
             }
             case 152: {
 
-              disabled_ = input.readBool();
+              isDisabled_ = input.readBool();
               break;
             }
             case 162: {
@@ -13948,56 +13948,56 @@ public final class TideChart {
       return props_.get(index);
     }
 
-    public static final int LOGGING_FIELD_NUMBER = 16;
-    private boolean logging_;
+    public static final int ISLOGGING_FIELD_NUMBER = 16;
+    private boolean isLogging_;
     /**
      * <pre>
      * flag indicating this node will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    public boolean getLogging() {
-      return logging_;
+    public boolean getIsLogging() {
+      return isLogging_;
     }
 
-    public static final int DEBUGGING_FIELD_NUMBER = 17;
-    private boolean debugging_;
+    public static final int ISDEBUGGING_FIELD_NUMBER = 17;
+    private boolean isDebugging_;
     /**
      * <pre>
      * flag indicating this node is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    public boolean getDebugging() {
-      return debugging_;
+    public boolean getIsDebugging() {
+      return isDebugging_;
     }
 
-    public static final int PAUSED_FIELD_NUMBER = 18;
-    private boolean paused_;
+    public static final int ISPAUSED_FIELD_NUMBER = 18;
+    private boolean isPaused_;
     /**
      * <pre>
      * flag indicating this node is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    public boolean getPaused() {
-      return paused_;
+    public boolean getIsPaused() {
+      return isPaused_;
     }
 
-    public static final int DISABLED_FIELD_NUMBER = 19;
-    private boolean disabled_;
+    public static final int ISDISABLED_FIELD_NUMBER = 19;
+    private boolean isDisabled_;
     /**
      * <pre>
      * flag indicating this node is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    public boolean getDisabled() {
-      return disabled_;
+    public boolean getIsDisabled() {
+      return isDisabled_;
     }
 
     public static final int NOTES_FIELD_NUMBER = 20;
@@ -14147,17 +14147,17 @@ public final class TideChart {
       for (int i = 0; i < props_.size(); i++) {
         output.writeMessage(12, props_.get(i));
       }
-      if (logging_ != false) {
-        output.writeBool(16, logging_);
+      if (isLogging_ != false) {
+        output.writeBool(16, isLogging_);
       }
-      if (debugging_ != false) {
-        output.writeBool(17, debugging_);
+      if (isDebugging_ != false) {
+        output.writeBool(17, isDebugging_);
       }
-      if (paused_ != false) {
-        output.writeBool(18, paused_);
+      if (isPaused_ != false) {
+        output.writeBool(18, isPaused_);
       }
-      if (disabled_ != false) {
-        output.writeBool(19, disabled_);
+      if (isDisabled_ != false) {
+        output.writeBool(19, isDisabled_);
       }
       for (int i = 0; i < notes_.size(); i++) {
         output.writeMessage(20, notes_.get(i));
@@ -14216,21 +14216,21 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, props_.get(i));
       }
-      if (logging_ != false) {
+      if (isLogging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(16, logging_);
+          .computeBoolSize(16, isLogging_);
       }
-      if (debugging_ != false) {
+      if (isDebugging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(17, debugging_);
+          .computeBoolSize(17, isDebugging_);
       }
-      if (paused_ != false) {
+      if (isPaused_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(18, paused_);
+          .computeBoolSize(18, isPaused_);
       }
-      if (disabled_ != false) {
+      if (isDisabled_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(19, disabled_);
+          .computeBoolSize(19, isDisabled_);
       }
       for (int i = 0; i < notes_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -14278,14 +14278,14 @@ public final class TideChart {
           .equals(other.getOutportsList())) return false;
       if (!getPropsList()
           .equals(other.getPropsList())) return false;
-      if (getLogging()
-          != other.getLogging()) return false;
-      if (getDebugging()
-          != other.getDebugging()) return false;
-      if (getPaused()
-          != other.getPaused()) return false;
-      if (getDisabled()
-          != other.getDisabled()) return false;
+      if (getIsLogging()
+          != other.getIsLogging()) return false;
+      if (getIsDebugging()
+          != other.getIsDebugging()) return false;
+      if (getIsPaused()
+          != other.getIsPaused()) return false;
+      if (getIsDisabled()
+          != other.getIsDisabled()) return false;
       if (!getNotesList()
           .equals(other.getNotesList())) return false;
       if (!getScript()
@@ -14331,18 +14331,18 @@ public final class TideChart {
         hash = (37 * hash) + PROPS_FIELD_NUMBER;
         hash = (53 * hash) + getPropsList().hashCode();
       }
-      hash = (37 * hash) + LOGGING_FIELD_NUMBER;
+      hash = (37 * hash) + ISLOGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLogging());
-      hash = (37 * hash) + DEBUGGING_FIELD_NUMBER;
+          getIsLogging());
+      hash = (37 * hash) + ISDEBUGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDebugging());
-      hash = (37 * hash) + PAUSED_FIELD_NUMBER;
+          getIsDebugging());
+      hash = (37 * hash) + ISPAUSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPaused());
-      hash = (37 * hash) + DISABLED_FIELD_NUMBER;
+          getIsPaused());
+      hash = (37 * hash) + ISDISABLED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDisabled());
+          getIsDisabled());
       if (getNotesCount() > 0) {
         hash = (37 * hash) + NOTES_FIELD_NUMBER;
         hash = (53 * hash) + getNotesList().hashCode();
@@ -14522,13 +14522,13 @@ public final class TideChart {
         } else {
           propsBuilder_.clear();
         }
-        logging_ = false;
+        isLogging_ = false;
 
-        debugging_ = false;
+        isDebugging_ = false;
 
-        paused_ = false;
+        isPaused_ = false;
 
-        disabled_ = false;
+        isDisabled_ = false;
 
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
@@ -14601,10 +14601,10 @@ public final class TideChart {
         } else {
           result.props_ = propsBuilder_.build();
         }
-        result.logging_ = logging_;
-        result.debugging_ = debugging_;
-        result.paused_ = paused_;
-        result.disabled_ = disabled_;
+        result.isLogging_ = isLogging_;
+        result.isDebugging_ = isDebugging_;
+        result.isPaused_ = isPaused_;
+        result.isDisabled_ = isDisabled_;
         if (notesBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
@@ -14774,17 +14774,17 @@ public final class TideChart {
             }
           }
         }
-        if (other.getLogging() != false) {
-          setLogging(other.getLogging());
+        if (other.getIsLogging() != false) {
+          setIsLogging(other.getIsLogging());
         }
-        if (other.getDebugging() != false) {
-          setDebugging(other.getDebugging());
+        if (other.getIsDebugging() != false) {
+          setIsDebugging(other.getIsDebugging());
         }
-        if (other.getPaused() != false) {
-          setPaused(other.getPaused());
+        if (other.getIsPaused() != false) {
+          setIsPaused(other.getIsPaused());
         }
-        if (other.getDisabled() != false) {
-          setDisabled(other.getDisabled());
+        if (other.getIsDisabled() != false) {
+          setIsDisabled(other.getIsDisabled());
         }
         if (notesBuilder_ == null) {
           if (!other.notes_.isEmpty()) {
@@ -16430,65 +16430,65 @@ public final class TideChart {
         return propsBuilder_;
       }
 
-      private boolean logging_ ;
+      private boolean isLogging_ ;
       /**
        * <pre>
        * flag indicating this node will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public boolean getLogging() {
-        return logging_;
-      }
-      /**
-       * <pre>
-       * flag indicating this node will trace messages
-       * </pre>
-       *
-       * <code>bool logging = 16;</code>
-       */
-      public Builder setLogging(boolean value) {
-        
-        logging_ = value;
-        onChanged();
-        return this;
+      public boolean getIsLogging() {
+        return isLogging_;
       }
       /**
        * <pre>
        * flag indicating this node will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public Builder clearLogging() {
+      public Builder setIsLogging(boolean value) {
         
-        logging_ = false;
+        isLogging_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * flag indicating this node will trace messages
+       * </pre>
+       *
+       * <code>bool isLogging = 16;</code>
+       */
+      public Builder clearIsLogging() {
+        
+        isLogging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean debugging_ ;
+      private boolean isDebugging_ ;
       /**
        * <pre>
        * flag indicating this node is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public boolean getDebugging() {
-        return debugging_;
+      public boolean getIsDebugging() {
+        return isDebugging_;
       }
       /**
        * <pre>
        * flag indicating this node is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder setDebugging(boolean value) {
+      public Builder setIsDebugging(boolean value) {
         
-        debugging_ = value;
+        isDebugging_ = value;
         onChanged();
         return this;
       }
@@ -16497,36 +16497,36 @@ public final class TideChart {
        * flag indicating this node is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder clearDebugging() {
+      public Builder clearIsDebugging() {
         
-        debugging_ = false;
+        isDebugging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean paused_ ;
+      private boolean isPaused_ ;
       /**
        * <pre>
        * flag indicating this node is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public boolean getPaused() {
-        return paused_;
+      public boolean getIsPaused() {
+        return isPaused_;
       }
       /**
        * <pre>
        * flag indicating this node is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder setPaused(boolean value) {
+      public Builder setIsPaused(boolean value) {
         
-        paused_ = value;
+        isPaused_ = value;
         onChanged();
         return this;
       }
@@ -16535,36 +16535,36 @@ public final class TideChart {
        * flag indicating this node is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder clearPaused() {
+      public Builder clearIsPaused() {
         
-        paused_ = false;
+        isPaused_ = false;
         onChanged();
         return this;
       }
 
-      private boolean disabled_ ;
+      private boolean isDisabled_ ;
       /**
        * <pre>
        * flag indicating this node is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public boolean getDisabled() {
-        return disabled_;
+      public boolean getIsDisabled() {
+        return isDisabled_;
       }
       /**
        * <pre>
        * flag indicating this node is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder setDisabled(boolean value) {
+      public Builder setIsDisabled(boolean value) {
         
-        disabled_ = value;
+        isDisabled_ = value;
         onChanged();
         return this;
       }
@@ -16573,11 +16573,11 @@ public final class TideChart {
        * flag indicating this node is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder clearDisabled() {
+      public Builder clearIsDisabled() {
         
-        disabled_ = false;
+        isDisabled_ = false;
         onChanged();
         return this;
       }
@@ -17186,36 +17186,36 @@ public final class TideChart {
      * flag indicating this region will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    boolean getLogging();
+    boolean getIsLogging();
 
     /**
      * <pre>
      * flag indicating this region is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    boolean getDebugging();
+    boolean getIsDebugging();
 
     /**
      * <pre>
      * flag indicating this region is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    boolean getPaused();
+    boolean getIsPaused();
 
     /**
      * <pre>
      * flag indicating this region is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    boolean getDisabled();
+    boolean getIsDisabled();
 
     /**
      * <pre>
@@ -17375,22 +17375,22 @@ public final class TideChart {
             }
             case 128: {
 
-              logging_ = input.readBool();
+              isLogging_ = input.readBool();
               break;
             }
             case 136: {
 
-              debugging_ = input.readBool();
+              isDebugging_ = input.readBool();
               break;
             }
             case 144: {
 
-              paused_ = input.readBool();
+              isPaused_ = input.readBool();
               break;
             }
             case 152: {
 
-              disabled_ = input.readBool();
+              isDisabled_ = input.readBool();
               break;
             }
             case 162: {
@@ -17688,56 +17688,56 @@ public final class TideChart {
       return props_.get(index);
     }
 
-    public static final int LOGGING_FIELD_NUMBER = 16;
-    private boolean logging_;
+    public static final int ISLOGGING_FIELD_NUMBER = 16;
+    private boolean isLogging_;
     /**
      * <pre>
      * flag indicating this region will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    public boolean getLogging() {
-      return logging_;
+    public boolean getIsLogging() {
+      return isLogging_;
     }
 
-    public static final int DEBUGGING_FIELD_NUMBER = 17;
-    private boolean debugging_;
+    public static final int ISDEBUGGING_FIELD_NUMBER = 17;
+    private boolean isDebugging_;
     /**
      * <pre>
      * flag indicating this region is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    public boolean getDebugging() {
-      return debugging_;
+    public boolean getIsDebugging() {
+      return isDebugging_;
     }
 
-    public static final int PAUSED_FIELD_NUMBER = 18;
-    private boolean paused_;
+    public static final int ISPAUSED_FIELD_NUMBER = 18;
+    private boolean isPaused_;
     /**
      * <pre>
      * flag indicating this region is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    public boolean getPaused() {
-      return paused_;
+    public boolean getIsPaused() {
+      return isPaused_;
     }
 
-    public static final int DISABLED_FIELD_NUMBER = 19;
-    private boolean disabled_;
+    public static final int ISDISABLED_FIELD_NUMBER = 19;
+    private boolean isDisabled_;
     /**
      * <pre>
      * flag indicating this region is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    public boolean getDisabled() {
-      return disabled_;
+    public boolean getIsDisabled() {
+      return isDisabled_;
     }
 
     public static final int NOTES_FIELD_NUMBER = 20;
@@ -17869,17 +17869,17 @@ public final class TideChart {
       for (int i = 0; i < props_.size(); i++) {
         output.writeMessage(6, props_.get(i));
       }
-      if (logging_ != false) {
-        output.writeBool(16, logging_);
+      if (isLogging_ != false) {
+        output.writeBool(16, isLogging_);
       }
-      if (debugging_ != false) {
-        output.writeBool(17, debugging_);
+      if (isDebugging_ != false) {
+        output.writeBool(17, isDebugging_);
       }
-      if (paused_ != false) {
-        output.writeBool(18, paused_);
+      if (isPaused_ != false) {
+        output.writeBool(18, isPaused_);
       }
-      if (disabled_ != false) {
-        output.writeBool(19, disabled_);
+      if (isDisabled_ != false) {
+        output.writeBool(19, isDisabled_);
       }
       for (int i = 0; i < notes_.size(); i++) {
         output.writeMessage(20, notes_.get(i));
@@ -17921,21 +17921,21 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, props_.get(i));
       }
-      if (logging_ != false) {
+      if (isLogging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(16, logging_);
+          .computeBoolSize(16, isLogging_);
       }
-      if (debugging_ != false) {
+      if (isDebugging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(17, debugging_);
+          .computeBoolSize(17, isDebugging_);
       }
-      if (paused_ != false) {
+      if (isPaused_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(18, paused_);
+          .computeBoolSize(18, isPaused_);
       }
-      if (disabled_ != false) {
+      if (isDisabled_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(19, disabled_);
+          .computeBoolSize(19, isDisabled_);
       }
       for (int i = 0; i < notes_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -17971,14 +17971,14 @@ public final class TideChart {
           .equals(other.getScope())) return false;
       if (!getPropsList()
           .equals(other.getPropsList())) return false;
-      if (getLogging()
-          != other.getLogging()) return false;
-      if (getDebugging()
-          != other.getDebugging()) return false;
-      if (getPaused()
-          != other.getPaused()) return false;
-      if (getDisabled()
-          != other.getDisabled()) return false;
+      if (getIsLogging()
+          != other.getIsLogging()) return false;
+      if (getIsDebugging()
+          != other.getIsDebugging()) return false;
+      if (getIsPaused()
+          != other.getIsPaused()) return false;
+      if (getIsDisabled()
+          != other.getIsDisabled()) return false;
       if (!getNotesList()
           .equals(other.getNotesList())) return false;
       if (!getScript()
@@ -18010,18 +18010,18 @@ public final class TideChart {
         hash = (37 * hash) + PROPS_FIELD_NUMBER;
         hash = (53 * hash) + getPropsList().hashCode();
       }
-      hash = (37 * hash) + LOGGING_FIELD_NUMBER;
+      hash = (37 * hash) + ISLOGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLogging());
-      hash = (37 * hash) + DEBUGGING_FIELD_NUMBER;
+          getIsLogging());
+      hash = (37 * hash) + ISDEBUGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDebugging());
-      hash = (37 * hash) + PAUSED_FIELD_NUMBER;
+          getIsDebugging());
+      hash = (37 * hash) + ISPAUSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPaused());
-      hash = (37 * hash) + DISABLED_FIELD_NUMBER;
+          getIsPaused());
+      hash = (37 * hash) + ISDISABLED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDisabled());
+          getIsDisabled());
       if (getNotesCount() > 0) {
         hash = (37 * hash) + NOTES_FIELD_NUMBER;
         hash = (53 * hash) + getNotesList().hashCode();
@@ -18179,13 +18179,13 @@ public final class TideChart {
         } else {
           propsBuilder_.clear();
         }
-        logging_ = false;
+        isLogging_ = false;
 
-        debugging_ = false;
+        isDebugging_ = false;
 
-        paused_ = false;
+        isPaused_ = false;
 
-        disabled_ = false;
+        isDisabled_ = false;
 
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
@@ -18240,10 +18240,10 @@ public final class TideChart {
         } else {
           result.props_ = propsBuilder_.build();
         }
-        result.logging_ = logging_;
-        result.debugging_ = debugging_;
-        result.paused_ = paused_;
-        result.disabled_ = disabled_;
+        result.isLogging_ = isLogging_;
+        result.isDebugging_ = isDebugging_;
+        result.isPaused_ = isPaused_;
+        result.isDisabled_ = isDisabled_;
         if (notesBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
@@ -18353,17 +18353,17 @@ public final class TideChart {
             }
           }
         }
-        if (other.getLogging() != false) {
-          setLogging(other.getLogging());
+        if (other.getIsLogging() != false) {
+          setIsLogging(other.getIsLogging());
         }
-        if (other.getDebugging() != false) {
-          setDebugging(other.getDebugging());
+        if (other.getIsDebugging() != false) {
+          setIsDebugging(other.getIsDebugging());
         }
-        if (other.getPaused() != false) {
-          setPaused(other.getPaused());
+        if (other.getIsPaused() != false) {
+          setIsPaused(other.getIsPaused());
         }
-        if (other.getDisabled() != false) {
-          setDisabled(other.getDisabled());
+        if (other.getIsDisabled() != false) {
+          setIsDisabled(other.getIsDisabled());
         }
         if (notesBuilder_ == null) {
           if (!other.notes_.isEmpty()) {
@@ -19172,65 +19172,65 @@ public final class TideChart {
         return propsBuilder_;
       }
 
-      private boolean logging_ ;
+      private boolean isLogging_ ;
       /**
        * <pre>
        * flag indicating this region will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public boolean getLogging() {
-        return logging_;
-      }
-      /**
-       * <pre>
-       * flag indicating this region will trace messages
-       * </pre>
-       *
-       * <code>bool logging = 16;</code>
-       */
-      public Builder setLogging(boolean value) {
-        
-        logging_ = value;
-        onChanged();
-        return this;
+      public boolean getIsLogging() {
+        return isLogging_;
       }
       /**
        * <pre>
        * flag indicating this region will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public Builder clearLogging() {
+      public Builder setIsLogging(boolean value) {
         
-        logging_ = false;
+        isLogging_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * flag indicating this region will trace messages
+       * </pre>
+       *
+       * <code>bool isLogging = 16;</code>
+       */
+      public Builder clearIsLogging() {
+        
+        isLogging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean debugging_ ;
+      private boolean isDebugging_ ;
       /**
        * <pre>
        * flag indicating this region is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public boolean getDebugging() {
-        return debugging_;
+      public boolean getIsDebugging() {
+        return isDebugging_;
       }
       /**
        * <pre>
        * flag indicating this region is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder setDebugging(boolean value) {
+      public Builder setIsDebugging(boolean value) {
         
-        debugging_ = value;
+        isDebugging_ = value;
         onChanged();
         return this;
       }
@@ -19239,36 +19239,36 @@ public final class TideChart {
        * flag indicating this region is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder clearDebugging() {
+      public Builder clearIsDebugging() {
         
-        debugging_ = false;
+        isDebugging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean paused_ ;
+      private boolean isPaused_ ;
       /**
        * <pre>
        * flag indicating this region is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public boolean getPaused() {
-        return paused_;
+      public boolean getIsPaused() {
+        return isPaused_;
       }
       /**
        * <pre>
        * flag indicating this region is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder setPaused(boolean value) {
+      public Builder setIsPaused(boolean value) {
         
-        paused_ = value;
+        isPaused_ = value;
         onChanged();
         return this;
       }
@@ -19277,36 +19277,36 @@ public final class TideChart {
        * flag indicating this region is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder clearPaused() {
+      public Builder clearIsPaused() {
         
-        paused_ = false;
+        isPaused_ = false;
         onChanged();
         return this;
       }
 
-      private boolean disabled_ ;
+      private boolean isDisabled_ ;
       /**
        * <pre>
        * flag indicating this region is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public boolean getDisabled() {
-        return disabled_;
+      public boolean getIsDisabled() {
+        return isDisabled_;
       }
       /**
        * <pre>
        * flag indicating this region is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder setDisabled(boolean value) {
+      public Builder setIsDisabled(boolean value) {
         
-        disabled_ = value;
+        isDisabled_ = value;
         onChanged();
         return this;
       }
@@ -19315,11 +19315,11 @@ public final class TideChart {
        * flag indicating this region is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder clearDisabled() {
+      public Builder clearIsDisabled() {
         
-        disabled_ = false;
+        isDisabled_ = false;
         onChanged();
         return this;
       }
@@ -20202,36 +20202,36 @@ public final class TideChart {
      * flag indicating this graph will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    boolean getLogging();
+    boolean getIsLogging();
 
     /**
      * <pre>
      * flag indicating this graph is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    boolean getDebugging();
+    boolean getIsDebugging();
 
     /**
      * <pre>
      * flag indicating this graph is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    boolean getPaused();
+    boolean getIsPaused();
 
     /**
      * <pre>
      * flag indicating this graph is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    boolean getDisabled();
+    boolean getIsDisabled();
 
     /**
      * <pre>
@@ -20457,22 +20457,22 @@ public final class TideChart {
             }
             case 128: {
 
-              logging_ = input.readBool();
+              isLogging_ = input.readBool();
               break;
             }
             case 136: {
 
-              debugging_ = input.readBool();
+              isDebugging_ = input.readBool();
               break;
             }
             case 144: {
 
-              paused_ = input.readBool();
+              isPaused_ = input.readBool();
               break;
             }
             case 152: {
 
-              disabled_ = input.readBool();
+              isDisabled_ = input.readBool();
               break;
             }
             case 162: {
@@ -21183,56 +21183,56 @@ public final class TideChart {
       return history_.get(index);
     }
 
-    public static final int LOGGING_FIELD_NUMBER = 16;
-    private boolean logging_;
+    public static final int ISLOGGING_FIELD_NUMBER = 16;
+    private boolean isLogging_;
     /**
      * <pre>
      * flag indicating this graph will trace messages
      * </pre>
      *
-     * <code>bool logging = 16;</code>
+     * <code>bool isLogging = 16;</code>
      */
-    public boolean getLogging() {
-      return logging_;
+    public boolean getIsLogging() {
+      return isLogging_;
     }
 
-    public static final int DEBUGGING_FIELD_NUMBER = 17;
-    private boolean debugging_;
+    public static final int ISDEBUGGING_FIELD_NUMBER = 17;
+    private boolean isDebugging_;
     /**
      * <pre>
      * flag indicating this graph is a debug breakpoint
      * </pre>
      *
-     * <code>bool debugging = 17;</code>
+     * <code>bool isDebugging = 17;</code>
      */
-    public boolean getDebugging() {
-      return debugging_;
+    public boolean getIsDebugging() {
+      return isDebugging_;
     }
 
-    public static final int PAUSED_FIELD_NUMBER = 18;
-    private boolean paused_;
+    public static final int ISPAUSED_FIELD_NUMBER = 18;
+    private boolean isPaused_;
     /**
      * <pre>
      * flag indicating this graph is paused (messages are queued)
      * </pre>
      *
-     * <code>bool paused = 18;</code>
+     * <code>bool isPaused = 18;</code>
      */
-    public boolean getPaused() {
-      return paused_;
+    public boolean getIsPaused() {
+      return isPaused_;
     }
 
-    public static final int DISABLED_FIELD_NUMBER = 19;
-    private boolean disabled_;
+    public static final int ISDISABLED_FIELD_NUMBER = 19;
+    private boolean isDisabled_;
     /**
      * <pre>
      * flag indicating this graph is disabled (messages are dropped)
      * </pre>
      *
-     * <code>bool disabled = 19;</code>
+     * <code>bool isDisabled = 19;</code>
      */
-    public boolean getDisabled() {
-      return disabled_;
+    public boolean getIsDisabled() {
+      return isDisabled_;
     }
 
     public static final int NOTES_FIELD_NUMBER = 20;
@@ -21385,17 +21385,17 @@ public final class TideChart {
       for (int i = 0; i < history_.size(); i++) {
         output.writeMessage(13, history_.get(i));
       }
-      if (logging_ != false) {
-        output.writeBool(16, logging_);
+      if (isLogging_ != false) {
+        output.writeBool(16, isLogging_);
       }
-      if (debugging_ != false) {
-        output.writeBool(17, debugging_);
+      if (isDebugging_ != false) {
+        output.writeBool(17, isDebugging_);
       }
-      if (paused_ != false) {
-        output.writeBool(18, paused_);
+      if (isPaused_ != false) {
+        output.writeBool(18, isPaused_);
       }
-      if (disabled_ != false) {
-        output.writeBool(19, disabled_);
+      if (isDisabled_ != false) {
+        output.writeBool(19, isDisabled_);
       }
       for (int i = 0; i < notes_.size(); i++) {
         output.writeMessage(20, notes_.get(i));
@@ -21458,21 +21458,21 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(13, history_.get(i));
       }
-      if (logging_ != false) {
+      if (isLogging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(16, logging_);
+          .computeBoolSize(16, isLogging_);
       }
-      if (debugging_ != false) {
+      if (isDebugging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(17, debugging_);
+          .computeBoolSize(17, isDebugging_);
       }
-      if (paused_ != false) {
+      if (isPaused_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(18, paused_);
+          .computeBoolSize(18, isPaused_);
       }
-      if (disabled_ != false) {
+      if (isDisabled_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(19, disabled_);
+          .computeBoolSize(19, isDisabled_);
       }
       for (int i = 0; i < notes_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -21522,14 +21522,14 @@ public final class TideChart {
           .equals(other.getPropsList())) return false;
       if (!getHistoryList()
           .equals(other.getHistoryList())) return false;
-      if (getLogging()
-          != other.getLogging()) return false;
-      if (getDebugging()
-          != other.getDebugging()) return false;
-      if (getPaused()
-          != other.getPaused()) return false;
-      if (getDisabled()
-          != other.getDisabled()) return false;
+      if (getIsLogging()
+          != other.getIsLogging()) return false;
+      if (getIsDebugging()
+          != other.getIsDebugging()) return false;
+      if (getIsPaused()
+          != other.getIsPaused()) return false;
+      if (getIsDisabled()
+          != other.getIsDisabled()) return false;
       if (!getNotesList()
           .equals(other.getNotesList())) return false;
       if (!getScript()
@@ -21585,18 +21585,18 @@ public final class TideChart {
         hash = (37 * hash) + HISTORY_FIELD_NUMBER;
         hash = (53 * hash) + getHistoryList().hashCode();
       }
-      hash = (37 * hash) + LOGGING_FIELD_NUMBER;
+      hash = (37 * hash) + ISLOGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLogging());
-      hash = (37 * hash) + DEBUGGING_FIELD_NUMBER;
+          getIsLogging());
+      hash = (37 * hash) + ISDEBUGGING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDebugging());
-      hash = (37 * hash) + PAUSED_FIELD_NUMBER;
+          getIsDebugging());
+      hash = (37 * hash) + ISPAUSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPaused());
-      hash = (37 * hash) + DISABLED_FIELD_NUMBER;
+          getIsPaused());
+      hash = (37 * hash) + ISDISABLED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDisabled());
+          getIsDisabled());
       if (getNotesCount() > 0) {
         hash = (37 * hash) + NOTES_FIELD_NUMBER;
         hash = (53 * hash) + getNotesList().hashCode();
@@ -21798,13 +21798,13 @@ public final class TideChart {
         } else {
           historyBuilder_.clear();
         }
-        logging_ = false;
+        isLogging_ = false;
 
-        debugging_ = false;
+        isDebugging_ = false;
 
-        paused_ = false;
+        isPaused_ = false;
 
-        disabled_ = false;
+        isDisabled_ = false;
 
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
@@ -21910,10 +21910,10 @@ public final class TideChart {
         } else {
           result.history_ = historyBuilder_.build();
         }
-        result.logging_ = logging_;
-        result.debugging_ = debugging_;
-        result.paused_ = paused_;
-        result.disabled_ = disabled_;
+        result.isLogging_ = isLogging_;
+        result.isDebugging_ = isDebugging_;
+        result.isPaused_ = isPaused_;
+        result.isDisabled_ = isDisabled_;
         if (notesBuilder_ == null) {
           if (((bitField0_ & 0x00000080) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
@@ -22178,17 +22178,17 @@ public final class TideChart {
             }
           }
         }
-        if (other.getLogging() != false) {
-          setLogging(other.getLogging());
+        if (other.getIsLogging() != false) {
+          setIsLogging(other.getIsLogging());
         }
-        if (other.getDebugging() != false) {
-          setDebugging(other.getDebugging());
+        if (other.getIsDebugging() != false) {
+          setIsDebugging(other.getIsDebugging());
         }
-        if (other.getPaused() != false) {
-          setPaused(other.getPaused());
+        if (other.getIsPaused() != false) {
+          setIsPaused(other.getIsPaused());
         }
-        if (other.getDisabled() != false) {
-          setDisabled(other.getDisabled());
+        if (other.getIsDisabled() != false) {
+          setIsDisabled(other.getIsDisabled());
         }
         if (notesBuilder_ == null) {
           if (!other.notes_.isEmpty()) {
@@ -24968,65 +24968,65 @@ public final class TideChart {
         return historyBuilder_;
       }
 
-      private boolean logging_ ;
+      private boolean isLogging_ ;
       /**
        * <pre>
        * flag indicating this graph will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public boolean getLogging() {
-        return logging_;
-      }
-      /**
-       * <pre>
-       * flag indicating this graph will trace messages
-       * </pre>
-       *
-       * <code>bool logging = 16;</code>
-       */
-      public Builder setLogging(boolean value) {
-        
-        logging_ = value;
-        onChanged();
-        return this;
+      public boolean getIsLogging() {
+        return isLogging_;
       }
       /**
        * <pre>
        * flag indicating this graph will trace messages
        * </pre>
        *
-       * <code>bool logging = 16;</code>
+       * <code>bool isLogging = 16;</code>
        */
-      public Builder clearLogging() {
+      public Builder setIsLogging(boolean value) {
         
-        logging_ = false;
+        isLogging_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * flag indicating this graph will trace messages
+       * </pre>
+       *
+       * <code>bool isLogging = 16;</code>
+       */
+      public Builder clearIsLogging() {
+        
+        isLogging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean debugging_ ;
+      private boolean isDebugging_ ;
       /**
        * <pre>
        * flag indicating this graph is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public boolean getDebugging() {
-        return debugging_;
+      public boolean getIsDebugging() {
+        return isDebugging_;
       }
       /**
        * <pre>
        * flag indicating this graph is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder setDebugging(boolean value) {
+      public Builder setIsDebugging(boolean value) {
         
-        debugging_ = value;
+        isDebugging_ = value;
         onChanged();
         return this;
       }
@@ -25035,36 +25035,36 @@ public final class TideChart {
        * flag indicating this graph is a debug breakpoint
        * </pre>
        *
-       * <code>bool debugging = 17;</code>
+       * <code>bool isDebugging = 17;</code>
        */
-      public Builder clearDebugging() {
+      public Builder clearIsDebugging() {
         
-        debugging_ = false;
+        isDebugging_ = false;
         onChanged();
         return this;
       }
 
-      private boolean paused_ ;
+      private boolean isPaused_ ;
       /**
        * <pre>
        * flag indicating this graph is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public boolean getPaused() {
-        return paused_;
+      public boolean getIsPaused() {
+        return isPaused_;
       }
       /**
        * <pre>
        * flag indicating this graph is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder setPaused(boolean value) {
+      public Builder setIsPaused(boolean value) {
         
-        paused_ = value;
+        isPaused_ = value;
         onChanged();
         return this;
       }
@@ -25073,36 +25073,36 @@ public final class TideChart {
        * flag indicating this graph is paused (messages are queued)
        * </pre>
        *
-       * <code>bool paused = 18;</code>
+       * <code>bool isPaused = 18;</code>
        */
-      public Builder clearPaused() {
+      public Builder clearIsPaused() {
         
-        paused_ = false;
+        isPaused_ = false;
         onChanged();
         return this;
       }
 
-      private boolean disabled_ ;
+      private boolean isDisabled_ ;
       /**
        * <pre>
        * flag indicating this graph is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public boolean getDisabled() {
-        return disabled_;
+      public boolean getIsDisabled() {
+        return isDisabled_;
       }
       /**
        * <pre>
        * flag indicating this graph is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder setDisabled(boolean value) {
+      public Builder setIsDisabled(boolean value) {
         
-        disabled_ = value;
+        isDisabled_ = value;
         onChanged();
         return this;
       }
@@ -25111,11 +25111,11 @@ public final class TideChart {
        * flag indicating this graph is disabled (messages are dropped)
        * </pre>
        *
-       * <code>bool disabled = 19;</code>
+       * <code>bool isDisabled = 19;</code>
        */
-      public Builder clearDisabled() {
+      public Builder clearIsDisabled() {
         
-        disabled_ = false;
+        isDisabled_ = false;
         onChanged();
         return this;
       }
@@ -44688,39 +44688,39 @@ public final class TideChart {
 
     /**
      * <pre>
-     * date file version was created
+     * date file version was modified
      * </pre>
      *
-     * <code>string createdDate = 5;</code>
+     * <code>string modifieddDate = 5;</code>
      */
-    java.lang.String getCreatedDate();
+    java.lang.String getModifieddDate();
     /**
      * <pre>
-     * date file version was created
+     * date file version was modified
      * </pre>
      *
-     * <code>string createdDate = 5;</code>
+     * <code>string modifieddDate = 5;</code>
      */
     com.google.protobuf.ByteString
-        getCreatedDateBytes();
+        getModifieddDateBytes();
 
     /**
      * <pre>
-     * user that created this file version 
+     * user that modified this file version 
      * </pre>
      *
-     * <code>string createdBy = 6;</code>
+     * <code>string modifiedBy = 6;</code>
      */
-    java.lang.String getCreatedBy();
+    java.lang.String getModifiedBy();
     /**
      * <pre>
-     * user that created this file version 
+     * user that modified this file version 
      * </pre>
      *
-     * <code>string createdBy = 6;</code>
+     * <code>string modifiedBy = 6;</code>
      */
     com.google.protobuf.ByteString
-        getCreatedByBytes();
+        getModifiedByBytes();
 
     /**
      * <pre>
@@ -44776,8 +44776,8 @@ public final class TideChart {
       id_ = "";
       name_ = "";
       path_ = "";
-      createdDate_ = "";
-      createdBy_ = "";
+      modifieddDate_ = "";
+      modifiedBy_ = "";
     }
 
     @java.lang.Override
@@ -44831,13 +44831,13 @@ public final class TideChart {
             case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdDate_ = s;
+              modifieddDate_ = s;
               break;
             }
             case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdBy_ = s;
+              modifiedBy_ = s;
               break;
             }
             case 58: {
@@ -45048,84 +45048,84 @@ public final class TideChart {
       }
     }
 
-    public static final int CREATEDDATE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object createdDate_;
+    public static final int MODIFIEDDDATE_FIELD_NUMBER = 5;
+    private volatile java.lang.Object modifieddDate_;
     /**
      * <pre>
-     * date file version was created
+     * date file version was modified
      * </pre>
      *
-     * <code>string createdDate = 5;</code>
+     * <code>string modifieddDate = 5;</code>
      */
-    public java.lang.String getCreatedDate() {
-      java.lang.Object ref = createdDate_;
+    public java.lang.String getModifieddDate() {
+      java.lang.Object ref = modifieddDate_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdDate_ = s;
+        modifieddDate_ = s;
         return s;
       }
     }
     /**
      * <pre>
-     * date file version was created
+     * date file version was modified
      * </pre>
      *
-     * <code>string createdDate = 5;</code>
+     * <code>string modifieddDate = 5;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedDateBytes() {
-      java.lang.Object ref = createdDate_;
+        getModifieddDateBytes() {
+      java.lang.Object ref = modifieddDate_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdDate_ = b;
+        modifieddDate_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int CREATEDBY_FIELD_NUMBER = 6;
-    private volatile java.lang.Object createdBy_;
+    public static final int MODIFIEDBY_FIELD_NUMBER = 6;
+    private volatile java.lang.Object modifiedBy_;
     /**
      * <pre>
-     * user that created this file version 
+     * user that modified this file version 
      * </pre>
      *
-     * <code>string createdBy = 6;</code>
+     * <code>string modifiedBy = 6;</code>
      */
-    public java.lang.String getCreatedBy() {
-      java.lang.Object ref = createdBy_;
+    public java.lang.String getModifiedBy() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdBy_ = s;
+        modifiedBy_ = s;
         return s;
       }
     }
     /**
      * <pre>
-     * user that created this file version 
+     * user that modified this file version 
      * </pre>
      *
-     * <code>string createdBy = 6;</code>
+     * <code>string modifiedBy = 6;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedByBytes() {
-      java.lang.Object ref = createdBy_;
+        getModifiedByBytes() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdBy_ = b;
+        modifiedBy_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -45257,11 +45257,11 @@ public final class TideChart {
       if (!getPathBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, path_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, createdDate_);
+      if (!getModifieddDateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, modifieddDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, modifiedBy_);
       }
       if (contentCase_ == 7) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, content_);
@@ -45287,11 +45287,11 @@ public final class TideChart {
       if (!getPathBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, path_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, createdDate_);
+      if (!getModifieddDateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, modifieddDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, modifiedBy_);
       }
       if (contentCase_ == 7) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, content_);
@@ -45320,10 +45320,10 @@ public final class TideChart {
           .equals(other.getName())) return false;
       if (!getPath()
           .equals(other.getPath())) return false;
-      if (!getCreatedDate()
-          .equals(other.getCreatedDate())) return false;
-      if (!getCreatedBy()
-          .equals(other.getCreatedBy())) return false;
+      if (!getModifieddDate()
+          .equals(other.getModifieddDate())) return false;
+      if (!getModifiedBy()
+          .equals(other.getModifiedBy())) return false;
       if (!getContentCase().equals(other.getContentCase())) return false;
       switch (contentCase_) {
         case 7:
@@ -45354,10 +45354,10 @@ public final class TideChart {
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + PATH_FIELD_NUMBER;
       hash = (53 * hash) + getPath().hashCode();
-      hash = (37 * hash) + CREATEDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedDate().hashCode();
-      hash = (37 * hash) + CREATEDBY_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedBy().hashCode();
+      hash = (37 * hash) + MODIFIEDDDATE_FIELD_NUMBER;
+      hash = (53 * hash) + getModifieddDate().hashCode();
+      hash = (37 * hash) + MODIFIEDBY_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedBy().hashCode();
       switch (contentCase_) {
         case 7:
           hash = (37 * hash) + VERSION_FIELD_NUMBER;
@@ -45509,9 +45509,9 @@ public final class TideChart {
 
         path_ = "";
 
-        createdDate_ = "";
+        modifieddDate_ = "";
 
-        createdBy_ = "";
+        modifiedBy_ = "";
 
         contentCase_ = 0;
         content_ = null;
@@ -45544,8 +45544,8 @@ public final class TideChart {
         result.id_ = id_;
         result.name_ = name_;
         result.path_ = path_;
-        result.createdDate_ = createdDate_;
-        result.createdBy_ = createdBy_;
+        result.modifieddDate_ = modifieddDate_;
+        result.modifiedBy_ = modifiedBy_;
         if (contentCase_ == 7) {
           result.content_ = content_;
         }
@@ -45613,12 +45613,12 @@ public final class TideChart {
           path_ = other.path_;
           onChanged();
         }
-        if (!other.getCreatedDate().isEmpty()) {
-          createdDate_ = other.createdDate_;
+        if (!other.getModifieddDate().isEmpty()) {
+          modifieddDate_ = other.modifieddDate_;
           onChanged();
         }
-        if (!other.getCreatedBy().isEmpty()) {
-          createdBy_ = other.createdBy_;
+        if (!other.getModifiedBy().isEmpty()) {
+          modifiedBy_ = other.modifiedBy_;
           onChanged();
         }
         switch (other.getContentCase()) {
@@ -45949,21 +45949,21 @@ public final class TideChart {
         return this;
       }
 
-      private java.lang.Object createdDate_ = "";
+      private java.lang.Object modifieddDate_ = "";
       /**
        * <pre>
-       * date file version was created
+       * date file version was modified
        * </pre>
        *
-       * <code>string createdDate = 5;</code>
+       * <code>string modifieddDate = 5;</code>
        */
-      public java.lang.String getCreatedDate() {
-        java.lang.Object ref = createdDate_;
+      public java.lang.String getModifieddDate() {
+        java.lang.Object ref = modifieddDate_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdDate_ = s;
+          modifieddDate_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
@@ -45971,19 +45971,19 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * date file version was created
+       * date file version was modified
        * </pre>
        *
-       * <code>string createdDate = 5;</code>
+       * <code>string modifieddDate = 5;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedDateBytes() {
-        java.lang.Object ref = createdDate_;
+          getModifieddDateBytes() {
+        java.lang.Object ref = modifieddDate_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdDate_ = b;
+          modifieddDate_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
@@ -45991,68 +45991,68 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * date file version was created
+       * date file version was modified
        * </pre>
        *
-       * <code>string createdDate = 5;</code>
+       * <code>string modifieddDate = 5;</code>
        */
-      public Builder setCreatedDate(
+      public Builder setModifieddDate(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdDate_ = value;
+        modifieddDate_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * date file version was created
+       * date file version was modified
        * </pre>
        *
-       * <code>string createdDate = 5;</code>
+       * <code>string modifieddDate = 5;</code>
        */
-      public Builder clearCreatedDate() {
+      public Builder clearModifieddDate() {
         
-        createdDate_ = getDefaultInstance().getCreatedDate();
+        modifieddDate_ = getDefaultInstance().getModifieddDate();
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * date file version was created
+       * date file version was modified
        * </pre>
        *
-       * <code>string createdDate = 5;</code>
+       * <code>string modifieddDate = 5;</code>
        */
-      public Builder setCreatedDateBytes(
+      public Builder setModifieddDateBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdDate_ = value;
+        modifieddDate_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object createdBy_ = "";
+      private java.lang.Object modifiedBy_ = "";
       /**
        * <pre>
-       * user that created this file version 
+       * user that modified this file version 
        * </pre>
        *
-       * <code>string createdBy = 6;</code>
+       * <code>string modifiedBy = 6;</code>
        */
-      public java.lang.String getCreatedBy() {
-        java.lang.Object ref = createdBy_;
+      public java.lang.String getModifiedBy() {
+        java.lang.Object ref = modifiedBy_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdBy_ = s;
+          modifiedBy_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
@@ -46060,19 +46060,19 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * user that created this file version 
+       * user that modified this file version 
        * </pre>
        *
-       * <code>string createdBy = 6;</code>
+       * <code>string modifiedBy = 6;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedByBytes() {
-        java.lang.Object ref = createdBy_;
+          getModifiedByBytes() {
+        java.lang.Object ref = modifiedBy_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdBy_ = b;
+          modifiedBy_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
@@ -46080,49 +46080,49 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * user that created this file version 
+       * user that modified this file version 
        * </pre>
        *
-       * <code>string createdBy = 6;</code>
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedBy(
+      public Builder setModifiedBy(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * user that created this file version 
+       * user that modified this file version 
        * </pre>
        *
-       * <code>string createdBy = 6;</code>
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder clearCreatedBy() {
+      public Builder clearModifiedBy() {
         
-        createdBy_ = getDefaultInstance().getCreatedBy();
+        modifiedBy_ = getDefaultInstance().getModifiedBy();
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * user that created this file version 
+       * user that modified this file version 
        * </pre>
        *
-       * <code>string createdBy = 6;</code>
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedByBytes(
+      public Builder setModifiedByBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
@@ -73586,187 +73586,189 @@ public final class TideChart {
     java.lang.String[] descriptorData = {
       "\n\020tide_chart.proto\"a\n\021TideChartProperty\022" +
       "\014\n\004name\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n\005value\030\003 \001" +
-      "(\t\022!\n\005props\030\004 \003(\0132\022.TideChartProperty\"\265\002" +
+      "(\t\022!\n\005props\030\004 \003(\0132\022.TideChartProperty\"\271\002" +
       "\n\023TideChartCommentBox\022\n\n\002id\030\001 \001(\t\022\016\n\006reg" +
       "ion\030\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n" +
       "\005width\030\005 \001(\005\022\016\n\006height\030\006 \001(\005\022\016\n\004text\030\007 \001" +
       "(\tH\000\022\017\n\005image\030\010 \001(\014H\000\022\016\n\004icon\030\t \001(\tH\000\022\020\n" +
       "\010fontSize\030\n \001(\001\022\021\n\tfontStyle\030\013 \001(\t\022\021\n\tal" +
       "ignment\030\014 \003(\021\022\r\n\005color\030\r \001(\005\022\022\n\nbackgrou" +
-      "nd\030\016 \001(\005\022\016\n\006border\030\017 \003(\005\022\016\n\006raised\030\020 \001(\010" +
-      "\022\020\n\010reversed\030\021 \001(\010B\t\n\007content\"\342\001\n\017TideCh" +
-      "artWidget\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n\005t" +
-      "itle\030\003 \001(\t\022\016\n\006region\030\004 \001(\t\022\014\n\004posX\030\005 \001(\021" +
-      "\022\014\n\004posY\030\006 \001(\021\022\r\n\005width\030\007 \001(\005\022\016\n\006height\030" +
-      "\010 \001(\005\022\016\n\004link\030\t \001(\tH\000\022\016\n\004port\030\n \001(\tH\000\022\016\n" +
-      "\004node\030\013 \001(\tH\000\022!\n\005props\030\014 \003(\0132\022.TideChart" +
-      "PropertyB\010\n\006target\"\200\002\n\rTideChartPort\022\014\n\004" +
-      "type\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007ordinal\030\003 \001(" +
-      "\005\022\017\n\007default\030\004 \001(\010\022\020\n\010required\030\005 \001(\010\022\017\n\007" +
-      "allowed\030\006 \003(\t\022\014\n\004hint\030\007 \001(\t\022$\n\010constant\030" +
-      "\010 \001(\0132\022.TideChartProperty\022\017\n\007trigger\030\t \001" +
-      "(\t\022\016\n\006filter\030\n \001(\t\022\r\n\005event\030\013 \001(\t\022\014\n\004syn" +
-      "c\030\014 \001(\t\022\r\n\005block\030\r \001(\010\022\r\n\005queue\030\016 \001(\010\"\305\001" +
-      "\n\rTideChartLink\022\017\n\007outNode\030\001 \001(\t\022\017\n\007outP" +
-      "ort\030\002 \001(\t\022\016\n\006inNode\030\003 \001(\t\022\016\n\006inPort\030\004 \001(" +
-      "\t\022\r\n\005group\030\005 \001(\005\022\r\n\005delay\030\006 \001(\005\022\016\n\006filte" +
-      "r\030\007 \001(\t\022\017\n\007logging\030\020 \001(\010\022\021\n\tdebugging\030\021 " +
-      "\001(\010\022\016\n\006paused\030\022 \001(\010\022\020\n\010disabled\030\023 \001(\010\"w\n" +
-      "\rTideChartNote\022\n\n\002id\030\001 \001(\t\022\017\n\007replyTo\030\002 " +
-      "\001(\t\022\020\n\010changeTo\030\003 \001(\t\022\017\n\007content\030\004 \001(\t\022\021" +
-      "\n\tcreatedBy\030\005 \001(\t\022\023\n\013createdDate\030\006 \001(\t\"\357" +
-      "\002\n\rTideChartNode\022\014\n\004name\030\001 \001(\t\022\014\n\004type\030\002" +
-      " \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n\005titl" +
-      "e\030\005 \001(\t\022\014\n\004icon\030\006 \001(\t\022\017\n\007library\030\007 \001(\t\022\016" +
-      "\n\006method\030\010 \001(\t\022\r\n\005delay\030\t \001(\005\022\037\n\007inports" +
-      "\030\n \003(\0132\016.TideChartPort\022 \n\010outports\030\013 \003(\013" +
-      "2\016.TideChartPort\022!\n\005props\030\014 \003(\0132\022.TideCh" +
-      "artProperty\022\017\n\007logging\030\020 \001(\010\022\021\n\tdebuggin" +
-      "g\030\021 \001(\010\022\016\n\006paused\030\022 \001(\010\022\020\n\010disabled\030\023 \001(" +
-      "\010\022\035\n\005notes\030\024 \003(\0132\016.TideChartNote\022\016\n\006scri" +
-      "pt\030\025 \001(\t\"\363\001\n\017TideChartRegion\022\014\n\004name\030\001 \001" +
-      "(\t\022\r\n\005title\030\002 \001(\t\022\r\n\005nodes\030\003 \003(\t\022\r\n\005grou" +
-      "p\030\004 \001(\005\022\r\n\005scope\030\005 \001(\t\022!\n\005props\030\006 \003(\0132\022." +
-      "TideChartProperty\022\017\n\007logging\030\020 \001(\010\022\021\n\tde" +
-      "bugging\030\021 \001(\010\022\016\n\006paused\030\022 \001(\010\022\020\n\010disable" +
-      "d\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideChartNote\022\016" +
-      "\n\006script\030\025 \001(\t\"\320\003\n\016TideChartGraph\022\n\n\002id\030" +
-      "\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\r\n\005tit" +
-      "le\030\004 \001(\t\022\017\n\007version\030\005 \001(\t\022\016\n\006source\030\006 \001(" +
-      "\t\022\035\n\005nodes\030\007 \003(\0132\016.TideChartNode\022\035\n\005link" +
-      "s\030\010 \003(\0132\016.TideChartLink\022!\n\007regions\030\t \003(\013" +
-      "2\020.TideChartRegion\022&\n\010comments\030\n \003(\0132\024.T" +
-      "ideChartCommentBox\022!\n\007widgets\030\013 \003(\0132\020.Ti" +
-      "deChartWidget\022!\n\005props\030\014 \003(\0132\022.TideChart" +
-      "Property\022\"\n\007history\030\r \003(\0132\021.TideChartCom" +
-      "mand\022\017\n\007logging\030\020 \001(\010\022\021\n\tdebugging\030\021 \001(\010" +
-      "\022\016\n\006paused\030\022 \001(\010\022\020\n\010disabled\030\023 \001(\010\022\035\n\005no" +
+      "nd\030\016 \001(\005\022\016\n\006border\030\017 \003(\005\022\020\n\010isRaised\030\020 \001" +
+      "(\010\022\022\n\nisReversed\030\021 \001(\010B\t\n\007content\"\342\001\n\017Ti" +
+      "deChartWidget\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022" +
+      "\r\n\005title\030\003 \001(\t\022\016\n\006region\030\004 \001(\t\022\014\n\004posX\030\005" +
+      " \001(\021\022\014\n\004posY\030\006 \001(\021\022\r\n\005width\030\007 \001(\005\022\016\n\006hei" +
+      "ght\030\010 \001(\005\022\016\n\004link\030\t \001(\tH\000\022\016\n\004port\030\n \001(\tH" +
+      "\000\022\016\n\004node\030\013 \001(\tH\000\022!\n\005props\030\014 \003(\0132\022.TideC" +
+      "hartPropertyB\010\n\006target\"\215\002\n\rTideChartPort" +
+      "\022\014\n\004type\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007ordinal\030" +
+      "\003 \001(\005\022\021\n\tisDefault\030\004 \001(\010\022\022\n\nisRequired\030\005" +
+      " \001(\010\022\017\n\007allowed\030\006 \003(\t\022\014\n\004hint\030\007 \001(\t\022$\n\010c" +
+      "onstant\030\010 \001(\0132\022.TideChartProperty\022\017\n\007tri" +
+      "gger\030\t \001(\t\022\016\n\006filter\030\n \001(\t\022\r\n\005event\030\013 \001(" +
+      "\t\022\014\n\004sync\030\014 \001(\t\022\022\n\nisBlocking\030\r \001(\010\022\021\n\ti" +
+      "sQueuing\030\016 \001(\010\"\315\001\n\rTideChartLink\022\017\n\007outN" +
+      "ode\030\001 \001(\t\022\017\n\007outPort\030\002 \001(\t\022\016\n\006inNode\030\003 \001" +
+      "(\t\022\016\n\006inPort\030\004 \001(\t\022\r\n\005group\030\005 \001(\005\022\r\n\005del" +
+      "ay\030\006 \001(\005\022\016\n\006filter\030\007 \001(\t\022\021\n\tisLogging\030\020 " +
+      "\001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001" +
+      "(\010\022\022\n\nisDisabled\030\023 \001(\010\"w\n\rTideChartNote\022" +
+      "\n\n\002id\030\001 \001(\t\022\017\n\007replyTo\030\002 \001(\t\022\020\n\010changeTo" +
+      "\030\003 \001(\t\022\017\n\007content\030\004 \001(\t\022\021\n\tcreatedBy\030\005 \001" +
+      "(\t\022\023\n\013createdDate\030\006 \001(\t\"\367\002\n\rTideChartNod" +
+      "e\022\014\n\004name\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\014\n\004posX\030\003 " +
+      "\001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n\005title\030\005 \001(\t\022\014\n\004icon" +
+      "\030\006 \001(\t\022\017\n\007library\030\007 \001(\t\022\016\n\006method\030\010 \001(\t\022" +
+      "\r\n\005delay\030\t \001(\005\022\037\n\007inports\030\n \003(\0132\016.TideCh" +
+      "artPort\022 \n\010outports\030\013 \003(\0132\016.TideChartPor" +
+      "t\022!\n\005props\030\014 \003(\0132\022.TideChartProperty\022\021\n\t" +
+      "isLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010" +
+      "isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005no" +
       "tes\030\024 \003(\0132\016.TideChartNote\022\016\n\006script\030\025 \001(" +
-      "\t\"\205\004\n\020TideChartCommand\022\017\n\007version\030\001 \001(\t\022" +
-      "\016\n\006target\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132\026.TideCha" +
-      "rtGroupCommandH\000\022%\n\004move\030\004 \001(\0132\025.TideCha" +
-      "rtMoveCommandH\000\022.\n\007comment\030\005 \001(\0132\033.TideC" +
-      "hartCommentBoxCommandH\000\022)\n\006widget\030\006 \001(\0132" +
-      "\027.TideChartWidgetCommandH\000\022%\n\004port\030\007 \001(\013" +
-      "2\025.TideChartPortCommandH\000\022%\n\004link\030\010 \001(\0132" +
-      "\025.TideChartLinkCommandH\000\022%\n\004node\030\t \001(\0132\025" +
-      ".TideChartNodeCommandH\000\022)\n\006region\030\n \001(\0132" +
-      "\027.TideChartRegionCommandH\000\022\'\n\005graph\030\013 \001(" +
-      "\0132\026.TideChartGraphCommandH\000\022*\n\005props\030\014 \001" +
-      "(\0132\031.TideChartPropertyCommandH\000\022%\n\004note\030" +
-      "\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007comman" +
-      "d\"<\n\025TideChartGroupCommand\022#\n\010commands\030\001" +
-      " \003(\0132\021.TideChartCommand\"h\n\024TideChartMove" +
-      "Command\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022" +
-      "\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toP" +
-      "osY\030\005 \001(\021\"\233\001\n\032TideChartCommentBoxCommand" +
-      "\022)\n\013fromComment\030\001 \001(\0132\024.TideChartComment" +
-      "Box\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartCommen" +
-      "tBox\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpd" +
-      "ateType\"\215\001\n\026TideChartWidgetCommand\022$\n\nfr" +
-      "omWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n\010toWi" +
-      "dget\030\002 \001(\0132\020.TideChartWidget\022)\n\004type\030\003 \001" +
-      "(\0162\033.TideChartCommandUpdateType\"\203\001\n\024Tide" +
-      "ChartPortCommand\022 \n\010fromPort\030\001 \001(\0132\016.Tid" +
-      "eChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideChartPo" +
-      "rt\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpdat" +
-      "eType\"\203\001\n\024TideChartLinkCommand\022 \n\010fromLi" +
-      "nk\030\001 \001(\0132\016.TideChartLink\022\036\n\006toLink\030\002 \001(\013" +
-      "2\016.TideChartLink\022)\n\004type\030\003 \001(\0162\033.TideCha" +
-      "rtCommandUpdateType\"\203\001\n\024TideChartNodeCom" +
-      "mand\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036" +
-      "\n\006toNode\030\002 \001(\0132\016.TideChartNode\022)\n\004type\030\003" +
-      " \001(\0162\033.TideChartCommandUpdateType\"\215\001\n\026Ti" +
-      "deChartRegionCommand\022$\n\nfromRegion\030\001 \001(\013" +
-      "2\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(\0132\020.T" +
-      "ideChartRegion\022)\n\004type\030\003 \001(\0162\033.TideChart" +
-      "CommandUpdateType\"\210\001\n\025TideChartGraphComm" +
-      "and\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartGraph\022" +
-      " \n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022)\n\004typ" +
-      "e\030\003 \001(\0162\033.TideChartCommandUpdateType\"\340\001\n" +
-      "\030TideChartPropertyCommand\022%\n\tfromProps\030\001" +
-      " \003(\0132\022.TideChartProperty\022#\n\007toProps\030\002 \003(" +
-      "\0132\022.TideChartProperty\022)\n\004type\030\003 \001(\0162\033.Ti" +
-      "deChartCommandUpdateType\022\016\n\004node\030\005 \001(\tH\000" +
-      "\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n\005" +
-      "graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024TideChartNot" +
-      "eCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote\022" +
-      ")\n\004type\030\002 \001(\0162\033.TideChartCommandUpdateTy" +
-      "pe\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017\n\005" +
-      "graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017TideChartMet" +
-      "hod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007extends" +
-      "\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(\0132" +
-      "\016.TideChartPort\022 \n\010outports\030\006 \003(\0132\016.Tide" +
-      "ChartPort\022\035\n\005props\030\007 \003(\0132\016.TideChartPort" +
-      "\"\221\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
-      "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013createdDate\030\005 \001(" +
-      "\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007version\030\007 \001(\tH\000\022" +
-      "\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020TideCha" +
-      "rtLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005t" +
-      "itle\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branch\030\005 \001" +
-      "(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.TideCh" +
-      "artSource\022!\n\007methods\030\010 \003(\0132\020.TideChartMe" +
-      "thod\"\350\001\n\rTideChartSite\022\r\n\005index\030\001 \001(\003\022\035\n" +
-      "\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004path\030\003 \001" +
-      "(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022\r\n\005sc" +
-      "ope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030\010 \001(\t" +
-      "\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004port\030\013" +
-      " \001(\t\022!\n\005local\030\014 \003(\0132\022.TideChartProperty\"" +
-      "\211\002\n\020TideChartMessage\022\r\n\005index\030\001 \001(\003\022\021\n\tt" +
-      "imestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010previo" +
-      "us\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030\010 \001(\003" +
-      "\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tholdToken\030\n \001(\003\022" +
-      "\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022\017\n\007ve" +
-      "rsion\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022\024\n\nms" +
-      "gContent\030\017 \001(\014H\000B\t\n\007content\"k\n\026TideChart" +
-      "ContextChange\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestam" +
-      "p\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004 \003(\0132\022.T" +
-      "ideChartProperty\"\270\001\n\021TideChartLogEntry\022\r" +
-      "\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006sour" +
-      "ce\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.TideChartLogLe" +
-      "vel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001(\t\022\014\n\004re" +
-      "fs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.TideChartPrope" +
-      "rty\"\355\002\n\020TideChartContext\022\n\n\002id\030\001 \001(\t\022\r\n\005" +
-      "index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017\n\007versio" +
-      "n\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideChartSite\022#" +
-      "\n\010messages\030\006 \003(\0132\021.TideChartMessage\022\"\n\006g" +
-      "lobal\030\007 \003(\0132\022.TideChartProperty\022\021\n\tstart" +
-      "Time\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016\n\006active" +
-      "\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 \003(\003\022" +
-      "\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027.Tide" +
-      "ChartContextChange\022\037\n\003log\030\017 \003(\0132\022.TideCh" +
-      "artLogEntry\"\245\002\n\rTideChartData\022\017\n\007version" +
-      "\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r" +
-      "\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010com" +
-      "mitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commi" +
-      "tNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideChart" +
-      "Graph\022!\n\005props\030\n \003(\0132\022.TideChartProperty" +
-      "\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007libra" +
-      "ry\030\014 \003(\0132\021.TideChartLibrary\"\240\001\n\017TideChar" +
-      "tHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t" +
-      "\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommi" +
-      "tDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitD" +
-      "esc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rTideC" +
-      "hartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004pa" +
-      "th\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDate" +
-      "\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(" +
-      "\0132\016.TideChartData\022\"\n\007working\030\010 \003(\0132\021.Tid" +
-      "eChartCommand\022!\n\006remote\030\t \003(\0132\021.TideChar" +
-      "tCommand\022\037\n\007history\030\n \003(\0132\016.TideChartDat" +
-      "a\022\"\n\007context\030\013 \003(\0132\021.TideChartContext\"w\n" +
-      "\023TideChartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
+      "\t\"\373\001\n\017TideChartRegion\022\014\n\004name\030\001 \001(\t\022\r\n\005t" +
+      "itle\030\002 \001(\t\022\r\n\005nodes\030\003 \003(\t\022\r\n\005group\030\004 \001(\005" +
+      "\022\r\n\005scope\030\005 \001(\t\022!\n\005props\030\006 \003(\0132\022.TideCha" +
+      "rtProperty\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebug" +
+      "ging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabl" +
+      "ed\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideChartNote\022" +
+      "\016\n\006script\030\025 \001(\t\"\330\003\n\016TideChartGraph\022\n\n\002id" +
+      "\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\r\n\005ti" +
+      "tle\030\004 \001(\t\022\017\n\007version\030\005 \001(\t\022\016\n\006source\030\006 \001" +
+      "(\t\022\035\n\005nodes\030\007 \003(\0132\016.TideChartNode\022\035\n\005lin" +
+      "ks\030\010 \003(\0132\016.TideChartLink\022!\n\007regions\030\t \003(" +
+      "\0132\020.TideChartRegion\022&\n\010comments\030\n \003(\0132\024." +
+      "TideChartCommentBox\022!\n\007widgets\030\013 \003(\0132\020.T" +
+      "ideChartWidget\022!\n\005props\030\014 \003(\0132\022.TideChar" +
+      "tProperty\022\"\n\007history\030\r \003(\0132\021.TideChartCo" +
+      "mmand\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030" +
+      "\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 " +
+      "\001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideChartNote\022\016\n\006sc" +
+      "ript\030\025 \001(\t\"\205\004\n\020TideChartCommand\022\017\n\007versi" +
+      "on\030\001 \001(\t\022\016\n\006target\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132" +
+      "\026.TideChartGroupCommandH\000\022%\n\004move\030\004 \001(\0132" +
+      "\025.TideChartMoveCommandH\000\022.\n\007comment\030\005 \001(" +
+      "\0132\033.TideChartCommentBoxCommandH\000\022)\n\006widg" +
+      "et\030\006 \001(\0132\027.TideChartWidgetCommandH\000\022%\n\004p" +
+      "ort\030\007 \001(\0132\025.TideChartPortCommandH\000\022%\n\004li" +
+      "nk\030\010 \001(\0132\025.TideChartLinkCommandH\000\022%\n\004nod" +
+      "e\030\t \001(\0132\025.TideChartNodeCommandH\000\022)\n\006regi" +
+      "on\030\n \001(\0132\027.TideChartRegionCommandH\000\022\'\n\005g" +
+      "raph\030\013 \001(\0132\026.TideChartGraphCommandH\000\022*\n\005" +
+      "props\030\014 \001(\0132\031.TideChartPropertyCommandH\000" +
+      "\022%\n\004note\030\r \001(\0132\025.TideChartNoteCommandH\000B" +
+      "\t\n\007command\"<\n\025TideChartGroupCommand\022#\n\010c" +
+      "ommands\030\001 \003(\0132\021.TideChartCommand\"h\n\024Tide" +
+      "ChartMoveCommand\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPo" +
+      "sX\030\002 \001(\021\022\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001" +
+      "(\021\022\016\n\006toPosY\030\005 \001(\021\"\233\001\n\032TideChartCommentB" +
+      "oxCommand\022)\n\013fromComment\030\001 \001(\0132\024.TideCha" +
+      "rtCommentBox\022\'\n\ttoComment\030\002 \001(\0132\024.TideCh" +
+      "artCommentBox\022)\n\004type\030\003 \001(\0162\033.TideChartC" +
+      "ommandUpdateType\"\215\001\n\026TideChartWidgetComm" +
+      "and\022$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidge" +
+      "t\022\"\n\010toWidget\030\002 \001(\0132\020.TideChartWidget\022)\n" +
+      "\004type\030\003 \001(\0162\033.TideChartCommandUpdateType" +
+      "\"\203\001\n\024TideChartPortCommand\022 \n\010fromPort\030\001 " +
+      "\001(\0132\016.TideChartPort\022\036\n\006toPort\030\002 \001(\0132\016.Ti" +
+      "deChartPort\022)\n\004type\030\003 \001(\0162\033.TideChartCom" +
+      "mandUpdateType\"\203\001\n\024TideChartLinkCommand\022" +
+      " \n\010fromLink\030\001 \001(\0132\016.TideChartLink\022\036\n\006toL" +
+      "ink\030\002 \001(\0132\016.TideChartLink\022)\n\004type\030\003 \001(\0162" +
+      "\033.TideChartCommandUpdateType\"\203\001\n\024TideCha" +
+      "rtNodeCommand\022 \n\010fromNode\030\001 \001(\0132\016.TideCh" +
+      "artNode\022\036\n\006toNode\030\002 \001(\0132\016.TideChartNode\022" +
+      ")\n\004type\030\003 \001(\0162\033.TideChartCommandUpdateTy" +
+      "pe\"\215\001\n\026TideChartRegionCommand\022$\n\nfromReg" +
+      "ion\030\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030" +
+      "\002 \001(\0132\020.TideChartRegion\022)\n\004type\030\003 \001(\0162\033." +
+      "TideChartCommandUpdateType\"\210\001\n\025TideChart" +
+      "GraphCommand\022\"\n\tfromGraph\030\001 \001(\0132\017.TideCh" +
+      "artGraph\022 \n\007toGraph\030\002 \001(\0132\017.TideChartGra" +
+      "ph\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpdat" +
+      "eType\"\340\001\n\030TideChartPropertyCommand\022%\n\tfr" +
+      "omProps\030\001 \003(\0132\022.TideChartProperty\022#\n\007toP" +
+      "rops\030\002 \003(\0132\022.TideChartProperty\022)\n\004type\030\003" +
+      " \001(\0162\033.TideChartCommandUpdateType\022\016\n\004nod" +
+      "e\030\005 \001(\tH\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 " +
+      "\001(\tH\000\022\017\n\005graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024Tid" +
+      "eChartNoteCommand\022\035\n\005notes\030\001 \003(\0132\016.TideC" +
+      "hartNote\022)\n\004type\030\002 \001(\0162\033.TideChartComman" +
+      "dUpdateType\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 " +
+      "\001(\tH\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017Tid" +
+      "eChartMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017" +
+      "\n\007extends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inpor" +
+      "ts\030\005 \003(\0132\016.TideChartPort\022 \n\010outports\030\006 \003" +
+      "(\0132\016.TideChartPort\022\035\n\005props\030\007 \003(\0132\016.Tide" +
+      "ChartPort\"\224\001\n\017TideChartSource\022\n\n\002id\030\001 \001(" +
+      "\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\025\n\rmodifie" +
+      "ddDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021\n\007vers" +
+      "ion\030\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content" +
+      "\"\255\001\n\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004nam" +
+      "e\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016" +
+      "\n\006branch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 " +
+      "\003(\0132\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020" +
+      ".TideChartMethod\"\350\001\n\rTideChartSite\022\r\n\005in" +
+      "dex\030\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite" +
+      "\022\014\n\004path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event" +
+      "\030\005 \001(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n" +
+      "\005graph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001" +
+      "(\t\022\014\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideCh" +
+      "artProperty\"\211\002\n\020TideChartMessage\022\r\n\005inde" +
+      "x\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001" +
+      "(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006" +
+      "target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\thold" +
+      "Token\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type" +
+      "\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016" +
+      " \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"" +
+      "k\n\026TideChartContextChange\022\r\n\005index\030\001 \001(\003" +
+      "\022\021\n\ttimestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005pro" +
+      "ps\030\004 \003(\0132\022.TideChartProperty\"\270\001\n\021TideCha" +
+      "rtLogEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002" +
+      " \001(\003\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.Ti" +
+      "deChartLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message" +
+      "\030\006 \001(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.Ti" +
+      "deChartProperty\"\355\002\n\020TideChartContext\022\n\n\002" +
+      "id\030\001 \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001" +
+      "(\003\022\017\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.Tid" +
+      "eChartSite\022#\n\010messages\030\006 \003(\0132\021.TideChart" +
+      "Message\022\"\n\006global\030\007 \003(\0132\022.TideChartPrope" +
+      "rty\022\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001" +
+      "(\003\022\016\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006p" +
+      "aused\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030" +
+      "\016 \003(\0132\027.TideChartContextChange\022\037\n\003log\030\017 " +
+      "\003(\0132\022.TideChartLogEntry\"\245\002\n\rTideChartDat" +
+      "a\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006so" +
+      "urce\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030" +
+      "\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 " +
+      "\001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\013" +
+      "2\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.TideC" +
+      "hartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideChartN" +
+      "ote\022\"\n\007library\030\014 \003(\0132\021.TideChartLibrary\"" +
+      "\240\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006" +
+      "branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 " +
+      "\001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(" +
+      "\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001" +
+      "(\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
       "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014" +
-      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227" +
-      "\001\n\024TideChartFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004n" +
-      "ame\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022" +
-      "\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(" +
-      "\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartData*=\n\032Tide" +
-      "ChartCommandUpdateType\022\007\n\003add\020\000\022\n\n\006remov" +
-      "e\020\001\022\n\n\006update\020\002*\235\001\n\021TideChartLogLevel\022\010\n" +
-      "\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texcepti" +
-      "on\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006" +
-      "\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005t" +
-      "race\020\n\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
+      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035" +
+      "\n\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working" +
+      "\030\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(" +
+      "\0132\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016." +
+      "TideChartData\022\"\n\007context\030\013 \003(\0132\021.TideCha" +
+      "rtContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001" +
+      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006orig" +
+      "in\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifi" +
+      "edBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002i" +
+      "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006o" +
+      "rigin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmod" +
+      "ifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChart" +
+      "Data*=\n\032TideChartCommandUpdateType\022\007\n\003ad" +
+      "d\020\000\022\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChar" +
+      "tLogLevel\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020" +
+      "\002\022\r\n\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022" +
+      "\013\n\007message\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007ve" +
+      "rbose\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChart" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -73783,7 +73785,7 @@ public final class TideChart {
     internal_static_TideChartCommentBox_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartCommentBox_descriptor,
-        new java.lang.String[] { "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "Raised", "Reversed", "Content", });
+        new java.lang.String[] { "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "IsRaised", "IsReversed", "Content", });
     internal_static_TideChartWidget_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_TideChartWidget_fieldAccessorTable = new
@@ -73795,13 +73797,13 @@ public final class TideChart {
     internal_static_TideChartPort_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartPort_descriptor,
-        new java.lang.String[] { "Type", "Name", "Ordinal", "Default", "Required", "Allowed", "Hint", "Constant", "Trigger", "Filter", "Event", "Sync", "Block", "Queue", });
+        new java.lang.String[] { "Type", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Constant", "Trigger", "Filter", "Event", "Sync", "IsBlocking", "IsQueuing", });
     internal_static_TideChartLink_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_TideChartLink_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartLink_descriptor,
-        new java.lang.String[] { "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Filter", "Logging", "Debugging", "Paused", "Disabled", });
+        new java.lang.String[] { "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Filter", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", });
     internal_static_TideChartNote_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_TideChartNote_fieldAccessorTable = new
@@ -73813,19 +73815,19 @@ public final class TideChart {
     internal_static_TideChartNode_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartNode_descriptor,
-        new java.lang.String[] { "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "Logging", "Debugging", "Paused", "Disabled", "Notes", "Script", });
+        new java.lang.String[] { "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", });
     internal_static_TideChartRegion_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_TideChartRegion_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartRegion_descriptor,
-        new java.lang.String[] { "Name", "Title", "Nodes", "Group", "Scope", "Props", "Logging", "Debugging", "Paused", "Disabled", "Notes", "Script", });
+        new java.lang.String[] { "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", });
     internal_static_TideChartGraph_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_TideChartGraph_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartGraph_descriptor,
-        new java.lang.String[] { "Id", "Type", "Name", "Title", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "Logging", "Debugging", "Paused", "Disabled", "Notes", "Script", });
+        new java.lang.String[] { "Id", "Type", "Name", "Title", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", });
     internal_static_TideChartCommand_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_TideChartCommand_fieldAccessorTable = new
@@ -73909,7 +73911,7 @@ public final class TideChart {
     internal_static_TideChartSource_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartSource_descriptor,
-        new java.lang.String[] { "Id", "Name", "Path", "CreatedDate", "CreatedBy", "Version", "Script", "Content", });
+        new java.lang.String[] { "Id", "Name", "Path", "ModifieddDate", "ModifiedBy", "Version", "Script", "Content", });
     internal_static_TideChartLibrary_descriptor =
       getDescriptor().getMessageTypes().get(23);
     internal_static_TideChartLibrary_fieldAccessorTable = new
