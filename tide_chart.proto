@@ -1,4 +1,5 @@
 syntax = "proto3";
+option java_outer_classname = "TideChart";
 
 message TideChartProperty {                     // a recursive data type that provides configuration values for graphs, regions and nodes
     string name = 1;        
@@ -373,7 +374,7 @@ message TideChartMessage {
 //
 //////////////////////////////////////////////////////////
 
-message TideChart {
+message TideChartData {
     string version = 1;         // unique id for this chart version
     string branch = 2;          // branch this version is associated with
     string source = 3;          // previous version
@@ -421,10 +422,10 @@ message TideChartFile {
     string createdDate = 5;
     string createdBy = 6;
     
-    TideChart chart = 7;                      // the last committed version  
+    TideChartData chart = 7;                      // the last committed version  
     repeated TideChartCommand working = 8;    // uncommitted local changes
     repeated TideChartCommand remote = 9;     // unmerged changes committed remotely
-    repeated TideChart history = 10;          // previous version history
+    repeated TideChartData history = 10;          // previous version history
 }
 
 // Read only the file header information
@@ -448,6 +449,6 @@ message TideChartFileCurrent {
     string createdDate = 5;
     string createdBy = 6;
     
-    TideChart chart = 7;                    // the last committed version  
+    TideChartData chart = 7;                    // the last committed version  
 }
 
