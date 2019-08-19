@@ -92,9 +92,9 @@
 | posY | [sint32](#sint32) |  | Y position of the comment box |
 | width | [int32](#int32) |  | width of comment box - 0 indicates autosize to fit content |
 | height | [int32](#int32) |  | height of comment box - 0 indicates autosize to fit content |
-| text | [string](#string) |  |  |
-| image | [bytes](#bytes) |  |  |
-| icon | [string](#string) |  |  |
+| text | [string](#string) |  | text content for the comment |
+| image | [bytes](#bytes) |  | image to use for the comment |
+| icon | [string](#string) |  | icon name to use for the comment |
 | fontSize | [double](#double) |  | size of font to draw text |
 | fontStyle | [string](#string) |  | font style to use: Light, Regular, Bold, LightItalic, RegularItalic, BoldItalic |
 | alignment | [sint32](#sint32) |  | alignment of text within box (start (left):-1, middle:0, end (right):1) |
@@ -112,14 +112,14 @@
 <a name=".TideChartCommentBoxCommand"></a>
 
 ### TideChartCommentBoxCommand
-add, remove or update a comment box on the graph
+
 
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| fromComment | [TideChartPort](#TideChartPort) |  |  |
-| toComment | [TideChartPort](#TideChartPort) |  |  |
-| type | [string](#string) |  |  |
+| fromComment | [TideChartCommentBox](#TideChartCommentBox) |  | previous version of the comment |
+| toComment | [TideChartCommentBox](#TideChartCommentBox) |  | new version of the comment |
+| type | [string](#string) |  | type of update: add, update or remove |
 
 
 
@@ -138,11 +138,11 @@ add, remove or update a comment box on the graph
 | branch | [string](#string) |  | branch this version is associated with |
 | source | [string](#string) |  | previous version |
 | merge | [string](#string) |  | last version id on branch merging into |
-| commitDate | [string](#string) |  |  |
-| commitBy | [string](#string) |  |  |
+| commitDate | [string](#string) |  | date version of the chart was committed |
+| commitBy | [string](#string) |  | user that committed latest version |
 | commitDesc | [string](#string) |  | short commit comment |
 | commitNotes | [string](#string) |  | longer commit notes |
-| graphs | [TideChartGraph](#TideChartGraph) | repeated | graphs contained in the chart |
+| sheets | [TideChartGraph](#TideChartGraph) | repeated | graphs contained in the chart |
 | props | [TideChartProperty](#TideChartProperty) | repeated | configuration properties for the entire chart |
 | notes | [TideChartNote](#TideChartNote) | repeated | note discussion for the entire chart |
 | library | [TideChartLibrary](#TideChartLibrary) | repeated | source of node templates that can be added to graphs |
@@ -165,12 +165,12 @@ add, remove or update a comment box on the graph
 | name | [string](#string) |  | name for the file (virtual file system) |
 | path | [string](#string) |  | path for the file (virtual file system) |
 | origin | [string](#string) |  | shared repository for tracking remote changes |
-| createdDate | [string](#string) |  |  |
-| createdBy | [string](#string) |  |  |
-| chart | [TideChartData](#TideChartData) |  | the last committed version |
+| modifiedDate | [string](#string) |  | date the file was last modified |
+| modifiedBy | [string](#string) |  | user that last modified the file |
+| chart | [TideChartData](#TideChartData) |  | the last committed version of the chart |
 | working | [TideChartCommand](#TideChartCommand) | repeated | uncommitted local changes |
 | remote | [TideChartCommand](#TideChartCommand) | repeated | unmerged changes committed remotely |
-| history | [TideChartData](#TideChartData) | repeated | previous version history |
+| history | [TideChartData](#TideChartData) | repeated | previous saved versions of the chart |
 
 
 
@@ -189,9 +189,9 @@ Read only the current version
 | name | [string](#string) |  | name for the file (virtual file system) |
 | path | [string](#string) |  | path for the file (virtual file system) |
 | origin | [string](#string) |  | shared repository for tracking remote changes |
-| createdDate | [string](#string) |  |  |
-| createdBy | [string](#string) |  |  |
-| chart | [TideChartData](#TideChartData) |  | the last committed version |
+| modifiedDate | [string](#string) |  | date the file was last modified |
+| modifiedBy | [string](#string) |  | user that last modified the file |
+| chart | [TideChartData](#TideChartData) |  | the last committed version of the chart |
 
 
 
@@ -210,8 +210,8 @@ Read only the file header information
 | name | [string](#string) |  | name for the file (virtual file system) |
 | path | [string](#string) |  | path for the file (virtual file system) |
 | origin | [string](#string) |  | shared repository for tracking remote changes |
-| createdDate | [string](#string) |  |  |
-| createdBy | [string](#string) |  |  |
+| modifiedDate | [string](#string) |  | date the file was last modified |
+| modifiedBy | [string](#string) |  | user that last modified the file |
 
 
 
@@ -254,14 +254,14 @@ Read only the file header information
 <a name=".TideChartGraphCommand"></a>
 
 ### TideChartGraphCommand
-adds or removes a graph from the chart
+
 
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| fromGraph | [TideChartGraph](#TideChartGraph) |  |  |
-| toGraph | [TideChartGraph](#TideChartGraph) |  |  |
-| type | [string](#string) |  |  |
+| fromGraph | [TideChartGraph](#TideChartGraph) |  | previous versino of the graph |
+| toGraph | [TideChartGraph](#TideChartGraph) |  | new version of the graph |
+| type | [string](#string) |  | type of update: add, update or remove |
 
 
 
@@ -295,8 +295,8 @@ Read only the commit headers
 | branch | [string](#string) |  | branch this version is associated with |
 | source | [string](#string) |  | previous version |
 | merge | [string](#string) |  | last version id on branch merging into |
-| commitDate | [string](#string) |  |  |
-| commitBy | [string](#string) |  |  |
+| commitDate | [string](#string) |  | date version of the chart was committed |
+| commitBy | [string](#string) |  | user that committed latest version |
 | commitDesc | [string](#string) |  | short commit comment |
 | commitNotes | [string](#string) |  | longer commit notes |
 
@@ -355,14 +355,14 @@ Read only the commit headers
 <a name=".TideChartLinkCommand"></a>
 
 ### TideChartLinkCommand
-add, remove or update a link on the graph
+
 
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| fromLink | [TideChartLink](#TideChartLink) |  |  |
-| toLink | [TideChartLink](#TideChartLink) |  |  |
-| type | [string](#string) |  |  |
+| fromLink | [TideChartLink](#TideChartLink) |  | previous version of the link |
+| toLink | [TideChartLink](#TideChartLink) |  | new version of the link |
+| type | [string](#string) |  | type of update: add, update or remove |
 
 
 
@@ -410,7 +410,7 @@ add, remove or update a link on the graph
 | script | [string](#string) |  | custom script that implements the node action for this method |
 | inports | [TideChartPort](#TideChartPort) | repeated | definition of inports for this method |
 | outports | [TideChartPort](#TideChartPort) | repeated | definition of outports for this methid |
-| props | [TideChartPort](#TideChartPort) | repeated | definition of property values used by the method defined like a port |
+| props | [TideChartPort](#TideChartPort) | repeated | definition of property values used by the method (uses port definition format) |
 
 
 
@@ -476,9 +476,9 @@ add, remove or update a link on the graph
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| fromNode | [TideChartNode](#TideChartNode) |  | add, remove or update a node on the graph |
-| toNode | [TideChartNode](#TideChartNode) |  |  |
-| type | [string](#string) |  |  |
+| fromNode | [TideChartNode](#TideChartNode) |  | previous version of the graph node |
+| toNode | [TideChartNode](#TideChartNode) |  | new version of the graph node |
+| type | [string](#string) |  | type of update: add, update or remove |
 
 
 
@@ -515,9 +515,9 @@ add, remove or update a link on the graph
 | ----- | ---- | ----- | ----------- |
 | notes | [TideChartNote](#TideChartNote) | repeated | a set of notes being added or removed |
 | type | [string](#string) |  | type of update: add, remove |
-| node | [string](#string) |  | node reference (graph-id:node-name) |
-| region | [string](#string) |  | region reference (graph-id:region-name) |
-| graph | [string](#string) |  | graph reference (graph-id) |
+| node | [string](#string) |  | node reference (node-name) |
+| region | [string](#string) |  | region reference (region-name) |
+| graph | [string](#string) |  | graph reference (graph-name) |
 
 
 
@@ -555,14 +555,14 @@ add, remove or update a link on the graph
 <a name=".TideChartPortCommand"></a>
 
 ### TideChartPortCommand
-add, remove or update a port on the graph
+
 
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| fromPort | [TideChartPort](#TideChartPort) |  |  |
-| toPort | [TideChartPort](#TideChartPort) |  |  |
-| type | [string](#string) |  |  |
+| fromPort | [TideChartPort](#TideChartPort) |  | previons version of the port |
+| toPort | [TideChartPort](#TideChartPort) |  | new version of the port |
+| type | [string](#string) |  | type of update: add, update or remove |
 
 
 
@@ -577,10 +577,10 @@ a recursive data type that provides configuration values for graphs, regions and
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| name | [string](#string) |  |  |
-| type | [string](#string) |  |  |
-| value | [string](#string) |  |  |
-| props | [TideChartProperty](#TideChartProperty) | repeated | create a heirarchy of properties (repeate names to make collections) |
+| name | [string](#string) |  | property field name |
+| type | [string](#string) |  | property value type |
+| value | [string](#string) |  | property value as a string |
+| props | [TideChartProperty](#TideChartProperty) | repeated | create a heirarchy of properties (repeated names form a collection) |
 
 
 
@@ -637,14 +637,14 @@ a recursive data type that provides configuration values for graphs, regions and
 <a name=".TideChartRegionCommand"></a>
 
 ### TideChartRegionCommand
-adds, remove or update a region on the graph
+
 
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| fromRegion | [TideChartRegion](#TideChartRegion) |  |  |
-| toRegion | [TideChartRegion](#TideChartRegion) |  |  |
-| type | [string](#string) |  |  |
+| fromRegion | [TideChartRegion](#TideChartRegion) |  | previous version of the region |
+| toRegion | [TideChartRegion](#TideChartRegion) |  | new version of the region |
+| type | [string](#string) |  | type of update: add, update or remove |
 
 
 
@@ -661,12 +661,12 @@ adds, remove or update a region on the graph
 | ----- | ---- | ----- | ----------- |
 | index | [int64](#int64) |  | An index that uniquely identifies all message producers and consumers sites and sequences with messages |
 | stack | [TideChartSite](#TideChartSite) | repeated | used to trace origin when calling into behavior nodes |
-| path | [string](#string) |  | Path in global state storage |
+| path | [string](#string) |  | Path in global state storage for events from state changes |
 | trigger | [string](#string) |  | Source that produced an event (when the source isn&#39;t a node) |
 | event | [string](#string) |  | Name of event (used for event sources and targets) |
 | scope | [string](#string) | repeated | Used for scoped event sites |
 | filter | [string](#string) |  | A filter that can conditionally pass messages thru the site (filtered messages are dropped) |
-| graph | [string](#string) |  | graph-id - graph scripts and graph nodes can generate messages |
+| graph | [string](#string) |  | graph-name - graph scripts and graph nodes can generate messages |
 | region | [string](#string) |  | region-name - region scripts can generate messages |
 | node | [string](#string) |  | node-name - node actions and node ports an generate messages |
 | port | [string](#string) |  | port-name - ports can generate and receive messages |
@@ -687,8 +687,8 @@ adds, remove or update a region on the graph
 | id | [string](#string) |  | unique id for this source file |
 | name | [string](#string) |  | name of the source file |
 | path | [string](#string) |  | relative path of the source file |
-| createdDate | [string](#string) |  |  |
-| createdBy | [string](#string) |  |  |
+| createdDate | [string](#string) |  | date file version was created |
+| createdBy | [string](#string) |  | user that created this file version |
 | version | [string](#string) |  | reference to the exact version of the file |
 | script | [string](#string) |  | contents of the file |
 
@@ -713,9 +713,9 @@ adds, remove or update a region on the graph
 | posY | [sint32](#sint32) |  | Y position of the comment box |
 | width | [int32](#int32) |  | width of comment box - 0 indicates autosize to fit content |
 | height | [int32](#int32) |  | height of comment box - 0 indicates autosize to fit content |
-| link | [string](#string) |  |  |
-| port | [string](#string) |  |  |
-| node | [string](#string) |  |  |
+| link | [string](#string) |  | link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;) |
+| port | [string](#string) |  | port widget is associated with (&lt;node&gt;:&lt;port&gt;) |
+| node | [string](#string) |  | name of node widget is associated with |
 | props | [TideChartProperty](#TideChartProperty) | repeated | widgets can have configuration paremeters |
 
 
@@ -726,14 +726,14 @@ adds, remove or update a region on the graph
 <a name=".TideChartWidgetCommand"></a>
 
 ### TideChartWidgetCommand
-add, remove or update a widget on the graph
+
 
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| fromWidget | [TideChartPort](#TideChartPort) |  |  |
-| toWidget | [TideChartPort](#TideChartPort) |  |  |
-| type | [string](#string) |  |  |
+| fromWidget | [TideChartWidget](#TideChartWidget) |  | previous version of the widget |
+| toWidget | [TideChartWidget](#TideChartWidget) |  | new version of the widget |
+| type | [string](#string) |  | type of update: add, update or remove |
 
 
 

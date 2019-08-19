@@ -221,8 +221,8 @@ const TideChartMoveCommand$json = const {
 const TideChartCommentBoxCommand$json = const {
   '1': 'TideChartCommentBoxCommand',
   '2': const [
-    const {'1': 'fromComment', '3': 1, '4': 1, '5': 11, '6': '.TideChartPort', '10': 'fromComment'},
-    const {'1': 'toComment', '3': 2, '4': 1, '5': 11, '6': '.TideChartPort', '10': 'toComment'},
+    const {'1': 'fromComment', '3': 1, '4': 1, '5': 11, '6': '.TideChartCommentBox', '10': 'fromComment'},
+    const {'1': 'toComment', '3': 2, '4': 1, '5': 11, '6': '.TideChartCommentBox', '10': 'toComment'},
     const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
   ],
 };
@@ -230,8 +230,8 @@ const TideChartCommentBoxCommand$json = const {
 const TideChartWidgetCommand$json = const {
   '1': 'TideChartWidgetCommand',
   '2': const [
-    const {'1': 'fromWidget', '3': 1, '4': 1, '5': 11, '6': '.TideChartPort', '10': 'fromWidget'},
-    const {'1': 'toWidget', '3': 2, '4': 1, '5': 11, '6': '.TideChartPort', '10': 'toWidget'},
+    const {'1': 'fromWidget', '3': 1, '4': 1, '5': 11, '6': '.TideChartWidget', '10': 'fromWidget'},
+    const {'1': 'toWidget', '3': 2, '4': 1, '5': 11, '6': '.TideChartWidget', '10': 'toWidget'},
     const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
   ],
 };
@@ -404,7 +404,7 @@ const TideChartData$json = const {
     const {'1': 'commitBy', '3': 6, '4': 1, '5': 9, '10': 'commitBy'},
     const {'1': 'commitDesc', '3': 7, '4': 1, '5': 9, '10': 'commitDesc'},
     const {'1': 'commitNotes', '3': 8, '4': 1, '5': 9, '10': 'commitNotes'},
-    const {'1': 'graphs', '3': 9, '4': 3, '5': 11, '6': '.TideChartGraph', '10': 'graphs'},
+    const {'1': 'sheets', '3': 9, '4': 3, '5': 11, '6': '.TideChartGraph', '10': 'sheets'},
     const {'1': 'props', '3': 10, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
     const {'1': 'notes', '3': 11, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
     const {'1': 'library', '3': 12, '4': 3, '5': 11, '6': '.TideChartLibrary', '10': 'library'},
@@ -433,8 +433,8 @@ const TideChartFile$json = const {
     const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
     const {'1': 'origin', '3': 4, '4': 1, '5': 9, '10': 'origin'},
-    const {'1': 'createdDate', '3': 5, '4': 1, '5': 9, '10': 'createdDate'},
-    const {'1': 'createdBy', '3': 6, '4': 1, '5': 9, '10': 'createdBy'},
+    const {'1': 'modifiedDate', '3': 5, '4': 1, '5': 9, '10': 'modifiedDate'},
+    const {'1': 'modifiedBy', '3': 6, '4': 1, '5': 9, '10': 'modifiedBy'},
     const {'1': 'chart', '3': 7, '4': 1, '5': 11, '6': '.TideChartData', '10': 'chart'},
     const {'1': 'working', '3': 8, '4': 3, '5': 11, '6': '.TideChartCommand', '10': 'working'},
     const {'1': 'remote', '3': 9, '4': 3, '5': 11, '6': '.TideChartCommand', '10': 'remote'},
@@ -449,8 +449,8 @@ const TideChartFileHeader$json = const {
     const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
     const {'1': 'origin', '3': 4, '4': 1, '5': 9, '10': 'origin'},
-    const {'1': 'createdDate', '3': 5, '4': 1, '5': 9, '10': 'createdDate'},
-    const {'1': 'createdBy', '3': 6, '4': 1, '5': 9, '10': 'createdBy'},
+    const {'1': 'modifiedDate', '3': 5, '4': 1, '5': 9, '10': 'modifiedDate'},
+    const {'1': 'modifiedBy', '3': 6, '4': 1, '5': 9, '10': 'modifiedBy'},
   ],
 };
 
@@ -461,8 +461,8 @@ const TideChartFileCurrent$json = const {
     const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
     const {'1': 'origin', '3': 4, '4': 1, '5': 9, '10': 'origin'},
-    const {'1': 'createdDate', '3': 5, '4': 1, '5': 9, '10': 'createdDate'},
-    const {'1': 'createdBy', '3': 6, '4': 1, '5': 9, '10': 'createdBy'},
+    const {'1': 'modifiedDate', '3': 5, '4': 1, '5': 9, '10': 'modifiedDate'},
+    const {'1': 'modifiedBy', '3': 6, '4': 1, '5': 9, '10': 'modifiedBy'},
     const {'1': 'chart', '3': 7, '4': 1, '5': 11, '6': '.TideChartData', '10': 'chart'},
   ],
 };

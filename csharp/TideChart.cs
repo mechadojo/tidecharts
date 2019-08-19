@@ -88,76 +88,77 @@ public static partial class TideChartReflection {
           "b21tYW5kIjgKFVRpZGVDaGFydEdyb3VwQ29tbWFuZBIfCgRjbWRzGAEgAygL",
           "MhEuVGlkZUNoYXJ0Q29tbWFuZCJoChRUaWRlQ2hhcnRNb3ZlQ29tbWFuZBIM",
           "CgRub2RlGAEgASgJEhAKCGZyb21Qb3NYGAIgASgREhAKCGZyb21Qb3NZGAMg",
-          "ASgREg4KBnRvUG9zWBgEIAEoERIOCgZ0b1Bvc1kYBSABKBEicgoaVGlkZUNo",
-          "YXJ0Q29tbWVudEJveENvbW1hbmQSIwoLZnJvbUNvbW1lbnQYASABKAsyDi5U",
-          "aWRlQ2hhcnRQb3J0EiEKCXRvQ29tbWVudBgCIAEoCzIOLlRpZGVDaGFydFBv",
-          "cnQSDAoEdHlwZRgDIAEoCSJsChZUaWRlQ2hhcnRXaWRnZXRDb21tYW5kEiIK",
-          "CmZyb21XaWRnZXQYASABKAsyDi5UaWRlQ2hhcnRQb3J0EiAKCHRvV2lkZ2V0",
-          "GAIgASgLMg4uVGlkZUNoYXJ0UG9ydBIMCgR0eXBlGAMgASgJImYKFFRpZGVD",
-          "aGFydFBvcnRDb21tYW5kEiAKCGZyb21Qb3J0GAEgASgLMg4uVGlkZUNoYXJ0",
-          "UG9ydBIeCgZ0b1BvcnQYAiABKAsyDi5UaWRlQ2hhcnRQb3J0EgwKBHR5cGUY",
-          "AyABKAkiZgoUVGlkZUNoYXJ0TGlua0NvbW1hbmQSIAoIZnJvbUxpbmsYASAB",
-          "KAsyDi5UaWRlQ2hhcnRMaW5rEh4KBnRvTGluaxgCIAEoCzIOLlRpZGVDaGFy",
-          "dExpbmsSDAoEdHlwZRgDIAEoCSJmChRUaWRlQ2hhcnROb2RlQ29tbWFuZBIg",
-          "Cghmcm9tTm9kZRgBIAEoCzIOLlRpZGVDaGFydE5vZGUSHgoGdG9Ob2RlGAIg",
-          "ASgLMg4uVGlkZUNoYXJ0Tm9kZRIMCgR0eXBlGAMgASgJInAKFlRpZGVDaGFy",
-          "dFJlZ2lvbkNvbW1hbmQSJAoKZnJvbVJlZ2lvbhgBIAEoCzIQLlRpZGVDaGFy",
-          "dFJlZ2lvbhIiCgh0b1JlZ2lvbhgCIAEoCzIQLlRpZGVDaGFydFJlZ2lvbhIM",
-          "CgR0eXBlGAMgASgJImsKFVRpZGVDaGFydEdyYXBoQ29tbWFuZBIiCglmcm9t",
-          "R3JhcGgYASABKAsyDy5UaWRlQ2hhcnRHcmFwaBIgCgd0b0dyYXBoGAIgASgL",
-          "Mg8uVGlkZUNoYXJ0R3JhcGgSDAoEdHlwZRgDIAEoCSLDAQoYVGlkZUNoYXJ0",
-          "UHJvcGVydHlDb21tYW5kEiUKCWZyb21Qcm9wcxgBIAMoCzISLlRpZGVDaGFy",
-          "dFByb3BlcnR5EiMKB3RvUHJvcHMYAiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0",
-          "eRIMCgR0eXBlGAMgASgJEg4KBG5vZGUYBSABKAlIABIQCgZyZWdpb24YBiAB",
-          "KAlIABIQCgZ3aWRnZXQYByABKAlIABIPCgVncmFwaBgIIAEoCUgAQggKBnRh",
-          "cmdldCKAAQoUVGlkZUNoYXJ0Tm90ZUNvbW1hbmQSHQoFbm90ZXMYASADKAsy",
-          "Di5UaWRlQ2hhcnROb3RlEgwKBHR5cGUYAiABKAkSDgoEbm9kZRgDIAEoCUgA",
-          "EhAKBnJlZ2lvbhgEIAEoCUgAEg8KBWdyYXBoGAUgASgJSABCCAoGdGFyZ2V0",
-          "Iq4BCg9UaWRlQ2hhcnRNZXRob2QSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEo",
-          "CRIPCgdleHRlbmRzGAMgASgJEg4KBnNjcmlwdBgEIAEoCRIfCgdpbnBvcnRz",
-          "GAUgAygLMg4uVGlkZUNoYXJ0UG9ydBIgCghvdXRwb3J0cxgGIAMoCzIOLlRp",
-          "ZGVDaGFydFBvcnQSHQoFcHJvcHMYByADKAsyDi5UaWRlQ2hhcnRQb3J0IpEB",
-          "Cg9UaWRlQ2hhcnRTb3VyY2USCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIM",
-          "CgRwYXRoGAMgASgJEhMKC2NyZWF0ZWREYXRlGAUgASgJEhEKCWNyZWF0ZWRC",
-          "eRgGIAEoCRIRCgd2ZXJzaW9uGAcgASgJSAASEAoGc2NyaXB0GAggASgJSABC",
-          "CQoHY29udGVudCKtAQoQVGlkZUNoYXJ0TGlicmFyeRIKCgJpZBgBIAEoCRIM",
-          "CgRuYW1lGAIgASgJEg0KBXRpdGxlGAMgASgJEg4KBm9yaWdpbhgEIAEoCRIO",
-          "CgZicmFuY2gYBSABKAkSDAoEcGF0aBgGIAEoCRIfCgVmaWxlcxgHIAMoCzIQ",
-          "LlRpZGVDaGFydFNvdXJjZRIhCgdtZXRob2RzGAggAygLMhAuVGlkZUNoYXJ0",
-          "TWV0aG9kIsUBCg1UaWRlQ2hhcnRTaXRlEg0KBWluZGV4GAEgASgDEh0KBXN0",
-          "YWNrGAIgAygLMg4uVGlkZUNoYXJ0U2l0ZRIMCgRwYXRoGAMgASgJEg8KB3Ry",
-          "aWdnZXIYBCABKAkSDQoFZXZlbnQYBSABKAkSDQoFc2NvcGUYBiADKAkSDgoG",
-          "ZmlsdGVyGAcgASgJEg0KBWdyYXBoGAggASgJEg4KBnJlZ2lvbhgJIAEoCRIM",
-          "CgRub2RlGAogASgJEgwKBHBvcnQYCyABKAkiiQIKEFRpZGVDaGFydE1lc3Nh",
-          "Z2USDQoFaW5kZXgYASABKAMSEQoJdGltZXN0YW1wGAIgASgDEg4KBm9yaWdp",
-          "bhgEIAEoAxIQCghwcmV2aW91cxgFIAEoAxIOCgZzb3VyY2UYByABKAMSDgoG",
-          "dGFyZ2V0GAggASgDEhIKCmRlbGF5VW50aWwYCSABKAMSEQoJaG9sZFRva2Vu",
-          "GAogASgDEhMKC2NhbmNlbFRva2VuGAsgASgDEgwKBHR5cGUYDCABKAkSDwoH",
-          "dmVyc2lvbhgNIAEoBRIVCgtqc29uQ29udGVudBgOIAEoCUgAEhQKCm1zZ0Nv",
-          "bnRlbnQYDyABKAxIAEIJCgdjb250ZW50IskCCg1UaWRlQ2hhcnREYXRhEg8K",
-          "B3ZlcnNpb24YASABKAkSDgoGYnJhbmNoGAIgASgJEg4KBnNvdXJjZRgDIAEo",
-          "CRINCgVtZXJnZRgEIAEoCRISCgpjb21taXREYXRlGAUgASgJEhAKCGNvbW1p",
-          "dEJ5GAYgASgJEhIKCmNvbW1pdERlc2MYByABKAkSEwoLY29tbWl0Tm90ZXMY",
-          "CCABKAkSHwoGZ3JhcGhzGAkgAygLMg8uVGlkZUNoYXJ0R3JhcGgSIQoFcHJv",
-          "cHMYCiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIdCgVub3RlcxgLIAMoCzIO",
-          "LlRpZGVDaGFydE5vdGUSIgoHbGlicmFyeRgMIAMoCzIRLlRpZGVDaGFydExp",
-          "YnJhcnkSIgoGZ2xvYmFsGA0gAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkioAEK",
-          "D1RpZGVDaGFydEhlYWRlchIPCgd2ZXJzaW9uGAEgASgJEg4KBmJyYW5jaBgC",
-          "IAEoCRIOCgZzb3VyY2UYAyABKAkSDQoFbWVyZ2UYBCABKAkSEgoKY29tbWl0",
-          "RGF0ZRgFIAEoCRIQCghjb21taXRCeRgGIAEoCRISCgpjb21taXREZXNjGAcg",
-          "ASgJEhMKC2NvbW1pdE5vdGVzGAggASgJIvYBCg1UaWRlQ2hhcnRGaWxlEgoK",
-          "AmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEcGF0aBgDIAEoCRIOCgZvcmln",
-          "aW4YBCABKAkSEwoLY3JlYXRlZERhdGUYBSABKAkSEQoJY3JlYXRlZEJ5GAYg",
-          "ASgJEh0KBWNoYXJ0GAcgASgLMg4uVGlkZUNoYXJ0RGF0YRIiCgd3b3JraW5n",
-          "GAggAygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIhCgZyZW1vdGUYCSADKAsyES5U",
-          "aWRlQ2hhcnRDb21tYW5kEh8KB2hpc3RvcnkYCiADKAsyDi5UaWRlQ2hhcnRE",
-          "YXRhInUKE1RpZGVDaGFydEZpbGVIZWFkZXISCgoCaWQYASABKAkSDAoEbmFt",
-          "ZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4KBm9yaWdpbhgEIAEoCRITCgtjcmVh",
-          "dGVkRGF0ZRgFIAEoCRIRCgljcmVhdGVkQnkYBiABKAkilQEKFFRpZGVDaGFy",
-          "dEZpbGVDdXJyZW50EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEcGF0",
-          "aBgDIAEoCRIOCgZvcmlnaW4YBCABKAkSEwoLY3JlYXRlZERhdGUYBSABKAkS",
-          "EQoJY3JlYXRlZEJ5GAYgASgJEh0KBWNoYXJ0GAcgASgLMg4uVGlkZUNoYXJ0",
-          "RGF0YUILQglUaWRlQ2hhcnRiBnByb3RvMw=="));
+          "ASgREg4KBnRvUG9zWBgEIAEoERIOCgZ0b1Bvc1kYBSABKBEifgoaVGlkZUNo",
+          "YXJ0Q29tbWVudEJveENvbW1hbmQSKQoLZnJvbUNvbW1lbnQYASABKAsyFC5U",
+          "aWRlQ2hhcnRDb21tZW50Qm94EicKCXRvQ29tbWVudBgCIAEoCzIULlRpZGVD",
+          "aGFydENvbW1lbnRCb3gSDAoEdHlwZRgDIAEoCSJwChZUaWRlQ2hhcnRXaWRn",
+          "ZXRDb21tYW5kEiQKCmZyb21XaWRnZXQYASABKAsyEC5UaWRlQ2hhcnRXaWRn",
+          "ZXQSIgoIdG9XaWRnZXQYAiABKAsyEC5UaWRlQ2hhcnRXaWRnZXQSDAoEdHlw",
+          "ZRgDIAEoCSJmChRUaWRlQ2hhcnRQb3J0Q29tbWFuZBIgCghmcm9tUG9ydBgB",
+          "IAEoCzIOLlRpZGVDaGFydFBvcnQSHgoGdG9Qb3J0GAIgASgLMg4uVGlkZUNo",
+          "YXJ0UG9ydBIMCgR0eXBlGAMgASgJImYKFFRpZGVDaGFydExpbmtDb21tYW5k",
+          "EiAKCGZyb21MaW5rGAEgASgLMg4uVGlkZUNoYXJ0TGluaxIeCgZ0b0xpbmsY",
+          "AiABKAsyDi5UaWRlQ2hhcnRMaW5rEgwKBHR5cGUYAyABKAkiZgoUVGlkZUNo",
+          "YXJ0Tm9kZUNvbW1hbmQSIAoIZnJvbU5vZGUYASABKAsyDi5UaWRlQ2hhcnRO",
+          "b2RlEh4KBnRvTm9kZRgCIAEoCzIOLlRpZGVDaGFydE5vZGUSDAoEdHlwZRgD",
+          "IAEoCSJwChZUaWRlQ2hhcnRSZWdpb25Db21tYW5kEiQKCmZyb21SZWdpb24Y",
+          "ASABKAsyEC5UaWRlQ2hhcnRSZWdpb24SIgoIdG9SZWdpb24YAiABKAsyEC5U",
+          "aWRlQ2hhcnRSZWdpb24SDAoEdHlwZRgDIAEoCSJrChVUaWRlQ2hhcnRHcmFw",
+          "aENvbW1hbmQSIgoJZnJvbUdyYXBoGAEgASgLMg8uVGlkZUNoYXJ0R3JhcGgS",
+          "IAoHdG9HcmFwaBgCIAEoCzIPLlRpZGVDaGFydEdyYXBoEgwKBHR5cGUYAyAB",
+          "KAkiwwEKGFRpZGVDaGFydFByb3BlcnR5Q29tbWFuZBIlCglmcm9tUHJvcHMY",
+          "ASADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIjCgd0b1Byb3BzGAIgAygLMhIu",
+          "VGlkZUNoYXJ0UHJvcGVydHkSDAoEdHlwZRgDIAEoCRIOCgRub2RlGAUgASgJ",
+          "SAASEAoGcmVnaW9uGAYgASgJSAASEAoGd2lkZ2V0GAcgASgJSAASDwoFZ3Jh",
+          "cGgYCCABKAlIAEIICgZ0YXJnZXQigAEKFFRpZGVDaGFydE5vdGVDb21tYW5k",
+          "Eh0KBW5vdGVzGAEgAygLMg4uVGlkZUNoYXJ0Tm90ZRIMCgR0eXBlGAIgASgJ",
+          "Eg4KBG5vZGUYAyABKAlIABIQCgZyZWdpb24YBCABKAlIABIPCgVncmFwaBgF",
+          "IAEoCUgAQggKBnRhcmdldCKuAQoPVGlkZUNoYXJ0TWV0aG9kEgoKAmlkGAEg",
+          "ASgJEgwKBG5hbWUYAiABKAkSDwoHZXh0ZW5kcxgDIAEoCRIOCgZzY3JpcHQY",
+          "BCABKAkSHwoHaW5wb3J0cxgFIAMoCzIOLlRpZGVDaGFydFBvcnQSIAoIb3V0",
+          "cG9ydHMYBiADKAsyDi5UaWRlQ2hhcnRQb3J0Eh0KBXByb3BzGAcgAygLMg4u",
+          "VGlkZUNoYXJ0UG9ydCKRAQoPVGlkZUNoYXJ0U291cmNlEgoKAmlkGAEgASgJ",
+          "EgwKBG5hbWUYAiABKAkSDAoEcGF0aBgDIAEoCRITCgtjcmVhdGVkRGF0ZRgF",
+          "IAEoCRIRCgljcmVhdGVkQnkYBiABKAkSEQoHdmVyc2lvbhgHIAEoCUgAEhAK",
+          "BnNjcmlwdBgIIAEoCUgAQgkKB2NvbnRlbnQirQEKEFRpZGVDaGFydExpYnJh",
+          "cnkSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRINCgV0aXRsZRgDIAEoCRIO",
+          "CgZvcmlnaW4YBCABKAkSDgoGYnJhbmNoGAUgASgJEgwKBHBhdGgYBiABKAkS",
+          "HwoFZmlsZXMYByADKAsyEC5UaWRlQ2hhcnRTb3VyY2USIQoHbWV0aG9kcxgI",
+          "IAMoCzIQLlRpZGVDaGFydE1ldGhvZCLFAQoNVGlkZUNoYXJ0U2l0ZRINCgVp",
+          "bmRleBgBIAEoAxIdCgVzdGFjaxgCIAMoCzIOLlRpZGVDaGFydFNpdGUSDAoE",
+          "cGF0aBgDIAEoCRIPCgd0cmlnZ2VyGAQgASgJEg0KBWV2ZW50GAUgASgJEg0K",
+          "BXNjb3BlGAYgAygJEg4KBmZpbHRlchgHIAEoCRINCgVncmFwaBgIIAEoCRIO",
+          "CgZyZWdpb24YCSABKAkSDAoEbm9kZRgKIAEoCRIMCgRwb3J0GAsgASgJIokC",
+          "ChBUaWRlQ2hhcnRNZXNzYWdlEg0KBWluZGV4GAEgASgDEhEKCXRpbWVzdGFt",
+          "cBgCIAEoAxIOCgZvcmlnaW4YBCABKAMSEAoIcHJldmlvdXMYBSABKAMSDgoG",
+          "c291cmNlGAcgASgDEg4KBnRhcmdldBgIIAEoAxISCgpkZWxheVVudGlsGAkg",
+          "ASgDEhEKCWhvbGRUb2tlbhgKIAEoAxITCgtjYW5jZWxUb2tlbhgLIAEoAxIM",
+          "CgR0eXBlGAwgASgJEg8KB3ZlcnNpb24YDSABKAUSFQoLanNvbkNvbnRlbnQY",
+          "DiABKAlIABIUCgptc2dDb250ZW50GA8gASgMSABCCQoHY29udGVudCLJAgoN",
+          "VGlkZUNoYXJ0RGF0YRIPCgd2ZXJzaW9uGAEgASgJEg4KBmJyYW5jaBgCIAEo",
+          "CRIOCgZzb3VyY2UYAyABKAkSDQoFbWVyZ2UYBCABKAkSEgoKY29tbWl0RGF0",
+          "ZRgFIAEoCRIQCghjb21taXRCeRgGIAEoCRISCgpjb21taXREZXNjGAcgASgJ",
+          "EhMKC2NvbW1pdE5vdGVzGAggASgJEh8KBnNoZWV0cxgJIAMoCzIPLlRpZGVD",
+          "aGFydEdyYXBoEiEKBXByb3BzGAogAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkS",
+          "HQoFbm90ZXMYCyADKAsyDi5UaWRlQ2hhcnROb3RlEiIKB2xpYnJhcnkYDCAD",
+          "KAsyES5UaWRlQ2hhcnRMaWJyYXJ5EiIKBmdsb2JhbBgNIAMoCzISLlRpZGVD",
+          "aGFydFByb3BlcnR5IqABCg9UaWRlQ2hhcnRIZWFkZXISDwoHdmVyc2lvbhgB",
+          "IAEoCRIOCgZicmFuY2gYAiABKAkSDgoGc291cmNlGAMgASgJEg0KBW1lcmdl",
+          "GAQgASgJEhIKCmNvbW1pdERhdGUYBSABKAkSEAoIY29tbWl0QnkYBiABKAkS",
+          "EgoKY29tbWl0RGVzYxgHIAEoCRITCgtjb21taXROb3RlcxgIIAEoCSL4AQoN",
+          "VGlkZUNoYXJ0RmlsZRIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEgwKBHBh",
+          "dGgYAyABKAkSDgoGb3JpZ2luGAQgASgJEhQKDG1vZGlmaWVkRGF0ZRgFIAEo",
+          "CRISCgptb2RpZmllZEJ5GAYgASgJEh0KBWNoYXJ0GAcgASgLMg4uVGlkZUNo",
+          "YXJ0RGF0YRIiCgd3b3JraW5nGAggAygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIh",
+          "CgZyZW1vdGUYCSADKAsyES5UaWRlQ2hhcnRDb21tYW5kEh8KB2hpc3RvcnkY",
+          "CiADKAsyDi5UaWRlQ2hhcnREYXRhIncKE1RpZGVDaGFydEZpbGVIZWFkZXIS",
+          "CgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4KBm9y",
+          "aWdpbhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSABKAkSEgoKbW9kaWZpZWRC",
+          "eRgGIAEoCSKXAQoUVGlkZUNoYXJ0RmlsZUN1cnJlbnQSCgoCaWQYASABKAkS",
+          "DAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4KBm9yaWdpbhgEIAEoCRIU",
+          "Cgxtb2RpZmllZERhdGUYBSABKAkSEgoKbW9kaWZpZWRCeRgGIAEoCRIdCgVj",
+          "aGFydBgHIAEoCzIOLlRpZGVDaGFydERhdGFCC0IJVGlkZUNoYXJ0YgZwcm90",
+          "bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -187,11 +188,11 @@ public static partial class TideChartReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLibrary), global::TideChartLibrary.Parser, new[]{ "Id", "Name", "Title", "Origin", "Branch", "Path", "Files", "Methods" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSite), global::TideChartSite.Parser, new[]{ "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMessage), global::TideChartMessage.Parser, new[]{ "Index", "Timestamp", "Origin", "Previous", "Source", "Target", "DelayUntil", "HoldToken", "CancelToken", "Type", "Version", "JsonContent", "MsgContent" }, new[]{ "Content" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Graphs", "Props", "Notes", "Library", "Global" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Global" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartHeader), global::TideChartHeader.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFile), global::TideChartFile.Parser, new[]{ "Id", "Name", "Path", "Origin", "CreatedDate", "CreatedBy", "Chart", "Working", "Remote", "History" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileHeader), global::TideChartFileHeader.Parser, new[]{ "Id", "Name", "Path", "Origin", "CreatedDate", "CreatedBy" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileCurrent), global::TideChartFileCurrent.Parser, new[]{ "Id", "Name", "Path", "Origin", "CreatedDate", "CreatedBy", "Chart" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFile), global::TideChartFile.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileHeader), global::TideChartFileHeader.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileCurrent), global::TideChartFileCurrent.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart" }, null, null, null, null)
         }));
   }
   #endregion
@@ -241,6 +242,9 @@ public sealed partial class TideChartProperty : pb::IMessage<TideChartProperty> 
   /// <summary>Field number for the "name" field.</summary>
   public const int NameFieldNumber = 1;
   private string name_ = "";
+  /// <summary>
+  /// property field name
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Name {
     get { return name_; }
@@ -252,6 +256,9 @@ public sealed partial class TideChartProperty : pb::IMessage<TideChartProperty> 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 2;
   private string type_ = "";
+  /// <summary>
+  /// property value type
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -263,6 +270,9 @@ public sealed partial class TideChartProperty : pb::IMessage<TideChartProperty> 
   /// <summary>Field number for the "value" field.</summary>
   public const int ValueFieldNumber = 3;
   private string value_ = "";
+  /// <summary>
+  /// property value as a string
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Value {
     get { return value_; }
@@ -277,7 +287,7 @@ public sealed partial class TideChartProperty : pb::IMessage<TideChartProperty> 
       = pb::FieldCodec.ForMessage(34, global::TideChartProperty.Parser);
   private readonly pbc::RepeatedField<global::TideChartProperty> props_ = new pbc::RepeatedField<global::TideChartProperty>();
   /// <summary>
-  /// create a heirarchy of properties (repeate names to make collections)
+  /// create a heirarchy of properties (repeated names form a collection)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::TideChartProperty> Props {
@@ -554,6 +564,9 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
 
   /// <summary>Field number for the "text" field.</summary>
   public const int TextFieldNumber = 7;
+  /// <summary>
+  /// text content for the comment
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Text {
     get { return contentCase_ == ContentOneofCase.Text ? (string) content_ : ""; }
@@ -565,6 +578,9 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
 
   /// <summary>Field number for the "image" field.</summary>
   public const int ImageFieldNumber = 8;
+  /// <summary>
+  /// image to use for the comment
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pb::ByteString Image {
     get { return contentCase_ == ContentOneofCase.Image ? (pb::ByteString) content_ : pb::ByteString.Empty; }
@@ -576,6 +592,9 @@ public sealed partial class TideChartCommentBox : pb::IMessage<TideChartCommentB
 
   /// <summary>Field number for the "icon" field.</summary>
   public const int IconFieldNumber = 9;
+  /// <summary>
+  /// icon name to use for the comment
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Icon {
     get { return contentCase_ == ContentOneofCase.Icon ? (string) content_ : ""; }
@@ -1230,6 +1249,9 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
 
   /// <summary>Field number for the "link" field.</summary>
   public const int LinkFieldNumber = 9;
+  /// <summary>
+  /// link widget is associated with (&lt;out-node>:&lt;out-port>->&lt;in-node>:&lt;in-port>)
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Link {
     get { return targetCase_ == TargetOneofCase.Link ? (string) target_ : ""; }
@@ -1241,6 +1263,9 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
 
   /// <summary>Field number for the "port" field.</summary>
   public const int PortFieldNumber = 10;
+  /// <summary>
+  /// port widget is associated with (&lt;node>:&lt;port>)
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Port {
     get { return targetCase_ == TargetOneofCase.Port ? (string) target_ : ""; }
@@ -1252,6 +1277,9 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
 
   /// <summary>Field number for the "node" field.</summary>
   public const int NodeFieldNumber = 11;
+  /// <summary>
+  /// name of node widget is associated with
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Node {
     get { return targetCase_ == TargetOneofCase.Node ? (string) target_ : ""; }
@@ -5513,9 +5541,6 @@ public sealed partial class TideChartMoveCommand : pb::IMessage<TideChartMoveCom
 
 }
 
-/// <summary>
-/// add, remove or update a comment box on the graph
-/// </summary>
 public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartCommentBoxCommand> {
   private static readonly pb::MessageParser<TideChartCommentBoxCommand> _parser = new pb::MessageParser<TideChartCommentBoxCommand>(() => new TideChartCommentBoxCommand());
   private pb::UnknownFieldSet _unknownFields;
@@ -5554,9 +5579,12 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
 
   /// <summary>Field number for the "fromComment" field.</summary>
   public const int FromCommentFieldNumber = 1;
-  private global::TideChartPort fromComment_;
+  private global::TideChartCommentBox fromComment_;
+  /// <summary>
+  /// previous version of the comment         
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::TideChartPort FromComment {
+  public global::TideChartCommentBox FromComment {
     get { return fromComment_; }
     set {
       fromComment_ = value;
@@ -5565,9 +5593,12 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
 
   /// <summary>Field number for the "toComment" field.</summary>
   public const int ToCommentFieldNumber = 2;
-  private global::TideChartPort toComment_;
+  private global::TideChartCommentBox toComment_;
+  /// <summary>
+  /// new version of the comment
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::TideChartPort ToComment {
+  public global::TideChartCommentBox ToComment {
     get { return toComment_; }
     set {
       toComment_ = value;
@@ -5577,6 +5608,9 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
   private string type_ = "";
+  /// <summary>
+  /// type of update: add, update or remove
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -5665,13 +5699,13 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
     }
     if (other.fromComment_ != null) {
       if (fromComment_ == null) {
-        FromComment = new global::TideChartPort();
+        FromComment = new global::TideChartCommentBox();
       }
       FromComment.MergeFrom(other.FromComment);
     }
     if (other.toComment_ != null) {
       if (toComment_ == null) {
-        ToComment = new global::TideChartPort();
+        ToComment = new global::TideChartCommentBox();
       }
       ToComment.MergeFrom(other.ToComment);
     }
@@ -5691,14 +5725,14 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
           break;
         case 10: {
           if (fromComment_ == null) {
-            FromComment = new global::TideChartPort();
+            FromComment = new global::TideChartCommentBox();
           }
           input.ReadMessage(FromComment);
           break;
         }
         case 18: {
           if (toComment_ == null) {
-            ToComment = new global::TideChartPort();
+            ToComment = new global::TideChartCommentBox();
           }
           input.ReadMessage(ToComment);
           break;
@@ -5713,9 +5747,6 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
 
 }
 
-/// <summary>
-/// add, remove or update a widget on the graph
-/// </summary>
 public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidgetCommand> {
   private static readonly pb::MessageParser<TideChartWidgetCommand> _parser = new pb::MessageParser<TideChartWidgetCommand>(() => new TideChartWidgetCommand());
   private pb::UnknownFieldSet _unknownFields;
@@ -5754,9 +5785,12 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
 
   /// <summary>Field number for the "fromWidget" field.</summary>
   public const int FromWidgetFieldNumber = 1;
-  private global::TideChartPort fromWidget_;
+  private global::TideChartWidget fromWidget_;
+  /// <summary>
+  /// previous version of the widget    
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::TideChartPort FromWidget {
+  public global::TideChartWidget FromWidget {
     get { return fromWidget_; }
     set {
       fromWidget_ = value;
@@ -5765,9 +5799,12 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
 
   /// <summary>Field number for the "toWidget" field.</summary>
   public const int ToWidgetFieldNumber = 2;
-  private global::TideChartPort toWidget_;
+  private global::TideChartWidget toWidget_;
+  /// <summary>
+  /// new version of the widget
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::TideChartPort ToWidget {
+  public global::TideChartWidget ToWidget {
     get { return toWidget_; }
     set {
       toWidget_ = value;
@@ -5777,6 +5814,9 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
   private string type_ = "";
+  /// <summary>
+  /// type of update: add, update or remove
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -5865,13 +5905,13 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
     }
     if (other.fromWidget_ != null) {
       if (fromWidget_ == null) {
-        FromWidget = new global::TideChartPort();
+        FromWidget = new global::TideChartWidget();
       }
       FromWidget.MergeFrom(other.FromWidget);
     }
     if (other.toWidget_ != null) {
       if (toWidget_ == null) {
-        ToWidget = new global::TideChartPort();
+        ToWidget = new global::TideChartWidget();
       }
       ToWidget.MergeFrom(other.ToWidget);
     }
@@ -5891,14 +5931,14 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
           break;
         case 10: {
           if (fromWidget_ == null) {
-            FromWidget = new global::TideChartPort();
+            FromWidget = new global::TideChartWidget();
           }
           input.ReadMessage(FromWidget);
           break;
         }
         case 18: {
           if (toWidget_ == null) {
-            ToWidget = new global::TideChartPort();
+            ToWidget = new global::TideChartWidget();
           }
           input.ReadMessage(ToWidget);
           break;
@@ -5913,9 +5953,6 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
 
 }
 
-/// <summary>
-/// add, remove or update a port on the graph
-/// </summary>
 public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCommand> {
   private static readonly pb::MessageParser<TideChartPortCommand> _parser = new pb::MessageParser<TideChartPortCommand>(() => new TideChartPortCommand());
   private pb::UnknownFieldSet _unknownFields;
@@ -5955,6 +5992,9 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
   /// <summary>Field number for the "fromPort" field.</summary>
   public const int FromPortFieldNumber = 1;
   private global::TideChartPort fromPort_;
+  /// <summary>
+  /// previons version of the port
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartPort FromPort {
     get { return fromPort_; }
@@ -5966,6 +6006,9 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
   /// <summary>Field number for the "toPort" field.</summary>
   public const int ToPortFieldNumber = 2;
   private global::TideChartPort toPort_;
+  /// <summary>
+  /// new version of the port
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartPort ToPort {
     get { return toPort_; }
@@ -5977,6 +6020,9 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
   private string type_ = "";
+  /// <summary>
+  /// type of update: add, update or remove
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -6113,9 +6159,6 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
 
 }
 
-/// <summary>
-/// add, remove or update a link on the graph
-/// </summary>
 public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCommand> {
   private static readonly pb::MessageParser<TideChartLinkCommand> _parser = new pb::MessageParser<TideChartLinkCommand>(() => new TideChartLinkCommand());
   private pb::UnknownFieldSet _unknownFields;
@@ -6155,6 +6198,9 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
   /// <summary>Field number for the "fromLink" field.</summary>
   public const int FromLinkFieldNumber = 1;
   private global::TideChartLink fromLink_;
+  /// <summary>
+  /// previous version of the link
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartLink FromLink {
     get { return fromLink_; }
@@ -6166,6 +6212,9 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
   /// <summary>Field number for the "toLink" field.</summary>
   public const int ToLinkFieldNumber = 2;
   private global::TideChartLink toLink_;
+  /// <summary>
+  /// new version of the link
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartLink ToLink {
     get { return toLink_; }
@@ -6177,6 +6226,9 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
   private string type_ = "";
+  /// <summary>
+  /// type of update: add, update or remove
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -6353,7 +6405,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
   public const int FromNodeFieldNumber = 1;
   private global::TideChartNode fromNode_;
   /// <summary>
-  /// add, remove or update a node on the graph
+  /// previous version of the graph node
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartNode FromNode {
@@ -6366,6 +6418,9 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
   /// <summary>Field number for the "toNode" field.</summary>
   public const int ToNodeFieldNumber = 2;
   private global::TideChartNode toNode_;
+  /// <summary>
+  /// new version of the graph node
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartNode ToNode {
     get { return toNode_; }
@@ -6377,6 +6432,9 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
   private string type_ = "";
+  /// <summary>
+  /// type of update: add, update or remove
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -6513,9 +6571,6 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
 
 }
 
-/// <summary>
-/// adds, remove or update a region on the graph
-/// </summary>
 public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegionCommand> {
   private static readonly pb::MessageParser<TideChartRegionCommand> _parser = new pb::MessageParser<TideChartRegionCommand>(() => new TideChartRegionCommand());
   private pb::UnknownFieldSet _unknownFields;
@@ -6555,6 +6610,9 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
   /// <summary>Field number for the "fromRegion" field.</summary>
   public const int FromRegionFieldNumber = 1;
   private global::TideChartRegion fromRegion_;
+  /// <summary>
+  /// previous version of the region
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartRegion FromRegion {
     get { return fromRegion_; }
@@ -6566,6 +6624,9 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
   /// <summary>Field number for the "toRegion" field.</summary>
   public const int ToRegionFieldNumber = 2;
   private global::TideChartRegion toRegion_;
+  /// <summary>
+  /// new version of the region
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartRegion ToRegion {
     get { return toRegion_; }
@@ -6577,6 +6638,9 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
   private string type_ = "";
+  /// <summary>
+  /// type of update: add, update or remove
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -6713,9 +6777,6 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
 
 }
 
-/// <summary>
-/// adds or removes a graph from the chart
-/// </summary>
 public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphCommand> {
   private static readonly pb::MessageParser<TideChartGraphCommand> _parser = new pb::MessageParser<TideChartGraphCommand>(() => new TideChartGraphCommand());
   private pb::UnknownFieldSet _unknownFields;
@@ -6755,6 +6816,9 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
   /// <summary>Field number for the "fromGraph" field.</summary>
   public const int FromGraphFieldNumber = 1;
   private global::TideChartGraph fromGraph_;
+  /// <summary>
+  /// previous versino of the graph
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartGraph FromGraph {
     get { return fromGraph_; }
@@ -6766,6 +6830,9 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
   /// <summary>Field number for the "toGraph" field.</summary>
   public const int ToGraphFieldNumber = 2;
   private global::TideChartGraph toGraph_;
+  /// <summary>
+  /// new version of the graph
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartGraph ToGraph {
     get { return toGraph_; }
@@ -6777,6 +6844,9 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
   private string type_ = "";
+  /// <summary>
+  /// type of update: add, update or remove    
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Type {
     get { return type_; }
@@ -7329,7 +7399,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   /// <summary>Field number for the "node" field.</summary>
   public const int NodeFieldNumber = 3;
   /// <summary>
-  /// node reference (graph-id:node-name)
+  /// node reference (node-name)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Node {
@@ -7343,7 +7413,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   /// <summary>Field number for the "region" field.</summary>
   public const int RegionFieldNumber = 4;
   /// <summary>
-  /// region reference (graph-id:region-name)
+  /// region reference (region-name)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Region {
@@ -7357,7 +7427,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   /// <summary>Field number for the "graph" field.</summary>
   public const int GraphFieldNumber = 5;
   /// <summary>
-  /// graph reference (graph-id)
+  /// graph reference (graph-name)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Graph {
@@ -7662,7 +7732,7 @@ public sealed partial class TideChartMethod : pb::IMessage<TideChartMethod> {
       = pb::FieldCodec.ForMessage(58, global::TideChartPort.Parser);
   private readonly pbc::RepeatedField<global::TideChartPort> props_ = new pbc::RepeatedField<global::TideChartPort>();
   /// <summary>
-  /// definition of property values used by the method defined like a port
+  /// definition of property values used by the method (uses port definition format)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::TideChartPort> Props {
@@ -7920,6 +7990,9 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
   /// <summary>Field number for the "createdDate" field.</summary>
   public const int CreatedDateFieldNumber = 5;
   private string createdDate_ = "";
+  /// <summary>
+  /// date file version was created
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CreatedDate {
     get { return createdDate_; }
@@ -7931,6 +8004,9 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
   /// <summary>Field number for the "createdBy" field.</summary>
   public const int CreatedByFieldNumber = 6;
   private string createdBy_ = "";
+  /// <summary>
+  /// user that created this file version 
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CreatedBy {
     get { return createdBy_; }
@@ -8579,7 +8655,7 @@ public sealed partial class TideChartSite : pb::IMessage<TideChartSite> {
   public const int PathFieldNumber = 3;
   private string path_ = "";
   /// <summary>
-  /// Path in global state storage
+  /// Path in global state storage for events from state changes
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Path {
@@ -8648,7 +8724,7 @@ public sealed partial class TideChartSite : pb::IMessage<TideChartSite> {
   public const int GraphFieldNumber = 8;
   private string graph_ = "";
   /// <summary>
-  /// graph-id      - graph scripts and graph nodes can generate messages
+  /// graph-name    - graph scripts and graph nodes can generate messages
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Graph {
@@ -9498,7 +9574,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     commitBy_ = other.commitBy_;
     commitDesc_ = other.commitDesc_;
     commitNotes_ = other.commitNotes_;
-    graphs_ = other.graphs_.Clone();
+    sheets_ = other.sheets_.Clone();
     props_ = other.props_.Clone();
     notes_ = other.notes_.Clone();
     library_ = other.library_.Clone();
@@ -9570,6 +9646,9 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
   /// <summary>Field number for the "commitDate" field.</summary>
   public const int CommitDateFieldNumber = 5;
   private string commitDate_ = "";
+  /// <summary>
+  /// date version of the chart was committed
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CommitDate {
     get { return commitDate_; }
@@ -9581,6 +9660,9 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
   /// <summary>Field number for the "commitBy" field.</summary>
   public const int CommitByFieldNumber = 6;
   private string commitBy_ = "";
+  /// <summary>
+  /// user that committed latest version
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CommitBy {
     get { return commitBy_; }
@@ -9617,17 +9699,17 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     }
   }
 
-  /// <summary>Field number for the "graphs" field.</summary>
-  public const int GraphsFieldNumber = 9;
-  private static readonly pb::FieldCodec<global::TideChartGraph> _repeated_graphs_codec
+  /// <summary>Field number for the "sheets" field.</summary>
+  public const int SheetsFieldNumber = 9;
+  private static readonly pb::FieldCodec<global::TideChartGraph> _repeated_sheets_codec
       = pb::FieldCodec.ForMessage(74, global::TideChartGraph.Parser);
-  private readonly pbc::RepeatedField<global::TideChartGraph> graphs_ = new pbc::RepeatedField<global::TideChartGraph>();
+  private readonly pbc::RepeatedField<global::TideChartGraph> sheets_ = new pbc::RepeatedField<global::TideChartGraph>();
   /// <summary>
   /// graphs contained in the chart
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::TideChartGraph> Graphs {
-    get { return graphs_; }
+  public pbc::RepeatedField<global::TideChartGraph> Sheets {
+    get { return sheets_; }
   }
 
   /// <summary>Field number for the "props" field.</summary>
@@ -9703,7 +9785,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if (CommitBy != other.CommitBy) return false;
     if (CommitDesc != other.CommitDesc) return false;
     if (CommitNotes != other.CommitNotes) return false;
-    if(!graphs_.Equals(other.graphs_)) return false;
+    if(!sheets_.Equals(other.sheets_)) return false;
     if(!props_.Equals(other.props_)) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if(!library_.Equals(other.library_)) return false;
@@ -9722,7 +9804,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if (CommitBy.Length != 0) hash ^= CommitBy.GetHashCode();
     if (CommitDesc.Length != 0) hash ^= CommitDesc.GetHashCode();
     if (CommitNotes.Length != 0) hash ^= CommitNotes.GetHashCode();
-    hash ^= graphs_.GetHashCode();
+    hash ^= sheets_.GetHashCode();
     hash ^= props_.GetHashCode();
     hash ^= notes_.GetHashCode();
     hash ^= library_.GetHashCode();
@@ -9772,7 +9854,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
       output.WriteRawTag(66);
       output.WriteString(CommitNotes);
     }
-    graphs_.WriteTo(output, _repeated_graphs_codec);
+    sheets_.WriteTo(output, _repeated_sheets_codec);
     props_.WriteTo(output, _repeated_props_codec);
     notes_.WriteTo(output, _repeated_notes_codec);
     library_.WriteTo(output, _repeated_library_codec);
@@ -9809,7 +9891,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if (CommitNotes.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(CommitNotes);
     }
-    size += graphs_.CalculateSize(_repeated_graphs_codec);
+    size += sheets_.CalculateSize(_repeated_sheets_codec);
     size += props_.CalculateSize(_repeated_props_codec);
     size += notes_.CalculateSize(_repeated_notes_codec);
     size += library_.CalculateSize(_repeated_library_codec);
@@ -9849,7 +9931,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if (other.CommitNotes.Length != 0) {
       CommitNotes = other.CommitNotes;
     }
-    graphs_.Add(other.graphs_);
+    sheets_.Add(other.sheets_);
     props_.Add(other.props_);
     notes_.Add(other.notes_);
     library_.Add(other.library_);
@@ -9898,7 +9980,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
           break;
         }
         case 74: {
-          graphs_.AddEntriesFrom(input, _repeated_graphs_codec);
+          sheets_.AddEntriesFrom(input, _repeated_sheets_codec);
           break;
         }
         case 82: {
@@ -10026,6 +10108,9 @@ public sealed partial class TideChartHeader : pb::IMessage<TideChartHeader> {
   /// <summary>Field number for the "commitDate" field.</summary>
   public const int CommitDateFieldNumber = 5;
   private string commitDate_ = "";
+  /// <summary>
+  /// date version of the chart was committed
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CommitDate {
     get { return commitDate_; }
@@ -10037,6 +10122,9 @@ public sealed partial class TideChartHeader : pb::IMessage<TideChartHeader> {
   /// <summary>Field number for the "commitBy" field.</summary>
   public const int CommitByFieldNumber = 6;
   private string commitBy_ = "";
+  /// <summary>
+  /// user that committed latest version
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CommitBy {
     get { return commitBy_; }
@@ -10298,8 +10386,8 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
     name_ = other.name_;
     path_ = other.path_;
     origin_ = other.origin_;
-    createdDate_ = other.createdDate_;
-    createdBy_ = other.createdBy_;
+    modifiedDate_ = other.modifiedDate_;
+    modifiedBy_ = other.modifiedBy_;
     chart_ = other.chart_ != null ? other.chart_.Clone() : null;
     working_ = other.working_.Clone();
     remote_ = other.remote_.Clone();
@@ -10368,25 +10456,31 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
     }
   }
 
-  /// <summary>Field number for the "createdDate" field.</summary>
-  public const int CreatedDateFieldNumber = 5;
-  private string createdDate_ = "";
+  /// <summary>Field number for the "modifiedDate" field.</summary>
+  public const int ModifiedDateFieldNumber = 5;
+  private string modifiedDate_ = "";
+  /// <summary>
+  /// date the file was last modified
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedDate {
-    get { return createdDate_; }
+  public string ModifiedDate {
+    get { return modifiedDate_; }
     set {
-      createdDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifiedDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
-  /// <summary>Field number for the "createdBy" field.</summary>
-  public const int CreatedByFieldNumber = 6;
-  private string createdBy_ = "";
+  /// <summary>Field number for the "modifiedBy" field.</summary>
+  public const int ModifiedByFieldNumber = 6;
+  private string modifiedBy_ = "";
+  /// <summary>
+  /// user that last modified the file
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedBy {
-    get { return createdBy_; }
+  public string ModifiedBy {
+    get { return modifiedBy_; }
     set {
-      createdBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifiedBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -10394,7 +10488,7 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
   public const int ChartFieldNumber = 7;
   private global::TideChartData chart_;
   /// <summary>
-  /// the last committed version  
+  /// the last committed version of the chart
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartData Chart {
@@ -10436,7 +10530,7 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
       = pb::FieldCodec.ForMessage(82, global::TideChartData.Parser);
   private readonly pbc::RepeatedField<global::TideChartData> history_ = new pbc::RepeatedField<global::TideChartData>();
   /// <summary>
-  /// previous version history
+  /// previous saved versions of the chart
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::TideChartData> History {
@@ -10460,8 +10554,8 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
     if (Name != other.Name) return false;
     if (Path != other.Path) return false;
     if (Origin != other.Origin) return false;
-    if (CreatedDate != other.CreatedDate) return false;
-    if (CreatedBy != other.CreatedBy) return false;
+    if (ModifiedDate != other.ModifiedDate) return false;
+    if (ModifiedBy != other.ModifiedBy) return false;
     if (!object.Equals(Chart, other.Chart)) return false;
     if(!working_.Equals(other.working_)) return false;
     if(!remote_.Equals(other.remote_)) return false;
@@ -10476,8 +10570,8 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
     if (Name.Length != 0) hash ^= Name.GetHashCode();
     if (Path.Length != 0) hash ^= Path.GetHashCode();
     if (Origin.Length != 0) hash ^= Origin.GetHashCode();
-    if (CreatedDate.Length != 0) hash ^= CreatedDate.GetHashCode();
-    if (CreatedBy.Length != 0) hash ^= CreatedBy.GetHashCode();
+    if (ModifiedDate.Length != 0) hash ^= ModifiedDate.GetHashCode();
+    if (ModifiedBy.Length != 0) hash ^= ModifiedBy.GetHashCode();
     if (chart_ != null) hash ^= Chart.GetHashCode();
     hash ^= working_.GetHashCode();
     hash ^= remote_.GetHashCode();
@@ -10511,13 +10605,13 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
       output.WriteRawTag(34);
       output.WriteString(Origin);
     }
-    if (CreatedDate.Length != 0) {
+    if (ModifiedDate.Length != 0) {
       output.WriteRawTag(42);
-      output.WriteString(CreatedDate);
+      output.WriteString(ModifiedDate);
     }
-    if (CreatedBy.Length != 0) {
+    if (ModifiedBy.Length != 0) {
       output.WriteRawTag(50);
-      output.WriteString(CreatedBy);
+      output.WriteString(ModifiedBy);
     }
     if (chart_ != null) {
       output.WriteRawTag(58);
@@ -10546,11 +10640,11 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
     if (Origin.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Origin);
     }
-    if (CreatedDate.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedDate);
+    if (ModifiedDate.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedDate);
     }
-    if (CreatedBy.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedBy);
+    if (ModifiedBy.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedBy);
     }
     if (chart_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(Chart);
@@ -10581,11 +10675,11 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
     if (other.Origin.Length != 0) {
       Origin = other.Origin;
     }
-    if (other.CreatedDate.Length != 0) {
-      CreatedDate = other.CreatedDate;
+    if (other.ModifiedDate.Length != 0) {
+      ModifiedDate = other.ModifiedDate;
     }
-    if (other.CreatedBy.Length != 0) {
-      CreatedBy = other.CreatedBy;
+    if (other.ModifiedBy.Length != 0) {
+      ModifiedBy = other.ModifiedBy;
     }
     if (other.chart_ != null) {
       if (chart_ == null) {
@@ -10624,11 +10718,11 @@ public sealed partial class TideChartFile : pb::IMessage<TideChartFile> {
           break;
         }
         case 42: {
-          CreatedDate = input.ReadString();
+          ModifiedDate = input.ReadString();
           break;
         }
         case 50: {
-          CreatedBy = input.ReadString();
+          ModifiedBy = input.ReadString();
           break;
         }
         case 58: {
@@ -10688,8 +10782,8 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
     name_ = other.name_;
     path_ = other.path_;
     origin_ = other.origin_;
-    createdDate_ = other.createdDate_;
-    createdBy_ = other.createdBy_;
+    modifiedDate_ = other.modifiedDate_;
+    modifiedBy_ = other.modifiedBy_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -10754,25 +10848,31 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
     }
   }
 
-  /// <summary>Field number for the "createdDate" field.</summary>
-  public const int CreatedDateFieldNumber = 5;
-  private string createdDate_ = "";
+  /// <summary>Field number for the "modifiedDate" field.</summary>
+  public const int ModifiedDateFieldNumber = 5;
+  private string modifiedDate_ = "";
+  /// <summary>
+  /// date the file was last modified
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedDate {
-    get { return createdDate_; }
+  public string ModifiedDate {
+    get { return modifiedDate_; }
     set {
-      createdDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifiedDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
-  /// <summary>Field number for the "createdBy" field.</summary>
-  public const int CreatedByFieldNumber = 6;
-  private string createdBy_ = "";
+  /// <summary>Field number for the "modifiedBy" field.</summary>
+  public const int ModifiedByFieldNumber = 6;
+  private string modifiedBy_ = "";
+  /// <summary>
+  /// user that last modified the file
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedBy {
-    get { return createdBy_; }
+  public string ModifiedBy {
+    get { return modifiedBy_; }
     set {
-      createdBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifiedBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -10793,8 +10893,8 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
     if (Name != other.Name) return false;
     if (Path != other.Path) return false;
     if (Origin != other.Origin) return false;
-    if (CreatedDate != other.CreatedDate) return false;
-    if (CreatedBy != other.CreatedBy) return false;
+    if (ModifiedDate != other.ModifiedDate) return false;
+    if (ModifiedBy != other.ModifiedBy) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -10805,8 +10905,8 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
     if (Name.Length != 0) hash ^= Name.GetHashCode();
     if (Path.Length != 0) hash ^= Path.GetHashCode();
     if (Origin.Length != 0) hash ^= Origin.GetHashCode();
-    if (CreatedDate.Length != 0) hash ^= CreatedDate.GetHashCode();
-    if (CreatedBy.Length != 0) hash ^= CreatedBy.GetHashCode();
+    if (ModifiedDate.Length != 0) hash ^= ModifiedDate.GetHashCode();
+    if (ModifiedBy.Length != 0) hash ^= ModifiedBy.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -10836,13 +10936,13 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
       output.WriteRawTag(34);
       output.WriteString(Origin);
     }
-    if (CreatedDate.Length != 0) {
+    if (ModifiedDate.Length != 0) {
       output.WriteRawTag(42);
-      output.WriteString(CreatedDate);
+      output.WriteString(ModifiedDate);
     }
-    if (CreatedBy.Length != 0) {
+    if (ModifiedBy.Length != 0) {
       output.WriteRawTag(50);
-      output.WriteString(CreatedBy);
+      output.WriteString(ModifiedBy);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -10864,11 +10964,11 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
     if (Origin.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Origin);
     }
-    if (CreatedDate.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedDate);
+    if (ModifiedDate.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedDate);
     }
-    if (CreatedBy.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedBy);
+    if (ModifiedBy.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedBy);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -10893,11 +10993,11 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
     if (other.Origin.Length != 0) {
       Origin = other.Origin;
     }
-    if (other.CreatedDate.Length != 0) {
-      CreatedDate = other.CreatedDate;
+    if (other.ModifiedDate.Length != 0) {
+      ModifiedDate = other.ModifiedDate;
     }
-    if (other.CreatedBy.Length != 0) {
-      CreatedBy = other.CreatedBy;
+    if (other.ModifiedBy.Length != 0) {
+      ModifiedBy = other.ModifiedBy;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -10927,11 +11027,11 @@ public sealed partial class TideChartFileHeader : pb::IMessage<TideChartFileHead
           break;
         }
         case 42: {
-          CreatedDate = input.ReadString();
+          ModifiedDate = input.ReadString();
           break;
         }
         case 50: {
-          CreatedBy = input.ReadString();
+          ModifiedBy = input.ReadString();
           break;
         }
       }
@@ -10972,8 +11072,8 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
     name_ = other.name_;
     path_ = other.path_;
     origin_ = other.origin_;
-    createdDate_ = other.createdDate_;
-    createdBy_ = other.createdBy_;
+    modifiedDate_ = other.modifiedDate_;
+    modifiedBy_ = other.modifiedBy_;
     chart_ = other.chart_ != null ? other.chart_.Clone() : null;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -11039,25 +11139,31 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
     }
   }
 
-  /// <summary>Field number for the "createdDate" field.</summary>
-  public const int CreatedDateFieldNumber = 5;
-  private string createdDate_ = "";
+  /// <summary>Field number for the "modifiedDate" field.</summary>
+  public const int ModifiedDateFieldNumber = 5;
+  private string modifiedDate_ = "";
+  /// <summary>
+  /// date the file was last modified
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedDate {
-    get { return createdDate_; }
+  public string ModifiedDate {
+    get { return modifiedDate_; }
     set {
-      createdDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifiedDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
-  /// <summary>Field number for the "createdBy" field.</summary>
-  public const int CreatedByFieldNumber = 6;
-  private string createdBy_ = "";
+  /// <summary>Field number for the "modifiedBy" field.</summary>
+  public const int ModifiedByFieldNumber = 6;
+  private string modifiedBy_ = "";
+  /// <summary>
+  /// user that last modified the file
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string CreatedBy {
-    get { return createdBy_; }
+  public string ModifiedBy {
+    get { return modifiedBy_; }
     set {
-      createdBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      modifiedBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -11065,7 +11171,7 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
   public const int ChartFieldNumber = 7;
   private global::TideChartData chart_;
   /// <summary>
-  /// the last committed version  
+  /// the last committed version of the chart
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::TideChartData Chart {
@@ -11092,8 +11198,8 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
     if (Name != other.Name) return false;
     if (Path != other.Path) return false;
     if (Origin != other.Origin) return false;
-    if (CreatedDate != other.CreatedDate) return false;
-    if (CreatedBy != other.CreatedBy) return false;
+    if (ModifiedDate != other.ModifiedDate) return false;
+    if (ModifiedBy != other.ModifiedBy) return false;
     if (!object.Equals(Chart, other.Chart)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -11105,8 +11211,8 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
     if (Name.Length != 0) hash ^= Name.GetHashCode();
     if (Path.Length != 0) hash ^= Path.GetHashCode();
     if (Origin.Length != 0) hash ^= Origin.GetHashCode();
-    if (CreatedDate.Length != 0) hash ^= CreatedDate.GetHashCode();
-    if (CreatedBy.Length != 0) hash ^= CreatedBy.GetHashCode();
+    if (ModifiedDate.Length != 0) hash ^= ModifiedDate.GetHashCode();
+    if (ModifiedBy.Length != 0) hash ^= ModifiedBy.GetHashCode();
     if (chart_ != null) hash ^= Chart.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -11137,13 +11243,13 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
       output.WriteRawTag(34);
       output.WriteString(Origin);
     }
-    if (CreatedDate.Length != 0) {
+    if (ModifiedDate.Length != 0) {
       output.WriteRawTag(42);
-      output.WriteString(CreatedDate);
+      output.WriteString(ModifiedDate);
     }
-    if (CreatedBy.Length != 0) {
+    if (ModifiedBy.Length != 0) {
       output.WriteRawTag(50);
-      output.WriteString(CreatedBy);
+      output.WriteString(ModifiedBy);
     }
     if (chart_ != null) {
       output.WriteRawTag(58);
@@ -11169,11 +11275,11 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
     if (Origin.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Origin);
     }
-    if (CreatedDate.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedDate);
+    if (ModifiedDate.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedDate);
     }
-    if (CreatedBy.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedBy);
+    if (ModifiedBy.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedBy);
     }
     if (chart_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(Chart);
@@ -11201,11 +11307,11 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
     if (other.Origin.Length != 0) {
       Origin = other.Origin;
     }
-    if (other.CreatedDate.Length != 0) {
-      CreatedDate = other.CreatedDate;
+    if (other.ModifiedDate.Length != 0) {
+      ModifiedDate = other.ModifiedDate;
     }
-    if (other.CreatedBy.Length != 0) {
-      CreatedBy = other.CreatedBy;
+    if (other.ModifiedBy.Length != 0) {
+      ModifiedBy = other.ModifiedBy;
     }
     if (other.chart_ != null) {
       if (chart_ == null) {
@@ -11241,11 +11347,11 @@ public sealed partial class TideChartFileCurrent : pb::IMessage<TideChartFileCur
           break;
         }
         case 42: {
-          CreatedDate = input.ReadString();
+          ModifiedDate = input.ReadString();
           break;
         }
         case 50: {
-          CreatedBy = input.ReadString();
+          ModifiedBy = input.ReadString();
           break;
         }
         case 58: {

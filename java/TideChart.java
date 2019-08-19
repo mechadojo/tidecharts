@@ -17,30 +17,54 @@ public final class TideChart {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * property field name
+     * </pre>
+     *
      * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
+     * <pre>
+     * property field name
+     * </pre>
+     *
      * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
+     * <pre>
+     * property value type
+     * </pre>
+     *
      * <code>string type = 2;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * property value type
+     * </pre>
+     *
      * <code>string type = 2;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
 
     /**
+     * <pre>
+     * property value as a string
+     * </pre>
+     *
      * <code>string value = 3;</code>
      */
     java.lang.String getValue();
     /**
+     * <pre>
+     * property value as a string
+     * </pre>
+     *
      * <code>string value = 3;</code>
      */
     com.google.protobuf.ByteString
@@ -48,7 +72,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -57,7 +81,7 @@ public final class TideChart {
         getPropsList();
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -65,7 +89,7 @@ public final class TideChart {
     TideChart.TideChartProperty getProps(int index);
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -73,7 +97,7 @@ public final class TideChart {
     int getPropsCount();
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -82,7 +106,7 @@ public final class TideChart {
         getPropsOrBuilderList();
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -209,6 +233,10 @@ public final class TideChart {
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
+     * <pre>
+     * property field name
+     * </pre>
+     *
      * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
@@ -224,6 +252,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * property field name
+     * </pre>
+     *
      * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -243,6 +275,10 @@ public final class TideChart {
     public static final int TYPE_FIELD_NUMBER = 2;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * property value type
+     * </pre>
+     *
      * <code>string type = 2;</code>
      */
     public java.lang.String getType() {
@@ -258,6 +294,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * property value type
+     * </pre>
+     *
      * <code>string type = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -277,6 +317,10 @@ public final class TideChart {
     public static final int VALUE_FIELD_NUMBER = 3;
     private volatile java.lang.Object value_;
     /**
+     * <pre>
+     * property value as a string
+     * </pre>
+     *
      * <code>string value = 3;</code>
      */
     public java.lang.String getValue() {
@@ -292,6 +336,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * property value as a string
+     * </pre>
+     *
      * <code>string value = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -312,7 +360,7 @@ public final class TideChart {
     private java.util.List<TideChart.TideChartProperty> props_;
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -322,7 +370,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -333,7 +381,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -343,7 +391,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -353,7 +401,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * create a heirarchy of properties (repeate names to make collections)
+     * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 4;</code>
@@ -762,6 +810,10 @@ public final class TideChart {
 
       private java.lang.Object name_ = "";
       /**
+       * <pre>
+       * property field name
+       * </pre>
+       *
        * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
@@ -777,6 +829,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * property field name
+       * </pre>
+       *
        * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -793,6 +849,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * property field name
+       * </pre>
+       *
        * <code>string name = 1;</code>
        */
       public Builder setName(
@@ -806,6 +866,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * property field name
+       * </pre>
+       *
        * <code>string name = 1;</code>
        */
       public Builder clearName() {
@@ -815,6 +879,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * property field name
+       * </pre>
+       *
        * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
@@ -831,6 +899,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * property value type
+       * </pre>
+       *
        * <code>string type = 2;</code>
        */
       public java.lang.String getType() {
@@ -846,6 +918,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * property value type
+       * </pre>
+       *
        * <code>string type = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -862,6 +938,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * property value type
+       * </pre>
+       *
        * <code>string type = 2;</code>
        */
       public Builder setType(
@@ -875,6 +955,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * property value type
+       * </pre>
+       *
        * <code>string type = 2;</code>
        */
       public Builder clearType() {
@@ -884,6 +968,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * property value type
+       * </pre>
+       *
        * <code>string type = 2;</code>
        */
       public Builder setTypeBytes(
@@ -900,6 +988,10 @@ public final class TideChart {
 
       private java.lang.Object value_ = "";
       /**
+       * <pre>
+       * property value as a string
+       * </pre>
+       *
        * <code>string value = 3;</code>
        */
       public java.lang.String getValue() {
@@ -915,6 +1007,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * property value as a string
+       * </pre>
+       *
        * <code>string value = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -931,6 +1027,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * property value as a string
+       * </pre>
+       *
        * <code>string value = 3;</code>
        */
       public Builder setValue(
@@ -944,6 +1044,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * property value as a string
+       * </pre>
+       *
        * <code>string value = 3;</code>
        */
       public Builder clearValue() {
@@ -953,6 +1057,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * property value as a string
+       * </pre>
+       *
        * <code>string value = 3;</code>
        */
       public Builder setValueBytes(
@@ -981,7 +1089,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -995,7 +1103,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1009,7 +1117,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1023,7 +1131,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1044,7 +1152,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1062,7 +1170,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1082,7 +1190,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1103,7 +1211,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1121,7 +1229,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1139,7 +1247,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1158,7 +1266,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1175,7 +1283,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1192,7 +1300,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1203,7 +1311,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1217,7 +1325,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1232,7 +1340,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1243,7 +1351,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1255,7 +1363,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * create a heirarchy of properties (repeate names to make collections)
+       * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 4;</code>
@@ -1408,25 +1516,45 @@ public final class TideChart {
     int getHeight();
 
     /**
+     * <pre>
+     * text content for the comment
+     * </pre>
+     *
      * <code>string text = 7;</code>
      */
     java.lang.String getText();
     /**
+     * <pre>
+     * text content for the comment
+     * </pre>
+     *
      * <code>string text = 7;</code>
      */
     com.google.protobuf.ByteString
         getTextBytes();
 
     /**
+     * <pre>
+     * image to use for the comment
+     * </pre>
+     *
      * <code>bytes image = 8;</code>
      */
     com.google.protobuf.ByteString getImage();
 
     /**
+     * <pre>
+     * icon name to use for the comment
+     * </pre>
+     *
      * <code>string icon = 9;</code>
      */
     java.lang.String getIcon();
     /**
+     * <pre>
+     * icon name to use for the comment
+     * </pre>
+     *
      * <code>string icon = 9;</code>
      */
     com.google.protobuf.ByteString
@@ -1863,6 +1991,10 @@ public final class TideChart {
 
     public static final int TEXT_FIELD_NUMBER = 7;
     /**
+     * <pre>
+     * text content for the comment
+     * </pre>
+     *
      * <code>string text = 7;</code>
      */
     public java.lang.String getText() {
@@ -1883,6 +2015,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * text content for the comment
+     * </pre>
+     *
      * <code>string text = 7;</code>
      */
     public com.google.protobuf.ByteString
@@ -1906,6 +2042,10 @@ public final class TideChart {
 
     public static final int IMAGE_FIELD_NUMBER = 8;
     /**
+     * <pre>
+     * image to use for the comment
+     * </pre>
+     *
      * <code>bytes image = 8;</code>
      */
     public com.google.protobuf.ByteString getImage() {
@@ -1917,6 +2057,10 @@ public final class TideChart {
 
     public static final int ICON_FIELD_NUMBER = 9;
     /**
+     * <pre>
+     * icon name to use for the comment
+     * </pre>
+     *
      * <code>string icon = 9;</code>
      */
     public java.lang.String getIcon() {
@@ -1937,6 +2081,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * icon name to use for the comment
+     * </pre>
+     *
      * <code>string icon = 9;</code>
      */
     public com.google.protobuf.ByteString
@@ -3051,6 +3199,10 @@ public final class TideChart {
       }
 
       /**
+       * <pre>
+       * text content for the comment
+       * </pre>
+       *
        * <code>string text = 7;</code>
        */
       public java.lang.String getText() {
@@ -3071,6 +3223,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * text content for the comment
+       * </pre>
+       *
        * <code>string text = 7;</code>
        */
       public com.google.protobuf.ByteString
@@ -3092,6 +3248,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * text content for the comment
+       * </pre>
+       *
        * <code>string text = 7;</code>
        */
       public Builder setText(
@@ -3105,6 +3265,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * text content for the comment
+       * </pre>
+       *
        * <code>string text = 7;</code>
        */
       public Builder clearText() {
@@ -3116,6 +3280,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * text content for the comment
+       * </pre>
+       *
        * <code>string text = 7;</code>
        */
       public Builder setTextBytes(
@@ -3131,6 +3299,10 @@ public final class TideChart {
       }
 
       /**
+       * <pre>
+       * image to use for the comment
+       * </pre>
+       *
        * <code>bytes image = 8;</code>
        */
       public com.google.protobuf.ByteString getImage() {
@@ -3140,6 +3312,10 @@ public final class TideChart {
         return com.google.protobuf.ByteString.EMPTY;
       }
       /**
+       * <pre>
+       * image to use for the comment
+       * </pre>
+       *
        * <code>bytes image = 8;</code>
        */
       public Builder setImage(com.google.protobuf.ByteString value) {
@@ -3152,6 +3328,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * image to use for the comment
+       * </pre>
+       *
        * <code>bytes image = 8;</code>
        */
       public Builder clearImage() {
@@ -3164,6 +3344,10 @@ public final class TideChart {
       }
 
       /**
+       * <pre>
+       * icon name to use for the comment
+       * </pre>
+       *
        * <code>string icon = 9;</code>
        */
       public java.lang.String getIcon() {
@@ -3184,6 +3368,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * icon name to use for the comment
+       * </pre>
+       *
        * <code>string icon = 9;</code>
        */
       public com.google.protobuf.ByteString
@@ -3205,6 +3393,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * icon name to use for the comment
+       * </pre>
+       *
        * <code>string icon = 9;</code>
        */
       public Builder setIcon(
@@ -3218,6 +3410,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * icon name to use for the comment
+       * </pre>
+       *
        * <code>string icon = 9;</code>
        */
       public Builder clearIcon() {
@@ -3229,6 +3425,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * icon name to use for the comment
+       * </pre>
+       *
        * <code>string icon = 9;</code>
        */
       public Builder setIconBytes(
@@ -3763,30 +3963,54 @@ public final class TideChart {
     int getHeight();
 
     /**
+     * <pre>
+     * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+     * </pre>
+     *
      * <code>string link = 9;</code>
      */
     java.lang.String getLink();
     /**
+     * <pre>
+     * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+     * </pre>
+     *
      * <code>string link = 9;</code>
      */
     com.google.protobuf.ByteString
         getLinkBytes();
 
     /**
+     * <pre>
+     * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+     * </pre>
+     *
      * <code>string port = 10;</code>
      */
     java.lang.String getPort();
     /**
+     * <pre>
+     * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+     * </pre>
+     *
      * <code>string port = 10;</code>
      */
     com.google.protobuf.ByteString
         getPortBytes();
 
     /**
+     * <pre>
+     * name of node widget is associated with
+     * </pre>
+     *
      * <code>string node = 11;</code>
      */
     java.lang.String getNode();
     /**
+     * <pre>
+     * name of node widget is associated with
+     * </pre>
+     *
      * <code>string node = 11;</code>
      */
     com.google.protobuf.ByteString
@@ -4257,6 +4481,10 @@ public final class TideChart {
 
     public static final int LINK_FIELD_NUMBER = 9;
     /**
+     * <pre>
+     * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+     * </pre>
+     *
      * <code>string link = 9;</code>
      */
     public java.lang.String getLink() {
@@ -4277,6 +4505,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+     * </pre>
+     *
      * <code>string link = 9;</code>
      */
     public com.google.protobuf.ByteString
@@ -4300,6 +4532,10 @@ public final class TideChart {
 
     public static final int PORT_FIELD_NUMBER = 10;
     /**
+     * <pre>
+     * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+     * </pre>
+     *
      * <code>string port = 10;</code>
      */
     public java.lang.String getPort() {
@@ -4320,6 +4556,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+     * </pre>
+     *
      * <code>string port = 10;</code>
      */
     public com.google.protobuf.ByteString
@@ -4343,6 +4583,10 @@ public final class TideChart {
 
     public static final int NODE_FIELD_NUMBER = 11;
     /**
+     * <pre>
+     * name of node widget is associated with
+     * </pre>
+     *
      * <code>string node = 11;</code>
      */
     public java.lang.String getNode() {
@@ -4363,6 +4607,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * name of node widget is associated with
+     * </pre>
+     *
      * <code>string node = 11;</code>
      */
     public com.google.protobuf.ByteString
@@ -5527,6 +5775,10 @@ public final class TideChart {
       }
 
       /**
+       * <pre>
+       * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+       * </pre>
+       *
        * <code>string link = 9;</code>
        */
       public java.lang.String getLink() {
@@ -5547,6 +5799,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+       * </pre>
+       *
        * <code>string link = 9;</code>
        */
       public com.google.protobuf.ByteString
@@ -5568,6 +5824,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+       * </pre>
+       *
        * <code>string link = 9;</code>
        */
       public Builder setLink(
@@ -5581,6 +5841,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+       * </pre>
+       *
        * <code>string link = 9;</code>
        */
       public Builder clearLink() {
@@ -5592,6 +5856,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;)
+       * </pre>
+       *
        * <code>string link = 9;</code>
        */
       public Builder setLinkBytes(
@@ -5607,6 +5875,10 @@ public final class TideChart {
       }
 
       /**
+       * <pre>
+       * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+       * </pre>
+       *
        * <code>string port = 10;</code>
        */
       public java.lang.String getPort() {
@@ -5627,6 +5899,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+       * </pre>
+       *
        * <code>string port = 10;</code>
        */
       public com.google.protobuf.ByteString
@@ -5648,6 +5924,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+       * </pre>
+       *
        * <code>string port = 10;</code>
        */
       public Builder setPort(
@@ -5661,6 +5941,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+       * </pre>
+       *
        * <code>string port = 10;</code>
        */
       public Builder clearPort() {
@@ -5672,6 +5956,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * port widget is associated with (&lt;node&gt;:&lt;port&gt;)
+       * </pre>
+       *
        * <code>string port = 10;</code>
        */
       public Builder setPortBytes(
@@ -5687,6 +5975,10 @@ public final class TideChart {
       }
 
       /**
+       * <pre>
+       * name of node widget is associated with
+       * </pre>
+       *
        * <code>string node = 11;</code>
        */
       public java.lang.String getNode() {
@@ -5707,6 +5999,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * name of node widget is associated with
+       * </pre>
+       *
        * <code>string node = 11;</code>
        */
       public com.google.protobuf.ByteString
@@ -5728,6 +6024,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * name of node widget is associated with
+       * </pre>
+       *
        * <code>string node = 11;</code>
        */
       public Builder setNode(
@@ -5741,6 +6041,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * name of node widget is associated with
+       * </pre>
+       *
        * <code>string node = 11;</code>
        */
       public Builder clearNode() {
@@ -5752,6 +6056,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * name of node widget is associated with
+       * </pre>
+       *
        * <code>string node = 11;</code>
        */
       public Builder setNodeBytes(
@@ -29629,46 +29937,74 @@ public final class TideChart {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TideChartPort fromComment = 1;</code>
+     * <pre>
+     * previous version of the comment         
+     * </pre>
+     *
+     * <code>.TideChartCommentBox fromComment = 1;</code>
      */
     boolean hasFromComment();
     /**
-     * <code>.TideChartPort fromComment = 1;</code>
+     * <pre>
+     * previous version of the comment         
+     * </pre>
+     *
+     * <code>.TideChartCommentBox fromComment = 1;</code>
      */
-    TideChart.TideChartPort getFromComment();
+    TideChart.TideChartCommentBox getFromComment();
     /**
-     * <code>.TideChartPort fromComment = 1;</code>
+     * <pre>
+     * previous version of the comment         
+     * </pre>
+     *
+     * <code>.TideChartCommentBox fromComment = 1;</code>
      */
-    TideChart.TideChartPortOrBuilder getFromCommentOrBuilder();
+    TideChart.TideChartCommentBoxOrBuilder getFromCommentOrBuilder();
 
     /**
-     * <code>.TideChartPort toComment = 2;</code>
+     * <pre>
+     * new version of the comment
+     * </pre>
+     *
+     * <code>.TideChartCommentBox toComment = 2;</code>
      */
     boolean hasToComment();
     /**
-     * <code>.TideChartPort toComment = 2;</code>
+     * <pre>
+     * new version of the comment
+     * </pre>
+     *
+     * <code>.TideChartCommentBox toComment = 2;</code>
      */
-    TideChart.TideChartPort getToComment();
+    TideChart.TideChartCommentBox getToComment();
     /**
-     * <code>.TideChartPort toComment = 2;</code>
+     * <pre>
+     * new version of the comment
+     * </pre>
+     *
+     * <code>.TideChartCommentBox toComment = 2;</code>
      */
-    TideChart.TideChartPortOrBuilder getToCommentOrBuilder();
+    TideChart.TideChartCommentBoxOrBuilder getToCommentOrBuilder();
 
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
   }
   /**
-   * <pre>
-   * add, remove or update a comment box on the graph
-   * </pre>
-   *
    * Protobuf type {@code TideChartCommentBoxCommand}
    */
   public  static final class TideChartCommentBoxCommand extends
@@ -29715,11 +30051,11 @@ public final class TideChart {
               done = true;
               break;
             case 10: {
-              TideChart.TideChartPort.Builder subBuilder = null;
+              TideChart.TideChartCommentBox.Builder subBuilder = null;
               if (fromComment_ != null) {
                 subBuilder = fromComment_.toBuilder();
               }
-              fromComment_ = input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry);
+              fromComment_ = input.readMessage(TideChart.TideChartCommentBox.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(fromComment_);
                 fromComment_ = subBuilder.buildPartial();
@@ -29728,11 +30064,11 @@ public final class TideChart {
               break;
             }
             case 18: {
-              TideChart.TideChartPort.Builder subBuilder = null;
+              TideChart.TideChartCommentBox.Builder subBuilder = null;
               if (toComment_ != null) {
                 subBuilder = toComment_.toBuilder();
               }
-              toComment_ = input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry);
+              toComment_ = input.readMessage(TideChart.TideChartCommentBox.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(toComment_);
                 toComment_ = subBuilder.buildPartial();
@@ -29779,50 +30115,78 @@ public final class TideChart {
     }
 
     public static final int FROMCOMMENT_FIELD_NUMBER = 1;
-    private TideChart.TideChartPort fromComment_;
+    private TideChart.TideChartCommentBox fromComment_;
     /**
-     * <code>.TideChartPort fromComment = 1;</code>
+     * <pre>
+     * previous version of the comment         
+     * </pre>
+     *
+     * <code>.TideChartCommentBox fromComment = 1;</code>
      */
     public boolean hasFromComment() {
       return fromComment_ != null;
     }
     /**
-     * <code>.TideChartPort fromComment = 1;</code>
+     * <pre>
+     * previous version of the comment         
+     * </pre>
+     *
+     * <code>.TideChartCommentBox fromComment = 1;</code>
      */
-    public TideChart.TideChartPort getFromComment() {
-      return fromComment_ == null ? TideChart.TideChartPort.getDefaultInstance() : fromComment_;
+    public TideChart.TideChartCommentBox getFromComment() {
+      return fromComment_ == null ? TideChart.TideChartCommentBox.getDefaultInstance() : fromComment_;
     }
     /**
-     * <code>.TideChartPort fromComment = 1;</code>
+     * <pre>
+     * previous version of the comment         
+     * </pre>
+     *
+     * <code>.TideChartCommentBox fromComment = 1;</code>
      */
-    public TideChart.TideChartPortOrBuilder getFromCommentOrBuilder() {
+    public TideChart.TideChartCommentBoxOrBuilder getFromCommentOrBuilder() {
       return getFromComment();
     }
 
     public static final int TOCOMMENT_FIELD_NUMBER = 2;
-    private TideChart.TideChartPort toComment_;
+    private TideChart.TideChartCommentBox toComment_;
     /**
-     * <code>.TideChartPort toComment = 2;</code>
+     * <pre>
+     * new version of the comment
+     * </pre>
+     *
+     * <code>.TideChartCommentBox toComment = 2;</code>
      */
     public boolean hasToComment() {
       return toComment_ != null;
     }
     /**
-     * <code>.TideChartPort toComment = 2;</code>
+     * <pre>
+     * new version of the comment
+     * </pre>
+     *
+     * <code>.TideChartCommentBox toComment = 2;</code>
      */
-    public TideChart.TideChartPort getToComment() {
-      return toComment_ == null ? TideChart.TideChartPort.getDefaultInstance() : toComment_;
+    public TideChart.TideChartCommentBox getToComment() {
+      return toComment_ == null ? TideChart.TideChartCommentBox.getDefaultInstance() : toComment_;
     }
     /**
-     * <code>.TideChartPort toComment = 2;</code>
+     * <pre>
+     * new version of the comment
+     * </pre>
+     *
+     * <code>.TideChartCommentBox toComment = 2;</code>
      */
-    public TideChart.TideChartPortOrBuilder getToCommentOrBuilder() {
+    public TideChart.TideChartCommentBoxOrBuilder getToCommentOrBuilder() {
       return getToComment();
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
@@ -29838,6 +30202,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -30041,10 +30409,6 @@ public final class TideChart {
       return builder;
     }
     /**
-     * <pre>
-     * add, remove or update a comment box on the graph
-     * </pre>
-     *
      * Protobuf type {@code TideChartCommentBoxCommand}
      */
     public static final class Builder extends
@@ -30220,29 +30584,41 @@ public final class TideChart {
         return this;
       }
 
-      private TideChart.TideChartPort fromComment_;
+      private TideChart.TideChartCommentBox fromComment_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> fromCommentBuilder_;
+          TideChart.TideChartCommentBox, TideChart.TideChartCommentBox.Builder, TideChart.TideChartCommentBoxOrBuilder> fromCommentBuilder_;
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
       public boolean hasFromComment() {
         return fromCommentBuilder_ != null || fromComment_ != null;
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
-      public TideChart.TideChartPort getFromComment() {
+      public TideChart.TideChartCommentBox getFromComment() {
         if (fromCommentBuilder_ == null) {
-          return fromComment_ == null ? TideChart.TideChartPort.getDefaultInstance() : fromComment_;
+          return fromComment_ == null ? TideChart.TideChartCommentBox.getDefaultInstance() : fromComment_;
         } else {
           return fromCommentBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
-      public Builder setFromComment(TideChart.TideChartPort value) {
+      public Builder setFromComment(TideChart.TideChartCommentBox value) {
         if (fromCommentBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -30256,10 +30632,14 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
       public Builder setFromComment(
-          TideChart.TideChartPort.Builder builderForValue) {
+          TideChart.TideChartCommentBox.Builder builderForValue) {
         if (fromCommentBuilder_ == null) {
           fromComment_ = builderForValue.build();
           onChanged();
@@ -30270,13 +30650,17 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
-      public Builder mergeFromComment(TideChart.TideChartPort value) {
+      public Builder mergeFromComment(TideChart.TideChartCommentBox value) {
         if (fromCommentBuilder_ == null) {
           if (fromComment_ != null) {
             fromComment_ =
-              TideChart.TideChartPort.newBuilder(fromComment_).mergeFrom(value).buildPartial();
+              TideChart.TideChartCommentBox.newBuilder(fromComment_).mergeFrom(value).buildPartial();
           } else {
             fromComment_ = value;
           }
@@ -30288,7 +30672,11 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
       public Builder clearFromComment() {
         if (fromCommentBuilder_ == null) {
@@ -30302,33 +30690,45 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
-      public TideChart.TideChartPort.Builder getFromCommentBuilder() {
+      public TideChart.TideChartCommentBox.Builder getFromCommentBuilder() {
         
         onChanged();
         return getFromCommentFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
-      public TideChart.TideChartPortOrBuilder getFromCommentOrBuilder() {
+      public TideChart.TideChartCommentBoxOrBuilder getFromCommentOrBuilder() {
         if (fromCommentBuilder_ != null) {
           return fromCommentBuilder_.getMessageOrBuilder();
         } else {
           return fromComment_ == null ?
-              TideChart.TideChartPort.getDefaultInstance() : fromComment_;
+              TideChart.TideChartCommentBox.getDefaultInstance() : fromComment_;
         }
       }
       /**
-       * <code>.TideChartPort fromComment = 1;</code>
+       * <pre>
+       * previous version of the comment         
+       * </pre>
+       *
+       * <code>.TideChartCommentBox fromComment = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> 
+          TideChart.TideChartCommentBox, TideChart.TideChartCommentBox.Builder, TideChart.TideChartCommentBoxOrBuilder> 
           getFromCommentFieldBuilder() {
         if (fromCommentBuilder_ == null) {
           fromCommentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
+              TideChart.TideChartCommentBox, TideChart.TideChartCommentBox.Builder, TideChart.TideChartCommentBoxOrBuilder>(
                   getFromComment(),
                   getParentForChildren(),
                   isClean());
@@ -30337,29 +30737,41 @@ public final class TideChart {
         return fromCommentBuilder_;
       }
 
-      private TideChart.TideChartPort toComment_;
+      private TideChart.TideChartCommentBox toComment_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> toCommentBuilder_;
+          TideChart.TideChartCommentBox, TideChart.TideChartCommentBox.Builder, TideChart.TideChartCommentBoxOrBuilder> toCommentBuilder_;
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
       public boolean hasToComment() {
         return toCommentBuilder_ != null || toComment_ != null;
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
-      public TideChart.TideChartPort getToComment() {
+      public TideChart.TideChartCommentBox getToComment() {
         if (toCommentBuilder_ == null) {
-          return toComment_ == null ? TideChart.TideChartPort.getDefaultInstance() : toComment_;
+          return toComment_ == null ? TideChart.TideChartCommentBox.getDefaultInstance() : toComment_;
         } else {
           return toCommentBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
-      public Builder setToComment(TideChart.TideChartPort value) {
+      public Builder setToComment(TideChart.TideChartCommentBox value) {
         if (toCommentBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -30373,10 +30785,14 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
       public Builder setToComment(
-          TideChart.TideChartPort.Builder builderForValue) {
+          TideChart.TideChartCommentBox.Builder builderForValue) {
         if (toCommentBuilder_ == null) {
           toComment_ = builderForValue.build();
           onChanged();
@@ -30387,13 +30803,17 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
-      public Builder mergeToComment(TideChart.TideChartPort value) {
+      public Builder mergeToComment(TideChart.TideChartCommentBox value) {
         if (toCommentBuilder_ == null) {
           if (toComment_ != null) {
             toComment_ =
-              TideChart.TideChartPort.newBuilder(toComment_).mergeFrom(value).buildPartial();
+              TideChart.TideChartCommentBox.newBuilder(toComment_).mergeFrom(value).buildPartial();
           } else {
             toComment_ = value;
           }
@@ -30405,7 +30825,11 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
       public Builder clearToComment() {
         if (toCommentBuilder_ == null) {
@@ -30419,33 +30843,45 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
-      public TideChart.TideChartPort.Builder getToCommentBuilder() {
+      public TideChart.TideChartCommentBox.Builder getToCommentBuilder() {
         
         onChanged();
         return getToCommentFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
-      public TideChart.TideChartPortOrBuilder getToCommentOrBuilder() {
+      public TideChart.TideChartCommentBoxOrBuilder getToCommentOrBuilder() {
         if (toCommentBuilder_ != null) {
           return toCommentBuilder_.getMessageOrBuilder();
         } else {
           return toComment_ == null ?
-              TideChart.TideChartPort.getDefaultInstance() : toComment_;
+              TideChart.TideChartCommentBox.getDefaultInstance() : toComment_;
         }
       }
       /**
-       * <code>.TideChartPort toComment = 2;</code>
+       * <pre>
+       * new version of the comment
+       * </pre>
+       *
+       * <code>.TideChartCommentBox toComment = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> 
+          TideChart.TideChartCommentBox, TideChart.TideChartCommentBox.Builder, TideChart.TideChartCommentBoxOrBuilder> 
           getToCommentFieldBuilder() {
         if (toCommentBuilder_ == null) {
           toCommentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
+              TideChart.TideChartCommentBox, TideChart.TideChartCommentBox.Builder, TideChart.TideChartCommentBoxOrBuilder>(
                   getToComment(),
                   getParentForChildren(),
                   isClean());
@@ -30456,6 +30892,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public java.lang.String getType() {
@@ -30471,6 +30911,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -30487,6 +30931,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setType(
@@ -30500,6 +30948,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder clearType() {
@@ -30509,6 +30961,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setTypeBytes(
@@ -30580,46 +31036,74 @@ public final class TideChart {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TideChartPort fromWidget = 1;</code>
+     * <pre>
+     * previous version of the widget    
+     * </pre>
+     *
+     * <code>.TideChartWidget fromWidget = 1;</code>
      */
     boolean hasFromWidget();
     /**
-     * <code>.TideChartPort fromWidget = 1;</code>
+     * <pre>
+     * previous version of the widget    
+     * </pre>
+     *
+     * <code>.TideChartWidget fromWidget = 1;</code>
      */
-    TideChart.TideChartPort getFromWidget();
+    TideChart.TideChartWidget getFromWidget();
     /**
-     * <code>.TideChartPort fromWidget = 1;</code>
+     * <pre>
+     * previous version of the widget    
+     * </pre>
+     *
+     * <code>.TideChartWidget fromWidget = 1;</code>
      */
-    TideChart.TideChartPortOrBuilder getFromWidgetOrBuilder();
+    TideChart.TideChartWidgetOrBuilder getFromWidgetOrBuilder();
 
     /**
-     * <code>.TideChartPort toWidget = 2;</code>
+     * <pre>
+     * new version of the widget
+     * </pre>
+     *
+     * <code>.TideChartWidget toWidget = 2;</code>
      */
     boolean hasToWidget();
     /**
-     * <code>.TideChartPort toWidget = 2;</code>
+     * <pre>
+     * new version of the widget
+     * </pre>
+     *
+     * <code>.TideChartWidget toWidget = 2;</code>
      */
-    TideChart.TideChartPort getToWidget();
+    TideChart.TideChartWidget getToWidget();
     /**
-     * <code>.TideChartPort toWidget = 2;</code>
+     * <pre>
+     * new version of the widget
+     * </pre>
+     *
+     * <code>.TideChartWidget toWidget = 2;</code>
      */
-    TideChart.TideChartPortOrBuilder getToWidgetOrBuilder();
+    TideChart.TideChartWidgetOrBuilder getToWidgetOrBuilder();
 
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
   }
   /**
-   * <pre>
-   * add, remove or update a widget on the graph
-   * </pre>
-   *
    * Protobuf type {@code TideChartWidgetCommand}
    */
   public  static final class TideChartWidgetCommand extends
@@ -30666,11 +31150,11 @@ public final class TideChart {
               done = true;
               break;
             case 10: {
-              TideChart.TideChartPort.Builder subBuilder = null;
+              TideChart.TideChartWidget.Builder subBuilder = null;
               if (fromWidget_ != null) {
                 subBuilder = fromWidget_.toBuilder();
               }
-              fromWidget_ = input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry);
+              fromWidget_ = input.readMessage(TideChart.TideChartWidget.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(fromWidget_);
                 fromWidget_ = subBuilder.buildPartial();
@@ -30679,11 +31163,11 @@ public final class TideChart {
               break;
             }
             case 18: {
-              TideChart.TideChartPort.Builder subBuilder = null;
+              TideChart.TideChartWidget.Builder subBuilder = null;
               if (toWidget_ != null) {
                 subBuilder = toWidget_.toBuilder();
               }
-              toWidget_ = input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry);
+              toWidget_ = input.readMessage(TideChart.TideChartWidget.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(toWidget_);
                 toWidget_ = subBuilder.buildPartial();
@@ -30730,50 +31214,78 @@ public final class TideChart {
     }
 
     public static final int FROMWIDGET_FIELD_NUMBER = 1;
-    private TideChart.TideChartPort fromWidget_;
+    private TideChart.TideChartWidget fromWidget_;
     /**
-     * <code>.TideChartPort fromWidget = 1;</code>
+     * <pre>
+     * previous version of the widget    
+     * </pre>
+     *
+     * <code>.TideChartWidget fromWidget = 1;</code>
      */
     public boolean hasFromWidget() {
       return fromWidget_ != null;
     }
     /**
-     * <code>.TideChartPort fromWidget = 1;</code>
+     * <pre>
+     * previous version of the widget    
+     * </pre>
+     *
+     * <code>.TideChartWidget fromWidget = 1;</code>
      */
-    public TideChart.TideChartPort getFromWidget() {
-      return fromWidget_ == null ? TideChart.TideChartPort.getDefaultInstance() : fromWidget_;
+    public TideChart.TideChartWidget getFromWidget() {
+      return fromWidget_ == null ? TideChart.TideChartWidget.getDefaultInstance() : fromWidget_;
     }
     /**
-     * <code>.TideChartPort fromWidget = 1;</code>
+     * <pre>
+     * previous version of the widget    
+     * </pre>
+     *
+     * <code>.TideChartWidget fromWidget = 1;</code>
      */
-    public TideChart.TideChartPortOrBuilder getFromWidgetOrBuilder() {
+    public TideChart.TideChartWidgetOrBuilder getFromWidgetOrBuilder() {
       return getFromWidget();
     }
 
     public static final int TOWIDGET_FIELD_NUMBER = 2;
-    private TideChart.TideChartPort toWidget_;
+    private TideChart.TideChartWidget toWidget_;
     /**
-     * <code>.TideChartPort toWidget = 2;</code>
+     * <pre>
+     * new version of the widget
+     * </pre>
+     *
+     * <code>.TideChartWidget toWidget = 2;</code>
      */
     public boolean hasToWidget() {
       return toWidget_ != null;
     }
     /**
-     * <code>.TideChartPort toWidget = 2;</code>
+     * <pre>
+     * new version of the widget
+     * </pre>
+     *
+     * <code>.TideChartWidget toWidget = 2;</code>
      */
-    public TideChart.TideChartPort getToWidget() {
-      return toWidget_ == null ? TideChart.TideChartPort.getDefaultInstance() : toWidget_;
+    public TideChart.TideChartWidget getToWidget() {
+      return toWidget_ == null ? TideChart.TideChartWidget.getDefaultInstance() : toWidget_;
     }
     /**
-     * <code>.TideChartPort toWidget = 2;</code>
+     * <pre>
+     * new version of the widget
+     * </pre>
+     *
+     * <code>.TideChartWidget toWidget = 2;</code>
      */
-    public TideChart.TideChartPortOrBuilder getToWidgetOrBuilder() {
+    public TideChart.TideChartWidgetOrBuilder getToWidgetOrBuilder() {
       return getToWidget();
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
@@ -30789,6 +31301,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -30992,10 +31508,6 @@ public final class TideChart {
       return builder;
     }
     /**
-     * <pre>
-     * add, remove or update a widget on the graph
-     * </pre>
-     *
      * Protobuf type {@code TideChartWidgetCommand}
      */
     public static final class Builder extends
@@ -31171,29 +31683,41 @@ public final class TideChart {
         return this;
       }
 
-      private TideChart.TideChartPort fromWidget_;
+      private TideChart.TideChartWidget fromWidget_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> fromWidgetBuilder_;
+          TideChart.TideChartWidget, TideChart.TideChartWidget.Builder, TideChart.TideChartWidgetOrBuilder> fromWidgetBuilder_;
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
       public boolean hasFromWidget() {
         return fromWidgetBuilder_ != null || fromWidget_ != null;
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
-      public TideChart.TideChartPort getFromWidget() {
+      public TideChart.TideChartWidget getFromWidget() {
         if (fromWidgetBuilder_ == null) {
-          return fromWidget_ == null ? TideChart.TideChartPort.getDefaultInstance() : fromWidget_;
+          return fromWidget_ == null ? TideChart.TideChartWidget.getDefaultInstance() : fromWidget_;
         } else {
           return fromWidgetBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
-      public Builder setFromWidget(TideChart.TideChartPort value) {
+      public Builder setFromWidget(TideChart.TideChartWidget value) {
         if (fromWidgetBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -31207,10 +31731,14 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
       public Builder setFromWidget(
-          TideChart.TideChartPort.Builder builderForValue) {
+          TideChart.TideChartWidget.Builder builderForValue) {
         if (fromWidgetBuilder_ == null) {
           fromWidget_ = builderForValue.build();
           onChanged();
@@ -31221,13 +31749,17 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
-      public Builder mergeFromWidget(TideChart.TideChartPort value) {
+      public Builder mergeFromWidget(TideChart.TideChartWidget value) {
         if (fromWidgetBuilder_ == null) {
           if (fromWidget_ != null) {
             fromWidget_ =
-              TideChart.TideChartPort.newBuilder(fromWidget_).mergeFrom(value).buildPartial();
+              TideChart.TideChartWidget.newBuilder(fromWidget_).mergeFrom(value).buildPartial();
           } else {
             fromWidget_ = value;
           }
@@ -31239,7 +31771,11 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
       public Builder clearFromWidget() {
         if (fromWidgetBuilder_ == null) {
@@ -31253,33 +31789,45 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
-      public TideChart.TideChartPort.Builder getFromWidgetBuilder() {
+      public TideChart.TideChartWidget.Builder getFromWidgetBuilder() {
         
         onChanged();
         return getFromWidgetFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
-      public TideChart.TideChartPortOrBuilder getFromWidgetOrBuilder() {
+      public TideChart.TideChartWidgetOrBuilder getFromWidgetOrBuilder() {
         if (fromWidgetBuilder_ != null) {
           return fromWidgetBuilder_.getMessageOrBuilder();
         } else {
           return fromWidget_ == null ?
-              TideChart.TideChartPort.getDefaultInstance() : fromWidget_;
+              TideChart.TideChartWidget.getDefaultInstance() : fromWidget_;
         }
       }
       /**
-       * <code>.TideChartPort fromWidget = 1;</code>
+       * <pre>
+       * previous version of the widget    
+       * </pre>
+       *
+       * <code>.TideChartWidget fromWidget = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> 
+          TideChart.TideChartWidget, TideChart.TideChartWidget.Builder, TideChart.TideChartWidgetOrBuilder> 
           getFromWidgetFieldBuilder() {
         if (fromWidgetBuilder_ == null) {
           fromWidgetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
+              TideChart.TideChartWidget, TideChart.TideChartWidget.Builder, TideChart.TideChartWidgetOrBuilder>(
                   getFromWidget(),
                   getParentForChildren(),
                   isClean());
@@ -31288,29 +31836,41 @@ public final class TideChart {
         return fromWidgetBuilder_;
       }
 
-      private TideChart.TideChartPort toWidget_;
+      private TideChart.TideChartWidget toWidget_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> toWidgetBuilder_;
+          TideChart.TideChartWidget, TideChart.TideChartWidget.Builder, TideChart.TideChartWidgetOrBuilder> toWidgetBuilder_;
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
       public boolean hasToWidget() {
         return toWidgetBuilder_ != null || toWidget_ != null;
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
-      public TideChart.TideChartPort getToWidget() {
+      public TideChart.TideChartWidget getToWidget() {
         if (toWidgetBuilder_ == null) {
-          return toWidget_ == null ? TideChart.TideChartPort.getDefaultInstance() : toWidget_;
+          return toWidget_ == null ? TideChart.TideChartWidget.getDefaultInstance() : toWidget_;
         } else {
           return toWidgetBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
-      public Builder setToWidget(TideChart.TideChartPort value) {
+      public Builder setToWidget(TideChart.TideChartWidget value) {
         if (toWidgetBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -31324,10 +31884,14 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
       public Builder setToWidget(
-          TideChart.TideChartPort.Builder builderForValue) {
+          TideChart.TideChartWidget.Builder builderForValue) {
         if (toWidgetBuilder_ == null) {
           toWidget_ = builderForValue.build();
           onChanged();
@@ -31338,13 +31902,17 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
-      public Builder mergeToWidget(TideChart.TideChartPort value) {
+      public Builder mergeToWidget(TideChart.TideChartWidget value) {
         if (toWidgetBuilder_ == null) {
           if (toWidget_ != null) {
             toWidget_ =
-              TideChart.TideChartPort.newBuilder(toWidget_).mergeFrom(value).buildPartial();
+              TideChart.TideChartWidget.newBuilder(toWidget_).mergeFrom(value).buildPartial();
           } else {
             toWidget_ = value;
           }
@@ -31356,7 +31924,11 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
       public Builder clearToWidget() {
         if (toWidgetBuilder_ == null) {
@@ -31370,33 +31942,45 @@ public final class TideChart {
         return this;
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
-      public TideChart.TideChartPort.Builder getToWidgetBuilder() {
+      public TideChart.TideChartWidget.Builder getToWidgetBuilder() {
         
         onChanged();
         return getToWidgetFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
-      public TideChart.TideChartPortOrBuilder getToWidgetOrBuilder() {
+      public TideChart.TideChartWidgetOrBuilder getToWidgetOrBuilder() {
         if (toWidgetBuilder_ != null) {
           return toWidgetBuilder_.getMessageOrBuilder();
         } else {
           return toWidget_ == null ?
-              TideChart.TideChartPort.getDefaultInstance() : toWidget_;
+              TideChart.TideChartWidget.getDefaultInstance() : toWidget_;
         }
       }
       /**
-       * <code>.TideChartPort toWidget = 2;</code>
+       * <pre>
+       * new version of the widget
+       * </pre>
+       *
+       * <code>.TideChartWidget toWidget = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> 
+          TideChart.TideChartWidget, TideChart.TideChartWidget.Builder, TideChart.TideChartWidgetOrBuilder> 
           getToWidgetFieldBuilder() {
         if (toWidgetBuilder_ == null) {
           toWidgetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
+              TideChart.TideChartWidget, TideChart.TideChartWidget.Builder, TideChart.TideChartWidgetOrBuilder>(
                   getToWidget(),
                   getParentForChildren(),
                   isClean());
@@ -31407,6 +31991,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public java.lang.String getType() {
@@ -31422,6 +32010,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -31438,6 +32030,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setType(
@@ -31451,6 +32047,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder clearType() {
@@ -31460,6 +32060,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setTypeBytes(
@@ -31531,46 +32135,74 @@ public final class TideChart {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * previons version of the port
+     * </pre>
+     *
      * <code>.TideChartPort fromPort = 1;</code>
      */
     boolean hasFromPort();
     /**
+     * <pre>
+     * previons version of the port
+     * </pre>
+     *
      * <code>.TideChartPort fromPort = 1;</code>
      */
     TideChart.TideChartPort getFromPort();
     /**
+     * <pre>
+     * previons version of the port
+     * </pre>
+     *
      * <code>.TideChartPort fromPort = 1;</code>
      */
     TideChart.TideChartPortOrBuilder getFromPortOrBuilder();
 
     /**
+     * <pre>
+     * new version of the port
+     * </pre>
+     *
      * <code>.TideChartPort toPort = 2;</code>
      */
     boolean hasToPort();
     /**
+     * <pre>
+     * new version of the port
+     * </pre>
+     *
      * <code>.TideChartPort toPort = 2;</code>
      */
     TideChart.TideChartPort getToPort();
     /**
+     * <pre>
+     * new version of the port
+     * </pre>
+     *
      * <code>.TideChartPort toPort = 2;</code>
      */
     TideChart.TideChartPortOrBuilder getToPortOrBuilder();
 
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
   }
   /**
-   * <pre>
-   * add, remove or update a port on the graph
-   * </pre>
-   *
    * Protobuf type {@code TideChartPortCommand}
    */
   public  static final class TideChartPortCommand extends
@@ -31683,18 +32315,30 @@ public final class TideChart {
     public static final int FROMPORT_FIELD_NUMBER = 1;
     private TideChart.TideChartPort fromPort_;
     /**
+     * <pre>
+     * previons version of the port
+     * </pre>
+     *
      * <code>.TideChartPort fromPort = 1;</code>
      */
     public boolean hasFromPort() {
       return fromPort_ != null;
     }
     /**
+     * <pre>
+     * previons version of the port
+     * </pre>
+     *
      * <code>.TideChartPort fromPort = 1;</code>
      */
     public TideChart.TideChartPort getFromPort() {
       return fromPort_ == null ? TideChart.TideChartPort.getDefaultInstance() : fromPort_;
     }
     /**
+     * <pre>
+     * previons version of the port
+     * </pre>
+     *
      * <code>.TideChartPort fromPort = 1;</code>
      */
     public TideChart.TideChartPortOrBuilder getFromPortOrBuilder() {
@@ -31704,18 +32348,30 @@ public final class TideChart {
     public static final int TOPORT_FIELD_NUMBER = 2;
     private TideChart.TideChartPort toPort_;
     /**
+     * <pre>
+     * new version of the port
+     * </pre>
+     *
      * <code>.TideChartPort toPort = 2;</code>
      */
     public boolean hasToPort() {
       return toPort_ != null;
     }
     /**
+     * <pre>
+     * new version of the port
+     * </pre>
+     *
      * <code>.TideChartPort toPort = 2;</code>
      */
     public TideChart.TideChartPort getToPort() {
       return toPort_ == null ? TideChart.TideChartPort.getDefaultInstance() : toPort_;
     }
     /**
+     * <pre>
+     * new version of the port
+     * </pre>
+     *
      * <code>.TideChartPort toPort = 2;</code>
      */
     public TideChart.TideChartPortOrBuilder getToPortOrBuilder() {
@@ -31725,6 +32381,10 @@ public final class TideChart {
     public static final int TYPE_FIELD_NUMBER = 3;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
@@ -31740,6 +32400,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -31943,10 +32607,6 @@ public final class TideChart {
       return builder;
     }
     /**
-     * <pre>
-     * add, remove or update a port on the graph
-     * </pre>
-     *
      * Protobuf type {@code TideChartPortCommand}
      */
     public static final class Builder extends
@@ -32126,12 +32786,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> fromPortBuilder_;
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public boolean hasFromPort() {
         return fromPortBuilder_ != null || fromPort_ != null;
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public TideChart.TideChartPort getFromPort() {
@@ -32142,6 +32810,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public Builder setFromPort(TideChart.TideChartPort value) {
@@ -32158,6 +32830,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public Builder setFromPort(
@@ -32172,6 +32848,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public Builder mergeFromPort(TideChart.TideChartPort value) {
@@ -32190,6 +32870,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public Builder clearFromPort() {
@@ -32204,6 +32888,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public TideChart.TideChartPort.Builder getFromPortBuilder() {
@@ -32212,6 +32900,10 @@ public final class TideChart {
         return getFromPortFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       public TideChart.TideChartPortOrBuilder getFromPortOrBuilder() {
@@ -32223,6 +32915,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previons version of the port
+       * </pre>
+       *
        * <code>.TideChartPort fromPort = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -32243,12 +32939,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> toPortBuilder_;
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public boolean hasToPort() {
         return toPortBuilder_ != null || toPort_ != null;
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public TideChart.TideChartPort getToPort() {
@@ -32259,6 +32963,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public Builder setToPort(TideChart.TideChartPort value) {
@@ -32275,6 +32983,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public Builder setToPort(
@@ -32289,6 +33001,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public Builder mergeToPort(TideChart.TideChartPort value) {
@@ -32307,6 +33023,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public Builder clearToPort() {
@@ -32321,6 +33041,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public TideChart.TideChartPort.Builder getToPortBuilder() {
@@ -32329,6 +33053,10 @@ public final class TideChart {
         return getToPortFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       public TideChart.TideChartPortOrBuilder getToPortOrBuilder() {
@@ -32340,6 +33068,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the port
+       * </pre>
+       *
        * <code>.TideChartPort toPort = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -32358,6 +33090,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public java.lang.String getType() {
@@ -32373,6 +33109,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -32389,6 +33129,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setType(
@@ -32402,6 +33146,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder clearType() {
@@ -32411,6 +33159,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setTypeBytes(
@@ -32482,46 +33234,74 @@ public final class TideChart {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * previous version of the link
+     * </pre>
+     *
      * <code>.TideChartLink fromLink = 1;</code>
      */
     boolean hasFromLink();
     /**
+     * <pre>
+     * previous version of the link
+     * </pre>
+     *
      * <code>.TideChartLink fromLink = 1;</code>
      */
     TideChart.TideChartLink getFromLink();
     /**
+     * <pre>
+     * previous version of the link
+     * </pre>
+     *
      * <code>.TideChartLink fromLink = 1;</code>
      */
     TideChart.TideChartLinkOrBuilder getFromLinkOrBuilder();
 
     /**
+     * <pre>
+     * new version of the link
+     * </pre>
+     *
      * <code>.TideChartLink toLink = 2;</code>
      */
     boolean hasToLink();
     /**
+     * <pre>
+     * new version of the link
+     * </pre>
+     *
      * <code>.TideChartLink toLink = 2;</code>
      */
     TideChart.TideChartLink getToLink();
     /**
+     * <pre>
+     * new version of the link
+     * </pre>
+     *
      * <code>.TideChartLink toLink = 2;</code>
      */
     TideChart.TideChartLinkOrBuilder getToLinkOrBuilder();
 
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
   }
   /**
-   * <pre>
-   * add, remove or update a link on the graph
-   * </pre>
-   *
    * Protobuf type {@code TideChartLinkCommand}
    */
   public  static final class TideChartLinkCommand extends
@@ -32634,18 +33414,30 @@ public final class TideChart {
     public static final int FROMLINK_FIELD_NUMBER = 1;
     private TideChart.TideChartLink fromLink_;
     /**
+     * <pre>
+     * previous version of the link
+     * </pre>
+     *
      * <code>.TideChartLink fromLink = 1;</code>
      */
     public boolean hasFromLink() {
       return fromLink_ != null;
     }
     /**
+     * <pre>
+     * previous version of the link
+     * </pre>
+     *
      * <code>.TideChartLink fromLink = 1;</code>
      */
     public TideChart.TideChartLink getFromLink() {
       return fromLink_ == null ? TideChart.TideChartLink.getDefaultInstance() : fromLink_;
     }
     /**
+     * <pre>
+     * previous version of the link
+     * </pre>
+     *
      * <code>.TideChartLink fromLink = 1;</code>
      */
     public TideChart.TideChartLinkOrBuilder getFromLinkOrBuilder() {
@@ -32655,18 +33447,30 @@ public final class TideChart {
     public static final int TOLINK_FIELD_NUMBER = 2;
     private TideChart.TideChartLink toLink_;
     /**
+     * <pre>
+     * new version of the link
+     * </pre>
+     *
      * <code>.TideChartLink toLink = 2;</code>
      */
     public boolean hasToLink() {
       return toLink_ != null;
     }
     /**
+     * <pre>
+     * new version of the link
+     * </pre>
+     *
      * <code>.TideChartLink toLink = 2;</code>
      */
     public TideChart.TideChartLink getToLink() {
       return toLink_ == null ? TideChart.TideChartLink.getDefaultInstance() : toLink_;
     }
     /**
+     * <pre>
+     * new version of the link
+     * </pre>
+     *
      * <code>.TideChartLink toLink = 2;</code>
      */
     public TideChart.TideChartLinkOrBuilder getToLinkOrBuilder() {
@@ -32676,6 +33480,10 @@ public final class TideChart {
     public static final int TYPE_FIELD_NUMBER = 3;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
@@ -32691,6 +33499,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -32894,10 +33706,6 @@ public final class TideChart {
       return builder;
     }
     /**
-     * <pre>
-     * add, remove or update a link on the graph
-     * </pre>
-     *
      * Protobuf type {@code TideChartLinkCommand}
      */
     public static final class Builder extends
@@ -33077,12 +33885,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartLink, TideChart.TideChartLink.Builder, TideChart.TideChartLinkOrBuilder> fromLinkBuilder_;
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public boolean hasFromLink() {
         return fromLinkBuilder_ != null || fromLink_ != null;
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public TideChart.TideChartLink getFromLink() {
@@ -33093,6 +33909,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public Builder setFromLink(TideChart.TideChartLink value) {
@@ -33109,6 +33929,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public Builder setFromLink(
@@ -33123,6 +33947,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public Builder mergeFromLink(TideChart.TideChartLink value) {
@@ -33141,6 +33969,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public Builder clearFromLink() {
@@ -33155,6 +33987,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public TideChart.TideChartLink.Builder getFromLinkBuilder() {
@@ -33163,6 +33999,10 @@ public final class TideChart {
         return getFromLinkFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       public TideChart.TideChartLinkOrBuilder getFromLinkOrBuilder() {
@@ -33174,6 +34014,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previous version of the link
+       * </pre>
+       *
        * <code>.TideChartLink fromLink = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -33194,12 +34038,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartLink, TideChart.TideChartLink.Builder, TideChart.TideChartLinkOrBuilder> toLinkBuilder_;
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public boolean hasToLink() {
         return toLinkBuilder_ != null || toLink_ != null;
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public TideChart.TideChartLink getToLink() {
@@ -33210,6 +34062,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public Builder setToLink(TideChart.TideChartLink value) {
@@ -33226,6 +34082,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public Builder setToLink(
@@ -33240,6 +34100,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public Builder mergeToLink(TideChart.TideChartLink value) {
@@ -33258,6 +34122,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public Builder clearToLink() {
@@ -33272,6 +34140,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public TideChart.TideChartLink.Builder getToLinkBuilder() {
@@ -33280,6 +34152,10 @@ public final class TideChart {
         return getToLinkFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       public TideChart.TideChartLinkOrBuilder getToLinkOrBuilder() {
@@ -33291,6 +34167,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the link
+       * </pre>
+       *
        * <code>.TideChartLink toLink = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -33309,6 +34189,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public java.lang.String getType() {
@@ -33324,6 +34208,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -33340,6 +34228,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setType(
@@ -33353,6 +34245,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder clearType() {
@@ -33362,6 +34258,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setTypeBytes(
@@ -33434,7 +34334,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * add, remove or update a node on the graph
+     * previous version of the graph node
      * </pre>
      *
      * <code>.TideChartNode fromNode = 1;</code>
@@ -33442,7 +34342,7 @@ public final class TideChart {
     boolean hasFromNode();
     /**
      * <pre>
-     * add, remove or update a node on the graph
+     * previous version of the graph node
      * </pre>
      *
      * <code>.TideChartNode fromNode = 1;</code>
@@ -33450,7 +34350,7 @@ public final class TideChart {
     TideChart.TideChartNode getFromNode();
     /**
      * <pre>
-     * add, remove or update a node on the graph
+     * previous version of the graph node
      * </pre>
      *
      * <code>.TideChartNode fromNode = 1;</code>
@@ -33458,23 +34358,43 @@ public final class TideChart {
     TideChart.TideChartNodeOrBuilder getFromNodeOrBuilder();
 
     /**
+     * <pre>
+     * new version of the graph node
+     * </pre>
+     *
      * <code>.TideChartNode toNode = 2;</code>
      */
     boolean hasToNode();
     /**
+     * <pre>
+     * new version of the graph node
+     * </pre>
+     *
      * <code>.TideChartNode toNode = 2;</code>
      */
     TideChart.TideChartNode getToNode();
     /**
+     * <pre>
+     * new version of the graph node
+     * </pre>
+     *
      * <code>.TideChartNode toNode = 2;</code>
      */
     TideChart.TideChartNodeOrBuilder getToNodeOrBuilder();
 
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     com.google.protobuf.ByteString
@@ -33594,7 +34514,7 @@ public final class TideChart {
     private TideChart.TideChartNode fromNode_;
     /**
      * <pre>
-     * add, remove or update a node on the graph
+     * previous version of the graph node
      * </pre>
      *
      * <code>.TideChartNode fromNode = 1;</code>
@@ -33604,7 +34524,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * add, remove or update a node on the graph
+     * previous version of the graph node
      * </pre>
      *
      * <code>.TideChartNode fromNode = 1;</code>
@@ -33614,7 +34534,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * add, remove or update a node on the graph
+     * previous version of the graph node
      * </pre>
      *
      * <code>.TideChartNode fromNode = 1;</code>
@@ -33626,18 +34546,30 @@ public final class TideChart {
     public static final int TONODE_FIELD_NUMBER = 2;
     private TideChart.TideChartNode toNode_;
     /**
+     * <pre>
+     * new version of the graph node
+     * </pre>
+     *
      * <code>.TideChartNode toNode = 2;</code>
      */
     public boolean hasToNode() {
       return toNode_ != null;
     }
     /**
+     * <pre>
+     * new version of the graph node
+     * </pre>
+     *
      * <code>.TideChartNode toNode = 2;</code>
      */
     public TideChart.TideChartNode getToNode() {
       return toNode_ == null ? TideChart.TideChartNode.getDefaultInstance() : toNode_;
     }
     /**
+     * <pre>
+     * new version of the graph node
+     * </pre>
+     *
      * <code>.TideChartNode toNode = 2;</code>
      */
     public TideChart.TideChartNodeOrBuilder getToNodeOrBuilder() {
@@ -33647,6 +34579,10 @@ public final class TideChart {
     public static final int TYPE_FIELD_NUMBER = 3;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
@@ -33662,6 +34598,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -34045,7 +34985,7 @@ public final class TideChart {
           TideChart.TideChartNode, TideChart.TideChartNode.Builder, TideChart.TideChartNodeOrBuilder> fromNodeBuilder_;
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34055,7 +34995,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34069,7 +35009,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34089,7 +35029,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34107,7 +35047,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34129,7 +35069,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34147,7 +35087,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34159,7 +35099,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34174,7 +35114,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * add, remove or update a node on the graph
+       * previous version of the graph node
        * </pre>
        *
        * <code>.TideChartNode fromNode = 1;</code>
@@ -34197,12 +35137,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartNode, TideChart.TideChartNode.Builder, TideChart.TideChartNodeOrBuilder> toNodeBuilder_;
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public boolean hasToNode() {
         return toNodeBuilder_ != null || toNode_ != null;
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public TideChart.TideChartNode getToNode() {
@@ -34213,6 +35161,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public Builder setToNode(TideChart.TideChartNode value) {
@@ -34229,6 +35181,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public Builder setToNode(
@@ -34243,6 +35199,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public Builder mergeToNode(TideChart.TideChartNode value) {
@@ -34261,6 +35221,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public Builder clearToNode() {
@@ -34275,6 +35239,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public TideChart.TideChartNode.Builder getToNodeBuilder() {
@@ -34283,6 +35251,10 @@ public final class TideChart {
         return getToNodeFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       public TideChart.TideChartNodeOrBuilder getToNodeOrBuilder() {
@@ -34294,6 +35266,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the graph node
+       * </pre>
+       *
        * <code>.TideChartNode toNode = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -34312,6 +35288,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public java.lang.String getType() {
@@ -34327,6 +35307,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -34343,6 +35327,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setType(
@@ -34356,6 +35344,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder clearType() {
@@ -34365,6 +35357,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setTypeBytes(
@@ -34436,46 +35432,74 @@ public final class TideChart {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * previous version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion fromRegion = 1;</code>
      */
     boolean hasFromRegion();
     /**
+     * <pre>
+     * previous version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion fromRegion = 1;</code>
      */
     TideChart.TideChartRegion getFromRegion();
     /**
+     * <pre>
+     * previous version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion fromRegion = 1;</code>
      */
     TideChart.TideChartRegionOrBuilder getFromRegionOrBuilder();
 
     /**
+     * <pre>
+     * new version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion toRegion = 2;</code>
      */
     boolean hasToRegion();
     /**
+     * <pre>
+     * new version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion toRegion = 2;</code>
      */
     TideChart.TideChartRegion getToRegion();
     /**
+     * <pre>
+     * new version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion toRegion = 2;</code>
      */
     TideChart.TideChartRegionOrBuilder getToRegionOrBuilder();
 
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
   }
   /**
-   * <pre>
-   * adds, remove or update a region on the graph
-   * </pre>
-   *
    * Protobuf type {@code TideChartRegionCommand}
    */
   public  static final class TideChartRegionCommand extends
@@ -34588,18 +35612,30 @@ public final class TideChart {
     public static final int FROMREGION_FIELD_NUMBER = 1;
     private TideChart.TideChartRegion fromRegion_;
     /**
+     * <pre>
+     * previous version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion fromRegion = 1;</code>
      */
     public boolean hasFromRegion() {
       return fromRegion_ != null;
     }
     /**
+     * <pre>
+     * previous version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion fromRegion = 1;</code>
      */
     public TideChart.TideChartRegion getFromRegion() {
       return fromRegion_ == null ? TideChart.TideChartRegion.getDefaultInstance() : fromRegion_;
     }
     /**
+     * <pre>
+     * previous version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion fromRegion = 1;</code>
      */
     public TideChart.TideChartRegionOrBuilder getFromRegionOrBuilder() {
@@ -34609,18 +35645,30 @@ public final class TideChart {
     public static final int TOREGION_FIELD_NUMBER = 2;
     private TideChart.TideChartRegion toRegion_;
     /**
+     * <pre>
+     * new version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion toRegion = 2;</code>
      */
     public boolean hasToRegion() {
       return toRegion_ != null;
     }
     /**
+     * <pre>
+     * new version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion toRegion = 2;</code>
      */
     public TideChart.TideChartRegion getToRegion() {
       return toRegion_ == null ? TideChart.TideChartRegion.getDefaultInstance() : toRegion_;
     }
     /**
+     * <pre>
+     * new version of the region
+     * </pre>
+     *
      * <code>.TideChartRegion toRegion = 2;</code>
      */
     public TideChart.TideChartRegionOrBuilder getToRegionOrBuilder() {
@@ -34630,6 +35678,10 @@ public final class TideChart {
     public static final int TYPE_FIELD_NUMBER = 3;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
@@ -34645,6 +35697,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * type of update: add, update or remove
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -34848,10 +35904,6 @@ public final class TideChart {
       return builder;
     }
     /**
-     * <pre>
-     * adds, remove or update a region on the graph
-     * </pre>
-     *
      * Protobuf type {@code TideChartRegionCommand}
      */
     public static final class Builder extends
@@ -35031,12 +36083,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartRegion, TideChart.TideChartRegion.Builder, TideChart.TideChartRegionOrBuilder> fromRegionBuilder_;
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public boolean hasFromRegion() {
         return fromRegionBuilder_ != null || fromRegion_ != null;
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public TideChart.TideChartRegion getFromRegion() {
@@ -35047,6 +36107,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public Builder setFromRegion(TideChart.TideChartRegion value) {
@@ -35063,6 +36127,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public Builder setFromRegion(
@@ -35077,6 +36145,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public Builder mergeFromRegion(TideChart.TideChartRegion value) {
@@ -35095,6 +36167,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public Builder clearFromRegion() {
@@ -35109,6 +36185,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public TideChart.TideChartRegion.Builder getFromRegionBuilder() {
@@ -35117,6 +36197,10 @@ public final class TideChart {
         return getFromRegionFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       public TideChart.TideChartRegionOrBuilder getFromRegionOrBuilder() {
@@ -35128,6 +36212,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previous version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion fromRegion = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -35148,12 +36236,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartRegion, TideChart.TideChartRegion.Builder, TideChart.TideChartRegionOrBuilder> toRegionBuilder_;
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public boolean hasToRegion() {
         return toRegionBuilder_ != null || toRegion_ != null;
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public TideChart.TideChartRegion getToRegion() {
@@ -35164,6 +36260,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public Builder setToRegion(TideChart.TideChartRegion value) {
@@ -35180,6 +36280,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public Builder setToRegion(
@@ -35194,6 +36298,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public Builder mergeToRegion(TideChart.TideChartRegion value) {
@@ -35212,6 +36320,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public Builder clearToRegion() {
@@ -35226,6 +36338,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public TideChart.TideChartRegion.Builder getToRegionBuilder() {
@@ -35234,6 +36350,10 @@ public final class TideChart {
         return getToRegionFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       public TideChart.TideChartRegionOrBuilder getToRegionOrBuilder() {
@@ -35245,6 +36365,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the region
+       * </pre>
+       *
        * <code>.TideChartRegion toRegion = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -35263,6 +36387,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public java.lang.String getType() {
@@ -35278,6 +36406,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -35294,6 +36426,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setType(
@@ -35307,6 +36443,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder clearType() {
@@ -35316,6 +36456,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setTypeBytes(
@@ -35387,46 +36531,74 @@ public final class TideChart {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * previous versino of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph fromGraph = 1;</code>
      */
     boolean hasFromGraph();
     /**
+     * <pre>
+     * previous versino of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph fromGraph = 1;</code>
      */
     TideChart.TideChartGraph getFromGraph();
     /**
+     * <pre>
+     * previous versino of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph fromGraph = 1;</code>
      */
     TideChart.TideChartGraphOrBuilder getFromGraphOrBuilder();
 
     /**
+     * <pre>
+     * new version of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph toGraph = 2;</code>
      */
     boolean hasToGraph();
     /**
+     * <pre>
+     * new version of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph toGraph = 2;</code>
      */
     TideChart.TideChartGraph getToGraph();
     /**
+     * <pre>
+     * new version of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph toGraph = 2;</code>
      */
     TideChart.TideChartGraphOrBuilder getToGraphOrBuilder();
 
     /**
+     * <pre>
+     * type of update: add, update or remove    
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     java.lang.String getType();
     /**
+     * <pre>
+     * type of update: add, update or remove    
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
   }
   /**
-   * <pre>
-   * adds or removes a graph from the chart
-   * </pre>
-   *
    * Protobuf type {@code TideChartGraphCommand}
    */
   public  static final class TideChartGraphCommand extends
@@ -35539,18 +36711,30 @@ public final class TideChart {
     public static final int FROMGRAPH_FIELD_NUMBER = 1;
     private TideChart.TideChartGraph fromGraph_;
     /**
+     * <pre>
+     * previous versino of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph fromGraph = 1;</code>
      */
     public boolean hasFromGraph() {
       return fromGraph_ != null;
     }
     /**
+     * <pre>
+     * previous versino of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph fromGraph = 1;</code>
      */
     public TideChart.TideChartGraph getFromGraph() {
       return fromGraph_ == null ? TideChart.TideChartGraph.getDefaultInstance() : fromGraph_;
     }
     /**
+     * <pre>
+     * previous versino of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph fromGraph = 1;</code>
      */
     public TideChart.TideChartGraphOrBuilder getFromGraphOrBuilder() {
@@ -35560,18 +36744,30 @@ public final class TideChart {
     public static final int TOGRAPH_FIELD_NUMBER = 2;
     private TideChart.TideChartGraph toGraph_;
     /**
+     * <pre>
+     * new version of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph toGraph = 2;</code>
      */
     public boolean hasToGraph() {
       return toGraph_ != null;
     }
     /**
+     * <pre>
+     * new version of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph toGraph = 2;</code>
      */
     public TideChart.TideChartGraph getToGraph() {
       return toGraph_ == null ? TideChart.TideChartGraph.getDefaultInstance() : toGraph_;
     }
     /**
+     * <pre>
+     * new version of the graph
+     * </pre>
+     *
      * <code>.TideChartGraph toGraph = 2;</code>
      */
     public TideChart.TideChartGraphOrBuilder getToGraphOrBuilder() {
@@ -35581,6 +36777,10 @@ public final class TideChart {
     public static final int TYPE_FIELD_NUMBER = 3;
     private volatile java.lang.Object type_;
     /**
+     * <pre>
+     * type of update: add, update or remove    
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
@@ -35596,6 +36796,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * type of update: add, update or remove    
+     * </pre>
+     *
      * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -35799,10 +37003,6 @@ public final class TideChart {
       return builder;
     }
     /**
-     * <pre>
-     * adds or removes a graph from the chart
-     * </pre>
-     *
      * Protobuf type {@code TideChartGraphCommand}
      */
     public static final class Builder extends
@@ -35982,12 +37182,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder> fromGraphBuilder_;
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public boolean hasFromGraph() {
         return fromGraphBuilder_ != null || fromGraph_ != null;
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public TideChart.TideChartGraph getFromGraph() {
@@ -35998,6 +37206,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public Builder setFromGraph(TideChart.TideChartGraph value) {
@@ -36014,6 +37226,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public Builder setFromGraph(
@@ -36028,6 +37244,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public Builder mergeFromGraph(TideChart.TideChartGraph value) {
@@ -36046,6 +37266,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public Builder clearFromGraph() {
@@ -36060,6 +37284,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public TideChart.TideChartGraph.Builder getFromGraphBuilder() {
@@ -36068,6 +37296,10 @@ public final class TideChart {
         return getFromGraphFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       public TideChart.TideChartGraphOrBuilder getFromGraphOrBuilder() {
@@ -36079,6 +37311,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * previous versino of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph fromGraph = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -36099,12 +37335,20 @@ public final class TideChart {
       private com.google.protobuf.SingleFieldBuilderV3<
           TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder> toGraphBuilder_;
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public boolean hasToGraph() {
         return toGraphBuilder_ != null || toGraph_ != null;
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public TideChart.TideChartGraph getToGraph() {
@@ -36115,6 +37359,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public Builder setToGraph(TideChart.TideChartGraph value) {
@@ -36131,6 +37379,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public Builder setToGraph(
@@ -36145,6 +37397,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public Builder mergeToGraph(TideChart.TideChartGraph value) {
@@ -36163,6 +37419,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public Builder clearToGraph() {
@@ -36177,6 +37437,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public TideChart.TideChartGraph.Builder getToGraphBuilder() {
@@ -36185,6 +37449,10 @@ public final class TideChart {
         return getToGraphFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       public TideChart.TideChartGraphOrBuilder getToGraphOrBuilder() {
@@ -36196,6 +37464,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * new version of the graph
+       * </pre>
+       *
        * <code>.TideChartGraph toGraph = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -36214,6 +37486,10 @@ public final class TideChart {
 
       private java.lang.Object type_ = "";
       /**
+       * <pre>
+       * type of update: add, update or remove    
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public java.lang.String getType() {
@@ -36229,6 +37505,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove    
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -36245,6 +37525,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * type of update: add, update or remove    
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setType(
@@ -36258,6 +37542,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove    
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder clearType() {
@@ -36267,6 +37555,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * type of update: add, update or remove    
+       * </pre>
+       *
        * <code>string type = 3;</code>
        */
       public Builder setTypeBytes(
@@ -38821,7 +40113,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * node reference (graph-id:node-name)
+     * node reference (node-name)
      * </pre>
      *
      * <code>string node = 3;</code>
@@ -38829,7 +40121,7 @@ public final class TideChart {
     java.lang.String getNode();
     /**
      * <pre>
-     * node reference (graph-id:node-name)
+     * node reference (node-name)
      * </pre>
      *
      * <code>string node = 3;</code>
@@ -38839,7 +40131,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * region reference (graph-id:region-name)
+     * region reference (region-name)
      * </pre>
      *
      * <code>string region = 4;</code>
@@ -38847,7 +40139,7 @@ public final class TideChart {
     java.lang.String getRegion();
     /**
      * <pre>
-     * region reference (graph-id:region-name)
+     * region reference (region-name)
      * </pre>
      *
      * <code>string region = 4;</code>
@@ -38857,7 +40149,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * graph reference (graph-id)
+     * graph reference (graph-name)
      * </pre>
      *
      * <code>string graph = 5;</code>
@@ -38865,7 +40157,7 @@ public final class TideChart {
     java.lang.String getGraph();
     /**
      * <pre>
-     * graph reference (graph-id)
+     * graph reference (graph-name)
      * </pre>
      *
      * <code>string graph = 5;</code>
@@ -39131,7 +40423,7 @@ public final class TideChart {
     public static final int NODE_FIELD_NUMBER = 3;
     /**
      * <pre>
-     * node reference (graph-id:node-name)
+     * node reference (node-name)
      * </pre>
      *
      * <code>string node = 3;</code>
@@ -39155,7 +40447,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * node reference (graph-id:node-name)
+     * node reference (node-name)
      * </pre>
      *
      * <code>string node = 3;</code>
@@ -39182,7 +40474,7 @@ public final class TideChart {
     public static final int REGION_FIELD_NUMBER = 4;
     /**
      * <pre>
-     * region reference (graph-id:region-name)
+     * region reference (region-name)
      * </pre>
      *
      * <code>string region = 4;</code>
@@ -39206,7 +40498,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * region reference (graph-id:region-name)
+     * region reference (region-name)
      * </pre>
      *
      * <code>string region = 4;</code>
@@ -39233,7 +40525,7 @@ public final class TideChart {
     public static final int GRAPH_FIELD_NUMBER = 5;
     /**
      * <pre>
-     * graph reference (graph-id)
+     * graph reference (graph-name)
      * </pre>
      *
      * <code>string graph = 5;</code>
@@ -39257,7 +40549,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * graph reference (graph-id)
+     * graph reference (graph-name)
      * </pre>
      *
      * <code>string graph = 5;</code>
@@ -40144,7 +41436,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * node reference (graph-id:node-name)
+       * node reference (node-name)
        * </pre>
        *
        * <code>string node = 3;</code>
@@ -40168,7 +41460,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * node reference (graph-id:node-name)
+       * node reference (node-name)
        * </pre>
        *
        * <code>string node = 3;</code>
@@ -40193,7 +41485,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * node reference (graph-id:node-name)
+       * node reference (node-name)
        * </pre>
        *
        * <code>string node = 3;</code>
@@ -40210,7 +41502,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * node reference (graph-id:node-name)
+       * node reference (node-name)
        * </pre>
        *
        * <code>string node = 3;</code>
@@ -40225,7 +41517,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * node reference (graph-id:node-name)
+       * node reference (node-name)
        * </pre>
        *
        * <code>string node = 3;</code>
@@ -40244,7 +41536,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * region reference (graph-id:region-name)
+       * region reference (region-name)
        * </pre>
        *
        * <code>string region = 4;</code>
@@ -40268,7 +41560,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * region reference (graph-id:region-name)
+       * region reference (region-name)
        * </pre>
        *
        * <code>string region = 4;</code>
@@ -40293,7 +41585,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * region reference (graph-id:region-name)
+       * region reference (region-name)
        * </pre>
        *
        * <code>string region = 4;</code>
@@ -40310,7 +41602,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * region reference (graph-id:region-name)
+       * region reference (region-name)
        * </pre>
        *
        * <code>string region = 4;</code>
@@ -40325,7 +41617,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * region reference (graph-id:region-name)
+       * region reference (region-name)
        * </pre>
        *
        * <code>string region = 4;</code>
@@ -40344,7 +41636,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * graph reference (graph-id)
+       * graph reference (graph-name)
        * </pre>
        *
        * <code>string graph = 5;</code>
@@ -40368,7 +41660,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph reference (graph-id)
+       * graph reference (graph-name)
        * </pre>
        *
        * <code>string graph = 5;</code>
@@ -40393,7 +41685,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph reference (graph-id)
+       * graph reference (graph-name)
        * </pre>
        *
        * <code>string graph = 5;</code>
@@ -40410,7 +41702,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph reference (graph-id)
+       * graph reference (graph-name)
        * </pre>
        *
        * <code>string graph = 5;</code>
@@ -40425,7 +41717,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph reference (graph-id)
+       * graph reference (graph-name)
        * </pre>
        *
        * <code>string graph = 5;</code>
@@ -40660,7 +41952,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -40669,7 +41961,7 @@ public final class TideChart {
         getPropsList();
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -40677,7 +41969,7 @@ public final class TideChart {
     TideChart.TideChartPort getProps(int index);
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -40685,7 +41977,7 @@ public final class TideChart {
     int getPropsCount();
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -40694,7 +41986,7 @@ public final class TideChart {
         getPropsOrBuilderList();
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -41129,7 +42421,7 @@ public final class TideChart {
     private java.util.List<TideChart.TideChartPort> props_;
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -41139,7 +42431,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -41150,7 +42442,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -41160,7 +42452,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -41170,7 +42462,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * definition of property values used by the method defined like a port
+     * definition of property values used by the method (uses port definition format)
      * </pre>
      *
      * <code>repeated .TideChartPort props = 7;</code>
@@ -42694,7 +43986,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42708,7 +44000,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42722,7 +44014,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42736,7 +44028,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42757,7 +44049,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42775,7 +44067,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42795,7 +44087,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42816,7 +44108,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42834,7 +44126,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42852,7 +44144,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42871,7 +44163,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42888,7 +44180,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42905,7 +44197,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42916,7 +44208,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42930,7 +44222,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42945,7 +44237,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42956,7 +44248,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -42968,7 +44260,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * definition of property values used by the method defined like a port
+       * definition of property values used by the method (uses port definition format)
        * </pre>
        *
        * <code>repeated .TideChartPort props = 7;</code>
@@ -43103,20 +44395,36 @@ public final class TideChart {
         getPathBytes();
 
     /**
+     * <pre>
+     * date file version was created
+     * </pre>
+     *
      * <code>string createdDate = 5;</code>
      */
     java.lang.String getCreatedDate();
     /**
+     * <pre>
+     * date file version was created
+     * </pre>
+     *
      * <code>string createdDate = 5;</code>
      */
     com.google.protobuf.ByteString
         getCreatedDateBytes();
 
     /**
+     * <pre>
+     * user that created this file version 
+     * </pre>
+     *
      * <code>string createdBy = 6;</code>
      */
     java.lang.String getCreatedBy();
     /**
+     * <pre>
+     * user that created this file version 
+     * </pre>
+     *
      * <code>string createdBy = 6;</code>
      */
     com.google.protobuf.ByteString
@@ -43451,6 +44759,10 @@ public final class TideChart {
     public static final int CREATEDDATE_FIELD_NUMBER = 5;
     private volatile java.lang.Object createdDate_;
     /**
+     * <pre>
+     * date file version was created
+     * </pre>
+     *
      * <code>string createdDate = 5;</code>
      */
     public java.lang.String getCreatedDate() {
@@ -43466,6 +44778,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * date file version was created
+     * </pre>
+     *
      * <code>string createdDate = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -43485,6 +44801,10 @@ public final class TideChart {
     public static final int CREATEDBY_FIELD_NUMBER = 6;
     private volatile java.lang.Object createdBy_;
     /**
+     * <pre>
+     * user that created this file version 
+     * </pre>
+     *
      * <code>string createdBy = 6;</code>
      */
     public java.lang.String getCreatedBy() {
@@ -43500,6 +44820,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * user that created this file version 
+     * </pre>
+     *
      * <code>string createdBy = 6;</code>
      */
     public com.google.protobuf.ByteString
@@ -44335,6 +45659,10 @@ public final class TideChart {
 
       private java.lang.Object createdDate_ = "";
       /**
+       * <pre>
+       * date file version was created
+       * </pre>
+       *
        * <code>string createdDate = 5;</code>
        */
       public java.lang.String getCreatedDate() {
@@ -44350,6 +45678,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * date file version was created
+       * </pre>
+       *
        * <code>string createdDate = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -44366,6 +45698,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * date file version was created
+       * </pre>
+       *
        * <code>string createdDate = 5;</code>
        */
       public Builder setCreatedDate(
@@ -44379,6 +45715,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * date file version was created
+       * </pre>
+       *
        * <code>string createdDate = 5;</code>
        */
       public Builder clearCreatedDate() {
@@ -44388,6 +45728,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * date file version was created
+       * </pre>
+       *
        * <code>string createdDate = 5;</code>
        */
       public Builder setCreatedDateBytes(
@@ -44404,6 +45748,10 @@ public final class TideChart {
 
       private java.lang.Object createdBy_ = "";
       /**
+       * <pre>
+       * user that created this file version 
+       * </pre>
+       *
        * <code>string createdBy = 6;</code>
        */
       public java.lang.String getCreatedBy() {
@@ -44419,6 +45767,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * user that created this file version 
+       * </pre>
+       *
        * <code>string createdBy = 6;</code>
        */
       public com.google.protobuf.ByteString
@@ -44435,6 +45787,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * user that created this file version 
+       * </pre>
+       *
        * <code>string createdBy = 6;</code>
        */
       public Builder setCreatedBy(
@@ -44448,6 +45804,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * user that created this file version 
+       * </pre>
+       *
        * <code>string createdBy = 6;</code>
        */
       public Builder clearCreatedBy() {
@@ -44457,6 +45817,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * user that created this file version 
+       * </pre>
+       *
        * <code>string createdBy = 6;</code>
        */
       public Builder setCreatedByBytes(
@@ -47199,7 +48563,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * Path in global state storage
+     * Path in global state storage for events from state changes
      * </pre>
      *
      * <code>string path = 3;</code>
@@ -47207,7 +48571,7 @@ public final class TideChart {
     java.lang.String getPath();
     /**
      * <pre>
-     * Path in global state storage
+     * Path in global state storage for events from state changes
      * </pre>
      *
      * <code>string path = 3;</code>
@@ -47306,7 +48670,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * graph-id      - graph scripts and graph nodes can generate messages
+     * graph-name    - graph scripts and graph nodes can generate messages
      * </pre>
      *
      * <code>string graph = 8;</code>
@@ -47314,7 +48678,7 @@ public final class TideChart {
     java.lang.String getGraph();
     /**
      * <pre>
-     * graph-id      - graph scripts and graph nodes can generate messages
+     * graph-name    - graph scripts and graph nodes can generate messages
      * </pre>
      *
      * <code>string graph = 8;</code>
@@ -47613,7 +48977,7 @@ public final class TideChart {
     private volatile java.lang.Object path_;
     /**
      * <pre>
-     * Path in global state storage
+     * Path in global state storage for events from state changes
      * </pre>
      *
      * <code>string path = 3;</code>
@@ -47632,7 +48996,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * Path in global state storage
+     * Path in global state storage for events from state changes
      * </pre>
      *
      * <code>string path = 3;</code>
@@ -47826,7 +49190,7 @@ public final class TideChart {
     private volatile java.lang.Object graph_;
     /**
      * <pre>
-     * graph-id      - graph scripts and graph nodes can generate messages
+     * graph-name    - graph scripts and graph nodes can generate messages
      * </pre>
      *
      * <code>string graph = 8;</code>
@@ -47845,7 +49209,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * graph-id      - graph scripts and graph nodes can generate messages
+     * graph-name    - graph scripts and graph nodes can generate messages
      * </pre>
      *
      * <code>string graph = 8;</code>
@@ -48873,7 +50237,7 @@ public final class TideChart {
       private java.lang.Object path_ = "";
       /**
        * <pre>
-       * Path in global state storage
+       * Path in global state storage for events from state changes
        * </pre>
        *
        * <code>string path = 3;</code>
@@ -48892,7 +50256,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * Path in global state storage
+       * Path in global state storage for events from state changes
        * </pre>
        *
        * <code>string path = 3;</code>
@@ -48912,7 +50276,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * Path in global state storage
+       * Path in global state storage for events from state changes
        * </pre>
        *
        * <code>string path = 3;</code>
@@ -48929,7 +50293,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * Path in global state storage
+       * Path in global state storage for events from state changes
        * </pre>
        *
        * <code>string path = 3;</code>
@@ -48942,7 +50306,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * Path in global state storage
+       * Path in global state storage for events from state changes
        * </pre>
        *
        * <code>string path = 3;</code>
@@ -49359,7 +50723,7 @@ public final class TideChart {
       private java.lang.Object graph_ = "";
       /**
        * <pre>
-       * graph-id      - graph scripts and graph nodes can generate messages
+       * graph-name    - graph scripts and graph nodes can generate messages
        * </pre>
        *
        * <code>string graph = 8;</code>
@@ -49378,7 +50742,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph-id      - graph scripts and graph nodes can generate messages
+       * graph-name    - graph scripts and graph nodes can generate messages
        * </pre>
        *
        * <code>string graph = 8;</code>
@@ -49398,7 +50762,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph-id      - graph scripts and graph nodes can generate messages
+       * graph-name    - graph scripts and graph nodes can generate messages
        * </pre>
        *
        * <code>string graph = 8;</code>
@@ -49415,7 +50779,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph-id      - graph scripts and graph nodes can generate messages
+       * graph-name    - graph scripts and graph nodes can generate messages
        * </pre>
        *
        * <code>string graph = 8;</code>
@@ -49428,7 +50792,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * graph-id      - graph scripts and graph nodes can generate messages
+       * graph-name    - graph scripts and graph nodes can generate messages
        * </pre>
        *
        * <code>string graph = 8;</code>
@@ -51629,20 +52993,36 @@ public final class TideChart {
         getMergeBytes();
 
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     java.lang.String getCommitDate();
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     com.google.protobuf.ByteString
         getCommitDateBytes();
 
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     java.lang.String getCommitBy();
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     com.google.protobuf.ByteString
@@ -51689,43 +53069,43 @@ public final class TideChart {
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
     java.util.List<TideChart.TideChartGraph> 
-        getGraphsList();
+        getSheetsList();
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
-    TideChart.TideChartGraph getGraphs(int index);
+    TideChart.TideChartGraph getSheets(int index);
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
-    int getGraphsCount();
+    int getSheetsCount();
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
     java.util.List<? extends TideChart.TideChartGraphOrBuilder> 
-        getGraphsOrBuilderList();
+        getSheetsOrBuilderList();
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
-    TideChart.TideChartGraphOrBuilder getGraphsOrBuilder(
+    TideChart.TideChartGraphOrBuilder getSheetsOrBuilder(
         int index);
 
     /**
@@ -51925,7 +53305,7 @@ public final class TideChart {
       commitBy_ = "";
       commitDesc_ = "";
       commitNotes_ = "";
-      graphs_ = java.util.Collections.emptyList();
+      sheets_ = java.util.Collections.emptyList();
       props_ = java.util.Collections.emptyList();
       notes_ = java.util.Collections.emptyList();
       library_ = java.util.Collections.emptyList();
@@ -52013,10 +53393,10 @@ public final class TideChart {
             }
             case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                graphs_ = new java.util.ArrayList<TideChart.TideChartGraph>();
+                sheets_ = new java.util.ArrayList<TideChart.TideChartGraph>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              graphs_.add(
+              sheets_.add(
                   input.readMessage(TideChart.TideChartGraph.parser(), extensionRegistry));
               break;
             }
@@ -52072,7 +53452,7 @@ public final class TideChart {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          graphs_ = java.util.Collections.unmodifiableList(graphs_);
+          sheets_ = java.util.Collections.unmodifiableList(sheets_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
@@ -52274,6 +53654,10 @@ public final class TideChart {
     public static final int COMMITDATE_FIELD_NUMBER = 5;
     private volatile java.lang.Object commitDate_;
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     public java.lang.String getCommitDate() {
@@ -52289,6 +53673,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -52308,6 +53696,10 @@ public final class TideChart {
     public static final int COMMITBY_FIELD_NUMBER = 6;
     private volatile java.lang.Object commitBy_;
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     public java.lang.String getCommitBy() {
@@ -52323,6 +53715,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     public com.google.protobuf.ByteString
@@ -52423,59 +53819,59 @@ public final class TideChart {
       }
     }
 
-    public static final int GRAPHS_FIELD_NUMBER = 9;
-    private java.util.List<TideChart.TideChartGraph> graphs_;
+    public static final int SHEETS_FIELD_NUMBER = 9;
+    private java.util.List<TideChart.TideChartGraph> sheets_;
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
-    public java.util.List<TideChart.TideChartGraph> getGraphsList() {
-      return graphs_;
+    public java.util.List<TideChart.TideChartGraph> getSheetsList() {
+      return sheets_;
     }
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
     public java.util.List<? extends TideChart.TideChartGraphOrBuilder> 
-        getGraphsOrBuilderList() {
-      return graphs_;
+        getSheetsOrBuilderList() {
+      return sheets_;
     }
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
-    public int getGraphsCount() {
-      return graphs_.size();
+    public int getSheetsCount() {
+      return sheets_.size();
     }
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
-    public TideChart.TideChartGraph getGraphs(int index) {
-      return graphs_.get(index);
+    public TideChart.TideChartGraph getSheets(int index) {
+      return sheets_.get(index);
     }
     /**
      * <pre>
      * graphs contained in the chart
      * </pre>
      *
-     * <code>repeated .TideChartGraph graphs = 9;</code>
+     * <code>repeated .TideChartGraph sheets = 9;</code>
      */
-    public TideChart.TideChartGraphOrBuilder getGraphsOrBuilder(
+    public TideChart.TideChartGraphOrBuilder getSheetsOrBuilder(
         int index) {
-      return graphs_.get(index);
+      return sheets_.get(index);
     }
 
     public static final int PROPS_FIELD_NUMBER = 10;
@@ -52736,8 +54132,8 @@ public final class TideChart {
       if (!getCommitNotesBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, commitNotes_);
       }
-      for (int i = 0; i < graphs_.size(); i++) {
-        output.writeMessage(9, graphs_.get(i));
+      for (int i = 0; i < sheets_.size(); i++) {
+        output.writeMessage(9, sheets_.get(i));
       }
       for (int i = 0; i < props_.size(); i++) {
         output.writeMessage(10, props_.get(i));
@@ -52784,9 +54180,9 @@ public final class TideChart {
       if (!getCommitNotesBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, commitNotes_);
       }
-      for (int i = 0; i < graphs_.size(); i++) {
+      for (int i = 0; i < sheets_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, graphs_.get(i));
+          .computeMessageSize(9, sheets_.get(i));
       }
       for (int i = 0; i < props_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -52835,8 +54231,8 @@ public final class TideChart {
           .equals(other.getCommitDesc())) return false;
       if (!getCommitNotes()
           .equals(other.getCommitNotes())) return false;
-      if (!getGraphsList()
-          .equals(other.getGraphsList())) return false;
+      if (!getSheetsList()
+          .equals(other.getSheetsList())) return false;
       if (!getPropsList()
           .equals(other.getPropsList())) return false;
       if (!getNotesList()
@@ -52872,9 +54268,9 @@ public final class TideChart {
       hash = (53 * hash) + getCommitDesc().hashCode();
       hash = (37 * hash) + COMMITNOTES_FIELD_NUMBER;
       hash = (53 * hash) + getCommitNotes().hashCode();
-      if (getGraphsCount() > 0) {
-        hash = (37 * hash) + GRAPHS_FIELD_NUMBER;
-        hash = (53 * hash) + getGraphsList().hashCode();
+      if (getSheetsCount() > 0) {
+        hash = (37 * hash) + SHEETS_FIELD_NUMBER;
+        hash = (53 * hash) + getSheetsList().hashCode();
       }
       if (getPropsCount() > 0) {
         hash = (37 * hash) + PROPS_FIELD_NUMBER;
@@ -53020,7 +54416,7 @@ public final class TideChart {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getGraphsFieldBuilder();
+          getSheetsFieldBuilder();
           getPropsFieldBuilder();
           getNotesFieldBuilder();
           getLibraryFieldBuilder();
@@ -53046,11 +54442,11 @@ public final class TideChart {
 
         commitNotes_ = "";
 
-        if (graphsBuilder_ == null) {
-          graphs_ = java.util.Collections.emptyList();
+        if (sheetsBuilder_ == null) {
+          sheets_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          graphsBuilder_.clear();
+          sheetsBuilder_.clear();
         }
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
@@ -53111,14 +54507,14 @@ public final class TideChart {
         result.commitBy_ = commitBy_;
         result.commitDesc_ = commitDesc_;
         result.commitNotes_ = commitNotes_;
-        if (graphsBuilder_ == null) {
+        if (sheetsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            graphs_ = java.util.Collections.unmodifiableList(graphs_);
+            sheets_ = java.util.Collections.unmodifiableList(sheets_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.graphs_ = graphs_;
+          result.sheets_ = sheets_;
         } else {
-          result.graphs_ = graphsBuilder_.build();
+          result.sheets_ = sheetsBuilder_.build();
         }
         if (propsBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
@@ -53236,29 +54632,29 @@ public final class TideChart {
           commitNotes_ = other.commitNotes_;
           onChanged();
         }
-        if (graphsBuilder_ == null) {
-          if (!other.graphs_.isEmpty()) {
-            if (graphs_.isEmpty()) {
-              graphs_ = other.graphs_;
+        if (sheetsBuilder_ == null) {
+          if (!other.sheets_.isEmpty()) {
+            if (sheets_.isEmpty()) {
+              sheets_ = other.sheets_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureGraphsIsMutable();
-              graphs_.addAll(other.graphs_);
+              ensureSheetsIsMutable();
+              sheets_.addAll(other.sheets_);
             }
             onChanged();
           }
         } else {
-          if (!other.graphs_.isEmpty()) {
-            if (graphsBuilder_.isEmpty()) {
-              graphsBuilder_.dispose();
-              graphsBuilder_ = null;
-              graphs_ = other.graphs_;
+          if (!other.sheets_.isEmpty()) {
+            if (sheetsBuilder_.isEmpty()) {
+              sheetsBuilder_.dispose();
+              sheetsBuilder_ = null;
+              sheets_ = other.sheets_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              graphsBuilder_ = 
+              sheetsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getGraphsFieldBuilder() : null;
+                   getSheetsFieldBuilder() : null;
             } else {
-              graphsBuilder_.addAllMessages(other.graphs_);
+              sheetsBuilder_.addAllMessages(other.sheets_);
             }
           }
         }
@@ -53754,6 +55150,10 @@ public final class TideChart {
 
       private java.lang.Object commitDate_ = "";
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public java.lang.String getCommitDate() {
@@ -53769,6 +55169,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -53785,6 +55189,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public Builder setCommitDate(
@@ -53798,6 +55206,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public Builder clearCommitDate() {
@@ -53807,6 +55219,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public Builder setCommitDateBytes(
@@ -53823,6 +55239,10 @@ public final class TideChart {
 
       private java.lang.Object commitBy_ = "";
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public java.lang.String getCommitBy() {
@@ -53838,6 +55258,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public com.google.protobuf.ByteString
@@ -53854,6 +55278,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public Builder setCommitBy(
@@ -53867,6 +55295,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public Builder clearCommitBy() {
@@ -53876,6 +55308,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public Builder setCommitByBytes(
@@ -54068,30 +55504,30 @@ public final class TideChart {
         return this;
       }
 
-      private java.util.List<TideChart.TideChartGraph> graphs_ =
+      private java.util.List<TideChart.TideChartGraph> sheets_ =
         java.util.Collections.emptyList();
-      private void ensureGraphsIsMutable() {
+      private void ensureSheetsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          graphs_ = new java.util.ArrayList<TideChart.TideChartGraph>(graphs_);
+          sheets_ = new java.util.ArrayList<TideChart.TideChartGraph>(sheets_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder> graphsBuilder_;
+          TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder> sheetsBuilder_;
 
       /**
        * <pre>
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public java.util.List<TideChart.TideChartGraph> getGraphsList() {
-        if (graphsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(graphs_);
+      public java.util.List<TideChart.TideChartGraph> getSheetsList() {
+        if (sheetsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(sheets_);
         } else {
-          return graphsBuilder_.getMessageList();
+          return sheetsBuilder_.getMessageList();
         }
       }
       /**
@@ -54099,13 +55535,13 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public int getGraphsCount() {
-        if (graphsBuilder_ == null) {
-          return graphs_.size();
+      public int getSheetsCount() {
+        if (sheetsBuilder_ == null) {
+          return sheets_.size();
         } else {
-          return graphsBuilder_.getCount();
+          return sheetsBuilder_.getCount();
         }
       }
       /**
@@ -54113,13 +55549,13 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public TideChart.TideChartGraph getGraphs(int index) {
-        if (graphsBuilder_ == null) {
-          return graphs_.get(index);
+      public TideChart.TideChartGraph getSheets(int index) {
+        if (sheetsBuilder_ == null) {
+          return sheets_.get(index);
         } else {
-          return graphsBuilder_.getMessage(index);
+          return sheetsBuilder_.getMessage(index);
         }
       }
       /**
@@ -54127,19 +55563,19 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder setGraphs(
+      public Builder setSheets(
           int index, TideChart.TideChartGraph value) {
-        if (graphsBuilder_ == null) {
+        if (sheetsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGraphsIsMutable();
-          graphs_.set(index, value);
+          ensureSheetsIsMutable();
+          sheets_.set(index, value);
           onChanged();
         } else {
-          graphsBuilder_.setMessage(index, value);
+          sheetsBuilder_.setMessage(index, value);
         }
         return this;
       }
@@ -54148,16 +55584,16 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder setGraphs(
+      public Builder setSheets(
           int index, TideChart.TideChartGraph.Builder builderForValue) {
-        if (graphsBuilder_ == null) {
-          ensureGraphsIsMutable();
-          graphs_.set(index, builderForValue.build());
+        if (sheetsBuilder_ == null) {
+          ensureSheetsIsMutable();
+          sheets_.set(index, builderForValue.build());
           onChanged();
         } else {
-          graphsBuilder_.setMessage(index, builderForValue.build());
+          sheetsBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
@@ -54166,18 +55602,18 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder addGraphs(TideChart.TideChartGraph value) {
-        if (graphsBuilder_ == null) {
+      public Builder addSheets(TideChart.TideChartGraph value) {
+        if (sheetsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGraphsIsMutable();
-          graphs_.add(value);
+          ensureSheetsIsMutable();
+          sheets_.add(value);
           onChanged();
         } else {
-          graphsBuilder_.addMessage(value);
+          sheetsBuilder_.addMessage(value);
         }
         return this;
       }
@@ -54186,19 +55622,19 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder addGraphs(
+      public Builder addSheets(
           int index, TideChart.TideChartGraph value) {
-        if (graphsBuilder_ == null) {
+        if (sheetsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGraphsIsMutable();
-          graphs_.add(index, value);
+          ensureSheetsIsMutable();
+          sheets_.add(index, value);
           onChanged();
         } else {
-          graphsBuilder_.addMessage(index, value);
+          sheetsBuilder_.addMessage(index, value);
         }
         return this;
       }
@@ -54207,16 +55643,16 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder addGraphs(
+      public Builder addSheets(
           TideChart.TideChartGraph.Builder builderForValue) {
-        if (graphsBuilder_ == null) {
-          ensureGraphsIsMutable();
-          graphs_.add(builderForValue.build());
+        if (sheetsBuilder_ == null) {
+          ensureSheetsIsMutable();
+          sheets_.add(builderForValue.build());
           onChanged();
         } else {
-          graphsBuilder_.addMessage(builderForValue.build());
+          sheetsBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
@@ -54225,16 +55661,16 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder addGraphs(
+      public Builder addSheets(
           int index, TideChart.TideChartGraph.Builder builderForValue) {
-        if (graphsBuilder_ == null) {
-          ensureGraphsIsMutable();
-          graphs_.add(index, builderForValue.build());
+        if (sheetsBuilder_ == null) {
+          ensureSheetsIsMutable();
+          sheets_.add(index, builderForValue.build());
           onChanged();
         } else {
-          graphsBuilder_.addMessage(index, builderForValue.build());
+          sheetsBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
@@ -54243,17 +55679,17 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder addAllGraphs(
+      public Builder addAllSheets(
           java.lang.Iterable<? extends TideChart.TideChartGraph> values) {
-        if (graphsBuilder_ == null) {
-          ensureGraphsIsMutable();
+        if (sheetsBuilder_ == null) {
+          ensureSheetsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, graphs_);
+              values, sheets_);
           onChanged();
         } else {
-          graphsBuilder_.addAllMessages(values);
+          sheetsBuilder_.addAllMessages(values);
         }
         return this;
       }
@@ -54262,15 +55698,15 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder clearGraphs() {
-        if (graphsBuilder_ == null) {
-          graphs_ = java.util.Collections.emptyList();
+      public Builder clearSheets() {
+        if (sheetsBuilder_ == null) {
+          sheets_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          graphsBuilder_.clear();
+          sheetsBuilder_.clear();
         }
         return this;
       }
@@ -54279,15 +55715,15 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public Builder removeGraphs(int index) {
-        if (graphsBuilder_ == null) {
-          ensureGraphsIsMutable();
-          graphs_.remove(index);
+      public Builder removeSheets(int index) {
+        if (sheetsBuilder_ == null) {
+          ensureSheetsIsMutable();
+          sheets_.remove(index);
           onChanged();
         } else {
-          graphsBuilder_.remove(index);
+          sheetsBuilder_.remove(index);
         }
         return this;
       }
@@ -54296,24 +55732,24 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public TideChart.TideChartGraph.Builder getGraphsBuilder(
+      public TideChart.TideChartGraph.Builder getSheetsBuilder(
           int index) {
-        return getGraphsFieldBuilder().getBuilder(index);
+        return getSheetsFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public TideChart.TideChartGraphOrBuilder getGraphsOrBuilder(
+      public TideChart.TideChartGraphOrBuilder getSheetsOrBuilder(
           int index) {
-        if (graphsBuilder_ == null) {
-          return graphs_.get(index);  } else {
-          return graphsBuilder_.getMessageOrBuilder(index);
+        if (sheetsBuilder_ == null) {
+          return sheets_.get(index);  } else {
+          return sheetsBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
@@ -54321,14 +55757,14 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
       public java.util.List<? extends TideChart.TideChartGraphOrBuilder> 
-           getGraphsOrBuilderList() {
-        if (graphsBuilder_ != null) {
-          return graphsBuilder_.getMessageOrBuilderList();
+           getSheetsOrBuilderList() {
+        if (sheetsBuilder_ != null) {
+          return sheetsBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(graphs_);
+          return java.util.Collections.unmodifiableList(sheets_);
         }
       }
       /**
@@ -54336,10 +55772,10 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public TideChart.TideChartGraph.Builder addGraphsBuilder() {
-        return getGraphsFieldBuilder().addBuilder(
+      public TideChart.TideChartGraph.Builder addSheetsBuilder() {
+        return getSheetsFieldBuilder().addBuilder(
             TideChart.TideChartGraph.getDefaultInstance());
       }
       /**
@@ -54347,11 +55783,11 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
-      public TideChart.TideChartGraph.Builder addGraphsBuilder(
+      public TideChart.TideChartGraph.Builder addSheetsBuilder(
           int index) {
-        return getGraphsFieldBuilder().addBuilder(
+        return getSheetsFieldBuilder().addBuilder(
             index, TideChart.TideChartGraph.getDefaultInstance());
       }
       /**
@@ -54359,25 +55795,25 @@ public final class TideChart {
        * graphs contained in the chart
        * </pre>
        *
-       * <code>repeated .TideChartGraph graphs = 9;</code>
+       * <code>repeated .TideChartGraph sheets = 9;</code>
        */
       public java.util.List<TideChart.TideChartGraph.Builder> 
-           getGraphsBuilderList() {
-        return getGraphsFieldBuilder().getBuilderList();
+           getSheetsBuilderList() {
+        return getSheetsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder> 
-          getGraphsFieldBuilder() {
-        if (graphsBuilder_ == null) {
-          graphsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getSheetsFieldBuilder() {
+        if (sheetsBuilder_ == null) {
+          sheetsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder>(
-                  graphs_,
+                  sheets_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          graphs_ = null;
+          sheets_ = null;
         }
-        return graphsBuilder_;
+        return sheetsBuilder_;
       }
 
       private java.util.List<TideChart.TideChartProperty> props_ =
@@ -55757,20 +57193,36 @@ public final class TideChart {
         getMergeBytes();
 
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     java.lang.String getCommitDate();
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     com.google.protobuf.ByteString
         getCommitDateBytes();
 
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     java.lang.String getCommitBy();
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     com.google.protobuf.ByteString
@@ -56120,6 +57572,10 @@ public final class TideChart {
     public static final int COMMITDATE_FIELD_NUMBER = 5;
     private volatile java.lang.Object commitDate_;
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     public java.lang.String getCommitDate() {
@@ -56135,6 +57591,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * date version of the chart was committed
+     * </pre>
+     *
      * <code>string commitDate = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -56154,6 +57614,10 @@ public final class TideChart {
     public static final int COMMITBY_FIELD_NUMBER = 6;
     private volatile java.lang.Object commitBy_;
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     public java.lang.String getCommitBy() {
@@ -56169,6 +57633,10 @@ public final class TideChart {
       }
     }
     /**
+     * <pre>
+     * user that committed latest version
+     * </pre>
+     *
      * <code>string commitBy = 6;</code>
      */
     public com.google.protobuf.ByteString
@@ -57052,6 +58520,10 @@ public final class TideChart {
 
       private java.lang.Object commitDate_ = "";
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public java.lang.String getCommitDate() {
@@ -57067,6 +58539,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -57083,6 +58559,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public Builder setCommitDate(
@@ -57096,6 +58576,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public Builder clearCommitDate() {
@@ -57105,6 +58589,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * date version of the chart was committed
+       * </pre>
+       *
        * <code>string commitDate = 5;</code>
        */
       public Builder setCommitDateBytes(
@@ -57121,6 +58609,10 @@ public final class TideChart {
 
       private java.lang.Object commitBy_ = "";
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public java.lang.String getCommitBy() {
@@ -57136,6 +58628,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public com.google.protobuf.ByteString
@@ -57152,6 +58648,10 @@ public final class TideChart {
         }
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public Builder setCommitBy(
@@ -57165,6 +58665,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public Builder clearCommitBy() {
@@ -57174,6 +58678,10 @@ public final class TideChart {
         return this;
       }
       /**
+       * <pre>
+       * user that committed latest version
+       * </pre>
+       *
        * <code>string commitBy = 6;</code>
        */
       public Builder setCommitByBytes(
@@ -57495,28 +59003,44 @@ public final class TideChart {
         getOriginBytes();
 
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
-    java.lang.String getCreatedDate();
+    java.lang.String getModifiedDate();
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
     com.google.protobuf.ByteString
-        getCreatedDateBytes();
-
-    /**
-     * <code>string createdBy = 6;</code>
-     */
-    java.lang.String getCreatedBy();
-    /**
-     * <code>string createdBy = 6;</code>
-     */
-    com.google.protobuf.ByteString
-        getCreatedByBytes();
+        getModifiedDateBytes();
 
     /**
      * <pre>
-     * the last committed version  
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
+     */
+    java.lang.String getModifiedBy();
+    /**
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getModifiedByBytes();
+
+    /**
+     * <pre>
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -57524,7 +59048,7 @@ public final class TideChart {
     boolean hasChart();
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -57532,7 +59056,7 @@ public final class TideChart {
     TideChart.TideChartData getChart();
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -57629,7 +59153,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -57638,7 +59162,7 @@ public final class TideChart {
         getHistoryList();
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -57646,7 +59170,7 @@ public final class TideChart {
     TideChart.TideChartData getHistory(int index);
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -57654,7 +59178,7 @@ public final class TideChart {
     int getHistoryCount();
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -57663,7 +59187,7 @@ public final class TideChart {
         getHistoryOrBuilderList();
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -57688,8 +59212,8 @@ public final class TideChart {
       name_ = "";
       path_ = "";
       origin_ = "";
-      createdDate_ = "";
-      createdBy_ = "";
+      modifiedDate_ = "";
+      modifiedBy_ = "";
       working_ = java.util.Collections.emptyList();
       remote_ = java.util.Collections.emptyList();
       history_ = java.util.Collections.emptyList();
@@ -57753,13 +59277,13 @@ public final class TideChart {
             case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdDate_ = s;
+              modifiedDate_ = s;
               break;
             }
             case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdBy_ = s;
+              modifiedBy_ = s;
               break;
             }
             case 58: {
@@ -58011,68 +59535,84 @@ public final class TideChart {
       }
     }
 
-    public static final int CREATEDDATE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object createdDate_;
+    public static final int MODIFIEDDATE_FIELD_NUMBER = 5;
+    private volatile java.lang.Object modifiedDate_;
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
-    public java.lang.String getCreatedDate() {
-      java.lang.Object ref = createdDate_;
+    public java.lang.String getModifiedDate() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdDate_ = s;
+        modifiedDate_ = s;
         return s;
       }
     }
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedDateBytes() {
-      java.lang.Object ref = createdDate_;
+        getModifiedDateBytes() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdDate_ = b;
+        modifiedDate_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int CREATEDBY_FIELD_NUMBER = 6;
-    private volatile java.lang.Object createdBy_;
+    public static final int MODIFIEDBY_FIELD_NUMBER = 6;
+    private volatile java.lang.Object modifiedBy_;
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
-    public java.lang.String getCreatedBy() {
-      java.lang.Object ref = createdBy_;
+    public java.lang.String getModifiedBy() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdBy_ = s;
+        modifiedBy_ = s;
         return s;
       }
     }
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedByBytes() {
-      java.lang.Object ref = createdBy_;
+        getModifiedByBytes() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdBy_ = b;
+        modifiedBy_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -58083,7 +59623,7 @@ public final class TideChart {
     private TideChart.TideChartData chart_;
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -58093,7 +59633,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -58103,7 +59643,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -58226,7 +59766,7 @@ public final class TideChart {
     private java.util.List<TideChart.TideChartData> history_;
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -58236,7 +59776,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -58247,7 +59787,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -58257,7 +59797,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -58267,7 +59807,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * previous version history
+     * previous saved versions of the chart
      * </pre>
      *
      * <code>repeated .TideChartData history = 10;</code>
@@ -58303,11 +59843,11 @@ public final class TideChart {
       if (!getOriginBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, origin_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, createdDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, modifiedDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, modifiedBy_);
       }
       if (chart_ != null) {
         output.writeMessage(7, getChart());
@@ -58342,11 +59882,11 @@ public final class TideChart {
       if (!getOriginBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, origin_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, createdDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, modifiedDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, modifiedBy_);
       }
       if (chart_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -58387,10 +59927,10 @@ public final class TideChart {
           .equals(other.getPath())) return false;
       if (!getOrigin()
           .equals(other.getOrigin())) return false;
-      if (!getCreatedDate()
-          .equals(other.getCreatedDate())) return false;
-      if (!getCreatedBy()
-          .equals(other.getCreatedBy())) return false;
+      if (!getModifiedDate()
+          .equals(other.getModifiedDate())) return false;
+      if (!getModifiedBy()
+          .equals(other.getModifiedBy())) return false;
       if (hasChart() != other.hasChart()) return false;
       if (hasChart()) {
         if (!getChart()
@@ -58421,10 +59961,10 @@ public final class TideChart {
       hash = (53 * hash) + getPath().hashCode();
       hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
       hash = (53 * hash) + getOrigin().hashCode();
-      hash = (37 * hash) + CREATEDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedDate().hashCode();
-      hash = (37 * hash) + CREATEDBY_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedBy().hashCode();
+      hash = (37 * hash) + MODIFIEDDATE_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedDate().hashCode();
+      hash = (37 * hash) + MODIFIEDBY_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedBy().hashCode();
       if (hasChart()) {
         hash = (37 * hash) + CHART_FIELD_NUMBER;
         hash = (53 * hash) + getChart().hashCode();
@@ -58585,9 +60125,9 @@ public final class TideChart {
 
         origin_ = "";
 
-        createdDate_ = "";
+        modifiedDate_ = "";
 
-        createdBy_ = "";
+        modifiedBy_ = "";
 
         if (chartBuilder_ == null) {
           chart_ = null;
@@ -58644,8 +60184,8 @@ public final class TideChart {
         result.name_ = name_;
         result.path_ = path_;
         result.origin_ = origin_;
-        result.createdDate_ = createdDate_;
-        result.createdBy_ = createdBy_;
+        result.modifiedDate_ = modifiedDate_;
+        result.modifiedBy_ = modifiedBy_;
         if (chartBuilder_ == null) {
           result.chart_ = chart_;
         } else {
@@ -58742,12 +60282,12 @@ public final class TideChart {
           origin_ = other.origin_;
           onChanged();
         }
-        if (!other.getCreatedDate().isEmpty()) {
-          createdDate_ = other.createdDate_;
+        if (!other.getModifiedDate().isEmpty()) {
+          modifiedDate_ = other.modifiedDate_;
           onChanged();
         }
-        if (!other.getCreatedBy().isEmpty()) {
-          createdBy_ = other.createdBy_;
+        if (!other.getModifiedBy().isEmpty()) {
+          modifiedBy_ = other.modifiedBy_;
           onChanged();
         }
         if (other.hasChart()) {
@@ -59217,140 +60757,180 @@ public final class TideChart {
         return this;
       }
 
-      private java.lang.Object createdDate_ = "";
+      private java.lang.Object modifiedDate_ = "";
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public java.lang.String getCreatedDate() {
-        java.lang.Object ref = createdDate_;
+      public java.lang.String getModifiedDate() {
+        java.lang.Object ref = modifiedDate_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdDate_ = s;
+          modifiedDate_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedDateBytes() {
-        java.lang.Object ref = createdDate_;
+          getModifiedDateBytes() {
+        java.lang.Object ref = modifiedDate_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdDate_ = b;
+          modifiedDate_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setCreatedDate(
+      public Builder setModifiedDate(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder clearCreatedDate() {
+      public Builder clearModifiedDate() {
         
-        createdDate_ = getDefaultInstance().getCreatedDate();
+        modifiedDate_ = getDefaultInstance().getModifiedDate();
         onChanged();
         return this;
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setCreatedDateBytes(
+      public Builder setModifiedDateBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object createdBy_ = "";
+      private java.lang.Object modifiedBy_ = "";
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public java.lang.String getCreatedBy() {
-        java.lang.Object ref = createdBy_;
+      public java.lang.String getModifiedBy() {
+        java.lang.Object ref = modifiedBy_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdBy_ = s;
+          modifiedBy_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedByBytes() {
-        java.lang.Object ref = createdBy_;
+          getModifiedByBytes() {
+        java.lang.Object ref = modifiedBy_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdBy_ = b;
+          modifiedBy_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedBy(
+      public Builder setModifiedBy(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder clearCreatedBy() {
+      public Builder clearModifiedBy() {
         
-        createdBy_ = getDefaultInstance().getCreatedBy();
+        modifiedBy_ = getDefaultInstance().getModifiedBy();
         onChanged();
         return this;
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedByBytes(
+      public Builder setModifiedByBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
@@ -59360,7 +60940,7 @@ public final class TideChart {
           TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder> chartBuilder_;
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59370,7 +60950,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59384,7 +60964,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59404,7 +60984,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59422,7 +61002,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59444,7 +61024,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59462,7 +61042,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59474,7 +61054,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -59489,7 +61069,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -60146,7 +61726,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60160,7 +61740,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60174,7 +61754,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60188,7 +61768,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60209,7 +61789,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60227,7 +61807,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60247,7 +61827,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60268,7 +61848,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60286,7 +61866,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60304,7 +61884,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60323,7 +61903,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60340,7 +61920,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60357,7 +61937,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60368,7 +61948,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60382,7 +61962,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60397,7 +61977,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60408,7 +61988,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60420,7 +62000,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * previous version history
+       * previous saved versions of the chart
        * </pre>
        *
        * <code>repeated .TideChartData history = 10;</code>
@@ -60573,24 +62153,40 @@ public final class TideChart {
         getOriginBytes();
 
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
-    java.lang.String getCreatedDate();
+    java.lang.String getModifiedDate();
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
     com.google.protobuf.ByteString
-        getCreatedDateBytes();
+        getModifiedDateBytes();
 
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
-    java.lang.String getCreatedBy();
+    java.lang.String getModifiedBy();
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
     com.google.protobuf.ByteString
-        getCreatedByBytes();
+        getModifiedByBytes();
   }
   /**
    * <pre>
@@ -60613,8 +62209,8 @@ public final class TideChart {
       name_ = "";
       path_ = "";
       origin_ = "";
-      createdDate_ = "";
-      createdBy_ = "";
+      modifiedDate_ = "";
+      modifiedBy_ = "";
     }
 
     @java.lang.Override
@@ -60674,13 +62270,13 @@ public final class TideChart {
             case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdDate_ = s;
+              modifiedDate_ = s;
               break;
             }
             case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdBy_ = s;
+              modifiedBy_ = s;
               break;
             }
             default: {
@@ -60883,68 +62479,84 @@ public final class TideChart {
       }
     }
 
-    public static final int CREATEDDATE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object createdDate_;
+    public static final int MODIFIEDDATE_FIELD_NUMBER = 5;
+    private volatile java.lang.Object modifiedDate_;
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
-    public java.lang.String getCreatedDate() {
-      java.lang.Object ref = createdDate_;
+    public java.lang.String getModifiedDate() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdDate_ = s;
+        modifiedDate_ = s;
         return s;
       }
     }
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedDateBytes() {
-      java.lang.Object ref = createdDate_;
+        getModifiedDateBytes() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdDate_ = b;
+        modifiedDate_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int CREATEDBY_FIELD_NUMBER = 6;
-    private volatile java.lang.Object createdBy_;
+    public static final int MODIFIEDBY_FIELD_NUMBER = 6;
+    private volatile java.lang.Object modifiedBy_;
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
-    public java.lang.String getCreatedBy() {
-      java.lang.Object ref = createdBy_;
+    public java.lang.String getModifiedBy() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdBy_ = s;
+        modifiedBy_ = s;
         return s;
       }
     }
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedByBytes() {
-      java.lang.Object ref = createdBy_;
+        getModifiedByBytes() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdBy_ = b;
+        modifiedBy_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -60977,11 +62589,11 @@ public final class TideChart {
       if (!getOriginBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, origin_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, createdDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, modifiedDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, modifiedBy_);
       }
       unknownFields.writeTo(output);
     }
@@ -61004,11 +62616,11 @@ public final class TideChart {
       if (!getOriginBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, origin_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, createdDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, modifiedDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, modifiedBy_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -61033,10 +62645,10 @@ public final class TideChart {
           .equals(other.getPath())) return false;
       if (!getOrigin()
           .equals(other.getOrigin())) return false;
-      if (!getCreatedDate()
-          .equals(other.getCreatedDate())) return false;
-      if (!getCreatedBy()
-          .equals(other.getCreatedBy())) return false;
+      if (!getModifiedDate()
+          .equals(other.getModifiedDate())) return false;
+      if (!getModifiedBy()
+          .equals(other.getModifiedBy())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -61056,10 +62668,10 @@ public final class TideChart {
       hash = (53 * hash) + getPath().hashCode();
       hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
       hash = (53 * hash) + getOrigin().hashCode();
-      hash = (37 * hash) + CREATEDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedDate().hashCode();
-      hash = (37 * hash) + CREATEDBY_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedBy().hashCode();
+      hash = (37 * hash) + MODIFIEDDATE_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedDate().hashCode();
+      hash = (37 * hash) + MODIFIEDBY_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedBy().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -61205,9 +62817,9 @@ public final class TideChart {
 
         origin_ = "";
 
-        createdDate_ = "";
+        modifiedDate_ = "";
 
-        createdBy_ = "";
+        modifiedBy_ = "";
 
         return this;
       }
@@ -61239,8 +62851,8 @@ public final class TideChart {
         result.name_ = name_;
         result.path_ = path_;
         result.origin_ = origin_;
-        result.createdDate_ = createdDate_;
-        result.createdBy_ = createdBy_;
+        result.modifiedDate_ = modifiedDate_;
+        result.modifiedBy_ = modifiedBy_;
         onBuilt();
         return result;
       }
@@ -61305,12 +62917,12 @@ public final class TideChart {
           origin_ = other.origin_;
           onChanged();
         }
-        if (!other.getCreatedDate().isEmpty()) {
-          createdDate_ = other.createdDate_;
+        if (!other.getModifiedDate().isEmpty()) {
+          modifiedDate_ = other.modifiedDate_;
           onChanged();
         }
-        if (!other.getCreatedBy().isEmpty()) {
-          createdBy_ = other.createdBy_;
+        if (!other.getModifiedBy().isEmpty()) {
+          modifiedBy_ = other.modifiedBy_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -61698,140 +63310,180 @@ public final class TideChart {
         return this;
       }
 
-      private java.lang.Object createdDate_ = "";
+      private java.lang.Object modifiedDate_ = "";
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public java.lang.String getCreatedDate() {
-        java.lang.Object ref = createdDate_;
+      public java.lang.String getModifiedDate() {
+        java.lang.Object ref = modifiedDate_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdDate_ = s;
+          modifiedDate_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedDateBytes() {
-        java.lang.Object ref = createdDate_;
+          getModifiedDateBytes() {
+        java.lang.Object ref = modifiedDate_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdDate_ = b;
+          modifiedDate_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setCreatedDate(
+      public Builder setModifiedDate(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder clearCreatedDate() {
+      public Builder clearModifiedDate() {
         
-        createdDate_ = getDefaultInstance().getCreatedDate();
+        modifiedDate_ = getDefaultInstance().getModifiedDate();
         onChanged();
         return this;
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setCreatedDateBytes(
+      public Builder setModifiedDateBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object createdBy_ = "";
+      private java.lang.Object modifiedBy_ = "";
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public java.lang.String getCreatedBy() {
-        java.lang.Object ref = createdBy_;
+      public java.lang.String getModifiedBy() {
+        java.lang.Object ref = modifiedBy_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdBy_ = s;
+          modifiedBy_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedByBytes() {
-        java.lang.Object ref = createdBy_;
+          getModifiedByBytes() {
+        java.lang.Object ref = modifiedBy_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdBy_ = b;
+          modifiedBy_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedBy(
+      public Builder setModifiedBy(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder clearCreatedBy() {
+      public Builder clearModifiedBy() {
         
-        createdBy_ = getDefaultInstance().getCreatedBy();
+        modifiedBy_ = getDefaultInstance().getModifiedBy();
         onChanged();
         return this;
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedByBytes(
+      public Builder setModifiedByBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
@@ -61965,28 +63617,44 @@ public final class TideChart {
         getOriginBytes();
 
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
-    java.lang.String getCreatedDate();
+    java.lang.String getModifiedDate();
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
     com.google.protobuf.ByteString
-        getCreatedDateBytes();
-
-    /**
-     * <code>string createdBy = 6;</code>
-     */
-    java.lang.String getCreatedBy();
-    /**
-     * <code>string createdBy = 6;</code>
-     */
-    com.google.protobuf.ByteString
-        getCreatedByBytes();
+        getModifiedDateBytes();
 
     /**
      * <pre>
-     * the last committed version  
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
+     */
+    java.lang.String getModifiedBy();
+    /**
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getModifiedByBytes();
+
+    /**
+     * <pre>
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -61994,7 +63662,7 @@ public final class TideChart {
     boolean hasChart();
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -62002,7 +63670,7 @@ public final class TideChart {
     TideChart.TideChartData getChart();
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -62030,8 +63698,8 @@ public final class TideChart {
       name_ = "";
       path_ = "";
       origin_ = "";
-      createdDate_ = "";
-      createdBy_ = "";
+      modifiedDate_ = "";
+      modifiedBy_ = "";
     }
 
     @java.lang.Override
@@ -62091,13 +63759,13 @@ public final class TideChart {
             case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdDate_ = s;
+              modifiedDate_ = s;
               break;
             }
             case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              createdBy_ = s;
+              modifiedBy_ = s;
               break;
             }
             case 58: {
@@ -62313,68 +63981,84 @@ public final class TideChart {
       }
     }
 
-    public static final int CREATEDDATE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object createdDate_;
+    public static final int MODIFIEDDATE_FIELD_NUMBER = 5;
+    private volatile java.lang.Object modifiedDate_;
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
-    public java.lang.String getCreatedDate() {
-      java.lang.Object ref = createdDate_;
+    public java.lang.String getModifiedDate() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdDate_ = s;
+        modifiedDate_ = s;
         return s;
       }
     }
     /**
-     * <code>string createdDate = 5;</code>
+     * <pre>
+     * date the file was last modified
+     * </pre>
+     *
+     * <code>string modifiedDate = 5;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedDateBytes() {
-      java.lang.Object ref = createdDate_;
+        getModifiedDateBytes() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdDate_ = b;
+        modifiedDate_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int CREATEDBY_FIELD_NUMBER = 6;
-    private volatile java.lang.Object createdBy_;
+    public static final int MODIFIEDBY_FIELD_NUMBER = 6;
+    private volatile java.lang.Object modifiedBy_;
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
-    public java.lang.String getCreatedBy() {
-      java.lang.Object ref = createdBy_;
+    public java.lang.String getModifiedBy() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        createdBy_ = s;
+        modifiedBy_ = s;
         return s;
       }
     }
     /**
-     * <code>string createdBy = 6;</code>
+     * <pre>
+     * user that last modified the file
+     * </pre>
+     *
+     * <code>string modifiedBy = 6;</code>
      */
     public com.google.protobuf.ByteString
-        getCreatedByBytes() {
-      java.lang.Object ref = createdBy_;
+        getModifiedByBytes() {
+      java.lang.Object ref = modifiedBy_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        createdBy_ = b;
+        modifiedBy_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -62385,7 +64069,7 @@ public final class TideChart {
     private TideChart.TideChartData chart_;
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -62395,7 +64079,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -62405,7 +64089,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * the last committed version  
+     * the last committed version of the chart
      * </pre>
      *
      * <code>.TideChartData chart = 7;</code>
@@ -62440,11 +64124,11 @@ public final class TideChart {
       if (!getOriginBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, origin_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, createdDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, modifiedDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, modifiedBy_);
       }
       if (chart_ != null) {
         output.writeMessage(7, getChart());
@@ -62470,11 +64154,11 @@ public final class TideChart {
       if (!getOriginBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, origin_);
       }
-      if (!getCreatedDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, createdDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, modifiedDate_);
       }
-      if (!getCreatedByBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, createdBy_);
+      if (!getModifiedByBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, modifiedBy_);
       }
       if (chart_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -62503,10 +64187,10 @@ public final class TideChart {
           .equals(other.getPath())) return false;
       if (!getOrigin()
           .equals(other.getOrigin())) return false;
-      if (!getCreatedDate()
-          .equals(other.getCreatedDate())) return false;
-      if (!getCreatedBy()
-          .equals(other.getCreatedBy())) return false;
+      if (!getModifiedDate()
+          .equals(other.getModifiedDate())) return false;
+      if (!getModifiedBy()
+          .equals(other.getModifiedBy())) return false;
       if (hasChart() != other.hasChart()) return false;
       if (hasChart()) {
         if (!getChart()
@@ -62531,10 +64215,10 @@ public final class TideChart {
       hash = (53 * hash) + getPath().hashCode();
       hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
       hash = (53 * hash) + getOrigin().hashCode();
-      hash = (37 * hash) + CREATEDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedDate().hashCode();
-      hash = (37 * hash) + CREATEDBY_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatedBy().hashCode();
+      hash = (37 * hash) + MODIFIEDDATE_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedDate().hashCode();
+      hash = (37 * hash) + MODIFIEDBY_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedBy().hashCode();
       if (hasChart()) {
         hash = (37 * hash) + CHART_FIELD_NUMBER;
         hash = (53 * hash) + getChart().hashCode();
@@ -62684,9 +64368,9 @@ public final class TideChart {
 
         origin_ = "";
 
-        createdDate_ = "";
+        modifiedDate_ = "";
 
-        createdBy_ = "";
+        modifiedBy_ = "";
 
         if (chartBuilder_ == null) {
           chart_ = null;
@@ -62724,8 +64408,8 @@ public final class TideChart {
         result.name_ = name_;
         result.path_ = path_;
         result.origin_ = origin_;
-        result.createdDate_ = createdDate_;
-        result.createdBy_ = createdBy_;
+        result.modifiedDate_ = modifiedDate_;
+        result.modifiedBy_ = modifiedBy_;
         if (chartBuilder_ == null) {
           result.chart_ = chart_;
         } else {
@@ -62795,12 +64479,12 @@ public final class TideChart {
           origin_ = other.origin_;
           onChanged();
         }
-        if (!other.getCreatedDate().isEmpty()) {
-          createdDate_ = other.createdDate_;
+        if (!other.getModifiedDate().isEmpty()) {
+          modifiedDate_ = other.modifiedDate_;
           onChanged();
         }
-        if (!other.getCreatedBy().isEmpty()) {
-          createdBy_ = other.createdBy_;
+        if (!other.getModifiedBy().isEmpty()) {
+          modifiedBy_ = other.modifiedBy_;
           onChanged();
         }
         if (other.hasChart()) {
@@ -63191,140 +64875,180 @@ public final class TideChart {
         return this;
       }
 
-      private java.lang.Object createdDate_ = "";
+      private java.lang.Object modifiedDate_ = "";
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public java.lang.String getCreatedDate() {
-        java.lang.Object ref = createdDate_;
+      public java.lang.String getModifiedDate() {
+        java.lang.Object ref = modifiedDate_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdDate_ = s;
+          modifiedDate_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedDateBytes() {
-        java.lang.Object ref = createdDate_;
+          getModifiedDateBytes() {
+        java.lang.Object ref = modifiedDate_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdDate_ = b;
+          modifiedDate_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setCreatedDate(
+      public Builder setModifiedDate(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder clearCreatedDate() {
+      public Builder clearModifiedDate() {
         
-        createdDate_ = getDefaultInstance().getCreatedDate();
+        modifiedDate_ = getDefaultInstance().getModifiedDate();
         onChanged();
         return this;
       }
       /**
-       * <code>string createdDate = 5;</code>
+       * <pre>
+       * date the file was last modified
+       * </pre>
+       *
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setCreatedDateBytes(
+      public Builder setModifiedDateBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object createdBy_ = "";
+      private java.lang.Object modifiedBy_ = "";
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public java.lang.String getCreatedBy() {
-        java.lang.Object ref = createdBy_;
+      public java.lang.String getModifiedBy() {
+        java.lang.Object ref = modifiedBy_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          createdBy_ = s;
+          modifiedBy_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
       public com.google.protobuf.ByteString
-          getCreatedByBytes() {
-        java.lang.Object ref = createdBy_;
+          getModifiedByBytes() {
+        java.lang.Object ref = modifiedBy_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          createdBy_ = b;
+          modifiedBy_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedBy(
+      public Builder setModifiedBy(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder clearCreatedBy() {
+      public Builder clearModifiedBy() {
         
-        createdBy_ = getDefaultInstance().getCreatedBy();
+        modifiedBy_ = getDefaultInstance().getModifiedBy();
         onChanged();
         return this;
       }
       /**
-       * <code>string createdBy = 6;</code>
+       * <pre>
+       * user that last modified the file
+       * </pre>
+       *
+       * <code>string modifiedBy = 6;</code>
        */
-      public Builder setCreatedByBytes(
+      public Builder setModifiedByBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        createdBy_ = value;
+        modifiedBy_ = value;
         onChanged();
         return this;
       }
@@ -63334,7 +65058,7 @@ public final class TideChart {
           TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder> chartBuilder_;
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63344,7 +65068,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63358,7 +65082,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63378,7 +65102,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63396,7 +65120,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63418,7 +65142,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63436,7 +65160,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63448,7 +65172,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63463,7 +65187,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * the last committed version  
+       * the last committed version of the chart
        * </pre>
        *
        * <code>.TideChartData chart = 7;</code>
@@ -63773,84 +65497,85 @@ public final class TideChart {
       "2\021.TideChartCommand\"h\n\024TideChartMoveComm" +
       "and\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022\020\n\010f" +
       "romPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toPosY\030" +
-      "\005 \001(\021\"r\n\032TideChartCommentBoxCommand\022#\n\013f" +
-      "romComment\030\001 \001(\0132\016.TideChartPort\022!\n\ttoCo" +
-      "mment\030\002 \001(\0132\016.TideChartPort\022\014\n\004type\030\003 \001(" +
-      "\t\"l\n\026TideChartWidgetCommand\022\"\n\nfromWidge" +
-      "t\030\001 \001(\0132\016.TideChartPort\022 \n\010toWidget\030\002 \001(" +
+      "\005 \001(\021\"~\n\032TideChartCommentBoxCommand\022)\n\013f" +
+      "romComment\030\001 \001(\0132\024.TideChartCommentBox\022\'" +
+      "\n\ttoComment\030\002 \001(\0132\024.TideChartCommentBox\022" +
+      "\014\n\004type\030\003 \001(\t\"p\n\026TideChartWidgetCommand\022" +
+      "$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n" +
+      "\010toWidget\030\002 \001(\0132\020.TideChartWidget\022\014\n\004typ" +
+      "e\030\003 \001(\t\"f\n\024TideChartPortCommand\022 \n\010fromP" +
+      "ort\030\001 \001(\0132\016.TideChartPort\022\036\n\006toPort\030\002 \001(" +
       "\0132\016.TideChartPort\022\014\n\004type\030\003 \001(\t\"f\n\024TideC" +
-      "hartPortCommand\022 \n\010fromPort\030\001 \001(\0132\016.Tide" +
-      "ChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideChartPor" +
-      "t\022\014\n\004type\030\003 \001(\t\"f\n\024TideChartLinkCommand\022" +
-      " \n\010fromLink\030\001 \001(\0132\016.TideChartLink\022\036\n\006toL" +
-      "ink\030\002 \001(\0132\016.TideChartLink\022\014\n\004type\030\003 \001(\t\"" +
-      "f\n\024TideChartNodeCommand\022 \n\010fromNode\030\001 \001(" +
-      "\0132\016.TideChartNode\022\036\n\006toNode\030\002 \001(\0132\016.Tide" +
-      "ChartNode\022\014\n\004type\030\003 \001(\t\"p\n\026TideChartRegi" +
-      "onCommand\022$\n\nfromRegion\030\001 \001(\0132\020.TideChar" +
-      "tRegion\022\"\n\010toRegion\030\002 \001(\0132\020.TideChartReg" +
-      "ion\022\014\n\004type\030\003 \001(\t\"k\n\025TideChartGraphComma" +
-      "nd\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartGraph\022 " +
-      "\n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022\014\n\004type" +
-      "\030\003 \001(\t\"\303\001\n\030TideChartPropertyCommand\022%\n\tf" +
-      "romProps\030\001 \003(\0132\022.TideChartProperty\022#\n\007to" +
-      "Props\030\002 \003(\0132\022.TideChartProperty\022\014\n\004type\030" +
-      "\003 \001(\t\022\016\n\004node\030\005 \001(\tH\000\022\020\n\006region\030\006 \001(\tH\000\022" +
-      "\020\n\006widget\030\007 \001(\tH\000\022\017\n\005graph\030\010 \001(\tH\000B\010\n\006ta" +
-      "rget\"\200\001\n\024TideChartNoteCommand\022\035\n\005notes\030\001" +
-      " \003(\0132\016.TideChartNote\022\014\n\004type\030\002 \001(\t\022\016\n\004no" +
-      "de\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017\n\005graph\030\005 " +
-      "\001(\tH\000B\010\n\006target\"\256\001\n\017TideChartMethod\022\n\n\002i" +
-      "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007extends\030\003 \001(\t\022\016" +
-      "\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(\0132\016.TideCh" +
-      "artPort\022 \n\010outports\030\006 \003(\0132\016.TideChartPor" +
-      "t\022\035\n\005props\030\007 \003(\0132\016.TideChartPort\"\221\001\n\017Tid" +
-      "eChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014" +
-      "\n\004path\030\003 \001(\t\022\023\n\013createdDate\030\005 \001(\t\022\021\n\tcre" +
-      "atedBy\030\006 \001(\t\022\021\n\007version\030\007 \001(\tH\000\022\020\n\006scrip" +
-      "t\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020TideChartLibrar" +
-      "y\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005title\030\003 \001" +
-      "(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branch\030\005 \001(\t\022\014\n\004pa" +
-      "th\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.TideChartSourc" +
-      "e\022!\n\007methods\030\010 \003(\0132\020.TideChartMethod\"\305\001\n" +
-      "\rTideChartSite\022\r\n\005index\030\001 \001(\003\022\035\n\005stack\030\002" +
-      " \003(\0132\016.TideChartSite\022\014\n\004path\030\003 \001(\t\022\017\n\007tr" +
-      "igger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022\r\n\005scope\030\006 \003(" +
-      "\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030\010 \001(\t\022\016\n\006regi" +
-      "on\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004port\030\013 \001(\t\"\211\002\n" +
-      "\020TideChartMessage\022\r\n\005index\030\001 \001(\003\022\021\n\ttime" +
-      "stamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010previous\030" +
-      "\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030\010 \001(\003\022\022\n" +
-      "\ndelayUntil\030\t \001(\003\022\021\n\tholdToken\030\n \001(\003\022\023\n\013" +
-      "cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022\017\n\007versi" +
-      "on\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022\024\n\nmsgCo" +
-      "ntent\030\017 \001(\014H\000B\t\n\007content\"\311\002\n\rTideChartDa" +
-      "ta\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006s" +
-      "ource\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate" +
-      "\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007" +
-      " \001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006graphs\030\t \003(" +
-      "\0132\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.Tide" +
-      "ChartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideChart" +
-      "Note\022\"\n\007library\030\014 \003(\0132\021.TideChartLibrary" +
-      "\022\"\n\006global\030\r \003(\0132\022.TideChartProperty\"\240\001\n" +
-      "\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006bra" +
-      "nch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t" +
-      "\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022" +
-      "\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"" +
-      "\366\001\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 " +
-      "\001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\023\n\013cre" +
-      "atedDate\030\005 \001(\t\022\021\n\tcreatedBy\030\006 \001(\t\022\035\n\005cha" +
-      "rt\030\007 \001(\0132\016.TideChartData\022\"\n\007working\030\010 \003(" +
-      "\0132\021.TideChartCommand\022!\n\006remote\030\t \003(\0132\021.T" +
-      "ideChartCommand\022\037\n\007history\030\n \003(\0132\016.TideC" +
-      "hartData\"u\n\023TideChartFileHeader\022\n\n\002id\030\001 " +
-      "\001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origi" +
-      "n\030\004 \001(\t\022\023\n\013createdDate\030\005 \001(\t\022\021\n\tcreatedB" +
-      "y\030\006 \001(\t\"\225\001\n\024TideChartFileCurrent\022\n\n\002id\030\001" +
-      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006orig" +
-      "in\030\004 \001(\t\022\023\n\013createdDate\030\005 \001(\t\022\021\n\tcreated" +
-      "By\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartDataB" +
-      "\013B\tTideChartb\006proto3"
+      "hartLinkCommand\022 \n\010fromLink\030\001 \001(\0132\016.Tide" +
+      "ChartLink\022\036\n\006toLink\030\002 \001(\0132\016.TideChartLin" +
+      "k\022\014\n\004type\030\003 \001(\t\"f\n\024TideChartNodeCommand\022" +
+      " \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036\n\006toN" +
+      "ode\030\002 \001(\0132\016.TideChartNode\022\014\n\004type\030\003 \001(\t\"" +
+      "p\n\026TideChartRegionCommand\022$\n\nfromRegion\030" +
+      "\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(" +
+      "\0132\020.TideChartRegion\022\014\n\004type\030\003 \001(\t\"k\n\025Tid" +
+      "eChartGraphCommand\022\"\n\tfromGraph\030\001 \001(\0132\017." +
+      "TideChartGraph\022 \n\007toGraph\030\002 \001(\0132\017.TideCh" +
+      "artGraph\022\014\n\004type\030\003 \001(\t\"\303\001\n\030TideChartProp" +
+      "ertyCommand\022%\n\tfromProps\030\001 \003(\0132\022.TideCha" +
+      "rtProperty\022#\n\007toProps\030\002 \003(\0132\022.TideChartP" +
+      "roperty\022\014\n\004type\030\003 \001(\t\022\016\n\004node\030\005 \001(\tH\000\022\020\n" +
+      "\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n\005gra" +
+      "ph\030\010 \001(\tH\000B\010\n\006target\"\200\001\n\024TideChartNoteCo" +
+      "mmand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote\022\014\n\004" +
+      "type\030\002 \001(\t\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001" +
+      "(\tH\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017Tide" +
+      "ChartMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n" +
+      "\007extends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inport" +
+      "s\030\005 \003(\0132\016.TideChartPort\022 \n\010outports\030\006 \003(" +
+      "\0132\016.TideChartPort\022\035\n\005props\030\007 \003(\0132\016.TideC" +
+      "hartPort\"\221\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t" +
+      "\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013createdD" +
+      "ate\030\005 \001(\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007version\030" +
+      "\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n" +
+      "\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 " +
+      "\001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006br" +
+      "anch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132" +
+      "\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020.Tid" +
+      "eChartMethod\"\305\001\n\rTideChartSite\022\r\n\005index\030" +
+      "\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004" +
+      "path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001" +
+      "(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005gra" +
+      "ph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014" +
+      "\n\004port\030\013 \001(\t\"\211\002\n\020TideChartMessage\022\r\n\005ind" +
+      "ex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 " +
+      "\001(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n" +
+      "\006target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\thol" +
+      "dToken\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004typ" +
+      "e\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030" +
+      "\016 \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content" +
+      "\"\311\002\n\rTideChartData\022\017\n\007version\030\001 \001(\t\022\016\n\006b" +
+      "ranch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001" +
+      "(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t" +
+      "\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(" +
+      "\t\022\037\n\006sheets\030\t \003(\0132\017.TideChartGraph\022!\n\005pr" +
+      "ops\030\n \003(\0132\022.TideChartProperty\022\035\n\005notes\030\013" +
+      " \003(\0132\016.TideChartNote\022\"\n\007library\030\014 \003(\0132\021." +
+      "TideChartLibrary\022\"\n\006global\030\r \003(\0132\022.TideC" +
+      "hartProperty\"\240\001\n\017TideChartHeader\022\017\n\007vers" +
+      "ion\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(" +
+      "\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010" +
+      "commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013co" +
+      "mmitNotes\030\010 \001(\t\"\370\001\n\rTideChartFile\022\n\n\002id\030" +
+      "\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006ori" +
+      "gin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodif" +
+      "iedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartDa" +
+      "ta\022\"\n\007working\030\010 \003(\0132\021.TideChartCommand\022!" +
+      "\n\006remote\030\t \003(\0132\021.TideChartCommand\022\037\n\007his" +
+      "tory\030\n \003(\0132\016.TideChartData\"w\n\023TideChartF" +
+      "ileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004p" +
+      "ath\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDat" +
+      "e\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227\001\n\024TideChar" +
+      "tFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014" +
+      "\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modified" +
+      "Date\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030" +
+      "\007 \001(\0132\016.TideChartDataB\013B\tTideChartb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -64017,7 +65742,7 @@ public final class TideChart {
     internal_static_TideChartData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartData_descriptor,
-        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Graphs", "Props", "Notes", "Library", "Global", });
+        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Global", });
     internal_static_TideChartHeader_descriptor =
       getDescriptor().getMessageTypes().get(27);
     internal_static_TideChartHeader_fieldAccessorTable = new
@@ -64029,19 +65754,19 @@ public final class TideChart {
     internal_static_TideChartFile_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFile_descriptor,
-        new java.lang.String[] { "Id", "Name", "Path", "Origin", "CreatedDate", "CreatedBy", "Chart", "Working", "Remote", "History", });
+        new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", });
     internal_static_TideChartFileHeader_descriptor =
       getDescriptor().getMessageTypes().get(29);
     internal_static_TideChartFileHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFileHeader_descriptor,
-        new java.lang.String[] { "Id", "Name", "Path", "Origin", "CreatedDate", "CreatedBy", });
+        new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", });
     internal_static_TideChartFileCurrent_descriptor =
       getDescriptor().getMessageTypes().get(30);
     internal_static_TideChartFileCurrent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFileCurrent_descriptor,
-        new java.lang.String[] { "Id", "Name", "Path", "Origin", "CreatedDate", "CreatedBy", "Chart", });
+        new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -1054,8 +1054,8 @@ class TideChartMoveCommand extends $pb.GeneratedMessage {
 
 class TideChartCommentBoxCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartCommentBoxCommand')
-    ..a<TideChartPort>(1, 'fromComment', $pb.PbFieldType.OM, TideChartPort.getDefault, TideChartPort.create)
-    ..a<TideChartPort>(2, 'toComment', $pb.PbFieldType.OM, TideChartPort.getDefault, TideChartPort.create)
+    ..a<TideChartCommentBox>(1, 'fromComment', $pb.PbFieldType.OM, TideChartCommentBox.getDefault, TideChartCommentBox.create)
+    ..a<TideChartCommentBox>(2, 'toComment', $pb.PbFieldType.OM, TideChartCommentBox.getDefault, TideChartCommentBox.create)
     ..aOS(3, 'type')
     ..hasRequiredFields = false
   ;
@@ -1074,13 +1074,13 @@ class TideChartCommentBoxCommand extends $pb.GeneratedMessage {
   static TideChartCommentBoxCommand getDefault() => _defaultInstance ??= create()..freeze();
   static TideChartCommentBoxCommand _defaultInstance;
 
-  TideChartPort get fromComment => $_getN(0);
-  set fromComment(TideChartPort v) { setField(1, v); }
+  TideChartCommentBox get fromComment => $_getN(0);
+  set fromComment(TideChartCommentBox v) { setField(1, v); }
   $core.bool hasFromComment() => $_has(0);
   void clearFromComment() => clearField(1);
 
-  TideChartPort get toComment => $_getN(1);
-  set toComment(TideChartPort v) { setField(2, v); }
+  TideChartCommentBox get toComment => $_getN(1);
+  set toComment(TideChartCommentBox v) { setField(2, v); }
   $core.bool hasToComment() => $_has(1);
   void clearToComment() => clearField(2);
 
@@ -1092,8 +1092,8 @@ class TideChartCommentBoxCommand extends $pb.GeneratedMessage {
 
 class TideChartWidgetCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartWidgetCommand')
-    ..a<TideChartPort>(1, 'fromWidget', $pb.PbFieldType.OM, TideChartPort.getDefault, TideChartPort.create)
-    ..a<TideChartPort>(2, 'toWidget', $pb.PbFieldType.OM, TideChartPort.getDefault, TideChartPort.create)
+    ..a<TideChartWidget>(1, 'fromWidget', $pb.PbFieldType.OM, TideChartWidget.getDefault, TideChartWidget.create)
+    ..a<TideChartWidget>(2, 'toWidget', $pb.PbFieldType.OM, TideChartWidget.getDefault, TideChartWidget.create)
     ..aOS(3, 'type')
     ..hasRequiredFields = false
   ;
@@ -1112,13 +1112,13 @@ class TideChartWidgetCommand extends $pb.GeneratedMessage {
   static TideChartWidgetCommand getDefault() => _defaultInstance ??= create()..freeze();
   static TideChartWidgetCommand _defaultInstance;
 
-  TideChartPort get fromWidget => $_getN(0);
-  set fromWidget(TideChartPort v) { setField(1, v); }
+  TideChartWidget get fromWidget => $_getN(0);
+  set fromWidget(TideChartWidget v) { setField(1, v); }
   $core.bool hasFromWidget() => $_has(0);
   void clearFromWidget() => clearField(1);
 
-  TideChartPort get toWidget => $_getN(1);
-  set toWidget(TideChartPort v) { setField(2, v); }
+  TideChartWidget get toWidget => $_getN(1);
+  set toWidget(TideChartWidget v) { setField(2, v); }
   $core.bool hasToWidget() => $_has(1);
   void clearToWidget() => clearField(2);
 
@@ -1852,7 +1852,7 @@ class TideChartData extends $pb.GeneratedMessage {
     ..aOS(6, 'commitBy')
     ..aOS(7, 'commitDesc')
     ..aOS(8, 'commitNotes')
-    ..pc<TideChartGraph>(9, 'graphs', $pb.PbFieldType.PM,TideChartGraph.create)
+    ..pc<TideChartGraph>(9, 'sheets', $pb.PbFieldType.PM,TideChartGraph.create)
     ..pc<TideChartProperty>(10, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
     ..pc<TideChartNote>(11, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..pc<TideChartLibrary>(12, 'library', $pb.PbFieldType.PM,TideChartLibrary.create)
@@ -1914,7 +1914,7 @@ class TideChartData extends $pb.GeneratedMessage {
   $core.bool hasCommitNotes() => $_has(7);
   void clearCommitNotes() => clearField(8);
 
-  $core.List<TideChartGraph> get graphs => $_getList(8);
+  $core.List<TideChartGraph> get sheets => $_getList(8);
 
   $core.List<TideChartProperty> get props => $_getList(9);
 
@@ -1999,8 +1999,8 @@ class TideChartFile extends $pb.GeneratedMessage {
     ..aOS(2, 'name')
     ..aOS(3, 'path')
     ..aOS(4, 'origin')
-    ..aOS(5, 'createdDate')
-    ..aOS(6, 'createdBy')
+    ..aOS(5, 'modifiedDate')
+    ..aOS(6, 'modifiedBy')
     ..a<TideChartData>(7, 'chart', $pb.PbFieldType.OM, TideChartData.getDefault, TideChartData.create)
     ..pc<TideChartCommand>(8, 'working', $pb.PbFieldType.PM,TideChartCommand.create)
     ..pc<TideChartCommand>(9, 'remote', $pb.PbFieldType.PM,TideChartCommand.create)
@@ -2042,15 +2042,15 @@ class TideChartFile extends $pb.GeneratedMessage {
   $core.bool hasOrigin() => $_has(3);
   void clearOrigin() => clearField(4);
 
-  $core.String get createdDate => $_getS(4, '');
-  set createdDate($core.String v) { $_setString(4, v); }
-  $core.bool hasCreatedDate() => $_has(4);
-  void clearCreatedDate() => clearField(5);
+  $core.String get modifiedDate => $_getS(4, '');
+  set modifiedDate($core.String v) { $_setString(4, v); }
+  $core.bool hasModifiedDate() => $_has(4);
+  void clearModifiedDate() => clearField(5);
 
-  $core.String get createdBy => $_getS(5, '');
-  set createdBy($core.String v) { $_setString(5, v); }
-  $core.bool hasCreatedBy() => $_has(5);
-  void clearCreatedBy() => clearField(6);
+  $core.String get modifiedBy => $_getS(5, '');
+  set modifiedBy($core.String v) { $_setString(5, v); }
+  $core.bool hasModifiedBy() => $_has(5);
+  void clearModifiedBy() => clearField(6);
 
   TideChartData get chart => $_getN(6);
   set chart(TideChartData v) { setField(7, v); }
@@ -2070,8 +2070,8 @@ class TideChartFileHeader extends $pb.GeneratedMessage {
     ..aOS(2, 'name')
     ..aOS(3, 'path')
     ..aOS(4, 'origin')
-    ..aOS(5, 'createdDate')
-    ..aOS(6, 'createdBy')
+    ..aOS(5, 'modifiedDate')
+    ..aOS(6, 'modifiedBy')
     ..hasRequiredFields = false
   ;
 
@@ -2109,15 +2109,15 @@ class TideChartFileHeader extends $pb.GeneratedMessage {
   $core.bool hasOrigin() => $_has(3);
   void clearOrigin() => clearField(4);
 
-  $core.String get createdDate => $_getS(4, '');
-  set createdDate($core.String v) { $_setString(4, v); }
-  $core.bool hasCreatedDate() => $_has(4);
-  void clearCreatedDate() => clearField(5);
+  $core.String get modifiedDate => $_getS(4, '');
+  set modifiedDate($core.String v) { $_setString(4, v); }
+  $core.bool hasModifiedDate() => $_has(4);
+  void clearModifiedDate() => clearField(5);
 
-  $core.String get createdBy => $_getS(5, '');
-  set createdBy($core.String v) { $_setString(5, v); }
-  $core.bool hasCreatedBy() => $_has(5);
-  void clearCreatedBy() => clearField(6);
+  $core.String get modifiedBy => $_getS(5, '');
+  set modifiedBy($core.String v) { $_setString(5, v); }
+  $core.bool hasModifiedBy() => $_has(5);
+  void clearModifiedBy() => clearField(6);
 }
 
 class TideChartFileCurrent extends $pb.GeneratedMessage {
@@ -2126,8 +2126,8 @@ class TideChartFileCurrent extends $pb.GeneratedMessage {
     ..aOS(2, 'name')
     ..aOS(3, 'path')
     ..aOS(4, 'origin')
-    ..aOS(5, 'createdDate')
-    ..aOS(6, 'createdBy')
+    ..aOS(5, 'modifiedDate')
+    ..aOS(6, 'modifiedBy')
     ..a<TideChartData>(7, 'chart', $pb.PbFieldType.OM, TideChartData.getDefault, TideChartData.create)
     ..hasRequiredFields = false
   ;
@@ -2166,15 +2166,15 @@ class TideChartFileCurrent extends $pb.GeneratedMessage {
   $core.bool hasOrigin() => $_has(3);
   void clearOrigin() => clearField(4);
 
-  $core.String get createdDate => $_getS(4, '');
-  set createdDate($core.String v) { $_setString(4, v); }
-  $core.bool hasCreatedDate() => $_has(4);
-  void clearCreatedDate() => clearField(5);
+  $core.String get modifiedDate => $_getS(4, '');
+  set modifiedDate($core.String v) { $_setString(4, v); }
+  $core.bool hasModifiedDate() => $_has(4);
+  void clearModifiedDate() => clearField(5);
 
-  $core.String get createdBy => $_getS(5, '');
-  set createdBy($core.String v) { $_setString(5, v); }
-  $core.bool hasCreatedBy() => $_has(5);
-  void clearCreatedBy() => clearField(6);
+  $core.String get modifiedBy => $_getS(5, '');
+  set modifiedBy($core.String v) { $_setString(5, v); }
+  $core.bool hasModifiedBy() => $_has(5);
+  void clearModifiedBy() => clearField(6);
 
   TideChartData get chart => $_getN(6);
   set chart(TideChartData v) { setField(7, v); }

@@ -3309,21 +3309,21 @@ class TideChartCommentBoxCommand :
   std::string* release_type();
   void set_allocated_type(std::string* type);
 
-  // .TideChartPort fromComment = 1;
+  // .TideChartCommentBox fromComment = 1;
   bool has_fromcomment() const;
   void clear_fromcomment();
-  const ::TideChartPort& fromcomment() const;
-  ::TideChartPort* release_fromcomment();
-  ::TideChartPort* mutable_fromcomment();
-  void set_allocated_fromcomment(::TideChartPort* fromcomment);
+  const ::TideChartCommentBox& fromcomment() const;
+  ::TideChartCommentBox* release_fromcomment();
+  ::TideChartCommentBox* mutable_fromcomment();
+  void set_allocated_fromcomment(::TideChartCommentBox* fromcomment);
 
-  // .TideChartPort toComment = 2;
+  // .TideChartCommentBox toComment = 2;
   bool has_tocomment() const;
   void clear_tocomment();
-  const ::TideChartPort& tocomment() const;
-  ::TideChartPort* release_tocomment();
-  ::TideChartPort* mutable_tocomment();
-  void set_allocated_tocomment(::TideChartPort* tocomment);
+  const ::TideChartCommentBox& tocomment() const;
+  ::TideChartCommentBox* release_tocomment();
+  ::TideChartCommentBox* mutable_tocomment();
+  void set_allocated_tocomment(::TideChartCommentBox* tocomment);
 
   // @@protoc_insertion_point(class_scope:TideChartCommentBoxCommand)
  private:
@@ -3331,8 +3331,8 @@ class TideChartCommentBoxCommand :
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
-  ::TideChartPort* fromcomment_;
-  ::TideChartPort* tocomment_;
+  ::TideChartCommentBox* fromcomment_;
+  ::TideChartCommentBox* tocomment_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -3466,21 +3466,21 @@ class TideChartWidgetCommand :
   std::string* release_type();
   void set_allocated_type(std::string* type);
 
-  // .TideChartPort fromWidget = 1;
+  // .TideChartWidget fromWidget = 1;
   bool has_fromwidget() const;
   void clear_fromwidget();
-  const ::TideChartPort& fromwidget() const;
-  ::TideChartPort* release_fromwidget();
-  ::TideChartPort* mutable_fromwidget();
-  void set_allocated_fromwidget(::TideChartPort* fromwidget);
+  const ::TideChartWidget& fromwidget() const;
+  ::TideChartWidget* release_fromwidget();
+  ::TideChartWidget* mutable_fromwidget();
+  void set_allocated_fromwidget(::TideChartWidget* fromwidget);
 
-  // .TideChartPort toWidget = 2;
+  // .TideChartWidget toWidget = 2;
   bool has_towidget() const;
   void clear_towidget();
-  const ::TideChartPort& towidget() const;
-  ::TideChartPort* release_towidget();
-  ::TideChartPort* mutable_towidget();
-  void set_allocated_towidget(::TideChartPort* towidget);
+  const ::TideChartWidget& towidget() const;
+  ::TideChartWidget* release_towidget();
+  ::TideChartWidget* mutable_towidget();
+  void set_allocated_towidget(::TideChartWidget* towidget);
 
   // @@protoc_insertion_point(class_scope:TideChartWidgetCommand)
  private:
@@ -3488,8 +3488,8 @@ class TideChartWidgetCommand :
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
-  ::TideChartPort* fromwidget_;
-  ::TideChartPort* towidget_;
+  ::TideChartWidget* fromwidget_;
+  ::TideChartWidget* towidget_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -6066,7 +6066,7 @@ class TideChartData :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGraphsFieldNumber = 9,
+    kSheetsFieldNumber = 9,
     kPropsFieldNumber = 10,
     kNotesFieldNumber = 11,
     kLibraryFieldNumber = 12,
@@ -6080,16 +6080,16 @@ class TideChartData :
     kCommitDescFieldNumber = 7,
     kCommitNotesFieldNumber = 8,
   };
-  // repeated .TideChartGraph graphs = 9;
-  int graphs_size() const;
-  void clear_graphs();
-  ::TideChartGraph* mutable_graphs(int index);
+  // repeated .TideChartGraph sheets = 9;
+  int sheets_size() const;
+  void clear_sheets();
+  ::TideChartGraph* mutable_sheets(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartGraph >*
-      mutable_graphs();
-  const ::TideChartGraph& graphs(int index) const;
-  ::TideChartGraph* add_graphs();
+      mutable_sheets();
+  const ::TideChartGraph& sheets(int index) const;
+  ::TideChartGraph* add_sheets();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartGraph >&
-      graphs() const;
+      sheets() const;
 
   // repeated .TideChartProperty props = 10;
   int props_size() const;
@@ -6228,7 +6228,7 @@ class TideChartData :
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartGraph > graphs_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartGraph > sheets_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > props_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote > notes_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartLibrary > library_;
@@ -6594,8 +6594,8 @@ class TideChartFile :
     kNameFieldNumber = 2,
     kPathFieldNumber = 3,
     kOriginFieldNumber = 4,
-    kCreatedDateFieldNumber = 5,
-    kCreatedByFieldNumber = 6,
+    kModifiedDateFieldNumber = 5,
+    kModifiedByFieldNumber = 6,
     kChartFieldNumber = 7,
   };
   // repeated .TideChartCommand working = 8;
@@ -6675,27 +6675,27 @@ class TideChartFile :
   std::string* release_origin();
   void set_allocated_origin(std::string* origin);
 
-  // string createdDate = 5;
-  void clear_createddate();
-  const std::string& createddate() const;
-  void set_createddate(const std::string& value);
-  void set_createddate(std::string&& value);
-  void set_createddate(const char* value);
-  void set_createddate(const char* value, size_t size);
-  std::string* mutable_createddate();
-  std::string* release_createddate();
-  void set_allocated_createddate(std::string* createddate);
+  // string modifiedDate = 5;
+  void clear_modifieddate();
+  const std::string& modifieddate() const;
+  void set_modifieddate(const std::string& value);
+  void set_modifieddate(std::string&& value);
+  void set_modifieddate(const char* value);
+  void set_modifieddate(const char* value, size_t size);
+  std::string* mutable_modifieddate();
+  std::string* release_modifieddate();
+  void set_allocated_modifieddate(std::string* modifieddate);
 
-  // string createdBy = 6;
-  void clear_createdby();
-  const std::string& createdby() const;
-  void set_createdby(const std::string& value);
-  void set_createdby(std::string&& value);
-  void set_createdby(const char* value);
-  void set_createdby(const char* value, size_t size);
-  std::string* mutable_createdby();
-  std::string* release_createdby();
-  void set_allocated_createdby(std::string* createdby);
+  // string modifiedBy = 6;
+  void clear_modifiedby();
+  const std::string& modifiedby() const;
+  void set_modifiedby(const std::string& value);
+  void set_modifiedby(std::string&& value);
+  void set_modifiedby(const char* value);
+  void set_modifiedby(const char* value, size_t size);
+  std::string* mutable_modifiedby();
+  std::string* release_modifiedby();
+  void set_allocated_modifiedby(std::string* modifiedby);
 
   // .TideChartData chart = 7;
   bool has_chart() const;
@@ -6717,8 +6717,8 @@ class TideChartFile :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr path_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr origin_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createddate_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createdby_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifieddate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifiedby_;
   ::TideChartData* chart_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
@@ -6842,8 +6842,8 @@ class TideChartFileHeader :
     kNameFieldNumber = 2,
     kPathFieldNumber = 3,
     kOriginFieldNumber = 4,
-    kCreatedDateFieldNumber = 5,
-    kCreatedByFieldNumber = 6,
+    kModifiedDateFieldNumber = 5,
+    kModifiedByFieldNumber = 6,
   };
   // string id = 1;
   void clear_id();
@@ -6889,27 +6889,27 @@ class TideChartFileHeader :
   std::string* release_origin();
   void set_allocated_origin(std::string* origin);
 
-  // string createdDate = 5;
-  void clear_createddate();
-  const std::string& createddate() const;
-  void set_createddate(const std::string& value);
-  void set_createddate(std::string&& value);
-  void set_createddate(const char* value);
-  void set_createddate(const char* value, size_t size);
-  std::string* mutable_createddate();
-  std::string* release_createddate();
-  void set_allocated_createddate(std::string* createddate);
+  // string modifiedDate = 5;
+  void clear_modifieddate();
+  const std::string& modifieddate() const;
+  void set_modifieddate(const std::string& value);
+  void set_modifieddate(std::string&& value);
+  void set_modifieddate(const char* value);
+  void set_modifieddate(const char* value, size_t size);
+  std::string* mutable_modifieddate();
+  std::string* release_modifieddate();
+  void set_allocated_modifieddate(std::string* modifieddate);
 
-  // string createdBy = 6;
-  void clear_createdby();
-  const std::string& createdby() const;
-  void set_createdby(const std::string& value);
-  void set_createdby(std::string&& value);
-  void set_createdby(const char* value);
-  void set_createdby(const char* value, size_t size);
-  std::string* mutable_createdby();
-  std::string* release_createdby();
-  void set_allocated_createdby(std::string* createdby);
+  // string modifiedBy = 6;
+  void clear_modifiedby();
+  const std::string& modifiedby() const;
+  void set_modifiedby(const std::string& value);
+  void set_modifiedby(std::string&& value);
+  void set_modifiedby(const char* value);
+  void set_modifiedby(const char* value, size_t size);
+  std::string* mutable_modifiedby();
+  std::string* release_modifiedby();
+  void set_allocated_modifiedby(std::string* modifiedby);
 
   // @@protoc_insertion_point(class_scope:TideChartFileHeader)
  private:
@@ -6920,8 +6920,8 @@ class TideChartFileHeader :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr path_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr origin_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createddate_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createdby_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifieddate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifiedby_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -7044,8 +7044,8 @@ class TideChartFileCurrent :
     kNameFieldNumber = 2,
     kPathFieldNumber = 3,
     kOriginFieldNumber = 4,
-    kCreatedDateFieldNumber = 5,
-    kCreatedByFieldNumber = 6,
+    kModifiedDateFieldNumber = 5,
+    kModifiedByFieldNumber = 6,
     kChartFieldNumber = 7,
   };
   // string id = 1;
@@ -7092,27 +7092,27 @@ class TideChartFileCurrent :
   std::string* release_origin();
   void set_allocated_origin(std::string* origin);
 
-  // string createdDate = 5;
-  void clear_createddate();
-  const std::string& createddate() const;
-  void set_createddate(const std::string& value);
-  void set_createddate(std::string&& value);
-  void set_createddate(const char* value);
-  void set_createddate(const char* value, size_t size);
-  std::string* mutable_createddate();
-  std::string* release_createddate();
-  void set_allocated_createddate(std::string* createddate);
+  // string modifiedDate = 5;
+  void clear_modifieddate();
+  const std::string& modifieddate() const;
+  void set_modifieddate(const std::string& value);
+  void set_modifieddate(std::string&& value);
+  void set_modifieddate(const char* value);
+  void set_modifieddate(const char* value, size_t size);
+  std::string* mutable_modifieddate();
+  std::string* release_modifieddate();
+  void set_allocated_modifieddate(std::string* modifieddate);
 
-  // string createdBy = 6;
-  void clear_createdby();
-  const std::string& createdby() const;
-  void set_createdby(const std::string& value);
-  void set_createdby(std::string&& value);
-  void set_createdby(const char* value);
-  void set_createdby(const char* value, size_t size);
-  std::string* mutable_createdby();
-  std::string* release_createdby();
-  void set_allocated_createdby(std::string* createdby);
+  // string modifiedBy = 6;
+  void clear_modifiedby();
+  const std::string& modifiedby() const;
+  void set_modifiedby(const std::string& value);
+  void set_modifiedby(std::string&& value);
+  void set_modifiedby(const char* value);
+  void set_modifiedby(const char* value, size_t size);
+  std::string* mutable_modifiedby();
+  std::string* release_modifiedby();
+  void set_allocated_modifiedby(std::string* modifiedby);
 
   // .TideChartData chart = 7;
   bool has_chart() const;
@@ -7131,8 +7131,8 @@ class TideChartFileCurrent :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr path_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr origin_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createddate_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr createdby_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifieddate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr modifiedby_;
   ::TideChartData* chart_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
@@ -12048,7 +12048,7 @@ inline void TideChartMoveCommand::set_toposy(::PROTOBUF_NAMESPACE_ID::int32 valu
 
 // TideChartCommentBoxCommand
 
-// .TideChartPort fromComment = 1;
+// .TideChartCommentBox fromComment = 1;
 inline bool TideChartCommentBoxCommand::has_fromcomment() const {
   return this != internal_default_instance() && fromcomment_ != nullptr;
 }
@@ -12058,29 +12058,29 @@ inline void TideChartCommentBoxCommand::clear_fromcomment() {
   }
   fromcomment_ = nullptr;
 }
-inline const ::TideChartPort& TideChartCommentBoxCommand::fromcomment() const {
-  const ::TideChartPort* p = fromcomment_;
+inline const ::TideChartCommentBox& TideChartCommentBoxCommand::fromcomment() const {
+  const ::TideChartCommentBox* p = fromcomment_;
   // @@protoc_insertion_point(field_get:TideChartCommentBoxCommand.fromComment)
-  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartPort*>(
-      &::_TideChartPort_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartCommentBox*>(
+      &::_TideChartCommentBox_default_instance_);
 }
-inline ::TideChartPort* TideChartCommentBoxCommand::release_fromcomment() {
+inline ::TideChartCommentBox* TideChartCommentBoxCommand::release_fromcomment() {
   // @@protoc_insertion_point(field_release:TideChartCommentBoxCommand.fromComment)
   
-  ::TideChartPort* temp = fromcomment_;
+  ::TideChartCommentBox* temp = fromcomment_;
   fromcomment_ = nullptr;
   return temp;
 }
-inline ::TideChartPort* TideChartCommentBoxCommand::mutable_fromcomment() {
+inline ::TideChartCommentBox* TideChartCommentBoxCommand::mutable_fromcomment() {
   
   if (fromcomment_ == nullptr) {
-    auto* p = CreateMaybeMessage<::TideChartPort>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::TideChartCommentBox>(GetArenaNoVirtual());
     fromcomment_ = p;
   }
   // @@protoc_insertion_point(field_mutable:TideChartCommentBoxCommand.fromComment)
   return fromcomment_;
 }
-inline void TideChartCommentBoxCommand::set_allocated_fromcomment(::TideChartPort* fromcomment) {
+inline void TideChartCommentBoxCommand::set_allocated_fromcomment(::TideChartCommentBox* fromcomment) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete fromcomment_;
@@ -12099,7 +12099,7 @@ inline void TideChartCommentBoxCommand::set_allocated_fromcomment(::TideChartPor
   // @@protoc_insertion_point(field_set_allocated:TideChartCommentBoxCommand.fromComment)
 }
 
-// .TideChartPort toComment = 2;
+// .TideChartCommentBox toComment = 2;
 inline bool TideChartCommentBoxCommand::has_tocomment() const {
   return this != internal_default_instance() && tocomment_ != nullptr;
 }
@@ -12109,29 +12109,29 @@ inline void TideChartCommentBoxCommand::clear_tocomment() {
   }
   tocomment_ = nullptr;
 }
-inline const ::TideChartPort& TideChartCommentBoxCommand::tocomment() const {
-  const ::TideChartPort* p = tocomment_;
+inline const ::TideChartCommentBox& TideChartCommentBoxCommand::tocomment() const {
+  const ::TideChartCommentBox* p = tocomment_;
   // @@protoc_insertion_point(field_get:TideChartCommentBoxCommand.toComment)
-  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartPort*>(
-      &::_TideChartPort_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartCommentBox*>(
+      &::_TideChartCommentBox_default_instance_);
 }
-inline ::TideChartPort* TideChartCommentBoxCommand::release_tocomment() {
+inline ::TideChartCommentBox* TideChartCommentBoxCommand::release_tocomment() {
   // @@protoc_insertion_point(field_release:TideChartCommentBoxCommand.toComment)
   
-  ::TideChartPort* temp = tocomment_;
+  ::TideChartCommentBox* temp = tocomment_;
   tocomment_ = nullptr;
   return temp;
 }
-inline ::TideChartPort* TideChartCommentBoxCommand::mutable_tocomment() {
+inline ::TideChartCommentBox* TideChartCommentBoxCommand::mutable_tocomment() {
   
   if (tocomment_ == nullptr) {
-    auto* p = CreateMaybeMessage<::TideChartPort>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::TideChartCommentBox>(GetArenaNoVirtual());
     tocomment_ = p;
   }
   // @@protoc_insertion_point(field_mutable:TideChartCommentBoxCommand.toComment)
   return tocomment_;
 }
-inline void TideChartCommentBoxCommand::set_allocated_tocomment(::TideChartPort* tocomment) {
+inline void TideChartCommentBoxCommand::set_allocated_tocomment(::TideChartCommentBox* tocomment) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete tocomment_;
@@ -12205,7 +12205,7 @@ inline void TideChartCommentBoxCommand::set_allocated_type(std::string* type) {
 
 // TideChartWidgetCommand
 
-// .TideChartPort fromWidget = 1;
+// .TideChartWidget fromWidget = 1;
 inline bool TideChartWidgetCommand::has_fromwidget() const {
   return this != internal_default_instance() && fromwidget_ != nullptr;
 }
@@ -12215,29 +12215,29 @@ inline void TideChartWidgetCommand::clear_fromwidget() {
   }
   fromwidget_ = nullptr;
 }
-inline const ::TideChartPort& TideChartWidgetCommand::fromwidget() const {
-  const ::TideChartPort* p = fromwidget_;
+inline const ::TideChartWidget& TideChartWidgetCommand::fromwidget() const {
+  const ::TideChartWidget* p = fromwidget_;
   // @@protoc_insertion_point(field_get:TideChartWidgetCommand.fromWidget)
-  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartPort*>(
-      &::_TideChartPort_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartWidget*>(
+      &::_TideChartWidget_default_instance_);
 }
-inline ::TideChartPort* TideChartWidgetCommand::release_fromwidget() {
+inline ::TideChartWidget* TideChartWidgetCommand::release_fromwidget() {
   // @@protoc_insertion_point(field_release:TideChartWidgetCommand.fromWidget)
   
-  ::TideChartPort* temp = fromwidget_;
+  ::TideChartWidget* temp = fromwidget_;
   fromwidget_ = nullptr;
   return temp;
 }
-inline ::TideChartPort* TideChartWidgetCommand::mutable_fromwidget() {
+inline ::TideChartWidget* TideChartWidgetCommand::mutable_fromwidget() {
   
   if (fromwidget_ == nullptr) {
-    auto* p = CreateMaybeMessage<::TideChartPort>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::TideChartWidget>(GetArenaNoVirtual());
     fromwidget_ = p;
   }
   // @@protoc_insertion_point(field_mutable:TideChartWidgetCommand.fromWidget)
   return fromwidget_;
 }
-inline void TideChartWidgetCommand::set_allocated_fromwidget(::TideChartPort* fromwidget) {
+inline void TideChartWidgetCommand::set_allocated_fromwidget(::TideChartWidget* fromwidget) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete fromwidget_;
@@ -12256,7 +12256,7 @@ inline void TideChartWidgetCommand::set_allocated_fromwidget(::TideChartPort* fr
   // @@protoc_insertion_point(field_set_allocated:TideChartWidgetCommand.fromWidget)
 }
 
-// .TideChartPort toWidget = 2;
+// .TideChartWidget toWidget = 2;
 inline bool TideChartWidgetCommand::has_towidget() const {
   return this != internal_default_instance() && towidget_ != nullptr;
 }
@@ -12266,29 +12266,29 @@ inline void TideChartWidgetCommand::clear_towidget() {
   }
   towidget_ = nullptr;
 }
-inline const ::TideChartPort& TideChartWidgetCommand::towidget() const {
-  const ::TideChartPort* p = towidget_;
+inline const ::TideChartWidget& TideChartWidgetCommand::towidget() const {
+  const ::TideChartWidget* p = towidget_;
   // @@protoc_insertion_point(field_get:TideChartWidgetCommand.toWidget)
-  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartPort*>(
-      &::_TideChartPort_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartWidget*>(
+      &::_TideChartWidget_default_instance_);
 }
-inline ::TideChartPort* TideChartWidgetCommand::release_towidget() {
+inline ::TideChartWidget* TideChartWidgetCommand::release_towidget() {
   // @@protoc_insertion_point(field_release:TideChartWidgetCommand.toWidget)
   
-  ::TideChartPort* temp = towidget_;
+  ::TideChartWidget* temp = towidget_;
   towidget_ = nullptr;
   return temp;
 }
-inline ::TideChartPort* TideChartWidgetCommand::mutable_towidget() {
+inline ::TideChartWidget* TideChartWidgetCommand::mutable_towidget() {
   
   if (towidget_ == nullptr) {
-    auto* p = CreateMaybeMessage<::TideChartPort>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::TideChartWidget>(GetArenaNoVirtual());
     towidget_ = p;
   }
   // @@protoc_insertion_point(field_mutable:TideChartWidgetCommand.toWidget)
   return towidget_;
 }
-inline void TideChartWidgetCommand::set_allocated_towidget(::TideChartPort* towidget) {
+inline void TideChartWidgetCommand::set_allocated_towidget(::TideChartWidget* towidget) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete towidget_;
@@ -16424,34 +16424,34 @@ inline void TideChartData::set_allocated_commitnotes(std::string* commitnotes) {
   // @@protoc_insertion_point(field_set_allocated:TideChartData.commitNotes)
 }
 
-// repeated .TideChartGraph graphs = 9;
-inline int TideChartData::graphs_size() const {
-  return graphs_.size();
+// repeated .TideChartGraph sheets = 9;
+inline int TideChartData::sheets_size() const {
+  return sheets_.size();
 }
-inline void TideChartData::clear_graphs() {
-  graphs_.Clear();
+inline void TideChartData::clear_sheets() {
+  sheets_.Clear();
 }
-inline ::TideChartGraph* TideChartData::mutable_graphs(int index) {
-  // @@protoc_insertion_point(field_mutable:TideChartData.graphs)
-  return graphs_.Mutable(index);
+inline ::TideChartGraph* TideChartData::mutable_sheets(int index) {
+  // @@protoc_insertion_point(field_mutable:TideChartData.sheets)
+  return sheets_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartGraph >*
-TideChartData::mutable_graphs() {
-  // @@protoc_insertion_point(field_mutable_list:TideChartData.graphs)
-  return &graphs_;
+TideChartData::mutable_sheets() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartData.sheets)
+  return &sheets_;
 }
-inline const ::TideChartGraph& TideChartData::graphs(int index) const {
-  // @@protoc_insertion_point(field_get:TideChartData.graphs)
-  return graphs_.Get(index);
+inline const ::TideChartGraph& TideChartData::sheets(int index) const {
+  // @@protoc_insertion_point(field_get:TideChartData.sheets)
+  return sheets_.Get(index);
 }
-inline ::TideChartGraph* TideChartData::add_graphs() {
-  // @@protoc_insertion_point(field_add:TideChartData.graphs)
-  return graphs_.Add();
+inline ::TideChartGraph* TideChartData::add_sheets() {
+  // @@protoc_insertion_point(field_add:TideChartData.sheets)
+  return sheets_.Add();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartGraph >&
-TideChartData::graphs() const {
-  // @@protoc_insertion_point(field_list:TideChartData.graphs)
-  return graphs_;
+TideChartData::sheets() const {
+  // @@protoc_insertion_point(field_list:TideChartData.sheets)
+  return sheets_;
 }
 
 // repeated .TideChartProperty props = 10;
@@ -17194,106 +17194,106 @@ inline void TideChartFile::set_allocated_origin(std::string* origin) {
   // @@protoc_insertion_point(field_set_allocated:TideChartFile.origin)
 }
 
-// string createdDate = 5;
-inline void TideChartFile::clear_createddate() {
-  createddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifiedDate = 5;
+inline void TideChartFile::clear_modifieddate() {
+  modifieddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartFile::createddate() const {
-  // @@protoc_insertion_point(field_get:TideChartFile.createdDate)
-  return createddate_.GetNoArena();
+inline const std::string& TideChartFile::modifieddate() const {
+  // @@protoc_insertion_point(field_get:TideChartFile.modifiedDate)
+  return modifieddate_.GetNoArena();
 }
-inline void TideChartFile::set_createddate(const std::string& value) {
+inline void TideChartFile::set_modifieddate(const std::string& value) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartFile.createdDate)
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartFile.modifiedDate)
 }
-inline void TideChartFile::set_createddate(std::string&& value) {
+inline void TideChartFile::set_modifieddate(std::string&& value) {
   
-  createddate_.SetNoArena(
+  modifieddate_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartFile.createdDate)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartFile.modifiedDate)
 }
-inline void TideChartFile::set_createddate(const char* value) {
+inline void TideChartFile::set_modifieddate(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartFile.createdDate)
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartFile.modifiedDate)
 }
-inline void TideChartFile::set_createddate(const char* value, size_t size) {
+inline void TideChartFile::set_modifieddate(const char* value, size_t size) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartFile.createdDate)
+  // @@protoc_insertion_point(field_set_pointer:TideChartFile.modifiedDate)
 }
-inline std::string* TideChartFile::mutable_createddate() {
+inline std::string* TideChartFile::mutable_modifieddate() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartFile.createdDate)
-  return createddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartFile.modifiedDate)
+  return modifieddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartFile::release_createddate() {
-  // @@protoc_insertion_point(field_release:TideChartFile.createdDate)
+inline std::string* TideChartFile::release_modifieddate() {
+  // @@protoc_insertion_point(field_release:TideChartFile.modifiedDate)
   
-  return createddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifieddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartFile::set_allocated_createddate(std::string* createddate) {
-  if (createddate != nullptr) {
+inline void TideChartFile::set_allocated_modifieddate(std::string* modifieddate) {
+  if (modifieddate != nullptr) {
     
   } else {
     
   }
-  createddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createddate);
-  // @@protoc_insertion_point(field_set_allocated:TideChartFile.createdDate)
+  modifieddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifieddate);
+  // @@protoc_insertion_point(field_set_allocated:TideChartFile.modifiedDate)
 }
 
-// string createdBy = 6;
-inline void TideChartFile::clear_createdby() {
-  createdby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifiedBy = 6;
+inline void TideChartFile::clear_modifiedby() {
+  modifiedby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartFile::createdby() const {
-  // @@protoc_insertion_point(field_get:TideChartFile.createdBy)
-  return createdby_.GetNoArena();
+inline const std::string& TideChartFile::modifiedby() const {
+  // @@protoc_insertion_point(field_get:TideChartFile.modifiedBy)
+  return modifiedby_.GetNoArena();
 }
-inline void TideChartFile::set_createdby(const std::string& value) {
+inline void TideChartFile::set_modifiedby(const std::string& value) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartFile.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartFile.modifiedBy)
 }
-inline void TideChartFile::set_createdby(std::string&& value) {
+inline void TideChartFile::set_modifiedby(std::string&& value) {
   
-  createdby_.SetNoArena(
+  modifiedby_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartFile.createdBy)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartFile.modifiedBy)
 }
-inline void TideChartFile::set_createdby(const char* value) {
+inline void TideChartFile::set_modifiedby(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartFile.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartFile.modifiedBy)
 }
-inline void TideChartFile::set_createdby(const char* value, size_t size) {
+inline void TideChartFile::set_modifiedby(const char* value, size_t size) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartFile.createdBy)
+  // @@protoc_insertion_point(field_set_pointer:TideChartFile.modifiedBy)
 }
-inline std::string* TideChartFile::mutable_createdby() {
+inline std::string* TideChartFile::mutable_modifiedby() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartFile.createdBy)
-  return createdby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartFile.modifiedBy)
+  return modifiedby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartFile::release_createdby() {
-  // @@protoc_insertion_point(field_release:TideChartFile.createdBy)
+inline std::string* TideChartFile::release_modifiedby() {
+  // @@protoc_insertion_point(field_release:TideChartFile.modifiedBy)
   
-  return createdby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifiedby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartFile::set_allocated_createdby(std::string* createdby) {
-  if (createdby != nullptr) {
+inline void TideChartFile::set_allocated_modifiedby(std::string* modifiedby) {
+  if (modifiedby != nullptr) {
     
   } else {
     
   }
-  createdby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createdby);
-  // @@protoc_insertion_point(field_set_allocated:TideChartFile.createdBy)
+  modifiedby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifiedby);
+  // @@protoc_insertion_point(field_set_allocated:TideChartFile.modifiedBy)
 }
 
 // .TideChartData chart = 7;
@@ -17645,106 +17645,106 @@ inline void TideChartFileHeader::set_allocated_origin(std::string* origin) {
   // @@protoc_insertion_point(field_set_allocated:TideChartFileHeader.origin)
 }
 
-// string createdDate = 5;
-inline void TideChartFileHeader::clear_createddate() {
-  createddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifiedDate = 5;
+inline void TideChartFileHeader::clear_modifieddate() {
+  modifieddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartFileHeader::createddate() const {
-  // @@protoc_insertion_point(field_get:TideChartFileHeader.createdDate)
-  return createddate_.GetNoArena();
+inline const std::string& TideChartFileHeader::modifieddate() const {
+  // @@protoc_insertion_point(field_get:TideChartFileHeader.modifiedDate)
+  return modifieddate_.GetNoArena();
 }
-inline void TideChartFileHeader::set_createddate(const std::string& value) {
+inline void TideChartFileHeader::set_modifieddate(const std::string& value) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartFileHeader.createdDate)
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartFileHeader.modifiedDate)
 }
-inline void TideChartFileHeader::set_createddate(std::string&& value) {
+inline void TideChartFileHeader::set_modifieddate(std::string&& value) {
   
-  createddate_.SetNoArena(
+  modifieddate_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartFileHeader.createdDate)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartFileHeader.modifiedDate)
 }
-inline void TideChartFileHeader::set_createddate(const char* value) {
+inline void TideChartFileHeader::set_modifieddate(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartFileHeader.createdDate)
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartFileHeader.modifiedDate)
 }
-inline void TideChartFileHeader::set_createddate(const char* value, size_t size) {
+inline void TideChartFileHeader::set_modifieddate(const char* value, size_t size) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartFileHeader.createdDate)
+  // @@protoc_insertion_point(field_set_pointer:TideChartFileHeader.modifiedDate)
 }
-inline std::string* TideChartFileHeader::mutable_createddate() {
+inline std::string* TideChartFileHeader::mutable_modifieddate() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartFileHeader.createdDate)
-  return createddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartFileHeader.modifiedDate)
+  return modifieddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartFileHeader::release_createddate() {
-  // @@protoc_insertion_point(field_release:TideChartFileHeader.createdDate)
+inline std::string* TideChartFileHeader::release_modifieddate() {
+  // @@protoc_insertion_point(field_release:TideChartFileHeader.modifiedDate)
   
-  return createddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifieddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartFileHeader::set_allocated_createddate(std::string* createddate) {
-  if (createddate != nullptr) {
+inline void TideChartFileHeader::set_allocated_modifieddate(std::string* modifieddate) {
+  if (modifieddate != nullptr) {
     
   } else {
     
   }
-  createddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createddate);
-  // @@protoc_insertion_point(field_set_allocated:TideChartFileHeader.createdDate)
+  modifieddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifieddate);
+  // @@protoc_insertion_point(field_set_allocated:TideChartFileHeader.modifiedDate)
 }
 
-// string createdBy = 6;
-inline void TideChartFileHeader::clear_createdby() {
-  createdby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifiedBy = 6;
+inline void TideChartFileHeader::clear_modifiedby() {
+  modifiedby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartFileHeader::createdby() const {
-  // @@protoc_insertion_point(field_get:TideChartFileHeader.createdBy)
-  return createdby_.GetNoArena();
+inline const std::string& TideChartFileHeader::modifiedby() const {
+  // @@protoc_insertion_point(field_get:TideChartFileHeader.modifiedBy)
+  return modifiedby_.GetNoArena();
 }
-inline void TideChartFileHeader::set_createdby(const std::string& value) {
+inline void TideChartFileHeader::set_modifiedby(const std::string& value) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartFileHeader.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartFileHeader.modifiedBy)
 }
-inline void TideChartFileHeader::set_createdby(std::string&& value) {
+inline void TideChartFileHeader::set_modifiedby(std::string&& value) {
   
-  createdby_.SetNoArena(
+  modifiedby_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartFileHeader.createdBy)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartFileHeader.modifiedBy)
 }
-inline void TideChartFileHeader::set_createdby(const char* value) {
+inline void TideChartFileHeader::set_modifiedby(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartFileHeader.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartFileHeader.modifiedBy)
 }
-inline void TideChartFileHeader::set_createdby(const char* value, size_t size) {
+inline void TideChartFileHeader::set_modifiedby(const char* value, size_t size) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartFileHeader.createdBy)
+  // @@protoc_insertion_point(field_set_pointer:TideChartFileHeader.modifiedBy)
 }
-inline std::string* TideChartFileHeader::mutable_createdby() {
+inline std::string* TideChartFileHeader::mutable_modifiedby() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartFileHeader.createdBy)
-  return createdby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartFileHeader.modifiedBy)
+  return modifiedby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartFileHeader::release_createdby() {
-  // @@protoc_insertion_point(field_release:TideChartFileHeader.createdBy)
+inline std::string* TideChartFileHeader::release_modifiedby() {
+  // @@protoc_insertion_point(field_release:TideChartFileHeader.modifiedBy)
   
-  return createdby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifiedby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartFileHeader::set_allocated_createdby(std::string* createdby) {
-  if (createdby != nullptr) {
+inline void TideChartFileHeader::set_allocated_modifiedby(std::string* modifiedby) {
+  if (modifiedby != nullptr) {
     
   } else {
     
   }
-  createdby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createdby);
-  // @@protoc_insertion_point(field_set_allocated:TideChartFileHeader.createdBy)
+  modifiedby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifiedby);
+  // @@protoc_insertion_point(field_set_allocated:TideChartFileHeader.modifiedBy)
 }
 
 // -------------------------------------------------------------------
@@ -17955,106 +17955,106 @@ inline void TideChartFileCurrent::set_allocated_origin(std::string* origin) {
   // @@protoc_insertion_point(field_set_allocated:TideChartFileCurrent.origin)
 }
 
-// string createdDate = 5;
-inline void TideChartFileCurrent::clear_createddate() {
-  createddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifiedDate = 5;
+inline void TideChartFileCurrent::clear_modifieddate() {
+  modifieddate_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartFileCurrent::createddate() const {
-  // @@protoc_insertion_point(field_get:TideChartFileCurrent.createdDate)
-  return createddate_.GetNoArena();
+inline const std::string& TideChartFileCurrent::modifieddate() const {
+  // @@protoc_insertion_point(field_get:TideChartFileCurrent.modifiedDate)
+  return modifieddate_.GetNoArena();
 }
-inline void TideChartFileCurrent::set_createddate(const std::string& value) {
+inline void TideChartFileCurrent::set_modifieddate(const std::string& value) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartFileCurrent.createdDate)
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartFileCurrent.modifiedDate)
 }
-inline void TideChartFileCurrent::set_createddate(std::string&& value) {
+inline void TideChartFileCurrent::set_modifieddate(std::string&& value) {
   
-  createddate_.SetNoArena(
+  modifieddate_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartFileCurrent.createdDate)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartFileCurrent.modifiedDate)
 }
-inline void TideChartFileCurrent::set_createddate(const char* value) {
+inline void TideChartFileCurrent::set_modifieddate(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartFileCurrent.createdDate)
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartFileCurrent.modifiedDate)
 }
-inline void TideChartFileCurrent::set_createddate(const char* value, size_t size) {
+inline void TideChartFileCurrent::set_modifieddate(const char* value, size_t size) {
   
-  createddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifieddate_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartFileCurrent.createdDate)
+  // @@protoc_insertion_point(field_set_pointer:TideChartFileCurrent.modifiedDate)
 }
-inline std::string* TideChartFileCurrent::mutable_createddate() {
+inline std::string* TideChartFileCurrent::mutable_modifieddate() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartFileCurrent.createdDate)
-  return createddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartFileCurrent.modifiedDate)
+  return modifieddate_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartFileCurrent::release_createddate() {
-  // @@protoc_insertion_point(field_release:TideChartFileCurrent.createdDate)
+inline std::string* TideChartFileCurrent::release_modifieddate() {
+  // @@protoc_insertion_point(field_release:TideChartFileCurrent.modifiedDate)
   
-  return createddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifieddate_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartFileCurrent::set_allocated_createddate(std::string* createddate) {
-  if (createddate != nullptr) {
+inline void TideChartFileCurrent::set_allocated_modifieddate(std::string* modifieddate) {
+  if (modifieddate != nullptr) {
     
   } else {
     
   }
-  createddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createddate);
-  // @@protoc_insertion_point(field_set_allocated:TideChartFileCurrent.createdDate)
+  modifieddate_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifieddate);
+  // @@protoc_insertion_point(field_set_allocated:TideChartFileCurrent.modifiedDate)
 }
 
-// string createdBy = 6;
-inline void TideChartFileCurrent::clear_createdby() {
-  createdby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string modifiedBy = 6;
+inline void TideChartFileCurrent::clear_modifiedby() {
+  modifiedby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartFileCurrent::createdby() const {
-  // @@protoc_insertion_point(field_get:TideChartFileCurrent.createdBy)
-  return createdby_.GetNoArena();
+inline const std::string& TideChartFileCurrent::modifiedby() const {
+  // @@protoc_insertion_point(field_get:TideChartFileCurrent.modifiedBy)
+  return modifiedby_.GetNoArena();
 }
-inline void TideChartFileCurrent::set_createdby(const std::string& value) {
+inline void TideChartFileCurrent::set_modifiedby(const std::string& value) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartFileCurrent.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartFileCurrent.modifiedBy)
 }
-inline void TideChartFileCurrent::set_createdby(std::string&& value) {
+inline void TideChartFileCurrent::set_modifiedby(std::string&& value) {
   
-  createdby_.SetNoArena(
+  modifiedby_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartFileCurrent.createdBy)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartFileCurrent.modifiedBy)
 }
-inline void TideChartFileCurrent::set_createdby(const char* value) {
+inline void TideChartFileCurrent::set_modifiedby(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartFileCurrent.createdBy)
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartFileCurrent.modifiedBy)
 }
-inline void TideChartFileCurrent::set_createdby(const char* value, size_t size) {
+inline void TideChartFileCurrent::set_modifiedby(const char* value, size_t size) {
   
-  createdby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  modifiedby_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartFileCurrent.createdBy)
+  // @@protoc_insertion_point(field_set_pointer:TideChartFileCurrent.modifiedBy)
 }
-inline std::string* TideChartFileCurrent::mutable_createdby() {
+inline std::string* TideChartFileCurrent::mutable_modifiedby() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartFileCurrent.createdBy)
-  return createdby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartFileCurrent.modifiedBy)
+  return modifiedby_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartFileCurrent::release_createdby() {
-  // @@protoc_insertion_point(field_release:TideChartFileCurrent.createdBy)
+inline std::string* TideChartFileCurrent::release_modifiedby() {
+  // @@protoc_insertion_point(field_release:TideChartFileCurrent.modifiedBy)
   
-  return createdby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return modifiedby_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartFileCurrent::set_allocated_createdby(std::string* createdby) {
-  if (createdby != nullptr) {
+inline void TideChartFileCurrent::set_allocated_modifiedby(std::string* modifiedby) {
+  if (modifiedby != nullptr) {
     
   } else {
     
   }
-  createdby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), createdby);
-  // @@protoc_insertion_point(field_set_allocated:TideChartFileCurrent.createdBy)
+  modifiedby_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modifiedby);
+  // @@protoc_insertion_point(field_set_allocated:TideChartFileCurrent.modifiedBy)
 }
 
 // .TideChartData chart = 7;
