@@ -39,6 +39,7 @@
     - [TideChartWidget](#.TideChartWidget)
     - [TideChartWidgetCommand](#.TideChartWidgetCommand)
   
+    - [TideChartCommandUpdateType](#.TideChartCommandUpdateType)
     - [TideChartLogLevel](#.TideChartLogLevel)
   
   
@@ -123,7 +124,7 @@
 | ----- | ---- | ----- | ----------- |
 | fromComment | [TideChartCommentBox](#TideChartCommentBox) |  | previous version of the comment |
 | toComment | [TideChartCommentBox](#TideChartCommentBox) |  | new version of the comment |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 
 
 
@@ -312,7 +313,7 @@ Read only the file header information
 | ----- | ---- | ----- | ----------- |
 | fromGraph | [TideChartGraph](#TideChartGraph) |  | previous versino of the graph |
 | toGraph | [TideChartGraph](#TideChartGraph) |  | new version of the graph |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 
 
 
@@ -413,7 +414,7 @@ Read only the commit headers
 | ----- | ---- | ----- | ----------- |
 | fromLink | [TideChartLink](#TideChartLink) |  | previous version of the link |
 | toLink | [TideChartLink](#TideChartLink) |  | new version of the link |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 
 
 
@@ -551,7 +552,7 @@ Read only the commit headers
 | ----- | ---- | ----- | ----------- |
 | fromNode | [TideChartNode](#TideChartNode) |  | previous version of the graph node |
 | toNode | [TideChartNode](#TideChartNode) |  | new version of the graph node |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 
 
 
@@ -587,7 +588,7 @@ Read only the commit headers
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | notes | [TideChartNote](#TideChartNote) | repeated | a set of notes being added or removed |
-| type | [string](#string) |  | type of update: add, remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, remove |
 | node | [string](#string) |  | node reference (node-name) |
 | region | [string](#string) |  | region reference (region-name) |
 | graph | [string](#string) |  | graph reference (graph-name) |
@@ -635,7 +636,7 @@ Read only the commit headers
 | ----- | ---- | ----- | ----------- |
 | fromPort | [TideChartPort](#TideChartPort) |  | previons version of the port |
 | toPort | [TideChartPort](#TideChartPort) |  | new version of the port |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 
 
 
@@ -670,7 +671,7 @@ a recursive data type that provides configuration values for graphs, regions and
 | ----- | ---- | ----- | ----------- |
 | fromProps | [TideChartProperty](#TideChartProperty) | repeated | previous values of the properties (only for included updates) |
 | toProps | [TideChartProperty](#TideChartProperty) | repeated | new values of the properties (only include changes) |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 | node | [string](#string) |  | node reference (graph-id:node-name) |
 | region | [string](#string) |  | region reference (graph-id:region-name) |
 | widget | [string](#string) |  | widget reference (widget-id) |
@@ -717,7 +718,7 @@ a recursive data type that provides configuration values for graphs, regions and
 | ----- | ---- | ----- | ----------- |
 | fromRegion | [TideChartRegion](#TideChartRegion) |  | previous version of the region |
 | toRegion | [TideChartRegion](#TideChartRegion) |  | new version of the region |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 
 
 
@@ -807,13 +808,26 @@ a recursive data type that provides configuration values for graphs, regions and
 | ----- | ---- | ----- | ----------- |
 | fromWidget | [TideChartWidget](#TideChartWidget) |  | previous version of the widget |
 | toWidget | [TideChartWidget](#TideChartWidget) |  | new version of the widget |
-| type | [string](#string) |  | type of update: add, update or remove |
+| type | [TideChartCommandUpdateType](#TideChartCommandUpdateType) |  | type of update: add, update or remove |
 
 
 
 
 
  
+
+
+<a name=".TideChartCommandUpdateType"></a>
+
+### TideChartCommandUpdateType
+
+
+| Name | Number | Description |
+| ---- | ------ | ----------- |
+| add | 0 |  |
+| remove | 1 |  |
+| update | 2 |  |
+
 
 
 <a name=".TideChartLogLevel"></a>

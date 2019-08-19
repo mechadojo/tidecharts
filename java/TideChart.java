@@ -13,6 +13,113 @@ public final class TideChart {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * Protobuf enum {@code TideChartCommandUpdateType}
+   */
+  public enum TideChartCommandUpdateType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>add = 0;</code>
+     */
+    add(0),
+    /**
+     * <code>remove = 1;</code>
+     */
+    remove(1),
+    /**
+     * <code>update = 2;</code>
+     */
+    update(2),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <code>add = 0;</code>
+     */
+    public static final int add_VALUE = 0;
+    /**
+     * <code>remove = 1;</code>
+     */
+    public static final int remove_VALUE = 1;
+    /**
+     * <code>update = 2;</code>
+     */
+    public static final int update_VALUE = 2;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TideChartCommandUpdateType valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TideChartCommandUpdateType forNumber(int value) {
+      switch (value) {
+        case 0: return add;
+        case 1: return remove;
+        case 2: return update;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<TideChartCommandUpdateType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        TideChartCommandUpdateType> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<TideChartCommandUpdateType>() {
+            public TideChartCommandUpdateType findValueByNumber(int number) {
+              return TideChartCommandUpdateType.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return TideChart.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final TideChartCommandUpdateType[] VALUES = values();
+
+    public static TideChartCommandUpdateType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private TideChartCommandUpdateType(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:TideChartCommandUpdateType)
+  }
+
+  /**
    * Protobuf enum {@code TideChartLogLevel}
    */
   public enum TideChartLogLevel
@@ -270,7 +377,7 @@ public final class TideChart {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return TideChart.getDescriptor().getEnumTypes().get(0);
+      return TideChart.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final TideChartLogLevel[] VALUES = values();
@@ -30563,18 +30670,17 @@ public final class TideChart {
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
   }
   /**
    * Protobuf type {@code TideChartCommentBoxCommand}
@@ -30589,7 +30695,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartCommentBoxCommand() {
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -30648,10 +30754,10 @@ public final class TideChart {
 
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             default: {
@@ -30753,45 +30859,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -30814,8 +30903,8 @@ public final class TideChart {
       if (toComment_ != null) {
         output.writeMessage(2, getToComment());
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -30834,8 +30923,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getToComment());
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -30862,8 +30952,7 @@ public final class TideChart {
         if (!getToComment()
             .equals(other.getToComment())) return false;
       }
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -30884,7 +30973,7 @@ public final class TideChart {
         hash = (53 * hash) + getToComment().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -31030,7 +31119,7 @@ public final class TideChart {
           toComment_ = null;
           toCommentBuilder_ = null;
         }
-        type_ = "";
+        type_ = 0;
 
         return this;
       }
@@ -31123,9 +31212,8 @@ public final class TideChart {
         if (other.hasToComment()) {
           mergeToComment(other.getToComment());
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -31462,59 +31550,25 @@ public final class TideChart {
         return toCommentBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -31524,29 +31578,39 @@ public final class TideChart {
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -31662,18 +31726,17 @@ public final class TideChart {
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
   }
   /**
    * Protobuf type {@code TideChartWidgetCommand}
@@ -31688,7 +31751,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartWidgetCommand() {
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -31747,10 +31810,10 @@ public final class TideChart {
 
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             default: {
@@ -31852,45 +31915,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -31913,8 +31959,8 @@ public final class TideChart {
       if (toWidget_ != null) {
         output.writeMessage(2, getToWidget());
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -31933,8 +31979,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getToWidget());
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -31961,8 +32008,7 @@ public final class TideChart {
         if (!getToWidget()
             .equals(other.getToWidget())) return false;
       }
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -31983,7 +32029,7 @@ public final class TideChart {
         hash = (53 * hash) + getToWidget().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -32129,7 +32175,7 @@ public final class TideChart {
           toWidget_ = null;
           toWidgetBuilder_ = null;
         }
-        type_ = "";
+        type_ = 0;
 
         return this;
       }
@@ -32222,9 +32268,8 @@ public final class TideChart {
         if (other.hasToWidget()) {
           mergeToWidget(other.getToWidget());
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -32561,59 +32606,25 @@ public final class TideChart {
         return toWidgetBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -32623,29 +32634,39 @@ public final class TideChart {
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -32761,18 +32782,17 @@ public final class TideChart {
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
   }
   /**
    * Protobuf type {@code TideChartPortCommand}
@@ -32787,7 +32807,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartPortCommand() {
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -32846,10 +32866,10 @@ public final class TideChart {
 
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             default: {
@@ -32951,45 +32971,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -33012,8 +33015,8 @@ public final class TideChart {
       if (toPort_ != null) {
         output.writeMessage(2, getToPort());
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -33032,8 +33035,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getToPort());
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -33060,8 +33064,7 @@ public final class TideChart {
         if (!getToPort()
             .equals(other.getToPort())) return false;
       }
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -33082,7 +33085,7 @@ public final class TideChart {
         hash = (53 * hash) + getToPort().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -33228,7 +33231,7 @@ public final class TideChart {
           toPort_ = null;
           toPortBuilder_ = null;
         }
-        type_ = "";
+        type_ = 0;
 
         return this;
       }
@@ -33321,9 +33324,8 @@ public final class TideChart {
         if (other.hasToPort()) {
           mergeToPort(other.getToPort());
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -33660,59 +33662,25 @@ public final class TideChart {
         return toPortBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -33722,29 +33690,39 @@ public final class TideChart {
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -33860,18 +33838,17 @@ public final class TideChart {
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
   }
   /**
    * Protobuf type {@code TideChartLinkCommand}
@@ -33886,7 +33863,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartLinkCommand() {
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -33945,10 +33922,10 @@ public final class TideChart {
 
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             default: {
@@ -34050,45 +34027,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -34111,8 +34071,8 @@ public final class TideChart {
       if (toLink_ != null) {
         output.writeMessage(2, getToLink());
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -34131,8 +34091,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getToLink());
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -34159,8 +34120,7 @@ public final class TideChart {
         if (!getToLink()
             .equals(other.getToLink())) return false;
       }
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -34181,7 +34141,7 @@ public final class TideChart {
         hash = (53 * hash) + getToLink().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -34327,7 +34287,7 @@ public final class TideChart {
           toLink_ = null;
           toLinkBuilder_ = null;
         }
-        type_ = "";
+        type_ = 0;
 
         return this;
       }
@@ -34420,9 +34380,8 @@ public final class TideChart {
         if (other.hasToLink()) {
           mergeToLink(other.getToLink());
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -34759,59 +34718,25 @@ public final class TideChart {
         return toLinkBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -34821,29 +34746,39 @@ public final class TideChart {
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -34959,18 +34894,17 @@ public final class TideChart {
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
   }
   /**
    * Protobuf type {@code TideChartNodeCommand}
@@ -34985,7 +34919,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartNodeCommand() {
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -35044,10 +34978,10 @@ public final class TideChart {
 
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             default: {
@@ -35149,45 +35083,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -35210,8 +35127,8 @@ public final class TideChart {
       if (toNode_ != null) {
         output.writeMessage(2, getToNode());
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -35230,8 +35147,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getToNode());
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -35258,8 +35176,7 @@ public final class TideChart {
         if (!getToNode()
             .equals(other.getToNode())) return false;
       }
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -35280,7 +35197,7 @@ public final class TideChart {
         hash = (53 * hash) + getToNode().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -35426,7 +35343,7 @@ public final class TideChart {
           toNode_ = null;
           toNodeBuilder_ = null;
         }
-        type_ = "";
+        type_ = 0;
 
         return this;
       }
@@ -35519,9 +35436,8 @@ public final class TideChart {
         if (other.hasToNode()) {
           mergeToNode(other.getToNode());
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -35858,59 +35774,25 @@ public final class TideChart {
         return toNodeBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -35920,29 +35802,39 @@ public final class TideChart {
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -36058,18 +35950,17 @@ public final class TideChart {
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
   }
   /**
    * Protobuf type {@code TideChartRegionCommand}
@@ -36084,7 +35975,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartRegionCommand() {
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -36143,10 +36034,10 @@ public final class TideChart {
 
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             default: {
@@ -36248,45 +36139,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -36309,8 +36183,8 @@ public final class TideChart {
       if (toRegion_ != null) {
         output.writeMessage(2, getToRegion());
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -36329,8 +36203,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getToRegion());
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -36357,8 +36232,7 @@ public final class TideChart {
         if (!getToRegion()
             .equals(other.getToRegion())) return false;
       }
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -36379,7 +36253,7 @@ public final class TideChart {
         hash = (53 * hash) + getToRegion().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -36525,7 +36399,7 @@ public final class TideChart {
           toRegion_ = null;
           toRegionBuilder_ = null;
         }
-        type_ = "";
+        type_ = 0;
 
         return this;
       }
@@ -36618,9 +36492,8 @@ public final class TideChart {
         if (other.hasToRegion()) {
           mergeToRegion(other.getToRegion());
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -36957,59 +36830,25 @@ public final class TideChart {
         return toRegionBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -37019,29 +36858,39 @@ public final class TideChart {
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -37157,18 +37006,17 @@ public final class TideChart {
      * type of update: add, update or remove    
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove    
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
   }
   /**
    * Protobuf type {@code TideChartGraphCommand}
@@ -37183,7 +37031,7 @@ public final class TideChart {
       super(builder);
     }
     private TideChartGraphCommand() {
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -37242,10 +37090,10 @@ public final class TideChart {
 
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             default: {
@@ -37347,45 +37195,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove    
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove    
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -37408,8 +37239,8 @@ public final class TideChart {
       if (toGraph_ != null) {
         output.writeMessage(2, getToGraph());
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -37428,8 +37259,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getToGraph());
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -37456,8 +37288,7 @@ public final class TideChart {
         if (!getToGraph()
             .equals(other.getToGraph())) return false;
       }
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -37478,7 +37309,7 @@ public final class TideChart {
         hash = (53 * hash) + getToGraph().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -37624,7 +37455,7 @@ public final class TideChart {
           toGraph_ = null;
           toGraphBuilder_ = null;
         }
-        type_ = "";
+        type_ = 0;
 
         return this;
       }
@@ -37717,9 +37548,8 @@ public final class TideChart {
         if (other.hasToGraph()) {
           mergeToGraph(other.getToGraph());
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -38056,59 +37886,25 @@ public final class TideChart {
         return toGraphBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove    
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove    
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove    
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -38118,29 +37914,39 @@ public final class TideChart {
        * type of update: add, update or remove    
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove    
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove    
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove    
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -38294,18 +38100,17 @@ public final class TideChart {
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
 
     /**
      * <pre>
@@ -38396,7 +38201,7 @@ public final class TideChart {
     private TideChartPropertyCommand() {
       fromProps_ = java.util.Collections.emptyList();
       toProps_ = java.util.Collections.emptyList();
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -38448,10 +38253,10 @@ public final class TideChart {
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             case 42: {
@@ -38669,45 +38474,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, update or remove
      * </pre>
      *
-     * <code>string type = 3;</code>
+     * <code>.TideChartCommandUpdateType type = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     public static final int NODE_FIELD_NUMBER = 5;
@@ -38934,8 +38722,8 @@ public final class TideChart {
       for (int i = 0; i < toProps_.size(); i++) {
         output.writeMessage(2, toProps_.get(i));
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(3, type_);
       }
       if (targetCase_ == 5) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, target_);
@@ -38966,8 +38754,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, toProps_.get(i));
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
       }
       if (targetCase_ == 5) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, target_);
@@ -39000,8 +38789,7 @@ public final class TideChart {
           .equals(other.getFromPropsList())) return false;
       if (!getToPropsList()
           .equals(other.getToPropsList())) return false;
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!getTargetCase().equals(other.getTargetCase())) return false;
       switch (targetCase_) {
         case 5:
@@ -39043,7 +38831,7 @@ public final class TideChart {
         hash = (53 * hash) + getToPropsList().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       switch (targetCase_) {
         case 5:
           hash = (37 * hash) + NODE_FIELD_NUMBER;
@@ -39211,7 +38999,7 @@ public final class TideChart {
         } else {
           toPropsBuilder_.clear();
         }
-        type_ = "";
+        type_ = 0;
 
         targetCase_ = 0;
         target_ = null;
@@ -39374,9 +39162,8 @@ public final class TideChart {
             }
           }
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         switch (other.getTargetCase()) {
           case NODE: {
@@ -40076,59 +39863,25 @@ public final class TideChart {
         return toPropsBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -40138,29 +39891,39 @@ public final class TideChart {
        * type of update: add, update or remove
        * </pre>
        *
-       * <code>string type = 3;</code>
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, update or remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 3;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, update or remove
-       * </pre>
-       *
-       * <code>string type = 3;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -40670,18 +40433,17 @@ public final class TideChart {
      * type of update: add, remove
      * </pre>
      *
-     * <code>string type = 2;</code>
+     * <code>.TideChartCommandUpdateType type = 2;</code>
      */
-    java.lang.String getType();
+    int getTypeValue();
     /**
      * <pre>
      * type of update: add, remove
      * </pre>
      *
-     * <code>string type = 2;</code>
+     * <code>.TideChartCommandUpdateType type = 2;</code>
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    TideChart.TideChartCommandUpdateType getType();
 
     /**
      * <pre>
@@ -40753,7 +40515,7 @@ public final class TideChart {
     }
     private TideChartNoteCommand() {
       notes_ = java.util.Collections.emptyList();
-      type_ = "";
+      type_ = 0;
     }
 
     @java.lang.Override
@@ -40796,10 +40558,10 @@ public final class TideChart {
                   input.readMessage(TideChart.TideChartNote.parser(), extensionRegistry));
               break;
             }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 16: {
+              int rawValue = input.readEnum();
 
-              type_ = s;
+              type_ = rawValue;
               break;
             }
             case 26: {
@@ -40951,45 +40713,28 @@ public final class TideChart {
     }
 
     public static final int TYPE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object type_;
+    private int type_;
     /**
      * <pre>
      * type of update: add, remove
      * </pre>
      *
-     * <code>string type = 2;</code>
+     * <code>.TideChartCommandUpdateType type = 2;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
+    public int getTypeValue() {
+      return type_;
     }
     /**
      * <pre>
      * type of update: add, remove
      * </pre>
      *
-     * <code>string type = 2;</code>
+     * <code>.TideChartCommandUpdateType type = 2;</code>
      */
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public TideChart.TideChartCommandUpdateType getType() {
+      @SuppressWarnings("deprecation")
+      TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+      return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
     }
 
     public static final int NODE_FIELD_NUMBER = 3;
@@ -41162,8 +40907,8 @@ public final class TideChart {
       for (int i = 0; i < notes_.size(); i++) {
         output.writeMessage(1, notes_.get(i));
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        output.writeEnum(2, type_);
       }
       if (targetCase_ == 3) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, target_);
@@ -41187,8 +40932,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, notes_.get(i));
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, type_);
+      if (type_ != TideChart.TideChartCommandUpdateType.add.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, type_);
       }
       if (targetCase_ == 3) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, target_);
@@ -41216,8 +40962,7 @@ public final class TideChart {
 
       if (!getNotesList()
           .equals(other.getNotesList())) return false;
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (type_ != other.type_) return false;
       if (!getTargetCase().equals(other.getTargetCase())) return false;
       switch (targetCase_) {
         case 3:
@@ -41251,7 +40996,7 @@ public final class TideChart {
         hash = (53 * hash) + getNotesList().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (53 * hash) + type_;
       switch (targetCase_) {
         case 3:
           hash = (37 * hash) + NODE_FIELD_NUMBER;
@@ -41408,7 +41153,7 @@ public final class TideChart {
         } else {
           notesBuilder_.clear();
         }
-        type_ = "";
+        type_ = 0;
 
         targetCase_ = 0;
         target_ = null;
@@ -41533,9 +41278,8 @@ public final class TideChart {
             }
           }
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         switch (other.getTargetCase()) {
           case NODE: {
@@ -41917,59 +41661,25 @@ public final class TideChart {
         return notesBuilder_;
       }
 
-      private java.lang.Object type_ = "";
+      private int type_ = 0;
       /**
        * <pre>
        * type of update: add, remove
        * </pre>
        *
-       * <code>string type = 2;</code>
+       * <code>.TideChartCommandUpdateType type = 2;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getTypeValue() {
+        return type_;
       }
       /**
        * <pre>
        * type of update: add, remove
        * </pre>
        *
-       * <code>string type = 2;</code>
+       * <code>.TideChartCommandUpdateType type = 2;</code>
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * type of update: add, remove
-       * </pre>
-       *
-       * <code>string type = 2;</code>
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setTypeValue(int value) {
         type_ = value;
         onChanged();
         return this;
@@ -41979,29 +41689,39 @@ public final class TideChart {
        * type of update: add, remove
        * </pre>
        *
-       * <code>string type = 2;</code>
+       * <code>.TideChartCommandUpdateType type = 2;</code>
+       */
+      public TideChart.TideChartCommandUpdateType getType() {
+        @SuppressWarnings("deprecation")
+        TideChart.TideChartCommandUpdateType result = TideChart.TideChartCommandUpdateType.valueOf(type_);
+        return result == null ? TideChart.TideChartCommandUpdateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * type of update: add, remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 2;</code>
+       */
+      public Builder setType(TideChart.TideChartCommandUpdateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * type of update: add, remove
+       * </pre>
+       *
+       * <code>.TideChartCommandUpdateType type = 2;</code>
        */
       public Builder clearType() {
         
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * type of update: add, remove
-       * </pre>
-       *
-       * <code>string type = 2;</code>
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -73939,106 +73659,114 @@ public final class TideChart {
       " \003(\0132\021.TideChartCommand\"h\n\024TideChartMove" +
       "Command\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022" +
       "\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toP" +
-      "osY\030\005 \001(\021\"~\n\032TideChartCommentBoxCommand\022" +
-      ")\n\013fromComment\030\001 \001(\0132\024.TideChartCommentB" +
-      "ox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartComment" +
-      "Box\022\014\n\004type\030\003 \001(\t\"p\n\026TideChartWidgetComm" +
-      "and\022$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidge" +
-      "t\022\"\n\010toWidget\030\002 \001(\0132\020.TideChartWidget\022\014\n" +
-      "\004type\030\003 \001(\t\"f\n\024TideChartPortCommand\022 \n\010f" +
-      "romPort\030\001 \001(\0132\016.TideChartPort\022\036\n\006toPort\030" +
-      "\002 \001(\0132\016.TideChartPort\022\014\n\004type\030\003 \001(\t\"f\n\024T" +
-      "ideChartLinkCommand\022 \n\010fromLink\030\001 \001(\0132\016." +
-      "TideChartLink\022\036\n\006toLink\030\002 \001(\0132\016.TideChar" +
-      "tLink\022\014\n\004type\030\003 \001(\t\"f\n\024TideChartNodeComm" +
-      "and\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036\n" +
-      "\006toNode\030\002 \001(\0132\016.TideChartNode\022\014\n\004type\030\003 " +
-      "\001(\t\"p\n\026TideChartRegionCommand\022$\n\nfromReg" +
-      "ion\030\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030" +
-      "\002 \001(\0132\020.TideChartRegion\022\014\n\004type\030\003 \001(\t\"k\n" +
-      "\025TideChartGraphCommand\022\"\n\tfromGraph\030\001 \001(" +
-      "\0132\017.TideChartGraph\022 \n\007toGraph\030\002 \001(\0132\017.Ti" +
-      "deChartGraph\022\014\n\004type\030\003 \001(\t\"\303\001\n\030TideChart" +
-      "PropertyCommand\022%\n\tfromProps\030\001 \003(\0132\022.Tid" +
-      "eChartProperty\022#\n\007toProps\030\002 \003(\0132\022.TideCh" +
-      "artProperty\022\014\n\004type\030\003 \001(\t\022\016\n\004node\030\005 \001(\tH" +
-      "\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n" +
-      "\005graph\030\010 \001(\tH\000B\010\n\006target\"\200\001\n\024TideChartNo" +
-      "teCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote" +
-      "\022\014\n\004type\030\002 \001(\t\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region" +
-      "\030\004 \001(\tH\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017" +
-      "TideChartMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(" +
-      "\t\022\017\n\007extends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007in" +
-      "ports\030\005 \003(\0132\016.TideChartPort\022 \n\010outports\030" +
-      "\006 \003(\0132\016.TideChartPort\022\035\n\005props\030\007 \003(\0132\016.T" +
-      "ideChartPort\"\221\001\n\017TideChartSource\022\n\n\002id\030\001" +
-      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013crea" +
-      "tedDate\030\005 \001(\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007vers" +
-      "ion\030\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content" +
-      "\"\255\001\n\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004nam" +
-      "e\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016" +
-      "\n\006branch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 " +
-      "\003(\0132\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020" +
-      ".TideChartMethod\"\350\001\n\rTideChartSite\022\r\n\005in" +
-      "dex\030\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite" +
-      "\022\014\n\004path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event" +
-      "\030\005 \001(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n" +
-      "\005graph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001" +
-      "(\t\022\014\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideCh" +
-      "artProperty\"\211\002\n\020TideChartMessage\022\r\n\005inde" +
-      "x\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001" +
-      "(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006" +
-      "target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\thold" +
-      "Token\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type" +
-      "\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016" +
-      " \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"" +
-      "k\n\026TideChartContextChange\022\r\n\005index\030\001 \001(\003" +
-      "\022\021\n\ttimestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005pro" +
-      "ps\030\004 \003(\0132\022.TideChartProperty\"\270\001\n\021TideCha" +
-      "rtLogEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002" +
-      " \001(\003\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.Ti" +
-      "deChartLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message" +
-      "\030\006 \001(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.Ti" +
-      "deChartProperty\"\355\002\n\020TideChartContext\022\n\n\002" +
-      "id\030\001 \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001" +
-      "(\003\022\017\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.Tid" +
-      "eChartSite\022#\n\010messages\030\006 \003(\0132\021.TideChart" +
-      "Message\022\"\n\006global\030\007 \003(\0132\022.TideChartPrope" +
-      "rty\022\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001" +
-      "(\003\022\016\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006p" +
-      "aused\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030" +
-      "\016 \003(\0132\027.TideChartContextChange\022\037\n\003log\030\017 " +
-      "\003(\0132\022.TideChartLogEntry\"\245\002\n\rTideChartDat" +
-      "a\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006so" +
-      "urce\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030" +
-      "\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 " +
-      "\001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\013" +
-      "2\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.TideC" +
-      "hartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideChartN" +
-      "ote\022\"\n\007library\030\014 \003(\0132\021.TideChartLibrary\"" +
-      "\240\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006" +
-      "branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 " +
-      "\001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(" +
-      "\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001" +
-      "(\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
+      "osY\030\005 \001(\021\"\233\001\n\032TideChartCommentBoxCommand" +
+      "\022)\n\013fromComment\030\001 \001(\0132\024.TideChartComment" +
+      "Box\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartCommen" +
+      "tBox\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpd" +
+      "ateType\"\215\001\n\026TideChartWidgetCommand\022$\n\nfr" +
+      "omWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n\010toWi" +
+      "dget\030\002 \001(\0132\020.TideChartWidget\022)\n\004type\030\003 \001" +
+      "(\0162\033.TideChartCommandUpdateType\"\203\001\n\024Tide" +
+      "ChartPortCommand\022 \n\010fromPort\030\001 \001(\0132\016.Tid" +
+      "eChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideChartPo" +
+      "rt\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpdat" +
+      "eType\"\203\001\n\024TideChartLinkCommand\022 \n\010fromLi" +
+      "nk\030\001 \001(\0132\016.TideChartLink\022\036\n\006toLink\030\002 \001(\013" +
+      "2\016.TideChartLink\022)\n\004type\030\003 \001(\0162\033.TideCha" +
+      "rtCommandUpdateType\"\203\001\n\024TideChartNodeCom" +
+      "mand\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036" +
+      "\n\006toNode\030\002 \001(\0132\016.TideChartNode\022)\n\004type\030\003" +
+      " \001(\0162\033.TideChartCommandUpdateType\"\215\001\n\026Ti" +
+      "deChartRegionCommand\022$\n\nfromRegion\030\001 \001(\013" +
+      "2\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(\0132\020.T" +
+      "ideChartRegion\022)\n\004type\030\003 \001(\0162\033.TideChart" +
+      "CommandUpdateType\"\210\001\n\025TideChartGraphComm" +
+      "and\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartGraph\022" +
+      " \n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022)\n\004typ" +
+      "e\030\003 \001(\0162\033.TideChartCommandUpdateType\"\340\001\n" +
+      "\030TideChartPropertyCommand\022%\n\tfromProps\030\001" +
+      " \003(\0132\022.TideChartProperty\022#\n\007toProps\030\002 \003(" +
+      "\0132\022.TideChartProperty\022)\n\004type\030\003 \001(\0162\033.Ti" +
+      "deChartCommandUpdateType\022\016\n\004node\030\005 \001(\tH\000" +
+      "\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n\005" +
+      "graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024TideChartNot" +
+      "eCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote\022" +
+      ")\n\004type\030\002 \001(\0162\033.TideChartCommandUpdateTy" +
+      "pe\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017\n\005" +
+      "graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017TideChartMet" +
+      "hod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007extends" +
+      "\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(\0132" +
+      "\016.TideChartPort\022 \n\010outports\030\006 \003(\0132\016.Tide" +
+      "ChartPort\022\035\n\005props\030\007 \003(\0132\016.TideChartPort" +
+      "\"\221\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
+      "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\023\n\013createdDate\030\005 \001(" +
+      "\t\022\021\n\tcreatedBy\030\006 \001(\t\022\021\n\007version\030\007 \001(\tH\000\022" +
+      "\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020TideCha" +
+      "rtLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005t" +
+      "itle\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branch\030\005 \001" +
+      "(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.TideCh" +
+      "artSource\022!\n\007methods\030\010 \003(\0132\020.TideChartMe" +
+      "thod\"\350\001\n\rTideChartSite\022\r\n\005index\030\001 \001(\003\022\035\n" +
+      "\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004path\030\003 \001" +
+      "(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022\r\n\005sc" +
+      "ope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030\010 \001(\t" +
+      "\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004port\030\013" +
+      " \001(\t\022!\n\005local\030\014 \003(\0132\022.TideChartProperty\"" +
+      "\211\002\n\020TideChartMessage\022\r\n\005index\030\001 \001(\003\022\021\n\tt" +
+      "imestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010previo" +
+      "us\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030\010 \001(\003" +
+      "\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tholdToken\030\n \001(\003\022" +
+      "\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022\017\n\007ve" +
+      "rsion\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022\024\n\nms" +
+      "gContent\030\017 \001(\014H\000B\t\n\007content\"k\n\026TideChart" +
+      "ContextChange\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestam" +
+      "p\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004 \003(\0132\022.T" +
+      "ideChartProperty\"\270\001\n\021TideChartLogEntry\022\r" +
+      "\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006sour" +
+      "ce\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.TideChartLogLe" +
+      "vel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001(\t\022\014\n\004re" +
+      "fs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.TideChartPrope" +
+      "rty\"\355\002\n\020TideChartContext\022\n\n\002id\030\001 \001(\t\022\r\n\005" +
+      "index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017\n\007versio" +
+      "n\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideChartSite\022#" +
+      "\n\010messages\030\006 \003(\0132\021.TideChartMessage\022\"\n\006g" +
+      "lobal\030\007 \003(\0132\022.TideChartProperty\022\021\n\tstart" +
+      "Time\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016\n\006active" +
+      "\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 \003(\003\022" +
+      "\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027.Tide" +
+      "ChartContextChange\022\037\n\003log\030\017 \003(\0132\022.TideCh" +
+      "artLogEntry\"\245\002\n\rTideChartData\022\017\n\007version" +
+      "\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r" +
+      "\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010com" +
+      "mitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commi" +
+      "tNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideChart" +
+      "Graph\022!\n\005props\030\n \003(\0132\022.TideChartProperty" +
+      "\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007libra" +
+      "ry\030\014 \003(\0132\021.TideChartLibrary\"\240\001\n\017TideChar" +
+      "tHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t" +
+      "\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommi" +
+      "tDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitD" +
+      "esc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rTideC" +
+      "hartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004pa" +
+      "th\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDate" +
+      "\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(" +
+      "\0132\016.TideChartData\022\"\n\007working\030\010 \003(\0132\021.Tid" +
+      "eChartCommand\022!\n\006remote\030\t \003(\0132\021.TideChar" +
+      "tCommand\022\037\n\007history\030\n \003(\0132\016.TideChartDat" +
+      "a\022\"\n\007context\030\013 \003(\0132\021.TideChartContext\"w\n" +
+      "\023TideChartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
       "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014" +
-      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035" +
-      "\n\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working" +
-      "\030\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(" +
-      "\0132\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016." +
-      "TideChartData\022\"\n\007context\030\013 \003(\0132\021.TideCha" +
-      "rtContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001" +
-      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006orig" +
-      "in\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifi" +
-      "edBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002i" +
-      "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006o" +
-      "rigin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmod" +
-      "ifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChart" +
-      "Data*\235\001\n\021TideChartLogLevel\022\010\n\004none\020\000\022\t\n\005" +
-      "fatal\020\001\022\t\n\005error\020\002\022\r\n\texception\020\003\022\013\n\007war" +
-      "ning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006\022\t\n\005debug\020\007" +
-      "\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005trace\020\n\022\007\n\003a" +
-      "ll\020\013B\013B\tTideChartb\006proto3"
+      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227" +
+      "\001\n\024TideChartFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004n" +
+      "ame\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022" +
+      "\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(" +
+      "\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartData*=\n\032Tide" +
+      "ChartCommandUpdateType\022\007\n\003add\020\000\022\n\n\006remov" +
+      "e\020\001\022\n\n\006update\020\002*\235\001\n\021TideChartLogLevel\022\010\n" +
+      "\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texcepti" +
+      "on\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006" +
+      "\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005t" +
+      "race\020\n\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

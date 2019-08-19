@@ -194,6 +194,32 @@ template<> ::TideChartWidget* Arena::CreateMaybeMessage<::TideChartWidget>(Arena
 template<> ::TideChartWidgetCommand* Arena::CreateMaybeMessage<::TideChartWidgetCommand>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
+enum TideChartCommandUpdateType : int {
+  add = 0,
+  remove = 1,
+  update = 2,
+  TideChartCommandUpdateType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  TideChartCommandUpdateType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool TideChartCommandUpdateType_IsValid(int value);
+constexpr TideChartCommandUpdateType TideChartCommandUpdateType_MIN = add;
+constexpr TideChartCommandUpdateType TideChartCommandUpdateType_MAX = update;
+constexpr int TideChartCommandUpdateType_ARRAYSIZE = TideChartCommandUpdateType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* TideChartCommandUpdateType_descriptor();
+template<typename T>
+inline const std::string& TideChartCommandUpdateType_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, TideChartCommandUpdateType>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function TideChartCommandUpdateType_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    TideChartCommandUpdateType_descriptor(), enum_t_value);
+}
+inline bool TideChartCommandUpdateType_Parse(
+    const std::string& name, TideChartCommandUpdateType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<TideChartCommandUpdateType>(
+    TideChartCommandUpdateType_descriptor(), name, value);
+}
 enum TideChartLogLevel : int {
   none = 0,
   fatal = 1,
@@ -3356,21 +3382,10 @@ class TideChartCommentBoxCommand :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTypeFieldNumber = 3,
     kFromCommentFieldNumber = 1,
     kToCommentFieldNumber = 2,
+    kTypeFieldNumber = 3,
   };
-  // string type = 3;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
-
   // .TideChartCommentBox fromComment = 1;
   bool has_fromcomment() const;
   void clear_fromcomment();
@@ -3387,14 +3402,19 @@ class TideChartCommentBoxCommand :
   ::TideChartCommentBox* mutable_tocomment();
   void set_allocated_tocomment(::TideChartCommentBox* tocomment);
 
+  // .TideChartCommandUpdateType type = 3;
+  void clear_type();
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
+
   // @@protoc_insertion_point(class_scope:TideChartCommentBoxCommand)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::TideChartCommentBox* fromcomment_;
   ::TideChartCommentBox* tocomment_;
+  int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -3513,21 +3533,10 @@ class TideChartWidgetCommand :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTypeFieldNumber = 3,
     kFromWidgetFieldNumber = 1,
     kToWidgetFieldNumber = 2,
+    kTypeFieldNumber = 3,
   };
-  // string type = 3;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
-
   // .TideChartWidget fromWidget = 1;
   bool has_fromwidget() const;
   void clear_fromwidget();
@@ -3544,14 +3553,19 @@ class TideChartWidgetCommand :
   ::TideChartWidget* mutable_towidget();
   void set_allocated_towidget(::TideChartWidget* towidget);
 
+  // .TideChartCommandUpdateType type = 3;
+  void clear_type();
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
+
   // @@protoc_insertion_point(class_scope:TideChartWidgetCommand)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::TideChartWidget* fromwidget_;
   ::TideChartWidget* towidget_;
+  int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -3670,21 +3684,10 @@ class TideChartPortCommand :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTypeFieldNumber = 3,
     kFromPortFieldNumber = 1,
     kToPortFieldNumber = 2,
+    kTypeFieldNumber = 3,
   };
-  // string type = 3;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
-
   // .TideChartPort fromPort = 1;
   bool has_fromport() const;
   void clear_fromport();
@@ -3701,14 +3704,19 @@ class TideChartPortCommand :
   ::TideChartPort* mutable_toport();
   void set_allocated_toport(::TideChartPort* toport);
 
+  // .TideChartCommandUpdateType type = 3;
+  void clear_type();
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
+
   // @@protoc_insertion_point(class_scope:TideChartPortCommand)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::TideChartPort* fromport_;
   ::TideChartPort* toport_;
+  int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -3827,21 +3835,10 @@ class TideChartLinkCommand :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTypeFieldNumber = 3,
     kFromLinkFieldNumber = 1,
     kToLinkFieldNumber = 2,
+    kTypeFieldNumber = 3,
   };
-  // string type = 3;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
-
   // .TideChartLink fromLink = 1;
   bool has_fromlink() const;
   void clear_fromlink();
@@ -3858,14 +3855,19 @@ class TideChartLinkCommand :
   ::TideChartLink* mutable_tolink();
   void set_allocated_tolink(::TideChartLink* tolink);
 
+  // .TideChartCommandUpdateType type = 3;
+  void clear_type();
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
+
   // @@protoc_insertion_point(class_scope:TideChartLinkCommand)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::TideChartLink* fromlink_;
   ::TideChartLink* tolink_;
+  int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -3984,21 +3986,10 @@ class TideChartNodeCommand :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTypeFieldNumber = 3,
     kFromNodeFieldNumber = 1,
     kToNodeFieldNumber = 2,
+    kTypeFieldNumber = 3,
   };
-  // string type = 3;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
-
   // .TideChartNode fromNode = 1;
   bool has_fromnode() const;
   void clear_fromnode();
@@ -4015,14 +4006,19 @@ class TideChartNodeCommand :
   ::TideChartNode* mutable_tonode();
   void set_allocated_tonode(::TideChartNode* tonode);
 
+  // .TideChartCommandUpdateType type = 3;
+  void clear_type();
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
+
   // @@protoc_insertion_point(class_scope:TideChartNodeCommand)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::TideChartNode* fromnode_;
   ::TideChartNode* tonode_;
+  int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -4141,21 +4137,10 @@ class TideChartRegionCommand :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTypeFieldNumber = 3,
     kFromRegionFieldNumber = 1,
     kToRegionFieldNumber = 2,
+    kTypeFieldNumber = 3,
   };
-  // string type = 3;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
-
   // .TideChartRegion fromRegion = 1;
   bool has_fromregion() const;
   void clear_fromregion();
@@ -4172,14 +4157,19 @@ class TideChartRegionCommand :
   ::TideChartRegion* mutable_toregion();
   void set_allocated_toregion(::TideChartRegion* toregion);
 
+  // .TideChartCommandUpdateType type = 3;
+  void clear_type();
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
+
   // @@protoc_insertion_point(class_scope:TideChartRegionCommand)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::TideChartRegion* fromregion_;
   ::TideChartRegion* toregion_;
+  int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -4298,21 +4288,10 @@ class TideChartGraphCommand :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTypeFieldNumber = 3,
     kFromGraphFieldNumber = 1,
     kToGraphFieldNumber = 2,
+    kTypeFieldNumber = 3,
   };
-  // string type = 3;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
-
   // .TideChartGraph fromGraph = 1;
   bool has_fromgraph() const;
   void clear_fromgraph();
@@ -4329,14 +4308,19 @@ class TideChartGraphCommand :
   ::TideChartGraph* mutable_tograph();
   void set_allocated_tograph(::TideChartGraph* tograph);
 
+  // .TideChartCommandUpdateType type = 3;
+  void clear_type();
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
+
   // @@protoc_insertion_point(class_scope:TideChartGraphCommand)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::TideChartGraph* fromgraph_;
   ::TideChartGraph* tograph_;
+  int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -4493,16 +4477,10 @@ class TideChartPropertyCommand :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
       toprops() const;
 
-  // string type = 3;
+  // .TideChartCommandUpdateType type = 3;
   void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
 
   // string node = 5;
   private:
@@ -4576,7 +4554,7 @@ class TideChartPropertyCommand :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > fromprops_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > toprops_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
+  int type_;
   union TargetUnion {
     TargetUnion() {}
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr node_;
@@ -4728,16 +4706,10 @@ class TideChartNoteCommand :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote >&
       notes() const;
 
-  // string type = 2;
+  // .TideChartCommandUpdateType type = 2;
   void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
+  ::TideChartCommandUpdateType type() const;
+  void set_type(::TideChartCommandUpdateType value);
 
   // string node = 3;
   private:
@@ -4795,7 +4767,7 @@ class TideChartNoteCommand :
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote > notes_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
+  int type_;
   union TargetUnion {
     TargetUnion() {}
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr node_;
@@ -12931,55 +12903,18 @@ inline void TideChartCommentBoxCommand::set_allocated_tocomment(::TideChartComme
   // @@protoc_insertion_point(field_set_allocated:TideChartCommentBoxCommand.toComment)
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartCommentBoxCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartCommentBoxCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartCommentBoxCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartCommentBoxCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartCommentBoxCommand::set_type(const std::string& value) {
+inline void TideChartCommentBoxCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartCommentBoxCommand.type)
-}
-inline void TideChartCommentBoxCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartCommentBoxCommand.type)
-}
-inline void TideChartCommentBoxCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartCommentBoxCommand.type)
-}
-inline void TideChartCommentBoxCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartCommentBoxCommand.type)
-}
-inline std::string* TideChartCommentBoxCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartCommentBoxCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartCommentBoxCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartCommentBoxCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartCommentBoxCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartCommentBoxCommand.type)
 }
 
 // -------------------------------------------------------------------
@@ -13088,55 +13023,18 @@ inline void TideChartWidgetCommand::set_allocated_towidget(::TideChartWidget* to
   // @@protoc_insertion_point(field_set_allocated:TideChartWidgetCommand.toWidget)
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartWidgetCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartWidgetCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartWidgetCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartWidgetCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartWidgetCommand::set_type(const std::string& value) {
+inline void TideChartWidgetCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartWidgetCommand.type)
-}
-inline void TideChartWidgetCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartWidgetCommand.type)
-}
-inline void TideChartWidgetCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartWidgetCommand.type)
-}
-inline void TideChartWidgetCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartWidgetCommand.type)
-}
-inline std::string* TideChartWidgetCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartWidgetCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartWidgetCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartWidgetCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartWidgetCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartWidgetCommand.type)
 }
 
 // -------------------------------------------------------------------
@@ -13245,55 +13143,18 @@ inline void TideChartPortCommand::set_allocated_toport(::TideChartPort* toport) 
   // @@protoc_insertion_point(field_set_allocated:TideChartPortCommand.toPort)
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartPortCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartPortCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartPortCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartPortCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartPortCommand::set_type(const std::string& value) {
+inline void TideChartPortCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartPortCommand.type)
-}
-inline void TideChartPortCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartPortCommand.type)
-}
-inline void TideChartPortCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartPortCommand.type)
-}
-inline void TideChartPortCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartPortCommand.type)
-}
-inline std::string* TideChartPortCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartPortCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartPortCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartPortCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartPortCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartPortCommand.type)
 }
 
 // -------------------------------------------------------------------
@@ -13402,55 +13263,18 @@ inline void TideChartLinkCommand::set_allocated_tolink(::TideChartLink* tolink) 
   // @@protoc_insertion_point(field_set_allocated:TideChartLinkCommand.toLink)
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartLinkCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartLinkCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartLinkCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartLinkCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartLinkCommand::set_type(const std::string& value) {
+inline void TideChartLinkCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartLinkCommand.type)
-}
-inline void TideChartLinkCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartLinkCommand.type)
-}
-inline void TideChartLinkCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartLinkCommand.type)
-}
-inline void TideChartLinkCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartLinkCommand.type)
-}
-inline std::string* TideChartLinkCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartLinkCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartLinkCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartLinkCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartLinkCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartLinkCommand.type)
 }
 
 // -------------------------------------------------------------------
@@ -13559,55 +13383,18 @@ inline void TideChartNodeCommand::set_allocated_tonode(::TideChartNode* tonode) 
   // @@protoc_insertion_point(field_set_allocated:TideChartNodeCommand.toNode)
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartNodeCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartNodeCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartNodeCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartNodeCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartNodeCommand::set_type(const std::string& value) {
+inline void TideChartNodeCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartNodeCommand.type)
-}
-inline void TideChartNodeCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartNodeCommand.type)
-}
-inline void TideChartNodeCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartNodeCommand.type)
-}
-inline void TideChartNodeCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartNodeCommand.type)
-}
-inline std::string* TideChartNodeCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartNodeCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartNodeCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartNodeCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartNodeCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartNodeCommand.type)
 }
 
 // -------------------------------------------------------------------
@@ -13716,55 +13503,18 @@ inline void TideChartRegionCommand::set_allocated_toregion(::TideChartRegion* to
   // @@protoc_insertion_point(field_set_allocated:TideChartRegionCommand.toRegion)
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartRegionCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartRegionCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartRegionCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartRegionCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartRegionCommand::set_type(const std::string& value) {
+inline void TideChartRegionCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartRegionCommand.type)
-}
-inline void TideChartRegionCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartRegionCommand.type)
-}
-inline void TideChartRegionCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartRegionCommand.type)
-}
-inline void TideChartRegionCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartRegionCommand.type)
-}
-inline std::string* TideChartRegionCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartRegionCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartRegionCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartRegionCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartRegionCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartRegionCommand.type)
 }
 
 // -------------------------------------------------------------------
@@ -13873,55 +13623,18 @@ inline void TideChartGraphCommand::set_allocated_tograph(::TideChartGraph* togra
   // @@protoc_insertion_point(field_set_allocated:TideChartGraphCommand.toGraph)
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartGraphCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartGraphCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartGraphCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartGraphCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartGraphCommand::set_type(const std::string& value) {
+inline void TideChartGraphCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartGraphCommand.type)
-}
-inline void TideChartGraphCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartGraphCommand.type)
-}
-inline void TideChartGraphCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartGraphCommand.type)
-}
-inline void TideChartGraphCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartGraphCommand.type)
-}
-inline std::string* TideChartGraphCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartGraphCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartGraphCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartGraphCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartGraphCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartGraphCommand.type)
 }
 
 // -------------------------------------------------------------------
@@ -13988,55 +13701,18 @@ TideChartPropertyCommand::toprops() const {
   return toprops_;
 }
 
-// string type = 3;
+// .TideChartCommandUpdateType type = 3;
 inline void TideChartPropertyCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartPropertyCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartPropertyCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartPropertyCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartPropertyCommand::set_type(const std::string& value) {
+inline void TideChartPropertyCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartPropertyCommand.type)
-}
-inline void TideChartPropertyCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartPropertyCommand.type)
-}
-inline void TideChartPropertyCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartPropertyCommand.type)
-}
-inline void TideChartPropertyCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartPropertyCommand.type)
-}
-inline std::string* TideChartPropertyCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartPropertyCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartPropertyCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartPropertyCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartPropertyCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartPropertyCommand.type)
 }
 
 // string node = 5;
@@ -14442,55 +14118,18 @@ TideChartNoteCommand::notes() const {
   return notes_;
 }
 
-// string type = 2;
+// .TideChartCommandUpdateType type = 2;
 inline void TideChartNoteCommand::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
-inline const std::string& TideChartNoteCommand::type() const {
+inline ::TideChartCommandUpdateType TideChartNoteCommand::type() const {
   // @@protoc_insertion_point(field_get:TideChartNoteCommand.type)
-  return type_.GetNoArena();
+  return static_cast< ::TideChartCommandUpdateType >(type_);
 }
-inline void TideChartNoteCommand::set_type(const std::string& value) {
+inline void TideChartNoteCommand::set_type(::TideChartCommandUpdateType value) {
   
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  type_ = value;
   // @@protoc_insertion_point(field_set:TideChartNoteCommand.type)
-}
-inline void TideChartNoteCommand::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartNoteCommand.type)
-}
-inline void TideChartNoteCommand::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartNoteCommand.type)
-}
-inline void TideChartNoteCommand::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartNoteCommand.type)
-}
-inline std::string* TideChartNoteCommand::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartNoteCommand.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartNoteCommand::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartNoteCommand.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartNoteCommand::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
-  }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartNoteCommand.type)
 }
 
 // string node = 3;
@@ -19775,6 +19414,11 @@ inline void TideChartFileCurrent::set_allocated_chart(::TideChartData* chart) {
 
 PROTOBUF_NAMESPACE_OPEN
 
+template <> struct is_proto_enum< ::TideChartCommandUpdateType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::TideChartCommandUpdateType>() {
+  return ::TideChartCommandUpdateType_descriptor();
+}
 template <> struct is_proto_enum< ::TideChartLogLevel> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::TideChartLogLevel>() {

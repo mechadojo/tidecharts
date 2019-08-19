@@ -5,6 +5,15 @@
 // @dart = 2.3
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
+const TideChartCommandUpdateType$json = const {
+  '1': 'TideChartCommandUpdateType',
+  '2': const [
+    const {'1': 'add', '2': 0},
+    const {'1': 'remove', '2': 1},
+    const {'1': 'update', '2': 2},
+  ],
+};
+
 const TideChartLogLevel$json = const {
   '1': 'TideChartLogLevel',
   '2': const [
@@ -241,7 +250,7 @@ const TideChartCommentBoxCommand$json = const {
   '2': const [
     const {'1': 'fromComment', '3': 1, '4': 1, '5': 11, '6': '.TideChartCommentBox', '10': 'fromComment'},
     const {'1': 'toComment', '3': 2, '4': 1, '5': 11, '6': '.TideChartCommentBox', '10': 'toComment'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
   ],
 };
 
@@ -250,7 +259,7 @@ const TideChartWidgetCommand$json = const {
   '2': const [
     const {'1': 'fromWidget', '3': 1, '4': 1, '5': 11, '6': '.TideChartWidget', '10': 'fromWidget'},
     const {'1': 'toWidget', '3': 2, '4': 1, '5': 11, '6': '.TideChartWidget', '10': 'toWidget'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
   ],
 };
 
@@ -259,7 +268,7 @@ const TideChartPortCommand$json = const {
   '2': const [
     const {'1': 'fromPort', '3': 1, '4': 1, '5': 11, '6': '.TideChartPort', '10': 'fromPort'},
     const {'1': 'toPort', '3': 2, '4': 1, '5': 11, '6': '.TideChartPort', '10': 'toPort'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
   ],
 };
 
@@ -268,7 +277,7 @@ const TideChartLinkCommand$json = const {
   '2': const [
     const {'1': 'fromLink', '3': 1, '4': 1, '5': 11, '6': '.TideChartLink', '10': 'fromLink'},
     const {'1': 'toLink', '3': 2, '4': 1, '5': 11, '6': '.TideChartLink', '10': 'toLink'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
   ],
 };
 
@@ -277,7 +286,7 @@ const TideChartNodeCommand$json = const {
   '2': const [
     const {'1': 'fromNode', '3': 1, '4': 1, '5': 11, '6': '.TideChartNode', '10': 'fromNode'},
     const {'1': 'toNode', '3': 2, '4': 1, '5': 11, '6': '.TideChartNode', '10': 'toNode'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
   ],
 };
 
@@ -286,7 +295,7 @@ const TideChartRegionCommand$json = const {
   '2': const [
     const {'1': 'fromRegion', '3': 1, '4': 1, '5': 11, '6': '.TideChartRegion', '10': 'fromRegion'},
     const {'1': 'toRegion', '3': 2, '4': 1, '5': 11, '6': '.TideChartRegion', '10': 'toRegion'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
   ],
 };
 
@@ -295,7 +304,7 @@ const TideChartGraphCommand$json = const {
   '2': const [
     const {'1': 'fromGraph', '3': 1, '4': 1, '5': 11, '6': '.TideChartGraph', '10': 'fromGraph'},
     const {'1': 'toGraph', '3': 2, '4': 1, '5': 11, '6': '.TideChartGraph', '10': 'toGraph'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
   ],
 };
 
@@ -304,7 +313,7 @@ const TideChartPropertyCommand$json = const {
   '2': const [
     const {'1': 'fromProps', '3': 1, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'fromProps'},
     const {'1': 'toProps', '3': 2, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'toProps'},
-    const {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
     const {'1': 'node', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'node'},
     const {'1': 'region', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'region'},
     const {'1': 'widget', '3': 7, '4': 1, '5': 9, '9': 0, '10': 'widget'},
@@ -319,7 +328,7 @@ const TideChartNoteCommand$json = const {
   '1': 'TideChartNoteCommand',
   '2': const [
     const {'1': 'notes', '3': 1, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
-    const {'1': 'type', '3': 2, '4': 1, '5': 9, '10': 'type'},
+    const {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.TideChartCommandUpdateType', '10': 'type'},
     const {'1': 'node', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'node'},
     const {'1': 'region', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'region'},
     const {'1': 'graph', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'graph'},

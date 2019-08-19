@@ -88,99 +88,106 @@ public static partial class TideChartReflection {
           "b21tYW5kIjwKFVRpZGVDaGFydEdyb3VwQ29tbWFuZBIjCghjb21tYW5kcxgB",
           "IAMoCzIRLlRpZGVDaGFydENvbW1hbmQiaAoUVGlkZUNoYXJ0TW92ZUNvbW1h",
           "bmQSDAoEbm9kZRgBIAEoCRIQCghmcm9tUG9zWBgCIAEoERIQCghmcm9tUG9z",
-          "WRgDIAEoERIOCgZ0b1Bvc1gYBCABKBESDgoGdG9Qb3NZGAUgASgRIn4KGlRp",
-          "ZGVDaGFydENvbW1lbnRCb3hDb21tYW5kEikKC2Zyb21Db21tZW50GAEgASgL",
-          "MhQuVGlkZUNoYXJ0Q29tbWVudEJveBInCgl0b0NvbW1lbnQYAiABKAsyFC5U",
-          "aWRlQ2hhcnRDb21tZW50Qm94EgwKBHR5cGUYAyABKAkicAoWVGlkZUNoYXJ0",
-          "V2lkZ2V0Q29tbWFuZBIkCgpmcm9tV2lkZ2V0GAEgASgLMhAuVGlkZUNoYXJ0",
-          "V2lkZ2V0EiIKCHRvV2lkZ2V0GAIgASgLMhAuVGlkZUNoYXJ0V2lkZ2V0EgwK",
-          "BHR5cGUYAyABKAkiZgoUVGlkZUNoYXJ0UG9ydENvbW1hbmQSIAoIZnJvbVBv",
-          "cnQYASABKAsyDi5UaWRlQ2hhcnRQb3J0Eh4KBnRvUG9ydBgCIAEoCzIOLlRp",
-          "ZGVDaGFydFBvcnQSDAoEdHlwZRgDIAEoCSJmChRUaWRlQ2hhcnRMaW5rQ29t",
-          "bWFuZBIgCghmcm9tTGluaxgBIAEoCzIOLlRpZGVDaGFydExpbmsSHgoGdG9M",
-          "aW5rGAIgASgLMg4uVGlkZUNoYXJ0TGluaxIMCgR0eXBlGAMgASgJImYKFFRp",
-          "ZGVDaGFydE5vZGVDb21tYW5kEiAKCGZyb21Ob2RlGAEgASgLMg4uVGlkZUNo",
-          "YXJ0Tm9kZRIeCgZ0b05vZGUYAiABKAsyDi5UaWRlQ2hhcnROb2RlEgwKBHR5",
-          "cGUYAyABKAkicAoWVGlkZUNoYXJ0UmVnaW9uQ29tbWFuZBIkCgpmcm9tUmVn",
-          "aW9uGAEgASgLMhAuVGlkZUNoYXJ0UmVnaW9uEiIKCHRvUmVnaW9uGAIgASgL",
-          "MhAuVGlkZUNoYXJ0UmVnaW9uEgwKBHR5cGUYAyABKAkiawoVVGlkZUNoYXJ0",
-          "R3JhcGhDb21tYW5kEiIKCWZyb21HcmFwaBgBIAEoCzIPLlRpZGVDaGFydEdy",
-          "YXBoEiAKB3RvR3JhcGgYAiABKAsyDy5UaWRlQ2hhcnRHcmFwaBIMCgR0eXBl",
-          "GAMgASgJIsMBChhUaWRlQ2hhcnRQcm9wZXJ0eUNvbW1hbmQSJQoJZnJvbVBy",
-          "b3BzGAEgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkSIwoHdG9Qcm9wcxgCIAMo",
-          "CzISLlRpZGVDaGFydFByb3BlcnR5EgwKBHR5cGUYAyABKAkSDgoEbm9kZRgF",
-          "IAEoCUgAEhAKBnJlZ2lvbhgGIAEoCUgAEhAKBndpZGdldBgHIAEoCUgAEg8K",
-          "BWdyYXBoGAggASgJSABCCAoGdGFyZ2V0IoABChRUaWRlQ2hhcnROb3RlQ29t",
-          "bWFuZBIdCgVub3RlcxgBIAMoCzIOLlRpZGVDaGFydE5vdGUSDAoEdHlwZRgC",
-          "IAEoCRIOCgRub2RlGAMgASgJSAASEAoGcmVnaW9uGAQgASgJSAASDwoFZ3Jh",
-          "cGgYBSABKAlIAEIICgZ0YXJnZXQirgEKD1RpZGVDaGFydE1ldGhvZBIKCgJp",
-          "ZBgBIAEoCRIMCgRuYW1lGAIgASgJEg8KB2V4dGVuZHMYAyABKAkSDgoGc2Ny",
-          "aXB0GAQgASgJEh8KB2lucG9ydHMYBSADKAsyDi5UaWRlQ2hhcnRQb3J0EiAK",
-          "CG91dHBvcnRzGAYgAygLMg4uVGlkZUNoYXJ0UG9ydBIdCgVwcm9wcxgHIAMo",
-          "CzIOLlRpZGVDaGFydFBvcnQikQEKD1RpZGVDaGFydFNvdXJjZRIKCgJpZBgB",
-          "IAEoCRIMCgRuYW1lGAIgASgJEgwKBHBhdGgYAyABKAkSEwoLY3JlYXRlZERh",
-          "dGUYBSABKAkSEQoJY3JlYXRlZEJ5GAYgASgJEhEKB3ZlcnNpb24YByABKAlI",
-          "ABIQCgZzY3JpcHQYCCABKAlIAEIJCgdjb250ZW50Iq0BChBUaWRlQ2hhcnRM",
-          "aWJyYXJ5EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDQoFdGl0bGUYAyAB",
-          "KAkSDgoGb3JpZ2luGAQgASgJEg4KBmJyYW5jaBgFIAEoCRIMCgRwYXRoGAYg",
-          "ASgJEh8KBWZpbGVzGAcgAygLMhAuVGlkZUNoYXJ0U291cmNlEiEKB21ldGhv",
-          "ZHMYCCADKAsyEC5UaWRlQ2hhcnRNZXRob2Qi6AEKDVRpZGVDaGFydFNpdGUS",
-          "DQoFaW5kZXgYASABKAMSHQoFc3RhY2sYAiADKAsyDi5UaWRlQ2hhcnRTaXRl",
-          "EgwKBHBhdGgYAyABKAkSDwoHdHJpZ2dlchgEIAEoCRINCgVldmVudBgFIAEo",
-          "CRINCgVzY29wZRgGIAMoCRIOCgZmaWx0ZXIYByABKAkSDQoFZ3JhcGgYCCAB",
-          "KAkSDgoGcmVnaW9uGAkgASgJEgwKBG5vZGUYCiABKAkSDAoEcG9ydBgLIAEo",
-          "CRIhCgVsb2NhbBgMIAMoCzISLlRpZGVDaGFydFByb3BlcnR5IokCChBUaWRl",
-          "Q2hhcnRNZXNzYWdlEg0KBWluZGV4GAEgASgDEhEKCXRpbWVzdGFtcBgCIAEo",
-          "AxIOCgZvcmlnaW4YBCABKAMSEAoIcHJldmlvdXMYBSABKAMSDgoGc291cmNl",
-          "GAcgASgDEg4KBnRhcmdldBgIIAEoAxISCgpkZWxheVVudGlsGAkgASgDEhEK",
-          "CWhvbGRUb2tlbhgKIAEoAxITCgtjYW5jZWxUb2tlbhgLIAEoAxIMCgR0eXBl",
-          "GAwgASgJEg8KB3ZlcnNpb24YDSABKAUSFQoLanNvbkNvbnRlbnQYDiABKAlI",
-          "ABIUCgptc2dDb250ZW50GA8gASgMSABCCQoHY29udGVudCJrChZUaWRlQ2hh",
-          "cnRDb250ZXh0Q2hhbmdlEg0KBWluZGV4GAEgASgDEhEKCXRpbWVzdGFtcBgC",
-          "IAEoAxIMCgR0eXBlGAMgASgJEiEKBXByb3BzGAQgAygLMhIuVGlkZUNoYXJ0",
-          "UHJvcGVydHkiuAEKEVRpZGVDaGFydExvZ0VudHJ5Eg0KBWluZGV4GAEgASgD",
-          "EhEKCXRpbWVzdGFtcBgCIAEoAxIOCgZzb3VyY2UYAyABKAMSIQoFbGV2ZWwY",
-          "BCABKA4yEi5UaWRlQ2hhcnRMb2dMZXZlbBIMCgR0YWdzGAUgAygJEg8KB21l",
-          "c3NhZ2UYBiABKAkSDAoEcmVmcxgHIAMoAxIhCgVwcm9wcxgIIAMoCzISLlRp",
-          "ZGVDaGFydFByb3BlcnR5Iu0CChBUaWRlQ2hhcnRDb250ZXh0EgoKAmlkGAEg",
-          "ASgJEg0KBWluZGV4GAIgASgDEhEKCXRpbWVzdGFtcBgDIAEoAxIPCgd2ZXJz",
-          "aW9uGAQgASgJEh0KBXNpdGVzGAUgAygLMg4uVGlkZUNoYXJ0U2l0ZRIjCght",
-          "ZXNzYWdlcxgGIAMoCzIRLlRpZGVDaGFydE1lc3NhZ2USIgoGZ2xvYmFsGAcg",
-          "AygLMhIuVGlkZUNoYXJ0UHJvcGVydHkSEQoJc3RhcnRUaW1lGAggASgDEhIK",
-          "CnN0YXJ0SW5kZXgYCSABKAMSDgoGYWN0aXZlGAogAygDEg8KB3dhaXRpbmcY",
-          "CyADKAMSDgoGcGF1c2VkGAwgAygDEhAKCGRpc2FibGVkGA0gAygDEicKBmV2",
-          "ZW50cxgOIAMoCzIXLlRpZGVDaGFydENvbnRleHRDaGFuZ2USHwoDbG9nGA8g",
-          "AygLMhIuVGlkZUNoYXJ0TG9nRW50cnkipQIKDVRpZGVDaGFydERhdGESDwoH",
-          "dmVyc2lvbhgBIAEoCRIOCgZicmFuY2gYAiABKAkSDgoGc291cmNlGAMgASgJ",
-          "Eg0KBW1lcmdlGAQgASgJEhIKCmNvbW1pdERhdGUYBSABKAkSEAoIY29tbWl0",
-          "QnkYBiABKAkSEgoKY29tbWl0RGVzYxgHIAEoCRITCgtjb21taXROb3RlcxgI",
-          "IAEoCRIfCgZzaGVldHMYCSADKAsyDy5UaWRlQ2hhcnRHcmFwaBIhCgVwcm9w",
-          "cxgKIAMoCzISLlRpZGVDaGFydFByb3BlcnR5Eh0KBW5vdGVzGAsgAygLMg4u",
-          "VGlkZUNoYXJ0Tm90ZRIiCgdsaWJyYXJ5GAwgAygLMhEuVGlkZUNoYXJ0TGli",
-          "cmFyeSKgAQoPVGlkZUNoYXJ0SGVhZGVyEg8KB3ZlcnNpb24YASABKAkSDgoG",
-          "YnJhbmNoGAIgASgJEg4KBnNvdXJjZRgDIAEoCRINCgVtZXJnZRgEIAEoCRIS",
-          "Cgpjb21taXREYXRlGAUgASgJEhAKCGNvbW1pdEJ5GAYgASgJEhIKCmNvbW1p",
-          "dERlc2MYByABKAkSEwoLY29tbWl0Tm90ZXMYCCABKAkinAIKDVRpZGVDaGFy",
-          "dEZpbGUSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJ",
-          "Eg4KBm9yaWdpbhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSABKAkSEgoKbW9k",
-          "aWZpZWRCeRgGIAEoCRIdCgVjaGFydBgHIAEoCzIOLlRpZGVDaGFydERhdGES",
-          "IgoHd29ya2luZxgIIAMoCzIRLlRpZGVDaGFydENvbW1hbmQSIQoGcmVtb3Rl",
-          "GAkgAygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIfCgdoaXN0b3J5GAogAygLMg4u",
-          "VGlkZUNoYXJ0RGF0YRIiCgdjb250ZXh0GAsgAygLMhEuVGlkZUNoYXJ0Q29u",
-          "dGV4dCJ3ChNUaWRlQ2hhcnRGaWxlSGVhZGVyEgoKAmlkGAEgASgJEgwKBG5h",
-          "bWUYAiABKAkSDAoEcGF0aBgDIAEoCRIOCgZvcmlnaW4YBCABKAkSFAoMbW9k",
-          "aWZpZWREYXRlGAUgASgJEhIKCm1vZGlmaWVkQnkYBiABKAkilwEKFFRpZGVD",
-          "aGFydEZpbGVDdXJyZW50EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDAoE",
-          "cGF0aBgDIAEoCRIOCgZvcmlnaW4YBCABKAkSFAoMbW9kaWZpZWREYXRlGAUg",
-          "ASgJEhIKCm1vZGlmaWVkQnkYBiABKAkSHQoFY2hhcnQYByABKAsyDi5UaWRl",
-          "Q2hhcnREYXRhKp0BChFUaWRlQ2hhcnRMb2dMZXZlbBIICgRub25lEAASCQoF",
-          "ZmF0YWwQARIJCgVlcnJvchACEg0KCWV4Y2VwdGlvbhADEgsKB3dhcm5pbmcQ",
-          "BBIICgRpbmZvEAUSCwoHbWVzc2FnZRAGEgkKBWRlYnVnEAcSCQoFY2hlY2sQ",
-          "CBILCgd2ZXJib3NlEAkSCQoFdHJhY2UQChIHCgNhbGwQC0ILQglUaWRlQ2hh",
-          "cnRiBnByb3RvMw=="));
+          "WRgDIAEoERIOCgZ0b1Bvc1gYBCABKBESDgoGdG9Qb3NZGAUgASgRIpsBChpU",
+          "aWRlQ2hhcnRDb21tZW50Qm94Q29tbWFuZBIpCgtmcm9tQ29tbWVudBgBIAEo",
+          "CzIULlRpZGVDaGFydENvbW1lbnRCb3gSJwoJdG9Db21tZW50GAIgASgLMhQu",
+          "VGlkZUNoYXJ0Q29tbWVudEJveBIpCgR0eXBlGAMgASgOMhsuVGlkZUNoYXJ0",
+          "Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFdpZGdldENvbW1hbmQS",
+          "JAoKZnJvbVdpZGdldBgBIAEoCzIQLlRpZGVDaGFydFdpZGdldBIiCgh0b1dp",
+          "ZGdldBgCIAEoCzIQLlRpZGVDaGFydFdpZGdldBIpCgR0eXBlGAMgASgOMhsu",
+          "VGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUigwEKFFRpZGVDaGFydFBvcnRD",
+          "b21tYW5kEiAKCGZyb21Qb3J0GAEgASgLMg4uVGlkZUNoYXJ0UG9ydBIeCgZ0",
+          "b1BvcnQYAiABKAsyDi5UaWRlQ2hhcnRQb3J0EikKBHR5cGUYAyABKA4yGy5U",
+          "aWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZSKDAQoUVGlkZUNoYXJ0TGlua0Nv",
+          "bW1hbmQSIAoIZnJvbUxpbmsYASABKAsyDi5UaWRlQ2hhcnRMaW5rEh4KBnRv",
+          "TGluaxgCIAEoCzIOLlRpZGVDaGFydExpbmsSKQoEdHlwZRgDIAEoDjIbLlRp",
+          "ZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIoMBChRUaWRlQ2hhcnROb2RlQ29t",
+          "bWFuZBIgCghmcm9tTm9kZRgBIAEoCzIOLlRpZGVDaGFydE5vZGUSHgoGdG9O",
+          "b2RlGAIgASgLMg4uVGlkZUNoYXJ0Tm9kZRIpCgR0eXBlGAMgASgOMhsuVGlk",
+          "ZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFJlZ2lvbkNv",
+          "bW1hbmQSJAoKZnJvbVJlZ2lvbhgBIAEoCzIQLlRpZGVDaGFydFJlZ2lvbhIi",
+          "Cgh0b1JlZ2lvbhgCIAEoCzIQLlRpZGVDaGFydFJlZ2lvbhIpCgR0eXBlGAMg",
+          "ASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUiiAEKFVRpZGVDaGFy",
+          "dEdyYXBoQ29tbWFuZBIiCglmcm9tR3JhcGgYASABKAsyDy5UaWRlQ2hhcnRH",
+          "cmFwaBIgCgd0b0dyYXBoGAIgASgLMg8uVGlkZUNoYXJ0R3JhcGgSKQoEdHlw",
+          "ZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIuABChhUaWRl",
+          "Q2hhcnRQcm9wZXJ0eUNvbW1hbmQSJQoJZnJvbVByb3BzGAEgAygLMhIuVGlk",
+          "ZUNoYXJ0UHJvcGVydHkSIwoHdG9Qcm9wcxgCIAMoCzISLlRpZGVDaGFydFBy",
+          "b3BlcnR5EikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRl",
+          "VHlwZRIOCgRub2RlGAUgASgJSAASEAoGcmVnaW9uGAYgASgJSAASEAoGd2lk",
+          "Z2V0GAcgASgJSAASDwoFZ3JhcGgYCCABKAlIAEIICgZ0YXJnZXQinQEKFFRp",
+          "ZGVDaGFydE5vdGVDb21tYW5kEh0KBW5vdGVzGAEgAygLMg4uVGlkZUNoYXJ0",
+          "Tm90ZRIpCgR0eXBlGAIgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5",
+          "cGUSDgoEbm9kZRgDIAEoCUgAEhAKBnJlZ2lvbhgEIAEoCUgAEg8KBWdyYXBo",
+          "GAUgASgJSABCCAoGdGFyZ2V0Iq4BCg9UaWRlQ2hhcnRNZXRob2QSCgoCaWQY",
+          "ASABKAkSDAoEbmFtZRgCIAEoCRIPCgdleHRlbmRzGAMgASgJEg4KBnNjcmlw",
+          "dBgEIAEoCRIfCgdpbnBvcnRzGAUgAygLMg4uVGlkZUNoYXJ0UG9ydBIgCghv",
+          "dXRwb3J0cxgGIAMoCzIOLlRpZGVDaGFydFBvcnQSHQoFcHJvcHMYByADKAsy",
+          "Di5UaWRlQ2hhcnRQb3J0IpEBCg9UaWRlQ2hhcnRTb3VyY2USCgoCaWQYASAB",
+          "KAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEhMKC2NyZWF0ZWREYXRl",
+          "GAUgASgJEhEKCWNyZWF0ZWRCeRgGIAEoCRIRCgd2ZXJzaW9uGAcgASgJSAAS",
+          "EAoGc2NyaXB0GAggASgJSABCCQoHY29udGVudCKtAQoQVGlkZUNoYXJ0TGli",
+          "cmFyeRIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEg0KBXRpdGxlGAMgASgJ",
+          "Eg4KBm9yaWdpbhgEIAEoCRIOCgZicmFuY2gYBSABKAkSDAoEcGF0aBgGIAEo",
+          "CRIfCgVmaWxlcxgHIAMoCzIQLlRpZGVDaGFydFNvdXJjZRIhCgdtZXRob2Rz",
+          "GAggAygLMhAuVGlkZUNoYXJ0TWV0aG9kIugBCg1UaWRlQ2hhcnRTaXRlEg0K",
+          "BWluZGV4GAEgASgDEh0KBXN0YWNrGAIgAygLMg4uVGlkZUNoYXJ0U2l0ZRIM",
+          "CgRwYXRoGAMgASgJEg8KB3RyaWdnZXIYBCABKAkSDQoFZXZlbnQYBSABKAkS",
+          "DQoFc2NvcGUYBiADKAkSDgoGZmlsdGVyGAcgASgJEg0KBWdyYXBoGAggASgJ",
+          "Eg4KBnJlZ2lvbhgJIAEoCRIMCgRub2RlGAogASgJEgwKBHBvcnQYCyABKAkS",
+          "IQoFbG9jYWwYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eSKJAgoQVGlkZUNo",
+          "YXJ0TWVzc2FnZRINCgVpbmRleBgBIAEoAxIRCgl0aW1lc3RhbXAYAiABKAMS",
+          "DgoGb3JpZ2luGAQgASgDEhAKCHByZXZpb3VzGAUgASgDEg4KBnNvdXJjZRgH",
+          "IAEoAxIOCgZ0YXJnZXQYCCABKAMSEgoKZGVsYXlVbnRpbBgJIAEoAxIRCglo",
+          "b2xkVG9rZW4YCiABKAMSEwoLY2FuY2VsVG9rZW4YCyABKAMSDAoEdHlwZRgM",
+          "IAEoCRIPCgd2ZXJzaW9uGA0gASgFEhUKC2pzb25Db250ZW50GA4gASgJSAAS",
+          "FAoKbXNnQ29udGVudBgPIAEoDEgAQgkKB2NvbnRlbnQiawoWVGlkZUNoYXJ0",
+          "Q29udGV4dENoYW5nZRINCgVpbmRleBgBIAEoAxIRCgl0aW1lc3RhbXAYAiAB",
+          "KAMSDAoEdHlwZRgDIAEoCRIhCgVwcm9wcxgEIAMoCzISLlRpZGVDaGFydFBy",
+          "b3BlcnR5IrgBChFUaWRlQ2hhcnRMb2dFbnRyeRINCgVpbmRleBgBIAEoAxIR",
+          "Cgl0aW1lc3RhbXAYAiABKAMSDgoGc291cmNlGAMgASgDEiEKBWxldmVsGAQg",
+          "ASgOMhIuVGlkZUNoYXJ0TG9nTGV2ZWwSDAoEdGFncxgFIAMoCRIPCgdtZXNz",
+          "YWdlGAYgASgJEgwKBHJlZnMYByADKAMSIQoFcHJvcHMYCCADKAsyEi5UaWRl",
+          "Q2hhcnRQcm9wZXJ0eSLtAgoQVGlkZUNoYXJ0Q29udGV4dBIKCgJpZBgBIAEo",
+          "CRINCgVpbmRleBgCIAEoAxIRCgl0aW1lc3RhbXAYAyABKAMSDwoHdmVyc2lv",
+          "bhgEIAEoCRIdCgVzaXRlcxgFIAMoCzIOLlRpZGVDaGFydFNpdGUSIwoIbWVz",
+          "c2FnZXMYBiADKAsyES5UaWRlQ2hhcnRNZXNzYWdlEiIKBmdsb2JhbBgHIAMo",
+          "CzISLlRpZGVDaGFydFByb3BlcnR5EhEKCXN0YXJ0VGltZRgIIAEoAxISCgpz",
+          "dGFydEluZGV4GAkgASgDEg4KBmFjdGl2ZRgKIAMoAxIPCgd3YWl0aW5nGAsg",
+          "AygDEg4KBnBhdXNlZBgMIAMoAxIQCghkaXNhYmxlZBgNIAMoAxInCgZldmVu",
+          "dHMYDiADKAsyFy5UaWRlQ2hhcnRDb250ZXh0Q2hhbmdlEh8KA2xvZxgPIAMo",
+          "CzISLlRpZGVDaGFydExvZ0VudHJ5IqUCCg1UaWRlQ2hhcnREYXRhEg8KB3Zl",
+          "cnNpb24YASABKAkSDgoGYnJhbmNoGAIgASgJEg4KBnNvdXJjZRgDIAEoCRIN",
+          "CgVtZXJnZRgEIAEoCRISCgpjb21taXREYXRlGAUgASgJEhAKCGNvbW1pdEJ5",
+          "GAYgASgJEhIKCmNvbW1pdERlc2MYByABKAkSEwoLY29tbWl0Tm90ZXMYCCAB",
+          "KAkSHwoGc2hlZXRzGAkgAygLMg8uVGlkZUNoYXJ0R3JhcGgSIQoFcHJvcHMY",
+          "CiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIdCgVub3RlcxgLIAMoCzIOLlRp",
+          "ZGVDaGFydE5vdGUSIgoHbGlicmFyeRgMIAMoCzIRLlRpZGVDaGFydExpYnJh",
+          "cnkioAEKD1RpZGVDaGFydEhlYWRlchIPCgd2ZXJzaW9uGAEgASgJEg4KBmJy",
+          "YW5jaBgCIAEoCRIOCgZzb3VyY2UYAyABKAkSDQoFbWVyZ2UYBCABKAkSEgoK",
+          "Y29tbWl0RGF0ZRgFIAEoCRIQCghjb21taXRCeRgGIAEoCRISCgpjb21taXRE",
+          "ZXNjGAcgASgJEhMKC2NvbW1pdE5vdGVzGAggASgJIpwCCg1UaWRlQ2hhcnRG",
+          "aWxlEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEcGF0aBgDIAEoCRIO",
+          "CgZvcmlnaW4YBCABKAkSFAoMbW9kaWZpZWREYXRlGAUgASgJEhIKCm1vZGlm",
+          "aWVkQnkYBiABKAkSHQoFY2hhcnQYByABKAsyDi5UaWRlQ2hhcnREYXRhEiIK",
+          "B3dvcmtpbmcYCCADKAsyES5UaWRlQ2hhcnRDb21tYW5kEiEKBnJlbW90ZRgJ",
+          "IAMoCzIRLlRpZGVDaGFydENvbW1hbmQSHwoHaGlzdG9yeRgKIAMoCzIOLlRp",
+          "ZGVDaGFydERhdGESIgoHY29udGV4dBgLIAMoCzIRLlRpZGVDaGFydENvbnRl",
+          "eHQidwoTVGlkZUNoYXJ0RmlsZUhlYWRlchIKCgJpZBgBIAEoCRIMCgRuYW1l",
+          "GAIgASgJEgwKBHBhdGgYAyABKAkSDgoGb3JpZ2luGAQgASgJEhQKDG1vZGlm",
+          "aWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYgASgJIpcBChRUaWRlQ2hh",
+          "cnRGaWxlQ3VycmVudBIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEgwKBHBh",
+          "dGgYAyABKAkSDgoGb3JpZ2luGAQgASgJEhQKDG1vZGlmaWVkRGF0ZRgFIAEo",
+          "CRISCgptb2RpZmllZEJ5GAYgASgJEh0KBWNoYXJ0GAcgASgLMg4uVGlkZUNo",
+          "YXJ0RGF0YSo9ChpUaWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZRIHCgNhZGQQ",
+          "ABIKCgZyZW1vdmUQARIKCgZ1cGRhdGUQAiqdAQoRVGlkZUNoYXJ0TG9nTGV2",
+          "ZWwSCAoEbm9uZRAAEgkKBWZhdGFsEAESCQoFZXJyb3IQAhINCglleGNlcHRp",
+          "b24QAxILCgd3YXJuaW5nEAQSCAoEaW5mbxAFEgsKB21lc3NhZ2UQBhIJCgVk",
+          "ZWJ1ZxAHEgkKBWNoZWNrEAgSCwoHdmVyYm9zZRAJEgkKBXRyYWNlEAoSBwoD",
+          "YWxsEAtCC0IJVGlkZUNoYXJ0YgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
-        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartLogLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
+        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartCommandUpdateType), typeof(global::TideChartLogLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartProperty), global::TideChartProperty.Parser, new[]{ "Name", "Type", "Value", "Props" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBox), global::TideChartCommentBox.Parser, new[]{ "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "Raised", "Reversed" }, new[]{ "Content" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props" }, new[]{ "Target" }, null, null, null),
@@ -221,6 +228,12 @@ public static partial class TideChartReflection {
 
 }
 #region Enums
+public enum TideChartCommandUpdateType {
+  [pbr::OriginalName("add")] Add = 0,
+  [pbr::OriginalName("remove")] Remove = 1,
+  [pbr::OriginalName("update")] Update = 2,
+}
+
 public enum TideChartLogLevel {
   /// <summary>
   /// used for filtering to exclude all log levels
@@ -5669,15 +5682,15 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -5705,7 +5718,7 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
     int hash = 1;
     if (fromComment_ != null) hash ^= FromComment.GetHashCode();
     if (toComment_ != null) hash ^= ToComment.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -5727,9 +5740,9 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
       output.WriteRawTag(18);
       output.WriteMessage(ToComment);
     }
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -5745,8 +5758,8 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
     if (toComment_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToComment);
     }
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -5771,7 +5784,7 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
       }
       ToComment.MergeFrom(other.ToComment);
     }
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5799,8 +5812,8 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
           input.ReadMessage(ToComment);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
       }
@@ -5875,15 +5888,15 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -5911,7 +5924,7 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
     int hash = 1;
     if (fromWidget_ != null) hash ^= FromWidget.GetHashCode();
     if (toWidget_ != null) hash ^= ToWidget.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -5933,9 +5946,9 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
       output.WriteRawTag(18);
       output.WriteMessage(ToWidget);
     }
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -5951,8 +5964,8 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
     if (toWidget_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToWidget);
     }
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -5977,7 +5990,7 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
       }
       ToWidget.MergeFrom(other.ToWidget);
     }
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6005,8 +6018,8 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
           input.ReadMessage(ToWidget);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
       }
@@ -6081,15 +6094,15 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -6117,7 +6130,7 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
     int hash = 1;
     if (fromPort_ != null) hash ^= FromPort.GetHashCode();
     if (toPort_ != null) hash ^= ToPort.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6139,9 +6152,9 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
       output.WriteRawTag(18);
       output.WriteMessage(ToPort);
     }
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -6157,8 +6170,8 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
     if (toPort_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToPort);
     }
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -6183,7 +6196,7 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
       }
       ToPort.MergeFrom(other.ToPort);
     }
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6211,8 +6224,8 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
           input.ReadMessage(ToPort);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
       }
@@ -6287,15 +6300,15 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -6323,7 +6336,7 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
     int hash = 1;
     if (fromLink_ != null) hash ^= FromLink.GetHashCode();
     if (toLink_ != null) hash ^= ToLink.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6345,9 +6358,9 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
       output.WriteRawTag(18);
       output.WriteMessage(ToLink);
     }
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -6363,8 +6376,8 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
     if (toLink_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToLink);
     }
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -6389,7 +6402,7 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
       }
       ToLink.MergeFrom(other.ToLink);
     }
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6417,8 +6430,8 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
           input.ReadMessage(ToLink);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
       }
@@ -6493,15 +6506,15 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -6529,7 +6542,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
     int hash = 1;
     if (fromNode_ != null) hash ^= FromNode.GetHashCode();
     if (toNode_ != null) hash ^= ToNode.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6551,9 +6564,9 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
       output.WriteRawTag(18);
       output.WriteMessage(ToNode);
     }
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -6569,8 +6582,8 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
     if (toNode_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToNode);
     }
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -6595,7 +6608,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
       }
       ToNode.MergeFrom(other.ToNode);
     }
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6623,8 +6636,8 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
           input.ReadMessage(ToNode);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
       }
@@ -6699,15 +6712,15 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -6735,7 +6748,7 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
     int hash = 1;
     if (fromRegion_ != null) hash ^= FromRegion.GetHashCode();
     if (toRegion_ != null) hash ^= ToRegion.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6757,9 +6770,9 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
       output.WriteRawTag(18);
       output.WriteMessage(ToRegion);
     }
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -6775,8 +6788,8 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
     if (toRegion_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToRegion);
     }
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -6801,7 +6814,7 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
       }
       ToRegion.MergeFrom(other.ToRegion);
     }
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6829,8 +6842,8 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
           input.ReadMessage(ToRegion);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
       }
@@ -6905,15 +6918,15 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove    
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -6941,7 +6954,7 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
     int hash = 1;
     if (fromGraph_ != null) hash ^= FromGraph.GetHashCode();
     if (toGraph_ != null) hash ^= ToGraph.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6963,9 +6976,9 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
       output.WriteRawTag(18);
       output.WriteMessage(ToGraph);
     }
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -6981,8 +6994,8 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
     if (toGraph_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToGraph);
     }
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -7007,7 +7020,7 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
       }
       ToGraph.MergeFrom(other.ToGraph);
     }
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -7035,8 +7048,8 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
           input.ReadMessage(ToGraph);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
       }
@@ -7124,15 +7137,15 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -7242,7 +7255,7 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
     int hash = 1;
     hash ^= fromProps_.GetHashCode();
     hash ^= toProps_.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (targetCase_ == TargetOneofCase.Node) hash ^= Node.GetHashCode();
     if (targetCase_ == TargetOneofCase.Region) hash ^= Region.GetHashCode();
     if (targetCase_ == TargetOneofCase.Widget) hash ^= Widget.GetHashCode();
@@ -7263,9 +7276,9 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
   public void WriteTo(pb::CodedOutputStream output) {
     fromProps_.WriteTo(output, _repeated_fromProps_codec);
     toProps_.WriteTo(output, _repeated_toProps_codec);
-    if (Type.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(24);
+      output.WriteEnum((int) Type);
     }
     if (targetCase_ == TargetOneofCase.Node) {
       output.WriteRawTag(42);
@@ -7293,8 +7306,8 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
     int size = 0;
     size += fromProps_.CalculateSize(_repeated_fromProps_codec);
     size += toProps_.CalculateSize(_repeated_toProps_codec);
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (targetCase_ == TargetOneofCase.Node) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Node);
@@ -7321,7 +7334,7 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
     }
     fromProps_.Add(other.fromProps_);
     toProps_.Add(other.toProps_);
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     switch (other.TargetCase) {
@@ -7358,8 +7371,8 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
           toProps_.AddEntriesFrom(input, _repeated_toProps_codec);
           break;
         }
-        case 26: {
-          Type = input.ReadString();
+        case 24: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
         case 42: {
@@ -7446,15 +7459,15 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 2;
-  private string type_ = "";
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, remove
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Type {
+  public global::TideChartCommandUpdateType Type {
     get { return type_; }
     set {
-      type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      type_ = value;
     }
   }
 
@@ -7546,7 +7559,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   public override int GetHashCode() {
     int hash = 1;
     hash ^= notes_.GetHashCode();
-    if (Type.Length != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (targetCase_ == TargetOneofCase.Node) hash ^= Node.GetHashCode();
     if (targetCase_ == TargetOneofCase.Region) hash ^= Region.GetHashCode();
     if (targetCase_ == TargetOneofCase.Graph) hash ^= Graph.GetHashCode();
@@ -7565,9 +7578,9 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public void WriteTo(pb::CodedOutputStream output) {
     notes_.WriteTo(output, _repeated_notes_codec);
-    if (Type.Length != 0) {
-      output.WriteRawTag(18);
-      output.WriteString(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      output.WriteRawTag(16);
+      output.WriteEnum((int) Type);
     }
     if (targetCase_ == TargetOneofCase.Node) {
       output.WriteRawTag(26);
@@ -7590,8 +7603,8 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   public int CalculateSize() {
     int size = 0;
     size += notes_.CalculateSize(_repeated_notes_codec);
-    if (Type.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+    if (Type != global::TideChartCommandUpdateType.Add) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (targetCase_ == TargetOneofCase.Node) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Node);
@@ -7614,7 +7627,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
       return;
     }
     notes_.Add(other.notes_);
-    if (other.Type.Length != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     switch (other.TargetCase) {
@@ -7644,8 +7657,8 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
           notes_.AddEntriesFrom(input, _repeated_notes_codec);
           break;
         }
-        case 18: {
-          Type = input.ReadString();
+        case 16: {
+          Type = (global::TideChartCommandUpdateType) input.ReadEnum();
           break;
         }
         case 26: {

@@ -9,6 +9,23 @@
 import 'dart:core' as $core show int, dynamic, String, List, Map;
 import 'package:protobuf/protobuf.dart' as $pb;
 
+class TideChartCommandUpdateType extends $pb.ProtobufEnum {
+  static const TideChartCommandUpdateType add = TideChartCommandUpdateType._(0, 'add');
+  static const TideChartCommandUpdateType remove = TideChartCommandUpdateType._(1, 'remove');
+  static const TideChartCommandUpdateType update = TideChartCommandUpdateType._(2, 'update');
+
+  static const $core.List<TideChartCommandUpdateType> values = <TideChartCommandUpdateType> [
+    add,
+    remove,
+    update,
+  ];
+
+  static final $core.Map<$core.int, TideChartCommandUpdateType> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static TideChartCommandUpdateType valueOf($core.int value) => _byValue[value];
+
+  const TideChartCommandUpdateType._($core.int v, $core.String n) : super(v, n);
+}
+
 class TideChartLogLevel extends $pb.ProtobufEnum {
   static const TideChartLogLevel none = TideChartLogLevel._(0, 'none');
   static const TideChartLogLevel fatal = TideChartLogLevel._(1, 'fatal');

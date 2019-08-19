@@ -200,8 +200,14 @@ message TideChartCommand {
     }
 }
 
+enum TideChartCommandUpdateType {
+    add = 0;
+    remove = 1;
+    update = 2;
+};
+
 message TideChartGroupCommand {
-    repeated TideChartCommand commands = 1;         // a collection of updates that are applied atomically
+    repeated TideChartCommand commands = 1;     // a collection of updates that are applied atomically
 }
 
 message TideChartMoveCommand {
@@ -215,49 +221,49 @@ message TideChartMoveCommand {
 message TideChartCommentBoxCommand {            
     TideChartCommentBox fromComment = 1;        // previous version of the comment         
     TideChartCommentBox toComment = 2;          // new version of the comment
-    string type = 3;                            // type of update: add, update or remove
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove
 }
 
 message TideChartWidgetCommand {                
     TideChartWidget fromWidget = 1;             // previous version of the widget    
     TideChartWidget toWidget = 2;               // new version of the widget
-    string type = 3;                            // type of update: add, update or remove
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove
 }
 
 message TideChartPortCommand {                  
     TideChartPort fromPort = 1;                 // previons version of the port
     TideChartPort toPort = 2;                   // new version of the port
-    string type = 3;                            // type of update: add, update or remove
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove
 }
 
 message TideChartLinkCommand {                  
     TideChartLink fromLink = 1;                 // previous version of the link
     TideChartLink toLink = 2;                   // new version of the link
-    string type = 3;                            // type of update: add, update or remove
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove
 }
 
 message TideChartNodeCommand {
     TideChartNode fromNode = 1;                 // previous version of the graph node
     TideChartNode toNode = 2;                   // new version of the graph node
-    string type = 3;                            // type of update: add, update or remove
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove
 }
 
 message TideChartRegionCommand {                
     TideChartRegion fromRegion = 1;             // previous version of the region
     TideChartRegion toRegion = 2;               // new version of the region
-    string type = 3;                            // type of update: add, update or remove
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove
 }
 
 message TideChartGraphCommand {                 
     TideChartGraph fromGraph = 1;               // previous versino of the graph
     TideChartGraph toGraph = 2;                 // new version of the graph
-    string type = 3;                            // type of update: add, update or remove    
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove    
 }
 
 message TideChartPropertyCommand {
     repeated TideChartProperty fromProps = 1;   // previous values of the properties (only for included updates)
     repeated TideChartProperty toProps = 2;     // new values of the properties (only include changes)
-    string type = 3;                            // type of update: add, update or remove
+    TideChartCommandUpdateType type = 3;        // type of update: add, update or remove
 
     oneof target {
         string node = 5;                        // node reference (graph-id:node-name)
@@ -269,7 +275,7 @@ message TideChartPropertyCommand {
 
 message TideChartNoteCommand {
     repeated TideChartNote notes = 1;           // a set of notes being added or removed
-    string type = 2;                            // type of update: add, remove
+    TideChartCommandUpdateType type = 2;        // type of update: add, remove
 
     oneof target {
         string node = 3;                        // node reference (node-name)

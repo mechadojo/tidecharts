@@ -1054,7 +1054,7 @@ class TideChartCommentBoxCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartCommentBoxCommand')
     ..a<TideChartCommentBox>(1, 'fromComment', $pb.PbFieldType.OM, TideChartCommentBox.getDefault, TideChartCommentBox.create)
     ..a<TideChartCommentBox>(2, 'toComment', $pb.PbFieldType.OM, TideChartCommentBox.getDefault, TideChartCommentBox.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1082,8 +1082,8 @@ class TideChartCommentBoxCommand extends $pb.GeneratedMessage {
   $core.bool hasToComment() => $_has(1);
   void clearToComment() => clearField(2);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 }
@@ -1092,7 +1092,7 @@ class TideChartWidgetCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartWidgetCommand')
     ..a<TideChartWidget>(1, 'fromWidget', $pb.PbFieldType.OM, TideChartWidget.getDefault, TideChartWidget.create)
     ..a<TideChartWidget>(2, 'toWidget', $pb.PbFieldType.OM, TideChartWidget.getDefault, TideChartWidget.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1120,8 +1120,8 @@ class TideChartWidgetCommand extends $pb.GeneratedMessage {
   $core.bool hasToWidget() => $_has(1);
   void clearToWidget() => clearField(2);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 }
@@ -1130,7 +1130,7 @@ class TideChartPortCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartPortCommand')
     ..a<TideChartPort>(1, 'fromPort', $pb.PbFieldType.OM, TideChartPort.getDefault, TideChartPort.create)
     ..a<TideChartPort>(2, 'toPort', $pb.PbFieldType.OM, TideChartPort.getDefault, TideChartPort.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1158,8 +1158,8 @@ class TideChartPortCommand extends $pb.GeneratedMessage {
   $core.bool hasToPort() => $_has(1);
   void clearToPort() => clearField(2);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 }
@@ -1168,7 +1168,7 @@ class TideChartLinkCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartLinkCommand')
     ..a<TideChartLink>(1, 'fromLink', $pb.PbFieldType.OM, TideChartLink.getDefault, TideChartLink.create)
     ..a<TideChartLink>(2, 'toLink', $pb.PbFieldType.OM, TideChartLink.getDefault, TideChartLink.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1196,8 +1196,8 @@ class TideChartLinkCommand extends $pb.GeneratedMessage {
   $core.bool hasToLink() => $_has(1);
   void clearToLink() => clearField(2);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 }
@@ -1206,7 +1206,7 @@ class TideChartNodeCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartNodeCommand')
     ..a<TideChartNode>(1, 'fromNode', $pb.PbFieldType.OM, TideChartNode.getDefault, TideChartNode.create)
     ..a<TideChartNode>(2, 'toNode', $pb.PbFieldType.OM, TideChartNode.getDefault, TideChartNode.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1234,8 +1234,8 @@ class TideChartNodeCommand extends $pb.GeneratedMessage {
   $core.bool hasToNode() => $_has(1);
   void clearToNode() => clearField(2);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 }
@@ -1244,7 +1244,7 @@ class TideChartRegionCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartRegionCommand')
     ..a<TideChartRegion>(1, 'fromRegion', $pb.PbFieldType.OM, TideChartRegion.getDefault, TideChartRegion.create)
     ..a<TideChartRegion>(2, 'toRegion', $pb.PbFieldType.OM, TideChartRegion.getDefault, TideChartRegion.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1272,8 +1272,8 @@ class TideChartRegionCommand extends $pb.GeneratedMessage {
   $core.bool hasToRegion() => $_has(1);
   void clearToRegion() => clearField(2);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 }
@@ -1282,7 +1282,7 @@ class TideChartGraphCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartGraphCommand')
     ..a<TideChartGraph>(1, 'fromGraph', $pb.PbFieldType.OM, TideChartGraph.getDefault, TideChartGraph.create)
     ..a<TideChartGraph>(2, 'toGraph', $pb.PbFieldType.OM, TideChartGraph.getDefault, TideChartGraph.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1310,8 +1310,8 @@ class TideChartGraphCommand extends $pb.GeneratedMessage {
   $core.bool hasToGraph() => $_has(1);
   void clearToGraph() => clearField(2);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 }
@@ -1336,7 +1336,7 @@ class TideChartPropertyCommand extends $pb.GeneratedMessage {
     ..oo(0, [5, 6, 7, 8])
     ..pc<TideChartProperty>(1, 'fromProps', $pb.PbFieldType.PM,TideChartProperty.create)
     ..pc<TideChartProperty>(2, 'toProps', $pb.PbFieldType.PM,TideChartProperty.create)
-    ..aOS(3, 'type')
+    ..e<TideChartCommandUpdateType>(3, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..aOS(5, 'node')
     ..aOS(6, 'region')
     ..aOS(7, 'widget')
@@ -1365,8 +1365,8 @@ class TideChartPropertyCommand extends $pb.GeneratedMessage {
 
   $core.List<TideChartProperty> get toProps => $_getList(1);
 
-  $core.String get type => $_getS(2, '');
-  set type($core.String v) { $_setString(2, v); }
+  TideChartCommandUpdateType get type => $_getN(2);
+  set type(TideChartCommandUpdateType v) { setField(3, v); }
   $core.bool hasType() => $_has(2);
   void clearType() => clearField(3);
 
@@ -1408,7 +1408,7 @@ class TideChartNoteCommand extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartNoteCommand')
     ..oo(0, [3, 4, 5])
     ..pc<TideChartNote>(1, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
-    ..aOS(2, 'type')
+    ..e<TideChartCommandUpdateType>(2, 'type', $pb.PbFieldType.OE, TideChartCommandUpdateType.add, TideChartCommandUpdateType.valueOf, TideChartCommandUpdateType.values)
     ..aOS(3, 'node')
     ..aOS(4, 'region')
     ..aOS(5, 'graph')
@@ -1434,8 +1434,8 @@ class TideChartNoteCommand extends $pb.GeneratedMessage {
 
   $core.List<TideChartNote> get notes => $_getList(0);
 
-  $core.String get type => $_getS(1, '');
-  set type($core.String v) { $_setString(1, v); }
+  TideChartCommandUpdateType get type => $_getN(1);
+  set type(TideChartCommandUpdateType v) { setField(2, v); }
   $core.bool hasType() => $_has(1);
   void clearType() => clearField(2);
 
