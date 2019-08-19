@@ -607,6 +607,7 @@ Read only the commit headers
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | type | [string](#string) |  | type of port: inport, outport |
+| node | [string](#string) |  | node name port belongs to |
 | name | [string](#string) |  | port name (unique to node scope) |
 | ordinal | [int32](#int32) |  | position in the node&#39;s set of inports or outports |
 | isDefault | [bool](#bool) |  | used by methods to indicate which ports are used for default in/out routing |
@@ -617,7 +618,7 @@ Read only the commit headers
 | trigger | [string](#string) |  | a trigger the inport automatically reads from |
 | filter | [string](#string) |  | a filter or conditional expressions applied to messages received or sent |
 | event | [string](#string) |  | an event the outport automatically writes to |
-| sync | [string](#string) |  | creates a syncronizing group between ports |
+| syncGroup | [string](#string) |  | creates a syncronizing group between ports |
 | isBlocking | [bool](#bool) |  | determines if the port will block to wait for the rest of the port group |
 | isQueuing | [bool](#bool) |  | determines if messages should queue while blocking or replace with latest received |
 

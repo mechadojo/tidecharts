@@ -61,22 +61,23 @@ message TideChartWidget {
 
 message TideChartPort {
     string type = 1;                            // type of port: inport, outport
-    string name = 2;                            // port name (unique to node scope)
-    int32 ordinal = 3;                          // position in the node's set of inports or outports
+    string node = 2;                            // node name port belongs to
+    string name = 3;                            // port name (unique to node scope)
+    int32 ordinal = 4;                          // position in the node's set of inports or outports
 
-    bool isDefault  = 4;                          // used by methods to indicate which ports are used for default in/out routing
-    bool isRequired = 5;                          // used by methods to indicate the port must exist
-    repeated string allowed = 6;                // used by methods to define what value / message types are allowed to be
-    string hint = 7;                            // used by methods to describe how a port should be used
+    bool isDefault  = 5;                        // used by methods to indicate which ports are used for default in/out routing
+    bool isRequired = 6;                        // used by methods to indicate the port must exist
+    repeated string allowed = 7;                // used by methods to define what value / message types are allowed to be
+    string hint = 8;                            // used by methods to describe how a port should be used
 
-    TideChartProperty constant = 8;             // a constant value applied to the inport
-    string trigger = 9;                         // a trigger the inport automatically reads from 
-    string filter = 10;                         // a filter or conditional expressions applied to messages received or sent
-    string event = 11;                          // an event the outport automatically writes to
+    TideChartProperty constant = 9;             // a constant value applied to the inport
+    string trigger = 10;                         // a trigger the inport automatically reads from 
+    string filter = 11;                         // a filter or conditional expressions applied to messages received or sent
+    string event = 12;                          // an event the outport automatically writes to
 
-    string sync = 12;                           // creates a syncronizing group between ports
-    bool isBlocking = 13;                            // determines if the port will block to wait for the rest of the port group
-    bool isQueuing = 14;                            // determines if messages should queue while blocking or replace with latest received
+    string syncGroup = 13;                      // creates a syncronizing group between ports
+    bool isBlocking = 14;                       // determines if the port will block to wait for the rest of the port group
+    bool isQueuing = 15;                        // determines if messages should queue while blocking or replace with latest received
 }
 
 message TideChartLink {

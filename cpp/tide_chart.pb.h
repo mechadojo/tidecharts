@@ -1153,22 +1153,23 @@ class TideChartPort :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kAllowedFieldNumber = 6,
+    kAllowedFieldNumber = 7,
     kTypeFieldNumber = 1,
-    kNameFieldNumber = 2,
-    kHintFieldNumber = 7,
-    kTriggerFieldNumber = 9,
-    kFilterFieldNumber = 10,
-    kEventFieldNumber = 11,
-    kSyncFieldNumber = 12,
-    kConstantFieldNumber = 8,
-    kOrdinalFieldNumber = 3,
-    kIsDefaultFieldNumber = 4,
-    kIsRequiredFieldNumber = 5,
-    kIsBlockingFieldNumber = 13,
-    kIsQueuingFieldNumber = 14,
+    kNodeFieldNumber = 2,
+    kNameFieldNumber = 3,
+    kHintFieldNumber = 8,
+    kTriggerFieldNumber = 10,
+    kFilterFieldNumber = 11,
+    kEventFieldNumber = 12,
+    kSyncGroupFieldNumber = 13,
+    kConstantFieldNumber = 9,
+    kOrdinalFieldNumber = 4,
+    kIsDefaultFieldNumber = 5,
+    kIsRequiredFieldNumber = 6,
+    kIsBlockingFieldNumber = 14,
+    kIsQueuingFieldNumber = 15,
   };
-  // repeated string allowed = 6;
+  // repeated string allowed = 7;
   int allowed_size() const;
   void clear_allowed();
   const std::string& allowed(int index) const;
@@ -1196,7 +1197,18 @@ class TideChartPort :
   std::string* release_type();
   void set_allocated_type(std::string* type);
 
-  // string name = 2;
+  // string node = 2;
+  void clear_node();
+  const std::string& node() const;
+  void set_node(const std::string& value);
+  void set_node(std::string&& value);
+  void set_node(const char* value);
+  void set_node(const char* value, size_t size);
+  std::string* mutable_node();
+  std::string* release_node();
+  void set_allocated_node(std::string* node);
+
+  // string name = 3;
   void clear_name();
   const std::string& name() const;
   void set_name(const std::string& value);
@@ -1207,7 +1219,7 @@ class TideChartPort :
   std::string* release_name();
   void set_allocated_name(std::string* name);
 
-  // string hint = 7;
+  // string hint = 8;
   void clear_hint();
   const std::string& hint() const;
   void set_hint(const std::string& value);
@@ -1218,7 +1230,7 @@ class TideChartPort :
   std::string* release_hint();
   void set_allocated_hint(std::string* hint);
 
-  // string trigger = 9;
+  // string trigger = 10;
   void clear_trigger();
   const std::string& trigger() const;
   void set_trigger(const std::string& value);
@@ -1229,7 +1241,7 @@ class TideChartPort :
   std::string* release_trigger();
   void set_allocated_trigger(std::string* trigger);
 
-  // string filter = 10;
+  // string filter = 11;
   void clear_filter();
   const std::string& filter() const;
   void set_filter(const std::string& value);
@@ -1240,7 +1252,7 @@ class TideChartPort :
   std::string* release_filter();
   void set_allocated_filter(std::string* filter);
 
-  // string event = 11;
+  // string event = 12;
   void clear_event();
   const std::string& event() const;
   void set_event(const std::string& value);
@@ -1251,18 +1263,18 @@ class TideChartPort :
   std::string* release_event();
   void set_allocated_event(std::string* event);
 
-  // string sync = 12;
-  void clear_sync();
-  const std::string& sync() const;
-  void set_sync(const std::string& value);
-  void set_sync(std::string&& value);
-  void set_sync(const char* value);
-  void set_sync(const char* value, size_t size);
-  std::string* mutable_sync();
-  std::string* release_sync();
-  void set_allocated_sync(std::string* sync);
+  // string syncGroup = 13;
+  void clear_syncgroup();
+  const std::string& syncgroup() const;
+  void set_syncgroup(const std::string& value);
+  void set_syncgroup(std::string&& value);
+  void set_syncgroup(const char* value);
+  void set_syncgroup(const char* value, size_t size);
+  std::string* mutable_syncgroup();
+  std::string* release_syncgroup();
+  void set_allocated_syncgroup(std::string* syncgroup);
 
-  // .TideChartProperty constant = 8;
+  // .TideChartProperty constant = 9;
   bool has_constant() const;
   void clear_constant();
   const ::TideChartProperty& constant() const;
@@ -1270,27 +1282,27 @@ class TideChartPort :
   ::TideChartProperty* mutable_constant();
   void set_allocated_constant(::TideChartProperty* constant);
 
-  // int32 ordinal = 3;
+  // int32 ordinal = 4;
   void clear_ordinal();
   ::PROTOBUF_NAMESPACE_ID::int32 ordinal() const;
   void set_ordinal(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // bool isDefault = 4;
+  // bool isDefault = 5;
   void clear_isdefault();
   bool isdefault() const;
   void set_isdefault(bool value);
 
-  // bool isRequired = 5;
+  // bool isRequired = 6;
   void clear_isrequired();
   bool isrequired() const;
   void set_isrequired(bool value);
 
-  // bool isBlocking = 13;
+  // bool isBlocking = 14;
   void clear_isblocking();
   bool isblocking() const;
   void set_isblocking(bool value);
 
-  // bool isQueuing = 14;
+  // bool isQueuing = 15;
   void clear_isqueuing();
   bool isqueuing() const;
   void set_isqueuing(bool value);
@@ -1302,12 +1314,13 @@ class TideChartPort :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> allowed_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr node_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr hint_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr trigger_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr filter_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr event_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr sync_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr syncgroup_;
   ::TideChartProperty* constant_;
   ::PROTOBUF_NAMESPACE_ID::int32 ordinal_;
   bool isdefault_;
@@ -9302,7 +9315,58 @@ inline void TideChartPort::set_allocated_type(std::string* type) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.type)
 }
 
-// string name = 2;
+// string node = 2;
+inline void TideChartPort::clear_node() {
+  node_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& TideChartPort::node() const {
+  // @@protoc_insertion_point(field_get:TideChartPort.node)
+  return node_.GetNoArena();
+}
+inline void TideChartPort::set_node(const std::string& value) {
+  
+  node_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartPort.node)
+}
+inline void TideChartPort::set_node(std::string&& value) {
+  
+  node_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:TideChartPort.node)
+}
+inline void TideChartPort::set_node(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  node_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartPort.node)
+}
+inline void TideChartPort::set_node(const char* value, size_t size) {
+  
+  node_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:TideChartPort.node)
+}
+inline std::string* TideChartPort::mutable_node() {
+  
+  // @@protoc_insertion_point(field_mutable:TideChartPort.node)
+  return node_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* TideChartPort::release_node() {
+  // @@protoc_insertion_point(field_release:TideChartPort.node)
+  
+  return node_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void TideChartPort::set_allocated_node(std::string* node) {
+  if (node != nullptr) {
+    
+  } else {
+    
+  }
+  node_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), node);
+  // @@protoc_insertion_point(field_set_allocated:TideChartPort.node)
+}
+
+// string name = 3;
 inline void TideChartPort::clear_name() {
   name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -9353,7 +9417,7 @@ inline void TideChartPort::set_allocated_name(std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.name)
 }
 
-// int32 ordinal = 3;
+// int32 ordinal = 4;
 inline void TideChartPort::clear_ordinal() {
   ordinal_ = 0;
 }
@@ -9367,7 +9431,7 @@ inline void TideChartPort::set_ordinal(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:TideChartPort.ordinal)
 }
 
-// bool isDefault = 4;
+// bool isDefault = 5;
 inline void TideChartPort::clear_isdefault() {
   isdefault_ = false;
 }
@@ -9381,7 +9445,7 @@ inline void TideChartPort::set_isdefault(bool value) {
   // @@protoc_insertion_point(field_set:TideChartPort.isDefault)
 }
 
-// bool isRequired = 5;
+// bool isRequired = 6;
 inline void TideChartPort::clear_isrequired() {
   isrequired_ = false;
 }
@@ -9395,7 +9459,7 @@ inline void TideChartPort::set_isrequired(bool value) {
   // @@protoc_insertion_point(field_set:TideChartPort.isRequired)
 }
 
-// repeated string allowed = 6;
+// repeated string allowed = 7;
 inline int TideChartPort::allowed_size() const {
   return allowed_.size();
 }
@@ -9460,7 +9524,7 @@ TideChartPort::mutable_allowed() {
   return &allowed_;
 }
 
-// string hint = 7;
+// string hint = 8;
 inline void TideChartPort::clear_hint() {
   hint_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -9511,7 +9575,7 @@ inline void TideChartPort::set_allocated_hint(std::string* hint) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.hint)
 }
 
-// .TideChartProperty constant = 8;
+// .TideChartProperty constant = 9;
 inline bool TideChartPort::has_constant() const {
   return this != internal_default_instance() && constant_ != nullptr;
 }
@@ -9562,7 +9626,7 @@ inline void TideChartPort::set_allocated_constant(::TideChartProperty* constant)
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.constant)
 }
 
-// string trigger = 9;
+// string trigger = 10;
 inline void TideChartPort::clear_trigger() {
   trigger_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -9613,7 +9677,7 @@ inline void TideChartPort::set_allocated_trigger(std::string* trigger) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.trigger)
 }
 
-// string filter = 10;
+// string filter = 11;
 inline void TideChartPort::clear_filter() {
   filter_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -9664,7 +9728,7 @@ inline void TideChartPort::set_allocated_filter(std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.filter)
 }
 
-// string event = 11;
+// string event = 12;
 inline void TideChartPort::clear_event() {
   event_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -9715,58 +9779,58 @@ inline void TideChartPort::set_allocated_event(std::string* event) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.event)
 }
 
-// string sync = 12;
-inline void TideChartPort::clear_sync() {
-  sync_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string syncGroup = 13;
+inline void TideChartPort::clear_syncgroup() {
+  syncgroup_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& TideChartPort::sync() const {
-  // @@protoc_insertion_point(field_get:TideChartPort.sync)
-  return sync_.GetNoArena();
+inline const std::string& TideChartPort::syncgroup() const {
+  // @@protoc_insertion_point(field_get:TideChartPort.syncGroup)
+  return syncgroup_.GetNoArena();
 }
-inline void TideChartPort::set_sync(const std::string& value) {
+inline void TideChartPort::set_syncgroup(const std::string& value) {
   
-  sync_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartPort.sync)
+  syncgroup_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartPort.syncGroup)
 }
-inline void TideChartPort::set_sync(std::string&& value) {
+inline void TideChartPort::set_syncgroup(std::string&& value) {
   
-  sync_.SetNoArena(
+  syncgroup_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartPort.sync)
+  // @@protoc_insertion_point(field_set_rvalue:TideChartPort.syncGroup)
 }
-inline void TideChartPort::set_sync(const char* value) {
+inline void TideChartPort::set_syncgroup(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  sync_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartPort.sync)
+  syncgroup_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartPort.syncGroup)
 }
-inline void TideChartPort::set_sync(const char* value, size_t size) {
+inline void TideChartPort::set_syncgroup(const char* value, size_t size) {
   
-  sync_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  syncgroup_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartPort.sync)
+  // @@protoc_insertion_point(field_set_pointer:TideChartPort.syncGroup)
 }
-inline std::string* TideChartPort::mutable_sync() {
+inline std::string* TideChartPort::mutable_syncgroup() {
   
-  // @@protoc_insertion_point(field_mutable:TideChartPort.sync)
-  return sync_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:TideChartPort.syncGroup)
+  return syncgroup_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* TideChartPort::release_sync() {
-  // @@protoc_insertion_point(field_release:TideChartPort.sync)
+inline std::string* TideChartPort::release_syncgroup() {
+  // @@protoc_insertion_point(field_release:TideChartPort.syncGroup)
   
-  return sync_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return syncgroup_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartPort::set_allocated_sync(std::string* sync) {
-  if (sync != nullptr) {
+inline void TideChartPort::set_allocated_syncgroup(std::string* syncgroup) {
+  if (syncgroup != nullptr) {
     
   } else {
     
   }
-  sync_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), sync);
-  // @@protoc_insertion_point(field_set_allocated:TideChartPort.sync)
+  syncgroup_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), syncgroup);
+  // @@protoc_insertion_point(field_set_allocated:TideChartPort.syncGroup)
 }
 
-// bool isBlocking = 13;
+// bool isBlocking = 14;
 inline void TideChartPort::clear_isblocking() {
   isblocking_ = false;
 }
@@ -9780,7 +9844,7 @@ inline void TideChartPort::set_isblocking(bool value) {
   // @@protoc_insertion_point(field_set:TideChartPort.isBlocking)
 }
 
-// bool isQueuing = 14;
+// bool isQueuing = 15;
 inline void TideChartPort::clear_isqueuing() {
   isqueuing_ = false;
 }

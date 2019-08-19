@@ -297,19 +297,20 @@ class TideChartWidget extends $pb.GeneratedMessage {
 class TideChartPort extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartPort')
     ..aOS(1, 'type')
-    ..aOS(2, 'name')
-    ..a<$core.int>(3, 'ordinal', $pb.PbFieldType.O3)
-    ..aOB(4, 'isDefault')
-    ..aOB(5, 'isRequired')
-    ..pPS(6, 'allowed')
-    ..aOS(7, 'hint')
-    ..a<TideChartProperty>(8, 'constant', $pb.PbFieldType.OM, TideChartProperty.getDefault, TideChartProperty.create)
-    ..aOS(9, 'trigger')
-    ..aOS(10, 'filter')
-    ..aOS(11, 'event')
-    ..aOS(12, 'sync')
-    ..aOB(13, 'isBlocking')
-    ..aOB(14, 'isQueuing')
+    ..aOS(2, 'node')
+    ..aOS(3, 'name')
+    ..a<$core.int>(4, 'ordinal', $pb.PbFieldType.O3)
+    ..aOB(5, 'isDefault')
+    ..aOB(6, 'isRequired')
+    ..pPS(7, 'allowed')
+    ..aOS(8, 'hint')
+    ..a<TideChartProperty>(9, 'constant', $pb.PbFieldType.OM, TideChartProperty.getDefault, TideChartProperty.create)
+    ..aOS(10, 'trigger')
+    ..aOS(11, 'filter')
+    ..aOS(12, 'event')
+    ..aOS(13, 'syncGroup')
+    ..aOB(14, 'isBlocking')
+    ..aOB(15, 'isQueuing')
     ..hasRequiredFields = false
   ;
 
@@ -332,67 +333,72 @@ class TideChartPort extends $pb.GeneratedMessage {
   $core.bool hasType() => $_has(0);
   void clearType() => clearField(1);
 
-  $core.String get name => $_getS(1, '');
-  set name($core.String v) { $_setString(1, v); }
-  $core.bool hasName() => $_has(1);
-  void clearName() => clearField(2);
+  $core.String get node => $_getS(1, '');
+  set node($core.String v) { $_setString(1, v); }
+  $core.bool hasNode() => $_has(1);
+  void clearNode() => clearField(2);
 
-  $core.int get ordinal => $_get(2, 0);
-  set ordinal($core.int v) { $_setSignedInt32(2, v); }
-  $core.bool hasOrdinal() => $_has(2);
-  void clearOrdinal() => clearField(3);
+  $core.String get name => $_getS(2, '');
+  set name($core.String v) { $_setString(2, v); }
+  $core.bool hasName() => $_has(2);
+  void clearName() => clearField(3);
 
-  $core.bool get isDefault => $_get(3, false);
-  set isDefault($core.bool v) { $_setBool(3, v); }
-  $core.bool hasIsDefault() => $_has(3);
-  void clearIsDefault() => clearField(4);
+  $core.int get ordinal => $_get(3, 0);
+  set ordinal($core.int v) { $_setSignedInt32(3, v); }
+  $core.bool hasOrdinal() => $_has(3);
+  void clearOrdinal() => clearField(4);
 
-  $core.bool get isRequired => $_get(4, false);
-  set isRequired($core.bool v) { $_setBool(4, v); }
-  $core.bool hasIsRequired() => $_has(4);
-  void clearIsRequired() => clearField(5);
+  $core.bool get isDefault => $_get(4, false);
+  set isDefault($core.bool v) { $_setBool(4, v); }
+  $core.bool hasIsDefault() => $_has(4);
+  void clearIsDefault() => clearField(5);
 
-  $core.List<$core.String> get allowed => $_getList(5);
+  $core.bool get isRequired => $_get(5, false);
+  set isRequired($core.bool v) { $_setBool(5, v); }
+  $core.bool hasIsRequired() => $_has(5);
+  void clearIsRequired() => clearField(6);
 
-  $core.String get hint => $_getS(6, '');
-  set hint($core.String v) { $_setString(6, v); }
-  $core.bool hasHint() => $_has(6);
-  void clearHint() => clearField(7);
+  $core.List<$core.String> get allowed => $_getList(6);
 
-  TideChartProperty get constant => $_getN(7);
-  set constant(TideChartProperty v) { setField(8, v); }
-  $core.bool hasConstant() => $_has(7);
-  void clearConstant() => clearField(8);
+  $core.String get hint => $_getS(7, '');
+  set hint($core.String v) { $_setString(7, v); }
+  $core.bool hasHint() => $_has(7);
+  void clearHint() => clearField(8);
 
-  $core.String get trigger => $_getS(8, '');
-  set trigger($core.String v) { $_setString(8, v); }
-  $core.bool hasTrigger() => $_has(8);
-  void clearTrigger() => clearField(9);
+  TideChartProperty get constant => $_getN(8);
+  set constant(TideChartProperty v) { setField(9, v); }
+  $core.bool hasConstant() => $_has(8);
+  void clearConstant() => clearField(9);
 
-  $core.String get filter => $_getS(9, '');
-  set filter($core.String v) { $_setString(9, v); }
-  $core.bool hasFilter() => $_has(9);
-  void clearFilter() => clearField(10);
+  $core.String get trigger => $_getS(9, '');
+  set trigger($core.String v) { $_setString(9, v); }
+  $core.bool hasTrigger() => $_has(9);
+  void clearTrigger() => clearField(10);
 
-  $core.String get event => $_getS(10, '');
-  set event($core.String v) { $_setString(10, v); }
-  $core.bool hasEvent() => $_has(10);
-  void clearEvent() => clearField(11);
+  $core.String get filter => $_getS(10, '');
+  set filter($core.String v) { $_setString(10, v); }
+  $core.bool hasFilter() => $_has(10);
+  void clearFilter() => clearField(11);
 
-  $core.String get sync => $_getS(11, '');
-  set sync($core.String v) { $_setString(11, v); }
-  $core.bool hasSync() => $_has(11);
-  void clearSync() => clearField(12);
+  $core.String get event => $_getS(11, '');
+  set event($core.String v) { $_setString(11, v); }
+  $core.bool hasEvent() => $_has(11);
+  void clearEvent() => clearField(12);
 
-  $core.bool get isBlocking => $_get(12, false);
-  set isBlocking($core.bool v) { $_setBool(12, v); }
-  $core.bool hasIsBlocking() => $_has(12);
-  void clearIsBlocking() => clearField(13);
+  $core.String get syncGroup => $_getS(12, '');
+  set syncGroup($core.String v) { $_setString(12, v); }
+  $core.bool hasSyncGroup() => $_has(12);
+  void clearSyncGroup() => clearField(13);
 
-  $core.bool get isQueuing => $_get(13, false);
-  set isQueuing($core.bool v) { $_setBool(13, v); }
-  $core.bool hasIsQueuing() => $_has(13);
-  void clearIsQueuing() => clearField(14);
+  $core.bool get isBlocking => $_get(13, false);
+  set isBlocking($core.bool v) { $_setBool(13, v); }
+  $core.bool hasIsBlocking() => $_has(13);
+  void clearIsBlocking() => clearField(14);
+
+  $core.bool get isQueuing => $_get(14, false);
+  set isQueuing($core.bool v) { $_setBool(14, v); }
+  $core.bool hasIsQueuing() => $_has(14);
+  void clearIsQueuing() => clearField(15);
 }
 
 class TideChartLink extends $pb.GeneratedMessage {
