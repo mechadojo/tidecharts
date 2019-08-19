@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Protocol Documentation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic"/>
+    <style>
+      body {
+        width: 60em;
+        margin: 1em auto;
+        color: #222;
+        font-family: "Ubuntu", sans-serif;
+        padding-bottom: 4em;
+      }
+
+      h1 {
+        font-weight: normal;
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 0.5ex;
+      }
+
+      h2 {
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 0.5ex;
+        margin: 1.5em 0;
+      }
+
+      h3 {
+        font-weight: normal;
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 0.5ex;
+      }
+
+      a {
+        text-decoration: none;
+        color: #567e25;
+      }
+
+      table {
+        width: 100%;
+        font-size: 80%;
+        border-collapse: collapse;
+      }
+
+      thead {
+        font-weight: 700;
+        background-color: #dcdcdc;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #fbfbfb;
+      }
+
+      td {
+        border: 1px solid #ccc;
+        padding: 0.5ex 2ex;
+      }
+
+      td p {
+        text-indent: 1em;
+        margin: 0;
+      }
+
+      td p:nth-child(1) {
+        text-indent: 0;  
+      }
+
+       
+      .field-table td:nth-child(1) {  
+        width: 10em;
+      }
+      .field-table td:nth-child(2) {  
+        width: 10em;
+      }
+      .field-table td:nth-child(3) {  
+        width: 6em;
+      }
+      .field-table td:nth-child(4) {  
+        width: auto;
+      }
+
+       
+      .extension-table td:nth-child(1) {  
+        width: 10em;
+      }
+      .extension-table td:nth-child(2) {  
+        width: 10em;
+      }
+      .extension-table td:nth-child(3) {  
+        width: 10em;
+      }
+      .extension-table td:nth-child(4) {  
+        width: 5em;
+      }
+      .extension-table td:nth-child(5) {  
+        width: auto;
+      }
+
+       
+      .enum-table td:nth-child(1) {  
+        width: 10em;
+      }
+      .enum-table td:nth-child(2) {  
+        width: 10em;
+      }
+      .enum-table td:nth-child(3) {  
+        width: auto;
+      }
+
+       
+      .scalar-value-types-table tr {
+        height: 3em;
+      }
+
+       
+      #toc-container ul {
+        list-style-type: none;
+        padding-left: 1em;
+        line-height: 180%;
+        margin: 0;
+      }
+      #toc > li > a {
+        font-weight: bold;
+      }
+
+       
+      .file-heading {
+        width: 100%;
+        display: table;
+        border-bottom: 1px solid #aaa;
+        margin: 4em 0 1.5em 0;
+      }
+      .file-heading h2 {
+        border: none;
+        display: table-cell;
+      }
+      .file-heading a {
+        text-align: right;
+        display: table-cell;
+      }
+
+       
+      .badge {
+        width: 1.6em;
+        height: 1.6em;
+        display: inline-block;
+
+        line-height: 1.6em;
+        text-align: center;
+        font-weight: bold;
+        font-size: 60%;
+
+        color: #89ba48;
+        background-color: #dff0c8;
+
+        margin: 0.5ex 1em 0.5ex -1em;
+        border: 1px solid #fbfbfb;
+        border-radius: 1ex;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  </head>
+
+  <body>
+
+    <h1 id="title">Protocol Documentation</h1>
+
+    <h2>Table of Contents</h2>
+
+    <div id="toc-container">
+      <ul id="toc">
+        
+          
+          <li>
+            <a href="#tide_chart.proto">tide_chart.proto</a>
+            <ul>
+              
+                <li>
+                  <a href="#.TideChartCommand"><span class="badge">M</span>TideChartCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartCommentBox"><span class="badge">M</span>TideChartCommentBox</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartCommentBoxCommand"><span class="badge">M</span>TideChartCommentBoxCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartData"><span class="badge">M</span>TideChartData</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartFile"><span class="badge">M</span>TideChartFile</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartFileCurrent"><span class="badge">M</span>TideChartFileCurrent</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartFileHeader"><span class="badge">M</span>TideChartFileHeader</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartGraph"><span class="badge">M</span>TideChartGraph</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartGraphCommand"><span class="badge">M</span>TideChartGraphCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartGroupCommand"><span class="badge">M</span>TideChartGroupCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartHeader"><span class="badge">M</span>TideChartHeader</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartLibrary"><span class="badge">M</span>TideChartLibrary</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartLink"><span class="badge">M</span>TideChartLink</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartLinkCommand"><span class="badge">M</span>TideChartLinkCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartMessage"><span class="badge">M</span>TideChartMessage</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartMethod"><span class="badge">M</span>TideChartMethod</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartMoveCommand"><span class="badge">M</span>TideChartMoveCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartNode"><span class="badge">M</span>TideChartNode</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartNodeCommand"><span class="badge">M</span>TideChartNodeCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartNote"><span class="badge">M</span>TideChartNote</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartNoteCommand"><span class="badge">M</span>TideChartNoteCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartPort"><span class="badge">M</span>TideChartPort</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartPortCommand"><span class="badge">M</span>TideChartPortCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartProperty"><span class="badge">M</span>TideChartProperty</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartPropertyCommand"><span class="badge">M</span>TideChartPropertyCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartRegion"><span class="badge">M</span>TideChartRegion</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartRegionCommand"><span class="badge">M</span>TideChartRegionCommand</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartSite"><span class="badge">M</span>TideChartSite</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartSource"><span class="badge">M</span>TideChartSource</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartWidget"><span class="badge">M</span>TideChartWidget</a>
+                </li>
+              
+                <li>
+                  <a href="#.TideChartWidgetCommand"><span class="badge">M</span>TideChartWidgetCommand</a>
+                </li>
+              
+              
+              
+              
+            </ul>
+          </li>
+        
+        <li><a href="#scalar-value-types">Scalar Value Types</a></li>
+      </ul>
+    </div>
+
+    
+      
+      <div class="file-heading">
+        <h2 id="tide_chart.proto">tide_chart.proto</h2><a href="#title">Top</a>
+      </div>
+      <p></p>
+
+      
+        <h3 id=".TideChartCommand">TideChartCommand</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>version</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for the change </p></td>
+                </tr>
+              
+                <tr>
+                  <td>target</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>graph id being targetd by the the change (used by chart level streams: working, remote) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>group</td>
+                  <td><a href="#TideChartGroupCommand">TideChartGroupCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>move</td>
+                  <td><a href="#TideChartMoveCommand">TideChartMoveCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>comment</td>
+                  <td><a href="#TideChartCommentBoxCommand">TideChartCommentBoxCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>widget</td>
+                  <td><a href="#TideChartWidgetCommand">TideChartWidgetCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>port</td>
+                  <td><a href="#TideChartPortCommand">TideChartPortCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>link</td>
+                  <td><a href="#TideChartLinkCommand">TideChartLinkCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>node</td>
+                  <td><a href="#TideChartNodeCommand">TideChartNodeCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>region</td>
+                  <td><a href="#TideChartRegionCommand">TideChartRegionCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>graph</td>
+                  <td><a href="#TideChartGraphCommand">TideChartGraphCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartPropertyCommand">TideChartPropertyCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>note</td>
+                  <td><a href="#TideChartNoteCommand">TideChartNoteCommand</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartCommentBox">TideChartCommentBox</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for the comment box </p></td>
+                </tr>
+              
+                <tr>
+                  <td>region</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>comment boxes can be relative to a region or to the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>posX</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>X position of the comment box </p></td>
+                </tr>
+              
+                <tr>
+                  <td>posY</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>Y position of the comment box </p></td>
+                </tr>
+              
+                <tr>
+                  <td>width</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>width of comment box - 0 indicates autosize to fit content </p></td>
+                </tr>
+              
+                <tr>
+                  <td>height</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>height of comment box - 0 indicates autosize to fit content </p></td>
+                </tr>
+              
+                <tr>
+                  <td>text</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>image</td>
+                  <td><a href="#bytes">bytes</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>icon</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>fontSize</td>
+                  <td><a href="#double">double</a></td>
+                  <td></td>
+                  <td><p>size of font to draw text </p></td>
+                </tr>
+              
+                <tr>
+                  <td>fontStyle</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>font style to use: Light, Regular, Bold, LightItalic, RegularItalic, BoldItalic </p></td>
+                </tr>
+              
+                <tr>
+                  <td>alignment</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>alignment of text within box (start (left):-1, middle:0, end (right):1) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>color</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>color used to draw text - default is black </p></td>
+                </tr>
+              
+                <tr>
+                  <td>background</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>color used to draw background - default is transparent </p></td>
+                </tr>
+              
+                <tr>
+                  <td>border</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>color used to draw border - default is none </p></td>
+                </tr>
+              
+                <tr>
+                  <td>raised</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag to indicate if a drop shadow should be used </p></td>
+                </tr>
+              
+                <tr>
+                  <td>reversed</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag to indicate if the text requires left to right layout order </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartCommentBoxCommand">TideChartCommentBoxCommand</h3>
+        <p>add, remove or update a comment box on the graph</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromComment</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toComment</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartData">TideChartData</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>version</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for this chart version </p></td>
+                </tr>
+              
+                <tr>
+                  <td>branch</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>branch this version is associated with </p></td>
+                </tr>
+              
+                <tr>
+                  <td>source</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>previous version </p></td>
+                </tr>
+              
+                <tr>
+                  <td>merge</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>last version id on branch merging into </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitDate</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitBy</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitDesc</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>short commit comment </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitNotes</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>longer commit notes </p></td>
+                </tr>
+              
+                <tr>
+                  <td>graphs</td>
+                  <td><a href="#TideChartGraph">TideChartGraph</a></td>
+                  <td>repeated</td>
+                  <td><p>graphs contained in the chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>configuration properties for the entire chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>notes</td>
+                  <td><a href="#TideChartNote">TideChartNote</a></td>
+                  <td>repeated</td>
+                  <td><p>note discussion for the entire chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>library</td>
+                  <td><a href="#TideChartLibrary">TideChartLibrary</a></td>
+                  <td>repeated</td>
+                  <td><p>source of node templates that can be added to graphs </p></td>
+                </tr>
+              
+                <tr>
+                  <td>global</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>global state variables shared by all graphs </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartFile">TideChartFile</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for this file </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name for the file (virtual file system) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>path</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>path for the file (virtual file system) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>origin</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>shared repository for tracking remote changes </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdDate</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdBy</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>chart</td>
+                  <td><a href="#TideChartData">TideChartData</a></td>
+                  <td></td>
+                  <td><p>the last committed version </p></td>
+                </tr>
+              
+                <tr>
+                  <td>working</td>
+                  <td><a href="#TideChartCommand">TideChartCommand</a></td>
+                  <td>repeated</td>
+                  <td><p>uncommitted local changes </p></td>
+                </tr>
+              
+                <tr>
+                  <td>remote</td>
+                  <td><a href="#TideChartCommand">TideChartCommand</a></td>
+                  <td>repeated</td>
+                  <td><p>unmerged changes committed remotely </p></td>
+                </tr>
+              
+                <tr>
+                  <td>history</td>
+                  <td><a href="#TideChartData">TideChartData</a></td>
+                  <td>repeated</td>
+                  <td><p>previous version history </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartFileCurrent">TideChartFileCurrent</h3>
+        <p>Read only the current version</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for this file </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name for the file (virtual file system) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>path</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>path for the file (virtual file system) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>origin</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>shared repository for tracking remote changes </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdDate</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdBy</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>chart</td>
+                  <td><a href="#TideChartData">TideChartData</a></td>
+                  <td></td>
+                  <td><p>the last committed version </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartFileHeader">TideChartFileHeader</h3>
+        <p>Read only the file header information</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for this file </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name for the file (virtual file system) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>path</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>path for the file (virtual file system) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>origin</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>shared repository for tracking remote changes </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdDate</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdBy</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartGraph">TideChartGraph</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id (global scope) for the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>graph type: behavior, opmode, internal </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>short name for the graph (unique chart scope) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>title</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>description name for the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>version</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>version of last command applied to the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>source</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>version the graph at the last committed chart version </p></td>
+                </tr>
+              
+                <tr>
+                  <td>nodes</td>
+                  <td><a href="#TideChartNode">TideChartNode</a></td>
+                  <td>repeated</td>
+                  <td><p>nodes in the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>links</td>
+                  <td><a href="#TideChartLink">TideChartLink</a></td>
+                  <td>repeated</td>
+                  <td><p>links in the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>regions</td>
+                  <td><a href="#TideChartRegion">TideChartRegion</a></td>
+                  <td>repeated</td>
+                  <td><p>regions in the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>comments</td>
+                  <td><a href="#TideChartCommentBox">TideChartCommentBox</a></td>
+                  <td>repeated</td>
+                  <td><p>comment boxes on the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>widgets</td>
+                  <td><a href="#TideChartWidget">TideChartWidget</a></td>
+                  <td>repeated</td>
+                  <td><p>interactive widgets for the graph (not part of the data flow graph: test instrudements, data visualization, debugging, etc.) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>a set of properties shared by all nodes on the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>history</td>
+                  <td><a href="#TideChartCommand">TideChartCommand</a></td>
+                  <td>repeated</td>
+                  <td><p>all the changes made from source version to current version </p></td>
+                </tr>
+              
+                <tr>
+                  <td>logging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this graph will trace messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>debugging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this graph is a debug breakpoint </p></td>
+                </tr>
+              
+                <tr>
+                  <td>paused</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this graph is paused (messages are queued) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>disabled</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this graph is disabled (messages are dropped) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>notes</td>
+                  <td><a href="#TideChartNote">TideChartNote</a></td>
+                  <td>repeated</td>
+                  <td><p>comments associated with this graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>script</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>a user script of custom code for the graph (non-message based thread initialization, global exception handling) </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartGraphCommand">TideChartGraphCommand</h3>
+        <p>adds or removes a graph from the chart</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromGraph</td>
+                  <td><a href="#TideChartGraph">TideChartGraph</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toGraph</td>
+                  <td><a href="#TideChartGraph">TideChartGraph</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartGroupCommand">TideChartGroupCommand</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>cmds</td>
+                  <td><a href="#TideChartCommand">TideChartCommand</a></td>
+                  <td>repeated</td>
+                  <td><p>a collection of updates that are applied atomically </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartHeader">TideChartHeader</h3>
+        <p>Read only the commit headers</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>version</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for this chart version </p></td>
+                </tr>
+              
+                <tr>
+                  <td>branch</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>branch this version is associated with </p></td>
+                </tr>
+              
+                <tr>
+                  <td>source</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>previous version </p></td>
+                </tr>
+              
+                <tr>
+                  <td>merge</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>last version id on branch merging into </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitDate</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitBy</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitDesc</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>short commit comment </p></td>
+                </tr>
+              
+                <tr>
+                  <td>commitNotes</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>longer commit notes </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartLibrary">TideChartLibrary</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for the library </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>fully qualified name for the library </p></td>
+                </tr>
+              
+                <tr>
+                  <td>title</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>descriptive title for the library </p></td>
+                </tr>
+              
+                <tr>
+                  <td>origin</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>repository containing referenced files </p></td>
+                </tr>
+              
+                <tr>
+                  <td>branch</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>branch containing referenced files </p></td>
+                </tr>
+              
+                <tr>
+                  <td>path</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>root path for files in the library </p></td>
+                </tr>
+              
+                <tr>
+                  <td>files</td>
+                  <td><a href="#TideChartSource">TideChartSource</a></td>
+                  <td>repeated</td>
+                  <td><p>files included in the library </p></td>
+                </tr>
+              
+                <tr>
+                  <td>methods</td>
+                  <td><a href="#TideChartMethod">TideChartMethod</a></td>
+                  <td>repeated</td>
+                  <td><p>definitions for methods implemented by the library </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartLink">TideChartLink</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>outNode</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>linking from node outports </p></td>
+                </tr>
+              
+                <tr>
+                  <td>outPort</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>outport linked from </p></td>
+                </tr>
+              
+                <tr>
+                  <td>inNode</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>linking to node inports </p></td>
+                </tr>
+              
+                <tr>
+                  <td>inPort</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>inport linked to </p></td>
+                </tr>
+              
+                <tr>
+                  <td>group</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>links can be associated into groups (usually just determins color) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>delay</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>automatic time delay (msec) added to messages (equivalent to routing thru a delay node) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>filter</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>a filter or conditional expression applied to messages on the link </p></td>
+                </tr>
+              
+                <tr>
+                  <td>logging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this link will trace messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>debugging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this link is a debug breakpoint </p></td>
+                </tr>
+              
+                <tr>
+                  <td>paused</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this link is paused (messages are queued) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>disabled</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this link is disabled (messages are dropped) </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartLinkCommand">TideChartLinkCommand</h3>
+        <p>add, remove or update a link on the graph</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromLink</td>
+                  <td><a href="#TideChartLink">TideChartLink</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toLink</td>
+                  <td><a href="#TideChartLink">TideChartLink</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartMessage">TideChartMessage</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>index</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>unique sequence number for all messages and sites (execution scope) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>timestamp</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>timestamp when the message was routed from the source </p></td>
+                </tr>
+              
+                <tr>
+                  <td>origin</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>first index of this message (messages are immutable) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>previous</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>previous index of this message based on message routing thru graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>source</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>source producer the message came from (index for a producer site) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>target</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>target consumer the message is going to (index for a consumer site) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>delayUntil</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>timestamp when the message arrives at the target site </p></td>
+                </tr>
+              
+                <tr>
+                  <td>holdToken</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>index to a producer site that will release the message to the target site (use with site filter to create conditional blocking) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>cancelToken</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>index to a producer site that will cancel the message (stop routing and remove from inports) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>type of message content </p></td>
+                </tr>
+              
+                <tr>
+                  <td>version</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>version incremented every time the message content changes for the same origin </p></td>
+                </tr>
+              
+                <tr>
+                  <td>jsonContent</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>string encoded message content </p></td>
+                </tr>
+              
+                <tr>
+                  <td>msgContent</td>
+                  <td><a href="#bytes">bytes</a></td>
+                  <td></td>
+                  <td><p>binary encoded message content </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartMethod">TideChartMethod</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for the method definition </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name of the method (unique to the library) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>extends</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>method extends (customizes) the implementation of another method </p></td>
+                </tr>
+              
+                <tr>
+                  <td>script</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>custom script that implements the node action for this method </p></td>
+                </tr>
+              
+                <tr>
+                  <td>inports</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td>repeated</td>
+                  <td><p>definition of inports for this method </p></td>
+                </tr>
+              
+                <tr>
+                  <td>outports</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td>repeated</td>
+                  <td><p>definition of outports for this methid </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td>repeated</td>
+                  <td><p>definition of property values used by the method defined like a port </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartMoveCommand">TideChartMoveCommand</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>node</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name of node being moved </p></td>
+                </tr>
+              
+                <tr>
+                  <td>fromPosX</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>previous X position on the chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>fromPosY</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>previous Y position on the chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toPosX</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>next X position on the chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toPosY</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>next Y position on the chart </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartNode">TideChartNode</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique (graph scope) name for this node </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>node type: action, behavior, inport, outport, trigger, event, filter, router, sequence, timeline, controller, navigation, gamepad, custom </p></td>
+                </tr>
+              
+                <tr>
+                  <td>posX</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>X position on the chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>posY</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>Y position on the chart </p></td>
+                </tr>
+              
+                <tr>
+                  <td>title</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>descriptive label for the name </p></td>
+                </tr>
+              
+                <tr>
+                  <td>icon</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name of icon (font-awesome) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>library</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name of the library for the nodes method (libraries allow implementation to be abstracted and modular) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>method</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name of method that implements the node&#39;s action </p></td>
+                </tr>
+              
+                <tr>
+                  <td>delay</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>automatic time delay (msec) added to output messages (equivalent to routing thru a delay node) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>inports</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td>repeated</td>
+                  <td><p>node inports to connect inbound links </p></td>
+                </tr>
+              
+                <tr>
+                  <td>outports</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td>repeated</td>
+                  <td><p>node outports to connect outbound links </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>configuration properties for this node (combines with graph properties and region properties) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>logging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this node will trace messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>debugging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this node is a debug breakpoint </p></td>
+                </tr>
+              
+                <tr>
+                  <td>paused</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this node is paused (messages are queued) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>disabled</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this node is disabled (messages are dropped) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>notes</td>
+                  <td><a href="#TideChartNote">TideChartNote</a></td>
+                  <td>repeated</td>
+                  <td><p>comments associated with this node </p></td>
+                </tr>
+              
+                <tr>
+                  <td>script</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>a user script of custom code to implement the node&#39;s action, filter or mux/demux operations </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartNodeCommand">TideChartNodeCommand</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromNode</td>
+                  <td><a href="#TideChartNode">TideChartNode</a></td>
+                  <td></td>
+                  <td><p>add, remove or update a node on the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toNode</td>
+                  <td><a href="#TideChartNode">TideChartNode</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartNote">TideChartNote</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for the note </p></td>
+                </tr>
+              
+                <tr>
+                  <td>replyTo</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>reference to note this replies to </p></td>
+                </tr>
+              
+                <tr>
+                  <td>changeTo</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>reference to note this replaces </p></td>
+                </tr>
+              
+                <tr>
+                  <td>content</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>content of note (Markdown and :icons allowed) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdBy</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>user that created the note </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdDate</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>datetime the note was created </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartNoteCommand">TideChartNoteCommand</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>notes</td>
+                  <td><a href="#TideChartNote">TideChartNote</a></td>
+                  <td>repeated</td>
+                  <td><p>a set of notes being added or removed </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>type of update: add, remove </p></td>
+                </tr>
+              
+                <tr>
+                  <td>node</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>node reference (graph-id:node-name) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>region</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>region reference (graph-id:region-name) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>graph</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>graph reference (graph-id) </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartPort">TideChartPort</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>type of port: inport, outport </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>port name (unique to node scope) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>ordinal</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>position in the node&#39;s set of inports or outports </p></td>
+                </tr>
+              
+                <tr>
+                  <td>default</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>used by methods to indicate which ports are used for default in/out routing </p></td>
+                </tr>
+              
+                <tr>
+                  <td>required</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>used by methods to indicate the port must exist </p></td>
+                </tr>
+              
+                <tr>
+                  <td>allowed</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p>used by methods to define what value / message types are allowed to be </p></td>
+                </tr>
+              
+                <tr>
+                  <td>hint</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>used by methods to describe how a port should be used </p></td>
+                </tr>
+              
+                <tr>
+                  <td>constant</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td></td>
+                  <td><p>a constant value applied to the inport </p></td>
+                </tr>
+              
+                <tr>
+                  <td>trigger</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>a trigger the inport automatically reads from </p></td>
+                </tr>
+              
+                <tr>
+                  <td>filter</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>a filter or conditional expressions applied to messages received or sent </p></td>
+                </tr>
+              
+                <tr>
+                  <td>event</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>an event the outport automatically writes to </p></td>
+                </tr>
+              
+                <tr>
+                  <td>sync</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>creates a syncronizing group between ports </p></td>
+                </tr>
+              
+                <tr>
+                  <td>block</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>determines if the port will block to wait for the rest of the port group </p></td>
+                </tr>
+              
+                <tr>
+                  <td>queue</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>determines if messages should queue while blocking or replace with latest received </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartPortCommand">TideChartPortCommand</h3>
+        <p>add, remove or update a port on the graph</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromPort</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toPort</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartProperty">TideChartProperty</h3>
+        <p>a recursive data type that provides configuration values for graphs, regions and nodes</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>value</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>create a heirarchy of properties (repeate names to make collections) </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartPropertyCommand">TideChartPropertyCommand</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromProps</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>previous values of the properties (only for included updates) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toProps</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>new values of the properties (only include changes) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>type of update: add, update or remove </p></td>
+                </tr>
+              
+                <tr>
+                  <td>node</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>node reference (graph-id:node-name) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>region</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>region reference (graph-id:region-name) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>widget</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>widget reference (widget-id) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>graph</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>graph reference (graph-id) </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartRegion">TideChartRegion</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique (graph scope) name for this region </p></td>
+                </tr>
+              
+                <tr>
+                  <td>title</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>a descriptive label for the group </p></td>
+                </tr>
+              
+                <tr>
+                  <td>nodes</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p>a collection of nodes contained within this region (nodes can be in multiple regions) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>group</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>regions can be associated into groups (usually just determines color) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>scope</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>an event scope used to limit (or exclude) events to route to only nodes in the region </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>a set of properties shared by all nodes in the region </p></td>
+                </tr>
+              
+                <tr>
+                  <td>logging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this region will trace messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>debugging</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this region is a debug breakpoint </p></td>
+                </tr>
+              
+                <tr>
+                  <td>paused</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this region is paused (messages are queued) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>disabled</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>flag indicating this region is disabled (messages are dropped) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>notes</td>
+                  <td><a href="#TideChartNote">TideChartNote</a></td>
+                  <td>repeated</td>
+                  <td><p>comments associated with this region </p></td>
+                </tr>
+              
+                <tr>
+                  <td>script</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>a user script of custom code for the region (interacting with non-message based threads, scoped exception handling) </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartRegionCommand">TideChartRegionCommand</h3>
+        <p>adds, remove or update a region on the graph</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromRegion</td>
+                  <td><a href="#TideChartRegion">TideChartRegion</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toRegion</td>
+                  <td><a href="#TideChartRegion">TideChartRegion</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartSite">TideChartSite</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>index</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>An index that uniquely identifies all message producers and consumers sites and sequences with messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>stack</td>
+                  <td><a href="#TideChartSite">TideChartSite</a></td>
+                  <td>repeated</td>
+                  <td><p>used to trace origin when calling into behavior nodes </p></td>
+                </tr>
+              
+                <tr>
+                  <td>path</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>Path in global state storage </p></td>
+                </tr>
+              
+                <tr>
+                  <td>trigger</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>Source that produced an event (when the source isn&#39;t a node) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>event</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>Name of event (used for event sources and targets) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>scope</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p>Used for scoped event sites </p></td>
+                </tr>
+              
+                <tr>
+                  <td>filter</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>A filter that can conditionally pass messages thru the site (filtered messages are dropped) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>graph</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>graph-id      - graph scripts and graph nodes can generate messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>region</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>region-name   - region scripts can generate messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>node</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>node-name     - node actions and node ports an generate messages </p></td>
+                </tr>
+              
+                <tr>
+                  <td>port</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>port-name     - ports can generate and receive messages </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartSource">TideChartSource</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for this source file </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>name of the source file </p></td>
+                </tr>
+              
+                <tr>
+                  <td>path</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>relative path of the source file </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdDate</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>createdBy</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>version</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>reference to the exact version of the file </p></td>
+                </tr>
+              
+                <tr>
+                  <td>script</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>contents of the file </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartWidget">TideChartWidget</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>unique id for the widget </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>type of widget </p></td>
+                </tr>
+              
+                <tr>
+                  <td>title</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>description title of the widget </p></td>
+                </tr>
+              
+                <tr>
+                  <td>region</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>comment boxes can be relative to a region or to the graph </p></td>
+                </tr>
+              
+                <tr>
+                  <td>posX</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>X position of the comment box </p></td>
+                </tr>
+              
+                <tr>
+                  <td>posY</td>
+                  <td><a href="#sint32">sint32</a></td>
+                  <td></td>
+                  <td><p>Y position of the comment box </p></td>
+                </tr>
+              
+                <tr>
+                  <td>width</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>width of comment box - 0 indicates autosize to fit content </p></td>
+                </tr>
+              
+                <tr>
+                  <td>height</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p>height of comment box - 0 indicates autosize to fit content </p></td>
+                </tr>
+              
+                <tr>
+                  <td>link</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>port</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>node</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>props</td>
+                  <td><a href="#TideChartProperty">TideChartProperty</a></td>
+                  <td>repeated</td>
+                  <td><p>widgets can have configuration paremeters </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id=".TideChartWidgetCommand">TideChartWidgetCommand</h3>
+        <p>add, remove or update a widget on the graph</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>fromWidget</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>toWidget</td>
+                  <td><a href="#TideChartPort">TideChartPort</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+
+      
+
+      
+
+      
+    
+
+    <h2 id="scalar-value-types">Scalar Value Types</h2>
+    <table class="scalar-value-types-table">
+      <thead>
+        <tr><td>.proto Type</td><td>Notes</td><td>C++ Type</td><td>Java Type</td><td>Python Type</td></tr>
+      </thead>
+      <tbody>
+        
+          <tr id="double">
+            <td>double</td>
+            <td></td>
+            <td>double</td>
+            <td>double</td>
+            <td>float</td>
+          </tr>
+        
+          <tr id="float">
+            <td>float</td>
+            <td></td>
+            <td>float</td>
+            <td>float</td>
+            <td>float</td>
+          </tr>
+        
+          <tr id="int32">
+            <td>int32</td>
+            <td>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead.</td>
+            <td>int32</td>
+            <td>int</td>
+            <td>int</td>
+          </tr>
+        
+          <tr id="int64">
+            <td>int64</td>
+            <td>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead.</td>
+            <td>int64</td>
+            <td>long</td>
+            <td>int/long</td>
+          </tr>
+        
+          <tr id="uint32">
+            <td>uint32</td>
+            <td>Uses variable-length encoding.</td>
+            <td>uint32</td>
+            <td>int</td>
+            <td>int/long</td>
+          </tr>
+        
+          <tr id="uint64">
+            <td>uint64</td>
+            <td>Uses variable-length encoding.</td>
+            <td>uint64</td>
+            <td>long</td>
+            <td>int/long</td>
+          </tr>
+        
+          <tr id="sint32">
+            <td>sint32</td>
+            <td>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s.</td>
+            <td>int32</td>
+            <td>int</td>
+            <td>int</td>
+          </tr>
+        
+          <tr id="sint64">
+            <td>sint64</td>
+            <td>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s.</td>
+            <td>int64</td>
+            <td>long</td>
+            <td>int/long</td>
+          </tr>
+        
+          <tr id="fixed32">
+            <td>fixed32</td>
+            <td>Always four bytes. More efficient than uint32 if values are often greater than 2^28.</td>
+            <td>uint32</td>
+            <td>int</td>
+            <td>int</td>
+          </tr>
+        
+          <tr id="fixed64">
+            <td>fixed64</td>
+            <td>Always eight bytes. More efficient than uint64 if values are often greater than 2^56.</td>
+            <td>uint64</td>
+            <td>long</td>
+            <td>int/long</td>
+          </tr>
+        
+          <tr id="sfixed32">
+            <td>sfixed32</td>
+            <td>Always four bytes.</td>
+            <td>int32</td>
+            <td>int</td>
+            <td>int</td>
+          </tr>
+        
+          <tr id="sfixed64">
+            <td>sfixed64</td>
+            <td>Always eight bytes.</td>
+            <td>int64</td>
+            <td>long</td>
+            <td>int/long</td>
+          </tr>
+        
+          <tr id="bool">
+            <td>bool</td>
+            <td></td>
+            <td>bool</td>
+            <td>boolean</td>
+            <td>boolean</td>
+          </tr>
+        
+          <tr id="string">
+            <td>string</td>
+            <td>A string must always contain UTF-8 encoded or 7-bit ASCII text.</td>
+            <td>string</td>
+            <td>String</td>
+            <td>str/unicode</td>
+          </tr>
+        
+          <tr id="bytes">
+            <td>bytes</td>
+            <td>May contain any arbitrary sequence of bytes.</td>
+            <td>string</td>
+            <td>ByteString</td>
+            <td>str</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
+

@@ -1,0 +1,1 @@
+protoc --plugin=protoc-gen-doc=.\bin\protoc-gen-doc.exe --doc_out=. --doc_opt=markdown,README.md tide_chart.proto
