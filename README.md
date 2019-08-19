@@ -282,6 +282,7 @@ Read only the file header information
 | type | [string](#string) |  | graph type: behavior, opmode, internal |
 | name | [string](#string) |  | short name for the graph (unique chart scope) |
 | title | [string](#string) |  | description name for the graph |
+| icon | [string](#string) |  | icon for the graph |
 | version | [string](#string) |  | version of last command applied to the graph |
 | source | [string](#string) |  | version the graph at the last committed chart version |
 | nodes | [TideChartNode](#TideChartNode) | repeated | nodes in the graph |

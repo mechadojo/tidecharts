@@ -2450,27 +2450,28 @@ class TideChartGraph :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kNodesFieldNumber = 7,
-    kLinksFieldNumber = 8,
-    kRegionsFieldNumber = 9,
-    kCommentsFieldNumber = 10,
-    kWidgetsFieldNumber = 11,
-    kPropsFieldNumber = 12,
-    kHistoryFieldNumber = 13,
+    kNodesFieldNumber = 8,
+    kLinksFieldNumber = 9,
+    kRegionsFieldNumber = 10,
+    kCommentsFieldNumber = 11,
+    kWidgetsFieldNumber = 12,
+    kPropsFieldNumber = 13,
+    kHistoryFieldNumber = 14,
     kNotesFieldNumber = 20,
     kIdFieldNumber = 1,
     kTypeFieldNumber = 2,
     kNameFieldNumber = 3,
     kTitleFieldNumber = 4,
-    kVersionFieldNumber = 5,
-    kSourceFieldNumber = 6,
+    kIconFieldNumber = 5,
+    kVersionFieldNumber = 6,
+    kSourceFieldNumber = 7,
     kScriptFieldNumber = 21,
     kIsLoggingFieldNumber = 16,
     kIsDebuggingFieldNumber = 17,
     kIsPausedFieldNumber = 18,
     kIsDisabledFieldNumber = 19,
   };
-  // repeated .TideChartNode nodes = 7;
+  // repeated .TideChartNode nodes = 8;
   int nodes_size() const;
   void clear_nodes();
   ::TideChartNode* mutable_nodes(int index);
@@ -2481,7 +2482,7 @@ class TideChartGraph :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNode >&
       nodes() const;
 
-  // repeated .TideChartLink links = 8;
+  // repeated .TideChartLink links = 9;
   int links_size() const;
   void clear_links();
   ::TideChartLink* mutable_links(int index);
@@ -2492,7 +2493,7 @@ class TideChartGraph :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartLink >&
       links() const;
 
-  // repeated .TideChartRegion regions = 9;
+  // repeated .TideChartRegion regions = 10;
   int regions_size() const;
   void clear_regions();
   ::TideChartRegion* mutable_regions(int index);
@@ -2503,7 +2504,7 @@ class TideChartGraph :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartRegion >&
       regions() const;
 
-  // repeated .TideChartCommentBox comments = 10;
+  // repeated .TideChartCommentBox comments = 11;
   int comments_size() const;
   void clear_comments();
   ::TideChartCommentBox* mutable_comments(int index);
@@ -2514,7 +2515,7 @@ class TideChartGraph :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartCommentBox >&
       comments() const;
 
-  // repeated .TideChartWidget widgets = 11;
+  // repeated .TideChartWidget widgets = 12;
   int widgets_size() const;
   void clear_widgets();
   ::TideChartWidget* mutable_widgets(int index);
@@ -2525,7 +2526,7 @@ class TideChartGraph :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartWidget >&
       widgets() const;
 
-  // repeated .TideChartProperty props = 12;
+  // repeated .TideChartProperty props = 13;
   int props_size() const;
   void clear_props();
   ::TideChartProperty* mutable_props(int index);
@@ -2536,7 +2537,7 @@ class TideChartGraph :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
       props() const;
 
-  // repeated .TideChartCommand history = 13;
+  // repeated .TideChartCommand history = 14;
   int history_size() const;
   void clear_history();
   ::TideChartCommand* mutable_history(int index);
@@ -2602,7 +2603,18 @@ class TideChartGraph :
   std::string* release_title();
   void set_allocated_title(std::string* title);
 
-  // string version = 5;
+  // string icon = 5;
+  void clear_icon();
+  const std::string& icon() const;
+  void set_icon(const std::string& value);
+  void set_icon(std::string&& value);
+  void set_icon(const char* value);
+  void set_icon(const char* value, size_t size);
+  std::string* mutable_icon();
+  std::string* release_icon();
+  void set_allocated_icon(std::string* icon);
+
+  // string version = 6;
   void clear_version();
   const std::string& version() const;
   void set_version(const std::string& value);
@@ -2613,7 +2625,7 @@ class TideChartGraph :
   std::string* release_version();
   void set_allocated_version(std::string* version);
 
-  // string source = 6;
+  // string source = 7;
   void clear_source();
   const std::string& source() const;
   void set_source(const std::string& value);
@@ -2672,6 +2684,7 @@ class TideChartGraph :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr title_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr icon_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr version_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr source_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr script_;
@@ -11701,7 +11714,58 @@ inline void TideChartGraph::set_allocated_title(std::string* title) {
   // @@protoc_insertion_point(field_set_allocated:TideChartGraph.title)
 }
 
-// string version = 5;
+// string icon = 5;
+inline void TideChartGraph::clear_icon() {
+  icon_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& TideChartGraph::icon() const {
+  // @@protoc_insertion_point(field_get:TideChartGraph.icon)
+  return icon_.GetNoArena();
+}
+inline void TideChartGraph::set_icon(const std::string& value) {
+  
+  icon_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartGraph.icon)
+}
+inline void TideChartGraph::set_icon(std::string&& value) {
+  
+  icon_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:TideChartGraph.icon)
+}
+inline void TideChartGraph::set_icon(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  icon_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartGraph.icon)
+}
+inline void TideChartGraph::set_icon(const char* value, size_t size) {
+  
+  icon_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:TideChartGraph.icon)
+}
+inline std::string* TideChartGraph::mutable_icon() {
+  
+  // @@protoc_insertion_point(field_mutable:TideChartGraph.icon)
+  return icon_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* TideChartGraph::release_icon() {
+  // @@protoc_insertion_point(field_release:TideChartGraph.icon)
+  
+  return icon_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void TideChartGraph::set_allocated_icon(std::string* icon) {
+  if (icon != nullptr) {
+    
+  } else {
+    
+  }
+  icon_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), icon);
+  // @@protoc_insertion_point(field_set_allocated:TideChartGraph.icon)
+}
+
+// string version = 6;
 inline void TideChartGraph::clear_version() {
   version_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -11752,7 +11816,7 @@ inline void TideChartGraph::set_allocated_version(std::string* version) {
   // @@protoc_insertion_point(field_set_allocated:TideChartGraph.version)
 }
 
-// string source = 6;
+// string source = 7;
 inline void TideChartGraph::clear_source() {
   source_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -11803,7 +11867,7 @@ inline void TideChartGraph::set_allocated_source(std::string* source) {
   // @@protoc_insertion_point(field_set_allocated:TideChartGraph.source)
 }
 
-// repeated .TideChartNode nodes = 7;
+// repeated .TideChartNode nodes = 8;
 inline int TideChartGraph::nodes_size() const {
   return nodes_.size();
 }
@@ -11833,7 +11897,7 @@ TideChartGraph::nodes() const {
   return nodes_;
 }
 
-// repeated .TideChartLink links = 8;
+// repeated .TideChartLink links = 9;
 inline int TideChartGraph::links_size() const {
   return links_.size();
 }
@@ -11863,7 +11927,7 @@ TideChartGraph::links() const {
   return links_;
 }
 
-// repeated .TideChartRegion regions = 9;
+// repeated .TideChartRegion regions = 10;
 inline int TideChartGraph::regions_size() const {
   return regions_.size();
 }
@@ -11893,7 +11957,7 @@ TideChartGraph::regions() const {
   return regions_;
 }
 
-// repeated .TideChartCommentBox comments = 10;
+// repeated .TideChartCommentBox comments = 11;
 inline int TideChartGraph::comments_size() const {
   return comments_.size();
 }
@@ -11923,7 +11987,7 @@ TideChartGraph::comments() const {
   return comments_;
 }
 
-// repeated .TideChartWidget widgets = 11;
+// repeated .TideChartWidget widgets = 12;
 inline int TideChartGraph::widgets_size() const {
   return widgets_.size();
 }
@@ -11953,7 +12017,7 @@ TideChartGraph::widgets() const {
   return widgets_;
 }
 
-// repeated .TideChartProperty props = 12;
+// repeated .TideChartProperty props = 13;
 inline int TideChartGraph::props_size() const {
   return props_.size();
 }
@@ -11983,7 +12047,7 @@ TideChartGraph::props() const {
   return props_;
 }
 
-// repeated .TideChartCommand history = 13;
+// repeated .TideChartCommand history = 14;
 inline int TideChartGraph::history_size() const {
   return history_.size();
 }

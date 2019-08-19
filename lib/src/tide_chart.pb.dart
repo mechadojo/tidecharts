@@ -748,15 +748,16 @@ class TideChartGraph extends $pb.GeneratedMessage {
     ..aOS(2, 'type')
     ..aOS(3, 'name')
     ..aOS(4, 'title')
-    ..aOS(5, 'version')
-    ..aOS(6, 'source')
-    ..pc<TideChartNode>(7, 'nodes', $pb.PbFieldType.PM,TideChartNode.create)
-    ..pc<TideChartLink>(8, 'links', $pb.PbFieldType.PM,TideChartLink.create)
-    ..pc<TideChartRegion>(9, 'regions', $pb.PbFieldType.PM,TideChartRegion.create)
-    ..pc<TideChartCommentBox>(10, 'comments', $pb.PbFieldType.PM,TideChartCommentBox.create)
-    ..pc<TideChartWidget>(11, 'widgets', $pb.PbFieldType.PM,TideChartWidget.create)
-    ..pc<TideChartProperty>(12, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
-    ..pc<TideChartCommand>(13, 'history', $pb.PbFieldType.PM,TideChartCommand.create)
+    ..aOS(5, 'icon')
+    ..aOS(6, 'version')
+    ..aOS(7, 'source')
+    ..pc<TideChartNode>(8, 'nodes', $pb.PbFieldType.PM,TideChartNode.create)
+    ..pc<TideChartLink>(9, 'links', $pb.PbFieldType.PM,TideChartLink.create)
+    ..pc<TideChartRegion>(10, 'regions', $pb.PbFieldType.PM,TideChartRegion.create)
+    ..pc<TideChartCommentBox>(11, 'comments', $pb.PbFieldType.PM,TideChartCommentBox.create)
+    ..pc<TideChartWidget>(12, 'widgets', $pb.PbFieldType.PM,TideChartWidget.create)
+    ..pc<TideChartProperty>(13, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..pc<TideChartCommand>(14, 'history', $pb.PbFieldType.PM,TideChartCommand.create)
     ..aOB(16, 'isLogging')
     ..aOB(17, 'isDebugging')
     ..aOB(18, 'isPaused')
@@ -800,55 +801,60 @@ class TideChartGraph extends $pb.GeneratedMessage {
   $core.bool hasTitle() => $_has(3);
   void clearTitle() => clearField(4);
 
-  $core.String get version => $_getS(4, '');
-  set version($core.String v) { $_setString(4, v); }
-  $core.bool hasVersion() => $_has(4);
-  void clearVersion() => clearField(5);
+  $core.String get icon => $_getS(4, '');
+  set icon($core.String v) { $_setString(4, v); }
+  $core.bool hasIcon() => $_has(4);
+  void clearIcon() => clearField(5);
 
-  $core.String get source => $_getS(5, '');
-  set source($core.String v) { $_setString(5, v); }
-  $core.bool hasSource() => $_has(5);
-  void clearSource() => clearField(6);
+  $core.String get version => $_getS(5, '');
+  set version($core.String v) { $_setString(5, v); }
+  $core.bool hasVersion() => $_has(5);
+  void clearVersion() => clearField(6);
 
-  $core.List<TideChartNode> get nodes => $_getList(6);
+  $core.String get source => $_getS(6, '');
+  set source($core.String v) { $_setString(6, v); }
+  $core.bool hasSource() => $_has(6);
+  void clearSource() => clearField(7);
 
-  $core.List<TideChartLink> get links => $_getList(7);
+  $core.List<TideChartNode> get nodes => $_getList(7);
 
-  $core.List<TideChartRegion> get regions => $_getList(8);
+  $core.List<TideChartLink> get links => $_getList(8);
 
-  $core.List<TideChartCommentBox> get comments => $_getList(9);
+  $core.List<TideChartRegion> get regions => $_getList(9);
 
-  $core.List<TideChartWidget> get widgets => $_getList(10);
+  $core.List<TideChartCommentBox> get comments => $_getList(10);
 
-  $core.List<TideChartProperty> get props => $_getList(11);
+  $core.List<TideChartWidget> get widgets => $_getList(11);
 
-  $core.List<TideChartCommand> get history => $_getList(12);
+  $core.List<TideChartProperty> get props => $_getList(12);
 
-  $core.bool get isLogging => $_get(13, false);
-  set isLogging($core.bool v) { $_setBool(13, v); }
-  $core.bool hasIsLogging() => $_has(13);
+  $core.List<TideChartCommand> get history => $_getList(13);
+
+  $core.bool get isLogging => $_get(14, false);
+  set isLogging($core.bool v) { $_setBool(14, v); }
+  $core.bool hasIsLogging() => $_has(14);
   void clearIsLogging() => clearField(16);
 
-  $core.bool get isDebugging => $_get(14, false);
-  set isDebugging($core.bool v) { $_setBool(14, v); }
-  $core.bool hasIsDebugging() => $_has(14);
+  $core.bool get isDebugging => $_get(15, false);
+  set isDebugging($core.bool v) { $_setBool(15, v); }
+  $core.bool hasIsDebugging() => $_has(15);
   void clearIsDebugging() => clearField(17);
 
-  $core.bool get isPaused => $_get(15, false);
-  set isPaused($core.bool v) { $_setBool(15, v); }
-  $core.bool hasIsPaused() => $_has(15);
+  $core.bool get isPaused => $_get(16, false);
+  set isPaused($core.bool v) { $_setBool(16, v); }
+  $core.bool hasIsPaused() => $_has(16);
   void clearIsPaused() => clearField(18);
 
-  $core.bool get isDisabled => $_get(16, false);
-  set isDisabled($core.bool v) { $_setBool(16, v); }
-  $core.bool hasIsDisabled() => $_has(16);
+  $core.bool get isDisabled => $_get(17, false);
+  set isDisabled($core.bool v) { $_setBool(17, v); }
+  $core.bool hasIsDisabled() => $_has(17);
   void clearIsDisabled() => clearField(19);
 
-  $core.List<TideChartNote> get notes => $_getList(17);
+  $core.List<TideChartNote> get notes => $_getList(18);
 
-  $core.String get script => $_getS(18, '');
-  set script($core.String v) { $_setString(18, v); }
-  $core.bool hasScript() => $_has(18);
+  $core.String get script => $_getS(19, '');
+  set script($core.String v) { $_setString(19, v); }
+  $core.bool hasScript() => $_has(19);
   void clearScript() => clearField(21);
 }
 

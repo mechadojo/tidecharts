@@ -155,18 +155,19 @@ message TideChartGraph {
     string type = 2;                            // graph type: behavior, opmode, internal       
     string name = 3;                            // short name for the graph (unique chart scope)
     string title = 4;                           // description name for the graph
+    string icon = 5;                            // icon for the graph
 
-    string version = 5;                         // version of last command applied to the graph
-    string source = 6;                          // version the graph at the last committed chart version
+    string version = 6;                         // version of last command applied to the graph
+    string source = 7;                          // version the graph at the last committed chart version
     
-    repeated TideChartNode nodes = 7;           // nodes in the graph
-    repeated TideChartLink links = 8;           // links in the graph
-    repeated TideChartRegion regions = 9;       // regions in the graph
-    repeated TideChartCommentBox comments = 10; // comment boxes on the graph
-    repeated TideChartWidget widgets = 11;      // interactive widgets for the graph (not part of the data flow graph: test instrudements, data visualization, debugging, etc.)
+    repeated TideChartNode nodes = 8;           // nodes in the graph
+    repeated TideChartLink links = 9;           // links in the graph
+    repeated TideChartRegion regions = 10;       // regions in the graph
+    repeated TideChartCommentBox comments = 11; // comment boxes on the graph
+    repeated TideChartWidget widgets = 12;      // interactive widgets for the graph (not part of the data flow graph: test instrudements, data visualization, debugging, etc.)
 
-    repeated TideChartProperty props = 12;      // a set of properties shared by all nodes on the graph
-    repeated TideChartCommand history = 13;     // all the changes made from source version to current version
+    repeated TideChartProperty props = 13;      // a set of properties shared by all nodes on the graph
+    repeated TideChartCommand history = 14;     // all the changes made from source version to current version
             
     bool isLogging = 16;                          // flag indicating this graph will trace messages
     bool isDebugging = 17;                        // flag indicating this graph is a debug breakpoint
