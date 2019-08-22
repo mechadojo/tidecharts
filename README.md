@@ -615,7 +615,7 @@ Read only the commit headers
 | isRequired | [bool](#bool) |  | used by methods to indicate the port must exist |
 | allowed | [string](#string) | repeated | used by methods to define what value / message types are allowed to be |
 | hint | [string](#string) |  | used by methods to describe how a port should be used |
-| constant | [TideChartProperty](#TideChartProperty) |  | a constant value applied to the inport |
+| value | [string](#string) |  | a constant value applied to the inport |
 | trigger | [string](#string) |  | a trigger the inport automatically reads from |
 | filter | [string](#string) |  | a filter or conditional expressions applied to messages received or sent |
 | event | [string](#string) |  | an event the outport automatically writes to |
@@ -654,8 +654,10 @@ a recursive data type that provides configuration values for graphs, regions and
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | name | [string](#string) |  | property field name |
-| type | [string](#string) |  | property value type |
-| value | [string](#string) |  | property value as a string |
+| boolValue | [bool](#bool) |  |  |
+| strValue | [string](#string) |  |  |
+| longValue | [sint64](#sint64) |  |  |
+| doubleValue | [double](#double) |  |  |
 | props | [TideChartProperty](#TideChartProperty) | repeated | create a heirarchy of properties (repeated names form a collection) |
 
 

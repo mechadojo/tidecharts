@@ -293,6 +293,14 @@ class TideChartProperty :
   }
   static const TideChartProperty& default_instance();
 
+  enum ValueCase {
+    kBoolValue = 2,
+    kStrValue = 3,
+    kLongValue = 4,
+    kDoubleValue = 5,
+    VALUE_NOT_SET = 0,
+  };
+
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
   static inline const TideChartProperty* internal_default_instance() {
     return reinterpret_cast<const TideChartProperty*>(
@@ -370,12 +378,14 @@ class TideChartProperty :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kPropsFieldNumber = 4,
+    kPropsFieldNumber = 6,
     kNameFieldNumber = 1,
-    kTypeFieldNumber = 2,
-    kValueFieldNumber = 3,
+    kBoolValueFieldNumber = 2,
+    kStrValueFieldNumber = 3,
+    kLongValueFieldNumber = 4,
+    kDoubleValueFieldNumber = 5,
   };
-  // repeated .TideChartProperty props = 4;
+  // repeated .TideChartProperty props = 6;
   int props_size() const;
   void clear_props();
   ::TideChartProperty* mutable_props(int index);
@@ -397,38 +407,70 @@ class TideChartProperty :
   std::string* release_name();
   void set_allocated_name(std::string* name);
 
-  // string type = 2;
-  void clear_type();
-  const std::string& type() const;
-  void set_type(const std::string& value);
-  void set_type(std::string&& value);
-  void set_type(const char* value);
-  void set_type(const char* value, size_t size);
-  std::string* mutable_type();
-  std::string* release_type();
-  void set_allocated_type(std::string* type);
+  // bool boolValue = 2;
+  private:
+  bool has_boolvalue() const;
+  public:
+  void clear_boolvalue();
+  bool boolvalue() const;
+  void set_boolvalue(bool value);
 
-  // string value = 3;
+  // string strValue = 3;
+  private:
+  bool has_strvalue() const;
+  public:
+  void clear_strvalue();
+  const std::string& strvalue() const;
+  void set_strvalue(const std::string& value);
+  void set_strvalue(std::string&& value);
+  void set_strvalue(const char* value);
+  void set_strvalue(const char* value, size_t size);
+  std::string* mutable_strvalue();
+  std::string* release_strvalue();
+  void set_allocated_strvalue(std::string* strvalue);
+
+  // sint64 longValue = 4;
+  private:
+  bool has_longvalue() const;
+  public:
+  void clear_longvalue();
+  ::PROTOBUF_NAMESPACE_ID::int64 longvalue() const;
+  void set_longvalue(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // double doubleValue = 5;
+  private:
+  bool has_doublevalue() const;
+  public:
+  void clear_doublevalue();
+  double doublevalue() const;
+  void set_doublevalue(double value);
+
   void clear_value();
-  const std::string& value() const;
-  void set_value(const std::string& value);
-  void set_value(std::string&& value);
-  void set_value(const char* value);
-  void set_value(const char* value, size_t size);
-  std::string* mutable_value();
-  std::string* release_value();
-  void set_allocated_value(std::string* value);
-
+  ValueCase value_case() const;
   // @@protoc_insertion_point(class_scope:TideChartProperty)
  private:
   class _Internal;
+  void set_has_boolvalue();
+  void set_has_strvalue();
+  void set_has_longvalue();
+  void set_has_doublevalue();
+
+  inline bool has_value() const;
+  inline void clear_has_value();
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > props_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr value_;
+  union ValueUnion {
+    ValueUnion() {}
+    bool boolvalue_;
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr strvalue_;
+    ::PROTOBUF_NAMESPACE_ID::int64 longvalue_;
+    double doublevalue_;
+  } value_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 _oneof_case_[1];
+
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1158,11 +1200,11 @@ class TideChartPort :
     kNodeFieldNumber = 2,
     kNameFieldNumber = 3,
     kHintFieldNumber = 8,
+    kValueFieldNumber = 9,
     kTriggerFieldNumber = 10,
     kFilterFieldNumber = 11,
     kEventFieldNumber = 12,
     kSyncGroupFieldNumber = 13,
-    kConstantFieldNumber = 9,
     kOrdinalFieldNumber = 4,
     kIsDefaultFieldNumber = 5,
     kIsRequiredFieldNumber = 6,
@@ -1230,6 +1272,17 @@ class TideChartPort :
   std::string* release_hint();
   void set_allocated_hint(std::string* hint);
 
+  // string value = 9;
+  void clear_value();
+  const std::string& value() const;
+  void set_value(const std::string& value);
+  void set_value(std::string&& value);
+  void set_value(const char* value);
+  void set_value(const char* value, size_t size);
+  std::string* mutable_value();
+  std::string* release_value();
+  void set_allocated_value(std::string* value);
+
   // string trigger = 10;
   void clear_trigger();
   const std::string& trigger() const;
@@ -1274,14 +1327,6 @@ class TideChartPort :
   std::string* release_syncgroup();
   void set_allocated_syncgroup(std::string* syncgroup);
 
-  // .TideChartProperty constant = 9;
-  bool has_constant() const;
-  void clear_constant();
-  const ::TideChartProperty& constant() const;
-  ::TideChartProperty* release_constant();
-  ::TideChartProperty* mutable_constant();
-  void set_allocated_constant(::TideChartProperty* constant);
-
   // int32 ordinal = 4;
   void clear_ordinal();
   ::PROTOBUF_NAMESPACE_ID::int32 ordinal() const;
@@ -1317,11 +1362,11 @@ class TideChartPort :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr node_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr hint_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr value_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr trigger_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr filter_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr event_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr syncgroup_;
-  ::TideChartProperty* constant_;
   ::PROTOBUF_NAMESPACE_ID::int32 ordinal_;
   bool isdefault_;
   bool isrequired_;
@@ -7946,109 +7991,184 @@ inline void TideChartProperty::set_allocated_name(std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:TideChartProperty.name)
 }
 
-// string type = 2;
-inline void TideChartProperty::clear_type() {
-  type_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// bool boolValue = 2;
+inline bool TideChartProperty::has_boolvalue() const {
+  return value_case() == kBoolValue;
 }
-inline const std::string& TideChartProperty::type() const {
-  // @@protoc_insertion_point(field_get:TideChartProperty.type)
-  return type_.GetNoArena();
+inline void TideChartProperty::set_has_boolvalue() {
+  _oneof_case_[0] = kBoolValue;
 }
-inline void TideChartProperty::set_type(const std::string& value) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartProperty.type)
-}
-inline void TideChartProperty::set_type(std::string&& value) {
-  
-  type_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartProperty.type)
-}
-inline void TideChartProperty::set_type(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartProperty.type)
-}
-inline void TideChartProperty::set_type(const char* value, size_t size) {
-  
-  type_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartProperty.type)
-}
-inline std::string* TideChartProperty::mutable_type() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartProperty.type)
-  return type_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartProperty::release_type() {
-  // @@protoc_insertion_point(field_release:TideChartProperty.type)
-  
-  return type_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartProperty::set_allocated_type(std::string* type) {
-  if (type != nullptr) {
-    
-  } else {
-    
+inline void TideChartProperty::clear_boolvalue() {
+  if (has_boolvalue()) {
+    value_.boolvalue_ = false;
+    clear_has_value();
   }
-  type_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), type);
-  // @@protoc_insertion_point(field_set_allocated:TideChartProperty.type)
+}
+inline bool TideChartProperty::boolvalue() const {
+  // @@protoc_insertion_point(field_get:TideChartProperty.boolValue)
+  if (has_boolvalue()) {
+    return value_.boolvalue_;
+  }
+  return false;
+}
+inline void TideChartProperty::set_boolvalue(bool value) {
+  if (!has_boolvalue()) {
+    clear_value();
+    set_has_boolvalue();
+  }
+  value_.boolvalue_ = value;
+  // @@protoc_insertion_point(field_set:TideChartProperty.boolValue)
 }
 
-// string value = 3;
-inline void TideChartProperty::clear_value() {
-  value_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string strValue = 3;
+inline bool TideChartProperty::has_strvalue() const {
+  return value_case() == kStrValue;
 }
-inline const std::string& TideChartProperty::value() const {
-  // @@protoc_insertion_point(field_get:TideChartProperty.value)
-  return value_.GetNoArena();
+inline void TideChartProperty::set_has_strvalue() {
+  _oneof_case_[0] = kStrValue;
 }
-inline void TideChartProperty::set_value(const std::string& value) {
-  
-  value_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:TideChartProperty.value)
-}
-inline void TideChartProperty::set_value(std::string&& value) {
-  
-  value_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:TideChartProperty.value)
-}
-inline void TideChartProperty::set_value(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  value_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:TideChartProperty.value)
-}
-inline void TideChartProperty::set_value(const char* value, size_t size) {
-  
-  value_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:TideChartProperty.value)
-}
-inline std::string* TideChartProperty::mutable_value() {
-  
-  // @@protoc_insertion_point(field_mutable:TideChartProperty.value)
-  return value_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* TideChartProperty::release_value() {
-  // @@protoc_insertion_point(field_release:TideChartProperty.value)
-  
-  return value_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void TideChartProperty::set_allocated_value(std::string* value) {
-  if (value != nullptr) {
-    
-  } else {
-    
+inline void TideChartProperty::clear_strvalue() {
+  if (has_strvalue()) {
+    value_.strvalue_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+    clear_has_value();
   }
-  value_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set_allocated:TideChartProperty.value)
+}
+inline const std::string& TideChartProperty::strvalue() const {
+  // @@protoc_insertion_point(field_get:TideChartProperty.strValue)
+  if (has_strvalue()) {
+    return value_.strvalue_.GetNoArena();
+  }
+  return *&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited();
+}
+inline void TideChartProperty::set_strvalue(const std::string& value) {
+  // @@protoc_insertion_point(field_set:TideChartProperty.strValue)
+  if (!has_strvalue()) {
+    clear_value();
+    set_has_strvalue();
+    value_.strvalue_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  }
+  value_.strvalue_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartProperty.strValue)
+}
+inline void TideChartProperty::set_strvalue(std::string&& value) {
+  // @@protoc_insertion_point(field_set:TideChartProperty.strValue)
+  if (!has_strvalue()) {
+    clear_value();
+    set_has_strvalue();
+    value_.strvalue_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  }
+  value_.strvalue_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:TideChartProperty.strValue)
+}
+inline void TideChartProperty::set_strvalue(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  if (!has_strvalue()) {
+    clear_value();
+    set_has_strvalue();
+    value_.strvalue_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  }
+  value_.strvalue_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartProperty.strValue)
+}
+inline void TideChartProperty::set_strvalue(const char* value, size_t size) {
+  if (!has_strvalue()) {
+    clear_value();
+    set_has_strvalue();
+    value_.strvalue_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  }
+  value_.strvalue_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:TideChartProperty.strValue)
+}
+inline std::string* TideChartProperty::mutable_strvalue() {
+  if (!has_strvalue()) {
+    clear_value();
+    set_has_strvalue();
+    value_.strvalue_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  }
+  // @@protoc_insertion_point(field_mutable:TideChartProperty.strValue)
+  return value_.strvalue_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* TideChartProperty::release_strvalue() {
+  // @@protoc_insertion_point(field_release:TideChartProperty.strValue)
+  if (has_strvalue()) {
+    clear_has_value();
+    return value_.strvalue_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  } else {
+    return nullptr;
+  }
+}
+inline void TideChartProperty::set_allocated_strvalue(std::string* strvalue) {
+  if (has_value()) {
+    clear_value();
+  }
+  if (strvalue != nullptr) {
+    set_has_strvalue();
+    value_.strvalue_.UnsafeSetDefault(strvalue);
+  }
+  // @@protoc_insertion_point(field_set_allocated:TideChartProperty.strValue)
 }
 
-// repeated .TideChartProperty props = 4;
+// sint64 longValue = 4;
+inline bool TideChartProperty::has_longvalue() const {
+  return value_case() == kLongValue;
+}
+inline void TideChartProperty::set_has_longvalue() {
+  _oneof_case_[0] = kLongValue;
+}
+inline void TideChartProperty::clear_longvalue() {
+  if (has_longvalue()) {
+    value_.longvalue_ = PROTOBUF_LONGLONG(0);
+    clear_has_value();
+  }
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 TideChartProperty::longvalue() const {
+  // @@protoc_insertion_point(field_get:TideChartProperty.longValue)
+  if (has_longvalue()) {
+    return value_.longvalue_;
+  }
+  return PROTOBUF_LONGLONG(0);
+}
+inline void TideChartProperty::set_longvalue(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  if (!has_longvalue()) {
+    clear_value();
+    set_has_longvalue();
+  }
+  value_.longvalue_ = value;
+  // @@protoc_insertion_point(field_set:TideChartProperty.longValue)
+}
+
+// double doubleValue = 5;
+inline bool TideChartProperty::has_doublevalue() const {
+  return value_case() == kDoubleValue;
+}
+inline void TideChartProperty::set_has_doublevalue() {
+  _oneof_case_[0] = kDoubleValue;
+}
+inline void TideChartProperty::clear_doublevalue() {
+  if (has_doublevalue()) {
+    value_.doublevalue_ = 0;
+    clear_has_value();
+  }
+}
+inline double TideChartProperty::doublevalue() const {
+  // @@protoc_insertion_point(field_get:TideChartProperty.doubleValue)
+  if (has_doublevalue()) {
+    return value_.doublevalue_;
+  }
+  return 0;
+}
+inline void TideChartProperty::set_doublevalue(double value) {
+  if (!has_doublevalue()) {
+    clear_value();
+    set_has_doublevalue();
+  }
+  value_.doublevalue_ = value;
+  // @@protoc_insertion_point(field_set:TideChartProperty.doubleValue)
+}
+
+// repeated .TideChartProperty props = 6;
 inline int TideChartProperty::props_size() const {
   return props_.size();
 }
@@ -8078,6 +8198,15 @@ TideChartProperty::props() const {
   return props_;
 }
 
+inline bool TideChartProperty::has_value() const {
+  return value_case() != VALUE_NOT_SET;
+}
+inline void TideChartProperty::clear_has_value() {
+  _oneof_case_[0] = VALUE_NOT_SET;
+}
+inline TideChartProperty::ValueCase TideChartProperty::value_case() const {
+  return TideChartProperty::ValueCase(_oneof_case_[0]);
+}
 // -------------------------------------------------------------------
 
 // TideChartCommentBox
@@ -9588,55 +9717,55 @@ inline void TideChartPort::set_allocated_hint(std::string* hint) {
   // @@protoc_insertion_point(field_set_allocated:TideChartPort.hint)
 }
 
-// .TideChartProperty constant = 9;
-inline bool TideChartPort::has_constant() const {
-  return this != internal_default_instance() && constant_ != nullptr;
+// string value = 9;
+inline void TideChartPort::clear_value() {
+  value_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void TideChartPort::clear_constant() {
-  if (GetArenaNoVirtual() == nullptr && constant_ != nullptr) {
-    delete constant_;
-  }
-  constant_ = nullptr;
+inline const std::string& TideChartPort::value() const {
+  // @@protoc_insertion_point(field_get:TideChartPort.value)
+  return value_.GetNoArena();
 }
-inline const ::TideChartProperty& TideChartPort::constant() const {
-  const ::TideChartProperty* p = constant_;
-  // @@protoc_insertion_point(field_get:TideChartPort.constant)
-  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartProperty*>(
-      &::_TideChartProperty_default_instance_);
-}
-inline ::TideChartProperty* TideChartPort::release_constant() {
-  // @@protoc_insertion_point(field_release:TideChartPort.constant)
+inline void TideChartPort::set_value(const std::string& value) {
   
-  ::TideChartProperty* temp = constant_;
-  constant_ = nullptr;
-  return temp;
+  value_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartPort.value)
 }
-inline ::TideChartProperty* TideChartPort::mutable_constant() {
+inline void TideChartPort::set_value(std::string&& value) {
   
-  if (constant_ == nullptr) {
-    auto* p = CreateMaybeMessage<::TideChartProperty>(GetArenaNoVirtual());
-    constant_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:TideChartPort.constant)
-  return constant_;
+  value_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:TideChartPort.value)
 }
-inline void TideChartPort::set_allocated_constant(::TideChartProperty* constant) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete constant_;
-  }
-  if (constant) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      constant = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, constant, submessage_arena);
-    }
+inline void TideChartPort::set_value(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  value_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartPort.value)
+}
+inline void TideChartPort::set_value(const char* value, size_t size) {
+  
+  value_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:TideChartPort.value)
+}
+inline std::string* TideChartPort::mutable_value() {
+  
+  // @@protoc_insertion_point(field_mutable:TideChartPort.value)
+  return value_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* TideChartPort::release_value() {
+  // @@protoc_insertion_point(field_release:TideChartPort.value)
+  
+  return value_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void TideChartPort::set_allocated_value(std::string* value) {
+  if (value != nullptr) {
     
   } else {
     
   }
-  constant_ = constant;
-  // @@protoc_insertion_point(field_set_allocated:TideChartPort.constant)
+  value_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set_allocated:TideChartPort.value)
 }
 
 // string trigger = 10;

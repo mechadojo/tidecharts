@@ -36,9 +36,14 @@ const TideChartProperty$json = const {
   '1': 'TideChartProperty',
   '2': const [
     const {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    const {'1': 'type', '3': 2, '4': 1, '5': 9, '10': 'type'},
-    const {'1': 'value', '3': 3, '4': 1, '5': 9, '10': 'value'},
-    const {'1': 'props', '3': 4, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
+    const {'1': 'boolValue', '3': 2, '4': 1, '5': 8, '9': 0, '10': 'boolValue'},
+    const {'1': 'strValue', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'strValue'},
+    const {'1': 'longValue', '3': 4, '4': 1, '5': 18, '9': 0, '10': 'longValue'},
+    const {'1': 'doubleValue', '3': 5, '4': 1, '5': 1, '9': 0, '10': 'doubleValue'},
+    const {'1': 'props', '3': 6, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
+  ],
+  '8': const [
+    const {'1': 'value'},
   ],
 };
 
@@ -100,7 +105,7 @@ const TideChartPort$json = const {
     const {'1': 'isRequired', '3': 6, '4': 1, '5': 8, '10': 'isRequired'},
     const {'1': 'allowed', '3': 7, '4': 3, '5': 9, '10': 'allowed'},
     const {'1': 'hint', '3': 8, '4': 1, '5': 9, '10': 'hint'},
-    const {'1': 'constant', '3': 9, '4': 1, '5': 11, '6': '.TideChartProperty', '10': 'constant'},
+    const {'1': 'value', '3': 9, '4': 1, '5': 9, '10': 'value'},
     const {'1': 'trigger', '3': 10, '4': 1, '5': 9, '10': 'trigger'},
     const {'1': 'filter', '3': 11, '4': 1, '5': 9, '10': 'filter'},
     const {'1': 'event', '3': 12, '4': 1, '5': 9, '10': 'event'},

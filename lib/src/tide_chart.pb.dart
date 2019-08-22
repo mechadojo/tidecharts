@@ -14,12 +14,30 @@ import 'tide_chart.pbenum.dart';
 
 export 'tide_chart.pbenum.dart';
 
+enum TideChartProperty_Value {
+  boolValue, 
+  strValue, 
+  longValue, 
+  doubleValue, 
+  notSet
+}
+
 class TideChartProperty extends $pb.GeneratedMessage {
+  static const $core.Map<$core.int, TideChartProperty_Value> _TideChartProperty_ValueByTag = {
+    2 : TideChartProperty_Value.boolValue,
+    3 : TideChartProperty_Value.strValue,
+    4 : TideChartProperty_Value.longValue,
+    5 : TideChartProperty_Value.doubleValue,
+    0 : TideChartProperty_Value.notSet
+  };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartProperty')
+    ..oo(0, [2, 3, 4, 5])
     ..aOS(1, 'name')
-    ..aOS(2, 'type')
-    ..aOS(3, 'value')
-    ..pc<TideChartProperty>(4, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..aOB(2, 'boolValue')
+    ..aOS(3, 'strValue')
+    ..a<Int64>(4, 'longValue', $pb.PbFieldType.OS6, Int64.ZERO)
+    ..a<$core.double>(5, 'doubleValue', $pb.PbFieldType.OD)
+    ..pc<TideChartProperty>(6, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
     ..hasRequiredFields = false
   ;
 
@@ -37,22 +55,35 @@ class TideChartProperty extends $pb.GeneratedMessage {
   static TideChartProperty getDefault() => _defaultInstance ??= create()..freeze();
   static TideChartProperty _defaultInstance;
 
+  TideChartProperty_Value whichValue() => _TideChartProperty_ValueByTag[$_whichOneof(0)];
+  void clearValue() => clearField($_whichOneof(0));
+
   $core.String get name => $_getS(0, '');
   set name($core.String v) { $_setString(0, v); }
   $core.bool hasName() => $_has(0);
   void clearName() => clearField(1);
 
-  $core.String get type => $_getS(1, '');
-  set type($core.String v) { $_setString(1, v); }
-  $core.bool hasType() => $_has(1);
-  void clearType() => clearField(2);
+  $core.bool get boolValue => $_get(1, false);
+  set boolValue($core.bool v) { $_setBool(1, v); }
+  $core.bool hasBoolValue() => $_has(1);
+  void clearBoolValue() => clearField(2);
 
-  $core.String get value => $_getS(2, '');
-  set value($core.String v) { $_setString(2, v); }
-  $core.bool hasValue() => $_has(2);
-  void clearValue() => clearField(3);
+  $core.String get strValue => $_getS(2, '');
+  set strValue($core.String v) { $_setString(2, v); }
+  $core.bool hasStrValue() => $_has(2);
+  void clearStrValue() => clearField(3);
 
-  $core.List<TideChartProperty> get props => $_getList(3);
+  Int64 get longValue => $_getI64(3);
+  set longValue(Int64 v) { $_setInt64(3, v); }
+  $core.bool hasLongValue() => $_has(3);
+  void clearLongValue() => clearField(4);
+
+  $core.double get doubleValue => $_getN(4);
+  set doubleValue($core.double v) { $_setDouble(4, v); }
+  $core.bool hasDoubleValue() => $_has(4);
+  void clearDoubleValue() => clearField(5);
+
+  $core.List<TideChartProperty> get props => $_getList(5);
 }
 
 enum TideChartCommentBox_Content {
@@ -304,7 +335,7 @@ class TideChartPort extends $pb.GeneratedMessage {
     ..aOB(6, 'isRequired')
     ..pPS(7, 'allowed')
     ..aOS(8, 'hint')
-    ..a<TideChartProperty>(9, 'constant', $pb.PbFieldType.OM, TideChartProperty.getDefault, TideChartProperty.create)
+    ..aOS(9, 'value')
     ..aOS(10, 'trigger')
     ..aOS(11, 'filter')
     ..aOS(12, 'event')
@@ -365,10 +396,10 @@ class TideChartPort extends $pb.GeneratedMessage {
   $core.bool hasHint() => $_has(7);
   void clearHint() => clearField(8);
 
-  TideChartProperty get constant => $_getN(8);
-  set constant(TideChartProperty v) { setField(9, v); }
-  $core.bool hasConstant() => $_has(8);
-  void clearConstant() => clearField(9);
+  $core.String get value => $_getS(8, '');
+  set value($core.String v) { $_setString(8, v); }
+  $core.bool hasValue() => $_has(8);
+  void clearValue() => clearField(9);
 
   $core.String get trigger => $_getS(9, '');
   set trigger($core.String v) { $_setString(9, v); }

@@ -426,47 +426,36 @@ public final class TideChart {
         getNameBytes();
 
     /**
-     * <pre>
-     * property value type
-     * </pre>
-     *
-     * <code>string type = 2;</code>
+     * <code>bool boolValue = 2;</code>
      */
-    java.lang.String getType();
-    /**
-     * <pre>
-     * property value type
-     * </pre>
-     *
-     * <code>string type = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    boolean getBoolValue();
 
     /**
-     * <pre>
-     * property value as a string
-     * </pre>
-     *
-     * <code>string value = 3;</code>
+     * <code>string strValue = 3;</code>
      */
-    java.lang.String getValue();
+    java.lang.String getStrValue();
     /**
-     * <pre>
-     * property value as a string
-     * </pre>
-     *
-     * <code>string value = 3;</code>
+     * <code>string strValue = 3;</code>
      */
     com.google.protobuf.ByteString
-        getValueBytes();
+        getStrValueBytes();
+
+    /**
+     * <code>sint64 longValue = 4;</code>
+     */
+    long getLongValue();
+
+    /**
+     * <code>double doubleValue = 5;</code>
+     */
+    double getDoubleValue();
 
     /**
      * <pre>
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     java.util.List<TideChart.TideChartProperty> 
         getPropsList();
@@ -475,7 +464,7 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     TideChart.TideChartProperty getProps(int index);
     /**
@@ -483,7 +472,7 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     int getPropsCount();
     /**
@@ -491,7 +480,7 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
         getPropsOrBuilderList();
@@ -500,10 +489,12 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
         int index);
+
+    public TideChart.TideChartProperty.ValueCase getValueCase();
   }
   /**
    * <pre>
@@ -523,8 +514,6 @@ public final class TideChart {
     }
     private TideChartProperty() {
       name_ = "";
-      type_ = "";
-      value_ = "";
       props_ = java.util.Collections.emptyList();
     }
 
@@ -565,19 +554,28 @@ public final class TideChart {
               name_ = s;
               break;
             }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              type_ = s;
+            case 16: {
+              valueCase_ = 2;
+              value_ = input.readBool();
               break;
             }
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
-
+              valueCase_ = 3;
               value_ = s;
               break;
             }
-            case 34: {
+            case 32: {
+              valueCase_ = 4;
+              value_ = input.readSInt64();
+              break;
+            }
+            case 41: {
+              valueCase_ = 5;
+              value_ = input.readDouble();
+              break;
+            }
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
                 mutable_bitField0_ |= 0x00000001;
@@ -619,6 +617,48 @@ public final class TideChart {
       return TideChart.internal_static_TideChartProperty_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               TideChart.TideChartProperty.class, TideChart.TideChartProperty.Builder.class);
+    }
+
+    private int valueCase_ = 0;
+    private java.lang.Object value_;
+    public enum ValueCase
+        implements com.google.protobuf.Internal.EnumLite {
+      BOOLVALUE(2),
+      STRVALUE(3),
+      LONGVALUE(4),
+      DOUBLEVALUE(5),
+      VALUE_NOT_SET(0);
+      private final int value;
+      private ValueCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ValueCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static ValueCase forNumber(int value) {
+        switch (value) {
+          case 2: return BOOLVALUE;
+          case 3: return STRVALUE;
+          case 4: return LONGVALUE;
+          case 5: return DOUBLEVALUE;
+          case 0: return VALUE_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public ValueCase
+    getValueCase() {
+      return ValueCase.forNumber(
+          valueCase_);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
@@ -663,98 +703,90 @@ public final class TideChart {
       }
     }
 
-    public static final int TYPE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object type_;
+    public static final int BOOLVALUE_FIELD_NUMBER = 2;
     /**
-     * <pre>
-     * property value type
-     * </pre>
-     *
-     * <code>string type = 2;</code>
+     * <code>bool boolValue = 2;</code>
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
+    public boolean getBoolValue() {
+      if (valueCase_ == 2) {
+        return (java.lang.Boolean) value_;
+      }
+      return false;
+    }
+
+    public static final int STRVALUE_FIELD_NUMBER = 3;
+    /**
+     * <code>string strValue = 3;</code>
+     */
+    public java.lang.String getStrValue() {
+      java.lang.Object ref = "";
+      if (valueCase_ == 3) {
+        ref = value_;
+      }
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        type_ = s;
+        if (valueCase_ == 3) {
+          value_ = s;
+        }
         return s;
       }
     }
     /**
-     * <pre>
-     * property value type
-     * </pre>
-     *
-     * <code>string type = 2;</code>
+     * <code>string strValue = 3;</code>
      */
     public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
+        getStrValueBytes() {
+      java.lang.Object ref = "";
+      if (valueCase_ == 3) {
+        ref = value_;
+      }
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        type_ = b;
+        if (valueCase_ == 3) {
+          value_ = b;
+        }
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int VALUE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object value_;
+    public static final int LONGVALUE_FIELD_NUMBER = 4;
     /**
-     * <pre>
-     * property value as a string
-     * </pre>
-     *
-     * <code>string value = 3;</code>
+     * <code>sint64 longValue = 4;</code>
      */
-    public java.lang.String getValue() {
-      java.lang.Object ref = value_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        value_ = s;
-        return s;
+    public long getLongValue() {
+      if (valueCase_ == 4) {
+        return (java.lang.Long) value_;
       }
-    }
-    /**
-     * <pre>
-     * property value as a string
-     * </pre>
-     *
-     * <code>string value = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getValueBytes() {
-      java.lang.Object ref = value_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        value_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+      return 0L;
     }
 
-    public static final int PROPS_FIELD_NUMBER = 4;
+    public static final int DOUBLEVALUE_FIELD_NUMBER = 5;
+    /**
+     * <code>double doubleValue = 5;</code>
+     */
+    public double getDoubleValue() {
+      if (valueCase_ == 5) {
+        return (java.lang.Double) value_;
+      }
+      return 0D;
+    }
+
+    public static final int PROPS_FIELD_NUMBER = 6;
     private java.util.List<TideChart.TideChartProperty> props_;
     /**
      * <pre>
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     public java.util.List<TideChart.TideChartProperty> getPropsList() {
       return props_;
@@ -764,7 +796,7 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
         getPropsOrBuilderList() {
@@ -775,7 +807,7 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     public int getPropsCount() {
       return props_.size();
@@ -785,7 +817,7 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     public TideChart.TideChartProperty getProps(int index) {
       return props_.get(index);
@@ -795,7 +827,7 @@ public final class TideChart {
      * create a heirarchy of properties (repeated names form a collection)
      * </pre>
      *
-     * <code>repeated .TideChartProperty props = 4;</code>
+     * <code>repeated .TideChartProperty props = 6;</code>
      */
     public TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
         int index) {
@@ -819,14 +851,23 @@ public final class TideChart {
       if (!getNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
       }
-      if (!getTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, type_);
+      if (valueCase_ == 2) {
+        output.writeBool(
+            2, (boolean)((java.lang.Boolean) value_));
       }
-      if (!getValueBytes().isEmpty()) {
+      if (valueCase_ == 3) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, value_);
       }
+      if (valueCase_ == 4) {
+        output.writeSInt64(
+            4, (long)((java.lang.Long) value_));
+      }
+      if (valueCase_ == 5) {
+        output.writeDouble(
+            5, (double)((java.lang.Double) value_));
+      }
       for (int i = 0; i < props_.size(); i++) {
-        output.writeMessage(4, props_.get(i));
+        output.writeMessage(6, props_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -840,15 +881,27 @@ public final class TideChart {
       if (!getNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
       }
-      if (!getTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, type_);
+      if (valueCase_ == 2) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(
+              2, (boolean)((java.lang.Boolean) value_));
       }
-      if (!getValueBytes().isEmpty()) {
+      if (valueCase_ == 3) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, value_);
+      }
+      if (valueCase_ == 4) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeSInt64Size(
+              4, (long)((java.lang.Long) value_));
+      }
+      if (valueCase_ == 5) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeDoubleSize(
+              5, (double)((java.lang.Double) value_));
       }
       for (int i = 0; i < props_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, props_.get(i));
+          .computeMessageSize(6, props_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -867,12 +920,30 @@ public final class TideChart {
 
       if (!getName()
           .equals(other.getName())) return false;
-      if (!getType()
-          .equals(other.getType())) return false;
-      if (!getValue()
-          .equals(other.getValue())) return false;
       if (!getPropsList()
           .equals(other.getPropsList())) return false;
+      if (!getValueCase().equals(other.getValueCase())) return false;
+      switch (valueCase_) {
+        case 2:
+          if (getBoolValue()
+              != other.getBoolValue()) return false;
+          break;
+        case 3:
+          if (!getStrValue()
+              .equals(other.getStrValue())) return false;
+          break;
+        case 4:
+          if (getLongValue()
+              != other.getLongValue()) return false;
+          break;
+        case 5:
+          if (java.lang.Double.doubleToLongBits(getDoubleValue())
+              != java.lang.Double.doubleToLongBits(
+                  other.getDoubleValue())) return false;
+          break;
+        case 0:
+        default:
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -886,13 +957,32 @@ public final class TideChart {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
-      hash = (37 * hash) + VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getValue().hashCode();
       if (getPropsCount() > 0) {
         hash = (37 * hash) + PROPS_FIELD_NUMBER;
         hash = (53 * hash) + getPropsList().hashCode();
+      }
+      switch (valueCase_) {
+        case 2:
+          hash = (37 * hash) + BOOLVALUE_FIELD_NUMBER;
+          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+              getBoolValue());
+          break;
+        case 3:
+          hash = (37 * hash) + STRVALUE_FIELD_NUMBER;
+          hash = (53 * hash) + getStrValue().hashCode();
+          break;
+        case 4:
+          hash = (37 * hash) + LONGVALUE_FIELD_NUMBER;
+          hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+              getLongValue());
+          break;
+        case 5:
+          hash = (37 * hash) + DOUBLEVALUE_FIELD_NUMBER;
+          hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+              java.lang.Double.doubleToLongBits(getDoubleValue()));
+          break;
+        case 0:
+        default:
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1034,16 +1124,14 @@ public final class TideChart {
         super.clear();
         name_ = "";
 
-        type_ = "";
-
-        value_ = "";
-
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           propsBuilder_.clear();
         }
+        valueCase_ = 0;
+        value_ = null;
         return this;
       }
 
@@ -1072,8 +1160,18 @@ public final class TideChart {
         TideChart.TideChartProperty result = new TideChart.TideChartProperty(this);
         int from_bitField0_ = bitField0_;
         result.name_ = name_;
-        result.type_ = type_;
-        result.value_ = value_;
+        if (valueCase_ == 2) {
+          result.value_ = value_;
+        }
+        if (valueCase_ == 3) {
+          result.value_ = value_;
+        }
+        if (valueCase_ == 4) {
+          result.value_ = value_;
+        }
+        if (valueCase_ == 5) {
+          result.value_ = value_;
+        }
         if (propsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
@@ -1083,6 +1181,7 @@ public final class TideChart {
         } else {
           result.props_ = propsBuilder_.build();
         }
+        result.valueCase_ = valueCase_;
         onBuilt();
         return result;
       }
@@ -1135,14 +1234,6 @@ public final class TideChart {
           name_ = other.name_;
           onChanged();
         }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
-        }
-        if (!other.getValue().isEmpty()) {
-          value_ = other.value_;
-          onChanged();
-        }
         if (propsBuilder_ == null) {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
@@ -1167,6 +1258,29 @@ public final class TideChart {
             } else {
               propsBuilder_.addAllMessages(other.props_);
             }
+          }
+        }
+        switch (other.getValueCase()) {
+          case BOOLVALUE: {
+            setBoolValue(other.getBoolValue());
+            break;
+          }
+          case STRVALUE: {
+            valueCase_ = 3;
+            value_ = other.value_;
+            onChanged();
+            break;
+          }
+          case LONGVALUE: {
+            setLongValue(other.getLongValue());
+            break;
+          }
+          case DOUBLEVALUE: {
+            setDoubleValue(other.getDoubleValue());
+            break;
+          }
+          case VALUE_NOT_SET: {
+            break;
           }
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -1197,6 +1311,21 @@ public final class TideChart {
         }
         return this;
       }
+      private int valueCase_ = 0;
+      private java.lang.Object value_;
+      public ValueCase
+          getValueCase() {
+        return ValueCase.forNumber(
+            valueCase_);
+      }
+
+      public Builder clearValue() {
+        valueCase_ = 0;
+        value_ = null;
+        onChanged();
+        return this;
+      }
+
       private int bitField0_;
 
       private java.lang.Object name_ = "";
@@ -1288,181 +1417,173 @@ public final class TideChart {
         return this;
       }
 
-      private java.lang.Object type_ = "";
       /**
-       * <pre>
-       * property value type
-       * </pre>
-       *
-       * <code>string type = 2;</code>
+       * <code>bool boolValue = 2;</code>
        */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
+      public boolean getBoolValue() {
+        if (valueCase_ == 2) {
+          return (java.lang.Boolean) value_;
+        }
+        return false;
+      }
+      /**
+       * <code>bool boolValue = 2;</code>
+       */
+      public Builder setBoolValue(boolean value) {
+        valueCase_ = 2;
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool boolValue = 2;</code>
+       */
+      public Builder clearBoolValue() {
+        if (valueCase_ == 2) {
+          valueCase_ = 0;
+          value_ = null;
+          onChanged();
+        }
+        return this;
+      }
+
+      /**
+       * <code>string strValue = 3;</code>
+       */
+      public java.lang.String getStrValue() {
+        java.lang.Object ref = "";
+        if (valueCase_ == 3) {
+          ref = value_;
+        }
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          type_ = s;
+          if (valueCase_ == 3) {
+            value_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <pre>
-       * property value type
-       * </pre>
-       *
-       * <code>string type = 2;</code>
+       * <code>string strValue = 3;</code>
        */
       public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
+          getStrValueBytes() {
+        java.lang.Object ref = "";
+        if (valueCase_ == 3) {
+          ref = value_;
+        }
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          type_ = b;
+          if (valueCase_ == 3) {
+            value_ = b;
+          }
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <pre>
-       * property value type
-       * </pre>
-       *
-       * <code>string type = 2;</code>
+       * <code>string strValue = 3;</code>
        */
-      public Builder setType(
+      public Builder setStrValue(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  
-        type_ = value;
+  valueCase_ = 3;
+        value_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * property value type
-       * </pre>
-       *
-       * <code>string type = 2;</code>
+       * <code>string strValue = 3;</code>
        */
-      public Builder clearType() {
-        
-        type_ = getDefaultInstance().getType();
-        onChanged();
+      public Builder clearStrValue() {
+        if (valueCase_ == 3) {
+          valueCase_ = 0;
+          value_ = null;
+          onChanged();
+        }
         return this;
       }
       /**
-       * <pre>
-       * property value type
-       * </pre>
-       *
-       * <code>string type = 2;</code>
+       * <code>string strValue = 3;</code>
        */
-      public Builder setTypeBytes(
+      public Builder setStrValueBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        valueCase_ = 3;
+        value_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object value_ = "";
       /**
-       * <pre>
-       * property value as a string
-       * </pre>
-       *
-       * <code>string value = 3;</code>
+       * <code>sint64 longValue = 4;</code>
        */
-      public java.lang.String getValue() {
-        java.lang.Object ref = value_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          value_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+      public long getLongValue() {
+        if (valueCase_ == 4) {
+          return (java.lang.Long) value_;
         }
+        return 0L;
       }
       /**
-       * <pre>
-       * property value as a string
-       * </pre>
-       *
-       * <code>string value = 3;</code>
+       * <code>sint64 longValue = 4;</code>
        */
-      public com.google.protobuf.ByteString
-          getValueBytes() {
-        java.lang.Object ref = value_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          value_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * property value as a string
-       * </pre>
-       *
-       * <code>string value = 3;</code>
-       */
-      public Builder setValue(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setLongValue(long value) {
+        valueCase_ = 4;
         value_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * property value as a string
-       * </pre>
-       *
-       * <code>string value = 3;</code>
+       * <code>sint64 longValue = 4;</code>
        */
-      public Builder clearValue() {
-        
-        value_ = getDefaultInstance().getValue();
+      public Builder clearLongValue() {
+        if (valueCase_ == 4) {
+          valueCase_ = 0;
+          value_ = null;
+          onChanged();
+        }
+        return this;
+      }
+
+      /**
+       * <code>double doubleValue = 5;</code>
+       */
+      public double getDoubleValue() {
+        if (valueCase_ == 5) {
+          return (java.lang.Double) value_;
+        }
+        return 0D;
+      }
+      /**
+       * <code>double doubleValue = 5;</code>
+       */
+      public Builder setDoubleValue(double value) {
+        valueCase_ = 5;
+        value_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * property value as a string
-       * </pre>
-       *
-       * <code>string value = 3;</code>
+       * <code>double doubleValue = 5;</code>
        */
-      public Builder setValueBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        value_ = value;
-        onChanged();
+      public Builder clearDoubleValue() {
+        if (valueCase_ == 5) {
+          valueCase_ = 0;
+          value_ = null;
+          onChanged();
+        }
         return this;
       }
 
@@ -1483,7 +1604,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public java.util.List<TideChart.TideChartProperty> getPropsList() {
         if (propsBuilder_ == null) {
@@ -1497,7 +1618,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public int getPropsCount() {
         if (propsBuilder_ == null) {
@@ -1511,7 +1632,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public TideChart.TideChartProperty getProps(int index) {
         if (propsBuilder_ == null) {
@@ -1525,7 +1646,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder setProps(
           int index, TideChart.TideChartProperty value) {
@@ -1546,7 +1667,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder setProps(
           int index, TideChart.TideChartProperty.Builder builderForValue) {
@@ -1564,7 +1685,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder addProps(TideChart.TideChartProperty value) {
         if (propsBuilder_ == null) {
@@ -1584,7 +1705,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder addProps(
           int index, TideChart.TideChartProperty value) {
@@ -1605,7 +1726,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder addProps(
           TideChart.TideChartProperty.Builder builderForValue) {
@@ -1623,7 +1744,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder addProps(
           int index, TideChart.TideChartProperty.Builder builderForValue) {
@@ -1641,7 +1762,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder addAllProps(
           java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
@@ -1660,7 +1781,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder clearProps() {
         if (propsBuilder_ == null) {
@@ -1677,7 +1798,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public Builder removeProps(int index) {
         if (propsBuilder_ == null) {
@@ -1694,7 +1815,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public TideChart.TideChartProperty.Builder getPropsBuilder(
           int index) {
@@ -1705,7 +1826,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
           int index) {
@@ -1719,7 +1840,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
            getPropsOrBuilderList() {
@@ -1734,7 +1855,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public TideChart.TideChartProperty.Builder addPropsBuilder() {
         return getPropsFieldBuilder().addBuilder(
@@ -1745,7 +1866,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public TideChart.TideChartProperty.Builder addPropsBuilder(
           int index) {
@@ -1757,7 +1878,7 @@ public final class TideChart {
        * create a heirarchy of properties (repeated names form a collection)
        * </pre>
        *
-       * <code>repeated .TideChartProperty props = 4;</code>
+       * <code>repeated .TideChartProperty props = 6;</code>
        */
       public java.util.List<TideChart.TideChartProperty.Builder> 
            getPropsBuilderList() {
@@ -7260,25 +7381,18 @@ public final class TideChart {
      * a constant value applied to the inport
      * </pre>
      *
-     * <code>.TideChartProperty constant = 9;</code>
+     * <code>string value = 9;</code>
      */
-    boolean hasConstant();
+    java.lang.String getValue();
     /**
      * <pre>
      * a constant value applied to the inport
      * </pre>
      *
-     * <code>.TideChartProperty constant = 9;</code>
+     * <code>string value = 9;</code>
      */
-    TideChart.TideChartProperty getConstant();
-    /**
-     * <pre>
-     * a constant value applied to the inport
-     * </pre>
-     *
-     * <code>.TideChartProperty constant = 9;</code>
-     */
-    TideChart.TideChartPropertyOrBuilder getConstantOrBuilder();
+    com.google.protobuf.ByteString
+        getValueBytes();
 
     /**
      * <pre>
@@ -7388,6 +7502,7 @@ public final class TideChart {
       name_ = "";
       allowed_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       hint_ = "";
+      value_ = "";
       trigger_ = "";
       filter_ = "";
       event_ = "";
@@ -7474,16 +7589,9 @@ public final class TideChart {
               break;
             }
             case 74: {
-              TideChart.TideChartProperty.Builder subBuilder = null;
-              if (constant_ != null) {
-                subBuilder = constant_.toBuilder();
-              }
-              constant_ = input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(constant_);
-                constant_ = subBuilder.buildPartial();
-              }
+              java.lang.String s = input.readStringRequireUtf8();
 
+              value_ = s;
               break;
             }
             case 82: {
@@ -7807,37 +7915,46 @@ public final class TideChart {
       }
     }
 
-    public static final int CONSTANT_FIELD_NUMBER = 9;
-    private TideChart.TideChartProperty constant_;
+    public static final int VALUE_FIELD_NUMBER = 9;
+    private volatile java.lang.Object value_;
     /**
      * <pre>
      * a constant value applied to the inport
      * </pre>
      *
-     * <code>.TideChartProperty constant = 9;</code>
+     * <code>string value = 9;</code>
      */
-    public boolean hasConstant() {
-      return constant_ != null;
+    public java.lang.String getValue() {
+      java.lang.Object ref = value_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        value_ = s;
+        return s;
+      }
     }
     /**
      * <pre>
      * a constant value applied to the inport
      * </pre>
      *
-     * <code>.TideChartProperty constant = 9;</code>
+     * <code>string value = 9;</code>
      */
-    public TideChart.TideChartProperty getConstant() {
-      return constant_ == null ? TideChart.TideChartProperty.getDefaultInstance() : constant_;
-    }
-    /**
-     * <pre>
-     * a constant value applied to the inport
-     * </pre>
-     *
-     * <code>.TideChartProperty constant = 9;</code>
-     */
-    public TideChart.TideChartPropertyOrBuilder getConstantOrBuilder() {
-      return getConstant();
+    public com.google.protobuf.ByteString
+        getValueBytes() {
+      java.lang.Object ref = value_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        value_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     public static final int TRIGGER_FIELD_NUMBER = 10;
@@ -8072,8 +8189,8 @@ public final class TideChart {
       if (!getHintBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, hint_);
       }
-      if (constant_ != null) {
-        output.writeMessage(9, getConstant());
+      if (!getValueBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, value_);
       }
       if (!getTriggerBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 10, trigger_);
@@ -8134,9 +8251,8 @@ public final class TideChart {
       if (!getHintBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, hint_);
       }
-      if (constant_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getConstant());
+      if (!getValueBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, value_);
       }
       if (!getTriggerBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, trigger_);
@@ -8189,11 +8305,8 @@ public final class TideChart {
           .equals(other.getAllowedList())) return false;
       if (!getHint()
           .equals(other.getHint())) return false;
-      if (hasConstant() != other.hasConstant()) return false;
-      if (hasConstant()) {
-        if (!getConstant()
-            .equals(other.getConstant())) return false;
-      }
+      if (!getValue()
+          .equals(other.getValue())) return false;
       if (!getTrigger()
           .equals(other.getTrigger())) return false;
       if (!getFilter()
@@ -8237,10 +8350,8 @@ public final class TideChart {
       }
       hash = (37 * hash) + HINT_FIELD_NUMBER;
       hash = (53 * hash) + getHint().hashCode();
-      if (hasConstant()) {
-        hash = (37 * hash) + CONSTANT_FIELD_NUMBER;
-        hash = (53 * hash) + getConstant().hashCode();
-      }
+      hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getValue().hashCode();
       hash = (37 * hash) + TRIGGER_FIELD_NUMBER;
       hash = (53 * hash) + getTrigger().hashCode();
       hash = (37 * hash) + FILTER_FIELD_NUMBER;
@@ -8404,12 +8515,8 @@ public final class TideChart {
         bitField0_ = (bitField0_ & ~0x00000001);
         hint_ = "";
 
-        if (constantBuilder_ == null) {
-          constant_ = null;
-        } else {
-          constant_ = null;
-          constantBuilder_ = null;
-        }
+        value_ = "";
+
         trigger_ = "";
 
         filter_ = "";
@@ -8461,11 +8568,7 @@ public final class TideChart {
         }
         result.allowed_ = allowed_;
         result.hint_ = hint_;
-        if (constantBuilder_ == null) {
-          result.constant_ = constant_;
-        } else {
-          result.constant_ = constantBuilder_.build();
-        }
+        result.value_ = value_;
         result.trigger_ = trigger_;
         result.filter_ = filter_;
         result.event_ = event_;
@@ -8555,8 +8658,9 @@ public final class TideChart {
           hint_ = other.hint_;
           onChanged();
         }
-        if (other.hasConstant()) {
-          mergeConstant(other.getConstant());
+        if (!other.getValue().isEmpty()) {
+          value_ = other.value_;
+          onChanged();
         }
         if (!other.getTrigger().isEmpty()) {
           trigger_ = other.trigger_;
@@ -9210,31 +9314,24 @@ public final class TideChart {
         return this;
       }
 
-      private TideChart.TideChartProperty constant_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> constantBuilder_;
+      private java.lang.Object value_ = "";
       /**
        * <pre>
        * a constant value applied to the inport
        * </pre>
        *
-       * <code>.TideChartProperty constant = 9;</code>
+       * <code>string value = 9;</code>
        */
-      public boolean hasConstant() {
-        return constantBuilder_ != null || constant_ != null;
-      }
-      /**
-       * <pre>
-       * a constant value applied to the inport
-       * </pre>
-       *
-       * <code>.TideChartProperty constant = 9;</code>
-       */
-      public TideChart.TideChartProperty getConstant() {
-        if (constantBuilder_ == null) {
-          return constant_ == null ? TideChart.TideChartProperty.getDefaultInstance() : constant_;
+      public java.lang.String getValue() {
+        java.lang.Object ref = value_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          value_ = s;
+          return s;
         } else {
-          return constantBuilder_.getMessage();
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -9242,125 +9339,68 @@ public final class TideChart {
        * a constant value applied to the inport
        * </pre>
        *
-       * <code>.TideChartProperty constant = 9;</code>
+       * <code>string value = 9;</code>
        */
-      public Builder setConstant(TideChart.TideChartProperty value) {
-        if (constantBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          constant_ = value;
-          onChanged();
+      public com.google.protobuf.ByteString
+          getValueBytes() {
+        java.lang.Object ref = value_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          value_ = b;
+          return b;
         } else {
-          constantBuilder_.setMessage(value);
+          return (com.google.protobuf.ByteString) ref;
         }
-
-        return this;
       }
       /**
        * <pre>
        * a constant value applied to the inport
        * </pre>
        *
-       * <code>.TideChartProperty constant = 9;</code>
+       * <code>string value = 9;</code>
        */
-      public Builder setConstant(
-          TideChart.TideChartProperty.Builder builderForValue) {
-        if (constantBuilder_ == null) {
-          constant_ = builderForValue.build();
-          onChanged();
-        } else {
-          constantBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * a constant value applied to the inport
-       * </pre>
-       *
-       * <code>.TideChartProperty constant = 9;</code>
-       */
-      public Builder mergeConstant(TideChart.TideChartProperty value) {
-        if (constantBuilder_ == null) {
-          if (constant_ != null) {
-            constant_ =
-              TideChart.TideChartProperty.newBuilder(constant_).mergeFrom(value).buildPartial();
-          } else {
-            constant_ = value;
-          }
-          onChanged();
-        } else {
-          constantBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * a constant value applied to the inport
-       * </pre>
-       *
-       * <code>.TideChartProperty constant = 9;</code>
-       */
-      public Builder clearConstant() {
-        if (constantBuilder_ == null) {
-          constant_ = null;
-          onChanged();
-        } else {
-          constant_ = null;
-          constantBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * a constant value applied to the inport
-       * </pre>
-       *
-       * <code>.TideChartProperty constant = 9;</code>
-       */
-      public TideChart.TideChartProperty.Builder getConstantBuilder() {
-        
+      public Builder setValue(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        value_ = value;
         onChanged();
-        return getConstantFieldBuilder().getBuilder();
+        return this;
       }
       /**
        * <pre>
        * a constant value applied to the inport
        * </pre>
        *
-       * <code>.TideChartProperty constant = 9;</code>
+       * <code>string value = 9;</code>
        */
-      public TideChart.TideChartPropertyOrBuilder getConstantOrBuilder() {
-        if (constantBuilder_ != null) {
-          return constantBuilder_.getMessageOrBuilder();
-        } else {
-          return constant_ == null ?
-              TideChart.TideChartProperty.getDefaultInstance() : constant_;
-        }
+      public Builder clearValue() {
+        
+        value_ = getDefaultInstance().getValue();
+        onChanged();
+        return this;
       }
       /**
        * <pre>
        * a constant value applied to the inport
        * </pre>
        *
-       * <code>.TideChartProperty constant = 9;</code>
+       * <code>string value = 9;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
-          getConstantFieldBuilder() {
-        if (constantBuilder_ == null) {
-          constantBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
-                  getConstant(),
-                  getParentForChildren(),
-                  isClean());
-          constant_ = null;
-        }
-        return constantBuilder_;
+      public Builder setValueBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        value_ = value;
+        onChanged();
+        return this;
       }
 
       private java.lang.Object trigger_ = "";
@@ -73930,192 +73970,193 @@ public final class TideChart {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020tide_chart.proto\"a\n\021TideChartProperty\022" +
-      "\014\n\004name\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n\005value\030\003 \001" +
-      "(\t\022!\n\005props\030\004 \003(\0132\022.TideChartProperty\"\271\002" +
-      "\n\023TideChartCommentBox\022\n\n\002id\030\001 \001(\t\022\016\n\006reg" +
-      "ion\030\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n" +
-      "\005width\030\005 \001(\005\022\016\n\006height\030\006 \001(\005\022\016\n\004text\030\007 \001" +
-      "(\tH\000\022\017\n\005image\030\010 \001(\014H\000\022\016\n\004icon\030\t \001(\tH\000\022\020\n" +
-      "\010fontSize\030\n \001(\001\022\021\n\tfontStyle\030\013 \001(\t\022\021\n\tal" +
-      "ignment\030\014 \003(\021\022\r\n\005color\030\r \001(\005\022\022\n\nbackgrou" +
-      "nd\030\016 \001(\005\022\016\n\006border\030\017 \003(\005\022\020\n\010isRaised\030\020 \001" +
-      "(\010\022\022\n\nisReversed\030\021 \001(\010B\t\n\007content\"\342\001\n\017Ti" +
-      "deChartWidget\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022" +
-      "\r\n\005title\030\003 \001(\t\022\016\n\006region\030\004 \001(\t\022\014\n\004posX\030\005" +
-      " \001(\021\022\014\n\004posY\030\006 \001(\021\022\r\n\005width\030\007 \001(\005\022\016\n\006hei" +
-      "ght\030\010 \001(\005\022\016\n\004link\030\t \001(\tH\000\022\016\n\004port\030\n \001(\tH" +
-      "\000\022\016\n\004node\030\013 \001(\tH\000\022!\n\005props\030\014 \003(\0132\022.TideC" +
-      "hartPropertyB\010\n\006target\"\240\002\n\rTideChartPort" +
-      "\022\014\n\004type\030\001 \001(\t\022\014\n\004node\030\002 \001(\t\022\014\n\004name\030\003 \001" +
-      "(\t\022\017\n\007ordinal\030\004 \001(\005\022\021\n\tisDefault\030\005 \001(\010\022\022" +
-      "\n\nisRequired\030\006 \001(\010\022\017\n\007allowed\030\007 \003(\t\022\014\n\004h" +
-      "int\030\010 \001(\t\022$\n\010constant\030\t \001(\0132\022.TideChartP" +
-      "roperty\022\017\n\007trigger\030\n \001(\t\022\016\n\006filter\030\013 \001(\t" +
-      "\022\r\n\005event\030\014 \001(\t\022\021\n\tsyncGroup\030\r \001(\t\022\022\n\nis" +
-      "Blocking\030\016 \001(\010\022\021\n\tisQueuing\030\017 \001(\010\"\315\001\n\rTi" +
-      "deChartLink\022\017\n\007outNode\030\001 \001(\t\022\017\n\007outPort\030" +
-      "\002 \001(\t\022\016\n\006inNode\030\003 \001(\t\022\016\n\006inPort\030\004 \001(\t\022\r\n" +
-      "\005group\030\005 \001(\005\022\r\n\005delay\030\006 \001(\005\022\016\n\006filter\030\007 " +
-      "\001(\t\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 " +
-      "\001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(" +
-      "\010\"w\n\rTideChartNote\022\n\n\002id\030\001 \001(\t\022\017\n\007replyT" +
-      "o\030\002 \001(\t\022\020\n\010changeTo\030\003 \001(\t\022\017\n\007content\030\004 \001" +
-      "(\t\022\021\n\tcreatedBy\030\005 \001(\t\022\023\n\013createdDate\030\006 \001" +
-      "(\t\"\367\002\n\rTideChartNode\022\014\n\004name\030\001 \001(\t\022\014\n\004ty" +
-      "pe\030\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n\005" +
-      "title\030\005 \001(\t\022\014\n\004icon\030\006 \001(\t\022\017\n\007library\030\007 \001" +
-      "(\t\022\016\n\006method\030\010 \001(\t\022\r\n\005delay\030\t \001(\005\022\037\n\007inp" +
-      "orts\030\n \003(\0132\016.TideChartPort\022 \n\010outports\030\013" +
-      " \003(\0132\016.TideChartPort\022!\n\005props\030\014 \003(\0132\022.Ti" +
-      "deChartProperty\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013is" +
-      "Debugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisD" +
-      "isabled\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideChart" +
-      "Note\022\016\n\006script\030\025 \001(\t\"\373\001\n\017TideChartRegion" +
-      "\022\014\n\004name\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\r\n\005nodes\030\003" +
-      " \003(\t\022\r\n\005group\030\004 \001(\005\022\r\n\005scope\030\005 \001(\t\022!\n\005pr" +
-      "ops\030\006 \003(\0132\022.TideChartProperty\022\021\n\tisLoggi" +
-      "ng\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPause" +
-      "d\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005notes\030\024 \003" +
-      "(\0132\016.TideChartNote\022\016\n\006script\030\025 \001(\t\"\346\003\n\016T" +
-      "ideChartGraph\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022" +
-      "\014\n\004name\030\003 \001(\t\022\r\n\005title\030\004 \001(\t\022\014\n\004icon\030\005 \001" +
-      "(\t\022\017\n\007version\030\006 \001(\t\022\016\n\006source\030\007 \001(\t\022\035\n\005n" +
-      "odes\030\010 \003(\0132\016.TideChartNode\022\035\n\005links\030\t \003(" +
-      "\0132\016.TideChartLink\022!\n\007regions\030\n \003(\0132\020.Tid" +
-      "eChartRegion\022&\n\010comments\030\013 \003(\0132\024.TideCha" +
-      "rtCommentBox\022!\n\007widgets\030\014 \003(\0132\020.TideChar" +
-      "tWidget\022!\n\005props\030\r \003(\0132\022.TideChartProper" +
-      "ty\022\"\n\007history\030\016 \003(\0132\021.TideChartCommand\022\021" +
-      "\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020" +
-      "\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005" +
-      "notes\030\024 \003(\0132\016.TideChartNote\022\016\n\006script\030\025 " +
-      "\001(\t\"\205\004\n\020TideChartCommand\022\017\n\007version\030\001 \001(" +
-      "\t\022\016\n\006target\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132\026.TideC" +
-      "hartGroupCommandH\000\022%\n\004move\030\004 \001(\0132\025.TideC" +
-      "hartMoveCommandH\000\022.\n\007comment\030\005 \001(\0132\033.Tid" +
-      "eChartCommentBoxCommandH\000\022)\n\006widget\030\006 \001(" +
-      "\0132\027.TideChartWidgetCommandH\000\022%\n\004port\030\007 \001" +
-      "(\0132\025.TideChartPortCommandH\000\022%\n\004link\030\010 \001(" +
-      "\0132\025.TideChartLinkCommandH\000\022%\n\004node\030\t \001(\013" +
-      "2\025.TideChartNodeCommandH\000\022)\n\006region\030\n \001(" +
-      "\0132\027.TideChartRegionCommandH\000\022\'\n\005graph\030\013 " +
-      "\001(\0132\026.TideChartGraphCommandH\000\022*\n\005props\030\014" +
-      " \001(\0132\031.TideChartPropertyCommandH\000\022%\n\004not" +
-      "e\030\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007comm" +
-      "and\"<\n\025TideChartGroupCommand\022#\n\010commands" +
-      "\030\001 \003(\0132\021.TideChartCommand\"h\n\024TideChartMo" +
-      "veCommand\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(" +
-      "\021\022\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006t" +
-      "oPosY\030\005 \001(\021\"\233\001\n\032TideChartCommentBoxComma" +
-      "nd\022)\n\013fromComment\030\001 \001(\0132\024.TideChartComme" +
-      "ntBox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartComm" +
-      "entBox\022)\n\004type\030\003 \001(\0162\033.TideChartCommandU" +
-      "pdateType\"\215\001\n\026TideChartWidgetCommand\022$\n\n" +
-      "fromWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n\010to" +
-      "Widget\030\002 \001(\0132\020.TideChartWidget\022)\n\004type\030\003" +
-      " \001(\0162\033.TideChartCommandUpdateType\"\203\001\n\024Ti" +
-      "deChartPortCommand\022 \n\010fromPort\030\001 \001(\0132\016.T" +
-      "ideChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideChart" +
-      "Port\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpd" +
-      "ateType\"\203\001\n\024TideChartLinkCommand\022 \n\010from" +
-      "Link\030\001 \001(\0132\016.TideChartLink\022\036\n\006toLink\030\002 \001" +
-      "(\0132\016.TideChartLink\022)\n\004type\030\003 \001(\0162\033.TideC" +
-      "hartCommandUpdateType\"\203\001\n\024TideChartNodeC" +
-      "ommand\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode" +
-      "\022\036\n\006toNode\030\002 \001(\0132\016.TideChartNode\022)\n\004type" +
-      "\030\003 \001(\0162\033.TideChartCommandUpdateType\"\215\001\n\026" +
-      "TideChartRegionCommand\022$\n\nfromRegion\030\001 \001" +
-      "(\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(\0132\020" +
-      ".TideChartRegion\022)\n\004type\030\003 \001(\0162\033.TideCha" +
-      "rtCommandUpdateType\"\210\001\n\025TideChartGraphCo" +
-      "mmand\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartGrap" +
-      "h\022 \n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022)\n\004t" +
-      "ype\030\003 \001(\0162\033.TideChartCommandUpdateType\"\340" +
-      "\001\n\030TideChartPropertyCommand\022%\n\tfromProps" +
-      "\030\001 \003(\0132\022.TideChartProperty\022#\n\007toProps\030\002 " +
-      "\003(\0132\022.TideChartProperty\022)\n\004type\030\003 \001(\0162\033." +
-      "TideChartCommandUpdateType\022\016\n\004node\030\005 \001(\t" +
-      "H\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017" +
-      "\n\005graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024TideChartN" +
-      "oteCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNot" +
-      "e\022)\n\004type\030\002 \001(\0162\033.TideChartCommandUpdate" +
-      "Type\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017" +
-      "\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017TideChartM" +
-      "ethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007exten" +
-      "ds\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(" +
-      "\0132\016.TideChartPort\022 \n\010outports\030\006 \003(\0132\016.Ti" +
-      "deChartPort\022\035\n\005props\030\007 \003(\0132\016.TideChartPo" +
-      "rt\"\224\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004na" +
-      "me\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\025\n\rmodifieddDate\030" +
-      "\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021\n\007version\030\007 \001" +
-      "(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020Ti" +
-      "deChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t" +
-      "\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branc" +
-      "h\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.T" +
-      "ideChartSource\022!\n\007methods\030\010 \003(\0132\020.TideCh" +
-      "artMethod\"\350\001\n\rTideChartSite\022\r\n\005index\030\001 \001" +
-      "(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004pat" +
-      "h\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022" +
-      "\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030" +
-      "\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004p" +
-      "ort\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideChartProp" +
-      "erty\"\211\002\n\020TideChartMessage\022\r\n\005index\030\001 \001(\003" +
-      "\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010p" +
-      "revious\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030" +
-      "\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tholdToken\030\n" +
-      " \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022" +
-      "\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022" +
-      "\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"k\n\026Tide" +
-      "ChartContextChange\022\r\n\005index\030\001 \001(\003\022\021\n\ttim" +
-      "estamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004 \003(" +
-      "\0132\022.TideChartProperty\"\270\001\n\021TideChartLogEn" +
-      "try\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n" +
-      "\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.TideChart" +
-      "LogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001(\t\022" +
-      "\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.TideChart" +
-      "Property\"\355\002\n\020TideChartContext\022\n\n\002id\030\001 \001(" +
-      "\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017\n\007v" +
-      "ersion\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideChartS" +
-      "ite\022#\n\010messages\030\006 \003(\0132\021.TideChartMessage" +
-      "\022\"\n\006global\030\007 \003(\0132\022.TideChartProperty\022\021\n\t" +
-      "startTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016\n\006a" +
-      "ctive\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014" +
-      " \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027" +
-      ".TideChartContextChange\022\037\n\003log\030\017 \003(\0132\022.T" +
-      "ideChartLogEntry\"\245\002\n\rTideChartData\022\017\n\007ve" +
-      "rsion\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 " +
-      "\001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020" +
-      "\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013" +
-      "commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.Tide" +
-      "ChartGraph\022!\n\005props\030\n \003(\0132\022.TideChartPro" +
-      "perty\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007" +
-      "library\030\014 \003(\0132\021.TideChartLibrary\"\240\001\n\017Tid" +
-      "eChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030" +
-      "\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\n" +
-      "commitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\nco" +
-      "mmitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\r" +
-      "TideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022" +
-      "\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifie" +
-      "dDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart" +
-      "\030\007 \001(\0132\016.TideChartData\022\"\n\007working\030\010 \003(\0132" +
-      "\021.TideChartCommand\022!\n\006remote\030\t \003(\0132\021.Tid" +
-      "eChartCommand\022\037\n\007history\030\n \003(\0132\016.TideCha" +
-      "rtData\022\"\n\007context\030\013 \003(\0132\021.TideChartConte" +
-      "xt\"w\n\023TideChartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n" +
-      "\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(" +
-      "\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 " +
-      "\001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002id\030\001 \001(\t" +
+      "\n\020tide_chart.proto\"\242\001\n\021TideChartProperty" +
+      "\022\014\n\004name\030\001 \001(\t\022\023\n\tboolValue\030\002 \001(\010H\000\022\022\n\010s" +
+      "trValue\030\003 \001(\tH\000\022\023\n\tlongValue\030\004 \001(\022H\000\022\025\n\013" +
+      "doubleValue\030\005 \001(\001H\000\022!\n\005props\030\006 \003(\0132\022.Tid" +
+      "eChartPropertyB\007\n\005value\"\271\002\n\023TideChartCom" +
+      "mentBox\022\n\n\002id\030\001 \001(\t\022\016\n\006region\030\002 \001(\t\022\014\n\004p" +
+      "osX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n\005width\030\005 \001(\005\022\016" +
+      "\n\006height\030\006 \001(\005\022\016\n\004text\030\007 \001(\tH\000\022\017\n\005image\030" +
+      "\010 \001(\014H\000\022\016\n\004icon\030\t \001(\tH\000\022\020\n\010fontSize\030\n \001(" +
+      "\001\022\021\n\tfontStyle\030\013 \001(\t\022\021\n\talignment\030\014 \003(\021\022" +
+      "\r\n\005color\030\r \001(\005\022\022\n\nbackground\030\016 \001(\005\022\016\n\006bo" +
+      "rder\030\017 \003(\005\022\020\n\010isRaised\030\020 \001(\010\022\022\n\nisRevers" +
+      "ed\030\021 \001(\010B\t\n\007content\"\342\001\n\017TideChartWidget\022" +
+      "\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n\005title\030\003 \001(\t" +
+      "\022\016\n\006region\030\004 \001(\t\022\014\n\004posX\030\005 \001(\021\022\014\n\004posY\030\006" +
+      " \001(\021\022\r\n\005width\030\007 \001(\005\022\016\n\006height\030\010 \001(\005\022\016\n\004l" +
+      "ink\030\t \001(\tH\000\022\016\n\004port\030\n \001(\tH\000\022\016\n\004node\030\013 \001(" +
+      "\tH\000\022!\n\005props\030\014 \003(\0132\022.TideChartPropertyB\010" +
+      "\n\006target\"\211\002\n\rTideChartPort\022\014\n\004type\030\001 \001(\t" +
+      "\022\014\n\004node\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\017\n\007ordinal\030" +
+      "\004 \001(\005\022\021\n\tisDefault\030\005 \001(\010\022\022\n\nisRequired\030\006" +
+      " \001(\010\022\017\n\007allowed\030\007 \003(\t\022\014\n\004hint\030\010 \001(\t\022\r\n\005v" +
+      "alue\030\t \001(\t\022\017\n\007trigger\030\n \001(\t\022\016\n\006filter\030\013 " +
+      "\001(\t\022\r\n\005event\030\014 \001(\t\022\021\n\tsyncGroup\030\r \001(\t\022\022\n" +
+      "\nisBlocking\030\016 \001(\010\022\021\n\tisQueuing\030\017 \001(\010\"\315\001\n" +
+      "\rTideChartLink\022\017\n\007outNode\030\001 \001(\t\022\017\n\007outPo" +
+      "rt\030\002 \001(\t\022\016\n\006inNode\030\003 \001(\t\022\016\n\006inPort\030\004 \001(\t" +
+      "\022\r\n\005group\030\005 \001(\005\022\r\n\005delay\030\006 \001(\005\022\016\n\006filter" +
+      "\030\007 \001(\t\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging" +
+      "\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023" +
+      " \001(\010\"w\n\rTideChartNote\022\n\n\002id\030\001 \001(\t\022\017\n\007rep" +
+      "lyTo\030\002 \001(\t\022\020\n\010changeTo\030\003 \001(\t\022\017\n\007content\030" +
+      "\004 \001(\t\022\021\n\tcreatedBy\030\005 \001(\t\022\023\n\013createdDate\030" +
+      "\006 \001(\t\"\367\002\n\rTideChartNode\022\014\n\004name\030\001 \001(\t\022\014\n" +
+      "\004type\030\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022" +
+      "\r\n\005title\030\005 \001(\t\022\014\n\004icon\030\006 \001(\t\022\017\n\007library\030" +
+      "\007 \001(\t\022\016\n\006method\030\010 \001(\t\022\r\n\005delay\030\t \001(\005\022\037\n\007" +
+      "inports\030\n \003(\0132\016.TideChartPort\022 \n\010outport" +
+      "s\030\013 \003(\0132\016.TideChartPort\022!\n\005props\030\014 \003(\0132\022" +
+      ".TideChartProperty\022\021\n\tisLogging\030\020 \001(\010\022\023\n" +
+      "\013isDebugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\n" +
+      "isDisabled\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideCh" +
+      "artNote\022\016\n\006script\030\025 \001(\t\"\373\001\n\017TideChartReg" +
+      "ion\022\014\n\004name\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\r\n\005node" +
+      "s\030\003 \003(\t\022\r\n\005group\030\004 \001(\005\022\r\n\005scope\030\005 \001(\t\022!\n" +
+      "\005props\030\006 \003(\0132\022.TideChartProperty\022\021\n\tisLo" +
+      "gging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPa" +
+      "used\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005notes\030" +
+      "\024 \003(\0132\016.TideChartNote\022\016\n\006script\030\025 \001(\t\"\346\003" +
+      "\n\016TideChartGraph\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001" +
+      "(\t\022\014\n\004name\030\003 \001(\t\022\r\n\005title\030\004 \001(\t\022\014\n\004icon\030" +
+      "\005 \001(\t\022\017\n\007version\030\006 \001(\t\022\016\n\006source\030\007 \001(\t\022\035" +
+      "\n\005nodes\030\010 \003(\0132\016.TideChartNode\022\035\n\005links\030\t" +
+      " \003(\0132\016.TideChartLink\022!\n\007regions\030\n \003(\0132\020." +
+      "TideChartRegion\022&\n\010comments\030\013 \003(\0132\024.Tide" +
+      "ChartCommentBox\022!\n\007widgets\030\014 \003(\0132\020.TideC" +
+      "hartWidget\022!\n\005props\030\r \003(\0132\022.TideChartPro" +
+      "perty\022\"\n\007history\030\016 \003(\0132\021.TideChartComman" +
+      "d\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(" +
+      "\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022" +
+      "\035\n\005notes\030\024 \003(\0132\016.TideChartNote\022\016\n\006script" +
+      "\030\025 \001(\t\"\205\004\n\020TideChartCommand\022\017\n\007version\030\001" +
+      " \001(\t\022\016\n\006target\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132\026.Ti" +
+      "deChartGroupCommandH\000\022%\n\004move\030\004 \001(\0132\025.Ti" +
+      "deChartMoveCommandH\000\022.\n\007comment\030\005 \001(\0132\033." +
+      "TideChartCommentBoxCommandH\000\022)\n\006widget\030\006" +
+      " \001(\0132\027.TideChartWidgetCommandH\000\022%\n\004port\030" +
+      "\007 \001(\0132\025.TideChartPortCommandH\000\022%\n\004link\030\010" +
+      " \001(\0132\025.TideChartLinkCommandH\000\022%\n\004node\030\t " +
+      "\001(\0132\025.TideChartNodeCommandH\000\022)\n\006region\030\n" +
+      " \001(\0132\027.TideChartRegionCommandH\000\022\'\n\005graph" +
+      "\030\013 \001(\0132\026.TideChartGraphCommandH\000\022*\n\005prop" +
+      "s\030\014 \001(\0132\031.TideChartPropertyCommandH\000\022%\n\004" +
+      "note\030\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007c" +
+      "ommand\"<\n\025TideChartGroupCommand\022#\n\010comma" +
+      "nds\030\001 \003(\0132\021.TideChartCommand\"h\n\024TideChar" +
+      "tMoveCommand\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002" +
+      " \001(\021\022\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016" +
+      "\n\006toPosY\030\005 \001(\021\"\233\001\n\032TideChartCommentBoxCo" +
+      "mmand\022)\n\013fromComment\030\001 \001(\0132\024.TideChartCo" +
+      "mmentBox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartC" +
+      "ommentBox\022)\n\004type\030\003 \001(\0162\033.TideChartComma" +
+      "ndUpdateType\"\215\001\n\026TideChartWidgetCommand\022" +
+      "$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n" +
+      "\010toWidget\030\002 \001(\0132\020.TideChartWidget\022)\n\004typ" +
+      "e\030\003 \001(\0162\033.TideChartCommandUpdateType\"\203\001\n" +
+      "\024TideChartPortCommand\022 \n\010fromPort\030\001 \001(\0132" +
+      "\016.TideChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideCh" +
+      "artPort\022)\n\004type\030\003 \001(\0162\033.TideChartCommand" +
+      "UpdateType\"\203\001\n\024TideChartLinkCommand\022 \n\010f" +
+      "romLink\030\001 \001(\0132\016.TideChartLink\022\036\n\006toLink\030" +
+      "\002 \001(\0132\016.TideChartLink\022)\n\004type\030\003 \001(\0162\033.Ti" +
+      "deChartCommandUpdateType\"\203\001\n\024TideChartNo" +
+      "deCommand\022 \n\010fromNode\030\001 \001(\0132\016.TideChartN" +
+      "ode\022\036\n\006toNode\030\002 \001(\0132\016.TideChartNode\022)\n\004t" +
+      "ype\030\003 \001(\0162\033.TideChartCommandUpdateType\"\215" +
+      "\001\n\026TideChartRegionCommand\022$\n\nfromRegion\030" +
+      "\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(" +
+      "\0132\020.TideChartRegion\022)\n\004type\030\003 \001(\0162\033.Tide" +
+      "ChartCommandUpdateType\"\210\001\n\025TideChartGrap" +
+      "hCommand\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartG" +
+      "raph\022 \n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022)" +
+      "\n\004type\030\003 \001(\0162\033.TideChartCommandUpdateTyp" +
+      "e\"\340\001\n\030TideChartPropertyCommand\022%\n\tfromPr" +
+      "ops\030\001 \003(\0132\022.TideChartProperty\022#\n\007toProps" +
+      "\030\002 \003(\0132\022.TideChartProperty\022)\n\004type\030\003 \001(\016" +
+      "2\033.TideChartCommandUpdateType\022\016\n\004node\030\005 " +
+      "\001(\tH\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH" +
+      "\000\022\017\n\005graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024TideCha" +
+      "rtNoteCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChart" +
+      "Note\022)\n\004type\030\002 \001(\0162\033.TideChartCommandUpd" +
+      "ateType\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH" +
+      "\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017TideCha" +
+      "rtMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007ex" +
+      "tends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005" +
+      " \003(\0132\016.TideChartPort\022 \n\010outports\030\006 \003(\0132\016" +
+      ".TideChartPort\022\035\n\005props\030\007 \003(\0132\016.TideChar" +
+      "tPort\"\224\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t\022\014\n" +
+      "\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\025\n\rmodifieddDa" +
+      "te\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021\n\007version\030" +
+      "\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n" +
+      "\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 " +
+      "\001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006br" +
+      "anch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132" +
+      "\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020.Tid" +
+      "eChartMethod\"\350\001\n\rTideChartSite\022\r\n\005index\030" +
+      "\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004" +
+      "path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001" +
+      "(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005gra" +
+      "ph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014" +
+      "\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideChartP" +
+      "roperty\"\211\002\n\020TideChartMessage\022\r\n\005index\030\001 " +
+      "\001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020" +
+      "\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006targ" +
+      "et\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tholdToke" +
+      "n\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001" +
+      "(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\t" +
+      "H\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"k\n\026T" +
+      "ideChartContextChange\022\r\n\005index\030\001 \001(\003\022\021\n\t" +
+      "timestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004" +
+      " \003(\0132\022.TideChartProperty\"\270\001\n\021TideChartLo" +
+      "gEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003" +
+      "\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.TideCh" +
+      "artLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001" +
+      "(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.TideCh" +
+      "artProperty\"\355\002\n\020TideChartContext\022\n\n\002id\030\001" +
+      " \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017" +
+      "\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideCha" +
+      "rtSite\022#\n\010messages\030\006 \003(\0132\021.TideChartMess" +
+      "age\022\"\n\006global\030\007 \003(\0132\022.TideChartProperty\022" +
+      "\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016" +
+      "\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006pause" +
+      "d\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(" +
+      "\0132\027.TideChartContextChange\022\037\n\003log\030\017 \003(\0132" +
+      "\022.TideChartLogEntry\"\245\002\n\rTideChartData\022\017\n" +
+      "\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source" +
+      "\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(" +
+      "\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022" +
+      "\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.T" +
+      "ideChartGraph\022!\n\005props\030\n \003(\0132\022.TideChart" +
+      "Property\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022" +
+      "\"\n\007library\030\014 \003(\0132\021.TideChartLibrary\"\240\001\n\017" +
+      "TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006bran" +
+      "ch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022" +
+      "\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n" +
+      "\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234" +
+      "\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001" +
+      "(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modi" +
+      "fiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005ch" +
+      "art\030\007 \001(\0132\016.TideChartData\022\"\n\007working\030\010 \003" +
+      "(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(\0132\021." +
+      "TideChartCommand\022\037\n\007history\030\n \003(\0132\016.Tide" +
+      "ChartData\022\"\n\007context\030\013 \003(\0132\021.TideChartCo" +
+      "ntext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001 \001(\t" +
       "\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004" +
       " \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy" +
-      "\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartData*=\n" +
-      "\032TideChartCommandUpdateType\022\007\n\003add\020\000\022\n\n\006" +
-      "remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChartLogLev" +
-      "el\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\tex" +
-      "ception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007mess" +
-      "age\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t" +
-      "\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChartb\006proto" +
-      "3"
+      "\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002id\030\001 " +
+      "\001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origi" +
+      "n\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifie" +
+      "dBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartData" +
+      "*=\n\032TideChartCommandUpdateType\022\007\n\003add\020\000\022" +
+      "\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChartLog" +
+      "Level\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n" +
+      "\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007m" +
+      "essage\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007verbos" +
+      "e\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChartb\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -74126,7 +74167,7 @@ public final class TideChart {
     internal_static_TideChartProperty_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartProperty_descriptor,
-        new java.lang.String[] { "Name", "Type", "Value", "Props", });
+        new java.lang.String[] { "Name", "BoolValue", "StrValue", "LongValue", "DoubleValue", "Props", "Value", });
     internal_static_TideChartCommentBox_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_TideChartCommentBox_fieldAccessorTable = new
@@ -74144,7 +74185,7 @@ public final class TideChart {
     internal_static_TideChartPort_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartPort_descriptor,
-        new java.lang.String[] { "Type", "Node", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Constant", "Trigger", "Filter", "Event", "SyncGroup", "IsBlocking", "IsQueuing", });
+        new java.lang.String[] { "Type", "Node", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Value", "Trigger", "Filter", "Event", "SyncGroup", "IsBlocking", "IsQueuing", });
     internal_static_TideChartLink_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_TideChartLink_fieldAccessorTable = new

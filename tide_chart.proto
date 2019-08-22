@@ -3,10 +3,15 @@ option java_outer_classname = "TideChart";
 
 message TideChartProperty {                     // a recursive data type that provides configuration values for graphs, regions and nodes
     string name = 1;                            // property field name
-    string type = 2;                            // property value type
-    string value = 3;                           // property value as a string
+
+    oneof value {
+        bool boolValue = 2;
+        string strValue = 3;
+        sint64 longValue = 4;
+        double doubleValue = 5;
+    }
     
-    repeated TideChartProperty props = 4;       // create a heirarchy of properties (repeated names form a collection)
+    repeated TideChartProperty props = 6;       // create a heirarchy of properties (repeated names form a collection)
 }
 
 //////////////////////////////////////////////////////////
@@ -70,8 +75,8 @@ message TideChartPort {
     repeated string allowed = 7;                // used by methods to define what value / message types are allowed to be
     string hint = 8;                            // used by methods to describe how a port should be used
 
-    TideChartProperty constant = 9;             // a constant value applied to the inport
-    string trigger = 10;                         // a trigger the inport automatically reads from 
+    string value = 9;                           // a constant value applied to the inport
+    string trigger = 10;                        // a trigger the inport automatically reads from 
     string filter = 11;                         // a filter or conditional expressions applied to messages received or sent
     string event = 12;                          // an event the outport automatically writes to
 
