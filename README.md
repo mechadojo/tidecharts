@@ -394,7 +394,7 @@ Read only the commit headers
 | inPort | [string](#string) |  | inport linked to |
 | group | [int32](#int32) |  | links can be associated into groups (usually just determins color) |
 | delay | [int32](#int32) |  | automatic time delay (msec) added to messages (equivalent to routing thru a delay node) |
-| filter | [string](#string) |  | a filter or conditional expression applied to messages on the link |
+| link | [string](#string) |  | a named message bus that joins nodes and links together |
 | isLogging | [bool](#bool) |  | flag indicating this link will trace messages |
 | isDebugging | [bool](#bool) |  | flag indicating this link is a debug breakpoint |
 | isPaused | [bool](#bool) |  | flag indicating this link is paused (messages are queued) |
@@ -616,9 +616,9 @@ Read only the commit headers
 | allowed | [string](#string) | repeated | used by methods to define what value / message types are allowed to be |
 | hint | [string](#string) |  | used by methods to describe how a port should be used |
 | value | [string](#string) |  | a constant value applied to the inport |
-| trigger | [string](#string) |  | a trigger the inport automatically reads from |
-| filter | [string](#string) |  | a filter or conditional expressions applied to messages received or sent |
-| event | [string](#string) |  | an event the outport automatically writes to |
+| trigger | [string](#string) |  | a trigger the inport automatically reads from (equivalent to connecting to a trigger node) |
+| link | [string](#string) |  | a named message bus that joins nodes and links together |
+| event | [string](#string) |  | an event the outport automatically writes to (equivalent to connecing to a trigger node) |
 | syncGroup | [string](#string) |  | creates a syncronizing group between ports |
 | isBlocking | [bool](#bool) |  | determines if the port will block to wait for the rest of the port group |
 | isQueuing | [bool](#bool) |  | determines if messages should queue while blocking or replace with latest received |

@@ -337,7 +337,7 @@ class TideChartPort extends $pb.GeneratedMessage {
     ..aOS(8, 'hint')
     ..aOS(9, 'value')
     ..aOS(10, 'trigger')
-    ..aOS(11, 'filter')
+    ..aOS(11, 'link')
     ..aOS(12, 'event')
     ..aOS(13, 'syncGroup')
     ..aOB(14, 'isBlocking')
@@ -406,10 +406,10 @@ class TideChartPort extends $pb.GeneratedMessage {
   $core.bool hasTrigger() => $_has(9);
   void clearTrigger() => clearField(10);
 
-  $core.String get filter => $_getS(10, '');
-  set filter($core.String v) { $_setString(10, v); }
-  $core.bool hasFilter() => $_has(10);
-  void clearFilter() => clearField(11);
+  $core.String get link => $_getS(10, '');
+  set link($core.String v) { $_setString(10, v); }
+  $core.bool hasLink() => $_has(10);
+  void clearLink() => clearField(11);
 
   $core.String get event => $_getS(11, '');
   set event($core.String v) { $_setString(11, v); }
@@ -440,7 +440,7 @@ class TideChartLink extends $pb.GeneratedMessage {
     ..aOS(4, 'inPort')
     ..a<$core.int>(5, 'group', $pb.PbFieldType.O3)
     ..a<$core.int>(6, 'delay', $pb.PbFieldType.O3)
-    ..aOS(7, 'filter')
+    ..aOS(7, 'link')
     ..aOB(16, 'isLogging')
     ..aOB(17, 'isDebugging')
     ..aOB(18, 'isPaused')
@@ -492,10 +492,10 @@ class TideChartLink extends $pb.GeneratedMessage {
   $core.bool hasDelay() => $_has(5);
   void clearDelay() => clearField(6);
 
-  $core.String get filter => $_getS(6, '');
-  set filter($core.String v) { $_setString(6, v); }
-  $core.bool hasFilter() => $_has(6);
-  void clearFilter() => clearField(7);
+  $core.String get link => $_getS(6, '');
+  set link($core.String v) { $_setString(6, v); }
+  $core.bool hasLink() => $_has(6);
+  void clearLink() => clearField(7);
 
   $core.bool get isLogging => $_get(7, false);
   set isLogging($core.bool v) { $_setBool(7, v); }

@@ -76,9 +76,9 @@ message TideChartPort {
     string hint = 8;                            // used by methods to describe how a port should be used
 
     string value = 9;                           // a constant value applied to the inport
-    string trigger = 10;                        // a trigger the inport automatically reads from 
-    string filter = 11;                         // a filter or conditional expressions applied to messages received or sent
-    string event = 12;                          // an event the outport automatically writes to
+    string trigger = 10;                        // a trigger the inport automatically reads from (equivalent to connecting to a trigger node)
+    string link = 11;                           // a named message bus that joins nodes and links together
+    string event = 12;                          // an event the outport automatically writes to (equivalent to connecing to a trigger node)
 
     string syncGroup = 13;                      // creates a syncronizing group between ports
     bool isBlocking = 14;                       // determines if the port will block to wait for the rest of the port group
@@ -93,12 +93,12 @@ message TideChartLink {
     int32 group = 5;                            // links can be associated into groups (usually just determins color)
 
     int32 delay = 6;                            // automatic time delay (msec) added to messages (equivalent to routing thru a delay node)
-    string filter = 7;                          // a filter or conditional expression applied to messages on the link
+    string link = 7;                            // a named message bus that joins nodes and links together
 
-    bool isLogging = 16;                          // flag indicating this link will trace messages
-    bool isDebugging = 17;                        // flag indicating this link is a debug breakpoint
-    bool isPaused = 18;                           // flag indicating this link is paused (messages are queued)
-    bool isDisabled = 19;                         // flag indicating this link is disabled (messages are dropped)
+    bool isLogging = 16;                        // flag indicating this link will trace messages
+    bool isDebugging = 17;                      // flag indicating this link is a debug breakpoint
+    bool isPaused = 18;                         // flag indicating this link is paused (messages are queued)
+    bool isDisabled = 19;                       // flag indicating this link is disabled (messages are dropped)
 }
 
 message TideChartNote {

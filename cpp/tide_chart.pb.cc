@@ -784,7 +784,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::TideChartPort, hint_),
   PROTOBUF_FIELD_OFFSET(::TideChartPort, value_),
   PROTOBUF_FIELD_OFFSET(::TideChartPort, trigger_),
-  PROTOBUF_FIELD_OFFSET(::TideChartPort, filter_),
+  PROTOBUF_FIELD_OFFSET(::TideChartPort, link_),
   PROTOBUF_FIELD_OFFSET(::TideChartPort, event_),
   PROTOBUF_FIELD_OFFSET(::TideChartPort, syncgroup_),
   PROTOBUF_FIELD_OFFSET(::TideChartPort, isblocking_),
@@ -800,7 +800,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::TideChartLink, inport_),
   PROTOBUF_FIELD_OFFSET(::TideChartLink, group_),
   PROTOBUF_FIELD_OFFSET(::TideChartLink, delay_),
-  PROTOBUF_FIELD_OFFSET(::TideChartLink, filter_),
+  PROTOBUF_FIELD_OFFSET(::TideChartLink, link_),
   PROTOBUF_FIELD_OFFSET(::TideChartLink, islogging_),
   PROTOBUF_FIELD_OFFSET(::TideChartLink, isdebugging_),
   PROTOBUF_FIELD_OFFSET(::TideChartLink, ispaused_),
@@ -1275,175 +1275,174 @@ const char descriptor_table_protodef_tide_5fchart_2eproto[] PROTOBUF_SECTION_VAR
   " \001(\021\022\r\n\005width\030\007 \001(\005\022\016\n\006height\030\010 \001(\005\022\016\n\004l"
   "ink\030\t \001(\tH\000\022\016\n\004port\030\n \001(\tH\000\022\016\n\004node\030\013 \001("
   "\tH\000\022!\n\005props\030\014 \003(\0132\022.TideChartPropertyB\010"
-  "\n\006target\"\211\002\n\rTideChartPort\022\014\n\004type\030\001 \001(\t"
+  "\n\006target\"\207\002\n\rTideChartPort\022\014\n\004type\030\001 \001(\t"
   "\022\014\n\004node\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\017\n\007ordinal\030"
   "\004 \001(\005\022\021\n\tisDefault\030\005 \001(\010\022\022\n\nisRequired\030\006"
   " \001(\010\022\017\n\007allowed\030\007 \003(\t\022\014\n\004hint\030\010 \001(\t\022\r\n\005v"
-  "alue\030\t \001(\t\022\017\n\007trigger\030\n \001(\t\022\016\n\006filter\030\013 "
-  "\001(\t\022\r\n\005event\030\014 \001(\t\022\021\n\tsyncGroup\030\r \001(\t\022\022\n"
-  "\nisBlocking\030\016 \001(\010\022\021\n\tisQueuing\030\017 \001(\010\"\315\001\n"
-  "\rTideChartLink\022\017\n\007outNode\030\001 \001(\t\022\017\n\007outPo"
-  "rt\030\002 \001(\t\022\016\n\006inNode\030\003 \001(\t\022\016\n\006inPort\030\004 \001(\t"
-  "\022\r\n\005group\030\005 \001(\005\022\r\n\005delay\030\006 \001(\005\022\016\n\006filter"
-  "\030\007 \001(\t\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging"
-  "\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023"
-  " \001(\010\"w\n\rTideChartNote\022\n\n\002id\030\001 \001(\t\022\017\n\007rep"
-  "lyTo\030\002 \001(\t\022\020\n\010changeTo\030\003 \001(\t\022\017\n\007content\030"
-  "\004 \001(\t\022\021\n\tcreatedBy\030\005 \001(\t\022\023\n\013createdDate\030"
-  "\006 \001(\t\"\367\002\n\rTideChartNode\022\014\n\004name\030\001 \001(\t\022\014\n"
-  "\004type\030\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022"
-  "\r\n\005title\030\005 \001(\t\022\014\n\004icon\030\006 \001(\t\022\017\n\007library\030"
-  "\007 \001(\t\022\016\n\006method\030\010 \001(\t\022\r\n\005delay\030\t \001(\005\022\037\n\007"
-  "inports\030\n \003(\0132\016.TideChartPort\022 \n\010outport"
-  "s\030\013 \003(\0132\016.TideChartPort\022!\n\005props\030\014 \003(\0132\022"
-  ".TideChartProperty\022\021\n\tisLogging\030\020 \001(\010\022\023\n"
-  "\013isDebugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\n"
-  "isDisabled\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideCh"
-  "artNote\022\016\n\006script\030\025 \001(\t\"\373\001\n\017TideChartReg"
-  "ion\022\014\n\004name\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\r\n\005node"
-  "s\030\003 \003(\t\022\r\n\005group\030\004 \001(\005\022\r\n\005scope\030\005 \001(\t\022!\n"
-  "\005props\030\006 \003(\0132\022.TideChartProperty\022\021\n\tisLo"
-  "gging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPa"
-  "used\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005notes\030"
-  "\024 \003(\0132\016.TideChartNote\022\016\n\006script\030\025 \001(\t\"\346\003"
-  "\n\016TideChartGraph\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001"
-  "(\t\022\014\n\004name\030\003 \001(\t\022\r\n\005title\030\004 \001(\t\022\014\n\004icon\030"
-  "\005 \001(\t\022\017\n\007version\030\006 \001(\t\022\016\n\006source\030\007 \001(\t\022\035"
-  "\n\005nodes\030\010 \003(\0132\016.TideChartNode\022\035\n\005links\030\t"
-  " \003(\0132\016.TideChartLink\022!\n\007regions\030\n \003(\0132\020."
-  "TideChartRegion\022&\n\010comments\030\013 \003(\0132\024.Tide"
-  "ChartCommentBox\022!\n\007widgets\030\014 \003(\0132\020.TideC"
-  "hartWidget\022!\n\005props\030\r \003(\0132\022.TideChartPro"
-  "perty\022\"\n\007history\030\016 \003(\0132\021.TideChartComman"
-  "d\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001("
-  "\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022"
-  "\035\n\005notes\030\024 \003(\0132\016.TideChartNote\022\016\n\006script"
-  "\030\025 \001(\t\"\205\004\n\020TideChartCommand\022\017\n\007version\030\001"
-  " \001(\t\022\016\n\006target\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132\026.Ti"
-  "deChartGroupCommandH\000\022%\n\004move\030\004 \001(\0132\025.Ti"
-  "deChartMoveCommandH\000\022.\n\007comment\030\005 \001(\0132\033."
-  "TideChartCommentBoxCommandH\000\022)\n\006widget\030\006"
-  " \001(\0132\027.TideChartWidgetCommandH\000\022%\n\004port\030"
-  "\007 \001(\0132\025.TideChartPortCommandH\000\022%\n\004link\030\010"
-  " \001(\0132\025.TideChartLinkCommandH\000\022%\n\004node\030\t "
-  "\001(\0132\025.TideChartNodeCommandH\000\022)\n\006region\030\n"
-  " \001(\0132\027.TideChartRegionCommandH\000\022\'\n\005graph"
-  "\030\013 \001(\0132\026.TideChartGraphCommandH\000\022*\n\005prop"
-  "s\030\014 \001(\0132\031.TideChartPropertyCommandH\000\022%\n\004"
-  "note\030\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007c"
-  "ommand\"<\n\025TideChartGroupCommand\022#\n\010comma"
-  "nds\030\001 \003(\0132\021.TideChartCommand\"h\n\024TideChar"
-  "tMoveCommand\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002"
-  " \001(\021\022\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016"
-  "\n\006toPosY\030\005 \001(\021\"\233\001\n\032TideChartCommentBoxCo"
-  "mmand\022)\n\013fromComment\030\001 \001(\0132\024.TideChartCo"
-  "mmentBox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartC"
-  "ommentBox\022)\n\004type\030\003 \001(\0162\033.TideChartComma"
-  "ndUpdateType\"\215\001\n\026TideChartWidgetCommand\022"
-  "$\n\nfromWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n"
-  "\010toWidget\030\002 \001(\0132\020.TideChartWidget\022)\n\004typ"
-  "e\030\003 \001(\0162\033.TideChartCommandUpdateType\"\203\001\n"
-  "\024TideChartPortCommand\022 \n\010fromPort\030\001 \001(\0132"
-  "\016.TideChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideCh"
-  "artPort\022)\n\004type\030\003 \001(\0162\033.TideChartCommand"
-  "UpdateType\"\203\001\n\024TideChartLinkCommand\022 \n\010f"
-  "romLink\030\001 \001(\0132\016.TideChartLink\022\036\n\006toLink\030"
-  "\002 \001(\0132\016.TideChartLink\022)\n\004type\030\003 \001(\0162\033.Ti"
-  "deChartCommandUpdateType\"\203\001\n\024TideChartNo"
-  "deCommand\022 \n\010fromNode\030\001 \001(\0132\016.TideChartN"
-  "ode\022\036\n\006toNode\030\002 \001(\0132\016.TideChartNode\022)\n\004t"
-  "ype\030\003 \001(\0162\033.TideChartCommandUpdateType\"\215"
-  "\001\n\026TideChartRegionCommand\022$\n\nfromRegion\030"
-  "\001 \001(\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001("
-  "\0132\020.TideChartRegion\022)\n\004type\030\003 \001(\0162\033.Tide"
-  "ChartCommandUpdateType\"\210\001\n\025TideChartGrap"
-  "hCommand\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartG"
-  "raph\022 \n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022)"
-  "\n\004type\030\003 \001(\0162\033.TideChartCommandUpdateTyp"
-  "e\"\340\001\n\030TideChartPropertyCommand\022%\n\tfromPr"
-  "ops\030\001 \003(\0132\022.TideChartProperty\022#\n\007toProps"
-  "\030\002 \003(\0132\022.TideChartProperty\022)\n\004type\030\003 \001(\016"
-  "2\033.TideChartCommandUpdateType\022\016\n\004node\030\005 "
-  "\001(\tH\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH"
-  "\000\022\017\n\005graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024TideCha"
-  "rtNoteCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChart"
-  "Note\022)\n\004type\030\002 \001(\0162\033.TideChartCommandUpd"
-  "ateType\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH"
-  "\000\022\017\n\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017TideCha"
-  "rtMethod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007ex"
-  "tends\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005"
-  " \003(\0132\016.TideChartPort\022 \n\010outports\030\006 \003(\0132\016"
-  ".TideChartPort\022\035\n\005props\030\007 \003(\0132\016.TideChar"
-  "tPort\"\224\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t\022\014\n"
-  "\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\025\n\rmodifieddDa"
-  "te\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021\n\007version\030"
-  "\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n"
-  "\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 "
-  "\001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006br"
-  "anch\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132"
-  "\020.TideChartSource\022!\n\007methods\030\010 \003(\0132\020.Tid"
-  "eChartMethod\"\350\001\n\rTideChartSite\022\r\n\005index\030"
-  "\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004"
-  "path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001"
-  "(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005gra"
-  "ph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014"
-  "\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideChartP"
-  "roperty\"\211\002\n\020TideChartMessage\022\r\n\005index\030\001 "
-  "\001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020"
-  "\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006targ"
-  "et\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tholdToke"
-  "n\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001"
-  "(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\t"
-  "H\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"k\n\026T"
-  "ideChartContextChange\022\r\n\005index\030\001 \001(\003\022\021\n\t"
-  "timestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004"
-  " \003(\0132\022.TideChartProperty\"\270\001\n\021TideChartLo"
-  "gEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003"
-  "\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.TideCh"
-  "artLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001"
-  "(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.TideCh"
-  "artProperty\"\355\002\n\020TideChartContext\022\n\n\002id\030\001"
-  " \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017"
-  "\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideCha"
-  "rtSite\022#\n\010messages\030\006 \003(\0132\021.TideChartMess"
-  "age\022\"\n\006global\030\007 \003(\0132\022.TideChartProperty\022"
-  "\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016"
-  "\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006pause"
-  "d\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003("
-  "\0132\027.TideChartContextChange\022\037\n\003log\030\017 \003(\0132"
-  "\022.TideChartLogEntry\"\245\002\n\rTideChartData\022\017\n"
-  "\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source"
-  "\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001("
-  "\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022"
-  "\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.T"
-  "ideChartGraph\022!\n\005props\030\n \003(\0132\022.TideChart"
-  "Property\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022"
-  "\"\n\007library\030\014 \003(\0132\021.TideChartLibrary\"\240\001\n\017"
-  "TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006bran"
-  "ch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022"
-  "\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n"
-  "\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234"
-  "\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001"
-  "(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modi"
-  "fiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005ch"
-  "art\030\007 \001(\0132\016.TideChartData\022\"\n\007working\030\010 \003"
-  "(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(\0132\021."
-  "TideChartCommand\022\037\n\007history\030\n \003(\0132\016.Tide"
-  "ChartData\022\"\n\007context\030\013 \003(\0132\021.TideChartCo"
-  "ntext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001 \001(\t"
-  "\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004"
-  " \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy"
-  "\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002id\030\001 "
-  "\001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origi"
-  "n\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifie"
-  "dBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartData"
-  "*=\n\032TideChartCommandUpdateType\022\007\n\003add\020\000\022"
-  "\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChartLog"
-  "Level\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n"
-  "\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007m"
-  "essage\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007verbos"
-  "e\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChartb\006pr"
-  "oto3"
+  "alue\030\t \001(\t\022\017\n\007trigger\030\n \001(\t\022\014\n\004link\030\013 \001("
+  "\t\022\r\n\005event\030\014 \001(\t\022\021\n\tsyncGroup\030\r \001(\t\022\022\n\ni"
+  "sBlocking\030\016 \001(\010\022\021\n\tisQueuing\030\017 \001(\010\"\313\001\n\rT"
+  "ideChartLink\022\017\n\007outNode\030\001 \001(\t\022\017\n\007outPort"
+  "\030\002 \001(\t\022\016\n\006inNode\030\003 \001(\t\022\016\n\006inPort\030\004 \001(\t\022\r"
+  "\n\005group\030\005 \001(\005\022\r\n\005delay\030\006 \001(\005\022\014\n\004link\030\007 \001"
+  "(\t\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001"
+  "(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010"
+  "\"w\n\rTideChartNote\022\n\n\002id\030\001 \001(\t\022\017\n\007replyTo"
+  "\030\002 \001(\t\022\020\n\010changeTo\030\003 \001(\t\022\017\n\007content\030\004 \001("
+  "\t\022\021\n\tcreatedBy\030\005 \001(\t\022\023\n\013createdDate\030\006 \001("
+  "\t\"\367\002\n\rTideChartNode\022\014\n\004name\030\001 \001(\t\022\014\n\004typ"
+  "e\030\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n\005t"
+  "itle\030\005 \001(\t\022\014\n\004icon\030\006 \001(\t\022\017\n\007library\030\007 \001("
+  "\t\022\016\n\006method\030\010 \001(\t\022\r\n\005delay\030\t \001(\005\022\037\n\007inpo"
+  "rts\030\n \003(\0132\016.TideChartPort\022 \n\010outports\030\013 "
+  "\003(\0132\016.TideChartPort\022!\n\005props\030\014 \003(\0132\022.Tid"
+  "eChartProperty\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isD"
+  "ebugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDi"
+  "sabled\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideChartN"
+  "ote\022\016\n\006script\030\025 \001(\t\"\373\001\n\017TideChartRegion\022"
+  "\014\n\004name\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\r\n\005nodes\030\003 "
+  "\003(\t\022\r\n\005group\030\004 \001(\005\022\r\n\005scope\030\005 \001(\t\022!\n\005pro"
+  "ps\030\006 \003(\0132\022.TideChartProperty\022\021\n\tisLoggin"
+  "g\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPaused"
+  "\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005notes\030\024 \003("
+  "\0132\016.TideChartNote\022\016\n\006script\030\025 \001(\t\"\346\003\n\016Ti"
+  "deChartGraph\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\014"
+  "\n\004name\030\003 \001(\t\022\r\n\005title\030\004 \001(\t\022\014\n\004icon\030\005 \001("
+  "\t\022\017\n\007version\030\006 \001(\t\022\016\n\006source\030\007 \001(\t\022\035\n\005no"
+  "des\030\010 \003(\0132\016.TideChartNode\022\035\n\005links\030\t \003(\013"
+  "2\016.TideChartLink\022!\n\007regions\030\n \003(\0132\020.Tide"
+  "ChartRegion\022&\n\010comments\030\013 \003(\0132\024.TideChar"
+  "tCommentBox\022!\n\007widgets\030\014 \003(\0132\020.TideChart"
+  "Widget\022!\n\005props\030\r \003(\0132\022.TideChartPropert"
+  "y\022\"\n\007history\030\016 \003(\0132\021.TideChartCommand\022\021\n"
+  "\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n"
+  "\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005n"
+  "otes\030\024 \003(\0132\016.TideChartNote\022\016\n\006script\030\025 \001"
+  "(\t\"\205\004\n\020TideChartCommand\022\017\n\007version\030\001 \001(\t"
+  "\022\016\n\006target\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132\026.TideCh"
+  "artGroupCommandH\000\022%\n\004move\030\004 \001(\0132\025.TideCh"
+  "artMoveCommandH\000\022.\n\007comment\030\005 \001(\0132\033.Tide"
+  "ChartCommentBoxCommandH\000\022)\n\006widget\030\006 \001(\013"
+  "2\027.TideChartWidgetCommandH\000\022%\n\004port\030\007 \001("
+  "\0132\025.TideChartPortCommandH\000\022%\n\004link\030\010 \001(\013"
+  "2\025.TideChartLinkCommandH\000\022%\n\004node\030\t \001(\0132"
+  "\025.TideChartNodeCommandH\000\022)\n\006region\030\n \001(\013"
+  "2\027.TideChartRegionCommandH\000\022\'\n\005graph\030\013 \001"
+  "(\0132\026.TideChartGraphCommandH\000\022*\n\005props\030\014 "
+  "\001(\0132\031.TideChartPropertyCommandH\000\022%\n\004note"
+  "\030\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007comma"
+  "nd\"<\n\025TideChartGroupCommand\022#\n\010commands\030"
+  "\001 \003(\0132\021.TideChartCommand\"h\n\024TideChartMov"
+  "eCommand\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021"
+  "\022\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006to"
+  "PosY\030\005 \001(\021\"\233\001\n\032TideChartCommentBoxComman"
+  "d\022)\n\013fromComment\030\001 \001(\0132\024.TideChartCommen"
+  "tBox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartComme"
+  "ntBox\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUp"
+  "dateType\"\215\001\n\026TideChartWidgetCommand\022$\n\nf"
+  "romWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n\010toW"
+  "idget\030\002 \001(\0132\020.TideChartWidget\022)\n\004type\030\003 "
+  "\001(\0162\033.TideChartCommandUpdateType\"\203\001\n\024Tid"
+  "eChartPortCommand\022 \n\010fromPort\030\001 \001(\0132\016.Ti"
+  "deChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideChartP"
+  "ort\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpda"
+  "teType\"\203\001\n\024TideChartLinkCommand\022 \n\010fromL"
+  "ink\030\001 \001(\0132\016.TideChartLink\022\036\n\006toLink\030\002 \001("
+  "\0132\016.TideChartLink\022)\n\004type\030\003 \001(\0162\033.TideCh"
+  "artCommandUpdateType\"\203\001\n\024TideChartNodeCo"
+  "mmand\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022"
+  "\036\n\006toNode\030\002 \001(\0132\016.TideChartNode\022)\n\004type\030"
+  "\003 \001(\0162\033.TideChartCommandUpdateType\"\215\001\n\026T"
+  "ideChartRegionCommand\022$\n\nfromRegion\030\001 \001("
+  "\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(\0132\020."
+  "TideChartRegion\022)\n\004type\030\003 \001(\0162\033.TideChar"
+  "tCommandUpdateType\"\210\001\n\025TideChartGraphCom"
+  "mand\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartGraph"
+  "\022 \n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022)\n\004ty"
+  "pe\030\003 \001(\0162\033.TideChartCommandUpdateType\"\340\001"
+  "\n\030TideChartPropertyCommand\022%\n\tfromProps\030"
+  "\001 \003(\0132\022.TideChartProperty\022#\n\007toProps\030\002 \003"
+  "(\0132\022.TideChartProperty\022)\n\004type\030\003 \001(\0162\033.T"
+  "ideChartCommandUpdateType\022\016\n\004node\030\005 \001(\tH"
+  "\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n"
+  "\005graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024TideChartNo"
+  "teCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote"
+  "\022)\n\004type\030\002 \001(\0162\033.TideChartCommandUpdateT"
+  "ype\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017\n"
+  "\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017TideChartMe"
+  "thod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007extend"
+  "s\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(\013"
+  "2\016.TideChartPort\022 \n\010outports\030\006 \003(\0132\016.Tid"
+  "eChartPort\022\035\n\005props\030\007 \003(\0132\016.TideChartPor"
+  "t\"\224\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004nam"
+  "e\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\025\n\rmodifieddDate\030\005"
+  " \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021\n\007version\030\007 \001("
+  "\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020Tid"
+  "eChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022"
+  "\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branch"
+  "\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.Ti"
+  "deChartSource\022!\n\007methods\030\010 \003(\0132\020.TideCha"
+  "rtMethod\"\350\001\n\rTideChartSite\022\r\n\005index\030\001 \001("
+  "\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004path"
+  "\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022\r"
+  "\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030\010"
+  " \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004po"
+  "rt\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideChartPrope"
+  "rty\"\211\002\n\020TideChartMessage\022\r\n\005index\030\001 \001(\003\022"
+  "\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010pr"
+  "evious\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030\010"
+  " \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tholdToken\030\n "
+  "\001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022\017"
+  "\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022\024"
+  "\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"k\n\026TideC"
+  "hartContextChange\022\r\n\005index\030\001 \001(\003\022\021\n\ttime"
+  "stamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004 \003(\013"
+  "2\022.TideChartProperty\"\270\001\n\021TideChartLogEnt"
+  "ry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006"
+  "source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.TideChartL"
+  "ogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001(\t\022\014"
+  "\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.TideChartP"
+  "roperty\"\355\002\n\020TideChartContext\022\n\n\002id\030\001 \001(\t"
+  "\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017\n\007ve"
+  "rsion\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideChartSi"
+  "te\022#\n\010messages\030\006 \003(\0132\021.TideChartMessage\022"
+  "\"\n\006global\030\007 \003(\0132\022.TideChartProperty\022\021\n\ts"
+  "tartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016\n\006ac"
+  "tive\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 "
+  "\003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027."
+  "TideChartContextChange\022\037\n\003log\030\017 \003(\0132\022.Ti"
+  "deChartLogEntry\"\245\002\n\rTideChartData\022\017\n\007ver"
+  "sion\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001"
+  "(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n"
+  "\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013c"
+  "ommitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideC"
+  "hartGraph\022!\n\005props\030\n \003(\0132\022.TideChartProp"
+  "erty\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007l"
+  "ibrary\030\014 \003(\0132\021.TideChartLibrary\"\240\001\n\017Tide"
+  "ChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002"
+  " \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\nc"
+  "ommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncom"
+  "mitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rT"
+  "ideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014"
+  "\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modified"
+  "Date\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030"
+  "\007 \001(\0132\016.TideChartData\022\"\n\007working\030\010 \003(\0132\021"
+  ".TideChartCommand\022!\n\006remote\030\t \003(\0132\021.Tide"
+  "ChartCommand\022\037\n\007history\030\n \003(\0132\016.TideChar"
+  "tData\022\"\n\007context\030\013 \003(\0132\021.TideChartContex"
+  "t\"w\n\023TideChartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004"
+  "name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t"
+  "\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001"
+  "(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002id\030\001 \001(\t\022"
+  "\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 "
+  "\001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030"
+  "\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartData*=\n\032"
+  "TideChartCommandUpdateType\022\007\n\003add\020\000\022\n\n\006r"
+  "emove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChartLogLeve"
+  "l\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texc"
+  "eption\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007messa"
+  "ge\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022"
+  "\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_tide_5fchart_2eproto_deps[1] = {
 };
@@ -1483,7 +1482,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tid
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tide_5fchart_2eproto_once;
 static bool descriptor_table_tide_5fchart_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tide_5fchart_2eproto = {
-  &descriptor_table_tide_5fchart_2eproto_initialized, descriptor_table_protodef_tide_5fchart_2eproto, "tide_chart.proto", 7444,
+  &descriptor_table_tide_5fchart_2eproto_initialized, descriptor_table_protodef_tide_5fchart_2eproto, "tide_chart.proto", 7440,
   &descriptor_table_tide_5fchart_2eproto_once, descriptor_table_tide_5fchart_2eproto_sccs, descriptor_table_tide_5fchart_2eproto_deps, 31, 0,
   schemas, file_default_instances, TableStruct_tide_5fchart_2eproto::offsets,
   file_level_metadata_tide_5fchart_2eproto, 34, file_level_enum_descriptors_tide_5fchart_2eproto, file_level_service_descriptors_tide_5fchart_2eproto,
@@ -4175,9 +4174,9 @@ TideChartPort::TideChartPort(const TideChartPort& from)
   if (!from.trigger().empty()) {
     trigger_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.trigger_);
   }
-  filter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from.filter().empty()) {
-    filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
+  link_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.link().empty()) {
+    link_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.link_);
   }
   event_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from.event().empty()) {
@@ -4201,7 +4200,7 @@ void TideChartPort::SharedCtor() {
   hint_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   trigger_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  filter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  link_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   event_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   syncgroup_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&ordinal_, 0, static_cast<size_t>(
@@ -4221,7 +4220,7 @@ void TideChartPort::SharedDtor() {
   hint_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   value_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   trigger_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  filter_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  link_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   event_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   syncgroup_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -4248,7 +4247,7 @@ void TideChartPort::Clear() {
   hint_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   value_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   trigger_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  filter_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  link_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   event_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   syncgroup_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&ordinal_, 0, static_cast<size_t>(
@@ -4340,10 +4339,10 @@ const char* TideChartPort::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string filter = 11;
+      // string link = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_filter(), ptr, ctx, "TideChartPort.filter");
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_link(), ptr, ctx, "TideChartPort.link");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4550,15 +4549,15 @@ bool TideChartPort::MergePartialFromCodedStream(
         break;
       }
 
-      // string filter = 11;
+      // string link = 11;
       case 11: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_filter()));
+                input, this->mutable_link()));
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->filter().data(), static_cast<int>(this->filter().length()),
+            this->link().data(), static_cast<int>(this->link().length()),
             ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "TideChartPort.filter"));
+            "TideChartPort.link"));
         } else {
           goto handle_unusual;
         }
@@ -4733,14 +4732,14 @@ void TideChartPort::SerializeWithCachedSizes(
       10, this->trigger(), output);
   }
 
-  // string filter = 11;
-  if (this->filter().size() > 0) {
+  // string link = 11;
+  if (this->link().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->filter().data(), static_cast<int>(this->filter().length()),
+      this->link().data(), static_cast<int>(this->link().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "TideChartPort.filter");
+      "TideChartPort.link");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      11, this->filter(), output);
+      11, this->link(), output);
   }
 
   // string event = 12;
@@ -4877,15 +4876,15 @@ void TideChartPort::SerializeWithCachedSizes(
         10, this->trigger(), target);
   }
 
-  // string filter = 11;
-  if (this->filter().size() > 0) {
+  // string link = 11;
+  if (this->link().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->filter().data(), static_cast<int>(this->filter().length()),
+      this->link().data(), static_cast<int>(this->link().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "TideChartPort.filter");
+      "TideChartPort.link");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        11, this->filter(), target);
+        11, this->link(), target);
   }
 
   // string event = 12;
@@ -4991,11 +4990,11 @@ size_t TideChartPort::ByteSizeLong() const {
         this->trigger());
   }
 
-  // string filter = 11;
-  if (this->filter().size() > 0) {
+  // string link = 11;
+  if (this->link().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->filter());
+        this->link());
   }
 
   // string event = 12;
@@ -5091,9 +5090,9 @@ void TideChartPort::MergeFrom(const TideChartPort& from) {
 
     trigger_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.trigger_);
   }
-  if (from.filter().size() > 0) {
+  if (from.link().size() > 0) {
 
-    filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
+    link_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.link_);
   }
   if (from.event().size() > 0) {
 
@@ -5154,7 +5153,7 @@ void TideChartPort::InternalSwap(TideChartPort* other) {
     GetArenaNoVirtual());
   trigger_.Swap(&other->trigger_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  filter_.Swap(&other->filter_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  link_.Swap(&other->link_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   event_.Swap(&other->event_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -5205,9 +5204,9 @@ TideChartLink::TideChartLink(const TideChartLink& from)
   if (!from.inport().empty()) {
     inport_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.inport_);
   }
-  filter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from.filter().empty()) {
-    filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
+  link_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.link().empty()) {
+    link_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.link_);
   }
   ::memcpy(&group_, &from.group_,
     static_cast<size_t>(reinterpret_cast<char*>(&isdisabled_) -
@@ -5221,7 +5220,7 @@ void TideChartLink::SharedCtor() {
   outport_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   innode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   inport_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  filter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  link_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&group_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&isdisabled_) -
       reinterpret_cast<char*>(&group_)) + sizeof(isdisabled_));
@@ -5237,7 +5236,7 @@ void TideChartLink::SharedDtor() {
   outport_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   innode_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   inport_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  filter_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  link_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void TideChartLink::SetCachedSize(int size) const {
@@ -5259,7 +5258,7 @@ void TideChartLink::Clear() {
   outport_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   innode_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   inport_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  filter_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  link_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&group_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&isdisabled_) -
       reinterpret_cast<char*>(&group_)) + sizeof(isdisabled_));
@@ -5316,10 +5315,10 @@ const char* TideChartLink::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string filter = 7;
+      // string link = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_filter(), ptr, ctx, "TideChartLink.filter");
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_link(), ptr, ctx, "TideChartLink.link");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5467,15 +5466,15 @@ bool TideChartLink::MergePartialFromCodedStream(
         break;
       }
 
-      // string filter = 7;
+      // string link = 7;
       case 7: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_filter()));
+                input, this->mutable_link()));
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->filter().data(), static_cast<int>(this->filter().length()),
+            this->link().data(), static_cast<int>(this->link().length()),
             ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "TideChartLink.filter"));
+            "TideChartLink.link"));
         } else {
           goto handle_unusual;
         }
@@ -5611,14 +5610,14 @@ void TideChartLink::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(6, this->delay(), output);
   }
 
-  // string filter = 7;
-  if (this->filter().size() > 0) {
+  // string link = 7;
+  if (this->link().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->filter().data(), static_cast<int>(this->filter().length()),
+      this->link().data(), static_cast<int>(this->link().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "TideChartLink.filter");
+      "TideChartLink.link");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      7, this->filter(), output);
+      7, this->link(), output);
   }
 
   // bool isLogging = 16;
@@ -5708,15 +5707,15 @@ void TideChartLink::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->delay(), target);
   }
 
-  // string filter = 7;
-  if (this->filter().size() > 0) {
+  // string link = 7;
+  if (this->link().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->filter().data(), static_cast<int>(this->filter().length()),
+      this->link().data(), static_cast<int>(this->link().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "TideChartLink.filter");
+      "TideChartLink.link");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        7, this->filter(), target);
+        7, this->link(), target);
   }
 
   // bool isLogging = 16;
@@ -5788,11 +5787,11 @@ size_t TideChartLink::ByteSizeLong() const {
         this->inport());
   }
 
-  // string filter = 7;
-  if (this->filter().size() > 0) {
+  // string link = 7;
+  if (this->link().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->filter());
+        this->link());
   }
 
   // int32 group = 5;
@@ -5872,9 +5871,9 @@ void TideChartLink::MergeFrom(const TideChartLink& from) {
 
     inport_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.inport_);
   }
-  if (from.filter().size() > 0) {
+  if (from.link().size() > 0) {
 
-    filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
+    link_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.link_);
   }
   if (from.group() != 0) {
     set_group(from.group());
@@ -5925,7 +5924,7 @@ void TideChartLink::InternalSwap(TideChartLink* other) {
     GetArenaNoVirtual());
   inport_.Swap(&other->inport_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  filter_.Swap(&other->filter_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  link_.Swap(&other->link_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(group_, other->group_);
   swap(delay_, other->delay_);
