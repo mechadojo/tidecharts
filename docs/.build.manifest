@@ -2,6 +2,12 @@
 assets/AssetManifest.json
 assets/FontManifest.json
 assets/fonts/Pacifico-Regular.ttf
+assets/fonts/RobotoMono-Bold.ttf
+assets/fonts/RobotoMono-BoldItalic.ttf
+assets/fonts/RobotoMono-Light.ttf
+assets/fonts/RobotoMono-LightItalic.ttf
+assets/fonts/RobotoMono-Regular.ttf
+assets/fonts/RobotoMono-RegularItalic.ttf
 assets/fonts/SourceSansPro-Bold.ttf
 assets/fonts/SourceSansPro-BoldItalic.ttf
 assets/fonts/SourceSansPro-Light.ttf
