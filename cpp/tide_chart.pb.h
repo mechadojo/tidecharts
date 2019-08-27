@@ -918,6 +918,7 @@ class TideChartWidget :
 
   enum : int {
     kPropsFieldNumber = 12,
+    kSettingsFieldNumber = 22,
     kIdFieldNumber = 1,
     kTypeFieldNumber = 2,
     kTitleFieldNumber = 3,
@@ -940,6 +941,17 @@ class TideChartWidget :
   ::TideChartProperty* add_props();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
       props() const;
+
+  // repeated .TideChartProperty settings = 22;
+  int settings_size() const;
+  void clear_settings();
+  ::TideChartProperty* mutable_settings(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+      mutable_settings();
+  const ::TideChartProperty& settings(int index) const;
+  ::TideChartProperty* add_settings();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+      settings() const;
 
   // string id = 1;
   void clear_id();
@@ -1061,6 +1073,7 @@ class TideChartWidget :
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > props_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > settings_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr id_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr title_;
@@ -1927,6 +1940,7 @@ class TideChartNode :
     kOutportsFieldNumber = 11,
     kPropsFieldNumber = 12,
     kNotesFieldNumber = 20,
+    kSettingsFieldNumber = 22,
     kNameFieldNumber = 1,
     kTypeFieldNumber = 2,
     kTitleFieldNumber = 5,
@@ -1985,6 +1999,17 @@ class TideChartNode :
   ::TideChartNote* add_notes();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote >&
       notes() const;
+
+  // repeated .TideChartProperty settings = 22;
+  int settings_size() const;
+  void clear_settings();
+  ::TideChartProperty* mutable_settings(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+      mutable_settings();
+  const ::TideChartProperty& settings(int index) const;
+  ::TideChartProperty* add_settings();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+      settings() const;
 
   // string name = 1;
   void clear_name();
@@ -2107,6 +2132,7 @@ class TideChartNode :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartPort > outports_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > props_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote > notes_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > settings_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr title_;
@@ -2242,6 +2268,7 @@ class TideChartRegion :
     kNodesFieldNumber = 3,
     kPropsFieldNumber = 6,
     kNotesFieldNumber = 20,
+    kSettingsFieldNumber = 22,
     kNameFieldNumber = 1,
     kTitleFieldNumber = 2,
     kScopeFieldNumber = 5,
@@ -2290,6 +2317,17 @@ class TideChartRegion :
   ::TideChartNote* add_notes();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote >&
       notes() const;
+
+  // repeated .TideChartProperty settings = 22;
+  int settings_size() const;
+  void clear_settings();
+  ::TideChartProperty* mutable_settings(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+      mutable_settings();
+  const ::TideChartProperty& settings(int index) const;
+  ::TideChartProperty* add_settings();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+      settings() const;
 
   // string name = 1;
   void clear_name();
@@ -2368,6 +2406,7 @@ class TideChartRegion :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> nodes_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > props_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote > notes_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > settings_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr title_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr scope_;
@@ -2503,6 +2542,7 @@ class TideChartGraph :
     kPropsFieldNumber = 13,
     kHistoryFieldNumber = 14,
     kNotesFieldNumber = 20,
+    kSettingsFieldNumber = 22,
     kIdFieldNumber = 1,
     kTypeFieldNumber = 2,
     kNameFieldNumber = 3,
@@ -2603,6 +2643,17 @@ class TideChartGraph :
   ::TideChartNote* add_notes();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote >&
       notes() const;
+
+  // repeated .TideChartProperty settings = 22;
+  int settings_size() const;
+  void clear_settings();
+  ::TideChartProperty* mutable_settings(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+      mutable_settings();
+  const ::TideChartProperty& settings(int index) const;
+  ::TideChartProperty* add_settings();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+      settings() const;
 
   // string id = 1;
   void clear_id();
@@ -2725,6 +2776,7 @@ class TideChartGraph :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > props_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartCommand > history_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote > notes_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > settings_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr id_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
@@ -6862,6 +6914,7 @@ class TideChartData :
     kPropsFieldNumber = 10,
     kNotesFieldNumber = 11,
     kLibraryFieldNumber = 12,
+    kSettingsFieldNumber = 22,
     kVersionFieldNumber = 1,
     kBranchFieldNumber = 2,
     kSourceFieldNumber = 3,
@@ -6914,6 +6967,17 @@ class TideChartData :
   ::TideChartLibrary* add_library();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartLibrary >&
       library() const;
+
+  // repeated .TideChartProperty settings = 22;
+  int settings_size() const;
+  void clear_settings();
+  ::TideChartProperty* mutable_settings(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+      mutable_settings();
+  const ::TideChartProperty& settings(int index) const;
+  ::TideChartProperty* add_settings();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+      settings() const;
 
   // string version = 1;
   void clear_version();
@@ -7012,6 +7076,7 @@ class TideChartData :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > props_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartNote > notes_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartLibrary > library_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty > settings_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr version_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr branch_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr source_;
@@ -9393,6 +9458,36 @@ TideChartWidget::props() const {
   return props_;
 }
 
+// repeated .TideChartProperty settings = 22;
+inline int TideChartWidget::settings_size() const {
+  return settings_.size();
+}
+inline void TideChartWidget::clear_settings() {
+  settings_.Clear();
+}
+inline ::TideChartProperty* TideChartWidget::mutable_settings(int index) {
+  // @@protoc_insertion_point(field_mutable:TideChartWidget.settings)
+  return settings_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+TideChartWidget::mutable_settings() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartWidget.settings)
+  return &settings_;
+}
+inline const ::TideChartProperty& TideChartWidget::settings(int index) const {
+  // @@protoc_insertion_point(field_get:TideChartWidget.settings)
+  return settings_.Get(index);
+}
+inline ::TideChartProperty* TideChartWidget::add_settings() {
+  // @@protoc_insertion_point(field_add:TideChartWidget.settings)
+  return settings_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+TideChartWidget::settings() const {
+  // @@protoc_insertion_point(field_list:TideChartWidget.settings)
+  return settings_;
+}
+
 inline bool TideChartWidget::has_target() const {
   return target_case() != TARGET_NOT_SET;
 }
@@ -11232,6 +11327,36 @@ inline void TideChartNode::set_allocated_script(std::string* script) {
   // @@protoc_insertion_point(field_set_allocated:TideChartNode.script)
 }
 
+// repeated .TideChartProperty settings = 22;
+inline int TideChartNode::settings_size() const {
+  return settings_.size();
+}
+inline void TideChartNode::clear_settings() {
+  settings_.Clear();
+}
+inline ::TideChartProperty* TideChartNode::mutable_settings(int index) {
+  // @@protoc_insertion_point(field_mutable:TideChartNode.settings)
+  return settings_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+TideChartNode::mutable_settings() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartNode.settings)
+  return &settings_;
+}
+inline const ::TideChartProperty& TideChartNode::settings(int index) const {
+  // @@protoc_insertion_point(field_get:TideChartNode.settings)
+  return settings_.Get(index);
+}
+inline ::TideChartProperty* TideChartNode::add_settings() {
+  // @@protoc_insertion_point(field_add:TideChartNode.settings)
+  return settings_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+TideChartNode::settings() const {
+  // @@protoc_insertion_point(field_list:TideChartNode.settings)
+  return settings_;
+}
+
 // -------------------------------------------------------------------
 
 // TideChartRegion
@@ -11633,6 +11758,36 @@ inline void TideChartRegion::set_allocated_script(std::string* script) {
   }
   script_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), script);
   // @@protoc_insertion_point(field_set_allocated:TideChartRegion.script)
+}
+
+// repeated .TideChartProperty settings = 22;
+inline int TideChartRegion::settings_size() const {
+  return settings_.size();
+}
+inline void TideChartRegion::clear_settings() {
+  settings_.Clear();
+}
+inline ::TideChartProperty* TideChartRegion::mutable_settings(int index) {
+  // @@protoc_insertion_point(field_mutable:TideChartRegion.settings)
+  return settings_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+TideChartRegion::mutable_settings() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartRegion.settings)
+  return &settings_;
+}
+inline const ::TideChartProperty& TideChartRegion::settings(int index) const {
+  // @@protoc_insertion_point(field_get:TideChartRegion.settings)
+  return settings_.Get(index);
+}
+inline ::TideChartProperty* TideChartRegion::add_settings() {
+  // @@protoc_insertion_point(field_add:TideChartRegion.settings)
+  return settings_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+TideChartRegion::settings() const {
+  // @@protoc_insertion_point(field_list:TideChartRegion.settings)
+  return settings_;
 }
 
 // -------------------------------------------------------------------
@@ -12341,6 +12496,36 @@ inline void TideChartGraph::set_allocated_script(std::string* script) {
   }
   script_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), script);
   // @@protoc_insertion_point(field_set_allocated:TideChartGraph.script)
+}
+
+// repeated .TideChartProperty settings = 22;
+inline int TideChartGraph::settings_size() const {
+  return settings_.size();
+}
+inline void TideChartGraph::clear_settings() {
+  settings_.Clear();
+}
+inline ::TideChartProperty* TideChartGraph::mutable_settings(int index) {
+  // @@protoc_insertion_point(field_mutable:TideChartGraph.settings)
+  return settings_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+TideChartGraph::mutable_settings() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartGraph.settings)
+  return &settings_;
+}
+inline const ::TideChartProperty& TideChartGraph::settings(int index) const {
+  // @@protoc_insertion_point(field_get:TideChartGraph.settings)
+  return settings_.Get(index);
+}
+inline ::TideChartProperty* TideChartGraph::add_settings() {
+  // @@protoc_insertion_point(field_add:TideChartGraph.settings)
+  return settings_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+TideChartGraph::settings() const {
+  // @@protoc_insertion_point(field_list:TideChartGraph.settings)
+  return settings_;
 }
 
 // -------------------------------------------------------------------
@@ -18030,6 +18215,36 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartLibrary >&
 TideChartData::library() const {
   // @@protoc_insertion_point(field_list:TideChartData.library)
   return library_;
+}
+
+// repeated .TideChartProperty settings = 22;
+inline int TideChartData::settings_size() const {
+  return settings_.size();
+}
+inline void TideChartData::clear_settings() {
+  settings_.Clear();
+}
+inline ::TideChartProperty* TideChartData::mutable_settings(int index) {
+  // @@protoc_insertion_point(field_mutable:TideChartData.settings)
+  return settings_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >*
+TideChartData::mutable_settings() {
+  // @@protoc_insertion_point(field_mutable_list:TideChartData.settings)
+  return &settings_;
+}
+inline const ::TideChartProperty& TideChartData::settings(int index) const {
+  // @@protoc_insertion_point(field_get:TideChartData.settings)
+  return settings_.Get(index);
+}
+inline ::TideChartProperty* TideChartData::add_settings() {
+  // @@protoc_insertion_point(field_add:TideChartData.settings)
+  return settings_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TideChartProperty >&
+TideChartData::settings() const {
+  // @@protoc_insertion_point(field_list:TideChartData.settings)
+  return settings_;
 }
 
 // -------------------------------------------------------------------

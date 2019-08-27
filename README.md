@@ -145,7 +145,7 @@
 | version | [string](#string) |  | current version of the chart being executed |
 | sites | [TideChartSite](#TideChartSite) | repeated | list of all the sites in the execution context |
 | messages | [TideChartMessage](#TideChartMessage) | repeated | list of all the messages in the execution context |
-| global | [TideChartProperty](#TideChartProperty) | repeated | a set of properties representing global state |
+| global | [TideChartProperty](#TideChartProperty) | repeated | a set of properties representing the global state |
 | startTime | [int64](#int64) |  | timestamp execution was started |
 | startIndex | [int64](#int64) |  | smallest index in the execution context (offset used for relative index) |
 | active | [int64](#int64) | repeated | relative index of messages that are currently active |
@@ -198,6 +198,7 @@
 | props | [TideChartProperty](#TideChartProperty) | repeated | configuration properties for the entire chart |
 | notes | [TideChartNote](#TideChartNote) | repeated | note discussion for the entire chart |
 | library | [TideChartLibrary](#TideChartLibrary) | repeated | source of node templates that can be added to graphs |
+| settings | [TideChartProperty](#TideChartProperty) | repeated | charts can have additional parameters related to layout, display or debugging |
 
 
 
@@ -298,6 +299,7 @@ Read only the file header information
 | isDisabled | [bool](#bool) |  | flag indicating this graph is disabled (messages are dropped) |
 | notes | [TideChartNote](#TideChartNote) | repeated | comments associated with this graph |
 | script | [string](#string) |  | a user script of custom code for the graph (non-message based thread initialization, global exception handling) |
+| settings | [TideChartProperty](#TideChartProperty) | repeated | graphs can have additional parameters related to layout, display or debugging |
 
 
 
@@ -537,6 +539,7 @@ Read only the commit headers
 | isDisabled | [bool](#bool) |  | flag indicating this node is disabled (messages are dropped) |
 | notes | [TideChartNote](#TideChartNote) | repeated | comments associated with this node |
 | script | [string](#string) |  | a user script of custom code to implement the node&#39;s action, filter or mux/demux operations |
+| settings | [TideChartProperty](#TideChartProperty) | repeated | nodes can have additional parameters related to layout, display or debugging |
 
 
 
@@ -706,6 +709,7 @@ a recursive data type that provides configuration values for graphs, regions and
 | isDisabled | [bool](#bool) |  | flag indicating this region is disabled (messages are dropped) |
 | notes | [TideChartNote](#TideChartNote) | repeated | comments associated with this region |
 | script | [string](#string) |  | a user script of custom code for the region (interacting with non-message based threads, scoped exception handling) |
+| settings | [TideChartProperty](#TideChartProperty) | repeated | regions can have additional parameters related to layout, display or debugging |
 
 
 
@@ -795,7 +799,8 @@ a recursive data type that provides configuration values for graphs, regions and
 | link | [string](#string) |  | link widget is associated with (&lt;out-node&gt;:&lt;out-port&gt;-&gt;&lt;in-node&gt;:&lt;in-port&gt;) |
 | port | [string](#string) |  | port widget is associated with (&lt;node&gt;:&lt;port&gt;) |
 | node | [string](#string) |  | name of node widget is associated with |
-| props | [TideChartProperty](#TideChartProperty) | repeated | widgets can have configuration paremeters |
+| props | [TideChartProperty](#TideChartProperty) | repeated | widgets can have configuration parameters |
+| settings | [TideChartProperty](#TideChartProperty) | repeated | widgets can have additional parameters related to layout, display or debugging |
 
 
 

@@ -61,7 +61,8 @@ message TideChartWidget {
         string node = 11;                       // name of node widget is associated with
     }
 
-    repeated TideChartProperty props = 12;      // widgets can have configuration paremeters
+    repeated TideChartProperty props = 12;      // widgets can have configuration parameters
+    repeated TideChartProperty settings = 22;   // widgets can have additional parameters related to layout, display or debugging
 }
 
 message TideChartPort {
@@ -128,13 +129,14 @@ message TideChartNode {
     repeated TideChartPort outports = 11;       // node outports to connect outbound links
     repeated TideChartProperty props = 12;      // configuration properties for this node (combines with graph properties and region properties)
     
-    bool isLogging = 16;                          // flag indicating this node will trace messages
-    bool isDebugging = 17;                        // flag indicating this node is a debug breakpoint
-    bool isPaused = 18;                           // flag indicating this node is paused (messages are queued)
-    bool isDisabled = 19;                         // flag indicating this node is disabled (messages are dropped)
+    bool isLogging = 16;                        // flag indicating this node will trace messages
+    bool isDebugging = 17;                      // flag indicating this node is a debug breakpoint
+    bool isPaused = 18;                         // flag indicating this node is paused (messages are queued)
+    bool isDisabled = 19;                       // flag indicating this node is disabled (messages are dropped)
 
     repeated TideChartNote notes = 20;          // comments associated with this node
     string script = 21;                         // a user script of custom code to implement the node's action, filter or mux/demux operations
+    repeated TideChartProperty settings = 22;   // nodes can have additional parameters related to layout, display or debugging
 }
 
 message TideChartRegion {
@@ -153,6 +155,7 @@ message TideChartRegion {
 
     repeated TideChartNote notes = 20;          // comments associated with this region
     string script = 21;                         // a user script of custom code for the region (interacting with non-message based threads, scoped exception handling)
+    repeated TideChartProperty settings = 22;   // regions can have additional parameters related to layout, display or debugging
 }
 
 message TideChartGraph {
@@ -181,6 +184,7 @@ message TideChartGraph {
     
     repeated TideChartNote notes = 20;          // comments associated with this graph
     string script = 21;                         // a user script of custom code for the graph (non-message based thread initialization, global exception handling)
+    repeated TideChartProperty settings = 22;   // graphs can have additional parameters related to layout, display or debugging
 }
 
 //////////////////////////////////////////////////////////
@@ -427,7 +431,7 @@ message TideChartContext {
 
     repeated TideChartSite sites = 5;               // list of all the sites in the execution context
     repeated TideChartMessage messages= 6;          // list of all the messages in the execution context
-    repeated TideChartProperty global = 7;          // a set of properties representing global state 
+    repeated TideChartProperty global = 7;          // a set of properties representing the global state 
 
     int64 startTime = 8;                            // timestamp execution was started
     int64 startIndex = 9;                           // smallest index in the execution context (offset used for relative index)
@@ -462,6 +466,7 @@ message TideChartData {
     repeated TideChartNote notes = 11;          // note discussion for the entire chart
 
     repeated TideChartLibrary library = 12;     // source of node templates that can be added to graphs
+    repeated TideChartProperty settings = 22;   // charts can have additional parameters related to layout, display or debugging
 }
 
 // Read only the commit headers 

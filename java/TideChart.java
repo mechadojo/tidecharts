@@ -4818,7 +4818,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -4827,7 +4827,7 @@ public final class TideChart {
         getPropsList();
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -4835,7 +4835,7 @@ public final class TideChart {
     TideChart.TideChartProperty getProps(int index);
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -4843,7 +4843,7 @@ public final class TideChart {
     int getPropsCount();
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -4852,12 +4852,56 @@ public final class TideChart {
         getPropsOrBuilderList();
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
      */
     TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getSettingsList();
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartProperty getSettings(int index);
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    int getSettingsCount();
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList();
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
         int index);
 
     public TideChart.TideChartWidget.TargetCase getTargetCase();
@@ -4880,6 +4924,7 @@ public final class TideChart {
       title_ = "";
       region_ = "";
       props_ = java.util.Collections.emptyList();
+      settings_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -4984,6 +5029,15 @@ public final class TideChart {
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
               break;
             }
+            case 178: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              settings_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -5001,6 +5055,9 @@ public final class TideChart {
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -5436,7 +5493,7 @@ public final class TideChart {
     private java.util.List<TideChart.TideChartProperty> props_;
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -5446,7 +5503,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -5457,7 +5514,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -5467,7 +5524,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -5477,7 +5534,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * widgets can have configuration paremeters
+     * widgets can have configuration parameters
      * </pre>
      *
      * <code>repeated .TideChartProperty props = 12;</code>
@@ -5485,6 +5542,61 @@ public final class TideChart {
     public TideChart.TideChartPropertyOrBuilder getPropsOrBuilder(
         int index) {
       return props_.get(index);
+    }
+
+    public static final int SETTINGS_FIELD_NUMBER = 22;
+    private java.util.List<TideChart.TideChartProperty> settings_;
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public int getSettingsCount() {
+      return settings_.size();
+    }
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartProperty getSettings(int index) {
+      return settings_.get(index);
+    }
+    /**
+     * <pre>
+     * widgets can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index) {
+      return settings_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -5537,6 +5649,9 @@ public final class TideChart {
       for (int i = 0; i < props_.size(); i++) {
         output.writeMessage(12, props_.get(i));
       }
+      for (int i = 0; i < settings_.size(); i++) {
+        output.writeMessage(22, settings_.get(i));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -5587,6 +5702,10 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, props_.get(i));
       }
+      for (int i = 0; i < settings_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(22, settings_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -5620,6 +5739,8 @@ public final class TideChart {
           != other.getHeight()) return false;
       if (!getPropsList()
           .equals(other.getPropsList())) return false;
+      if (!getSettingsList()
+          .equals(other.getSettingsList())) return false;
       if (!getTargetCase().equals(other.getTargetCase())) return false;
       switch (targetCase_) {
         case 9:
@@ -5667,6 +5788,10 @@ public final class TideChart {
       if (getPropsCount() > 0) {
         hash = (37 * hash) + PROPS_FIELD_NUMBER;
         hash = (53 * hash) + getPropsList().hashCode();
+      }
+      if (getSettingsCount() > 0) {
+        hash = (37 * hash) + SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getSettingsList().hashCode();
       }
       switch (targetCase_) {
         case 9:
@@ -5813,6 +5938,7 @@ public final class TideChart {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getPropsFieldBuilder();
+          getSettingsFieldBuilder();
         }
       }
       @java.lang.Override
@@ -5839,6 +5965,12 @@ public final class TideChart {
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           propsBuilder_.clear();
+        }
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          settingsBuilder_.clear();
         }
         targetCase_ = 0;
         target_ = null;
@@ -5894,6 +6026,15 @@ public final class TideChart {
           result.props_ = props_;
         } else {
           result.props_ = propsBuilder_.build();
+        }
+        if (settingsBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            settings_ = java.util.Collections.unmodifiableList(settings_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.settings_ = settings_;
+        } else {
+          result.settings_ = settingsBuilder_.build();
         }
         result.targetCase_ = targetCase_;
         onBuilt();
@@ -5995,6 +6136,32 @@ public final class TideChart {
                    getPropsFieldBuilder() : null;
             } else {
               propsBuilder_.addAllMessages(other.props_);
+            }
+          }
+        }
+        if (settingsBuilder_ == null) {
+          if (!other.settings_.isEmpty()) {
+            if (settings_.isEmpty()) {
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureSettingsIsMutable();
+              settings_.addAll(other.settings_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.settings_.isEmpty()) {
+            if (settingsBuilder_.isEmpty()) {
+              settingsBuilder_.dispose();
+              settingsBuilder_ = null;
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              settingsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSettingsFieldBuilder() : null;
+            } else {
+              settingsBuilder_.addAllMessages(other.settings_);
             }
           }
         }
@@ -6888,7 +7055,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -6902,7 +7069,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -6916,7 +7083,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -6930,7 +7097,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -6951,7 +7118,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -6969,7 +7136,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -6989,7 +7156,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7010,7 +7177,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7028,7 +7195,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7046,7 +7213,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7065,7 +7232,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7082,7 +7249,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7099,7 +7266,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7110,7 +7277,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7124,7 +7291,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7139,7 +7306,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7150,7 +7317,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7162,7 +7329,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * widgets can have configuration paremeters
+       * widgets can have configuration parameters
        * </pre>
        *
        * <code>repeated .TideChartProperty props = 12;</code>
@@ -7184,6 +7351,318 @@ public final class TideChart {
           props_ = null;
         }
         return propsBuilder_;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> settings_ =
+        java.util.Collections.emptyList();
+      private void ensureSettingsIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> settingsBuilder_;
+
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+        if (settingsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settings_);
+        } else {
+          return settingsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public int getSettingsCount() {
+        if (settingsBuilder_ == null) {
+          return settings_.size();
+        } else {
+          return settingsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty getSettings(int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);
+        } else {
+          return settingsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.set(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addAllSettings(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, settings_);
+          onChanged();
+        } else {
+          settingsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder clearSettings() {
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          settingsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder removeSettings(int index) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.remove(index);
+          onChanged();
+        } else {
+          settingsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder getSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+          int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);  } else {
+          return settingsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getSettingsOrBuilderList() {
+        if (settingsBuilder_ != null) {
+          return settingsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(settings_);
+        }
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder() {
+        return getSettingsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * widgets can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getSettingsBuilderList() {
+        return getSettingsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getSettingsFieldBuilder() {
+        if (settingsBuilder_ == null) {
+          settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  settings_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          settings_ = null;
+        }
+        return settingsBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -13490,6 +13969,50 @@ public final class TideChart {
      */
     com.google.protobuf.ByteString
         getScriptBytes();
+
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getSettingsList();
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartProperty getSettings(int index);
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    int getSettingsCount();
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList();
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code TideChartNode}
@@ -13515,6 +14038,7 @@ public final class TideChart {
       props_ = java.util.Collections.emptyList();
       notes_ = java.util.Collections.emptyList();
       script_ = "";
+      settings_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -13661,6 +14185,15 @@ public final class TideChart {
               script_ = s;
               break;
             }
+            case 178: {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+                settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              settings_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -13687,6 +14220,9 @@ public final class TideChart {
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
           notes_ = java.util.Collections.unmodifiableList(notes_);
+        }
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -14310,6 +14846,61 @@ public final class TideChart {
       }
     }
 
+    public static final int SETTINGS_FIELD_NUMBER = 22;
+    private java.util.List<TideChart.TideChartProperty> settings_;
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public int getSettingsCount() {
+      return settings_.size();
+    }
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartProperty getSettings(int index) {
+      return settings_.get(index);
+    }
+    /**
+     * <pre>
+     * nodes can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index) {
+      return settings_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -14377,6 +14968,9 @@ public final class TideChart {
       }
       if (!getScriptBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 21, script_);
+      }
+      for (int i = 0; i < settings_.size(); i++) {
+        output.writeMessage(22, settings_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -14452,6 +15046,10 @@ public final class TideChart {
       if (!getScriptBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(21, script_);
       }
+      for (int i = 0; i < settings_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(22, settings_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -14503,6 +15101,8 @@ public final class TideChart {
           .equals(other.getNotesList())) return false;
       if (!getScript()
           .equals(other.getScript())) return false;
+      if (!getSettingsList()
+          .equals(other.getSettingsList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -14562,6 +15162,10 @@ public final class TideChart {
       }
       hash = (37 * hash) + SCRIPT_FIELD_NUMBER;
       hash = (53 * hash) + getScript().hashCode();
+      if (getSettingsCount() > 0) {
+        hash = (37 * hash) + SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getSettingsList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -14694,6 +15298,7 @@ public final class TideChart {
           getOutportsFieldBuilder();
           getPropsFieldBuilder();
           getNotesFieldBuilder();
+          getSettingsFieldBuilder();
         }
       }
       @java.lang.Override
@@ -14751,6 +15356,12 @@ public final class TideChart {
         }
         script_ = "";
 
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          settingsBuilder_.clear();
+        }
         return this;
       }
 
@@ -14828,6 +15439,15 @@ public final class TideChart {
           result.notes_ = notesBuilder_.build();
         }
         result.script_ = script_;
+        if (settingsBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0)) {
+            settings_ = java.util.Collections.unmodifiableList(settings_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.settings_ = settings_;
+        } else {
+          result.settings_ = settingsBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -15028,6 +15648,32 @@ public final class TideChart {
         if (!other.getScript().isEmpty()) {
           script_ = other.script_;
           onChanged();
+        }
+        if (settingsBuilder_ == null) {
+          if (!other.settings_.isEmpty()) {
+            if (settings_.isEmpty()) {
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureSettingsIsMutable();
+              settings_.addAll(other.settings_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.settings_.isEmpty()) {
+            if (settingsBuilder_.isEmpty()) {
+              settingsBuilder_.dispose();
+              settingsBuilder_ = null;
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              settingsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSettingsFieldBuilder() : null;
+            } else {
+              settingsBuilder_.addAllMessages(other.settings_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -17195,6 +17841,318 @@ public final class TideChart {
         onChanged();
         return this;
       }
+
+      private java.util.List<TideChart.TideChartProperty> settings_ =
+        java.util.Collections.emptyList();
+      private void ensureSettingsIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> settingsBuilder_;
+
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+        if (settingsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settings_);
+        } else {
+          return settingsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public int getSettingsCount() {
+        if (settingsBuilder_ == null) {
+          return settings_.size();
+        } else {
+          return settingsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty getSettings(int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);
+        } else {
+          return settingsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.set(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addAllSettings(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, settings_);
+          onChanged();
+        } else {
+          settingsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder clearSettings() {
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          settingsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder removeSettings(int index) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.remove(index);
+          onChanged();
+        } else {
+          settingsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder getSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+          int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);  } else {
+          return settingsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getSettingsOrBuilderList() {
+        if (settingsBuilder_ != null) {
+          return settingsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(settings_);
+        }
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder() {
+        return getSettingsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * nodes can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getSettingsBuilderList() {
+        return getSettingsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getSettingsFieldBuilder() {
+        if (settingsBuilder_ == null) {
+          settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  settings_,
+                  ((bitField0_ & 0x00000010) != 0),
+                  getParentForChildren(),
+                  isClean());
+          settings_ = null;
+        }
+        return settingsBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -17491,6 +18449,50 @@ public final class TideChart {
      */
     com.google.protobuf.ByteString
         getScriptBytes();
+
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getSettingsList();
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartProperty getSettings(int index);
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    int getSettingsCount();
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList();
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code TideChartRegion}
@@ -17512,6 +18514,7 @@ public final class TideChart {
       props_ = java.util.Collections.emptyList();
       notes_ = java.util.Collections.emptyList();
       script_ = "";
+      settings_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -17621,6 +18624,15 @@ public final class TideChart {
               script_ = s;
               break;
             }
+            case 178: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              settings_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -17644,6 +18656,9 @@ public final class TideChart {
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           notes_ = java.util.Collections.unmodifiableList(notes_);
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -18050,6 +19065,61 @@ public final class TideChart {
       }
     }
 
+    public static final int SETTINGS_FIELD_NUMBER = 22;
+    private java.util.List<TideChart.TideChartProperty> settings_;
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public int getSettingsCount() {
+      return settings_.size();
+    }
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartProperty getSettings(int index) {
+      return settings_.get(index);
+    }
+    /**
+     * <pre>
+     * regions can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index) {
+      return settings_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -18099,6 +19169,9 @@ public final class TideChart {
       }
       if (!getScriptBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 21, script_);
+      }
+      for (int i = 0; i < settings_.size(); i++) {
+        output.writeMessage(22, settings_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -18157,6 +19230,10 @@ public final class TideChart {
       if (!getScriptBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(21, script_);
       }
+      for (int i = 0; i < settings_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(22, settings_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -18196,6 +19273,8 @@ public final class TideChart {
           .equals(other.getNotesList())) return false;
       if (!getScript()
           .equals(other.getScript())) return false;
+      if (!getSettingsList()
+          .equals(other.getSettingsList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -18241,6 +19320,10 @@ public final class TideChart {
       }
       hash = (37 * hash) + SCRIPT_FIELD_NUMBER;
       hash = (53 * hash) + getScript().hashCode();
+      if (getSettingsCount() > 0) {
+        hash = (37 * hash) + SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getSettingsList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -18371,6 +19454,7 @@ public final class TideChart {
                 .alwaysUseFieldBuilders) {
           getPropsFieldBuilder();
           getNotesFieldBuilder();
+          getSettingsFieldBuilder();
         }
       }
       @java.lang.Override
@@ -18408,6 +19492,12 @@ public final class TideChart {
         }
         script_ = "";
 
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        } else {
+          settingsBuilder_.clear();
+        }
         return this;
       }
 
@@ -18467,6 +19557,15 @@ public final class TideChart {
           result.notes_ = notesBuilder_.build();
         }
         result.script_ = script_;
+        if (settingsBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            settings_ = java.util.Collections.unmodifiableList(settings_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.settings_ = settings_;
+        } else {
+          result.settings_ = settingsBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -18607,6 +19706,32 @@ public final class TideChart {
         if (!other.getScript().isEmpty()) {
           script_ = other.script_;
           onChanged();
+        }
+        if (settingsBuilder_ == null) {
+          if (!other.settings_.isEmpty()) {
+            if (settings_.isEmpty()) {
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureSettingsIsMutable();
+              settings_.addAll(other.settings_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.settings_.isEmpty()) {
+            if (settingsBuilder_.isEmpty()) {
+              settingsBuilder_.dispose();
+              settingsBuilder_ = null;
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              settingsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSettingsFieldBuilder() : null;
+            } else {
+              settingsBuilder_.addAllMessages(other.settings_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -19937,6 +21062,318 @@ public final class TideChart {
         onChanged();
         return this;
       }
+
+      private java.util.List<TideChart.TideChartProperty> settings_ =
+        java.util.Collections.emptyList();
+      private void ensureSettingsIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> settingsBuilder_;
+
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+        if (settingsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settings_);
+        } else {
+          return settingsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public int getSettingsCount() {
+        if (settingsBuilder_ == null) {
+          return settings_.size();
+        } else {
+          return settingsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty getSettings(int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);
+        } else {
+          return settingsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.set(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addAllSettings(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, settings_);
+          onChanged();
+        } else {
+          settingsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder clearSettings() {
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          settingsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder removeSettings(int index) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.remove(index);
+          onChanged();
+        } else {
+          settingsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder getSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+          int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);  } else {
+          return settingsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getSettingsOrBuilderList() {
+        if (settingsBuilder_ != null) {
+          return settingsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(settings_);
+        }
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder() {
+        return getSettingsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * regions can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getSettingsBuilderList() {
+        return getSettingsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getSettingsFieldBuilder() {
+        if (settingsBuilder_ == null) {
+          settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  settings_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          settings_ = null;
+        }
+        return settingsBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -20525,6 +21962,50 @@ public final class TideChart {
      */
     com.google.protobuf.ByteString
         getScriptBytes();
+
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getSettingsList();
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartProperty getSettings(int index);
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    int getSettingsCount();
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList();
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code TideChartGraph}
@@ -20555,6 +22036,7 @@ public final class TideChart {
       history_ = java.util.Collections.emptyList();
       notes_ = java.util.Collections.emptyList();
       script_ = "";
+      settings_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -20728,6 +22210,15 @@ public final class TideChart {
               script_ = s;
               break;
             }
+            case 178: {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+                settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              settings_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -20766,6 +22257,9 @@ public final class TideChart {
         }
         if (((mutable_bitField0_ & 0x00000080) != 0)) {
           notes_ = java.util.Collections.unmodifiableList(notes_);
+        }
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -21612,6 +23106,61 @@ public final class TideChart {
       }
     }
 
+    public static final int SETTINGS_FIELD_NUMBER = 22;
+    private java.util.List<TideChart.TideChartProperty> settings_;
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public int getSettingsCount() {
+      return settings_.size();
+    }
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartProperty getSettings(int index) {
+      return settings_.get(index);
+    }
+    /**
+     * <pre>
+     * graphs can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index) {
+      return settings_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -21685,6 +23234,9 @@ public final class TideChart {
       }
       if (!getScriptBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 21, script_);
+      }
+      for (int i = 0; i < settings_.size(); i++) {
+        output.writeMessage(22, settings_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -21767,6 +23319,10 @@ public final class TideChart {
       if (!getScriptBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(21, script_);
       }
+      for (int i = 0; i < settings_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(22, settings_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -21822,6 +23378,8 @@ public final class TideChart {
           .equals(other.getNotesList())) return false;
       if (!getScript()
           .equals(other.getScript())) return false;
+      if (!getSettingsList()
+          .equals(other.getSettingsList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -21893,6 +23451,10 @@ public final class TideChart {
       }
       hash = (37 * hash) + SCRIPT_FIELD_NUMBER;
       hash = (53 * hash) + getScript().hashCode();
+      if (getSettingsCount() > 0) {
+        hash = (37 * hash) + SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getSettingsList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -22029,6 +23591,7 @@ public final class TideChart {
           getPropsFieldBuilder();
           getHistoryFieldBuilder();
           getNotesFieldBuilder();
+          getSettingsFieldBuilder();
         }
       }
       @java.lang.Override
@@ -22106,6 +23669,12 @@ public final class TideChart {
         }
         script_ = "";
 
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        } else {
+          settingsBuilder_.clear();
+        }
         return this;
       }
 
@@ -22217,6 +23786,15 @@ public final class TideChart {
           result.notes_ = notesBuilder_.build();
         }
         result.script_ = script_;
+        if (settingsBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) != 0)) {
+            settings_ = java.util.Collections.unmodifiableList(settings_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.settings_ = settings_;
+        } else {
+          result.settings_ = settingsBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -22516,6 +24094,32 @@ public final class TideChart {
         if (!other.getScript().isEmpty()) {
           script_ = other.script_;
           onChanged();
+        }
+        if (settingsBuilder_ == null) {
+          if (!other.settings_.isEmpty()) {
+            if (settings_.isEmpty()) {
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureSettingsIsMutable();
+              settings_.addAll(other.settings_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.settings_.isEmpty()) {
+            if (settingsBuilder_.isEmpty()) {
+              settingsBuilder_.dispose();
+              settingsBuilder_ = null;
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              settingsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSettingsFieldBuilder() : null;
+            } else {
+              settingsBuilder_.addAllMessages(other.settings_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -25905,6 +27509,318 @@ public final class TideChart {
         script_ = value;
         onChanged();
         return this;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> settings_ =
+        java.util.Collections.emptyList();
+      private void ensureSettingsIsMutable() {
+        if (!((bitField0_ & 0x00000100) != 0)) {
+          settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> settingsBuilder_;
+
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+        if (settingsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settings_);
+        } else {
+          return settingsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public int getSettingsCount() {
+        if (settingsBuilder_ == null) {
+          return settings_.size();
+        } else {
+          return settingsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty getSettings(int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);
+        } else {
+          return settingsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.set(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addAllSettings(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, settings_);
+          onChanged();
+        } else {
+          settingsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder clearSettings() {
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          settingsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder removeSettings(int index) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.remove(index);
+          onChanged();
+        } else {
+          settingsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder getSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+          int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);  } else {
+          return settingsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getSettingsOrBuilderList() {
+        if (settingsBuilder_ != null) {
+          return settingsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(settings_);
+        }
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder() {
+        return getSettingsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * graphs can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getSettingsBuilderList() {
+        return getSettingsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getSettingsFieldBuilder() {
+        if (settingsBuilder_ == null) {
+          settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  settings_,
+                  ((bitField0_ & 0x00000100) != 0),
+                  getParentForChildren(),
+                  isClean());
+          settings_ = null;
+        }
+        return settingsBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -57206,7 +59122,7 @@ public final class TideChart {
 
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57215,7 +59131,7 @@ public final class TideChart {
         getGlobalList();
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57223,7 +59139,7 @@ public final class TideChart {
     TideChart.TideChartProperty getGlobal(int index);
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57231,7 +59147,7 @@ public final class TideChart {
     int getGlobalCount();
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57240,7 +59156,7 @@ public final class TideChart {
         getGlobalOrBuilderList();
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57955,7 +59871,7 @@ public final class TideChart {
     private java.util.List<TideChart.TideChartProperty> global_;
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57965,7 +59881,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57976,7 +59892,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57986,7 +59902,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -57996,7 +59912,7 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * a set of properties representing global state 
+     * a set of properties representing the global state 
      * </pre>
      *
      * <code>repeated .TideChartProperty global = 7;</code>
@@ -60019,7 +61935,7 @@ public final class TideChart {
 
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60033,7 +61949,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60047,7 +61963,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60061,7 +61977,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60082,7 +61998,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60100,7 +62016,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60120,7 +62036,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60141,7 +62057,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60159,7 +62075,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60177,7 +62093,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60196,7 +62112,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60213,7 +62129,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60230,7 +62146,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60241,7 +62157,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60255,7 +62171,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60270,7 +62186,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60281,7 +62197,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -60293,7 +62209,7 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of properties representing global state 
+       * a set of properties representing the global state 
        * </pre>
        *
        * <code>repeated .TideChartProperty global = 7;</code>
@@ -61772,6 +63688,50 @@ public final class TideChart {
      */
     TideChart.TideChartLibraryOrBuilder getLibraryOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<TideChart.TideChartProperty> 
+        getSettingsList();
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartProperty getSettings(int index);
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    int getSettingsCount();
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList();
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code TideChartData}
@@ -61798,6 +63758,7 @@ public final class TideChart {
       props_ = java.util.Collections.emptyList();
       notes_ = java.util.Collections.emptyList();
       library_ = java.util.Collections.emptyList();
+      settings_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -61915,6 +63876,15 @@ public final class TideChart {
                   input.readMessage(TideChart.TideChartLibrary.parser(), extensionRegistry));
               break;
             }
+            case 178: {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+                settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              settings_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -61941,6 +63911,9 @@ public final class TideChart {
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
           library_ = java.util.Collections.unmodifiableList(library_);
+        }
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -62515,6 +64488,61 @@ public final class TideChart {
       return library_.get(index);
     }
 
+    public static final int SETTINGS_FIELD_NUMBER = 22;
+    private java.util.List<TideChart.TideChartProperty> settings_;
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList() {
+      return settings_;
+    }
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public int getSettingsCount() {
+      return settings_.size();
+    }
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartProperty getSettings(int index) {
+      return settings_.get(index);
+    }
+    /**
+     * <pre>
+     * charts can have additional parameters related to layout, display or debugging
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 22;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+        int index) {
+      return settings_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -62565,6 +64593,9 @@ public final class TideChart {
       for (int i = 0; i < library_.size(); i++) {
         output.writeMessage(12, library_.get(i));
       }
+      for (int i = 0; i < settings_.size(); i++) {
+        output.writeMessage(22, settings_.get(i));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -62614,6 +64645,10 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, library_.get(i));
       }
+      for (int i = 0; i < settings_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(22, settings_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -62653,6 +64688,8 @@ public final class TideChart {
           .equals(other.getNotesList())) return false;
       if (!getLibraryList()
           .equals(other.getLibraryList())) return false;
+      if (!getSettingsList()
+          .equals(other.getSettingsList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -62695,6 +64732,10 @@ public final class TideChart {
       if (getLibraryCount() > 0) {
         hash = (37 * hash) + LIBRARY_FIELD_NUMBER;
         hash = (53 * hash) + getLibraryList().hashCode();
+      }
+      if (getSettingsCount() > 0) {
+        hash = (37 * hash) + SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getSettingsList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -62828,6 +64869,7 @@ public final class TideChart {
           getPropsFieldBuilder();
           getNotesFieldBuilder();
           getLibraryFieldBuilder();
+          getSettingsFieldBuilder();
         }
       }
       @java.lang.Override
@@ -62872,6 +64914,12 @@ public final class TideChart {
           bitField0_ = (bitField0_ & ~0x00000008);
         } else {
           libraryBuilder_.clear();
+        }
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          settingsBuilder_.clear();
         }
         return this;
       }
@@ -62943,6 +64991,15 @@ public final class TideChart {
           result.library_ = library_;
         } else {
           result.library_ = libraryBuilder_.build();
+        }
+        if (settingsBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0)) {
+            settings_ = java.util.Collections.unmodifiableList(settings_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.settings_ = settings_;
+        } else {
+          result.settings_ = settingsBuilder_.build();
         }
         onBuilt();
         return result;
@@ -63125,6 +65182,32 @@ public final class TideChart {
                    getLibraryFieldBuilder() : null;
             } else {
               libraryBuilder_.addAllMessages(other.library_);
+            }
+          }
+        }
+        if (settingsBuilder_ == null) {
+          if (!other.settings_.isEmpty()) {
+            if (settings_.isEmpty()) {
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureSettingsIsMutable();
+              settings_.addAll(other.settings_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.settings_.isEmpty()) {
+            if (settingsBuilder_.isEmpty()) {
+              settingsBuilder_.dispose();
+              settingsBuilder_ = null;
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              settingsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSettingsFieldBuilder() : null;
+            } else {
+              settingsBuilder_.addAllMessages(other.settings_);
             }
           }
         }
@@ -65116,6 +67199,318 @@ public final class TideChart {
           library_ = null;
         }
         return libraryBuilder_;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> settings_ =
+        java.util.Collections.emptyList();
+      private void ensureSettingsIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> settingsBuilder_;
+
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+        if (settingsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settings_);
+        } else {
+          return settingsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public int getSettingsCount() {
+        if (settingsBuilder_ == null) {
+          return settings_.size();
+        } else {
+          return settingsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty getSettings(int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);
+        } else {
+          return settingsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.set(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder addAllSettings(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, settings_);
+          onChanged();
+        } else {
+          settingsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder clearSettings() {
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          settingsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public Builder removeSettings(int index) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.remove(index);
+          onChanged();
+        } else {
+          settingsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder getSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+          int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);  } else {
+          return settingsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getSettingsOrBuilderList() {
+        if (settingsBuilder_ != null) {
+          return settingsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(settings_);
+        }
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder() {
+        return getSettingsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * charts can have additional parameters related to layout, display or debugging
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 22;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getSettingsBuilderList() {
+        return getSettingsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getSettingsFieldBuilder() {
+        if (settingsBuilder_ == null) {
+          settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  settings_,
+                  ((bitField0_ & 0x00000010) != 0),
+                  getParentForChildren(),
+                  isClean());
+          settings_ = null;
+        }
+        return settingsBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -73982,180 +76377,185 @@ public final class TideChart {
       "\001\022\021\n\tfontStyle\030\013 \001(\t\022\021\n\talignment\030\014 \003(\021\022" +
       "\r\n\005color\030\r \001(\005\022\022\n\nbackground\030\016 \001(\005\022\016\n\006bo" +
       "rder\030\017 \003(\005\022\020\n\010isRaised\030\020 \001(\010\022\022\n\nisRevers" +
-      "ed\030\021 \001(\010B\t\n\007content\"\342\001\n\017TideChartWidget\022" +
+      "ed\030\021 \001(\010B\t\n\007content\"\210\002\n\017TideChartWidget\022" +
       "\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n\005title\030\003 \001(\t" +
       "\022\016\n\006region\030\004 \001(\t\022\014\n\004posX\030\005 \001(\021\022\014\n\004posY\030\006" +
       " \001(\021\022\r\n\005width\030\007 \001(\005\022\016\n\006height\030\010 \001(\005\022\016\n\004l" +
       "ink\030\t \001(\tH\000\022\016\n\004port\030\n \001(\tH\000\022\016\n\004node\030\013 \001(" +
-      "\tH\000\022!\n\005props\030\014 \003(\0132\022.TideChartPropertyB\010" +
-      "\n\006target\"\207\002\n\rTideChartPort\022\014\n\004type\030\001 \001(\t" +
-      "\022\014\n\004node\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\017\n\007ordinal\030" +
-      "\004 \001(\005\022\021\n\tisDefault\030\005 \001(\010\022\022\n\nisRequired\030\006" +
-      " \001(\010\022\017\n\007allowed\030\007 \003(\t\022\014\n\004hint\030\010 \001(\t\022\r\n\005v" +
-      "alue\030\t \001(\t\022\017\n\007trigger\030\n \001(\t\022\014\n\004link\030\013 \001(" +
-      "\t\022\r\n\005event\030\014 \001(\t\022\021\n\tsyncGroup\030\r \001(\t\022\022\n\ni" +
-      "sBlocking\030\016 \001(\010\022\021\n\tisQueuing\030\017 \001(\010\"\313\001\n\rT" +
-      "ideChartLink\022\017\n\007outNode\030\001 \001(\t\022\017\n\007outPort" +
-      "\030\002 \001(\t\022\016\n\006inNode\030\003 \001(\t\022\016\n\006inPort\030\004 \001(\t\022\r" +
-      "\n\005group\030\005 \001(\005\022\r\n\005delay\030\006 \001(\005\022\014\n\004link\030\007 \001" +
-      "(\t\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001" +
-      "(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010" +
-      "\"w\n\rTideChartNote\022\n\n\002id\030\001 \001(\t\022\017\n\007replyTo" +
-      "\030\002 \001(\t\022\020\n\010changeTo\030\003 \001(\t\022\017\n\007content\030\004 \001(" +
-      "\t\022\021\n\tcreatedBy\030\005 \001(\t\022\023\n\013createdDate\030\006 \001(" +
-      "\t\"\367\002\n\rTideChartNode\022\014\n\004name\030\001 \001(\t\022\014\n\004typ" +
-      "e\030\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n\005t" +
-      "itle\030\005 \001(\t\022\014\n\004icon\030\006 \001(\t\022\017\n\007library\030\007 \001(" +
-      "\t\022\016\n\006method\030\010 \001(\t\022\r\n\005delay\030\t \001(\005\022\037\n\007inpo" +
-      "rts\030\n \003(\0132\016.TideChartPort\022 \n\010outports\030\013 " +
-      "\003(\0132\016.TideChartPort\022!\n\005props\030\014 \003(\0132\022.Tid" +
-      "eChartProperty\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isD" +
-      "ebugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDi" +
-      "sabled\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideChartN" +
-      "ote\022\016\n\006script\030\025 \001(\t\"\373\001\n\017TideChartRegion\022" +
-      "\014\n\004name\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\r\n\005nodes\030\003 " +
-      "\003(\t\022\r\n\005group\030\004 \001(\005\022\r\n\005scope\030\005 \001(\t\022!\n\005pro" +
-      "ps\030\006 \003(\0132\022.TideChartProperty\022\021\n\tisLoggin" +
-      "g\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPaused" +
-      "\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005notes\030\024 \003(" +
-      "\0132\016.TideChartNote\022\016\n\006script\030\025 \001(\t\"\346\003\n\016Ti" +
-      "deChartGraph\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\014" +
-      "\n\004name\030\003 \001(\t\022\r\n\005title\030\004 \001(\t\022\014\n\004icon\030\005 \001(" +
-      "\t\022\017\n\007version\030\006 \001(\t\022\016\n\006source\030\007 \001(\t\022\035\n\005no" +
-      "des\030\010 \003(\0132\016.TideChartNode\022\035\n\005links\030\t \003(\013" +
-      "2\016.TideChartLink\022!\n\007regions\030\n \003(\0132\020.Tide" +
-      "ChartRegion\022&\n\010comments\030\013 \003(\0132\024.TideChar" +
-      "tCommentBox\022!\n\007widgets\030\014 \003(\0132\020.TideChart" +
-      "Widget\022!\n\005props\030\r \003(\0132\022.TideChartPropert" +
-      "y\022\"\n\007history\030\016 \003(\0132\021.TideChartCommand\022\021\n" +
-      "\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n" +
-      "\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005n" +
-      "otes\030\024 \003(\0132\016.TideChartNote\022\016\n\006script\030\025 \001" +
-      "(\t\"\205\004\n\020TideChartCommand\022\017\n\007version\030\001 \001(\t" +
-      "\022\016\n\006target\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132\026.TideCh" +
-      "artGroupCommandH\000\022%\n\004move\030\004 \001(\0132\025.TideCh" +
-      "artMoveCommandH\000\022.\n\007comment\030\005 \001(\0132\033.Tide" +
-      "ChartCommentBoxCommandH\000\022)\n\006widget\030\006 \001(\013" +
-      "2\027.TideChartWidgetCommandH\000\022%\n\004port\030\007 \001(" +
-      "\0132\025.TideChartPortCommandH\000\022%\n\004link\030\010 \001(\013" +
-      "2\025.TideChartLinkCommandH\000\022%\n\004node\030\t \001(\0132" +
-      "\025.TideChartNodeCommandH\000\022)\n\006region\030\n \001(\013" +
-      "2\027.TideChartRegionCommandH\000\022\'\n\005graph\030\013 \001" +
-      "(\0132\026.TideChartGraphCommandH\000\022*\n\005props\030\014 " +
-      "\001(\0132\031.TideChartPropertyCommandH\000\022%\n\004note" +
-      "\030\r \001(\0132\025.TideChartNoteCommandH\000B\t\n\007comma" +
-      "nd\"<\n\025TideChartGroupCommand\022#\n\010commands\030" +
-      "\001 \003(\0132\021.TideChartCommand\"h\n\024TideChartMov" +
-      "eCommand\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021" +
-      "\022\020\n\010fromPosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006to" +
-      "PosY\030\005 \001(\021\"\233\001\n\032TideChartCommentBoxComman" +
-      "d\022)\n\013fromComment\030\001 \001(\0132\024.TideChartCommen" +
-      "tBox\022\'\n\ttoComment\030\002 \001(\0132\024.TideChartComme" +
-      "ntBox\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUp" +
-      "dateType\"\215\001\n\026TideChartWidgetCommand\022$\n\nf" +
-      "romWidget\030\001 \001(\0132\020.TideChartWidget\022\"\n\010toW" +
-      "idget\030\002 \001(\0132\020.TideChartWidget\022)\n\004type\030\003 " +
-      "\001(\0162\033.TideChartCommandUpdateType\"\203\001\n\024Tid" +
-      "eChartPortCommand\022 \n\010fromPort\030\001 \001(\0132\016.Ti" +
-      "deChartPort\022\036\n\006toPort\030\002 \001(\0132\016.TideChartP" +
-      "ort\022)\n\004type\030\003 \001(\0162\033.TideChartCommandUpda" +
-      "teType\"\203\001\n\024TideChartLinkCommand\022 \n\010fromL" +
-      "ink\030\001 \001(\0132\016.TideChartLink\022\036\n\006toLink\030\002 \001(" +
-      "\0132\016.TideChartLink\022)\n\004type\030\003 \001(\0162\033.TideCh" +
-      "artCommandUpdateType\"\203\001\n\024TideChartNodeCo" +
-      "mmand\022 \n\010fromNode\030\001 \001(\0132\016.TideChartNode\022" +
-      "\036\n\006toNode\030\002 \001(\0132\016.TideChartNode\022)\n\004type\030" +
-      "\003 \001(\0162\033.TideChartCommandUpdateType\"\215\001\n\026T" +
-      "ideChartRegionCommand\022$\n\nfromRegion\030\001 \001(" +
-      "\0132\020.TideChartRegion\022\"\n\010toRegion\030\002 \001(\0132\020." +
-      "TideChartRegion\022)\n\004type\030\003 \001(\0162\033.TideChar" +
-      "tCommandUpdateType\"\210\001\n\025TideChartGraphCom" +
-      "mand\022\"\n\tfromGraph\030\001 \001(\0132\017.TideChartGraph" +
-      "\022 \n\007toGraph\030\002 \001(\0132\017.TideChartGraph\022)\n\004ty" +
-      "pe\030\003 \001(\0162\033.TideChartCommandUpdateType\"\340\001" +
-      "\n\030TideChartPropertyCommand\022%\n\tfromProps\030" +
-      "\001 \003(\0132\022.TideChartProperty\022#\n\007toProps\030\002 \003" +
-      "(\0132\022.TideChartProperty\022)\n\004type\030\003 \001(\0162\033.T" +
-      "ideChartCommandUpdateType\022\016\n\004node\030\005 \001(\tH" +
-      "\000\022\020\n\006region\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n" +
-      "\005graph\030\010 \001(\tH\000B\010\n\006target\"\235\001\n\024TideChartNo" +
-      "teCommand\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote" +
-      "\022)\n\004type\030\002 \001(\0162\033.TideChartCommandUpdateT" +
-      "ype\022\016\n\004node\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017\n" +
-      "\005graph\030\005 \001(\tH\000B\010\n\006target\"\256\001\n\017TideChartMe" +
-      "thod\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007extend" +
-      "s\030\003 \001(\t\022\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(\013" +
-      "2\016.TideChartPort\022 \n\010outports\030\006 \003(\0132\016.Tid" +
-      "eChartPort\022\035\n\005props\030\007 \003(\0132\016.TideChartPor" +
-      "t\"\224\001\n\017TideChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004nam" +
-      "e\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\025\n\rmodifieddDate\030\005" +
-      " \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021\n\007version\030\007 \001(" +
-      "\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020Tid" +
-      "eChartLibrary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022" +
-      "\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branch" +
-      "\030\005 \001(\t\022\014\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.Ti" +
-      "deChartSource\022!\n\007methods\030\010 \003(\0132\020.TideCha" +
-      "rtMethod\"\350\001\n\rTideChartSite\022\r\n\005index\030\001 \001(" +
-      "\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSite\022\014\n\004path" +
-      "\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022\r" +
-      "\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030\010" +
-      " \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004po" +
-      "rt\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.TideChartPrope" +
-      "rty\"\211\002\n\020TideChartMessage\022\r\n\005index\030\001 \001(\003\022" +
-      "\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010pr" +
-      "evious\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030\010" +
-      " \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tholdToken\030\n " +
-      "\001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022\017" +
-      "\n\007version\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022\024" +
-      "\n\nmsgContent\030\017 \001(\014H\000B\t\n\007content\"k\n\026TideC" +
-      "hartContextChange\022\r\n\005index\030\001 \001(\003\022\021\n\ttime" +
-      "stamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004 \003(\013" +
-      "2\022.TideChartProperty\"\270\001\n\021TideChartLogEnt" +
-      "ry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006" +
-      "source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022.TideChartL" +
-      "ogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001(\t\022\014" +
-      "\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022.TideChartP" +
-      "roperty\"\355\002\n\020TideChartContext\022\n\n\002id\030\001 \001(\t" +
-      "\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017\n\007ve" +
-      "rsion\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideChartSi" +
-      "te\022#\n\010messages\030\006 \003(\0132\021.TideChartMessage\022" +
-      "\"\n\006global\030\007 \003(\0132\022.TideChartProperty\022\021\n\ts" +
-      "tartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016\n\006ac" +
-      "tive\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 " +
-      "\003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027." +
-      "TideChartContextChange\022\037\n\003log\030\017 \003(\0132\022.Ti" +
-      "deChartLogEntry\"\245\002\n\rTideChartData\022\017\n\007ver" +
-      "sion\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001" +
-      "(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n" +
-      "\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013c" +
-      "ommitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideC" +
-      "hartGraph\022!\n\005props\030\n \003(\0132\022.TideChartProp" +
-      "erty\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007l" +
-      "ibrary\030\014 \003(\0132\021.TideChartLibrary\"\240\001\n\017Tide" +
-      "ChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002" +
-      " \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\nc" +
-      "ommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncom" +
-      "mitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rT" +
-      "ideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014" +
-      "\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modified" +
-      "Date\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030" +
-      "\007 \001(\0132\016.TideChartData\022\"\n\007working\030\010 \003(\0132\021" +
-      ".TideChartCommand\022!\n\006remote\030\t \003(\0132\021.Tide" +
-      "ChartCommand\022\037\n\007history\030\n \003(\0132\016.TideChar" +
-      "tData\022\"\n\007context\030\013 \003(\0132\021.TideChartContex" +
-      "t\"w\n\023TideChartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004" +
-      "name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t" +
-      "\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001" +
-      "(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002id\030\001 \001(\t\022" +
-      "\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 " +
-      "\001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030" +
-      "\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartData*=\n\032" +
-      "TideChartCommandUpdateType\022\007\n\003add\020\000\022\n\n\006r" +
-      "emove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChartLogLeve" +
-      "l\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texc" +
-      "eption\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007messa" +
-      "ge\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022" +
-      "\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
+      "\tH\000\022!\n\005props\030\014 \003(\0132\022.TideChartProperty\022$" +
+      "\n\010settings\030\026 \003(\0132\022.TideChartPropertyB\010\n\006" +
+      "target\"\207\002\n\rTideChartPort\022\014\n\004type\030\001 \001(\t\022\014" +
+      "\n\004node\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\017\n\007ordinal\030\004 " +
+      "\001(\005\022\021\n\tisDefault\030\005 \001(\010\022\022\n\nisRequired\030\006 \001" +
+      "(\010\022\017\n\007allowed\030\007 \003(\t\022\014\n\004hint\030\010 \001(\t\022\r\n\005val" +
+      "ue\030\t \001(\t\022\017\n\007trigger\030\n \001(\t\022\014\n\004link\030\013 \001(\t\022" +
+      "\r\n\005event\030\014 \001(\t\022\021\n\tsyncGroup\030\r \001(\t\022\022\n\nisB" +
+      "locking\030\016 \001(\010\022\021\n\tisQueuing\030\017 \001(\010\"\313\001\n\rTid" +
+      "eChartLink\022\017\n\007outNode\030\001 \001(\t\022\017\n\007outPort\030\002" +
+      " \001(\t\022\016\n\006inNode\030\003 \001(\t\022\016\n\006inPort\030\004 \001(\t\022\r\n\005" +
+      "group\030\005 \001(\005\022\r\n\005delay\030\006 \001(\005\022\014\n\004link\030\007 \001(\t" +
+      "\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010" +
+      "\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\"w" +
+      "\n\rTideChartNote\022\n\n\002id\030\001 \001(\t\022\017\n\007replyTo\030\002" +
+      " \001(\t\022\020\n\010changeTo\030\003 \001(\t\022\017\n\007content\030\004 \001(\t\022" +
+      "\021\n\tcreatedBy\030\005 \001(\t\022\023\n\013createdDate\030\006 \001(\t\"" +
+      "\235\003\n\rTideChartNode\022\014\n\004name\030\001 \001(\t\022\014\n\004type\030" +
+      "\002 \001(\t\022\014\n\004posX\030\003 \001(\021\022\014\n\004posY\030\004 \001(\021\022\r\n\005tit" +
+      "le\030\005 \001(\t\022\014\n\004icon\030\006 \001(\t\022\017\n\007library\030\007 \001(\t\022" +
+      "\016\n\006method\030\010 \001(\t\022\r\n\005delay\030\t \001(\005\022\037\n\007inport" +
+      "s\030\n \003(\0132\016.TideChartPort\022 \n\010outports\030\013 \003(" +
+      "\0132\016.TideChartPort\022!\n\005props\030\014 \003(\0132\022.TideC" +
+      "hartProperty\022\021\n\tisLogging\030\020 \001(\010\022\023\n\013isDeb" +
+      "ugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001(\010\022\022\n\nisDisa" +
+      "bled\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016.TideChartNot" +
+      "e\022\016\n\006script\030\025 \001(\t\022$\n\010settings\030\026 \003(\0132\022.Ti" +
+      "deChartProperty\"\241\002\n\017TideChartRegion\022\014\n\004n" +
+      "ame\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\r\n\005nodes\030\003 \003(\t\022" +
+      "\r\n\005group\030\004 \001(\005\022\r\n\005scope\030\005 \001(\t\022!\n\005props\030\006" +
+      " \003(\0132\022.TideChartProperty\022\021\n\tisLogging\030\020 " +
+      "\001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPaused\030\022 \001" +
+      "(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005notes\030\024 \003(\0132\016." +
+      "TideChartNote\022\016\n\006script\030\025 \001(\t\022$\n\010setting" +
+      "s\030\026 \003(\0132\022.TideChartProperty\"\214\004\n\016TideChar" +
+      "tGraph\022\n\n\002id\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\014\n\004name" +
+      "\030\003 \001(\t\022\r\n\005title\030\004 \001(\t\022\014\n\004icon\030\005 \001(\t\022\017\n\007v" +
+      "ersion\030\006 \001(\t\022\016\n\006source\030\007 \001(\t\022\035\n\005nodes\030\010 " +
+      "\003(\0132\016.TideChartNode\022\035\n\005links\030\t \003(\0132\016.Tid" +
+      "eChartLink\022!\n\007regions\030\n \003(\0132\020.TideChartR" +
+      "egion\022&\n\010comments\030\013 \003(\0132\024.TideChartComme" +
+      "ntBox\022!\n\007widgets\030\014 \003(\0132\020.TideChartWidget" +
+      "\022!\n\005props\030\r \003(\0132\022.TideChartProperty\022\"\n\007h" +
+      "istory\030\016 \003(\0132\021.TideChartCommand\022\021\n\tisLog" +
+      "ging\030\020 \001(\010\022\023\n\013isDebugging\030\021 \001(\010\022\020\n\010isPau" +
+      "sed\030\022 \001(\010\022\022\n\nisDisabled\030\023 \001(\010\022\035\n\005notes\030\024" +
+      " \003(\0132\016.TideChartNote\022\016\n\006script\030\025 \001(\t\022$\n\010" +
+      "settings\030\026 \003(\0132\022.TideChartProperty\"\205\004\n\020T" +
+      "ideChartCommand\022\017\n\007version\030\001 \001(\t\022\016\n\006targ" +
+      "et\030\002 \001(\t\022\'\n\005group\030\003 \001(\0132\026.TideChartGroup" +
+      "CommandH\000\022%\n\004move\030\004 \001(\0132\025.TideChartMoveC" +
+      "ommandH\000\022.\n\007comment\030\005 \001(\0132\033.TideChartCom" +
+      "mentBoxCommandH\000\022)\n\006widget\030\006 \001(\0132\027.TideC" +
+      "hartWidgetCommandH\000\022%\n\004port\030\007 \001(\0132\025.Tide" +
+      "ChartPortCommandH\000\022%\n\004link\030\010 \001(\0132\025.TideC" +
+      "hartLinkCommandH\000\022%\n\004node\030\t \001(\0132\025.TideCh" +
+      "artNodeCommandH\000\022)\n\006region\030\n \001(\0132\027.TideC" +
+      "hartRegionCommandH\000\022\'\n\005graph\030\013 \001(\0132\026.Tid" +
+      "eChartGraphCommandH\000\022*\n\005props\030\014 \001(\0132\031.Ti" +
+      "deChartPropertyCommandH\000\022%\n\004note\030\r \001(\0132\025" +
+      ".TideChartNoteCommandH\000B\t\n\007command\"<\n\025Ti" +
+      "deChartGroupCommand\022#\n\010commands\030\001 \003(\0132\021." +
+      "TideChartCommand\"h\n\024TideChartMoveCommand" +
+      "\022\014\n\004node\030\001 \001(\t\022\020\n\010fromPosX\030\002 \001(\021\022\020\n\010from" +
+      "PosY\030\003 \001(\021\022\016\n\006toPosX\030\004 \001(\021\022\016\n\006toPosY\030\005 \001" +
+      "(\021\"\233\001\n\032TideChartCommentBoxCommand\022)\n\013fro" +
+      "mComment\030\001 \001(\0132\024.TideChartCommentBox\022\'\n\t" +
+      "toComment\030\002 \001(\0132\024.TideChartCommentBox\022)\n" +
+      "\004type\030\003 \001(\0162\033.TideChartCommandUpdateType" +
+      "\"\215\001\n\026TideChartWidgetCommand\022$\n\nfromWidge" +
+      "t\030\001 \001(\0132\020.TideChartWidget\022\"\n\010toWidget\030\002 " +
+      "\001(\0132\020.TideChartWidget\022)\n\004type\030\003 \001(\0162\033.Ti" +
+      "deChartCommandUpdateType\"\203\001\n\024TideChartPo" +
+      "rtCommand\022 \n\010fromPort\030\001 \001(\0132\016.TideChartP" +
+      "ort\022\036\n\006toPort\030\002 \001(\0132\016.TideChartPort\022)\n\004t" +
+      "ype\030\003 \001(\0162\033.TideChartCommandUpdateType\"\203" +
+      "\001\n\024TideChartLinkCommand\022 \n\010fromLink\030\001 \001(" +
+      "\0132\016.TideChartLink\022\036\n\006toLink\030\002 \001(\0132\016.Tide" +
+      "ChartLink\022)\n\004type\030\003 \001(\0162\033.TideChartComma" +
+      "ndUpdateType\"\203\001\n\024TideChartNodeCommand\022 \n" +
+      "\010fromNode\030\001 \001(\0132\016.TideChartNode\022\036\n\006toNod" +
+      "e\030\002 \001(\0132\016.TideChartNode\022)\n\004type\030\003 \001(\0162\033." +
+      "TideChartCommandUpdateType\"\215\001\n\026TideChart" +
+      "RegionCommand\022$\n\nfromRegion\030\001 \001(\0132\020.Tide" +
+      "ChartRegion\022\"\n\010toRegion\030\002 \001(\0132\020.TideChar" +
+      "tRegion\022)\n\004type\030\003 \001(\0162\033.TideChartCommand" +
+      "UpdateType\"\210\001\n\025TideChartGraphCommand\022\"\n\t" +
+      "fromGraph\030\001 \001(\0132\017.TideChartGraph\022 \n\007toGr" +
+      "aph\030\002 \001(\0132\017.TideChartGraph\022)\n\004type\030\003 \001(\016" +
+      "2\033.TideChartCommandUpdateType\"\340\001\n\030TideCh" +
+      "artPropertyCommand\022%\n\tfromProps\030\001 \003(\0132\022." +
+      "TideChartProperty\022#\n\007toProps\030\002 \003(\0132\022.Tid" +
+      "eChartProperty\022)\n\004type\030\003 \001(\0162\033.TideChart" +
+      "CommandUpdateType\022\016\n\004node\030\005 \001(\tH\000\022\020\n\006reg" +
+      "ion\030\006 \001(\tH\000\022\020\n\006widget\030\007 \001(\tH\000\022\017\n\005graph\030\010" +
+      " \001(\tH\000B\010\n\006target\"\235\001\n\024TideChartNoteComman" +
+      "d\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote\022)\n\004type" +
+      "\030\002 \001(\0162\033.TideChartCommandUpdateType\022\016\n\004n" +
+      "ode\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017\n\005graph\030\005" +
+      " \001(\tH\000B\010\n\006target\"\256\001\n\017TideChartMethod\022\n\n\002" +
+      "id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007extends\030\003 \001(\t\022" +
+      "\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(\0132\016.TideC" +
+      "hartPort\022 \n\010outports\030\006 \003(\0132\016.TideChartPo" +
+      "rt\022\035\n\005props\030\007 \003(\0132\016.TideChartPort\"\224\001\n\017Ti" +
+      "deChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022" +
+      "\014\n\004path\030\003 \001(\t\022\025\n\rmodifieddDate\030\005 \001(\t\022\022\n\n" +
+      "modifiedBy\030\006 \001(\t\022\021\n\007version\030\007 \001(\tH\000\022\020\n\006s" +
+      "cript\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020TideChartLi" +
+      "brary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005title" +
+      "\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branch\030\005 \001(\t\022\014" +
+      "\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.TideChartS" +
+      "ource\022!\n\007methods\030\010 \003(\0132\020.TideChartMethod" +
+      "\"\350\001\n\rTideChartSite\022\r\n\005index\030\001 \001(\003\022\035\n\005sta" +
+      "ck\030\002 \003(\0132\016.TideChartSite\022\014\n\004path\030\003 \001(\t\022\017" +
+      "\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022\r\n\005scope\030" +
+      "\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030\010 \001(\t\022\016\n\006" +
+      "region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004port\030\013 \001(\t" +
+      "\022!\n\005local\030\014 \003(\0132\022.TideChartProperty\"\211\002\n\020" +
+      "TideChartMessage\022\r\n\005index\030\001 \001(\003\022\021\n\ttimes" +
+      "tamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010previous\030\005" +
+      " \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030\010 \001(\003\022\022\n\n" +
+      "delayUntil\030\t \001(\003\022\021\n\tholdToken\030\n \001(\003\022\023\n\013c" +
+      "ancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022\017\n\007versio" +
+      "n\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022\024\n\nmsgCon" +
+      "tent\030\017 \001(\014H\000B\t\n\007content\"k\n\026TideChartCont" +
+      "extChange\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 " +
+      "\001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004 \003(\0132\022.TideC" +
+      "hartProperty\"\270\001\n\021TideChartLogEntry\022\r\n\005in" +
+      "dex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006source\030\003" +
+      " \001(\003\022!\n\005level\030\004 \001(\0162\022.TideChartLogLevel\022" +
+      "\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001(\t\022\014\n\004refs\030\007" +
+      " \003(\003\022!\n\005props\030\010 \003(\0132\022.TideChartProperty\"" +
+      "\355\002\n\020TideChartContext\022\n\n\002id\030\001 \001(\t\022\r\n\005inde" +
+      "x\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017\n\007version\030\004 " +
+      "\001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideChartSite\022#\n\010me" +
+      "ssages\030\006 \003(\0132\021.TideChartMessage\022\"\n\006globa" +
+      "l\030\007 \003(\0132\022.TideChartProperty\022\021\n\tstartTime" +
+      "\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016\n\006active\030\n \003" +
+      "(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 \003(\003\022\020\n\010d" +
+      "isabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027.TideChar" +
+      "tContextChange\022\037\n\003log\030\017 \003(\0132\022.TideChartL" +
+      "ogEntry\"\313\002\n\rTideChartData\022\017\n\007version\030\001 \001" +
+      "(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005me" +
+      "rge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitB" +
+      "y\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNot" +
+      "es\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideChartGrap" +
+      "h\022!\n\005props\030\n \003(\0132\022.TideChartProperty\022\035\n\005" +
+      "notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007library\030\014" +
+      " \003(\0132\021.TideChartLibrary\022$\n\010settings\030\026 \003(" +
+      "\0132\022.TideChartProperty\"\240\001\n\017TideChartHeade" +
+      "r\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006so" +
+      "urce\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030" +
+      "\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 " +
+      "\001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rTideChartFi" +
+      "le\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001" +
+      "(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t" +
+      "\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.Ti" +
+      "deChartData\022\"\n\007working\030\010 \003(\0132\021.TideChart" +
+      "Command\022!\n\006remote\030\t \003(\0132\021.TideChartComma" +
+      "nd\022\037\n\007history\030\n \003(\0132\016.TideChartData\022\"\n\007c" +
+      "ontext\030\013 \003(\0132\021.TideChartContext\"w\n\023TideC" +
+      "hartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t" +
+      "\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifi" +
+      "edDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227\001\n\024Tid" +
+      "eChartFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 " +
+      "\001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014mod" +
+      "ifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005c" +
+      "hart\030\007 \001(\0132\016.TideChartData*=\n\032TideChartC" +
+      "ommandUpdateType\022\007\n\003add\020\000\022\n\n\006remove\020\001\022\n\n" +
+      "\006update\020\002*\235\001\n\021TideChartLogLevel\022\010\n\004none\020" +
+      "\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texception\020\003\022\013" +
+      "\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006\022\t\n\005de" +
+      "bug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005trace\020\n" +
+      "\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -74178,7 +76578,7 @@ public final class TideChart {
     internal_static_TideChartWidget_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartWidget_descriptor,
-        new java.lang.String[] { "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props", "Target", });
+        new java.lang.String[] { "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props", "Settings", "Target", });
     internal_static_TideChartPort_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_TideChartPort_fieldAccessorTable = new
@@ -74202,19 +76602,19 @@ public final class TideChart {
     internal_static_TideChartNode_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartNode_descriptor,
-        new java.lang.String[] { "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", });
+        new java.lang.String[] { "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings", });
     internal_static_TideChartRegion_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_TideChartRegion_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartRegion_descriptor,
-        new java.lang.String[] { "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", });
+        new java.lang.String[] { "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings", });
     internal_static_TideChartGraph_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_TideChartGraph_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartGraph_descriptor,
-        new java.lang.String[] { "Id", "Type", "Name", "Title", "Icon", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", });
+        new java.lang.String[] { "Id", "Type", "Name", "Title", "Icon", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings", });
     internal_static_TideChartCommand_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_TideChartCommand_fieldAccessorTable = new
@@ -74340,7 +76740,7 @@ public final class TideChart {
     internal_static_TideChartData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartData_descriptor,
-        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", });
+        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings", });
     internal_static_TideChartHeader_descriptor =
       getDescriptor().getMessageTypes().get(30);
     internal_static_TideChartHeader_fieldAccessorTable = new

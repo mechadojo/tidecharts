@@ -88,6 +88,7 @@ const TideChartWidget$json = const {
     const {'1': 'port', '3': 10, '4': 1, '5': 9, '9': 0, '10': 'port'},
     const {'1': 'node', '3': 11, '4': 1, '5': 9, '9': 0, '10': 'node'},
     const {'1': 'props', '3': 12, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
+    const {'1': 'settings', '3': 22, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
   ],
   '8': const [
     const {'1': 'target'},
@@ -165,6 +166,7 @@ const TideChartNode$json = const {
     const {'1': 'isDisabled', '3': 19, '4': 1, '5': 8, '10': 'isDisabled'},
     const {'1': 'notes', '3': 20, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
     const {'1': 'script', '3': 21, '4': 1, '5': 9, '10': 'script'},
+    const {'1': 'settings', '3': 22, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
   ],
 };
 
@@ -183,6 +185,7 @@ const TideChartRegion$json = const {
     const {'1': 'isDisabled', '3': 19, '4': 1, '5': 8, '10': 'isDisabled'},
     const {'1': 'notes', '3': 20, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
     const {'1': 'script', '3': 21, '4': 1, '5': 9, '10': 'script'},
+    const {'1': 'settings', '3': 22, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
   ],
 };
 
@@ -209,6 +212,7 @@ const TideChartGraph$json = const {
     const {'1': 'isDisabled', '3': 19, '4': 1, '5': 8, '10': 'isDisabled'},
     const {'1': 'notes', '3': 20, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
     const {'1': 'script', '3': 21, '4': 1, '5': 9, '10': 'script'},
+    const {'1': 'settings', '3': 22, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
   ],
 };
 
@@ -488,6 +492,7 @@ const TideChartData$json = const {
     const {'1': 'props', '3': 10, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
     const {'1': 'notes', '3': 11, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
     const {'1': 'library', '3': 12, '4': 3, '5': 11, '6': '.TideChartLibrary', '10': 'library'},
+    const {'1': 'settings', '3': 22, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
   ],
 };
 

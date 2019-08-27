@@ -247,6 +247,7 @@ class TideChartWidget extends $pb.GeneratedMessage {
     ..aOS(10, 'port')
     ..aOS(11, 'node')
     ..pc<TideChartProperty>(12, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
     ..hasRequiredFields = false
   ;
 
@@ -323,6 +324,8 @@ class TideChartWidget extends $pb.GeneratedMessage {
   void clearNode() => clearField(11);
 
   $core.List<TideChartProperty> get props => $_getList(11);
+
+  $core.List<TideChartProperty> get settings => $_getList(12);
 }
 
 class TideChartPort extends $pb.GeneratedMessage {
@@ -594,6 +597,7 @@ class TideChartNode extends $pb.GeneratedMessage {
     ..aOB(19, 'isDisabled')
     ..pc<TideChartNote>(20, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..aOS(21, 'script')
+    ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
     ..hasRequiredFields = false
   ;
 
@@ -688,6 +692,8 @@ class TideChartNode extends $pb.GeneratedMessage {
   set script($core.String v) { $_setString(17, v); }
   $core.bool hasScript() => $_has(17);
   void clearScript() => clearField(21);
+
+  $core.List<TideChartProperty> get settings => $_getList(18);
 }
 
 class TideChartRegion extends $pb.GeneratedMessage {
@@ -704,6 +710,7 @@ class TideChartRegion extends $pb.GeneratedMessage {
     ..aOB(19, 'isDisabled')
     ..pc<TideChartNote>(20, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..aOS(21, 'script')
+    ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
     ..hasRequiredFields = false
   ;
 
@@ -771,6 +778,8 @@ class TideChartRegion extends $pb.GeneratedMessage {
   set script($core.String v) { $_setString(11, v); }
   $core.bool hasScript() => $_has(11);
   void clearScript() => clearField(21);
+
+  $core.List<TideChartProperty> get settings => $_getList(12);
 }
 
 class TideChartGraph extends $pb.GeneratedMessage {
@@ -795,6 +804,7 @@ class TideChartGraph extends $pb.GeneratedMessage {
     ..aOB(19, 'isDisabled')
     ..pc<TideChartNote>(20, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..aOS(21, 'script')
+    ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
     ..hasRequiredFields = false
   ;
 
@@ -887,6 +897,8 @@ class TideChartGraph extends $pb.GeneratedMessage {
   set script($core.String v) { $_setString(19, v); }
   $core.bool hasScript() => $_has(19);
   void clearScript() => clearField(21);
+
+  $core.List<TideChartProperty> get settings => $_getList(20);
 }
 
 enum TideChartCommand_Command {
@@ -2083,6 +2095,7 @@ class TideChartData extends $pb.GeneratedMessage {
     ..pc<TideChartProperty>(10, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
     ..pc<TideChartNote>(11, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..pc<TideChartLibrary>(12, 'library', $pb.PbFieldType.PM,TideChartLibrary.create)
+    ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
     ..hasRequiredFields = false
   ;
 
@@ -2147,6 +2160,8 @@ class TideChartData extends $pb.GeneratedMessage {
   $core.List<TideChartNote> get notes => $_getList(10);
 
   $core.List<TideChartLibrary> get library => $_getList(11);
+
+  $core.List<TideChartProperty> get settings => $_getList(12);
 }
 
 class TideChartHeader extends $pb.GeneratedMessage {

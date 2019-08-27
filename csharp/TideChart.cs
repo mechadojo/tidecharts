@@ -33,173 +33,177 @@ public static partial class TideChartReflection {
           "ARIRCglmb250U3R5bGUYCyABKAkSEQoJYWxpZ25tZW50GAwgAygREg0KBWNv",
           "bG9yGA0gASgFEhIKCmJhY2tncm91bmQYDiABKAUSDgoGYm9yZGVyGA8gAygF",
           "EhAKCGlzUmFpc2VkGBAgASgIEhIKCmlzUmV2ZXJzZWQYESABKAhCCQoHY29u",
-          "dGVudCLiAQoPVGlkZUNoYXJ0V2lkZ2V0EgoKAmlkGAEgASgJEgwKBHR5cGUY",
+          "dGVudCKIAgoPVGlkZUNoYXJ0V2lkZ2V0EgoKAmlkGAEgASgJEgwKBHR5cGUY",
           "AiABKAkSDQoFdGl0bGUYAyABKAkSDgoGcmVnaW9uGAQgASgJEgwKBHBvc1gY",
           "BSABKBESDAoEcG9zWRgGIAEoERINCgV3aWR0aBgHIAEoBRIOCgZoZWlnaHQY",
           "CCABKAUSDgoEbGluaxgJIAEoCUgAEg4KBHBvcnQYCiABKAlIABIOCgRub2Rl",
-          "GAsgASgJSAASIQoFcHJvcHMYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eUII",
-          "CgZ0YXJnZXQihwIKDVRpZGVDaGFydFBvcnQSDAoEdHlwZRgBIAEoCRIMCgRu",
-          "b2RlGAIgASgJEgwKBG5hbWUYAyABKAkSDwoHb3JkaW5hbBgEIAEoBRIRCglp",
-          "c0RlZmF1bHQYBSABKAgSEgoKaXNSZXF1aXJlZBgGIAEoCBIPCgdhbGxvd2Vk",
-          "GAcgAygJEgwKBGhpbnQYCCABKAkSDQoFdmFsdWUYCSABKAkSDwoHdHJpZ2dl",
-          "chgKIAEoCRIMCgRsaW5rGAsgASgJEg0KBWV2ZW50GAwgASgJEhEKCXN5bmNH",
-          "cm91cBgNIAEoCRISCgppc0Jsb2NraW5nGA4gASgIEhEKCWlzUXVldWluZxgP",
-          "IAEoCCLLAQoNVGlkZUNoYXJ0TGluaxIPCgdvdXROb2RlGAEgASgJEg8KB291",
-          "dFBvcnQYAiABKAkSDgoGaW5Ob2RlGAMgASgJEg4KBmluUG9ydBgEIAEoCRIN",
-          "CgVncm91cBgFIAEoBRINCgVkZWxheRgGIAEoBRIMCgRsaW5rGAcgASgJEhEK",
-          "CWlzTG9nZ2luZxgQIAEoCBITCgtpc0RlYnVnZ2luZxgRIAEoCBIQCghpc1Bh",
-          "dXNlZBgSIAEoCBISCgppc0Rpc2FibGVkGBMgASgIIncKDVRpZGVDaGFydE5v",
-          "dGUSCgoCaWQYASABKAkSDwoHcmVwbHlUbxgCIAEoCRIQCghjaGFuZ2VUbxgD",
-          "IAEoCRIPCgdjb250ZW50GAQgASgJEhEKCWNyZWF0ZWRCeRgFIAEoCRITCgtj",
-          "cmVhdGVkRGF0ZRgGIAEoCSL3AgoNVGlkZUNoYXJ0Tm9kZRIMCgRuYW1lGAEg",
-          "ASgJEgwKBHR5cGUYAiABKAkSDAoEcG9zWBgDIAEoERIMCgRwb3NZGAQgASgR",
-          "Eg0KBXRpdGxlGAUgASgJEgwKBGljb24YBiABKAkSDwoHbGlicmFyeRgHIAEo",
-          "CRIOCgZtZXRob2QYCCABKAkSDQoFZGVsYXkYCSABKAUSHwoHaW5wb3J0cxgK",
-          "IAMoCzIOLlRpZGVDaGFydFBvcnQSIAoIb3V0cG9ydHMYCyADKAsyDi5UaWRl",
-          "Q2hhcnRQb3J0EiEKBXByb3BzGAwgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkS",
-          "EQoJaXNMb2dnaW5nGBAgASgIEhMKC2lzRGVidWdnaW5nGBEgASgIEhAKCGlz",
-          "UGF1c2VkGBIgASgIEhIKCmlzRGlzYWJsZWQYEyABKAgSHQoFbm90ZXMYFCAD",
-          "KAsyDi5UaWRlQ2hhcnROb3RlEg4KBnNjcmlwdBgVIAEoCSL7AQoPVGlkZUNo",
-          "YXJ0UmVnaW9uEgwKBG5hbWUYASABKAkSDQoFdGl0bGUYAiABKAkSDQoFbm9k",
-          "ZXMYAyADKAkSDQoFZ3JvdXAYBCABKAUSDQoFc2NvcGUYBSABKAkSIQoFcHJv",
-          "cHMYBiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIRCglpc0xvZ2dpbmcYECAB",
-          "KAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoIaXNQYXVzZWQYEiABKAgSEgoK",
-          "aXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgUIAMoCzIOLlRpZGVDaGFydE5v",
-          "dGUSDgoGc2NyaXB0GBUgASgJIuYDCg5UaWRlQ2hhcnRHcmFwaBIKCgJpZBgB",
-          "IAEoCRIMCgR0eXBlGAIgASgJEgwKBG5hbWUYAyABKAkSDQoFdGl0bGUYBCAB",
-          "KAkSDAoEaWNvbhgFIAEoCRIPCgd2ZXJzaW9uGAYgASgJEg4KBnNvdXJjZRgH",
-          "IAEoCRIdCgVub2RlcxgIIAMoCzIOLlRpZGVDaGFydE5vZGUSHQoFbGlua3MY",
-          "CSADKAsyDi5UaWRlQ2hhcnRMaW5rEiEKB3JlZ2lvbnMYCiADKAsyEC5UaWRl",
-          "Q2hhcnRSZWdpb24SJgoIY29tbWVudHMYCyADKAsyFC5UaWRlQ2hhcnRDb21t",
-          "ZW50Qm94EiEKB3dpZGdldHMYDCADKAsyEC5UaWRlQ2hhcnRXaWRnZXQSIQoF",
-          "cHJvcHMYDSADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIiCgdoaXN0b3J5GA4g",
-          "AygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIRCglpc0xvZ2dpbmcYECABKAgSEwoL",
-          "aXNEZWJ1Z2dpbmcYESABKAgSEAoIaXNQYXVzZWQYEiABKAgSEgoKaXNEaXNh",
-          "YmxlZBgTIAEoCBIdCgVub3RlcxgUIAMoCzIOLlRpZGVDaGFydE5vdGUSDgoG",
-          "c2NyaXB0GBUgASgJIoUEChBUaWRlQ2hhcnRDb21tYW5kEg8KB3ZlcnNpb24Y",
-          "ASABKAkSDgoGdGFyZ2V0GAIgASgJEicKBWdyb3VwGAMgASgLMhYuVGlkZUNo",
-          "YXJ0R3JvdXBDb21tYW5kSAASJQoEbW92ZRgEIAEoCzIVLlRpZGVDaGFydE1v",
-          "dmVDb21tYW5kSAASLgoHY29tbWVudBgFIAEoCzIbLlRpZGVDaGFydENvbW1l",
-          "bnRCb3hDb21tYW5kSAASKQoGd2lkZ2V0GAYgASgLMhcuVGlkZUNoYXJ0V2lk",
-          "Z2V0Q29tbWFuZEgAEiUKBHBvcnQYByABKAsyFS5UaWRlQ2hhcnRQb3J0Q29t",
-          "bWFuZEgAEiUKBGxpbmsYCCABKAsyFS5UaWRlQ2hhcnRMaW5rQ29tbWFuZEgA",
-          "EiUKBG5vZGUYCSABKAsyFS5UaWRlQ2hhcnROb2RlQ29tbWFuZEgAEikKBnJl",
-          "Z2lvbhgKIAEoCzIXLlRpZGVDaGFydFJlZ2lvbkNvbW1hbmRIABInCgVncmFw",
-          "aBgLIAEoCzIWLlRpZGVDaGFydEdyYXBoQ29tbWFuZEgAEioKBXByb3BzGAwg",
-          "ASgLMhkuVGlkZUNoYXJ0UHJvcGVydHlDb21tYW5kSAASJQoEbm90ZRgNIAEo",
-          "CzIVLlRpZGVDaGFydE5vdGVDb21tYW5kSABCCQoHY29tbWFuZCI8ChVUaWRl",
-          "Q2hhcnRHcm91cENvbW1hbmQSIwoIY29tbWFuZHMYASADKAsyES5UaWRlQ2hh",
-          "cnRDb21tYW5kImgKFFRpZGVDaGFydE1vdmVDb21tYW5kEgwKBG5vZGUYASAB",
-          "KAkSEAoIZnJvbVBvc1gYAiABKBESEAoIZnJvbVBvc1kYAyABKBESDgoGdG9Q",
-          "b3NYGAQgASgREg4KBnRvUG9zWRgFIAEoESKbAQoaVGlkZUNoYXJ0Q29tbWVu",
-          "dEJveENvbW1hbmQSKQoLZnJvbUNvbW1lbnQYASABKAsyFC5UaWRlQ2hhcnRD",
-          "b21tZW50Qm94EicKCXRvQ29tbWVudBgCIAEoCzIULlRpZGVDaGFydENvbW1l",
-          "bnRCb3gSKQoEdHlwZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVU",
-          "eXBlIo0BChZUaWRlQ2hhcnRXaWRnZXRDb21tYW5kEiQKCmZyb21XaWRnZXQY",
-          "ASABKAsyEC5UaWRlQ2hhcnRXaWRnZXQSIgoIdG9XaWRnZXQYAiABKAsyEC5U",
-          "aWRlQ2hhcnRXaWRnZXQSKQoEdHlwZRgDIAEoDjIbLlRpZGVDaGFydENvbW1h",
-          "bmRVcGRhdGVUeXBlIoMBChRUaWRlQ2hhcnRQb3J0Q29tbWFuZBIgCghmcm9t",
-          "UG9ydBgBIAEoCzIOLlRpZGVDaGFydFBvcnQSHgoGdG9Qb3J0GAIgASgLMg4u",
-          "VGlkZUNoYXJ0UG9ydBIpCgR0eXBlGAMgASgOMhsuVGlkZUNoYXJ0Q29tbWFu",
-          "ZFVwZGF0ZVR5cGUigwEKFFRpZGVDaGFydExpbmtDb21tYW5kEiAKCGZyb21M",
-          "aW5rGAEgASgLMg4uVGlkZUNoYXJ0TGluaxIeCgZ0b0xpbmsYAiABKAsyDi5U",
-          "aWRlQ2hhcnRMaW5rEikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5k",
-          "VXBkYXRlVHlwZSKDAQoUVGlkZUNoYXJ0Tm9kZUNvbW1hbmQSIAoIZnJvbU5v",
-          "ZGUYASABKAsyDi5UaWRlQ2hhcnROb2RlEh4KBnRvTm9kZRgCIAEoCzIOLlRp",
-          "ZGVDaGFydE5vZGUSKQoEdHlwZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRV",
-          "cGRhdGVUeXBlIo0BChZUaWRlQ2hhcnRSZWdpb25Db21tYW5kEiQKCmZyb21S",
-          "ZWdpb24YASABKAsyEC5UaWRlQ2hhcnRSZWdpb24SIgoIdG9SZWdpb24YAiAB",
-          "KAsyEC5UaWRlQ2hhcnRSZWdpb24SKQoEdHlwZRgDIAEoDjIbLlRpZGVDaGFy",
-          "dENvbW1hbmRVcGRhdGVUeXBlIogBChVUaWRlQ2hhcnRHcmFwaENvbW1hbmQS",
-          "IgoJZnJvbUdyYXBoGAEgASgLMg8uVGlkZUNoYXJ0R3JhcGgSIAoHdG9HcmFw",
-          "aBgCIAEoCzIPLlRpZGVDaGFydEdyYXBoEikKBHR5cGUYAyABKA4yGy5UaWRl",
-          "Q2hhcnRDb21tYW5kVXBkYXRlVHlwZSLgAQoYVGlkZUNoYXJ0UHJvcGVydHlD",
-          "b21tYW5kEiUKCWZyb21Qcm9wcxgBIAMoCzISLlRpZGVDaGFydFByb3BlcnR5",
-          "EiMKB3RvUHJvcHMYAiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIpCgR0eXBl",
-          "GAMgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUSDgoEbm9kZRgF",
-          "IAEoCUgAEhAKBnJlZ2lvbhgGIAEoCUgAEhAKBndpZGdldBgHIAEoCUgAEg8K",
-          "BWdyYXBoGAggASgJSABCCAoGdGFyZ2V0Ip0BChRUaWRlQ2hhcnROb3RlQ29t",
-          "bWFuZBIdCgVub3RlcxgBIAMoCzIOLlRpZGVDaGFydE5vdGUSKQoEdHlwZRgC",
-          "IAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlEg4KBG5vZGUYAyAB",
-          "KAlIABIQCgZyZWdpb24YBCABKAlIABIPCgVncmFwaBgFIAEoCUgAQggKBnRh",
-          "cmdldCKuAQoPVGlkZUNoYXJ0TWV0aG9kEgoKAmlkGAEgASgJEgwKBG5hbWUY",
-          "AiABKAkSDwoHZXh0ZW5kcxgDIAEoCRIOCgZzY3JpcHQYBCABKAkSHwoHaW5w",
-          "b3J0cxgFIAMoCzIOLlRpZGVDaGFydFBvcnQSIAoIb3V0cG9ydHMYBiADKAsy",
-          "Di5UaWRlQ2hhcnRQb3J0Eh0KBXByb3BzGAcgAygLMg4uVGlkZUNoYXJ0UG9y",
-          "dCKUAQoPVGlkZUNoYXJ0U291cmNlEgoKAmlkGAEgASgJEgwKBG5hbWUYAiAB",
-          "KAkSDAoEcGF0aBgDIAEoCRIVCg1tb2RpZmllZGREYXRlGAUgASgJEhIKCm1v",
-          "ZGlmaWVkQnkYBiABKAkSEQoHdmVyc2lvbhgHIAEoCUgAEhAKBnNjcmlwdBgI",
-          "IAEoCUgAQgkKB2NvbnRlbnQirQEKEFRpZGVDaGFydExpYnJhcnkSCgoCaWQY",
-          "ASABKAkSDAoEbmFtZRgCIAEoCRINCgV0aXRsZRgDIAEoCRIOCgZvcmlnaW4Y",
-          "BCABKAkSDgoGYnJhbmNoGAUgASgJEgwKBHBhdGgYBiABKAkSHwoFZmlsZXMY",
-          "ByADKAsyEC5UaWRlQ2hhcnRTb3VyY2USIQoHbWV0aG9kcxgIIAMoCzIQLlRp",
-          "ZGVDaGFydE1ldGhvZCLoAQoNVGlkZUNoYXJ0U2l0ZRINCgVpbmRleBgBIAEo",
-          "AxIdCgVzdGFjaxgCIAMoCzIOLlRpZGVDaGFydFNpdGUSDAoEcGF0aBgDIAEo",
-          "CRIPCgd0cmlnZ2VyGAQgASgJEg0KBWV2ZW50GAUgASgJEg0KBXNjb3BlGAYg",
-          "AygJEg4KBmZpbHRlchgHIAEoCRINCgVncmFwaBgIIAEoCRIOCgZyZWdpb24Y",
-          "CSABKAkSDAoEbm9kZRgKIAEoCRIMCgRwb3J0GAsgASgJEiEKBWxvY2FsGAwg",
-          "AygLMhIuVGlkZUNoYXJ0UHJvcGVydHkiiQIKEFRpZGVDaGFydE1lc3NhZ2US",
-          "DQoFaW5kZXgYASABKAMSEQoJdGltZXN0YW1wGAIgASgDEg4KBm9yaWdpbhgE",
-          "IAEoAxIQCghwcmV2aW91cxgFIAEoAxIOCgZzb3VyY2UYByABKAMSDgoGdGFy",
-          "Z2V0GAggASgDEhIKCmRlbGF5VW50aWwYCSABKAMSEQoJaG9sZFRva2VuGAog",
-          "ASgDEhMKC2NhbmNlbFRva2VuGAsgASgDEgwKBHR5cGUYDCABKAkSDwoHdmVy",
-          "c2lvbhgNIAEoBRIVCgtqc29uQ29udGVudBgOIAEoCUgAEhQKCm1zZ0NvbnRl",
-          "bnQYDyABKAxIAEIJCgdjb250ZW50ImsKFlRpZGVDaGFydENvbnRleHRDaGFu",
-          "Z2USDQoFaW5kZXgYASABKAMSEQoJdGltZXN0YW1wGAIgASgDEgwKBHR5cGUY",
-          "AyABKAkSIQoFcHJvcHMYBCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eSK4AQoR",
-          "VGlkZUNoYXJ0TG9nRW50cnkSDQoFaW5kZXgYASABKAMSEQoJdGltZXN0YW1w",
-          "GAIgASgDEg4KBnNvdXJjZRgDIAEoAxIhCgVsZXZlbBgEIAEoDjISLlRpZGVD",
-          "aGFydExvZ0xldmVsEgwKBHRhZ3MYBSADKAkSDwoHbWVzc2FnZRgGIAEoCRIM",
-          "CgRyZWZzGAcgAygDEiEKBXByb3BzGAggAygLMhIuVGlkZUNoYXJ0UHJvcGVy",
-          "dHki7QIKEFRpZGVDaGFydENvbnRleHQSCgoCaWQYASABKAkSDQoFaW5kZXgY",
-          "AiABKAMSEQoJdGltZXN0YW1wGAMgASgDEg8KB3ZlcnNpb24YBCABKAkSHQoF",
-          "c2l0ZXMYBSADKAsyDi5UaWRlQ2hhcnRTaXRlEiMKCG1lc3NhZ2VzGAYgAygL",
-          "MhEuVGlkZUNoYXJ0TWVzc2FnZRIiCgZnbG9iYWwYByADKAsyEi5UaWRlQ2hh",
-          "cnRQcm9wZXJ0eRIRCglzdGFydFRpbWUYCCABKAMSEgoKc3RhcnRJbmRleBgJ",
-          "IAEoAxIOCgZhY3RpdmUYCiADKAMSDwoHd2FpdGluZxgLIAMoAxIOCgZwYXVz",
-          "ZWQYDCADKAMSEAoIZGlzYWJsZWQYDSADKAMSJwoGZXZlbnRzGA4gAygLMhcu",
-          "VGlkZUNoYXJ0Q29udGV4dENoYW5nZRIfCgNsb2cYDyADKAsyEi5UaWRlQ2hh",
-          "cnRMb2dFbnRyeSKlAgoNVGlkZUNoYXJ0RGF0YRIPCgd2ZXJzaW9uGAEgASgJ",
-          "Eg4KBmJyYW5jaBgCIAEoCRIOCgZzb3VyY2UYAyABKAkSDQoFbWVyZ2UYBCAB",
-          "KAkSEgoKY29tbWl0RGF0ZRgFIAEoCRIQCghjb21taXRCeRgGIAEoCRISCgpj",
-          "b21taXREZXNjGAcgASgJEhMKC2NvbW1pdE5vdGVzGAggASgJEh8KBnNoZWV0",
-          "cxgJIAMoCzIPLlRpZGVDaGFydEdyYXBoEiEKBXByb3BzGAogAygLMhIuVGlk",
-          "ZUNoYXJ0UHJvcGVydHkSHQoFbm90ZXMYCyADKAsyDi5UaWRlQ2hhcnROb3Rl",
-          "EiIKB2xpYnJhcnkYDCADKAsyES5UaWRlQ2hhcnRMaWJyYXJ5IqABCg9UaWRl",
-          "Q2hhcnRIZWFkZXISDwoHdmVyc2lvbhgBIAEoCRIOCgZicmFuY2gYAiABKAkS",
-          "DgoGc291cmNlGAMgASgJEg0KBW1lcmdlGAQgASgJEhIKCmNvbW1pdERhdGUY",
-          "BSABKAkSEAoIY29tbWl0QnkYBiABKAkSEgoKY29tbWl0RGVzYxgHIAEoCRIT",
-          "Cgtjb21taXROb3RlcxgIIAEoCSKcAgoNVGlkZUNoYXJ0RmlsZRIKCgJpZBgB",
-          "IAEoCRIMCgRuYW1lGAIgASgJEgwKBHBhdGgYAyABKAkSDgoGb3JpZ2luGAQg",
-          "ASgJEhQKDG1vZGlmaWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYgASgJ",
-          "Eh0KBWNoYXJ0GAcgASgLMg4uVGlkZUNoYXJ0RGF0YRIiCgd3b3JraW5nGAgg",
-          "AygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIhCgZyZW1vdGUYCSADKAsyES5UaWRl",
-          "Q2hhcnRDb21tYW5kEh8KB2hpc3RvcnkYCiADKAsyDi5UaWRlQ2hhcnREYXRh",
-          "EiIKB2NvbnRleHQYCyADKAsyES5UaWRlQ2hhcnRDb250ZXh0IncKE1RpZGVD",
-          "aGFydEZpbGVIZWFkZXISCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRw",
-          "YXRoGAMgASgJEg4KBm9yaWdpbhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSAB",
-          "KAkSEgoKbW9kaWZpZWRCeRgGIAEoCSKXAQoUVGlkZUNoYXJ0RmlsZUN1cnJl",
-          "bnQSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4K",
+          "GAsgASgJSAASIQoFcHJvcHMYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIk",
+          "CghzZXR0aW5ncxgWIAMoCzISLlRpZGVDaGFydFByb3BlcnR5QggKBnRhcmdl",
+          "dCKHAgoNVGlkZUNoYXJ0UG9ydBIMCgR0eXBlGAEgASgJEgwKBG5vZGUYAiAB",
+          "KAkSDAoEbmFtZRgDIAEoCRIPCgdvcmRpbmFsGAQgASgFEhEKCWlzRGVmYXVs",
+          "dBgFIAEoCBISCgppc1JlcXVpcmVkGAYgASgIEg8KB2FsbG93ZWQYByADKAkS",
+          "DAoEaGludBgIIAEoCRINCgV2YWx1ZRgJIAEoCRIPCgd0cmlnZ2VyGAogASgJ",
+          "EgwKBGxpbmsYCyABKAkSDQoFZXZlbnQYDCABKAkSEQoJc3luY0dyb3VwGA0g",
+          "ASgJEhIKCmlzQmxvY2tpbmcYDiABKAgSEQoJaXNRdWV1aW5nGA8gASgIIssB",
+          "Cg1UaWRlQ2hhcnRMaW5rEg8KB291dE5vZGUYASABKAkSDwoHb3V0UG9ydBgC",
+          "IAEoCRIOCgZpbk5vZGUYAyABKAkSDgoGaW5Qb3J0GAQgASgJEg0KBWdyb3Vw",
+          "GAUgASgFEg0KBWRlbGF5GAYgASgFEgwKBGxpbmsYByABKAkSEQoJaXNMb2dn",
+          "aW5nGBAgASgIEhMKC2lzRGVidWdnaW5nGBEgASgIEhAKCGlzUGF1c2VkGBIg",
+          "ASgIEhIKCmlzRGlzYWJsZWQYEyABKAgidwoNVGlkZUNoYXJ0Tm90ZRIKCgJp",
+          "ZBgBIAEoCRIPCgdyZXBseVRvGAIgASgJEhAKCGNoYW5nZVRvGAMgASgJEg8K",
+          "B2NvbnRlbnQYBCABKAkSEQoJY3JlYXRlZEJ5GAUgASgJEhMKC2NyZWF0ZWRE",
+          "YXRlGAYgASgJIp0DCg1UaWRlQ2hhcnROb2RlEgwKBG5hbWUYASABKAkSDAoE",
+          "dHlwZRgCIAEoCRIMCgRwb3NYGAMgASgREgwKBHBvc1kYBCABKBESDQoFdGl0",
+          "bGUYBSABKAkSDAoEaWNvbhgGIAEoCRIPCgdsaWJyYXJ5GAcgASgJEg4KBm1l",
+          "dGhvZBgIIAEoCRINCgVkZWxheRgJIAEoBRIfCgdpbnBvcnRzGAogAygLMg4u",
+          "VGlkZUNoYXJ0UG9ydBIgCghvdXRwb3J0cxgLIAMoCzIOLlRpZGVDaGFydFBv",
+          "cnQSIQoFcHJvcHMYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIRCglpc0xv",
+          "Z2dpbmcYECABKAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoIaXNQYXVzZWQY",
+          "EiABKAgSEgoKaXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgUIAMoCzIOLlRp",
+          "ZGVDaGFydE5vdGUSDgoGc2NyaXB0GBUgASgJEiQKCHNldHRpbmdzGBYgAygL",
+          "MhIuVGlkZUNoYXJ0UHJvcGVydHkioQIKD1RpZGVDaGFydFJlZ2lvbhIMCgRu",
+          "YW1lGAEgASgJEg0KBXRpdGxlGAIgASgJEg0KBW5vZGVzGAMgAygJEg0KBWdy",
+          "b3VwGAQgASgFEg0KBXNjb3BlGAUgASgJEiEKBXByb3BzGAYgAygLMhIuVGlk",
+          "ZUNoYXJ0UHJvcGVydHkSEQoJaXNMb2dnaW5nGBAgASgIEhMKC2lzRGVidWdn",
+          "aW5nGBEgASgIEhAKCGlzUGF1c2VkGBIgASgIEhIKCmlzRGlzYWJsZWQYEyAB",
+          "KAgSHQoFbm90ZXMYFCADKAsyDi5UaWRlQ2hhcnROb3RlEg4KBnNjcmlwdBgV",
+          "IAEoCRIkCghzZXR0aW5ncxgWIAMoCzISLlRpZGVDaGFydFByb3BlcnR5IowE",
+          "Cg5UaWRlQ2hhcnRHcmFwaBIKCgJpZBgBIAEoCRIMCgR0eXBlGAIgASgJEgwK",
+          "BG5hbWUYAyABKAkSDQoFdGl0bGUYBCABKAkSDAoEaWNvbhgFIAEoCRIPCgd2",
+          "ZXJzaW9uGAYgASgJEg4KBnNvdXJjZRgHIAEoCRIdCgVub2RlcxgIIAMoCzIO",
+          "LlRpZGVDaGFydE5vZGUSHQoFbGlua3MYCSADKAsyDi5UaWRlQ2hhcnRMaW5r",
+          "EiEKB3JlZ2lvbnMYCiADKAsyEC5UaWRlQ2hhcnRSZWdpb24SJgoIY29tbWVu",
+          "dHMYCyADKAsyFC5UaWRlQ2hhcnRDb21tZW50Qm94EiEKB3dpZGdldHMYDCAD",
+          "KAsyEC5UaWRlQ2hhcnRXaWRnZXQSIQoFcHJvcHMYDSADKAsyEi5UaWRlQ2hh",
+          "cnRQcm9wZXJ0eRIiCgdoaXN0b3J5GA4gAygLMhEuVGlkZUNoYXJ0Q29tbWFu",
+          "ZBIRCglpc0xvZ2dpbmcYECABKAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoI",
+          "aXNQYXVzZWQYEiABKAgSEgoKaXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgU",
+          "IAMoCzIOLlRpZGVDaGFydE5vdGUSDgoGc2NyaXB0GBUgASgJEiQKCHNldHRp",
+          "bmdzGBYgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkihQQKEFRpZGVDaGFydENv",
+          "bW1hbmQSDwoHdmVyc2lvbhgBIAEoCRIOCgZ0YXJnZXQYAiABKAkSJwoFZ3Jv",
+          "dXAYAyABKAsyFi5UaWRlQ2hhcnRHcm91cENvbW1hbmRIABIlCgRtb3ZlGAQg",
+          "ASgLMhUuVGlkZUNoYXJ0TW92ZUNvbW1hbmRIABIuCgdjb21tZW50GAUgASgL",
+          "MhsuVGlkZUNoYXJ0Q29tbWVudEJveENvbW1hbmRIABIpCgZ3aWRnZXQYBiAB",
+          "KAsyFy5UaWRlQ2hhcnRXaWRnZXRDb21tYW5kSAASJQoEcG9ydBgHIAEoCzIV",
+          "LlRpZGVDaGFydFBvcnRDb21tYW5kSAASJQoEbGluaxgIIAEoCzIVLlRpZGVD",
+          "aGFydExpbmtDb21tYW5kSAASJQoEbm9kZRgJIAEoCzIVLlRpZGVDaGFydE5v",
+          "ZGVDb21tYW5kSAASKQoGcmVnaW9uGAogASgLMhcuVGlkZUNoYXJ0UmVnaW9u",
+          "Q29tbWFuZEgAEicKBWdyYXBoGAsgASgLMhYuVGlkZUNoYXJ0R3JhcGhDb21t",
+          "YW5kSAASKgoFcHJvcHMYDCABKAsyGS5UaWRlQ2hhcnRQcm9wZXJ0eUNvbW1h",
+          "bmRIABIlCgRub3RlGA0gASgLMhUuVGlkZUNoYXJ0Tm90ZUNvbW1hbmRIAEIJ",
+          "Cgdjb21tYW5kIjwKFVRpZGVDaGFydEdyb3VwQ29tbWFuZBIjCghjb21tYW5k",
+          "cxgBIAMoCzIRLlRpZGVDaGFydENvbW1hbmQiaAoUVGlkZUNoYXJ0TW92ZUNv",
+          "bW1hbmQSDAoEbm9kZRgBIAEoCRIQCghmcm9tUG9zWBgCIAEoERIQCghmcm9t",
+          "UG9zWRgDIAEoERIOCgZ0b1Bvc1gYBCABKBESDgoGdG9Qb3NZGAUgASgRIpsB",
+          "ChpUaWRlQ2hhcnRDb21tZW50Qm94Q29tbWFuZBIpCgtmcm9tQ29tbWVudBgB",
+          "IAEoCzIULlRpZGVDaGFydENvbW1lbnRCb3gSJwoJdG9Db21tZW50GAIgASgL",
+          "MhQuVGlkZUNoYXJ0Q29tbWVudEJveBIpCgR0eXBlGAMgASgOMhsuVGlkZUNo",
+          "YXJ0Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFdpZGdldENvbW1h",
+          "bmQSJAoKZnJvbVdpZGdldBgBIAEoCzIQLlRpZGVDaGFydFdpZGdldBIiCgh0",
+          "b1dpZGdldBgCIAEoCzIQLlRpZGVDaGFydFdpZGdldBIpCgR0eXBlGAMgASgO",
+          "MhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUigwEKFFRpZGVDaGFydFBv",
+          "cnRDb21tYW5kEiAKCGZyb21Qb3J0GAEgASgLMg4uVGlkZUNoYXJ0UG9ydBIe",
+          "CgZ0b1BvcnQYAiABKAsyDi5UaWRlQ2hhcnRQb3J0EikKBHR5cGUYAyABKA4y",
+          "Gy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZSKDAQoUVGlkZUNoYXJ0TGlu",
+          "a0NvbW1hbmQSIAoIZnJvbUxpbmsYASABKAsyDi5UaWRlQ2hhcnRMaW5rEh4K",
+          "BnRvTGluaxgCIAEoCzIOLlRpZGVDaGFydExpbmsSKQoEdHlwZRgDIAEoDjIb",
+          "LlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIoMBChRUaWRlQ2hhcnROb2Rl",
+          "Q29tbWFuZBIgCghmcm9tTm9kZRgBIAEoCzIOLlRpZGVDaGFydE5vZGUSHgoG",
+          "dG9Ob2RlGAIgASgLMg4uVGlkZUNoYXJ0Tm9kZRIpCgR0eXBlGAMgASgOMhsu",
+          "VGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFJlZ2lv",
+          "bkNvbW1hbmQSJAoKZnJvbVJlZ2lvbhgBIAEoCzIQLlRpZGVDaGFydFJlZ2lv",
+          "bhIiCgh0b1JlZ2lvbhgCIAEoCzIQLlRpZGVDaGFydFJlZ2lvbhIpCgR0eXBl",
+          "GAMgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUiiAEKFVRpZGVD",
+          "aGFydEdyYXBoQ29tbWFuZBIiCglmcm9tR3JhcGgYASABKAsyDy5UaWRlQ2hh",
+          "cnRHcmFwaBIgCgd0b0dyYXBoGAIgASgLMg8uVGlkZUNoYXJ0R3JhcGgSKQoE",
+          "dHlwZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIuABChhU",
+          "aWRlQ2hhcnRQcm9wZXJ0eUNvbW1hbmQSJQoJZnJvbVByb3BzGAEgAygLMhIu",
+          "VGlkZUNoYXJ0UHJvcGVydHkSIwoHdG9Qcm9wcxgCIAMoCzISLlRpZGVDaGFy",
+          "dFByb3BlcnR5EikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5kVXBk",
+          "YXRlVHlwZRIOCgRub2RlGAUgASgJSAASEAoGcmVnaW9uGAYgASgJSAASEAoG",
+          "d2lkZ2V0GAcgASgJSAASDwoFZ3JhcGgYCCABKAlIAEIICgZ0YXJnZXQinQEK",
+          "FFRpZGVDaGFydE5vdGVDb21tYW5kEh0KBW5vdGVzGAEgAygLMg4uVGlkZUNo",
+          "YXJ0Tm90ZRIpCgR0eXBlGAIgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0",
+          "ZVR5cGUSDgoEbm9kZRgDIAEoCUgAEhAKBnJlZ2lvbhgEIAEoCUgAEg8KBWdy",
+          "YXBoGAUgASgJSABCCAoGdGFyZ2V0Iq4BCg9UaWRlQ2hhcnRNZXRob2QSCgoC",
+          "aWQYASABKAkSDAoEbmFtZRgCIAEoCRIPCgdleHRlbmRzGAMgASgJEg4KBnNj",
+          "cmlwdBgEIAEoCRIfCgdpbnBvcnRzGAUgAygLMg4uVGlkZUNoYXJ0UG9ydBIg",
+          "CghvdXRwb3J0cxgGIAMoCzIOLlRpZGVDaGFydFBvcnQSHQoFcHJvcHMYByAD",
+          "KAsyDi5UaWRlQ2hhcnRQb3J0IpQBCg9UaWRlQ2hhcnRTb3VyY2USCgoCaWQY",
+          "ASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEhUKDW1vZGlmaWVk",
+          "ZERhdGUYBSABKAkSEgoKbW9kaWZpZWRCeRgGIAEoCRIRCgd2ZXJzaW9uGAcg",
+          "ASgJSAASEAoGc2NyaXB0GAggASgJSABCCQoHY29udGVudCKtAQoQVGlkZUNo",
+          "YXJ0TGlicmFyeRIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEg0KBXRpdGxl",
+          "GAMgASgJEg4KBm9yaWdpbhgEIAEoCRIOCgZicmFuY2gYBSABKAkSDAoEcGF0",
+          "aBgGIAEoCRIfCgVmaWxlcxgHIAMoCzIQLlRpZGVDaGFydFNvdXJjZRIhCgdt",
+          "ZXRob2RzGAggAygLMhAuVGlkZUNoYXJ0TWV0aG9kIugBCg1UaWRlQ2hhcnRT",
+          "aXRlEg0KBWluZGV4GAEgASgDEh0KBXN0YWNrGAIgAygLMg4uVGlkZUNoYXJ0",
+          "U2l0ZRIMCgRwYXRoGAMgASgJEg8KB3RyaWdnZXIYBCABKAkSDQoFZXZlbnQY",
+          "BSABKAkSDQoFc2NvcGUYBiADKAkSDgoGZmlsdGVyGAcgASgJEg0KBWdyYXBo",
+          "GAggASgJEg4KBnJlZ2lvbhgJIAEoCRIMCgRub2RlGAogASgJEgwKBHBvcnQY",
+          "CyABKAkSIQoFbG9jYWwYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eSKJAgoQ",
+          "VGlkZUNoYXJ0TWVzc2FnZRINCgVpbmRleBgBIAEoAxIRCgl0aW1lc3RhbXAY",
+          "AiABKAMSDgoGb3JpZ2luGAQgASgDEhAKCHByZXZpb3VzGAUgASgDEg4KBnNv",
+          "dXJjZRgHIAEoAxIOCgZ0YXJnZXQYCCABKAMSEgoKZGVsYXlVbnRpbBgJIAEo",
+          "AxIRCglob2xkVG9rZW4YCiABKAMSEwoLY2FuY2VsVG9rZW4YCyABKAMSDAoE",
+          "dHlwZRgMIAEoCRIPCgd2ZXJzaW9uGA0gASgFEhUKC2pzb25Db250ZW50GA4g",
+          "ASgJSAASFAoKbXNnQ29udGVudBgPIAEoDEgAQgkKB2NvbnRlbnQiawoWVGlk",
+          "ZUNoYXJ0Q29udGV4dENoYW5nZRINCgVpbmRleBgBIAEoAxIRCgl0aW1lc3Rh",
+          "bXAYAiABKAMSDAoEdHlwZRgDIAEoCRIhCgVwcm9wcxgEIAMoCzISLlRpZGVD",
+          "aGFydFByb3BlcnR5IrgBChFUaWRlQ2hhcnRMb2dFbnRyeRINCgVpbmRleBgB",
+          "IAEoAxIRCgl0aW1lc3RhbXAYAiABKAMSDgoGc291cmNlGAMgASgDEiEKBWxl",
+          "dmVsGAQgASgOMhIuVGlkZUNoYXJ0TG9nTGV2ZWwSDAoEdGFncxgFIAMoCRIP",
+          "CgdtZXNzYWdlGAYgASgJEgwKBHJlZnMYByADKAMSIQoFcHJvcHMYCCADKAsy",
+          "Ei5UaWRlQ2hhcnRQcm9wZXJ0eSLtAgoQVGlkZUNoYXJ0Q29udGV4dBIKCgJp",
+          "ZBgBIAEoCRINCgVpbmRleBgCIAEoAxIRCgl0aW1lc3RhbXAYAyABKAMSDwoH",
+          "dmVyc2lvbhgEIAEoCRIdCgVzaXRlcxgFIAMoCzIOLlRpZGVDaGFydFNpdGUS",
+          "IwoIbWVzc2FnZXMYBiADKAsyES5UaWRlQ2hhcnRNZXNzYWdlEiIKBmdsb2Jh",
+          "bBgHIAMoCzISLlRpZGVDaGFydFByb3BlcnR5EhEKCXN0YXJ0VGltZRgIIAEo",
+          "AxISCgpzdGFydEluZGV4GAkgASgDEg4KBmFjdGl2ZRgKIAMoAxIPCgd3YWl0",
+          "aW5nGAsgAygDEg4KBnBhdXNlZBgMIAMoAxIQCghkaXNhYmxlZBgNIAMoAxIn",
+          "CgZldmVudHMYDiADKAsyFy5UaWRlQ2hhcnRDb250ZXh0Q2hhbmdlEh8KA2xv",
+          "ZxgPIAMoCzISLlRpZGVDaGFydExvZ0VudHJ5IssCCg1UaWRlQ2hhcnREYXRh",
+          "Eg8KB3ZlcnNpb24YASABKAkSDgoGYnJhbmNoGAIgASgJEg4KBnNvdXJjZRgD",
+          "IAEoCRINCgVtZXJnZRgEIAEoCRISCgpjb21taXREYXRlGAUgASgJEhAKCGNv",
+          "bW1pdEJ5GAYgASgJEhIKCmNvbW1pdERlc2MYByABKAkSEwoLY29tbWl0Tm90",
+          "ZXMYCCABKAkSHwoGc2hlZXRzGAkgAygLMg8uVGlkZUNoYXJ0R3JhcGgSIQoF",
+          "cHJvcHMYCiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIdCgVub3RlcxgLIAMo",
+          "CzIOLlRpZGVDaGFydE5vdGUSIgoHbGlicmFyeRgMIAMoCzIRLlRpZGVDaGFy",
+          "dExpYnJhcnkSJAoIc2V0dGluZ3MYFiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0",
+          "eSKgAQoPVGlkZUNoYXJ0SGVhZGVyEg8KB3ZlcnNpb24YASABKAkSDgoGYnJh",
+          "bmNoGAIgASgJEg4KBnNvdXJjZRgDIAEoCRINCgVtZXJnZRgEIAEoCRISCgpj",
+          "b21taXREYXRlGAUgASgJEhAKCGNvbW1pdEJ5GAYgASgJEhIKCmNvbW1pdERl",
+          "c2MYByABKAkSEwoLY29tbWl0Tm90ZXMYCCABKAkinAIKDVRpZGVDaGFydEZp",
+          "bGUSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4K",
           "Bm9yaWdpbhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSABKAkSEgoKbW9kaWZp",
-          "ZWRCeRgGIAEoCRIdCgVjaGFydBgHIAEoCzIOLlRpZGVDaGFydERhdGEqPQoa",
-          "VGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUSBwoDYWRkEAASCgoGcmVtb3Zl",
-          "EAESCgoGdXBkYXRlEAIqnQEKEVRpZGVDaGFydExvZ0xldmVsEggKBG5vbmUQ",
-          "ABIJCgVmYXRhbBABEgkKBWVycm9yEAISDQoJZXhjZXB0aW9uEAMSCwoHd2Fy",
-          "bmluZxAEEggKBGluZm8QBRILCgdtZXNzYWdlEAYSCQoFZGVidWcQBxIJCgVj",
-          "aGVjaxAIEgsKB3ZlcmJvc2UQCRIJCgV0cmFjZRAKEgcKA2FsbBALQgtCCVRp",
-          "ZGVDaGFydGIGcHJvdG8z"));
+          "ZWRCeRgGIAEoCRIdCgVjaGFydBgHIAEoCzIOLlRpZGVDaGFydERhdGESIgoH",
+          "d29ya2luZxgIIAMoCzIRLlRpZGVDaGFydENvbW1hbmQSIQoGcmVtb3RlGAkg",
+          "AygLMhEuVGlkZUNoYXJ0Q29tbWFuZBIfCgdoaXN0b3J5GAogAygLMg4uVGlk",
+          "ZUNoYXJ0RGF0YRIiCgdjb250ZXh0GAsgAygLMhEuVGlkZUNoYXJ0Q29udGV4",
+          "dCJ3ChNUaWRlQ2hhcnRGaWxlSGVhZGVyEgoKAmlkGAEgASgJEgwKBG5hbWUY",
+          "AiABKAkSDAoEcGF0aBgDIAEoCRIOCgZvcmlnaW4YBCABKAkSFAoMbW9kaWZp",
+          "ZWREYXRlGAUgASgJEhIKCm1vZGlmaWVkQnkYBiABKAkilwEKFFRpZGVDaGFy",
+          "dEZpbGVDdXJyZW50EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEcGF0",
+          "aBgDIAEoCRIOCgZvcmlnaW4YBCABKAkSFAoMbW9kaWZpZWREYXRlGAUgASgJ",
+          "EhIKCm1vZGlmaWVkQnkYBiABKAkSHQoFY2hhcnQYByABKAsyDi5UaWRlQ2hh",
+          "cnREYXRhKj0KGlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlEgcKA2FkZBAA",
+          "EgoKBnJlbW92ZRABEgoKBnVwZGF0ZRACKp0BChFUaWRlQ2hhcnRMb2dMZXZl",
+          "bBIICgRub25lEAASCQoFZmF0YWwQARIJCgVlcnJvchACEg0KCWV4Y2VwdGlv",
+          "bhADEgsKB3dhcm5pbmcQBBIICgRpbmZvEAUSCwoHbWVzc2FnZRAGEgkKBWRl",
+          "YnVnEAcSCQoFY2hlY2sQCBILCgd2ZXJib3NlEAkSCQoFdHJhY2UQChIHCgNh",
+          "bGwQC0ILQglUaWRlQ2hhcnRiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartCommandUpdateType), typeof(global::TideChartLogLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartProperty), global::TideChartProperty.Parser, new[]{ "Name", "BoolValue", "StrValue", "LongValue", "DoubleValue", "Props" }, new[]{ "Value" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBox), global::TideChartCommentBox.Parser, new[]{ "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "IsRaised", "IsReversed" }, new[]{ "Content" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props" }, new[]{ "Target" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props", "Settings" }, new[]{ "Target" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPort), global::TideChartPort.Parser, new[]{ "Type", "Node", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Value", "Trigger", "Link", "Event", "SyncGroup", "IsBlocking", "IsQueuing" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLink), global::TideChartLink.Parser, new[]{ "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Link", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNote), global::TideChartNote.Parser, new[]{ "Id", "ReplyTo", "ChangeTo", "Content", "CreatedBy", "CreatedDate" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNode), global::TideChartNode.Parser, new[]{ "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegion), global::TideChartRegion.Parser, new[]{ "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraph), global::TideChartGraph.Parser, new[]{ "Id", "Type", "Name", "Title", "Icon", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNode), global::TideChartNode.Parser, new[]{ "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegion), global::TideChartRegion.Parser, new[]{ "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraph), global::TideChartGraph.Parser, new[]{ "Id", "Type", "Name", "Title", "Icon", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommand), global::TideChartCommand.Parser, new[]{ "Version", "Target", "Group", "Move", "Comment", "Widget", "Port", "Link", "Node", "Region", "Graph", "Props", "Note" }, new[]{ "Command" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGroupCommand), global::TideChartGroupCommand.Parser, new[]{ "Commands" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMoveCommand), global::TideChartMoveCommand.Parser, new[]{ "Node", "FromPosX", "FromPosY", "ToPosX", "ToPosY" }, null, null, null, null),
@@ -220,7 +224,7 @@ public static partial class TideChartReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContextChange), global::TideChartContextChange.Parser, new[]{ "Index", "Timestamp", "Type", "Props" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLogEntry), global::TideChartLogEntry.Parser, new[]{ "Index", "Timestamp", "Source", "Level", "Tags", "Message", "Refs", "Props" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContext), global::TideChartContext.Parser, new[]{ "Id", "Index", "Timestamp", "Version", "Sites", "Messages", "Global", "StartTime", "StartIndex", "Active", "Waiting", "Paused", "Disabled", "Events", "Log" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartHeader), global::TideChartHeader.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFile), global::TideChartFile.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", "Context" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileHeader), global::TideChartFileHeader.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy" }, null, null, null, null),
@@ -1280,6 +1284,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     width_ = other.width_;
     height_ = other.height_;
     props_ = other.props_.Clone();
+    settings_ = other.settings_.Clone();
     switch (other.TargetCase) {
       case TargetOneofCase.Link:
         Link = other.Link;
@@ -1460,11 +1465,24 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
       = pb::FieldCodec.ForMessage(98, global::TideChartProperty.Parser);
   private readonly pbc::RepeatedField<global::TideChartProperty> props_ = new pbc::RepeatedField<global::TideChartProperty>();
   /// <summary>
-  /// widgets can have configuration paremeters
+  /// widgets can have configuration parameters
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::TideChartProperty> Props {
     get { return props_; }
+  }
+
+  /// <summary>Field number for the "settings" field.</summary>
+  public const int SettingsFieldNumber = 22;
+  private static readonly pb::FieldCodec<global::TideChartProperty> _repeated_settings_codec
+      = pb::FieldCodec.ForMessage(178, global::TideChartProperty.Parser);
+  private readonly pbc::RepeatedField<global::TideChartProperty> settings_ = new pbc::RepeatedField<global::TideChartProperty>();
+  /// <summary>
+  /// widgets can have additional parameters related to layout, display or debugging
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartProperty> Settings {
+    get { return settings_; }
   }
 
   private object target_;
@@ -1512,6 +1530,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     if (Port != other.Port) return false;
     if (Node != other.Node) return false;
     if(!props_.Equals(other.props_)) return false;
+    if(!settings_.Equals(other.settings_)) return false;
     if (TargetCase != other.TargetCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1531,6 +1550,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     if (targetCase_ == TargetOneofCase.Port) hash ^= Port.GetHashCode();
     if (targetCase_ == TargetOneofCase.Node) hash ^= Node.GetHashCode();
     hash ^= props_.GetHashCode();
+    hash ^= settings_.GetHashCode();
     hash ^= (int) targetCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1590,6 +1610,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
       output.WriteString(Node);
     }
     props_.WriteTo(output, _repeated_props_codec);
+    settings_.WriteTo(output, _repeated_settings_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1632,6 +1653,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Node);
     }
     size += props_.CalculateSize(_repeated_props_codec);
+    size += settings_.CalculateSize(_repeated_settings_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -1668,6 +1690,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
       Height = other.Height;
     }
     props_.Add(other.props_);
+    settings_.Add(other.settings_);
     switch (other.TargetCase) {
       case TargetOneofCase.Link:
         Link = other.Link;
@@ -1737,6 +1760,10 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
         }
         case 98: {
           props_.AddEntriesFrom(input, _repeated_props_codec);
+          break;
+        }
+        case 178: {
+          settings_.AddEntriesFrom(input, _repeated_settings_codec);
           break;
         }
       }
@@ -3075,6 +3102,7 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     isDisabled_ = other.isDisabled_;
     notes_ = other.notes_.Clone();
     script_ = other.script_;
+    settings_ = other.settings_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3331,6 +3359,19 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     }
   }
 
+  /// <summary>Field number for the "settings" field.</summary>
+  public const int SettingsFieldNumber = 22;
+  private static readonly pb::FieldCodec<global::TideChartProperty> _repeated_settings_codec
+      = pb::FieldCodec.ForMessage(178, global::TideChartProperty.Parser);
+  private readonly pbc::RepeatedField<global::TideChartProperty> settings_ = new pbc::RepeatedField<global::TideChartProperty>();
+  /// <summary>
+  /// nodes can have additional parameters related to layout, display or debugging
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartProperty> Settings {
+    get { return settings_; }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as TideChartNode);
@@ -3362,6 +3403,7 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     if (IsDisabled != other.IsDisabled) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if (Script != other.Script) return false;
+    if(!settings_.Equals(other.settings_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -3386,6 +3428,7 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     hash ^= notes_.GetHashCode();
     if (Script.Length != 0) hash ^= Script.GetHashCode();
+    hash ^= settings_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -3459,6 +3502,7 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
       output.WriteRawTag(170, 1);
       output.WriteString(Script);
     }
+    settings_.WriteTo(output, _repeated_settings_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -3513,6 +3557,7 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     if (Script.Length != 0) {
       size += 2 + pb::CodedOutputStream.ComputeStringSize(Script);
     }
+    size += settings_.CalculateSize(_repeated_settings_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -3570,6 +3615,7 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
     if (other.Script.Length != 0) {
       Script = other.Script;
     }
+    settings_.Add(other.settings_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -3653,6 +3699,10 @@ public sealed partial class TideChartNode : pb::IMessage<TideChartNode> {
           Script = input.ReadString();
           break;
         }
+        case 178: {
+          settings_.AddEntriesFrom(input, _repeated_settings_codec);
+          break;
+        }
       }
     }
   }
@@ -3696,6 +3746,7 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     isDisabled_ = other.isDisabled_;
     notes_ = other.notes_.Clone();
     script_ = other.script_;
+    settings_ = other.settings_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3869,6 +3920,19 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     }
   }
 
+  /// <summary>Field number for the "settings" field.</summary>
+  public const int SettingsFieldNumber = 22;
+  private static readonly pb::FieldCodec<global::TideChartProperty> _repeated_settings_codec
+      = pb::FieldCodec.ForMessage(178, global::TideChartProperty.Parser);
+  private readonly pbc::RepeatedField<global::TideChartProperty> settings_ = new pbc::RepeatedField<global::TideChartProperty>();
+  /// <summary>
+  /// regions can have additional parameters related to layout, display or debugging
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartProperty> Settings {
+    get { return settings_; }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as TideChartRegion);
@@ -3894,6 +3958,7 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     if (IsDisabled != other.IsDisabled) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if (Script != other.Script) return false;
+    if(!settings_.Equals(other.settings_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -3912,6 +3977,7 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     hash ^= notes_.GetHashCode();
     if (Script.Length != 0) hash ^= Script.GetHashCode();
+    hash ^= settings_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -3964,6 +4030,7 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
       output.WriteRawTag(170, 1);
       output.WriteString(Script);
     }
+    settings_.WriteTo(output, _repeated_settings_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -4002,6 +4069,7 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     if (Script.Length != 0) {
       size += 2 + pb::CodedOutputStream.ComputeStringSize(Script);
     }
+    size += settings_.CalculateSize(_repeated_settings_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -4043,6 +4111,7 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
     if (other.Script.Length != 0) {
       Script = other.Script;
     }
+    settings_.Add(other.settings_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -4102,6 +4171,10 @@ public sealed partial class TideChartRegion : pb::IMessage<TideChartRegion> {
           Script = input.ReadString();
           break;
         }
+        case 178: {
+          settings_.AddEntriesFrom(input, _repeated_settings_codec);
+          break;
+        }
       }
     }
   }
@@ -4153,6 +4226,7 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     isDisabled_ = other.isDisabled_;
     notes_ = other.notes_.Clone();
     script_ = other.script_;
+    settings_ = other.settings_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -4433,6 +4507,19 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     }
   }
 
+  /// <summary>Field number for the "settings" field.</summary>
+  public const int SettingsFieldNumber = 22;
+  private static readonly pb::FieldCodec<global::TideChartProperty> _repeated_settings_codec
+      = pb::FieldCodec.ForMessage(178, global::TideChartProperty.Parser);
+  private readonly pbc::RepeatedField<global::TideChartProperty> settings_ = new pbc::RepeatedField<global::TideChartProperty>();
+  /// <summary>
+  /// graphs can have additional parameters related to layout, display or debugging
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartProperty> Settings {
+    get { return settings_; }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as TideChartGraph);
@@ -4466,6 +4553,7 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     if (IsDisabled != other.IsDisabled) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if (Script != other.Script) return false;
+    if(!settings_.Equals(other.settings_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -4492,6 +4580,7 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     hash ^= notes_.GetHashCode();
     if (Script.Length != 0) hash ^= Script.GetHashCode();
+    hash ^= settings_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -4561,6 +4650,7 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
       output.WriteRawTag(170, 1);
       output.WriteString(Script);
     }
+    settings_.WriteTo(output, _repeated_settings_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -4613,6 +4703,7 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     if (Script.Length != 0) {
       size += 2 + pb::CodedOutputStream.ComputeStringSize(Script);
     }
+    size += settings_.CalculateSize(_repeated_settings_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -4668,6 +4759,7 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
     if (other.Script.Length != 0) {
       Script = other.Script;
     }
+    settings_.Add(other.settings_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -4757,6 +4849,10 @@ public sealed partial class TideChartGraph : pb::IMessage<TideChartGraph> {
         }
         case 170: {
           Script = input.ReadString();
+          break;
+        }
+        case 178: {
+          settings_.AddEntriesFrom(input, _repeated_settings_codec);
           break;
         }
       }
@@ -10452,7 +10548,7 @@ public sealed partial class TideChartContext : pb::IMessage<TideChartContext> {
       = pb::FieldCodec.ForMessage(58, global::TideChartProperty.Parser);
   private readonly pbc::RepeatedField<global::TideChartProperty> global_ = new pbc::RepeatedField<global::TideChartProperty>();
   /// <summary>
-  /// a set of properties representing global state 
+  /// a set of properties representing the global state 
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::TideChartProperty> Global {
@@ -10851,6 +10947,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     props_ = other.props_.Clone();
     notes_ = other.notes_.Clone();
     library_ = other.library_.Clone();
+    settings_ = other.settings_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -11023,6 +11120,19 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     get { return library_; }
   }
 
+  /// <summary>Field number for the "settings" field.</summary>
+  public const int SettingsFieldNumber = 22;
+  private static readonly pb::FieldCodec<global::TideChartProperty> _repeated_settings_codec
+      = pb::FieldCodec.ForMessage(178, global::TideChartProperty.Parser);
+  private readonly pbc::RepeatedField<global::TideChartProperty> settings_ = new pbc::RepeatedField<global::TideChartProperty>();
+  /// <summary>
+  /// charts can have additional parameters related to layout, display or debugging
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartProperty> Settings {
+    get { return settings_; }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as TideChartData);
@@ -11048,6 +11158,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if(!props_.Equals(other.props_)) return false;
     if(!notes_.Equals(other.notes_)) return false;
     if(!library_.Equals(other.library_)) return false;
+    if(!settings_.Equals(other.settings_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -11066,6 +11177,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     hash ^= props_.GetHashCode();
     hash ^= notes_.GetHashCode();
     hash ^= library_.GetHashCode();
+    hash ^= settings_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -11115,6 +11227,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     props_.WriteTo(output, _repeated_props_codec);
     notes_.WriteTo(output, _repeated_notes_codec);
     library_.WriteTo(output, _repeated_library_codec);
+    settings_.WriteTo(output, _repeated_settings_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -11151,6 +11264,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     size += props_.CalculateSize(_repeated_props_codec);
     size += notes_.CalculateSize(_repeated_notes_codec);
     size += library_.CalculateSize(_repeated_library_codec);
+    size += settings_.CalculateSize(_repeated_settings_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -11190,6 +11304,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     props_.Add(other.props_);
     notes_.Add(other.notes_);
     library_.Add(other.library_);
+    settings_.Add(other.settings_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -11247,6 +11362,10 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
         }
         case 98: {
           library_.AddEntriesFrom(input, _repeated_library_codec);
+          break;
+        }
+        case 178: {
+          settings_.AddEntriesFrom(input, _repeated_settings_codec);
           break;
         }
       }
