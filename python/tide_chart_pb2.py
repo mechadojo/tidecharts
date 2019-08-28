@@ -3164,235 +3164,235 @@ DESCRIPTOR.enum_types_by_name['TideChartCommandUpdateType'] = _TIDECHARTCOMMANDU
 DESCRIPTOR.enum_types_by_name['TideChartLogLevel'] = _TIDECHARTLOGLEVEL
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-TideChartProperty = _reflection.GeneratedProtocolMessageType('TideChartProperty', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTPROPERTY,
-  __module__ = 'tide_chart_pb2'
+TideChartProperty = _reflection.GeneratedProtocolMessageType('TideChartProperty', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTPROPERTY,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartProperty)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartProperty)
 
-TideChartCommentBox = _reflection.GeneratedProtocolMessageType('TideChartCommentBox', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTCOMMENTBOX,
-  __module__ = 'tide_chart_pb2'
+TideChartCommentBox = _reflection.GeneratedProtocolMessageType('TideChartCommentBox', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTCOMMENTBOX,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartCommentBox)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartCommentBox)
 
-TideChartWidget = _reflection.GeneratedProtocolMessageType('TideChartWidget', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTWIDGET,
-  __module__ = 'tide_chart_pb2'
+TideChartWidget = _reflection.GeneratedProtocolMessageType('TideChartWidget', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTWIDGET,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartWidget)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartWidget)
 
-TideChartPort = _reflection.GeneratedProtocolMessageType('TideChartPort', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTPORT,
-  __module__ = 'tide_chart_pb2'
+TideChartPort = _reflection.GeneratedProtocolMessageType('TideChartPort', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTPORT,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartPort)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartPort)
 
-TideChartLink = _reflection.GeneratedProtocolMessageType('TideChartLink', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTLINK,
-  __module__ = 'tide_chart_pb2'
+TideChartLink = _reflection.GeneratedProtocolMessageType('TideChartLink', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTLINK,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartLink)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartLink)
 
-TideChartNote = _reflection.GeneratedProtocolMessageType('TideChartNote', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTNOTE,
-  __module__ = 'tide_chart_pb2'
+TideChartNote = _reflection.GeneratedProtocolMessageType('TideChartNote', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTNOTE,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartNote)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartNote)
 
-TideChartNode = _reflection.GeneratedProtocolMessageType('TideChartNode', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTNODE,
-  __module__ = 'tide_chart_pb2'
+TideChartNode = _reflection.GeneratedProtocolMessageType('TideChartNode', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTNODE,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartNode)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartNode)
 
-TideChartRegion = _reflection.GeneratedProtocolMessageType('TideChartRegion', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTREGION,
-  __module__ = 'tide_chart_pb2'
+TideChartRegion = _reflection.GeneratedProtocolMessageType('TideChartRegion', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTREGION,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartRegion)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartRegion)
 
-TideChartGraph = _reflection.GeneratedProtocolMessageType('TideChartGraph', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTGRAPH,
-  __module__ = 'tide_chart_pb2'
+TideChartGraph = _reflection.GeneratedProtocolMessageType('TideChartGraph', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTGRAPH,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartGraph)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartGraph)
 
-TideChartCommand = _reflection.GeneratedProtocolMessageType('TideChartCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartCommand = _reflection.GeneratedProtocolMessageType('TideChartCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartCommand)
 
-TideChartGroupCommand = _reflection.GeneratedProtocolMessageType('TideChartGroupCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTGROUPCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartGroupCommand = _reflection.GeneratedProtocolMessageType('TideChartGroupCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTGROUPCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartGroupCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartGroupCommand)
 
-TideChartMoveCommand = _reflection.GeneratedProtocolMessageType('TideChartMoveCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTMOVECOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartMoveCommand = _reflection.GeneratedProtocolMessageType('TideChartMoveCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTMOVECOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartMoveCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartMoveCommand)
 
-TideChartCommentBoxCommand = _reflection.GeneratedProtocolMessageType('TideChartCommentBoxCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTCOMMENTBOXCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartCommentBoxCommand = _reflection.GeneratedProtocolMessageType('TideChartCommentBoxCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTCOMMENTBOXCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartCommentBoxCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartCommentBoxCommand)
 
-TideChartWidgetCommand = _reflection.GeneratedProtocolMessageType('TideChartWidgetCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTWIDGETCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartWidgetCommand = _reflection.GeneratedProtocolMessageType('TideChartWidgetCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTWIDGETCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartWidgetCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartWidgetCommand)
 
-TideChartPortCommand = _reflection.GeneratedProtocolMessageType('TideChartPortCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTPORTCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartPortCommand = _reflection.GeneratedProtocolMessageType('TideChartPortCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTPORTCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartPortCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartPortCommand)
 
-TideChartLinkCommand = _reflection.GeneratedProtocolMessageType('TideChartLinkCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTLINKCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartLinkCommand = _reflection.GeneratedProtocolMessageType('TideChartLinkCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTLINKCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartLinkCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartLinkCommand)
 
-TideChartNodeCommand = _reflection.GeneratedProtocolMessageType('TideChartNodeCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTNODECOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartNodeCommand = _reflection.GeneratedProtocolMessageType('TideChartNodeCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTNODECOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartNodeCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartNodeCommand)
 
-TideChartRegionCommand = _reflection.GeneratedProtocolMessageType('TideChartRegionCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTREGIONCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartRegionCommand = _reflection.GeneratedProtocolMessageType('TideChartRegionCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTREGIONCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartRegionCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartRegionCommand)
 
-TideChartGraphCommand = _reflection.GeneratedProtocolMessageType('TideChartGraphCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTGRAPHCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartGraphCommand = _reflection.GeneratedProtocolMessageType('TideChartGraphCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTGRAPHCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartGraphCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartGraphCommand)
 
-TideChartPropertyCommand = _reflection.GeneratedProtocolMessageType('TideChartPropertyCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTPROPERTYCOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartPropertyCommand = _reflection.GeneratedProtocolMessageType('TideChartPropertyCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTPROPERTYCOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartPropertyCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartPropertyCommand)
 
-TideChartNoteCommand = _reflection.GeneratedProtocolMessageType('TideChartNoteCommand', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTNOTECOMMAND,
-  __module__ = 'tide_chart_pb2'
+TideChartNoteCommand = _reflection.GeneratedProtocolMessageType('TideChartNoteCommand', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTNOTECOMMAND,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartNoteCommand)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartNoteCommand)
 
-TideChartSource = _reflection.GeneratedProtocolMessageType('TideChartSource', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTSOURCE,
-  __module__ = 'tide_chart_pb2'
+TideChartSource = _reflection.GeneratedProtocolMessageType('TideChartSource', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTSOURCE,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartSource)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartSource)
 
-TideChartLibrary = _reflection.GeneratedProtocolMessageType('TideChartLibrary', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTLIBRARY,
-  __module__ = 'tide_chart_pb2'
+TideChartLibrary = _reflection.GeneratedProtocolMessageType('TideChartLibrary', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTLIBRARY,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartLibrary)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartLibrary)
 
-TideChartSite = _reflection.GeneratedProtocolMessageType('TideChartSite', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTSITE,
-  __module__ = 'tide_chart_pb2'
+TideChartSite = _reflection.GeneratedProtocolMessageType('TideChartSite', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTSITE,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartSite)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartSite)
 
-TideChartMessage = _reflection.GeneratedProtocolMessageType('TideChartMessage', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTMESSAGE,
-  __module__ = 'tide_chart_pb2'
+TideChartMessage = _reflection.GeneratedProtocolMessageType('TideChartMessage', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTMESSAGE,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartMessage)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartMessage)
 
-TideChartContextChange = _reflection.GeneratedProtocolMessageType('TideChartContextChange', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTCONTEXTCHANGE,
-  __module__ = 'tide_chart_pb2'
+TideChartContextChange = _reflection.GeneratedProtocolMessageType('TideChartContextChange', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTCONTEXTCHANGE,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartContextChange)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartContextChange)
 
-TideChartLogEntry = _reflection.GeneratedProtocolMessageType('TideChartLogEntry', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTLOGENTRY,
-  __module__ = 'tide_chart_pb2'
+TideChartLogEntry = _reflection.GeneratedProtocolMessageType('TideChartLogEntry', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTLOGENTRY,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartLogEntry)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartLogEntry)
 
-TideChartContext = _reflection.GeneratedProtocolMessageType('TideChartContext', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTCONTEXT,
-  __module__ = 'tide_chart_pb2'
+TideChartContext = _reflection.GeneratedProtocolMessageType('TideChartContext', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTCONTEXT,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartContext)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartContext)
 
-TideChartData = _reflection.GeneratedProtocolMessageType('TideChartData', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTDATA,
-  __module__ = 'tide_chart_pb2'
+TideChartData = _reflection.GeneratedProtocolMessageType('TideChartData', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTDATA,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartData)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartData)
 
-TideChartHeader = _reflection.GeneratedProtocolMessageType('TideChartHeader', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTHEADER,
-  __module__ = 'tide_chart_pb2'
+TideChartHeader = _reflection.GeneratedProtocolMessageType('TideChartHeader', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTHEADER,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartHeader)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartHeader)
 
-TideChartFile = _reflection.GeneratedProtocolMessageType('TideChartFile', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTFILE,
-  __module__ = 'tide_chart_pb2'
+TideChartFile = _reflection.GeneratedProtocolMessageType('TideChartFile', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTFILE,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartFile)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartFile)
 
-TideChartFileHeader = _reflection.GeneratedProtocolMessageType('TideChartFileHeader', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTFILEHEADER,
-  __module__ = 'tide_chart_pb2'
+TideChartFileHeader = _reflection.GeneratedProtocolMessageType('TideChartFileHeader', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTFILEHEADER,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartFileHeader)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartFileHeader)
 
-TideChartFileCurrent = _reflection.GeneratedProtocolMessageType('TideChartFileCurrent', (_message.Message,), dict(
-  DESCRIPTOR = _TIDECHARTFILECURRENT,
-  __module__ = 'tide_chart_pb2'
+TideChartFileCurrent = _reflection.GeneratedProtocolMessageType('TideChartFileCurrent', (_message.Message,), {
+  'DESCRIPTOR' : _TIDECHARTFILECURRENT,
+  '__module__' : 'tide_chart_pb2'
   # @@protoc_insertion_point(class_scope:TideChartFileCurrent)
-  ))
+  })
 _sym_db.RegisterMessage(TideChartFileCurrent)
 
 

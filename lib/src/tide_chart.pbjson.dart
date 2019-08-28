@@ -349,26 +349,13 @@ const TideChartNoteCommand$json = const {
   ],
 };
 
-const TideChartMethod$json = const {
-  '1': 'TideChartMethod',
-  '2': const [
-    const {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
-    const {'1': 'extends', '3': 3, '4': 1, '5': 9, '10': 'extends'},
-    const {'1': 'script', '3': 4, '4': 1, '5': 9, '10': 'script'},
-    const {'1': 'inports', '3': 5, '4': 3, '5': 11, '6': '.TideChartPort', '10': 'inports'},
-    const {'1': 'outports', '3': 6, '4': 3, '5': 11, '6': '.TideChartPort', '10': 'outports'},
-    const {'1': 'props', '3': 7, '4': 3, '5': 11, '6': '.TideChartPort', '10': 'props'},
-  ],
-};
-
 const TideChartSource$json = const {
   '1': 'TideChartSource',
   '2': const [
     const {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
-    const {'1': 'modifieddDate', '3': 5, '4': 1, '5': 9, '10': 'modifieddDate'},
+    const {'1': 'modifiedDate', '3': 5, '4': 1, '5': 9, '10': 'modifiedDate'},
     const {'1': 'modifiedBy', '3': 6, '4': 1, '5': 9, '10': 'modifiedBy'},
     const {'1': 'version', '3': 7, '4': 1, '5': 9, '9': 0, '10': 'version'},
     const {'1': 'script', '3': 8, '4': 1, '5': 9, '9': 0, '10': 'script'},
@@ -384,11 +371,12 @@ const TideChartLibrary$json = const {
     const {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
-    const {'1': 'origin', '3': 4, '4': 1, '5': 9, '10': 'origin'},
-    const {'1': 'branch', '3': 5, '4': 1, '5': 9, '10': 'branch'},
-    const {'1': 'path', '3': 6, '4': 1, '5': 9, '10': 'path'},
-    const {'1': 'files', '3': 7, '4': 3, '5': 11, '6': '.TideChartSource', '10': 'files'},
-    const {'1': 'methods', '3': 8, '4': 3, '5': 11, '6': '.TideChartMethod', '10': 'methods'},
+    const {'1': 'origin', '3': 10, '4': 1, '5': 9, '10': 'origin'},
+    const {'1': 'branch', '3': 11, '4': 1, '5': 9, '10': 'branch'},
+    const {'1': 'path', '3': 12, '4': 1, '5': 9, '10': 'path'},
+    const {'1': 'files', '3': 14, '4': 3, '5': 11, '6': '.TideChartSource', '10': 'files'},
+    const {'1': 'methods', '3': 15, '4': 1, '5': 11, '6': '.TideChartData', '10': 'methods'},
+    const {'1': 'settings', '3': 16, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
   ],
 };
 

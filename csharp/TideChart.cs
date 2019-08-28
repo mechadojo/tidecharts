@@ -191,40 +191,40 @@ public static partial class TideChartReflection {
           "CVRpZGVDaGFydGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
-        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartCommandUpdateType), typeof(global::TideChartLogLevel), }, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartProperty), global::TideChartProperty.Parser, new[]{ "Name", "BoolValue", "StrValue", "LongValue", "DoubleValue", "Props" }, new[]{ "Value" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBox), global::TideChartCommentBox.Parser, new[]{ "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "IsRaised", "IsReversed" }, new[]{ "Content" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props", "Settings" }, new[]{ "Target" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPort), global::TideChartPort.Parser, new[]{ "Type", "Node", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Value", "Trigger", "Link", "Event", "SyncGroup", "IsBlocking", "IsQueuing" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLink), global::TideChartLink.Parser, new[]{ "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Link", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNote), global::TideChartNote.Parser, new[]{ "Id", "ReplyTo", "ChangeTo", "Content", "CreatedBy", "CreatedDate" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNode), global::TideChartNode.Parser, new[]{ "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegion), global::TideChartRegion.Parser, new[]{ "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraph), global::TideChartGraph.Parser, new[]{ "Id", "Type", "Name", "Title", "Icon", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommand), global::TideChartCommand.Parser, new[]{ "Version", "Target", "Group", "Move", "Comment", "Widget", "Port", "Link", "Node", "Region", "Graph", "Props", "Note" }, new[]{ "Command" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGroupCommand), global::TideChartGroupCommand.Parser, new[]{ "Commands" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMoveCommand), global::TideChartMoveCommand.Parser, new[]{ "Node", "FromPosX", "FromPosY", "ToPosX", "ToPosY" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBoxCommand), global::TideChartCommentBoxCommand.Parser, new[]{ "FromComment", "ToComment", "Type" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidgetCommand), global::TideChartWidgetCommand.Parser, new[]{ "FromWidget", "ToWidget", "Type" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPortCommand), global::TideChartPortCommand.Parser, new[]{ "FromPort", "ToPort", "Type" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLinkCommand), global::TideChartLinkCommand.Parser, new[]{ "FromLink", "ToLink", "Type" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNodeCommand), global::TideChartNodeCommand.Parser, new[]{ "FromNode", "ToNode", "Type" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegionCommand), global::TideChartRegionCommand.Parser, new[]{ "FromRegion", "ToRegion", "Type" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraphCommand), global::TideChartGraphCommand.Parser, new[]{ "FromGraph", "ToGraph", "Type" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPropertyCommand), global::TideChartPropertyCommand.Parser, new[]{ "FromProps", "ToProps", "Type", "Node", "Region", "Widget", "Graph" }, new[]{ "Target" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNoteCommand), global::TideChartNoteCommand.Parser, new[]{ "Notes", "Type", "Node", "Region", "Graph" }, new[]{ "Target" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSource), global::TideChartSource.Parser, new[]{ "Id", "Name", "Path", "ModifiedDate", "ModifiedBy", "Version", "Script" }, new[]{ "Content" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLibrary), global::TideChartLibrary.Parser, new[]{ "Id", "Name", "Title", "Origin", "Branch", "Path", "Files", "Methods", "Settings" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSite), global::TideChartSite.Parser, new[]{ "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port", "Local" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMessage), global::TideChartMessage.Parser, new[]{ "Index", "Timestamp", "Origin", "Previous", "Source", "Target", "DelayUntil", "HoldToken", "CancelToken", "Type", "Version", "JsonContent", "MsgContent" }, new[]{ "Content" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContextChange), global::TideChartContextChange.Parser, new[]{ "Index", "Timestamp", "Type", "Props" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLogEntry), global::TideChartLogEntry.Parser, new[]{ "Index", "Timestamp", "Source", "Level", "Tags", "Message", "Refs", "Props" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContext), global::TideChartContext.Parser, new[]{ "Id", "Index", "Timestamp", "Version", "Sites", "Messages", "Global", "StartTime", "StartIndex", "Active", "Waiting", "Paused", "Disabled", "Events", "Log" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartHeader), global::TideChartHeader.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFile), global::TideChartFile.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", "Context" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileHeader), global::TideChartFileHeader.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileCurrent), global::TideChartFileCurrent.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart" }, null, null, null)
+        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartCommandUpdateType), typeof(global::TideChartLogLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartProperty), global::TideChartProperty.Parser, new[]{ "Name", "BoolValue", "StrValue", "LongValue", "DoubleValue", "Props" }, new[]{ "Value" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBox), global::TideChartCommentBox.Parser, new[]{ "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "IsRaised", "IsReversed" }, new[]{ "Content" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props", "Settings" }, new[]{ "Target" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPort), global::TideChartPort.Parser, new[]{ "Type", "Node", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Value", "Trigger", "Link", "Event", "SyncGroup", "IsBlocking", "IsQueuing" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLink), global::TideChartLink.Parser, new[]{ "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Link", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNote), global::TideChartNote.Parser, new[]{ "Id", "ReplyTo", "ChangeTo", "Content", "CreatedBy", "CreatedDate" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNode), global::TideChartNode.Parser, new[]{ "Name", "Type", "PosX", "PosY", "Title", "Icon", "Library", "Method", "Delay", "Inports", "Outports", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegion), global::TideChartRegion.Parser, new[]{ "Name", "Title", "Nodes", "Group", "Scope", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraph), global::TideChartGraph.Parser, new[]{ "Id", "Type", "Name", "Title", "Icon", "Version", "Source", "Nodes", "Links", "Regions", "Comments", "Widgets", "Props", "History", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Notes", "Script", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommand), global::TideChartCommand.Parser, new[]{ "Version", "Target", "Group", "Move", "Comment", "Widget", "Port", "Link", "Node", "Region", "Graph", "Props", "Note" }, new[]{ "Command" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGroupCommand), global::TideChartGroupCommand.Parser, new[]{ "Commands" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMoveCommand), global::TideChartMoveCommand.Parser, new[]{ "Node", "FromPosX", "FromPosY", "ToPosX", "ToPosY" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBoxCommand), global::TideChartCommentBoxCommand.Parser, new[]{ "FromComment", "ToComment", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidgetCommand), global::TideChartWidgetCommand.Parser, new[]{ "FromWidget", "ToWidget", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPortCommand), global::TideChartPortCommand.Parser, new[]{ "FromPort", "ToPort", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLinkCommand), global::TideChartLinkCommand.Parser, new[]{ "FromLink", "ToLink", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNodeCommand), global::TideChartNodeCommand.Parser, new[]{ "FromNode", "ToNode", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartRegionCommand), global::TideChartRegionCommand.Parser, new[]{ "FromRegion", "ToRegion", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraphCommand), global::TideChartGraphCommand.Parser, new[]{ "FromGraph", "ToGraph", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPropertyCommand), global::TideChartPropertyCommand.Parser, new[]{ "FromProps", "ToProps", "Type", "Node", "Region", "Widget", "Graph" }, new[]{ "Target" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNoteCommand), global::TideChartNoteCommand.Parser, new[]{ "Notes", "Type", "Node", "Region", "Graph" }, new[]{ "Target" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSource), global::TideChartSource.Parser, new[]{ "Id", "Name", "Path", "ModifiedDate", "ModifiedBy", "Version", "Script" }, new[]{ "Content" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLibrary), global::TideChartLibrary.Parser, new[]{ "Id", "Name", "Title", "Origin", "Branch", "Path", "Files", "Methods", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSite), global::TideChartSite.Parser, new[]{ "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port", "Local" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMessage), global::TideChartMessage.Parser, new[]{ "Index", "Timestamp", "Origin", "Previous", "Source", "Target", "DelayUntil", "HoldToken", "CancelToken", "Type", "Version", "JsonContent", "MsgContent" }, new[]{ "Content" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContextChange), global::TideChartContextChange.Parser, new[]{ "Index", "Timestamp", "Type", "Props" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLogEntry), global::TideChartLogEntry.Parser, new[]{ "Index", "Timestamp", "Source", "Level", "Tags", "Message", "Refs", "Props" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContext), global::TideChartContext.Parser, new[]{ "Id", "Index", "Timestamp", "Version", "Sites", "Messages", "Global", "StartTime", "StartIndex", "Active", "Waiting", "Paused", "Disabled", "Events", "Log" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartHeader), global::TideChartHeader.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFile), global::TideChartFile.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", "Context" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileHeader), global::TideChartFileHeader.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileCurrent), global::TideChartFileCurrent.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart" }, null, null, null, null)
         }));
   }
   #endregion
@@ -5920,7 +5920,7 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
@@ -5956,7 +5956,7 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
     int hash = 1;
     if (fromComment_ != null) hash ^= FromComment.GetHashCode();
     if (toComment_ != null) hash ^= ToComment.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -5978,7 +5978,7 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
       output.WriteRawTag(18);
       output.WriteMessage(ToComment);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -5996,7 +5996,7 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
     if (toComment_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToComment);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
@@ -6022,7 +6022,7 @@ public sealed partial class TideChartCommentBoxCommand : pb::IMessage<TideChartC
       }
       ToComment.MergeFrom(other.ToComment);
     }
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6126,7 +6126,7 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
@@ -6162,7 +6162,7 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
     int hash = 1;
     if (fromWidget_ != null) hash ^= FromWidget.GetHashCode();
     if (toWidget_ != null) hash ^= ToWidget.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6184,7 +6184,7 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
       output.WriteRawTag(18);
       output.WriteMessage(ToWidget);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -6202,7 +6202,7 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
     if (toWidget_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToWidget);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
@@ -6228,7 +6228,7 @@ public sealed partial class TideChartWidgetCommand : pb::IMessage<TideChartWidge
       }
       ToWidget.MergeFrom(other.ToWidget);
     }
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6332,7 +6332,7 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
@@ -6368,7 +6368,7 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
     int hash = 1;
     if (fromPort_ != null) hash ^= FromPort.GetHashCode();
     if (toPort_ != null) hash ^= ToPort.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6390,7 +6390,7 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
       output.WriteRawTag(18);
       output.WriteMessage(ToPort);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -6408,7 +6408,7 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
     if (toPort_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToPort);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
@@ -6434,7 +6434,7 @@ public sealed partial class TideChartPortCommand : pb::IMessage<TideChartPortCom
       }
       ToPort.MergeFrom(other.ToPort);
     }
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6538,7 +6538,7 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
@@ -6574,7 +6574,7 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
     int hash = 1;
     if (fromLink_ != null) hash ^= FromLink.GetHashCode();
     if (toLink_ != null) hash ^= ToLink.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6596,7 +6596,7 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
       output.WriteRawTag(18);
       output.WriteMessage(ToLink);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -6614,7 +6614,7 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
     if (toLink_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToLink);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
@@ -6640,7 +6640,7 @@ public sealed partial class TideChartLinkCommand : pb::IMessage<TideChartLinkCom
       }
       ToLink.MergeFrom(other.ToLink);
     }
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6744,7 +6744,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
@@ -6780,7 +6780,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
     int hash = 1;
     if (fromNode_ != null) hash ^= FromNode.GetHashCode();
     if (toNode_ != null) hash ^= ToNode.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6802,7 +6802,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
       output.WriteRawTag(18);
       output.WriteMessage(ToNode);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -6820,7 +6820,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
     if (toNode_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToNode);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
@@ -6846,7 +6846,7 @@ public sealed partial class TideChartNodeCommand : pb::IMessage<TideChartNodeCom
       }
       ToNode.MergeFrom(other.ToNode);
     }
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6950,7 +6950,7 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
@@ -6986,7 +6986,7 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
     int hash = 1;
     if (fromRegion_ != null) hash ^= FromRegion.GetHashCode();
     if (toRegion_ != null) hash ^= ToRegion.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -7008,7 +7008,7 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
       output.WriteRawTag(18);
       output.WriteMessage(ToRegion);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -7026,7 +7026,7 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
     if (toRegion_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToRegion);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
@@ -7052,7 +7052,7 @@ public sealed partial class TideChartRegionCommand : pb::IMessage<TideChartRegio
       }
       ToRegion.MergeFrom(other.ToRegion);
     }
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -7156,7 +7156,7 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove    
   /// </summary>
@@ -7192,7 +7192,7 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
     int hash = 1;
     if (fromGraph_ != null) hash ^= FromGraph.GetHashCode();
     if (toGraph_ != null) hash ^= ToGraph.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -7214,7 +7214,7 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
       output.WriteRawTag(18);
       output.WriteMessage(ToGraph);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -7232,7 +7232,7 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
     if (toGraph_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToGraph);
     }
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (_unknownFields != null) {
@@ -7258,7 +7258,7 @@ public sealed partial class TideChartGraphCommand : pb::IMessage<TideChartGraphC
       }
       ToGraph.MergeFrom(other.ToGraph);
     }
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -7375,7 +7375,7 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 3;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, update or remove
   /// </summary>
@@ -7493,7 +7493,7 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
     int hash = 1;
     hash ^= fromProps_.GetHashCode();
     hash ^= toProps_.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (targetCase_ == TargetOneofCase.Node) hash ^= Node.GetHashCode();
     if (targetCase_ == TargetOneofCase.Region) hash ^= Region.GetHashCode();
     if (targetCase_ == TargetOneofCase.Widget) hash ^= Widget.GetHashCode();
@@ -7514,7 +7514,7 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
   public void WriteTo(pb::CodedOutputStream output) {
     fromProps_.WriteTo(output, _repeated_fromProps_codec);
     toProps_.WriteTo(output, _repeated_toProps_codec);
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(24);
       output.WriteEnum((int) Type);
     }
@@ -7544,7 +7544,7 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
     int size = 0;
     size += fromProps_.CalculateSize(_repeated_fromProps_codec);
     size += toProps_.CalculateSize(_repeated_toProps_codec);
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (targetCase_ == TargetOneofCase.Node) {
@@ -7572,7 +7572,7 @@ public sealed partial class TideChartPropertyCommand : pb::IMessage<TideChartPro
     }
     fromProps_.Add(other.fromProps_);
     toProps_.Add(other.toProps_);
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     switch (other.TargetCase) {
@@ -7697,7 +7697,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
 
   /// <summary>Field number for the "type" field.</summary>
   public const int TypeFieldNumber = 2;
-  private global::TideChartCommandUpdateType type_ = 0;
+  private global::TideChartCommandUpdateType type_ = global::TideChartCommandUpdateType.Add;
   /// <summary>
   /// type of update: add, remove
   /// </summary>
@@ -7797,7 +7797,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   public override int GetHashCode() {
     int hash = 1;
     hash ^= notes_.GetHashCode();
-    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Type != global::TideChartCommandUpdateType.Add) hash ^= Type.GetHashCode();
     if (targetCase_ == TargetOneofCase.Node) hash ^= Node.GetHashCode();
     if (targetCase_ == TargetOneofCase.Region) hash ^= Region.GetHashCode();
     if (targetCase_ == TargetOneofCase.Graph) hash ^= Graph.GetHashCode();
@@ -7816,7 +7816,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public void WriteTo(pb::CodedOutputStream output) {
     notes_.WriteTo(output, _repeated_notes_codec);
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       output.WriteRawTag(16);
       output.WriteEnum((int) Type);
     }
@@ -7841,7 +7841,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
   public int CalculateSize() {
     int size = 0;
     size += notes_.CalculateSize(_repeated_notes_codec);
-    if (Type != 0) {
+    if (Type != global::TideChartCommandUpdateType.Add) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     if (targetCase_ == TargetOneofCase.Node) {
@@ -7865,7 +7865,7 @@ public sealed partial class TideChartNoteCommand : pb::IMessage<TideChartNoteCom
       return;
     }
     notes_.Add(other.notes_);
-    if (other.Type != 0) {
+    if (other.Type != global::TideChartCommandUpdateType.Add) {
       Type = other.Type;
     }
     switch (other.TargetCase) {
@@ -9910,7 +9910,7 @@ public sealed partial class TideChartLogEntry : pb::IMessage<TideChartLogEntry> 
 
   /// <summary>Field number for the "level" field.</summary>
   public const int LevelFieldNumber = 4;
-  private global::TideChartLogLevel level_ = 0;
+  private global::TideChartLogLevel level_ = global::TideChartLogLevel.None;
   /// <summary>
   /// log level of the entry
   /// </summary>
@@ -10005,7 +10005,7 @@ public sealed partial class TideChartLogEntry : pb::IMessage<TideChartLogEntry> 
     if (Index != 0L) hash ^= Index.GetHashCode();
     if (Timestamp != 0L) hash ^= Timestamp.GetHashCode();
     if (Source != 0L) hash ^= Source.GetHashCode();
-    if (Level != 0) hash ^= Level.GetHashCode();
+    if (Level != global::TideChartLogLevel.None) hash ^= Level.GetHashCode();
     hash ^= tags_.GetHashCode();
     if (Message.Length != 0) hash ^= Message.GetHashCode();
     hash ^= refs_.GetHashCode();
@@ -10035,7 +10035,7 @@ public sealed partial class TideChartLogEntry : pb::IMessage<TideChartLogEntry> 
       output.WriteRawTag(24);
       output.WriteInt64(Source);
     }
-    if (Level != 0) {
+    if (Level != global::TideChartLogLevel.None) {
       output.WriteRawTag(32);
       output.WriteEnum((int) Level);
     }
@@ -10063,7 +10063,7 @@ public sealed partial class TideChartLogEntry : pb::IMessage<TideChartLogEntry> 
     if (Source != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(Source);
     }
-    if (Level != 0) {
+    if (Level != global::TideChartLogLevel.None) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Level);
     }
     size += tags_.CalculateSize(_repeated_tags_codec);
@@ -10092,7 +10092,7 @@ public sealed partial class TideChartLogEntry : pb::IMessage<TideChartLogEntry> 
     if (other.Source != 0L) {
       Source = other.Source;
     }
-    if (other.Level != 0) {
+    if (other.Level != global::TideChartLogLevel.None) {
       Level = other.Level;
     }
     tags_.Add(other.tags_);
