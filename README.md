@@ -22,7 +22,6 @@
     - [TideChartLinkCommand](#.TideChartLinkCommand)
     - [TideChartLogEntry](#.TideChartLogEntry)
     - [TideChartMessage](#.TideChartMessage)
-    - [TideChartMethod](#.TideChartMethod)
     - [TideChartMoveCommand](#.TideChartMoveCommand)
     - [TideChartNode](#.TideChartNode)
     - [TideChartNodeCommand](#.TideChartNodeCommand)
@@ -374,8 +373,9 @@ Read only the commit headers
 | origin | [string](#string) |  | repository containing referenced files |
 | branch | [string](#string) |  | branch containing referenced files |
 | path | [string](#string) |  | root path for files in the library |
-| files | [TideChartSource](#TideChartSource) | repeated | files included in the library |
-| methods | [TideChartMethod](#TideChartMethod) | repeated | definitions for methods implemented by the library |
+| files | [TideChartSource](#TideChartSource) | repeated | files that implement the method actions of the library |
+| methods | [TideChartData](#TideChartData) |  | a set of graphs (sub-library) and nodes (methods) that define method templates |
+| settings | [TideChartProperty](#TideChartProperty) | repeated | other settings associated with the library |
 
 
 
@@ -467,27 +467,6 @@ Read only the commit headers
 | version | [int32](#int32) |  | version incremented every time the message content changes for the same origin |
 | jsonContent | [string](#string) |  | string encoded message content |
 | msgContent | [bytes](#bytes) |  | binary encoded message content |
-
-
-
-
-
-
-<a name=".TideChartMethod"></a>
-
-### TideChartMethod
-
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| id | [string](#string) |  | unique id for the method definition |
-| name | [string](#string) |  | name of the method (unique to the library) |
-| extends | [string](#string) |  | method extends (customizes) the implementation of another method |
-| script | [string](#string) |  | custom script that implements the node action for this method |
-| inports | [TideChartPort](#TideChartPort) | repeated | definition of inports for this method |
-| outports | [TideChartPort](#TideChartPort) | repeated | definition of outports for this methid |
-| props | [TideChartPort](#TideChartPort) | repeated | definition of property values used by the method (uses port definition format) |
 
 
 
@@ -770,7 +749,7 @@ a recursive data type that provides configuration values for graphs, regions and
 | id | [string](#string) |  | unique id for this source file |
 | name | [string](#string) |  | name of the source file |
 | path | [string](#string) |  | relative path of the source file |
-| modifieddDate | [string](#string) |  | date file version was modified |
+| modifiedDate | [string](#string) |  | date file version was modified |
 | modifiedBy | [string](#string) |  | user that modified this file version |
 | version | [string](#string) |  | reference to the exact version of the file |
 | script | [string](#string) |  | contents of the file |

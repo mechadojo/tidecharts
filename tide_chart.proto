@@ -302,23 +302,12 @@ message TideChartNoteCommand {
 //
 //////////////////////////////////////////////////////////
 
-message TideChartMethod {
-    string id = 1;                          // unique id for the method definition
-    string name = 2;                        // name of the method (unique to the library)
-    string extends = 3;                     // method extends (customizes) the implementation of another method
-    string script = 4;                      // custom script that implements the node action for this method
-
-    repeated TideChartPort inports = 5;     // definition of inports for this method
-    repeated TideChartPort outports = 6;    // definition of outports for this methid
-    repeated TideChartPort props = 7;       // definition of property values used by the method (uses port definition format)
-}
-
 message TideChartSource {
     string id = 1;                      // unique id for this source file
     string name = 2;                    // name of the source file 
     string path = 3;                    // relative path of the source file 
 
-    string modifieddDate = 5;           // date file version was modified
+    string modifiedDate = 5;           // date file version was modified
     string modifiedBy = 6;              // user that modified this file version 
 
     oneof content {
@@ -328,16 +317,18 @@ message TideChartSource {
 }
 
 message TideChartLibrary {
-    string id = 1;                          // unique id for the library
-    string name = 2;                        // fully qualified name for the library
-    string title = 3;                       // descriptive title for the library
+    string id = 1;                              // unique id for the library
+    string name = 2;                            // fully qualified name for the library
+    string title = 3;                           // descriptive title for the library
 
-    string origin = 4;                      // repository containing referenced files
-    string branch = 5;                      // branch containing referenced files
-    string path = 6;                        // root path for files in the library
+    string origin = 10;                         // repository containing referenced files
+    string branch = 11;                         // branch containing referenced files
+    string path = 12;                           // root path for files in the library
 
-    repeated TideChartSource files = 7;     // files included in the library
-    repeated TideChartMethod methods = 8;   // definitions for methods implemented by the library
+    repeated TideChartSource files = 14;        // files that implement the method actions of the library
+    TideChartData methods = 15;                 // a set of graphs (sub-library) and nodes (methods) that define method templates
+
+    repeated TideChartProperty settings = 16;   // other settings associated with the library
 }
 
 //////////////////////////////////////////////////////////

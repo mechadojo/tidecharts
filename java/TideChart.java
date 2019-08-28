@@ -518,13 +518,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartProperty();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -576,9 +569,9 @@ public final class TideChart {
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000020;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -599,7 +592,7 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
         this.unknownFields = unknownFields.build();
@@ -619,6 +612,7 @@ public final class TideChart {
               TideChart.TideChartProperty.class, TideChart.TideChartProperty.Builder.class);
     }
 
+    private int bitField0_;
     private int valueCase_ = 0;
     private java.lang.Object value_;
     public enum ValueCase
@@ -1126,7 +1120,7 @@ public final class TideChart {
 
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000020);
         } else {
           propsBuilder_.clear();
         }
@@ -1159,6 +1153,7 @@ public final class TideChart {
       public TideChart.TideChartProperty buildPartial() {
         TideChart.TideChartProperty result = new TideChart.TideChartProperty(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.name_ = name_;
         if (valueCase_ == 2) {
           result.value_ = value_;
@@ -1173,14 +1168,15 @@ public final class TideChart {
           result.value_ = value_;
         }
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.props_ = props_;
         } else {
           result.props_ = propsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         result.valueCase_ = valueCase_;
         onBuilt();
         return result;
@@ -1238,7 +1234,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -1251,7 +1247,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000020);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -1590,9 +1586,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -1786,7 +1782,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -1891,7 +1887,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -2208,13 +2204,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartCommentBox();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -2299,9 +2288,9 @@ public final class TideChart {
               break;
             }
             case 96: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
                 alignment_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000800;
               }
               alignment_.addInt(input.readSInt32());
               break;
@@ -2309,9 +2298,9 @@ public final class TideChart {
             case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0) && input.getBytesUntilLimit() > 0) {
                 alignment_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000800;
               }
               while (input.getBytesUntilLimit() > 0) {
                 alignment_.addInt(input.readSInt32());
@@ -2330,9 +2319,9 @@ public final class TideChart {
               break;
             }
             case 120: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00004000) != 0)) {
                 border_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00004000;
               }
               border_.addInt(input.readInt32());
               break;
@@ -2340,9 +2329,9 @@ public final class TideChart {
             case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00004000) != 0) && input.getBytesUntilLimit() > 0) {
                 border_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00004000;
               }
               while (input.getBytesUntilLimit() > 0) {
                 border_.addInt(input.readInt32());
@@ -2375,10 +2364,10 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000800) != 0)) {
           alignment_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00004000) != 0)) {
           border_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -2398,6 +2387,7 @@ public final class TideChart {
               TideChart.TideChartCommentBox.class, TideChart.TideChartCommentBox.Builder.class);
     }
 
+    private int bitField0_;
     private int contentCase_ = 0;
     private java.lang.Object content_;
     public enum ContentCase
@@ -3309,13 +3299,13 @@ public final class TideChart {
         fontStyle_ = "";
 
         alignment_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000800);
         color_ = 0;
 
         background_ = 0;
 
         border_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00004000);
         isRaised_ = false;
 
         isReversed_ = false;
@@ -3349,6 +3339,7 @@ public final class TideChart {
       public TideChart.TideChartCommentBox buildPartial() {
         TideChart.TideChartCommentBox result = new TideChart.TideChartCommentBox(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.id_ = id_;
         result.region_ = region_;
         result.posX_ = posX_;
@@ -3366,20 +3357,21 @@ public final class TideChart {
         }
         result.fontSize_ = fontSize_;
         result.fontStyle_ = fontStyle_;
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000800) != 0)) {
           alignment_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000800);
         }
         result.alignment_ = alignment_;
         result.color_ = color_;
         result.background_ = background_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00004000) != 0)) {
           border_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00004000);
         }
         result.border_ = border_;
         result.isRaised_ = isRaised_;
         result.isReversed_ = isReversed_;
+        result.bitField0_ = to_bitField0_;
         result.contentCase_ = contentCase_;
         onBuilt();
         return result;
@@ -3459,7 +3451,7 @@ public final class TideChart {
         if (!other.alignment_.isEmpty()) {
           if (alignment_.isEmpty()) {
             alignment_ = other.alignment_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000800);
           } else {
             ensureAlignmentIsMutable();
             alignment_.addAll(other.alignment_);
@@ -3475,7 +3467,7 @@ public final class TideChart {
         if (!other.border_.isEmpty()) {
           if (border_.isEmpty()) {
             border_ = other.border_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00004000);
           } else {
             ensureBorderIsMutable();
             border_.addAll(other.border_);
@@ -4258,9 +4250,9 @@ public final class TideChart {
 
       private com.google.protobuf.Internal.IntList alignment_ = emptyIntList();
       private void ensureAlignmentIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000800) != 0)) {
           alignment_ = mutableCopy(alignment_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000800;
          }
       }
       /**
@@ -4272,7 +4264,7 @@ public final class TideChart {
        */
       public java.util.List<java.lang.Integer>
           getAlignmentList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000800) != 0) ?
                  java.util.Collections.unmodifiableList(alignment_) : alignment_;
       }
       /**
@@ -4346,7 +4338,7 @@ public final class TideChart {
        */
       public Builder clearAlignment() {
         alignment_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000800);
         onChanged();
         return this;
       }
@@ -4429,9 +4421,9 @@ public final class TideChart {
 
       private com.google.protobuf.Internal.IntList border_ = emptyIntList();
       private void ensureBorderIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00004000) != 0)) {
           border_ = mutableCopy(border_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00004000;
          }
       }
       /**
@@ -4443,7 +4435,7 @@ public final class TideChart {
        */
       public java.util.List<java.lang.Integer>
           getBorderList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00004000) != 0) ?
                  java.util.Collections.unmodifiableList(border_) : border_;
       }
       /**
@@ -4517,7 +4509,7 @@ public final class TideChart {
        */
       public Builder clearBorder() {
         border_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00004000);
         onChanged();
         return this;
       }
@@ -4928,13 +4920,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartWidget();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -5021,18 +5006,18 @@ public final class TideChart {
               break;
             }
             case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000800;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
               break;
             }
             case 178: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00001000) != 0)) {
                 settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00001000;
               }
               settings_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -5053,10 +5038,10 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000800) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00001000) != 0)) {
           settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
@@ -5076,6 +5061,7 @@ public final class TideChart {
               TideChart.TideChartWidget.class, TideChart.TideChartWidget.Builder.class);
     }
 
+    private int bitField0_;
     private int targetCase_ = 0;
     private java.lang.Object target_;
     public enum TargetCase
@@ -5962,13 +5948,13 @@ public final class TideChart {
 
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000800);
         } else {
           propsBuilder_.clear();
         }
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00001000);
         } else {
           settingsBuilder_.clear();
         }
@@ -6001,6 +5987,7 @@ public final class TideChart {
       public TideChart.TideChartWidget buildPartial() {
         TideChart.TideChartWidget result = new TideChart.TideChartWidget(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.id_ = id_;
         result.type_ = type_;
         result.title_ = title_;
@@ -6019,23 +6006,24 @@ public final class TideChart {
           result.target_ = target_;
         }
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000800) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000800);
           }
           result.props_ = props_;
         } else {
           result.props_ = propsBuilder_.build();
         }
         if (settingsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00001000) != 0)) {
             settings_ = java.util.Collections.unmodifiableList(settings_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00001000);
           }
           result.settings_ = settings_;
         } else {
           result.settings_ = settingsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         result.targetCase_ = targetCase_;
         onBuilt();
         return result;
@@ -6117,7 +6105,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000800);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -6130,7 +6118,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000800);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -6143,7 +6131,7 @@ public final class TideChart {
           if (!other.settings_.isEmpty()) {
             if (settings_.isEmpty()) {
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00001000);
             } else {
               ensureSettingsIsMutable();
               settings_.addAll(other.settings_);
@@ -6156,7 +6144,7 @@ public final class TideChart {
               settingsBuilder_.dispose();
               settingsBuilder_ = null;
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00001000);
               settingsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSettingsFieldBuilder() : null;
@@ -7044,9 +7032,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000800) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000800;
          }
       }
 
@@ -7240,7 +7228,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000800);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -7345,7 +7333,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000800) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -7356,9 +7344,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> settings_ =
         java.util.Collections.emptyList();
       private void ensureSettingsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00001000) != 0)) {
           settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00001000;
          }
       }
 
@@ -7552,7 +7540,7 @@ public final class TideChart {
       public Builder clearSettings() {
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00001000);
           onChanged();
         } else {
           settingsBuilder_.clear();
@@ -7657,7 +7645,7 @@ public final class TideChart {
           settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   settings_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00001000) != 0),
                   getParentForChildren(),
                   isClean());
           settings_ = null;
@@ -7989,13 +7977,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartPort();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -8054,9 +8035,9 @@ public final class TideChart {
             }
             case 58: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
                 allowed_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000040;
               }
               allowed_.add(s);
               break;
@@ -8122,7 +8103,7 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
           allowed_ = allowed_.getUnmodifiableView();
         }
         this.unknownFields = unknownFields.build();
@@ -8142,6 +8123,7 @@ public final class TideChart {
               TideChart.TideChartPort.class, TideChart.TideChartPort.Builder.class);
     }
 
+    private int bitField0_;
     public static final int TYPE_FIELD_NUMBER = 1;
     private volatile java.lang.Object type_;
     /**
@@ -8991,7 +8973,7 @@ public final class TideChart {
         isRequired_ = false;
 
         allowed_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000040);
         hint_ = "";
 
         value_ = "";
@@ -9035,15 +9017,16 @@ public final class TideChart {
       public TideChart.TideChartPort buildPartial() {
         TideChart.TideChartPort result = new TideChart.TideChartPort(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.type_ = type_;
         result.node_ = node_;
         result.name_ = name_;
         result.ordinal_ = ordinal_;
         result.isDefault_ = isDefault_;
         result.isRequired_ = isRequired_;
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000040) != 0)) {
           allowed_ = allowed_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000040);
         }
         result.allowed_ = allowed_;
         result.hint_ = hint_;
@@ -9054,6 +9037,7 @@ public final class TideChart {
         result.syncGroup_ = syncGroup_;
         result.isBlocking_ = isBlocking_;
         result.isQueuing_ = isQueuing_;
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -9126,7 +9110,7 @@ public final class TideChart {
         if (!other.allowed_.isEmpty()) {
           if (allowed_.isEmpty()) {
             allowed_ = other.allowed_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000040);
           } else {
             ensureAllowedIsMutable();
             allowed_.addAll(other.allowed_);
@@ -9576,9 +9560,9 @@ public final class TideChart {
 
       private com.google.protobuf.LazyStringList allowed_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureAllowedIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000040) != 0)) {
           allowed_ = new com.google.protobuf.LazyStringArrayList(allowed_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000040;
          }
       }
       /**
@@ -9681,7 +9665,7 @@ public final class TideChart {
        */
       public Builder clearAllowed() {
         allowed_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
       }
@@ -10535,13 +10519,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartLink();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -10554,6 +10531,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -12279,13 +12257,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartNote();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -12298,6 +12269,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -14042,13 +14014,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartNode();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -14124,27 +14089,27 @@ public final class TideChart {
               break;
             }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
                 inports_ = new java.util.ArrayList<TideChart.TideChartPort>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000200;
               }
               inports_.add(
                   input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry));
               break;
             }
             case 90: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
                 outports_ = new java.util.ArrayList<TideChart.TideChartPort>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000400;
               }
               outports_.add(
                   input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry));
               break;
             }
             case 98: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000800;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -14171,9 +14136,9 @@ public final class TideChart {
               break;
             }
             case 162: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00010000) != 0)) {
                 notes_ = new java.util.ArrayList<TideChart.TideChartNote>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00010000;
               }
               notes_.add(
                   input.readMessage(TideChart.TideChartNote.parser(), extensionRegistry));
@@ -14186,9 +14151,9 @@ public final class TideChart {
               break;
             }
             case 178: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00040000) != 0)) {
                 settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00040000;
               }
               settings_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -14209,19 +14174,19 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000200) != 0)) {
           inports_ = java.util.Collections.unmodifiableList(inports_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000400) != 0)) {
           outports_ = java.util.Collections.unmodifiableList(outports_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000800) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00010000) != 0)) {
           notes_ = java.util.Collections.unmodifiableList(notes_);
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+        if (((mutable_bitField0_ & 0x00040000) != 0)) {
           settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
@@ -14241,6 +14206,7 @@ public final class TideChart {
               TideChart.TideChartNode.class, TideChart.TideChartNode.Builder.class);
     }
 
+    private int bitField0_;
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
@@ -15324,19 +15290,19 @@ public final class TideChart {
 
         if (inportsBuilder_ == null) {
           inports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000200);
         } else {
           inportsBuilder_.clear();
         }
         if (outportsBuilder_ == null) {
           outports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000400);
         } else {
           outportsBuilder_.clear();
         }
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000800);
         } else {
           propsBuilder_.clear();
         }
@@ -15350,7 +15316,7 @@ public final class TideChart {
 
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00010000);
         } else {
           notesBuilder_.clear();
         }
@@ -15358,7 +15324,7 @@ public final class TideChart {
 
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00040000);
         } else {
           settingsBuilder_.clear();
         }
@@ -15389,6 +15355,7 @@ public final class TideChart {
       public TideChart.TideChartNode buildPartial() {
         TideChart.TideChartNode result = new TideChart.TideChartNode(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.name_ = name_;
         result.type_ = type_;
         result.posX_ = posX_;
@@ -15399,27 +15366,27 @@ public final class TideChart {
         result.method_ = method_;
         result.delay_ = delay_;
         if (inportsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000200) != 0)) {
             inports_ = java.util.Collections.unmodifiableList(inports_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000200);
           }
           result.inports_ = inports_;
         } else {
           result.inports_ = inportsBuilder_.build();
         }
         if (outportsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000400) != 0)) {
             outports_ = java.util.Collections.unmodifiableList(outports_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000400);
           }
           result.outports_ = outports_;
         } else {
           result.outports_ = outportsBuilder_.build();
         }
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000800) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000800);
           }
           result.props_ = props_;
         } else {
@@ -15430,9 +15397,9 @@ public final class TideChart {
         result.isPaused_ = isPaused_;
         result.isDisabled_ = isDisabled_;
         if (notesBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
+          if (((bitField0_ & 0x00010000) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00010000);
           }
           result.notes_ = notes_;
         } else {
@@ -15440,14 +15407,15 @@ public final class TideChart {
         }
         result.script_ = script_;
         if (settingsBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) != 0)) {
+          if (((bitField0_ & 0x00040000) != 0)) {
             settings_ = java.util.Collections.unmodifiableList(settings_);
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00040000);
           }
           result.settings_ = settings_;
         } else {
           result.settings_ = settingsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -15533,7 +15501,7 @@ public final class TideChart {
           if (!other.inports_.isEmpty()) {
             if (inports_.isEmpty()) {
               inports_ = other.inports_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000200);
             } else {
               ensureInportsIsMutable();
               inports_.addAll(other.inports_);
@@ -15546,7 +15514,7 @@ public final class TideChart {
               inportsBuilder_.dispose();
               inportsBuilder_ = null;
               inports_ = other.inports_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000200);
               inportsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getInportsFieldBuilder() : null;
@@ -15559,7 +15527,7 @@ public final class TideChart {
           if (!other.outports_.isEmpty()) {
             if (outports_.isEmpty()) {
               outports_ = other.outports_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000400);
             } else {
               ensureOutportsIsMutable();
               outports_.addAll(other.outports_);
@@ -15572,7 +15540,7 @@ public final class TideChart {
               outportsBuilder_.dispose();
               outportsBuilder_ = null;
               outports_ = other.outports_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000400);
               outportsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getOutportsFieldBuilder() : null;
@@ -15585,7 +15553,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000800);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -15598,7 +15566,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000800);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -15623,7 +15591,7 @@ public final class TideChart {
           if (!other.notes_.isEmpty()) {
             if (notes_.isEmpty()) {
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00010000);
             } else {
               ensureNotesIsMutable();
               notes_.addAll(other.notes_);
@@ -15636,7 +15604,7 @@ public final class TideChart {
               notesBuilder_.dispose();
               notesBuilder_ = null;
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00010000);
               notesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getNotesFieldBuilder() : null;
@@ -15653,7 +15621,7 @@ public final class TideChart {
           if (!other.settings_.isEmpty()) {
             if (settings_.isEmpty()) {
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00040000);
             } else {
               ensureSettingsIsMutable();
               settings_.addAll(other.settings_);
@@ -15666,7 +15634,7 @@ public final class TideChart {
               settingsBuilder_.dispose();
               settingsBuilder_ = null;
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00040000);
               settingsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSettingsFieldBuilder() : null;
@@ -16356,9 +16324,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartPort> inports_ =
         java.util.Collections.emptyList();
       private void ensureInportsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000200) != 0)) {
           inports_ = new java.util.ArrayList<TideChart.TideChartPort>(inports_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000200;
          }
       }
 
@@ -16552,7 +16520,7 @@ public final class TideChart {
       public Builder clearInports() {
         if (inportsBuilder_ == null) {
           inports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000200);
           onChanged();
         } else {
           inportsBuilder_.clear();
@@ -16657,7 +16625,7 @@ public final class TideChart {
           inportsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
                   inports_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000200) != 0),
                   getParentForChildren(),
                   isClean());
           inports_ = null;
@@ -16668,9 +16636,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartPort> outports_ =
         java.util.Collections.emptyList();
       private void ensureOutportsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000400) != 0)) {
           outports_ = new java.util.ArrayList<TideChart.TideChartPort>(outports_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000400;
          }
       }
 
@@ -16864,7 +16832,7 @@ public final class TideChart {
       public Builder clearOutports() {
         if (outportsBuilder_ == null) {
           outports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000400);
           onChanged();
         } else {
           outportsBuilder_.clear();
@@ -16969,7 +16937,7 @@ public final class TideChart {
           outportsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
                   outports_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000400) != 0),
                   getParentForChildren(),
                   isClean());
           outports_ = null;
@@ -16980,9 +16948,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000800) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000800;
          }
       }
 
@@ -17176,7 +17144,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000800);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -17281,7 +17249,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000800) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -17444,9 +17412,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartNote> notes_ =
         java.util.Collections.emptyList();
       private void ensureNotesIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00010000) != 0)) {
           notes_ = new java.util.ArrayList<TideChart.TideChartNote>(notes_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00010000;
          }
       }
 
@@ -17640,7 +17608,7 @@ public final class TideChart {
       public Builder clearNotes() {
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00010000);
           onChanged();
         } else {
           notesBuilder_.clear();
@@ -17745,7 +17713,7 @@ public final class TideChart {
           notesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartNote, TideChart.TideChartNote.Builder, TideChart.TideChartNoteOrBuilder>(
                   notes_,
-                  ((bitField0_ & 0x00000008) != 0),
+                  ((bitField0_ & 0x00010000) != 0),
                   getParentForChildren(),
                   isClean());
           notes_ = null;
@@ -17845,9 +17813,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> settings_ =
         java.util.Collections.emptyList();
       private void ensureSettingsIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if (!((bitField0_ & 0x00040000) != 0)) {
           settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00040000;
          }
       }
 
@@ -18041,7 +18009,7 @@ public final class TideChart {
       public Builder clearSettings() {
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00040000);
           onChanged();
         } else {
           settingsBuilder_.clear();
@@ -18146,7 +18114,7 @@ public final class TideChart {
           settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   settings_,
-                  ((bitField0_ & 0x00000010) != 0),
+                  ((bitField0_ & 0x00040000) != 0),
                   getParentForChildren(),
                   isClean());
           settings_ = null;
@@ -18518,13 +18486,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartRegion();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -18562,9 +18523,9 @@ public final class TideChart {
             }
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 nodes_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000004;
               }
               nodes_.add(s);
               break;
@@ -18581,9 +18542,9 @@ public final class TideChart {
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000020;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -18610,9 +18571,9 @@ public final class TideChart {
               break;
             }
             case 162: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
                 notes_ = new java.util.ArrayList<TideChart.TideChartNote>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000400;
               }
               notes_.add(
                   input.readMessage(TideChart.TideChartNote.parser(), extensionRegistry));
@@ -18625,9 +18586,9 @@ public final class TideChart {
               break;
             }
             case 178: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00001000) != 0)) {
                 settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00001000;
               }
               settings_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -18648,16 +18609,16 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           nodes_ = nodes_.getUnmodifiableView();
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000400) != 0)) {
           notes_ = java.util.Collections.unmodifiableList(notes_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00001000) != 0)) {
           settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
@@ -18677,6 +18638,7 @@ public final class TideChart {
               TideChart.TideChartRegion.class, TideChart.TideChartRegion.Builder.class);
     }
 
+    private int bitField0_;
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
@@ -19465,14 +19427,14 @@ public final class TideChart {
         title_ = "";
 
         nodes_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000004);
         group_ = 0;
 
         scope_ = "";
 
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000020);
         } else {
           propsBuilder_.clear();
         }
@@ -19486,7 +19448,7 @@ public final class TideChart {
 
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000400);
         } else {
           notesBuilder_.clear();
         }
@@ -19494,7 +19456,7 @@ public final class TideChart {
 
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00001000);
         } else {
           settingsBuilder_.clear();
         }
@@ -19525,19 +19487,20 @@ public final class TideChart {
       public TideChart.TideChartRegion buildPartial() {
         TideChart.TideChartRegion result = new TideChart.TideChartRegion(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.name_ = name_;
         result.title_ = title_;
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           nodes_ = nodes_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.nodes_ = nodes_;
         result.group_ = group_;
         result.scope_ = scope_;
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.props_ = props_;
         } else {
@@ -19548,9 +19511,9 @@ public final class TideChart {
         result.isPaused_ = isPaused_;
         result.isDisabled_ = isDisabled_;
         if (notesBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000400) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000400);
           }
           result.notes_ = notes_;
         } else {
@@ -19558,14 +19521,15 @@ public final class TideChart {
         }
         result.script_ = script_;
         if (settingsBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
+          if (((bitField0_ & 0x00001000) != 0)) {
             settings_ = java.util.Collections.unmodifiableList(settings_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00001000);
           }
           result.settings_ = settings_;
         } else {
           result.settings_ = settingsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -19625,7 +19589,7 @@ public final class TideChart {
         if (!other.nodes_.isEmpty()) {
           if (nodes_.isEmpty()) {
             nodes_ = other.nodes_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureNodesIsMutable();
             nodes_.addAll(other.nodes_);
@@ -19643,7 +19607,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -19656,7 +19620,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000020);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -19681,7 +19645,7 @@ public final class TideChart {
           if (!other.notes_.isEmpty()) {
             if (notes_.isEmpty()) {
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000400);
             } else {
               ensureNotesIsMutable();
               notes_.addAll(other.notes_);
@@ -19694,7 +19658,7 @@ public final class TideChart {
               notesBuilder_.dispose();
               notesBuilder_ = null;
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000400);
               notesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getNotesFieldBuilder() : null;
@@ -19711,7 +19675,7 @@ public final class TideChart {
           if (!other.settings_.isEmpty()) {
             if (settings_.isEmpty()) {
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00001000);
             } else {
               ensureSettingsIsMutable();
               settings_.addAll(other.settings_);
@@ -19724,7 +19688,7 @@ public final class TideChart {
               settingsBuilder_.dispose();
               settingsBuilder_ = null;
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00001000);
               settingsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSettingsFieldBuilder() : null;
@@ -19943,9 +19907,9 @@ public final class TideChart {
 
       private com.google.protobuf.LazyStringList nodes_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureNodesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           nodes_ = new com.google.protobuf.LazyStringArrayList(nodes_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
          }
       }
       /**
@@ -20048,7 +20012,7 @@ public final class TideChart {
        */
       public Builder clearNodes() {
         nodes_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -20201,9 +20165,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -20397,7 +20361,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -20502,7 +20466,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -20665,9 +20629,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartNote> notes_ =
         java.util.Collections.emptyList();
       private void ensureNotesIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000400) != 0)) {
           notes_ = new java.util.ArrayList<TideChart.TideChartNote>(notes_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000400;
          }
       }
 
@@ -20861,7 +20825,7 @@ public final class TideChart {
       public Builder clearNotes() {
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000400);
           onChanged();
         } else {
           notesBuilder_.clear();
@@ -20966,7 +20930,7 @@ public final class TideChart {
           notesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartNote, TideChart.TideChartNote.Builder, TideChart.TideChartNoteOrBuilder>(
                   notes_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000400) != 0),
                   getParentForChildren(),
                   isClean());
           notes_ = null;
@@ -21066,9 +21030,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> settings_ =
         java.util.Collections.emptyList();
       private void ensureSettingsIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00001000) != 0)) {
           settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00001000;
          }
       }
 
@@ -21262,7 +21226,7 @@ public final class TideChart {
       public Builder clearSettings() {
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00001000);
           onChanged();
         } else {
           settingsBuilder_.clear();
@@ -21367,7 +21331,7 @@ public final class TideChart {
           settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   settings_,
-                  ((bitField0_ & 0x00000008) != 0),
+                  ((bitField0_ & 0x00001000) != 0),
                   getParentForChildren(),
                   isClean());
           settings_ = null;
@@ -22040,13 +22004,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartGraph();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -22113,63 +22070,63 @@ public final class TideChart {
               break;
             }
             case 66: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
                 nodes_ = new java.util.ArrayList<TideChart.TideChartNode>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000080;
               }
               nodes_.add(
                   input.readMessage(TideChart.TideChartNode.parser(), extensionRegistry));
               break;
             }
             case 74: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
                 links_ = new java.util.ArrayList<TideChart.TideChartLink>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000100;
               }
               links_.add(
                   input.readMessage(TideChart.TideChartLink.parser(), extensionRegistry));
               break;
             }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
                 regions_ = new java.util.ArrayList<TideChart.TideChartRegion>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000200;
               }
               regions_.add(
                   input.readMessage(TideChart.TideChartRegion.parser(), extensionRegistry));
               break;
             }
             case 90: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
                 comments_ = new java.util.ArrayList<TideChart.TideChartCommentBox>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000400;
               }
               comments_.add(
                   input.readMessage(TideChart.TideChartCommentBox.parser(), extensionRegistry));
               break;
             }
             case 98: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
                 widgets_ = new java.util.ArrayList<TideChart.TideChartWidget>();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000800;
               }
               widgets_.add(
                   input.readMessage(TideChart.TideChartWidget.parser(), extensionRegistry));
               break;
             }
             case 106: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00001000) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00001000;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
               break;
             }
             case 114: {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              if (!((mutable_bitField0_ & 0x00002000) != 0)) {
                 history_ = new java.util.ArrayList<TideChart.TideChartCommand>();
-                mutable_bitField0_ |= 0x00000040;
+                mutable_bitField0_ |= 0x00002000;
               }
               history_.add(
                   input.readMessage(TideChart.TideChartCommand.parser(), extensionRegistry));
@@ -22196,9 +22153,9 @@ public final class TideChart {
               break;
             }
             case 162: {
-              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
+              if (!((mutable_bitField0_ & 0x00040000) != 0)) {
                 notes_ = new java.util.ArrayList<TideChart.TideChartNote>();
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00040000;
               }
               notes_.add(
                   input.readMessage(TideChart.TideChartNote.parser(), extensionRegistry));
@@ -22211,9 +22168,9 @@ public final class TideChart {
               break;
             }
             case 178: {
-              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+              if (!((mutable_bitField0_ & 0x00100000) != 0)) {
                 settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000100;
+                mutable_bitField0_ |= 0x00100000;
               }
               settings_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -22234,31 +22191,31 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
           nodes_ = java.util.Collections.unmodifiableList(nodes_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
           links_ = java.util.Collections.unmodifiableList(links_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000200) != 0)) {
           regions_ = java.util.Collections.unmodifiableList(regions_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000400) != 0)) {
           comments_ = java.util.Collections.unmodifiableList(comments_);
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+        if (((mutable_bitField0_ & 0x00000800) != 0)) {
           widgets_ = java.util.Collections.unmodifiableList(widgets_);
         }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00001000) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
-        if (((mutable_bitField0_ & 0x00000040) != 0)) {
+        if (((mutable_bitField0_ & 0x00002000) != 0)) {
           history_ = java.util.Collections.unmodifiableList(history_);
         }
-        if (((mutable_bitField0_ & 0x00000080) != 0)) {
+        if (((mutable_bitField0_ & 0x00040000) != 0)) {
           notes_ = java.util.Collections.unmodifiableList(notes_);
         }
-        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+        if (((mutable_bitField0_ & 0x00100000) != 0)) {
           settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
@@ -22278,6 +22235,7 @@ public final class TideChart {
               TideChart.TideChartGraph.class, TideChart.TideChartGraph.Builder.class);
     }
 
+    private int bitField0_;
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
@@ -23613,43 +23571,43 @@ public final class TideChart {
 
         if (nodesBuilder_ == null) {
           nodes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000080);
         } else {
           nodesBuilder_.clear();
         }
         if (linksBuilder_ == null) {
           links_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000100);
         } else {
           linksBuilder_.clear();
         }
         if (regionsBuilder_ == null) {
           regions_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000200);
         } else {
           regionsBuilder_.clear();
         }
         if (commentsBuilder_ == null) {
           comments_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000400);
         } else {
           commentsBuilder_.clear();
         }
         if (widgetsBuilder_ == null) {
           widgets_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000800);
         } else {
           widgetsBuilder_.clear();
         }
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00001000);
         } else {
           propsBuilder_.clear();
         }
         if (historyBuilder_ == null) {
           history_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00002000);
         } else {
           historyBuilder_.clear();
         }
@@ -23663,7 +23621,7 @@ public final class TideChart {
 
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000080);
+          bitField0_ = (bitField0_ & ~0x00040000);
         } else {
           notesBuilder_.clear();
         }
@@ -23671,7 +23629,7 @@ public final class TideChart {
 
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00100000);
         } else {
           settingsBuilder_.clear();
         }
@@ -23702,6 +23660,7 @@ public final class TideChart {
       public TideChart.TideChartGraph buildPartial() {
         TideChart.TideChartGraph result = new TideChart.TideChartGraph(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.id_ = id_;
         result.type_ = type_;
         result.name_ = name_;
@@ -23710,63 +23669,63 @@ public final class TideChart {
         result.version_ = version_;
         result.source_ = source_;
         if (nodesBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000080) != 0)) {
             nodes_ = java.util.Collections.unmodifiableList(nodes_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000080);
           }
           result.nodes_ = nodes_;
         } else {
           result.nodes_ = nodesBuilder_.build();
         }
         if (linksBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000100) != 0)) {
             links_ = java.util.Collections.unmodifiableList(links_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000100);
           }
           result.links_ = links_;
         } else {
           result.links_ = linksBuilder_.build();
         }
         if (regionsBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000200) != 0)) {
             regions_ = java.util.Collections.unmodifiableList(regions_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000200);
           }
           result.regions_ = regions_;
         } else {
           result.regions_ = regionsBuilder_.build();
         }
         if (commentsBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
+          if (((bitField0_ & 0x00000400) != 0)) {
             comments_ = java.util.Collections.unmodifiableList(comments_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000400);
           }
           result.comments_ = comments_;
         } else {
           result.comments_ = commentsBuilder_.build();
         }
         if (widgetsBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) != 0)) {
+          if (((bitField0_ & 0x00000800) != 0)) {
             widgets_ = java.util.Collections.unmodifiableList(widgets_);
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000800);
           }
           result.widgets_ = widgets_;
         } else {
           result.widgets_ = widgetsBuilder_.build();
         }
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) != 0)) {
+          if (((bitField0_ & 0x00001000) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000020);
+            bitField0_ = (bitField0_ & ~0x00001000);
           }
           result.props_ = props_;
         } else {
           result.props_ = propsBuilder_.build();
         }
         if (historyBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) != 0)) {
+          if (((bitField0_ & 0x00002000) != 0)) {
             history_ = java.util.Collections.unmodifiableList(history_);
-            bitField0_ = (bitField0_ & ~0x00000040);
+            bitField0_ = (bitField0_ & ~0x00002000);
           }
           result.history_ = history_;
         } else {
@@ -23777,9 +23736,9 @@ public final class TideChart {
         result.isPaused_ = isPaused_;
         result.isDisabled_ = isDisabled_;
         if (notesBuilder_ == null) {
-          if (((bitField0_ & 0x00000080) != 0)) {
+          if (((bitField0_ & 0x00040000) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
-            bitField0_ = (bitField0_ & ~0x00000080);
+            bitField0_ = (bitField0_ & ~0x00040000);
           }
           result.notes_ = notes_;
         } else {
@@ -23787,14 +23746,15 @@ public final class TideChart {
         }
         result.script_ = script_;
         if (settingsBuilder_ == null) {
-          if (((bitField0_ & 0x00000100) != 0)) {
+          if (((bitField0_ & 0x00100000) != 0)) {
             settings_ = java.util.Collections.unmodifiableList(settings_);
-            bitField0_ = (bitField0_ & ~0x00000100);
+            bitField0_ = (bitField0_ & ~0x00100000);
           }
           result.settings_ = settings_;
         } else {
           result.settings_ = settingsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -23875,7 +23835,7 @@ public final class TideChart {
           if (!other.nodes_.isEmpty()) {
             if (nodes_.isEmpty()) {
               nodes_ = other.nodes_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000080);
             } else {
               ensureNodesIsMutable();
               nodes_.addAll(other.nodes_);
@@ -23888,7 +23848,7 @@ public final class TideChart {
               nodesBuilder_.dispose();
               nodesBuilder_ = null;
               nodes_ = other.nodes_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000080);
               nodesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getNodesFieldBuilder() : null;
@@ -23901,7 +23861,7 @@ public final class TideChart {
           if (!other.links_.isEmpty()) {
             if (links_.isEmpty()) {
               links_ = other.links_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000100);
             } else {
               ensureLinksIsMutable();
               links_.addAll(other.links_);
@@ -23914,7 +23874,7 @@ public final class TideChart {
               linksBuilder_.dispose();
               linksBuilder_ = null;
               links_ = other.links_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000100);
               linksBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLinksFieldBuilder() : null;
@@ -23927,7 +23887,7 @@ public final class TideChart {
           if (!other.regions_.isEmpty()) {
             if (regions_.isEmpty()) {
               regions_ = other.regions_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000200);
             } else {
               ensureRegionsIsMutable();
               regions_.addAll(other.regions_);
@@ -23940,7 +23900,7 @@ public final class TideChart {
               regionsBuilder_.dispose();
               regionsBuilder_ = null;
               regions_ = other.regions_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000200);
               regionsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getRegionsFieldBuilder() : null;
@@ -23953,7 +23913,7 @@ public final class TideChart {
           if (!other.comments_.isEmpty()) {
             if (comments_.isEmpty()) {
               comments_ = other.comments_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000400);
             } else {
               ensureCommentsIsMutable();
               comments_.addAll(other.comments_);
@@ -23966,7 +23926,7 @@ public final class TideChart {
               commentsBuilder_.dispose();
               commentsBuilder_ = null;
               comments_ = other.comments_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000400);
               commentsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCommentsFieldBuilder() : null;
@@ -23979,7 +23939,7 @@ public final class TideChart {
           if (!other.widgets_.isEmpty()) {
             if (widgets_.isEmpty()) {
               widgets_ = other.widgets_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000800);
             } else {
               ensureWidgetsIsMutable();
               widgets_.addAll(other.widgets_);
@@ -23992,7 +23952,7 @@ public final class TideChart {
               widgetsBuilder_.dispose();
               widgetsBuilder_ = null;
               widgets_ = other.widgets_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000800);
               widgetsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getWidgetsFieldBuilder() : null;
@@ -24005,7 +23965,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000020);
+              bitField0_ = (bitField0_ & ~0x00001000);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -24018,7 +23978,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000020);
+              bitField0_ = (bitField0_ & ~0x00001000);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -24031,7 +23991,7 @@ public final class TideChart {
           if (!other.history_.isEmpty()) {
             if (history_.isEmpty()) {
               history_ = other.history_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00002000);
             } else {
               ensureHistoryIsMutable();
               history_.addAll(other.history_);
@@ -24044,7 +24004,7 @@ public final class TideChart {
               historyBuilder_.dispose();
               historyBuilder_ = null;
               history_ = other.history_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00002000);
               historyBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getHistoryFieldBuilder() : null;
@@ -24069,7 +24029,7 @@ public final class TideChart {
           if (!other.notes_.isEmpty()) {
             if (notes_.isEmpty()) {
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000080);
+              bitField0_ = (bitField0_ & ~0x00040000);
             } else {
               ensureNotesIsMutable();
               notes_.addAll(other.notes_);
@@ -24082,7 +24042,7 @@ public final class TideChart {
               notesBuilder_.dispose();
               notesBuilder_ = null;
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000080);
+              bitField0_ = (bitField0_ & ~0x00040000);
               notesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getNotesFieldBuilder() : null;
@@ -24099,7 +24059,7 @@ public final class TideChart {
           if (!other.settings_.isEmpty()) {
             if (settings_.isEmpty()) {
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000100);
+              bitField0_ = (bitField0_ & ~0x00100000);
             } else {
               ensureSettingsIsMutable();
               settings_.addAll(other.settings_);
@@ -24112,7 +24072,7 @@ public final class TideChart {
               settingsBuilder_.dispose();
               settingsBuilder_ = null;
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000100);
+              bitField0_ = (bitField0_ & ~0x00100000);
               settingsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSettingsFieldBuilder() : null;
@@ -24777,9 +24737,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartNode> nodes_ =
         java.util.Collections.emptyList();
       private void ensureNodesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000080) != 0)) {
           nodes_ = new java.util.ArrayList<TideChart.TideChartNode>(nodes_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000080;
          }
       }
 
@@ -24973,7 +24933,7 @@ public final class TideChart {
       public Builder clearNodes() {
         if (nodesBuilder_ == null) {
           nodes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000080);
           onChanged();
         } else {
           nodesBuilder_.clear();
@@ -25078,7 +25038,7 @@ public final class TideChart {
           nodesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartNode, TideChart.TideChartNode.Builder, TideChart.TideChartNodeOrBuilder>(
                   nodes_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000080) != 0),
                   getParentForChildren(),
                   isClean());
           nodes_ = null;
@@ -25089,9 +25049,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartLink> links_ =
         java.util.Collections.emptyList();
       private void ensureLinksIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000100) != 0)) {
           links_ = new java.util.ArrayList<TideChart.TideChartLink>(links_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000100;
          }
       }
 
@@ -25285,7 +25245,7 @@ public final class TideChart {
       public Builder clearLinks() {
         if (linksBuilder_ == null) {
           links_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000100);
           onChanged();
         } else {
           linksBuilder_.clear();
@@ -25390,7 +25350,7 @@ public final class TideChart {
           linksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartLink, TideChart.TideChartLink.Builder, TideChart.TideChartLinkOrBuilder>(
                   links_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
                   isClean());
           links_ = null;
@@ -25401,9 +25361,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartRegion> regions_ =
         java.util.Collections.emptyList();
       private void ensureRegionsIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000200) != 0)) {
           regions_ = new java.util.ArrayList<TideChart.TideChartRegion>(regions_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000200;
          }
       }
 
@@ -25597,7 +25557,7 @@ public final class TideChart {
       public Builder clearRegions() {
         if (regionsBuilder_ == null) {
           regions_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000200);
           onChanged();
         } else {
           regionsBuilder_.clear();
@@ -25702,7 +25662,7 @@ public final class TideChart {
           regionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartRegion, TideChart.TideChartRegion.Builder, TideChart.TideChartRegionOrBuilder>(
                   regions_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000200) != 0),
                   getParentForChildren(),
                   isClean());
           regions_ = null;
@@ -25713,9 +25673,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartCommentBox> comments_ =
         java.util.Collections.emptyList();
       private void ensureCommentsIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000400) != 0)) {
           comments_ = new java.util.ArrayList<TideChart.TideChartCommentBox>(comments_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000400;
          }
       }
 
@@ -25909,7 +25869,7 @@ public final class TideChart {
       public Builder clearComments() {
         if (commentsBuilder_ == null) {
           comments_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000400);
           onChanged();
         } else {
           commentsBuilder_.clear();
@@ -26014,7 +25974,7 @@ public final class TideChart {
           commentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartCommentBox, TideChart.TideChartCommentBox.Builder, TideChart.TideChartCommentBoxOrBuilder>(
                   comments_,
-                  ((bitField0_ & 0x00000008) != 0),
+                  ((bitField0_ & 0x00000400) != 0),
                   getParentForChildren(),
                   isClean());
           comments_ = null;
@@ -26025,9 +25985,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartWidget> widgets_ =
         java.util.Collections.emptyList();
       private void ensureWidgetsIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if (!((bitField0_ & 0x00000800) != 0)) {
           widgets_ = new java.util.ArrayList<TideChart.TideChartWidget>(widgets_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000800;
          }
       }
 
@@ -26221,7 +26181,7 @@ public final class TideChart {
       public Builder clearWidgets() {
         if (widgetsBuilder_ == null) {
           widgets_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000800);
           onChanged();
         } else {
           widgetsBuilder_.clear();
@@ -26326,7 +26286,7 @@ public final class TideChart {
           widgetsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartWidget, TideChart.TideChartWidget.Builder, TideChart.TideChartWidgetOrBuilder>(
                   widgets_,
-                  ((bitField0_ & 0x00000010) != 0),
+                  ((bitField0_ & 0x00000800) != 0),
                   getParentForChildren(),
                   isClean());
           widgets_ = null;
@@ -26337,9 +26297,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
+        if (!((bitField0_ & 0x00001000) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000020;
+          bitField0_ |= 0x00001000;
          }
       }
 
@@ -26533,7 +26493,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00001000);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -26638,7 +26598,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000020) != 0),
+                  ((bitField0_ & 0x00001000) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -26649,9 +26609,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartCommand> history_ =
         java.util.Collections.emptyList();
       private void ensureHistoryIsMutable() {
-        if (!((bitField0_ & 0x00000040) != 0)) {
+        if (!((bitField0_ & 0x00002000) != 0)) {
           history_ = new java.util.ArrayList<TideChart.TideChartCommand>(history_);
-          bitField0_ |= 0x00000040;
+          bitField0_ |= 0x00002000;
          }
       }
 
@@ -26845,7 +26805,7 @@ public final class TideChart {
       public Builder clearHistory() {
         if (historyBuilder_ == null) {
           history_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00002000);
           onChanged();
         } else {
           historyBuilder_.clear();
@@ -26950,7 +26910,7 @@ public final class TideChart {
           historyBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartCommand, TideChart.TideChartCommand.Builder, TideChart.TideChartCommandOrBuilder>(
                   history_,
-                  ((bitField0_ & 0x00000040) != 0),
+                  ((bitField0_ & 0x00002000) != 0),
                   getParentForChildren(),
                   isClean());
           history_ = null;
@@ -27113,9 +27073,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartNote> notes_ =
         java.util.Collections.emptyList();
       private void ensureNotesIsMutable() {
-        if (!((bitField0_ & 0x00000080) != 0)) {
+        if (!((bitField0_ & 0x00040000) != 0)) {
           notes_ = new java.util.ArrayList<TideChart.TideChartNote>(notes_);
-          bitField0_ |= 0x00000080;
+          bitField0_ |= 0x00040000;
          }
       }
 
@@ -27309,7 +27269,7 @@ public final class TideChart {
       public Builder clearNotes() {
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000080);
+          bitField0_ = (bitField0_ & ~0x00040000);
           onChanged();
         } else {
           notesBuilder_.clear();
@@ -27414,7 +27374,7 @@ public final class TideChart {
           notesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartNote, TideChart.TideChartNote.Builder, TideChart.TideChartNoteOrBuilder>(
                   notes_,
-                  ((bitField0_ & 0x00000080) != 0),
+                  ((bitField0_ & 0x00040000) != 0),
                   getParentForChildren(),
                   isClean());
           notes_ = null;
@@ -27514,9 +27474,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> settings_ =
         java.util.Collections.emptyList();
       private void ensureSettingsIsMutable() {
-        if (!((bitField0_ & 0x00000100) != 0)) {
+        if (!((bitField0_ & 0x00100000) != 0)) {
           settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
-          bitField0_ |= 0x00000100;
+          bitField0_ |= 0x00100000;
          }
       }
 
@@ -27710,7 +27670,7 @@ public final class TideChart {
       public Builder clearSettings() {
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00100000);
           onChanged();
         } else {
           settingsBuilder_.clear();
@@ -27815,7 +27775,7 @@ public final class TideChart {
           settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   settings_,
-                  ((bitField0_ & 0x00000100) != 0),
+                  ((bitField0_ & 0x00100000) != 0),
                   getParentForChildren(),
                   isClean());
           settings_ = null;
@@ -28078,13 +28038,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -28097,6 +28050,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -31159,13 +31113,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartGroupCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -32069,13 +32016,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartMoveCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -32088,6 +32028,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -33001,13 +32942,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartCommentBoxCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -33020,6 +32954,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -34057,13 +33992,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartWidgetCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -34076,6 +34004,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -35113,13 +35042,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartPortCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -35132,6 +35054,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -36169,13 +36092,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartLinkCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -36188,6 +36104,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -37225,13 +37142,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartNodeCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -37244,6 +37154,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -38281,13 +38192,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartRegionCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -38300,6 +38204,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -39337,13 +39242,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartGraphCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -39356,6 +39254,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -40507,13 +40406,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartPropertyCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -40623,6 +40515,7 @@ public final class TideChart {
               TideChart.TideChartPropertyCommand.class, TideChart.TideChartPropertyCommand.Builder.class);
     }
 
+    private int bitField0_;
     private int targetCase_ = 0;
     private java.lang.Object target_;
     public enum TargetCase
@@ -41332,6 +41225,7 @@ public final class TideChart {
       public TideChart.TideChartPropertyCommand buildPartial() {
         TideChart.TideChartPropertyCommand result = new TideChart.TideChartPropertyCommand(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (fromPropsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             fromProps_ = java.util.Collections.unmodifiableList(fromProps_);
@@ -41363,6 +41257,7 @@ public final class TideChart {
         if (targetCase_ == 8) {
           result.target_ = target_;
         }
+        result.bitField0_ = to_bitField0_;
         result.targetCase_ = targetCase_;
         onBuilt();
         return result;
@@ -42821,13 +42716,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartNoteCommand();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -42919,6 +42807,7 @@ public final class TideChart {
               TideChart.TideChartNoteCommand.class, TideChart.TideChartNoteCommand.Builder.class);
     }
 
+    private int bitField0_;
     private int targetCase_ = 0;
     private java.lang.Object target_;
     public enum TargetCase
@@ -43486,6 +43375,7 @@ public final class TideChart {
       public TideChart.TideChartNoteCommand buildPartial() {
         TideChart.TideChartNoteCommand result = new TideChart.TideChartNoteCommand(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (notesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
@@ -43505,6 +43395,7 @@ public final class TideChart {
         if (targetCase_ == 5) {
           result.target_ = target_;
         }
+        result.bitField0_ = to_bitField0_;
         result.targetCase_ = targetCase_;
         onBuilt();
         return result;
@@ -44380,2556 +44271,6 @@ public final class TideChart {
 
   }
 
-  public interface TideChartMethodOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:TideChartMethod)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     * unique id for the method definition
-     * </pre>
-     *
-     * <code>string id = 1;</code>
-     */
-    java.lang.String getId();
-    /**
-     * <pre>
-     * unique id for the method definition
-     * </pre>
-     *
-     * <code>string id = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getIdBytes();
-
-    /**
-     * <pre>
-     * name of the method (unique to the library)
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     */
-    java.lang.String getName();
-    /**
-     * <pre>
-     * name of the method (unique to the library)
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
-
-    /**
-     * <pre>
-     * method extends (customizes) the implementation of another method
-     * </pre>
-     *
-     * <code>string extends = 3;</code>
-     */
-    java.lang.String getExtends();
-    /**
-     * <pre>
-     * method extends (customizes) the implementation of another method
-     * </pre>
-     *
-     * <code>string extends = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getExtendsBytes();
-
-    /**
-     * <pre>
-     * custom script that implements the node action for this method
-     * </pre>
-     *
-     * <code>string script = 4;</code>
-     */
-    java.lang.String getScript();
-    /**
-     * <pre>
-     * custom script that implements the node action for this method
-     * </pre>
-     *
-     * <code>string script = 4;</code>
-     */
-    com.google.protobuf.ByteString
-        getScriptBytes();
-
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    java.util.List<TideChart.TideChartPort> 
-        getInportsList();
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    TideChart.TideChartPort getInports(int index);
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    int getInportsCount();
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-        getInportsOrBuilderList();
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    TideChart.TideChartPortOrBuilder getInportsOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    java.util.List<TideChart.TideChartPort> 
-        getOutportsList();
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    TideChart.TideChartPort getOutports(int index);
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    int getOutportsCount();
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-        getOutportsOrBuilderList();
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    TideChart.TideChartPortOrBuilder getOutportsOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    java.util.List<TideChart.TideChartPort> 
-        getPropsList();
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    TideChart.TideChartPort getProps(int index);
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    int getPropsCount();
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-        getPropsOrBuilderList();
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    TideChart.TideChartPortOrBuilder getPropsOrBuilder(
-        int index);
-  }
-  /**
-   * Protobuf type {@code TideChartMethod}
-   */
-  public  static final class TideChartMethod extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:TideChartMethod)
-      TideChartMethodOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use TideChartMethod.newBuilder() to construct.
-    private TideChartMethod(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private TideChartMethod() {
-      id_ = "";
-      name_ = "";
-      extends_ = "";
-      script_ = "";
-      inports_ = java.util.Collections.emptyList();
-      outports_ = java.util.Collections.emptyList();
-      props_ = java.util.Collections.emptyList();
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartMethod();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private TideChartMethod(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              id_ = s;
-              break;
-            }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              name_ = s;
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              extends_ = s;
-              break;
-            }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              script_ = s;
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                inports_ = new java.util.ArrayList<TideChart.TideChartPort>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              inports_.add(
-                  input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry));
-              break;
-            }
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                outports_ = new java.util.ArrayList<TideChart.TideChartPort>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              outports_.add(
-                  input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry));
-              break;
-            }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                props_ = new java.util.ArrayList<TideChart.TideChartPort>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              props_.add(
-                  input.readMessage(TideChart.TideChartPort.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          inports_ = java.util.Collections.unmodifiableList(inports_);
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          outports_ = java.util.Collections.unmodifiableList(outports_);
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          props_ = java.util.Collections.unmodifiableList(props_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return TideChart.internal_static_TideChartMethod_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return TideChart.internal_static_TideChartMethod_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              TideChart.TideChartMethod.class, TideChart.TideChartMethod.Builder.class);
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object id_;
-    /**
-     * <pre>
-     * unique id for the method definition
-     * </pre>
-     *
-     * <code>string id = 1;</code>
-     */
-    public java.lang.String getId() {
-      java.lang.Object ref = id_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        id_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * unique id for the method definition
-     * </pre>
-     *
-     * <code>string id = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getIdBytes() {
-      java.lang.Object ref = id_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        id_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object name_;
-    /**
-     * <pre>
-     * name of the method (unique to the library)
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        name_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * name of the method (unique to the library)
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int EXTENDS_FIELD_NUMBER = 3;
-    private volatile java.lang.Object extends_;
-    /**
-     * <pre>
-     * method extends (customizes) the implementation of another method
-     * </pre>
-     *
-     * <code>string extends = 3;</code>
-     */
-    public java.lang.String getExtends() {
-      java.lang.Object ref = extends_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        extends_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * method extends (customizes) the implementation of another method
-     * </pre>
-     *
-     * <code>string extends = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getExtendsBytes() {
-      java.lang.Object ref = extends_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        extends_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int SCRIPT_FIELD_NUMBER = 4;
-    private volatile java.lang.Object script_;
-    /**
-     * <pre>
-     * custom script that implements the node action for this method
-     * </pre>
-     *
-     * <code>string script = 4;</code>
-     */
-    public java.lang.String getScript() {
-      java.lang.Object ref = script_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        script_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * custom script that implements the node action for this method
-     * </pre>
-     *
-     * <code>string script = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getScriptBytes() {
-      java.lang.Object ref = script_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        script_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int INPORTS_FIELD_NUMBER = 5;
-    private java.util.List<TideChart.TideChartPort> inports_;
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    public java.util.List<TideChart.TideChartPort> getInportsList() {
-      return inports_;
-    }
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    public java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-        getInportsOrBuilderList() {
-      return inports_;
-    }
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    public int getInportsCount() {
-      return inports_.size();
-    }
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    public TideChart.TideChartPort getInports(int index) {
-      return inports_.get(index);
-    }
-    /**
-     * <pre>
-     * definition of inports for this method
-     * </pre>
-     *
-     * <code>repeated .TideChartPort inports = 5;</code>
-     */
-    public TideChart.TideChartPortOrBuilder getInportsOrBuilder(
-        int index) {
-      return inports_.get(index);
-    }
-
-    public static final int OUTPORTS_FIELD_NUMBER = 6;
-    private java.util.List<TideChart.TideChartPort> outports_;
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    public java.util.List<TideChart.TideChartPort> getOutportsList() {
-      return outports_;
-    }
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    public java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-        getOutportsOrBuilderList() {
-      return outports_;
-    }
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    public int getOutportsCount() {
-      return outports_.size();
-    }
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    public TideChart.TideChartPort getOutports(int index) {
-      return outports_.get(index);
-    }
-    /**
-     * <pre>
-     * definition of outports for this methid
-     * </pre>
-     *
-     * <code>repeated .TideChartPort outports = 6;</code>
-     */
-    public TideChart.TideChartPortOrBuilder getOutportsOrBuilder(
-        int index) {
-      return outports_.get(index);
-    }
-
-    public static final int PROPS_FIELD_NUMBER = 7;
-    private java.util.List<TideChart.TideChartPort> props_;
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    public java.util.List<TideChart.TideChartPort> getPropsList() {
-      return props_;
-    }
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    public java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-        getPropsOrBuilderList() {
-      return props_;
-    }
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    public int getPropsCount() {
-      return props_.size();
-    }
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    public TideChart.TideChartPort getProps(int index) {
-      return props_.get(index);
-    }
-    /**
-     * <pre>
-     * definition of property values used by the method (uses port definition format)
-     * </pre>
-     *
-     * <code>repeated .TideChartPort props = 7;</code>
-     */
-    public TideChart.TideChartPortOrBuilder getPropsOrBuilder(
-        int index) {
-      return props_.get(index);
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!getIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
-      }
-      if (!getNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
-      }
-      if (!getExtendsBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, extends_);
-      }
-      if (!getScriptBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, script_);
-      }
-      for (int i = 0; i < inports_.size(); i++) {
-        output.writeMessage(5, inports_.get(i));
-      }
-      for (int i = 0; i < outports_.size(); i++) {
-        output.writeMessage(6, outports_.get(i));
-      }
-      for (int i = 0; i < props_.size(); i++) {
-        output.writeMessage(7, props_.get(i));
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
-      }
-      if (!getNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
-      }
-      if (!getExtendsBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, extends_);
-      }
-      if (!getScriptBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, script_);
-      }
-      for (int i = 0; i < inports_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, inports_.get(i));
-      }
-      for (int i = 0; i < outports_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, outports_.get(i));
-      }
-      for (int i = 0; i < props_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, props_.get(i));
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof TideChart.TideChartMethod)) {
-        return super.equals(obj);
-      }
-      TideChart.TideChartMethod other = (TideChart.TideChartMethod) obj;
-
-      if (!getId()
-          .equals(other.getId())) return false;
-      if (!getName()
-          .equals(other.getName())) return false;
-      if (!getExtends()
-          .equals(other.getExtends())) return false;
-      if (!getScript()
-          .equals(other.getScript())) return false;
-      if (!getInportsList()
-          .equals(other.getInportsList())) return false;
-      if (!getOutportsList()
-          .equals(other.getOutportsList())) return false;
-      if (!getPropsList()
-          .equals(other.getPropsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId().hashCode();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + EXTENDS_FIELD_NUMBER;
-      hash = (53 * hash) + getExtends().hashCode();
-      hash = (37 * hash) + SCRIPT_FIELD_NUMBER;
-      hash = (53 * hash) + getScript().hashCode();
-      if (getInportsCount() > 0) {
-        hash = (37 * hash) + INPORTS_FIELD_NUMBER;
-        hash = (53 * hash) + getInportsList().hashCode();
-      }
-      if (getOutportsCount() > 0) {
-        hash = (37 * hash) + OUTPORTS_FIELD_NUMBER;
-        hash = (53 * hash) + getOutportsList().hashCode();
-      }
-      if (getPropsCount() > 0) {
-        hash = (37 * hash) + PROPS_FIELD_NUMBER;
-        hash = (53 * hash) + getPropsList().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static TideChart.TideChartMethod parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static TideChart.TideChartMethod parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static TideChart.TideChartMethod parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static TideChart.TideChartMethod parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static TideChart.TideChartMethod parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static TideChart.TideChartMethod parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static TideChart.TideChartMethod parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static TideChart.TideChartMethod parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static TideChart.TideChartMethod parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static TideChart.TideChartMethod parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static TideChart.TideChartMethod parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static TideChart.TideChartMethod parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(TideChart.TideChartMethod prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code TideChartMethod}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:TideChartMethod)
-        TideChart.TideChartMethodOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return TideChart.internal_static_TideChartMethod_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return TideChart.internal_static_TideChartMethod_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                TideChart.TideChartMethod.class, TideChart.TideChartMethod.Builder.class);
-      }
-
-      // Construct using TideChart.TideChartMethod.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getInportsFieldBuilder();
-          getOutportsFieldBuilder();
-          getPropsFieldBuilder();
-        }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        id_ = "";
-
-        name_ = "";
-
-        extends_ = "";
-
-        script_ = "";
-
-        if (inportsBuilder_ == null) {
-          inports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          inportsBuilder_.clear();
-        }
-        if (outportsBuilder_ == null) {
-          outports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          outportsBuilder_.clear();
-        }
-        if (propsBuilder_ == null) {
-          props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          propsBuilder_.clear();
-        }
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return TideChart.internal_static_TideChartMethod_descriptor;
-      }
-
-      @java.lang.Override
-      public TideChart.TideChartMethod getDefaultInstanceForType() {
-        return TideChart.TideChartMethod.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public TideChart.TideChartMethod build() {
-        TideChart.TideChartMethod result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public TideChart.TideChartMethod buildPartial() {
-        TideChart.TideChartMethod result = new TideChart.TideChartMethod(this);
-        int from_bitField0_ = bitField0_;
-        result.id_ = id_;
-        result.name_ = name_;
-        result.extends_ = extends_;
-        result.script_ = script_;
-        if (inportsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            inports_ = java.util.Collections.unmodifiableList(inports_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.inports_ = inports_;
-        } else {
-          result.inports_ = inportsBuilder_.build();
-        }
-        if (outportsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            outports_ = java.util.Collections.unmodifiableList(outports_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.outports_ = outports_;
-        } else {
-          result.outports_ = outportsBuilder_.build();
-        }
-        if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.props_ = props_;
-        } else {
-          result.props_ = propsBuilder_.build();
-        }
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof TideChart.TideChartMethod) {
-          return mergeFrom((TideChart.TideChartMethod)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(TideChart.TideChartMethod other) {
-        if (other == TideChart.TideChartMethod.getDefaultInstance()) return this;
-        if (!other.getId().isEmpty()) {
-          id_ = other.id_;
-          onChanged();
-        }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          onChanged();
-        }
-        if (!other.getExtends().isEmpty()) {
-          extends_ = other.extends_;
-          onChanged();
-        }
-        if (!other.getScript().isEmpty()) {
-          script_ = other.script_;
-          onChanged();
-        }
-        if (inportsBuilder_ == null) {
-          if (!other.inports_.isEmpty()) {
-            if (inports_.isEmpty()) {
-              inports_ = other.inports_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureInportsIsMutable();
-              inports_.addAll(other.inports_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.inports_.isEmpty()) {
-            if (inportsBuilder_.isEmpty()) {
-              inportsBuilder_.dispose();
-              inportsBuilder_ = null;
-              inports_ = other.inports_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              inportsBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getInportsFieldBuilder() : null;
-            } else {
-              inportsBuilder_.addAllMessages(other.inports_);
-            }
-          }
-        }
-        if (outportsBuilder_ == null) {
-          if (!other.outports_.isEmpty()) {
-            if (outports_.isEmpty()) {
-              outports_ = other.outports_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureOutportsIsMutable();
-              outports_.addAll(other.outports_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.outports_.isEmpty()) {
-            if (outportsBuilder_.isEmpty()) {
-              outportsBuilder_.dispose();
-              outportsBuilder_ = null;
-              outports_ = other.outports_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              outportsBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getOutportsFieldBuilder() : null;
-            } else {
-              outportsBuilder_.addAllMessages(other.outports_);
-            }
-          }
-        }
-        if (propsBuilder_ == null) {
-          if (!other.props_.isEmpty()) {
-            if (props_.isEmpty()) {
-              props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensurePropsIsMutable();
-              props_.addAll(other.props_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.props_.isEmpty()) {
-            if (propsBuilder_.isEmpty()) {
-              propsBuilder_.dispose();
-              propsBuilder_ = null;
-              props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              propsBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getPropsFieldBuilder() : null;
-            } else {
-              propsBuilder_.addAllMessages(other.props_);
-            }
-          }
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        TideChart.TideChartMethod parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (TideChart.TideChartMethod) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      private java.lang.Object id_ = "";
-      /**
-       * <pre>
-       * unique id for the method definition
-       * </pre>
-       *
-       * <code>string id = 1;</code>
-       */
-      public java.lang.String getId() {
-        java.lang.Object ref = id_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          id_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * unique id for the method definition
-       * </pre>
-       *
-       * <code>string id = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getIdBytes() {
-        java.lang.Object ref = id_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          id_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * unique id for the method definition
-       * </pre>
-       *
-       * <code>string id = 1;</code>
-       */
-      public Builder setId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * unique id for the method definition
-       * </pre>
-       *
-       * <code>string id = 1;</code>
-       */
-      public Builder clearId() {
-        
-        id_ = getDefaultInstance().getId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * unique id for the method definition
-       * </pre>
-       *
-       * <code>string id = 1;</code>
-       */
-      public Builder setIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object name_ = "";
-      /**
-       * <pre>
-       * name of the method (unique to the library)
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          name_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * name of the method (unique to the library)
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * name of the method (unique to the library)
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        name_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * name of the method (unique to the library)
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       */
-      public Builder clearName() {
-        
-        name_ = getDefaultInstance().getName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * name of the method (unique to the library)
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        name_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object extends_ = "";
-      /**
-       * <pre>
-       * method extends (customizes) the implementation of another method
-       * </pre>
-       *
-       * <code>string extends = 3;</code>
-       */
-      public java.lang.String getExtends() {
-        java.lang.Object ref = extends_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          extends_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * method extends (customizes) the implementation of another method
-       * </pre>
-       *
-       * <code>string extends = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getExtendsBytes() {
-        java.lang.Object ref = extends_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          extends_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * method extends (customizes) the implementation of another method
-       * </pre>
-       *
-       * <code>string extends = 3;</code>
-       */
-      public Builder setExtends(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        extends_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * method extends (customizes) the implementation of another method
-       * </pre>
-       *
-       * <code>string extends = 3;</code>
-       */
-      public Builder clearExtends() {
-        
-        extends_ = getDefaultInstance().getExtends();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * method extends (customizes) the implementation of another method
-       * </pre>
-       *
-       * <code>string extends = 3;</code>
-       */
-      public Builder setExtendsBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        extends_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object script_ = "";
-      /**
-       * <pre>
-       * custom script that implements the node action for this method
-       * </pre>
-       *
-       * <code>string script = 4;</code>
-       */
-      public java.lang.String getScript() {
-        java.lang.Object ref = script_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          script_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * custom script that implements the node action for this method
-       * </pre>
-       *
-       * <code>string script = 4;</code>
-       */
-      public com.google.protobuf.ByteString
-          getScriptBytes() {
-        java.lang.Object ref = script_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          script_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * custom script that implements the node action for this method
-       * </pre>
-       *
-       * <code>string script = 4;</code>
-       */
-      public Builder setScript(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        script_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * custom script that implements the node action for this method
-       * </pre>
-       *
-       * <code>string script = 4;</code>
-       */
-      public Builder clearScript() {
-        
-        script_ = getDefaultInstance().getScript();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * custom script that implements the node action for this method
-       * </pre>
-       *
-       * <code>string script = 4;</code>
-       */
-      public Builder setScriptBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        script_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<TideChart.TideChartPort> inports_ =
-        java.util.Collections.emptyList();
-      private void ensureInportsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          inports_ = new java.util.ArrayList<TideChart.TideChartPort>(inports_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> inportsBuilder_;
-
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public java.util.List<TideChart.TideChartPort> getInportsList() {
-        if (inportsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(inports_);
-        } else {
-          return inportsBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public int getInportsCount() {
-        if (inportsBuilder_ == null) {
-          return inports_.size();
-        } else {
-          return inportsBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public TideChart.TideChartPort getInports(int index) {
-        if (inportsBuilder_ == null) {
-          return inports_.get(index);
-        } else {
-          return inportsBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder setInports(
-          int index, TideChart.TideChartPort value) {
-        if (inportsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInportsIsMutable();
-          inports_.set(index, value);
-          onChanged();
-        } else {
-          inportsBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder setInports(
-          int index, TideChart.TideChartPort.Builder builderForValue) {
-        if (inportsBuilder_ == null) {
-          ensureInportsIsMutable();
-          inports_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          inportsBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder addInports(TideChart.TideChartPort value) {
-        if (inportsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInportsIsMutable();
-          inports_.add(value);
-          onChanged();
-        } else {
-          inportsBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder addInports(
-          int index, TideChart.TideChartPort value) {
-        if (inportsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInportsIsMutable();
-          inports_.add(index, value);
-          onChanged();
-        } else {
-          inportsBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder addInports(
-          TideChart.TideChartPort.Builder builderForValue) {
-        if (inportsBuilder_ == null) {
-          ensureInportsIsMutable();
-          inports_.add(builderForValue.build());
-          onChanged();
-        } else {
-          inportsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder addInports(
-          int index, TideChart.TideChartPort.Builder builderForValue) {
-        if (inportsBuilder_ == null) {
-          ensureInportsIsMutable();
-          inports_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          inportsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder addAllInports(
-          java.lang.Iterable<? extends TideChart.TideChartPort> values) {
-        if (inportsBuilder_ == null) {
-          ensureInportsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, inports_);
-          onChanged();
-        } else {
-          inportsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder clearInports() {
-        if (inportsBuilder_ == null) {
-          inports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          inportsBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public Builder removeInports(int index) {
-        if (inportsBuilder_ == null) {
-          ensureInportsIsMutable();
-          inports_.remove(index);
-          onChanged();
-        } else {
-          inportsBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public TideChart.TideChartPort.Builder getInportsBuilder(
-          int index) {
-        return getInportsFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public TideChart.TideChartPortOrBuilder getInportsOrBuilder(
-          int index) {
-        if (inportsBuilder_ == null) {
-          return inports_.get(index);  } else {
-          return inportsBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-           getInportsOrBuilderList() {
-        if (inportsBuilder_ != null) {
-          return inportsBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(inports_);
-        }
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public TideChart.TideChartPort.Builder addInportsBuilder() {
-        return getInportsFieldBuilder().addBuilder(
-            TideChart.TideChartPort.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public TideChart.TideChartPort.Builder addInportsBuilder(
-          int index) {
-        return getInportsFieldBuilder().addBuilder(
-            index, TideChart.TideChartPort.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definition of inports for this method
-       * </pre>
-       *
-       * <code>repeated .TideChartPort inports = 5;</code>
-       */
-      public java.util.List<TideChart.TideChartPort.Builder> 
-           getInportsBuilderList() {
-        return getInportsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> 
-          getInportsFieldBuilder() {
-        if (inportsBuilder_ == null) {
-          inportsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
-                  inports_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          inports_ = null;
-        }
-        return inportsBuilder_;
-      }
-
-      private java.util.List<TideChart.TideChartPort> outports_ =
-        java.util.Collections.emptyList();
-      private void ensureOutportsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          outports_ = new java.util.ArrayList<TideChart.TideChartPort>(outports_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> outportsBuilder_;
-
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public java.util.List<TideChart.TideChartPort> getOutportsList() {
-        if (outportsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(outports_);
-        } else {
-          return outportsBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public int getOutportsCount() {
-        if (outportsBuilder_ == null) {
-          return outports_.size();
-        } else {
-          return outportsBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public TideChart.TideChartPort getOutports(int index) {
-        if (outportsBuilder_ == null) {
-          return outports_.get(index);
-        } else {
-          return outportsBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder setOutports(
-          int index, TideChart.TideChartPort value) {
-        if (outportsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOutportsIsMutable();
-          outports_.set(index, value);
-          onChanged();
-        } else {
-          outportsBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder setOutports(
-          int index, TideChart.TideChartPort.Builder builderForValue) {
-        if (outportsBuilder_ == null) {
-          ensureOutportsIsMutable();
-          outports_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          outportsBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder addOutports(TideChart.TideChartPort value) {
-        if (outportsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOutportsIsMutable();
-          outports_.add(value);
-          onChanged();
-        } else {
-          outportsBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder addOutports(
-          int index, TideChart.TideChartPort value) {
-        if (outportsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOutportsIsMutable();
-          outports_.add(index, value);
-          onChanged();
-        } else {
-          outportsBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder addOutports(
-          TideChart.TideChartPort.Builder builderForValue) {
-        if (outportsBuilder_ == null) {
-          ensureOutportsIsMutable();
-          outports_.add(builderForValue.build());
-          onChanged();
-        } else {
-          outportsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder addOutports(
-          int index, TideChart.TideChartPort.Builder builderForValue) {
-        if (outportsBuilder_ == null) {
-          ensureOutportsIsMutable();
-          outports_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          outportsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder addAllOutports(
-          java.lang.Iterable<? extends TideChart.TideChartPort> values) {
-        if (outportsBuilder_ == null) {
-          ensureOutportsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, outports_);
-          onChanged();
-        } else {
-          outportsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder clearOutports() {
-        if (outportsBuilder_ == null) {
-          outports_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          outportsBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public Builder removeOutports(int index) {
-        if (outportsBuilder_ == null) {
-          ensureOutportsIsMutable();
-          outports_.remove(index);
-          onChanged();
-        } else {
-          outportsBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public TideChart.TideChartPort.Builder getOutportsBuilder(
-          int index) {
-        return getOutportsFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public TideChart.TideChartPortOrBuilder getOutportsOrBuilder(
-          int index) {
-        if (outportsBuilder_ == null) {
-          return outports_.get(index);  } else {
-          return outportsBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-           getOutportsOrBuilderList() {
-        if (outportsBuilder_ != null) {
-          return outportsBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(outports_);
-        }
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public TideChart.TideChartPort.Builder addOutportsBuilder() {
-        return getOutportsFieldBuilder().addBuilder(
-            TideChart.TideChartPort.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public TideChart.TideChartPort.Builder addOutportsBuilder(
-          int index) {
-        return getOutportsFieldBuilder().addBuilder(
-            index, TideChart.TideChartPort.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definition of outports for this methid
-       * </pre>
-       *
-       * <code>repeated .TideChartPort outports = 6;</code>
-       */
-      public java.util.List<TideChart.TideChartPort.Builder> 
-           getOutportsBuilderList() {
-        return getOutportsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> 
-          getOutportsFieldBuilder() {
-        if (outportsBuilder_ == null) {
-          outportsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
-                  outports_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          outports_ = null;
-        }
-        return outportsBuilder_;
-      }
-
-      private java.util.List<TideChart.TideChartPort> props_ =
-        java.util.Collections.emptyList();
-      private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          props_ = new java.util.ArrayList<TideChart.TideChartPort>(props_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> propsBuilder_;
-
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public java.util.List<TideChart.TideChartPort> getPropsList() {
-        if (propsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(props_);
-        } else {
-          return propsBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public int getPropsCount() {
-        if (propsBuilder_ == null) {
-          return props_.size();
-        } else {
-          return propsBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public TideChart.TideChartPort getProps(int index) {
-        if (propsBuilder_ == null) {
-          return props_.get(index);
-        } else {
-          return propsBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder setProps(
-          int index, TideChart.TideChartPort value) {
-        if (propsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePropsIsMutable();
-          props_.set(index, value);
-          onChanged();
-        } else {
-          propsBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder setProps(
-          int index, TideChart.TideChartPort.Builder builderForValue) {
-        if (propsBuilder_ == null) {
-          ensurePropsIsMutable();
-          props_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          propsBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder addProps(TideChart.TideChartPort value) {
-        if (propsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePropsIsMutable();
-          props_.add(value);
-          onChanged();
-        } else {
-          propsBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder addProps(
-          int index, TideChart.TideChartPort value) {
-        if (propsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePropsIsMutable();
-          props_.add(index, value);
-          onChanged();
-        } else {
-          propsBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder addProps(
-          TideChart.TideChartPort.Builder builderForValue) {
-        if (propsBuilder_ == null) {
-          ensurePropsIsMutable();
-          props_.add(builderForValue.build());
-          onChanged();
-        } else {
-          propsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder addProps(
-          int index, TideChart.TideChartPort.Builder builderForValue) {
-        if (propsBuilder_ == null) {
-          ensurePropsIsMutable();
-          props_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          propsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder addAllProps(
-          java.lang.Iterable<? extends TideChart.TideChartPort> values) {
-        if (propsBuilder_ == null) {
-          ensurePropsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, props_);
-          onChanged();
-        } else {
-          propsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder clearProps() {
-        if (propsBuilder_ == null) {
-          props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          propsBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public Builder removeProps(int index) {
-        if (propsBuilder_ == null) {
-          ensurePropsIsMutable();
-          props_.remove(index);
-          onChanged();
-        } else {
-          propsBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public TideChart.TideChartPort.Builder getPropsBuilder(
-          int index) {
-        return getPropsFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public TideChart.TideChartPortOrBuilder getPropsOrBuilder(
-          int index) {
-        if (propsBuilder_ == null) {
-          return props_.get(index);  } else {
-          return propsBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public java.util.List<? extends TideChart.TideChartPortOrBuilder> 
-           getPropsOrBuilderList() {
-        if (propsBuilder_ != null) {
-          return propsBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(props_);
-        }
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public TideChart.TideChartPort.Builder addPropsBuilder() {
-        return getPropsFieldBuilder().addBuilder(
-            TideChart.TideChartPort.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public TideChart.TideChartPort.Builder addPropsBuilder(
-          int index) {
-        return getPropsFieldBuilder().addBuilder(
-            index, TideChart.TideChartPort.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definition of property values used by the method (uses port definition format)
-       * </pre>
-       *
-       * <code>repeated .TideChartPort props = 7;</code>
-       */
-      public java.util.List<TideChart.TideChartPort.Builder> 
-           getPropsBuilderList() {
-        return getPropsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder> 
-          getPropsFieldBuilder() {
-        if (propsBuilder_ == null) {
-          propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              TideChart.TideChartPort, TideChart.TideChartPort.Builder, TideChart.TideChartPortOrBuilder>(
-                  props_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          props_ = null;
-        }
-        return propsBuilder_;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:TideChartMethod)
-    }
-
-    // @@protoc_insertion_point(class_scope:TideChartMethod)
-    private static final TideChart.TideChartMethod DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new TideChart.TideChartMethod();
-    }
-
-    public static TideChart.TideChartMethod getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<TideChartMethod>
-        PARSER = new com.google.protobuf.AbstractParser<TideChartMethod>() {
-      @java.lang.Override
-      public TideChartMethod parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TideChartMethod(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<TideChartMethod> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<TideChartMethod> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public TideChart.TideChartMethod getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
   public interface TideChartSourceOrBuilder extends
       // @@protoc_insertion_point(interface_extends:TideChartSource)
       com.google.protobuf.MessageOrBuilder {
@@ -46993,18 +44334,18 @@ public final class TideChart {
      * date file version was modified
      * </pre>
      *
-     * <code>string modifieddDate = 5;</code>
+     * <code>string modifiedDate = 5;</code>
      */
-    java.lang.String getModifieddDate();
+    java.lang.String getModifiedDate();
     /**
      * <pre>
      * date file version was modified
      * </pre>
      *
-     * <code>string modifieddDate = 5;</code>
+     * <code>string modifiedDate = 5;</code>
      */
     com.google.protobuf.ByteString
-        getModifieddDateBytes();
+        getModifiedDateBytes();
 
     /**
      * <pre>
@@ -47078,15 +44419,8 @@ public final class TideChart {
       id_ = "";
       name_ = "";
       path_ = "";
-      modifieddDate_ = "";
+      modifiedDate_ = "";
       modifiedBy_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartSource();
     }
 
     @java.lang.Override
@@ -47102,6 +44436,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -47133,7 +44468,7 @@ public final class TideChart {
             case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              modifieddDate_ = s;
+              modifiedDate_ = s;
               break;
             }
             case 50: {
@@ -47350,24 +44685,24 @@ public final class TideChart {
       }
     }
 
-    public static final int MODIFIEDDDATE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object modifieddDate_;
+    public static final int MODIFIEDDATE_FIELD_NUMBER = 5;
+    private volatile java.lang.Object modifiedDate_;
     /**
      * <pre>
      * date file version was modified
      * </pre>
      *
-     * <code>string modifieddDate = 5;</code>
+     * <code>string modifiedDate = 5;</code>
      */
-    public java.lang.String getModifieddDate() {
-      java.lang.Object ref = modifieddDate_;
+    public java.lang.String getModifiedDate() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        modifieddDate_ = s;
+        modifiedDate_ = s;
         return s;
       }
     }
@@ -47376,16 +44711,16 @@ public final class TideChart {
      * date file version was modified
      * </pre>
      *
-     * <code>string modifieddDate = 5;</code>
+     * <code>string modifiedDate = 5;</code>
      */
     public com.google.protobuf.ByteString
-        getModifieddDateBytes() {
-      java.lang.Object ref = modifieddDate_;
+        getModifiedDateBytes() {
+      java.lang.Object ref = modifiedDate_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        modifieddDate_ = b;
+        modifiedDate_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -47559,8 +44894,8 @@ public final class TideChart {
       if (!getPathBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, path_);
       }
-      if (!getModifieddDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, modifieddDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, modifiedDate_);
       }
       if (!getModifiedByBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, modifiedBy_);
@@ -47589,8 +44924,8 @@ public final class TideChart {
       if (!getPathBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, path_);
       }
-      if (!getModifieddDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, modifieddDate_);
+      if (!getModifiedDateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, modifiedDate_);
       }
       if (!getModifiedByBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, modifiedBy_);
@@ -47622,8 +44957,8 @@ public final class TideChart {
           .equals(other.getName())) return false;
       if (!getPath()
           .equals(other.getPath())) return false;
-      if (!getModifieddDate()
-          .equals(other.getModifieddDate())) return false;
+      if (!getModifiedDate()
+          .equals(other.getModifiedDate())) return false;
       if (!getModifiedBy()
           .equals(other.getModifiedBy())) return false;
       if (!getContentCase().equals(other.getContentCase())) return false;
@@ -47656,8 +44991,8 @@ public final class TideChart {
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + PATH_FIELD_NUMBER;
       hash = (53 * hash) + getPath().hashCode();
-      hash = (37 * hash) + MODIFIEDDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getModifieddDate().hashCode();
+      hash = (37 * hash) + MODIFIEDDATE_FIELD_NUMBER;
+      hash = (53 * hash) + getModifiedDate().hashCode();
       hash = (37 * hash) + MODIFIEDBY_FIELD_NUMBER;
       hash = (53 * hash) + getModifiedBy().hashCode();
       switch (contentCase_) {
@@ -47811,7 +45146,7 @@ public final class TideChart {
 
         path_ = "";
 
-        modifieddDate_ = "";
+        modifiedDate_ = "";
 
         modifiedBy_ = "";
 
@@ -47846,7 +45181,7 @@ public final class TideChart {
         result.id_ = id_;
         result.name_ = name_;
         result.path_ = path_;
-        result.modifieddDate_ = modifieddDate_;
+        result.modifiedDate_ = modifiedDate_;
         result.modifiedBy_ = modifiedBy_;
         if (contentCase_ == 7) {
           result.content_ = content_;
@@ -47915,8 +45250,8 @@ public final class TideChart {
           path_ = other.path_;
           onChanged();
         }
-        if (!other.getModifieddDate().isEmpty()) {
-          modifieddDate_ = other.modifieddDate_;
+        if (!other.getModifiedDate().isEmpty()) {
+          modifiedDate_ = other.modifiedDate_;
           onChanged();
         }
         if (!other.getModifiedBy().isEmpty()) {
@@ -48251,21 +45586,21 @@ public final class TideChart {
         return this;
       }
 
-      private java.lang.Object modifieddDate_ = "";
+      private java.lang.Object modifiedDate_ = "";
       /**
        * <pre>
        * date file version was modified
        * </pre>
        *
-       * <code>string modifieddDate = 5;</code>
+       * <code>string modifiedDate = 5;</code>
        */
-      public java.lang.String getModifieddDate() {
-        java.lang.Object ref = modifieddDate_;
+      public java.lang.String getModifiedDate() {
+        java.lang.Object ref = modifiedDate_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          modifieddDate_ = s;
+          modifiedDate_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
@@ -48276,16 +45611,16 @@ public final class TideChart {
        * date file version was modified
        * </pre>
        *
-       * <code>string modifieddDate = 5;</code>
+       * <code>string modifiedDate = 5;</code>
        */
       public com.google.protobuf.ByteString
-          getModifieddDateBytes() {
-        java.lang.Object ref = modifieddDate_;
+          getModifiedDateBytes() {
+        java.lang.Object ref = modifiedDate_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          modifieddDate_ = b;
+          modifiedDate_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
@@ -48296,15 +45631,15 @@ public final class TideChart {
        * date file version was modified
        * </pre>
        *
-       * <code>string modifieddDate = 5;</code>
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setModifieddDate(
+      public Builder setModifiedDate(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        modifieddDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
@@ -48313,11 +45648,11 @@ public final class TideChart {
        * date file version was modified
        * </pre>
        *
-       * <code>string modifieddDate = 5;</code>
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder clearModifieddDate() {
+      public Builder clearModifiedDate() {
         
-        modifieddDate_ = getDefaultInstance().getModifieddDate();
+        modifiedDate_ = getDefaultInstance().getModifiedDate();
         onChanged();
         return this;
       }
@@ -48326,16 +45661,16 @@ public final class TideChart {
        * date file version was modified
        * </pre>
        *
-       * <code>string modifieddDate = 5;</code>
+       * <code>string modifiedDate = 5;</code>
        */
-      public Builder setModifieddDateBytes(
+      public Builder setModifiedDateBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        modifieddDate_ = value;
+        modifiedDate_ = value;
         onChanged();
         return this;
       }
@@ -48744,7 +46079,7 @@ public final class TideChart {
      * repository containing referenced files
      * </pre>
      *
-     * <code>string origin = 4;</code>
+     * <code>string origin = 10;</code>
      */
     java.lang.String getOrigin();
     /**
@@ -48752,7 +46087,7 @@ public final class TideChart {
      * repository containing referenced files
      * </pre>
      *
-     * <code>string origin = 4;</code>
+     * <code>string origin = 10;</code>
      */
     com.google.protobuf.ByteString
         getOriginBytes();
@@ -48762,7 +46097,7 @@ public final class TideChart {
      * branch containing referenced files
      * </pre>
      *
-     * <code>string branch = 5;</code>
+     * <code>string branch = 11;</code>
      */
     java.lang.String getBranch();
     /**
@@ -48770,7 +46105,7 @@ public final class TideChart {
      * branch containing referenced files
      * </pre>
      *
-     * <code>string branch = 5;</code>
+     * <code>string branch = 11;</code>
      */
     com.google.protobuf.ByteString
         getBranchBytes();
@@ -48780,7 +46115,7 @@ public final class TideChart {
      * root path for files in the library
      * </pre>
      *
-     * <code>string path = 6;</code>
+     * <code>string path = 12;</code>
      */
     java.lang.String getPath();
     /**
@@ -48788,97 +46123,122 @@ public final class TideChart {
      * root path for files in the library
      * </pre>
      *
-     * <code>string path = 6;</code>
+     * <code>string path = 12;</code>
      */
     com.google.protobuf.ByteString
         getPathBytes();
 
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     java.util.List<TideChart.TideChartSource> 
         getFilesList();
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     TideChart.TideChartSource getFiles(int index);
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     int getFilesCount();
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     java.util.List<? extends TideChart.TideChartSourceOrBuilder> 
         getFilesOrBuilderList();
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     TideChart.TideChartSourceOrBuilder getFilesOrBuilder(
         int index);
 
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * a set of graphs (sub-library) and nodes (methods) that define method templates
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>.TideChartData methods = 15;</code>
      */
-    java.util.List<TideChart.TideChartMethod> 
-        getMethodsList();
+    boolean hasMethods();
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * a set of graphs (sub-library) and nodes (methods) that define method templates
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>.TideChartData methods = 15;</code>
      */
-    TideChart.TideChartMethod getMethods(int index);
+    TideChart.TideChartData getMethods();
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * a set of graphs (sub-library) and nodes (methods) that define method templates
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>.TideChartData methods = 15;</code>
      */
-    int getMethodsCount();
+    TideChart.TideChartDataOrBuilder getMethodsOrBuilder();
+
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * other settings associated with the library
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>repeated .TideChartProperty settings = 16;</code>
      */
-    java.util.List<? extends TideChart.TideChartMethodOrBuilder> 
-        getMethodsOrBuilderList();
+    java.util.List<TideChart.TideChartProperty> 
+        getSettingsList();
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * other settings associated with the library
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>repeated .TideChartProperty settings = 16;</code>
      */
-    TideChart.TideChartMethodOrBuilder getMethodsOrBuilder(
+    TideChart.TideChartProperty getSettings(int index);
+    /**
+     * <pre>
+     * other settings associated with the library
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 16;</code>
+     */
+    int getSettingsCount();
+    /**
+     * <pre>
+     * other settings associated with the library
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 16;</code>
+     */
+    java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList();
+    /**
+     * <pre>
+     * other settings associated with the library
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 16;</code>
+     */
+    TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
         int index);
   }
   /**
@@ -48901,14 +46261,7 @@ public final class TideChart {
       branch_ = "";
       path_ = "";
       files_ = java.util.Collections.emptyList();
-      methods_ = java.util.Collections.emptyList();
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartLibrary();
+      settings_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -48953,40 +46306,53 @@ public final class TideChart {
               title_ = s;
               break;
             }
-            case 34: {
+            case 82: {
               java.lang.String s = input.readStringRequireUtf8();
 
               origin_ = s;
               break;
             }
-            case 42: {
+            case 90: {
               java.lang.String s = input.readStringRequireUtf8();
 
               branch_ = s;
               break;
             }
-            case 50: {
+            case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
               path_ = s;
               break;
             }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
                 files_ = new java.util.ArrayList<TideChart.TideChartSource>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000040;
               }
               files_.add(
                   input.readMessage(TideChart.TideChartSource.parser(), extensionRegistry));
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                methods_ = new java.util.ArrayList<TideChart.TideChartMethod>();
-                mutable_bitField0_ |= 0x00000002;
+            case 122: {
+              TideChart.TideChartData.Builder subBuilder = null;
+              if (methods_ != null) {
+                subBuilder = methods_.toBuilder();
               }
-              methods_.add(
-                  input.readMessage(TideChart.TideChartMethod.parser(), extensionRegistry));
+              methods_ = input.readMessage(TideChart.TideChartData.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(methods_);
+                methods_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 130: {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+                settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              settings_.add(
+                  input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -49004,11 +46370,11 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
           files_ = java.util.Collections.unmodifiableList(files_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          methods_ = java.util.Collections.unmodifiableList(methods_);
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -49027,6 +46393,7 @@ public final class TideChart {
               TideChart.TideChartLibrary.class, TideChart.TideChartLibrary.Builder.class);
     }
 
+    private int bitField0_;
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
@@ -49153,14 +46520,14 @@ public final class TideChart {
       }
     }
 
-    public static final int ORIGIN_FIELD_NUMBER = 4;
+    public static final int ORIGIN_FIELD_NUMBER = 10;
     private volatile java.lang.Object origin_;
     /**
      * <pre>
      * repository containing referenced files
      * </pre>
      *
-     * <code>string origin = 4;</code>
+     * <code>string origin = 10;</code>
      */
     public java.lang.String getOrigin() {
       java.lang.Object ref = origin_;
@@ -49179,7 +46546,7 @@ public final class TideChart {
      * repository containing referenced files
      * </pre>
      *
-     * <code>string origin = 4;</code>
+     * <code>string origin = 10;</code>
      */
     public com.google.protobuf.ByteString
         getOriginBytes() {
@@ -49195,14 +46562,14 @@ public final class TideChart {
       }
     }
 
-    public static final int BRANCH_FIELD_NUMBER = 5;
+    public static final int BRANCH_FIELD_NUMBER = 11;
     private volatile java.lang.Object branch_;
     /**
      * <pre>
      * branch containing referenced files
      * </pre>
      *
-     * <code>string branch = 5;</code>
+     * <code>string branch = 11;</code>
      */
     public java.lang.String getBranch() {
       java.lang.Object ref = branch_;
@@ -49221,7 +46588,7 @@ public final class TideChart {
      * branch containing referenced files
      * </pre>
      *
-     * <code>string branch = 5;</code>
+     * <code>string branch = 11;</code>
      */
     public com.google.protobuf.ByteString
         getBranchBytes() {
@@ -49237,14 +46604,14 @@ public final class TideChart {
       }
     }
 
-    public static final int PATH_FIELD_NUMBER = 6;
+    public static final int PATH_FIELD_NUMBER = 12;
     private volatile java.lang.Object path_;
     /**
      * <pre>
      * root path for files in the library
      * </pre>
      *
-     * <code>string path = 6;</code>
+     * <code>string path = 12;</code>
      */
     public java.lang.String getPath() {
       java.lang.Object ref = path_;
@@ -49263,7 +46630,7 @@ public final class TideChart {
      * root path for files in the library
      * </pre>
      *
-     * <code>string path = 6;</code>
+     * <code>string path = 12;</code>
      */
     public com.google.protobuf.ByteString
         getPathBytes() {
@@ -49279,24 +46646,24 @@ public final class TideChart {
       }
     }
 
-    public static final int FILES_FIELD_NUMBER = 7;
+    public static final int FILES_FIELD_NUMBER = 14;
     private java.util.List<TideChart.TideChartSource> files_;
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     public java.util.List<TideChart.TideChartSource> getFilesList() {
       return files_;
     }
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     public java.util.List<? extends TideChart.TideChartSourceOrBuilder> 
         getFilesOrBuilderList() {
@@ -49304,89 +46671,122 @@ public final class TideChart {
     }
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     public int getFilesCount() {
       return files_.size();
     }
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     public TideChart.TideChartSource getFiles(int index) {
       return files_.get(index);
     }
     /**
      * <pre>
-     * files included in the library
+     * files that implement the method actions of the library
      * </pre>
      *
-     * <code>repeated .TideChartSource files = 7;</code>
+     * <code>repeated .TideChartSource files = 14;</code>
      */
     public TideChart.TideChartSourceOrBuilder getFilesOrBuilder(
         int index) {
       return files_.get(index);
     }
 
-    public static final int METHODS_FIELD_NUMBER = 8;
-    private java.util.List<TideChart.TideChartMethod> methods_;
+    public static final int METHODS_FIELD_NUMBER = 15;
+    private TideChart.TideChartData methods_;
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * a set of graphs (sub-library) and nodes (methods) that define method templates
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>.TideChartData methods = 15;</code>
      */
-    public java.util.List<TideChart.TideChartMethod> getMethodsList() {
-      return methods_;
+    public boolean hasMethods() {
+      return methods_ != null;
     }
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * a set of graphs (sub-library) and nodes (methods) that define method templates
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>.TideChartData methods = 15;</code>
      */
-    public java.util.List<? extends TideChart.TideChartMethodOrBuilder> 
-        getMethodsOrBuilderList() {
-      return methods_;
+    public TideChart.TideChartData getMethods() {
+      return methods_ == null ? TideChart.TideChartData.getDefaultInstance() : methods_;
     }
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * a set of graphs (sub-library) and nodes (methods) that define method templates
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>.TideChartData methods = 15;</code>
      */
-    public int getMethodsCount() {
-      return methods_.size();
+    public TideChart.TideChartDataOrBuilder getMethodsOrBuilder() {
+      return getMethods();
+    }
+
+    public static final int SETTINGS_FIELD_NUMBER = 16;
+    private java.util.List<TideChart.TideChartProperty> settings_;
+    /**
+     * <pre>
+     * other settings associated with the library
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 16;</code>
+     */
+    public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+      return settings_;
     }
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * other settings associated with the library
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>repeated .TideChartProperty settings = 16;</code>
      */
-    public TideChart.TideChartMethod getMethods(int index) {
-      return methods_.get(index);
+    public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+        getSettingsOrBuilderList() {
+      return settings_;
     }
     /**
      * <pre>
-     * definitions for methods implemented by the library
+     * other settings associated with the library
      * </pre>
      *
-     * <code>repeated .TideChartMethod methods = 8;</code>
+     * <code>repeated .TideChartProperty settings = 16;</code>
      */
-    public TideChart.TideChartMethodOrBuilder getMethodsOrBuilder(
+    public int getSettingsCount() {
+      return settings_.size();
+    }
+    /**
+     * <pre>
+     * other settings associated with the library
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 16;</code>
+     */
+    public TideChart.TideChartProperty getSettings(int index) {
+      return settings_.get(index);
+    }
+    /**
+     * <pre>
+     * other settings associated with the library
+     * </pre>
+     *
+     * <code>repeated .TideChartProperty settings = 16;</code>
+     */
+    public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
         int index) {
-      return methods_.get(index);
+      return settings_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -49413,19 +46813,22 @@ public final class TideChart {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, title_);
       }
       if (!getOriginBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, origin_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, origin_);
       }
       if (!getBranchBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, branch_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, branch_);
       }
       if (!getPathBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, path_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, path_);
       }
       for (int i = 0; i < files_.size(); i++) {
-        output.writeMessage(7, files_.get(i));
+        output.writeMessage(14, files_.get(i));
       }
-      for (int i = 0; i < methods_.size(); i++) {
-        output.writeMessage(8, methods_.get(i));
+      if (methods_ != null) {
+        output.writeMessage(15, getMethods());
+      }
+      for (int i = 0; i < settings_.size(); i++) {
+        output.writeMessage(16, settings_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -49446,21 +46849,25 @@ public final class TideChart {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, title_);
       }
       if (!getOriginBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, origin_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, origin_);
       }
       if (!getBranchBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, branch_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, branch_);
       }
       if (!getPathBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, path_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, path_);
       }
       for (int i = 0; i < files_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, files_.get(i));
+          .computeMessageSize(14, files_.get(i));
       }
-      for (int i = 0; i < methods_.size(); i++) {
+      if (methods_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, methods_.get(i));
+          .computeMessageSize(15, getMethods());
+      }
+      for (int i = 0; i < settings_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(16, settings_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -49491,8 +46898,13 @@ public final class TideChart {
           .equals(other.getPath())) return false;
       if (!getFilesList()
           .equals(other.getFilesList())) return false;
-      if (!getMethodsList()
-          .equals(other.getMethodsList())) return false;
+      if (hasMethods() != other.hasMethods()) return false;
+      if (hasMethods()) {
+        if (!getMethods()
+            .equals(other.getMethods())) return false;
+      }
+      if (!getSettingsList()
+          .equals(other.getSettingsList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -49520,9 +46932,13 @@ public final class TideChart {
         hash = (37 * hash) + FILES_FIELD_NUMBER;
         hash = (53 * hash) + getFilesList().hashCode();
       }
-      if (getMethodsCount() > 0) {
+      if (hasMethods()) {
         hash = (37 * hash) + METHODS_FIELD_NUMBER;
-        hash = (53 * hash) + getMethodsList().hashCode();
+        hash = (53 * hash) + getMethods().hashCode();
+      }
+      if (getSettingsCount() > 0) {
+        hash = (37 * hash) + SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getSettingsList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -49653,7 +47069,7 @@ public final class TideChart {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getFilesFieldBuilder();
-          getMethodsFieldBuilder();
+          getSettingsFieldBuilder();
         }
       }
       @java.lang.Override
@@ -49673,15 +47089,21 @@ public final class TideChart {
 
         if (filesBuilder_ == null) {
           files_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000040);
         } else {
           filesBuilder_.clear();
         }
         if (methodsBuilder_ == null) {
-          methods_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          methods_ = null;
         } else {
-          methodsBuilder_.clear();
+          methods_ = null;
+          methodsBuilder_ = null;
+        }
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        } else {
+          settingsBuilder_.clear();
         }
         return this;
       }
@@ -49710,6 +47132,7 @@ public final class TideChart {
       public TideChart.TideChartLibrary buildPartial() {
         TideChart.TideChartLibrary result = new TideChart.TideChartLibrary(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.id_ = id_;
         result.name_ = name_;
         result.title_ = title_;
@@ -49717,23 +47140,29 @@ public final class TideChart {
         result.branch_ = branch_;
         result.path_ = path_;
         if (filesBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000040) != 0)) {
             files_ = java.util.Collections.unmodifiableList(files_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000040);
           }
           result.files_ = files_;
         } else {
           result.files_ = filesBuilder_.build();
         }
         if (methodsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            methods_ = java.util.Collections.unmodifiableList(methods_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
           result.methods_ = methods_;
         } else {
           result.methods_ = methodsBuilder_.build();
         }
+        if (settingsBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) != 0)) {
+            settings_ = java.util.Collections.unmodifiableList(settings_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.settings_ = settings_;
+        } else {
+          result.settings_ = settingsBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -49810,7 +47239,7 @@ public final class TideChart {
           if (!other.files_.isEmpty()) {
             if (files_.isEmpty()) {
               files_ = other.files_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000040);
             } else {
               ensureFilesIsMutable();
               files_.addAll(other.files_);
@@ -49823,7 +47252,7 @@ public final class TideChart {
               filesBuilder_.dispose();
               filesBuilder_ = null;
               files_ = other.files_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000040);
               filesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getFilesFieldBuilder() : null;
@@ -49832,29 +47261,32 @@ public final class TideChart {
             }
           }
         }
-        if (methodsBuilder_ == null) {
-          if (!other.methods_.isEmpty()) {
-            if (methods_.isEmpty()) {
-              methods_ = other.methods_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+        if (other.hasMethods()) {
+          mergeMethods(other.getMethods());
+        }
+        if (settingsBuilder_ == null) {
+          if (!other.settings_.isEmpty()) {
+            if (settings_.isEmpty()) {
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000100);
             } else {
-              ensureMethodsIsMutable();
-              methods_.addAll(other.methods_);
+              ensureSettingsIsMutable();
+              settings_.addAll(other.settings_);
             }
             onChanged();
           }
         } else {
-          if (!other.methods_.isEmpty()) {
-            if (methodsBuilder_.isEmpty()) {
-              methodsBuilder_.dispose();
-              methodsBuilder_ = null;
-              methods_ = other.methods_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              methodsBuilder_ = 
+          if (!other.settings_.isEmpty()) {
+            if (settingsBuilder_.isEmpty()) {
+              settingsBuilder_.dispose();
+              settingsBuilder_ = null;
+              settings_ = other.settings_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              settingsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMethodsFieldBuilder() : null;
+                   getSettingsFieldBuilder() : null;
             } else {
-              methodsBuilder_.addAllMessages(other.methods_);
+              settingsBuilder_.addAllMessages(other.settings_);
             }
           }
         }
@@ -50161,7 +47593,7 @@ public final class TideChart {
        * repository containing referenced files
        * </pre>
        *
-       * <code>string origin = 4;</code>
+       * <code>string origin = 10;</code>
        */
       public java.lang.String getOrigin() {
         java.lang.Object ref = origin_;
@@ -50180,7 +47612,7 @@ public final class TideChart {
        * repository containing referenced files
        * </pre>
        *
-       * <code>string origin = 4;</code>
+       * <code>string origin = 10;</code>
        */
       public com.google.protobuf.ByteString
           getOriginBytes() {
@@ -50200,7 +47632,7 @@ public final class TideChart {
        * repository containing referenced files
        * </pre>
        *
-       * <code>string origin = 4;</code>
+       * <code>string origin = 10;</code>
        */
       public Builder setOrigin(
           java.lang.String value) {
@@ -50217,7 +47649,7 @@ public final class TideChart {
        * repository containing referenced files
        * </pre>
        *
-       * <code>string origin = 4;</code>
+       * <code>string origin = 10;</code>
        */
       public Builder clearOrigin() {
         
@@ -50230,7 +47662,7 @@ public final class TideChart {
        * repository containing referenced files
        * </pre>
        *
-       * <code>string origin = 4;</code>
+       * <code>string origin = 10;</code>
        */
       public Builder setOriginBytes(
           com.google.protobuf.ByteString value) {
@@ -50250,7 +47682,7 @@ public final class TideChart {
        * branch containing referenced files
        * </pre>
        *
-       * <code>string branch = 5;</code>
+       * <code>string branch = 11;</code>
        */
       public java.lang.String getBranch() {
         java.lang.Object ref = branch_;
@@ -50269,7 +47701,7 @@ public final class TideChart {
        * branch containing referenced files
        * </pre>
        *
-       * <code>string branch = 5;</code>
+       * <code>string branch = 11;</code>
        */
       public com.google.protobuf.ByteString
           getBranchBytes() {
@@ -50289,7 +47721,7 @@ public final class TideChart {
        * branch containing referenced files
        * </pre>
        *
-       * <code>string branch = 5;</code>
+       * <code>string branch = 11;</code>
        */
       public Builder setBranch(
           java.lang.String value) {
@@ -50306,7 +47738,7 @@ public final class TideChart {
        * branch containing referenced files
        * </pre>
        *
-       * <code>string branch = 5;</code>
+       * <code>string branch = 11;</code>
        */
       public Builder clearBranch() {
         
@@ -50319,7 +47751,7 @@ public final class TideChart {
        * branch containing referenced files
        * </pre>
        *
-       * <code>string branch = 5;</code>
+       * <code>string branch = 11;</code>
        */
       public Builder setBranchBytes(
           com.google.protobuf.ByteString value) {
@@ -50339,7 +47771,7 @@ public final class TideChart {
        * root path for files in the library
        * </pre>
        *
-       * <code>string path = 6;</code>
+       * <code>string path = 12;</code>
        */
       public java.lang.String getPath() {
         java.lang.Object ref = path_;
@@ -50358,7 +47790,7 @@ public final class TideChart {
        * root path for files in the library
        * </pre>
        *
-       * <code>string path = 6;</code>
+       * <code>string path = 12;</code>
        */
       public com.google.protobuf.ByteString
           getPathBytes() {
@@ -50378,7 +47810,7 @@ public final class TideChart {
        * root path for files in the library
        * </pre>
        *
-       * <code>string path = 6;</code>
+       * <code>string path = 12;</code>
        */
       public Builder setPath(
           java.lang.String value) {
@@ -50395,7 +47827,7 @@ public final class TideChart {
        * root path for files in the library
        * </pre>
        *
-       * <code>string path = 6;</code>
+       * <code>string path = 12;</code>
        */
       public Builder clearPath() {
         
@@ -50408,7 +47840,7 @@ public final class TideChart {
        * root path for files in the library
        * </pre>
        *
-       * <code>string path = 6;</code>
+       * <code>string path = 12;</code>
        */
       public Builder setPathBytes(
           com.google.protobuf.ByteString value) {
@@ -50425,9 +47857,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartSource> files_ =
         java.util.Collections.emptyList();
       private void ensureFilesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000040) != 0)) {
           files_ = new java.util.ArrayList<TideChart.TideChartSource>(files_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000040;
          }
       }
 
@@ -50436,10 +47868,10 @@ public final class TideChart {
 
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public java.util.List<TideChart.TideChartSource> getFilesList() {
         if (filesBuilder_ == null) {
@@ -50450,10 +47882,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public int getFilesCount() {
         if (filesBuilder_ == null) {
@@ -50464,10 +47896,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public TideChart.TideChartSource getFiles(int index) {
         if (filesBuilder_ == null) {
@@ -50478,10 +47910,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder setFiles(
           int index, TideChart.TideChartSource value) {
@@ -50499,10 +47931,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder setFiles(
           int index, TideChart.TideChartSource.Builder builderForValue) {
@@ -50517,10 +47949,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder addFiles(TideChart.TideChartSource value) {
         if (filesBuilder_ == null) {
@@ -50537,10 +47969,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder addFiles(
           int index, TideChart.TideChartSource value) {
@@ -50558,10 +47990,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder addFiles(
           TideChart.TideChartSource.Builder builderForValue) {
@@ -50576,10 +48008,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder addFiles(
           int index, TideChart.TideChartSource.Builder builderForValue) {
@@ -50594,10 +48026,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder addAllFiles(
           java.lang.Iterable<? extends TideChart.TideChartSource> values) {
@@ -50613,15 +48045,15 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder clearFiles() {
         if (filesBuilder_ == null) {
           files_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000040);
           onChanged();
         } else {
           filesBuilder_.clear();
@@ -50630,10 +48062,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public Builder removeFiles(int index) {
         if (filesBuilder_ == null) {
@@ -50647,10 +48079,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public TideChart.TideChartSource.Builder getFilesBuilder(
           int index) {
@@ -50658,10 +48090,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public TideChart.TideChartSourceOrBuilder getFilesOrBuilder(
           int index) {
@@ -50672,10 +48104,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public java.util.List<? extends TideChart.TideChartSourceOrBuilder> 
            getFilesOrBuilderList() {
@@ -50687,10 +48119,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public TideChart.TideChartSource.Builder addFilesBuilder() {
         return getFilesFieldBuilder().addBuilder(
@@ -50698,10 +48130,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public TideChart.TideChartSource.Builder addFilesBuilder(
           int index) {
@@ -50710,10 +48142,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * files included in the library
+       * files that implement the method actions of the library
        * </pre>
        *
-       * <code>repeated .TideChartSource files = 7;</code>
+       * <code>repeated .TideChartSource files = 14;</code>
        */
       public java.util.List<TideChart.TideChartSource.Builder> 
            getFilesBuilderList() {
@@ -50726,7 +48158,7 @@ public final class TideChart {
           filesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartSource, TideChart.TideChartSource.Builder, TideChart.TideChartSourceOrBuilder>(
                   files_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
                   isClean());
           files_ = null;
@@ -50734,316 +48166,469 @@ public final class TideChart {
         return filesBuilder_;
       }
 
-      private java.util.List<TideChart.TideChartMethod> methods_ =
-        java.util.Collections.emptyList();
-      private void ensureMethodsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          methods_ = new java.util.ArrayList<TideChart.TideChartMethod>(methods_);
-          bitField0_ |= 0x00000002;
-         }
+      private TideChart.TideChartData methods_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder> methodsBuilder_;
+      /**
+       * <pre>
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * </pre>
+       *
+       * <code>.TideChartData methods = 15;</code>
+       */
+      public boolean hasMethods() {
+        return methodsBuilder_ != null || methods_ != null;
       }
+      /**
+       * <pre>
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * </pre>
+       *
+       * <code>.TideChartData methods = 15;</code>
+       */
+      public TideChart.TideChartData getMethods() {
+        if (methodsBuilder_ == null) {
+          return methods_ == null ? TideChart.TideChartData.getDefaultInstance() : methods_;
+        } else {
+          return methodsBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * </pre>
+       *
+       * <code>.TideChartData methods = 15;</code>
+       */
+      public Builder setMethods(TideChart.TideChartData value) {
+        if (methodsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          methods_ = value;
+          onChanged();
+        } else {
+          methodsBuilder_.setMessage(value);
+        }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartMethod, TideChart.TideChartMethod.Builder, TideChart.TideChartMethodOrBuilder> methodsBuilder_;
-
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public java.util.List<TideChart.TideChartMethod> getMethodsList() {
-        if (methodsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(methods_);
-        } else {
-          return methodsBuilder_.getMessageList();
-        }
+        return this;
       }
       /**
        * <pre>
-       * definitions for methods implemented by the library
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
        * </pre>
        *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public int getMethodsCount() {
-        if (methodsBuilder_ == null) {
-          return methods_.size();
-        } else {
-          return methodsBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public TideChart.TideChartMethod getMethods(int index) {
-        if (methodsBuilder_ == null) {
-          return methods_.get(index);
-        } else {
-          return methodsBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
+       * <code>.TideChartData methods = 15;</code>
        */
       public Builder setMethods(
-          int index, TideChart.TideChartMethod value) {
+          TideChart.TideChartData.Builder builderForValue) {
         if (methodsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
+          methods_ = builderForValue.build();
+          onChanged();
+        } else {
+          methodsBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * </pre>
+       *
+       * <code>.TideChartData methods = 15;</code>
+       */
+      public Builder mergeMethods(TideChart.TideChartData value) {
+        if (methodsBuilder_ == null) {
+          if (methods_ != null) {
+            methods_ =
+              TideChart.TideChartData.newBuilder(methods_).mergeFrom(value).buildPartial();
+          } else {
+            methods_ = value;
           }
-          ensureMethodsIsMutable();
-          methods_.set(index, value);
           onChanged();
         } else {
-          methodsBuilder_.setMessage(index, value);
+          methodsBuilder_.mergeFrom(value);
         }
+
         return this;
       }
       /**
        * <pre>
-       * definitions for methods implemented by the library
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
        * </pre>
        *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public Builder setMethods(
-          int index, TideChart.TideChartMethod.Builder builderForValue) {
-        if (methodsBuilder_ == null) {
-          ensureMethodsIsMutable();
-          methods_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          methodsBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public Builder addMethods(TideChart.TideChartMethod value) {
-        if (methodsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMethodsIsMutable();
-          methods_.add(value);
-          onChanged();
-        } else {
-          methodsBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public Builder addMethods(
-          int index, TideChart.TideChartMethod value) {
-        if (methodsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMethodsIsMutable();
-          methods_.add(index, value);
-          onChanged();
-        } else {
-          methodsBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public Builder addMethods(
-          TideChart.TideChartMethod.Builder builderForValue) {
-        if (methodsBuilder_ == null) {
-          ensureMethodsIsMutable();
-          methods_.add(builderForValue.build());
-          onChanged();
-        } else {
-          methodsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public Builder addMethods(
-          int index, TideChart.TideChartMethod.Builder builderForValue) {
-        if (methodsBuilder_ == null) {
-          ensureMethodsIsMutable();
-          methods_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          methodsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public Builder addAllMethods(
-          java.lang.Iterable<? extends TideChart.TideChartMethod> values) {
-        if (methodsBuilder_ == null) {
-          ensureMethodsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, methods_);
-          onChanged();
-        } else {
-          methodsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
+       * <code>.TideChartData methods = 15;</code>
        */
       public Builder clearMethods() {
         if (methodsBuilder_ == null) {
-          methods_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          methods_ = null;
           onChanged();
         } else {
-          methodsBuilder_.clear();
+          methods_ = null;
+          methodsBuilder_ = null;
         }
+
         return this;
       }
       /**
        * <pre>
-       * definitions for methods implemented by the library
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
        * </pre>
        *
-       * <code>repeated .TideChartMethod methods = 8;</code>
+       * <code>.TideChartData methods = 15;</code>
        */
-      public Builder removeMethods(int index) {
-        if (methodsBuilder_ == null) {
-          ensureMethodsIsMutable();
-          methods_.remove(index);
-          onChanged();
-        } else {
-          methodsBuilder_.remove(index);
-        }
-        return this;
+      public TideChart.TideChartData.Builder getMethodsBuilder() {
+        
+        onChanged();
+        return getMethodsFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       * definitions for methods implemented by the library
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
        * </pre>
        *
-       * <code>repeated .TideChartMethod methods = 8;</code>
+       * <code>.TideChartData methods = 15;</code>
        */
-      public TideChart.TideChartMethod.Builder getMethodsBuilder(
-          int index) {
-        return getMethodsFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public TideChart.TideChartMethodOrBuilder getMethodsOrBuilder(
-          int index) {
-        if (methodsBuilder_ == null) {
-          return methods_.get(index);  } else {
-          return methodsBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public java.util.List<? extends TideChart.TideChartMethodOrBuilder> 
-           getMethodsOrBuilderList() {
+      public TideChart.TideChartDataOrBuilder getMethodsOrBuilder() {
         if (methodsBuilder_ != null) {
-          return methodsBuilder_.getMessageOrBuilderList();
+          return methodsBuilder_.getMessageOrBuilder();
         } else {
-          return java.util.Collections.unmodifiableList(methods_);
+          return methods_ == null ?
+              TideChart.TideChartData.getDefaultInstance() : methods_;
         }
       }
       /**
        * <pre>
-       * definitions for methods implemented by the library
+       * a set of graphs (sub-library) and nodes (methods) that define method templates
        * </pre>
        *
-       * <code>repeated .TideChartMethod methods = 8;</code>
+       * <code>.TideChartData methods = 15;</code>
        */
-      public TideChart.TideChartMethod.Builder addMethodsBuilder() {
-        return getMethodsFieldBuilder().addBuilder(
-            TideChart.TideChartMethod.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public TideChart.TideChartMethod.Builder addMethodsBuilder(
-          int index) {
-        return getMethodsFieldBuilder().addBuilder(
-            index, TideChart.TideChartMethod.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       * definitions for methods implemented by the library
-       * </pre>
-       *
-       * <code>repeated .TideChartMethod methods = 8;</code>
-       */
-      public java.util.List<TideChart.TideChartMethod.Builder> 
-           getMethodsBuilderList() {
-        return getMethodsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          TideChart.TideChartMethod, TideChart.TideChartMethod.Builder, TideChart.TideChartMethodOrBuilder> 
+      private com.google.protobuf.SingleFieldBuilderV3<
+          TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder> 
           getMethodsFieldBuilder() {
         if (methodsBuilder_ == null) {
-          methodsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              TideChart.TideChartMethod, TideChart.TideChartMethod.Builder, TideChart.TideChartMethodOrBuilder>(
-                  methods_,
-                  ((bitField0_ & 0x00000002) != 0),
+          methodsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder>(
+                  getMethods(),
                   getParentForChildren(),
                   isClean());
           methods_ = null;
         }
         return methodsBuilder_;
+      }
+
+      private java.util.List<TideChart.TideChartProperty> settings_ =
+        java.util.Collections.emptyList();
+      private void ensureSettingsIsMutable() {
+        if (!((bitField0_ & 0x00000100) != 0)) {
+          settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> settingsBuilder_;
+
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty> getSettingsList() {
+        if (settingsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settings_);
+        } else {
+          return settingsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public int getSettingsCount() {
+        if (settingsBuilder_ == null) {
+          return settings_.size();
+        } else {
+          return settingsBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public TideChart.TideChartProperty getSettings(int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);
+        } else {
+          return settingsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.set(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder setSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder addSettings(TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty value) {
+        if (settingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettingsIsMutable();
+          settings_.add(index, value);
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder addSettings(
+          TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder addSettings(
+          int index, TideChart.TideChartProperty.Builder builderForValue) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          settingsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder addAllSettings(
+          java.lang.Iterable<? extends TideChart.TideChartProperty> values) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, settings_);
+          onChanged();
+        } else {
+          settingsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder clearSettings() {
+        if (settingsBuilder_ == null) {
+          settings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          settingsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public Builder removeSettings(int index) {
+        if (settingsBuilder_ == null) {
+          ensureSettingsIsMutable();
+          settings_.remove(index);
+          onChanged();
+        } else {
+          settingsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public TideChart.TideChartProperty.Builder getSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public TideChart.TideChartPropertyOrBuilder getSettingsOrBuilder(
+          int index) {
+        if (settingsBuilder_ == null) {
+          return settings_.get(index);  } else {
+          return settingsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public java.util.List<? extends TideChart.TideChartPropertyOrBuilder> 
+           getSettingsOrBuilderList() {
+        if (settingsBuilder_ != null) {
+          return settingsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(settings_);
+        }
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder() {
+        return getSettingsFieldBuilder().addBuilder(
+            TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public TideChart.TideChartProperty.Builder addSettingsBuilder(
+          int index) {
+        return getSettingsFieldBuilder().addBuilder(
+            index, TideChart.TideChartProperty.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * other settings associated with the library
+       * </pre>
+       *
+       * <code>repeated .TideChartProperty settings = 16;</code>
+       */
+      public java.util.List<TideChart.TideChartProperty.Builder> 
+           getSettingsBuilderList() {
+        return getSettingsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder> 
+          getSettingsFieldBuilder() {
+        if (settingsBuilder_ == null) {
+          settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
+                  settings_,
+                  ((bitField0_ & 0x00000100) != 0),
+                  getParentForChildren(),
+                  isClean());
+          settings_ = null;
+        }
+        return settingsBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -51405,13 +48990,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartSite();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -51441,9 +49019,9 @@ public final class TideChart {
               break;
             }
             case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 stack_ = new java.util.ArrayList<TideChart.TideChartSite>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               stack_.add(
                   input.readMessage(TideChart.TideChartSite.parser(), extensionRegistry));
@@ -51469,9 +49047,9 @@ public final class TideChart {
             }
             case 50: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 scope_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000020;
               }
               scope_.add(s);
               break;
@@ -51507,9 +49085,9 @@ public final class TideChart {
               break;
             }
             case 98: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
                 local_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000800;
               }
               local_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -51530,13 +49108,13 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           stack_ = java.util.Collections.unmodifiableList(stack_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
           scope_ = scope_.getUnmodifiableView();
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000800) != 0)) {
           local_ = java.util.Collections.unmodifiableList(local_);
         }
         this.unknownFields = unknownFields.build();
@@ -51556,6 +49134,7 @@ public final class TideChart {
               TideChart.TideChartSite.class, TideChart.TideChartSite.Builder.class);
     }
 
+    private int bitField0_;
     public static final int INDEX_FIELD_NUMBER = 1;
     private long index_;
     /**
@@ -52383,7 +49962,7 @@ public final class TideChart {
 
         if (stackBuilder_ == null) {
           stack_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           stackBuilder_.clear();
         }
@@ -52394,7 +49973,7 @@ public final class TideChart {
         event_ = "";
 
         scope_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000020);
         filter_ = "";
 
         graph_ = "";
@@ -52407,7 +49986,7 @@ public final class TideChart {
 
         if (localBuilder_ == null) {
           local_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000800);
         } else {
           localBuilder_.clear();
         }
@@ -52438,11 +50017,12 @@ public final class TideChart {
       public TideChart.TideChartSite buildPartial() {
         TideChart.TideChartSite result = new TideChart.TideChartSite(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.index_ = index_;
         if (stackBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             stack_ = java.util.Collections.unmodifiableList(stack_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.stack_ = stack_;
         } else {
@@ -52451,9 +50031,9 @@ public final class TideChart {
         result.path_ = path_;
         result.trigger_ = trigger_;
         result.event_ = event_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000020) != 0)) {
           scope_ = scope_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000020);
         }
         result.scope_ = scope_;
         result.filter_ = filter_;
@@ -52462,14 +50042,15 @@ public final class TideChart {
         result.node_ = node_;
         result.port_ = port_;
         if (localBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000800) != 0)) {
             local_ = java.util.Collections.unmodifiableList(local_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000800);
           }
           result.local_ = local_;
         } else {
           result.local_ = localBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -52525,7 +50106,7 @@ public final class TideChart {
           if (!other.stack_.isEmpty()) {
             if (stack_.isEmpty()) {
               stack_ = other.stack_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureStackIsMutable();
               stack_.addAll(other.stack_);
@@ -52538,7 +50119,7 @@ public final class TideChart {
               stackBuilder_.dispose();
               stackBuilder_ = null;
               stack_ = other.stack_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               stackBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getStackFieldBuilder() : null;
@@ -52562,7 +50143,7 @@ public final class TideChart {
         if (!other.scope_.isEmpty()) {
           if (scope_.isEmpty()) {
             scope_ = other.scope_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000020);
           } else {
             ensureScopeIsMutable();
             scope_.addAll(other.scope_);
@@ -52593,7 +50174,7 @@ public final class TideChart {
           if (!other.local_.isEmpty()) {
             if (local_.isEmpty()) {
               local_ = other.local_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000800);
             } else {
               ensureLocalIsMutable();
               local_.addAll(other.local_);
@@ -52606,7 +50187,7 @@ public final class TideChart {
               localBuilder_.dispose();
               localBuilder_ = null;
               local_ = other.local_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000800);
               localBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLocalFieldBuilder() : null;
@@ -52686,9 +50267,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartSite> stack_ =
         java.util.Collections.emptyList();
       private void ensureStackIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           stack_ = new java.util.ArrayList<TideChart.TideChartSite>(stack_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -52882,7 +50463,7 @@ public final class TideChart {
       public Builder clearStack() {
         if (stackBuilder_ == null) {
           stack_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           stackBuilder_.clear();
@@ -52987,7 +50568,7 @@ public final class TideChart {
           stackBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartSite, TideChart.TideChartSite.Builder, TideChart.TideChartSiteOrBuilder>(
                   stack_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           stack_ = null;
@@ -53264,9 +50845,9 @@ public final class TideChart {
 
       private com.google.protobuf.LazyStringList scope_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureScopeIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           scope_ = new com.google.protobuf.LazyStringArrayList(scope_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000020;
          }
       }
       /**
@@ -53369,7 +50950,7 @@ public final class TideChart {
        */
       public Builder clearScope() {
         scope_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000020);
         onChanged();
         return this;
       }
@@ -53840,9 +51421,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> local_ =
         java.util.Collections.emptyList();
       private void ensureLocalIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000800) != 0)) {
           local_ = new java.util.ArrayList<TideChart.TideChartProperty>(local_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000800;
          }
       }
 
@@ -54036,7 +51617,7 @@ public final class TideChart {
       public Builder clearLocal() {
         if (localBuilder_ == null) {
           local_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000800);
           onChanged();
         } else {
           localBuilder_.clear();
@@ -54141,7 +51722,7 @@ public final class TideChart {
           localBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   local_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000800) != 0),
                   getParentForChildren(),
                   isClean());
           local_ = null;
@@ -54359,13 +51940,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartMessage();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -54378,6 +51952,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -56055,13 +53630,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartContextChange();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -56102,9 +53670,9 @@ public final class TideChart {
               break;
             }
             case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000008;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -56125,7 +53693,7 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
         this.unknownFields = unknownFields.build();
@@ -56145,6 +53713,7 @@ public final class TideChart {
               TideChart.TideChartContextChange.class, TideChart.TideChartContextChange.Builder.class);
     }
 
+    private int bitField0_;
     public static final int INDEX_FIELD_NUMBER = 1;
     private long index_;
     /**
@@ -56470,7 +54039,7 @@ public final class TideChart {
 
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000008);
         } else {
           propsBuilder_.clear();
         }
@@ -56501,18 +54070,20 @@ public final class TideChart {
       public TideChart.TideChartContextChange buildPartial() {
         TideChart.TideChartContextChange result = new TideChart.TideChartContextChange(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.index_ = index_;
         result.timestamp_ = timestamp_;
         result.type_ = type_;
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000008) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000008);
           }
           result.props_ = props_;
         } else {
           result.props_ = propsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -56575,7 +54146,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000008);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -56588,7 +54159,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000008);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -56751,9 +54322,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000008;
          }
       }
 
@@ -56903,7 +54474,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000008);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -56980,7 +54551,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -57231,13 +54802,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartLogEntry();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -57284,9 +54848,9 @@ public final class TideChart {
             }
             case 42: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 tags_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000010;
               }
               tags_.add(s);
               break;
@@ -57298,9 +54862,9 @@ public final class TideChart {
               break;
             }
             case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
                 refs_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000040;
               }
               refs_.addLong(input.readInt64());
               break;
@@ -57308,9 +54872,9 @@ public final class TideChart {
             case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000040) != 0) && input.getBytesUntilLimit() > 0) {
                 refs_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000040;
               }
               while (input.getBytesUntilLimit() > 0) {
                 refs_.addLong(input.readInt64());
@@ -57319,9 +54883,9 @@ public final class TideChart {
               break;
             }
             case 66: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000080;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -57342,13 +54906,13 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           tags_ = tags_.getUnmodifiableView();
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
           refs_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
         this.unknownFields = unknownFields.build();
@@ -57368,6 +54932,7 @@ public final class TideChart {
               TideChart.TideChartLogEntry.class, TideChart.TideChartLogEntry.Builder.class);
     }
 
+    private int bitField0_;
     public static final int INDEX_FIELD_NUMBER = 1;
     private long index_;
     /**
@@ -57915,14 +55480,14 @@ public final class TideChart {
         level_ = 0;
 
         tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000010);
         message_ = "";
 
         refs_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000040);
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000080);
         } else {
           propsBuilder_.clear();
         }
@@ -57953,30 +55518,32 @@ public final class TideChart {
       public TideChart.TideChartLogEntry buildPartial() {
         TideChart.TideChartLogEntry result = new TideChart.TideChartLogEntry(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.index_ = index_;
         result.timestamp_ = timestamp_;
         result.source_ = source_;
         result.level_ = level_;
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000010) != 0)) {
           tags_ = tags_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000010);
         }
         result.tags_ = tags_;
         result.message_ = message_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000040) != 0)) {
           refs_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000040);
         }
         result.refs_ = refs_;
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000080) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000080);
           }
           result.props_ = props_;
         } else {
           result.props_ = propsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -58040,7 +55607,7 @@ public final class TideChart {
         if (!other.tags_.isEmpty()) {
           if (tags_.isEmpty()) {
             tags_ = other.tags_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000010);
           } else {
             ensureTagsIsMutable();
             tags_.addAll(other.tags_);
@@ -58054,7 +55621,7 @@ public final class TideChart {
         if (!other.refs_.isEmpty()) {
           if (refs_.isEmpty()) {
             refs_ = other.refs_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000040);
           } else {
             ensureRefsIsMutable();
             refs_.addAll(other.refs_);
@@ -58065,7 +55632,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000080);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -58078,7 +55645,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000080);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -58298,9 +55865,9 @@ public final class TideChart {
 
       private com.google.protobuf.LazyStringList tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureTagsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000010) != 0)) {
           tags_ = new com.google.protobuf.LazyStringArrayList(tags_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000010;
          }
       }
       /**
@@ -58403,7 +55970,7 @@ public final class TideChart {
        */
       public Builder clearTags() {
         tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
       }
@@ -58517,9 +56084,9 @@ public final class TideChart {
 
       private com.google.protobuf.Internal.LongList refs_ = emptyLongList();
       private void ensureRefsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000040) != 0)) {
           refs_ = mutableCopy(refs_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000040;
          }
       }
       /**
@@ -58531,7 +56098,7 @@ public final class TideChart {
        */
       public java.util.List<java.lang.Long>
           getRefsList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000040) != 0) ?
                  java.util.Collections.unmodifiableList(refs_) : refs_;
       }
       /**
@@ -58605,7 +56172,7 @@ public final class TideChart {
        */
       public Builder clearRefs() {
         refs_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
       }
@@ -58613,9 +56180,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000080) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000080;
          }
       }
 
@@ -58809,7 +56376,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000080);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -58914,7 +56481,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000080) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -59397,13 +56964,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartContext();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -59450,27 +57010,27 @@ public final class TideChart {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 sites_ = new java.util.ArrayList<TideChart.TideChartSite>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000010;
               }
               sites_.add(
                   input.readMessage(TideChart.TideChartSite.parser(), extensionRegistry));
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 messages_ = new java.util.ArrayList<TideChart.TideChartMessage>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000020;
               }
               messages_.add(
                   input.readMessage(TideChart.TideChartMessage.parser(), extensionRegistry));
               break;
             }
             case 58: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
                 global_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000040;
               }
               global_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -59487,9 +57047,9 @@ public final class TideChart {
               break;
             }
             case 80: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
                 active_ = newLongList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000200;
               }
               active_.addLong(input.readInt64());
               break;
@@ -59497,9 +57057,9 @@ public final class TideChart {
             case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0) && input.getBytesUntilLimit() > 0) {
                 active_ = newLongList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000200;
               }
               while (input.getBytesUntilLimit() > 0) {
                 active_.addLong(input.readInt64());
@@ -59508,9 +57068,9 @@ public final class TideChart {
               break;
             }
             case 88: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
                 waiting_ = newLongList();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000400;
               }
               waiting_.addLong(input.readInt64());
               break;
@@ -59518,9 +57078,9 @@ public final class TideChart {
             case 90: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0) && input.getBytesUntilLimit() > 0) {
                 waiting_ = newLongList();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000400;
               }
               while (input.getBytesUntilLimit() > 0) {
                 waiting_.addLong(input.readInt64());
@@ -59529,9 +57089,9 @@ public final class TideChart {
               break;
             }
             case 96: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
                 paused_ = newLongList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000800;
               }
               paused_.addLong(input.readInt64());
               break;
@@ -59539,9 +57099,9 @@ public final class TideChart {
             case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000020) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0) && input.getBytesUntilLimit() > 0) {
                 paused_ = newLongList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000800;
               }
               while (input.getBytesUntilLimit() > 0) {
                 paused_.addLong(input.readInt64());
@@ -59550,9 +57110,9 @@ public final class TideChart {
               break;
             }
             case 104: {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              if (!((mutable_bitField0_ & 0x00001000) != 0)) {
                 disabled_ = newLongList();
-                mutable_bitField0_ |= 0x00000040;
+                mutable_bitField0_ |= 0x00001000;
               }
               disabled_.addLong(input.readInt64());
               break;
@@ -59560,9 +57120,9 @@ public final class TideChart {
             case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000040) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00001000) != 0) && input.getBytesUntilLimit() > 0) {
                 disabled_ = newLongList();
-                mutable_bitField0_ |= 0x00000040;
+                mutable_bitField0_ |= 0x00001000;
               }
               while (input.getBytesUntilLimit() > 0) {
                 disabled_.addLong(input.readInt64());
@@ -59571,18 +57131,18 @@ public final class TideChart {
               break;
             }
             case 114: {
-              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
+              if (!((mutable_bitField0_ & 0x00002000) != 0)) {
                 events_ = new java.util.ArrayList<TideChart.TideChartContextChange>();
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00002000;
               }
               events_.add(
                   input.readMessage(TideChart.TideChartContextChange.parser(), extensionRegistry));
               break;
             }
             case 122: {
-              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+              if (!((mutable_bitField0_ & 0x00004000) != 0)) {
                 log_ = new java.util.ArrayList<TideChart.TideChartLogEntry>();
-                mutable_bitField0_ |= 0x00000100;
+                mutable_bitField0_ |= 0x00004000;
               }
               log_.add(
                   input.readMessage(TideChart.TideChartLogEntry.parser(), extensionRegistry));
@@ -59603,31 +57163,31 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           sites_ = java.util.Collections.unmodifiableList(sites_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
           messages_ = java.util.Collections.unmodifiableList(messages_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
           global_ = java.util.Collections.unmodifiableList(global_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000200) != 0)) {
           active_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+        if (((mutable_bitField0_ & 0x00000400) != 0)) {
           waiting_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00000800) != 0)) {
           paused_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000040) != 0)) {
+        if (((mutable_bitField0_ & 0x00001000) != 0)) {
           disabled_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000080) != 0)) {
+        if (((mutable_bitField0_ & 0x00002000) != 0)) {
           events_ = java.util.Collections.unmodifiableList(events_);
         }
-        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+        if (((mutable_bitField0_ & 0x00004000) != 0)) {
           log_ = java.util.Collections.unmodifiableList(log_);
         }
         this.unknownFields = unknownFields.build();
@@ -59647,6 +57207,7 @@ public final class TideChart {
               TideChart.TideChartContext.class, TideChart.TideChartContext.Builder.class);
     }
 
+    private int bitField0_;
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
@@ -60637,19 +58198,19 @@ public final class TideChart {
 
         if (sitesBuilder_ == null) {
           sites_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000010);
         } else {
           sitesBuilder_.clear();
         }
         if (messagesBuilder_ == null) {
           messages_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000020);
         } else {
           messagesBuilder_.clear();
         }
         if (globalBuilder_ == null) {
           global_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000040);
         } else {
           globalBuilder_.clear();
         }
@@ -60658,22 +58219,22 @@ public final class TideChart {
         startIndex_ = 0L;
 
         active_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000200);
         waiting_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000400);
         paused_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000800);
         disabled_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00001000);
         if (eventsBuilder_ == null) {
           events_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000080);
+          bitField0_ = (bitField0_ & ~0x00002000);
         } else {
           eventsBuilder_.clear();
         }
         if (logBuilder_ == null) {
           log_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00004000);
         } else {
           logBuilder_.clear();
         }
@@ -60704,32 +58265,33 @@ public final class TideChart {
       public TideChart.TideChartContext buildPartial() {
         TideChart.TideChartContext result = new TideChart.TideChartContext(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.id_ = id_;
         result.index_ = index_;
         result.timestamp_ = timestamp_;
         result.version_ = version_;
         if (sitesBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000010) != 0)) {
             sites_ = java.util.Collections.unmodifiableList(sites_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000010);
           }
           result.sites_ = sites_;
         } else {
           result.sites_ = sitesBuilder_.build();
         }
         if (messagesBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             messages_ = java.util.Collections.unmodifiableList(messages_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.messages_ = messages_;
         } else {
           result.messages_ = messagesBuilder_.build();
         }
         if (globalBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000040) != 0)) {
             global_ = java.util.Collections.unmodifiableList(global_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000040);
           }
           result.global_ = global_;
         } else {
@@ -60737,44 +58299,45 @@ public final class TideChart {
         }
         result.startTime_ = startTime_;
         result.startIndex_ = startIndex_;
-        if (((bitField0_ & 0x00000008) != 0)) {
+        if (((bitField0_ & 0x00000200) != 0)) {
           active_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000200);
         }
         result.active_ = active_;
-        if (((bitField0_ & 0x00000010) != 0)) {
+        if (((bitField0_ & 0x00000400) != 0)) {
           waiting_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000400);
         }
         result.waiting_ = waiting_;
-        if (((bitField0_ & 0x00000020) != 0)) {
+        if (((bitField0_ & 0x00000800) != 0)) {
           paused_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000800);
         }
         result.paused_ = paused_;
-        if (((bitField0_ & 0x00000040) != 0)) {
+        if (((bitField0_ & 0x00001000) != 0)) {
           disabled_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00001000);
         }
         result.disabled_ = disabled_;
         if (eventsBuilder_ == null) {
-          if (((bitField0_ & 0x00000080) != 0)) {
+          if (((bitField0_ & 0x00002000) != 0)) {
             events_ = java.util.Collections.unmodifiableList(events_);
-            bitField0_ = (bitField0_ & ~0x00000080);
+            bitField0_ = (bitField0_ & ~0x00002000);
           }
           result.events_ = events_;
         } else {
           result.events_ = eventsBuilder_.build();
         }
         if (logBuilder_ == null) {
-          if (((bitField0_ & 0x00000100) != 0)) {
+          if (((bitField0_ & 0x00004000) != 0)) {
             log_ = java.util.Collections.unmodifiableList(log_);
-            bitField0_ = (bitField0_ & ~0x00000100);
+            bitField0_ = (bitField0_ & ~0x00004000);
           }
           result.log_ = log_;
         } else {
           result.log_ = logBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -60841,7 +58404,7 @@ public final class TideChart {
           if (!other.sites_.isEmpty()) {
             if (sites_.isEmpty()) {
               sites_ = other.sites_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000010);
             } else {
               ensureSitesIsMutable();
               sites_.addAll(other.sites_);
@@ -60854,7 +58417,7 @@ public final class TideChart {
               sitesBuilder_.dispose();
               sitesBuilder_ = null;
               sites_ = other.sites_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000010);
               sitesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSitesFieldBuilder() : null;
@@ -60867,7 +58430,7 @@ public final class TideChart {
           if (!other.messages_.isEmpty()) {
             if (messages_.isEmpty()) {
               messages_ = other.messages_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensureMessagesIsMutable();
               messages_.addAll(other.messages_);
@@ -60880,7 +58443,7 @@ public final class TideChart {
               messagesBuilder_.dispose();
               messagesBuilder_ = null;
               messages_ = other.messages_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000020);
               messagesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getMessagesFieldBuilder() : null;
@@ -60893,7 +58456,7 @@ public final class TideChart {
           if (!other.global_.isEmpty()) {
             if (global_.isEmpty()) {
               global_ = other.global_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000040);
             } else {
               ensureGlobalIsMutable();
               global_.addAll(other.global_);
@@ -60906,7 +58469,7 @@ public final class TideChart {
               globalBuilder_.dispose();
               globalBuilder_ = null;
               global_ = other.global_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000040);
               globalBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getGlobalFieldBuilder() : null;
@@ -60924,7 +58487,7 @@ public final class TideChart {
         if (!other.active_.isEmpty()) {
           if (active_.isEmpty()) {
             active_ = other.active_;
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000200);
           } else {
             ensureActiveIsMutable();
             active_.addAll(other.active_);
@@ -60934,7 +58497,7 @@ public final class TideChart {
         if (!other.waiting_.isEmpty()) {
           if (waiting_.isEmpty()) {
             waiting_ = other.waiting_;
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000400);
           } else {
             ensureWaitingIsMutable();
             waiting_.addAll(other.waiting_);
@@ -60944,7 +58507,7 @@ public final class TideChart {
         if (!other.paused_.isEmpty()) {
           if (paused_.isEmpty()) {
             paused_ = other.paused_;
-            bitField0_ = (bitField0_ & ~0x00000020);
+            bitField0_ = (bitField0_ & ~0x00000800);
           } else {
             ensurePausedIsMutable();
             paused_.addAll(other.paused_);
@@ -60954,7 +58517,7 @@ public final class TideChart {
         if (!other.disabled_.isEmpty()) {
           if (disabled_.isEmpty()) {
             disabled_ = other.disabled_;
-            bitField0_ = (bitField0_ & ~0x00000040);
+            bitField0_ = (bitField0_ & ~0x00001000);
           } else {
             ensureDisabledIsMutable();
             disabled_.addAll(other.disabled_);
@@ -60965,7 +58528,7 @@ public final class TideChart {
           if (!other.events_.isEmpty()) {
             if (events_.isEmpty()) {
               events_ = other.events_;
-              bitField0_ = (bitField0_ & ~0x00000080);
+              bitField0_ = (bitField0_ & ~0x00002000);
             } else {
               ensureEventsIsMutable();
               events_.addAll(other.events_);
@@ -60978,7 +58541,7 @@ public final class TideChart {
               eventsBuilder_.dispose();
               eventsBuilder_ = null;
               events_ = other.events_;
-              bitField0_ = (bitField0_ & ~0x00000080);
+              bitField0_ = (bitField0_ & ~0x00002000);
               eventsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getEventsFieldBuilder() : null;
@@ -60991,7 +58554,7 @@ public final class TideChart {
           if (!other.log_.isEmpty()) {
             if (log_.isEmpty()) {
               log_ = other.log_;
-              bitField0_ = (bitField0_ & ~0x00000100);
+              bitField0_ = (bitField0_ & ~0x00004000);
             } else {
               ensureLogIsMutable();
               log_.addAll(other.log_);
@@ -61004,7 +58567,7 @@ public final class TideChart {
               logBuilder_.dispose();
               logBuilder_ = null;
               log_ = other.log_;
-              bitField0_ = (bitField0_ & ~0x00000100);
+              bitField0_ = (bitField0_ & ~0x00004000);
               logBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLogFieldBuilder() : null;
@@ -61300,9 +58863,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartSite> sites_ =
         java.util.Collections.emptyList();
       private void ensureSitesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000010) != 0)) {
           sites_ = new java.util.ArrayList<TideChart.TideChartSite>(sites_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000010;
          }
       }
 
@@ -61496,7 +59059,7 @@ public final class TideChart {
       public Builder clearSites() {
         if (sitesBuilder_ == null) {
           sites_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000010);
           onChanged();
         } else {
           sitesBuilder_.clear();
@@ -61601,7 +59164,7 @@ public final class TideChart {
           sitesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartSite, TideChart.TideChartSite.Builder, TideChart.TideChartSiteOrBuilder>(
                   sites_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
                   isClean());
           sites_ = null;
@@ -61612,9 +59175,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartMessage> messages_ =
         java.util.Collections.emptyList();
       private void ensureMessagesIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           messages_ = new java.util.ArrayList<TideChart.TideChartMessage>(messages_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -61808,7 +59371,7 @@ public final class TideChart {
       public Builder clearMessages() {
         if (messagesBuilder_ == null) {
           messages_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           messagesBuilder_.clear();
@@ -61913,7 +59476,7 @@ public final class TideChart {
           messagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartMessage, TideChart.TideChartMessage.Builder, TideChart.TideChartMessageOrBuilder>(
                   messages_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           messages_ = null;
@@ -61924,9 +59487,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> global_ =
         java.util.Collections.emptyList();
       private void ensureGlobalIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000040) != 0)) {
           global_ = new java.util.ArrayList<TideChart.TideChartProperty>(global_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000040;
          }
       }
 
@@ -62120,7 +59683,7 @@ public final class TideChart {
       public Builder clearGlobal() {
         if (globalBuilder_ == null) {
           global_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000040);
           onChanged();
         } else {
           globalBuilder_.clear();
@@ -62225,7 +59788,7 @@ public final class TideChart {
           globalBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   global_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
                   isClean());
           global_ = null;
@@ -62311,9 +59874,9 @@ public final class TideChart {
 
       private com.google.protobuf.Internal.LongList active_ = emptyLongList();
       private void ensureActiveIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000200) != 0)) {
           active_ = mutableCopy(active_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000200;
          }
       }
       /**
@@ -62325,7 +59888,7 @@ public final class TideChart {
        */
       public java.util.List<java.lang.Long>
           getActiveList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
+        return ((bitField0_ & 0x00000200) != 0) ?
                  java.util.Collections.unmodifiableList(active_) : active_;
       }
       /**
@@ -62399,16 +59962,16 @@ public final class TideChart {
        */
       public Builder clearActive() {
         active_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000200);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.LongList waiting_ = emptyLongList();
       private void ensureWaitingIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if (!((bitField0_ & 0x00000400) != 0)) {
           waiting_ = mutableCopy(waiting_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000400;
          }
       }
       /**
@@ -62420,7 +59983,7 @@ public final class TideChart {
        */
       public java.util.List<java.lang.Long>
           getWaitingList() {
-        return ((bitField0_ & 0x00000010) != 0) ?
+        return ((bitField0_ & 0x00000400) != 0) ?
                  java.util.Collections.unmodifiableList(waiting_) : waiting_;
       }
       /**
@@ -62494,16 +60057,16 @@ public final class TideChart {
        */
       public Builder clearWaiting() {
         waiting_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000400);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.LongList paused_ = emptyLongList();
       private void ensurePausedIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
+        if (!((bitField0_ & 0x00000800) != 0)) {
           paused_ = mutableCopy(paused_);
-          bitField0_ |= 0x00000020;
+          bitField0_ |= 0x00000800;
          }
       }
       /**
@@ -62515,7 +60078,7 @@ public final class TideChart {
        */
       public java.util.List<java.lang.Long>
           getPausedList() {
-        return ((bitField0_ & 0x00000020) != 0) ?
+        return ((bitField0_ & 0x00000800) != 0) ?
                  java.util.Collections.unmodifiableList(paused_) : paused_;
       }
       /**
@@ -62589,16 +60152,16 @@ public final class TideChart {
        */
       public Builder clearPaused() {
         paused_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000800);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.LongList disabled_ = emptyLongList();
       private void ensureDisabledIsMutable() {
-        if (!((bitField0_ & 0x00000040) != 0)) {
+        if (!((bitField0_ & 0x00001000) != 0)) {
           disabled_ = mutableCopy(disabled_);
-          bitField0_ |= 0x00000040;
+          bitField0_ |= 0x00001000;
          }
       }
       /**
@@ -62610,7 +60173,7 @@ public final class TideChart {
        */
       public java.util.List<java.lang.Long>
           getDisabledList() {
-        return ((bitField0_ & 0x00000040) != 0) ?
+        return ((bitField0_ & 0x00001000) != 0) ?
                  java.util.Collections.unmodifiableList(disabled_) : disabled_;
       }
       /**
@@ -62684,7 +60247,7 @@ public final class TideChart {
        */
       public Builder clearDisabled() {
         disabled_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00001000);
         onChanged();
         return this;
       }
@@ -62692,9 +60255,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartContextChange> events_ =
         java.util.Collections.emptyList();
       private void ensureEventsIsMutable() {
-        if (!((bitField0_ & 0x00000080) != 0)) {
+        if (!((bitField0_ & 0x00002000) != 0)) {
           events_ = new java.util.ArrayList<TideChart.TideChartContextChange>(events_);
-          bitField0_ |= 0x00000080;
+          bitField0_ |= 0x00002000;
          }
       }
 
@@ -62888,7 +60451,7 @@ public final class TideChart {
       public Builder clearEvents() {
         if (eventsBuilder_ == null) {
           events_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000080);
+          bitField0_ = (bitField0_ & ~0x00002000);
           onChanged();
         } else {
           eventsBuilder_.clear();
@@ -62993,7 +60556,7 @@ public final class TideChart {
           eventsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartContextChange, TideChart.TideChartContextChange.Builder, TideChart.TideChartContextChangeOrBuilder>(
                   events_,
-                  ((bitField0_ & 0x00000080) != 0),
+                  ((bitField0_ & 0x00002000) != 0),
                   getParentForChildren(),
                   isClean());
           events_ = null;
@@ -63004,9 +60567,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartLogEntry> log_ =
         java.util.Collections.emptyList();
       private void ensureLogIsMutable() {
-        if (!((bitField0_ & 0x00000100) != 0)) {
+        if (!((bitField0_ & 0x00004000) != 0)) {
           log_ = new java.util.ArrayList<TideChart.TideChartLogEntry>(log_);
-          bitField0_ |= 0x00000100;
+          bitField0_ |= 0x00004000;
          }
       }
 
@@ -63200,7 +60763,7 @@ public final class TideChart {
       public Builder clearLog() {
         if (logBuilder_ == null) {
           log_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00004000);
           onChanged();
         } else {
           logBuilder_.clear();
@@ -63305,7 +60868,7 @@ public final class TideChart {
           logBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartLogEntry, TideChart.TideChartLogEntry.Builder, TideChart.TideChartLogEntryOrBuilder>(
                   log_,
-                  ((bitField0_ & 0x00000100) != 0),
+                  ((bitField0_ & 0x00004000) != 0),
                   getParentForChildren(),
                   isClean());
           log_ = null;
@@ -63762,13 +61325,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartData();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -63841,45 +61397,45 @@ public final class TideChart {
               break;
             }
             case 74: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
                 sheets_ = new java.util.ArrayList<TideChart.TideChartGraph>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000100;
               }
               sheets_.add(
                   input.readMessage(TideChart.TideChartGraph.parser(), extensionRegistry));
               break;
             }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
                 props_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000200;
               }
               props_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
               break;
             }
             case 90: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
                 notes_ = new java.util.ArrayList<TideChart.TideChartNote>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000400;
               }
               notes_.add(
                   input.readMessage(TideChart.TideChartNote.parser(), extensionRegistry));
               break;
             }
             case 98: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
                 library_ = new java.util.ArrayList<TideChart.TideChartLibrary>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000800;
               }
               library_.add(
                   input.readMessage(TideChart.TideChartLibrary.parser(), extensionRegistry));
               break;
             }
             case 178: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00001000) != 0)) {
                 settings_ = new java.util.ArrayList<TideChart.TideChartProperty>();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00001000;
               }
               settings_.add(
                   input.readMessage(TideChart.TideChartProperty.parser(), extensionRegistry));
@@ -63900,19 +61456,19 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
           sheets_ = java.util.Collections.unmodifiableList(sheets_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000200) != 0)) {
           props_ = java.util.Collections.unmodifiableList(props_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000400) != 0)) {
           notes_ = java.util.Collections.unmodifiableList(notes_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000800) != 0)) {
           library_ = java.util.Collections.unmodifiableList(library_);
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+        if (((mutable_bitField0_ & 0x00001000) != 0)) {
           settings_ = java.util.Collections.unmodifiableList(settings_);
         }
         this.unknownFields = unknownFields.build();
@@ -63932,6 +61488,7 @@ public final class TideChart {
               TideChart.TideChartData.class, TideChart.TideChartData.Builder.class);
     }
 
+    private int bitField0_;
     public static final int VERSION_FIELD_NUMBER = 1;
     private volatile java.lang.Object version_;
     /**
@@ -64893,31 +62450,31 @@ public final class TideChart {
 
         if (sheetsBuilder_ == null) {
           sheets_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000100);
         } else {
           sheetsBuilder_.clear();
         }
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000200);
         } else {
           propsBuilder_.clear();
         }
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000400);
         } else {
           notesBuilder_.clear();
         }
         if (libraryBuilder_ == null) {
           library_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000800);
         } else {
           libraryBuilder_.clear();
         }
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00001000);
         } else {
           settingsBuilder_.clear();
         }
@@ -64948,6 +62505,7 @@ public final class TideChart {
       public TideChart.TideChartData buildPartial() {
         TideChart.TideChartData result = new TideChart.TideChartData(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.version_ = version_;
         result.branch_ = branch_;
         result.source_ = source_;
@@ -64957,50 +62515,51 @@ public final class TideChart {
         result.commitDesc_ = commitDesc_;
         result.commitNotes_ = commitNotes_;
         if (sheetsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000100) != 0)) {
             sheets_ = java.util.Collections.unmodifiableList(sheets_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000100);
           }
           result.sheets_ = sheets_;
         } else {
           result.sheets_ = sheetsBuilder_.build();
         }
         if (propsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000200) != 0)) {
             props_ = java.util.Collections.unmodifiableList(props_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000200);
           }
           result.props_ = props_;
         } else {
           result.props_ = propsBuilder_.build();
         }
         if (notesBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000400) != 0)) {
             notes_ = java.util.Collections.unmodifiableList(notes_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000400);
           }
           result.notes_ = notes_;
         } else {
           result.notes_ = notesBuilder_.build();
         }
         if (libraryBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
+          if (((bitField0_ & 0x00000800) != 0)) {
             library_ = java.util.Collections.unmodifiableList(library_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000800);
           }
           result.library_ = library_;
         } else {
           result.library_ = libraryBuilder_.build();
         }
         if (settingsBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) != 0)) {
+          if (((bitField0_ & 0x00001000) != 0)) {
             settings_ = java.util.Collections.unmodifiableList(settings_);
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00001000);
           }
           result.settings_ = settings_;
         } else {
           result.settings_ = settingsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -65085,7 +62644,7 @@ public final class TideChart {
           if (!other.sheets_.isEmpty()) {
             if (sheets_.isEmpty()) {
               sheets_ = other.sheets_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000100);
             } else {
               ensureSheetsIsMutable();
               sheets_.addAll(other.sheets_);
@@ -65098,7 +62657,7 @@ public final class TideChart {
               sheetsBuilder_.dispose();
               sheetsBuilder_ = null;
               sheets_ = other.sheets_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000100);
               sheetsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSheetsFieldBuilder() : null;
@@ -65111,7 +62670,7 @@ public final class TideChart {
           if (!other.props_.isEmpty()) {
             if (props_.isEmpty()) {
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000200);
             } else {
               ensurePropsIsMutable();
               props_.addAll(other.props_);
@@ -65124,7 +62683,7 @@ public final class TideChart {
               propsBuilder_.dispose();
               propsBuilder_ = null;
               props_ = other.props_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000200);
               propsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropsFieldBuilder() : null;
@@ -65137,7 +62696,7 @@ public final class TideChart {
           if (!other.notes_.isEmpty()) {
             if (notes_.isEmpty()) {
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000400);
             } else {
               ensureNotesIsMutable();
               notes_.addAll(other.notes_);
@@ -65150,7 +62709,7 @@ public final class TideChart {
               notesBuilder_.dispose();
               notesBuilder_ = null;
               notes_ = other.notes_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000400);
               notesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getNotesFieldBuilder() : null;
@@ -65163,7 +62722,7 @@ public final class TideChart {
           if (!other.library_.isEmpty()) {
             if (library_.isEmpty()) {
               library_ = other.library_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000800);
             } else {
               ensureLibraryIsMutable();
               library_.addAll(other.library_);
@@ -65176,7 +62735,7 @@ public final class TideChart {
               libraryBuilder_.dispose();
               libraryBuilder_ = null;
               library_ = other.library_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000800);
               libraryBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLibraryFieldBuilder() : null;
@@ -65189,7 +62748,7 @@ public final class TideChart {
           if (!other.settings_.isEmpty()) {
             if (settings_.isEmpty()) {
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00001000);
             } else {
               ensureSettingsIsMutable();
               settings_.addAll(other.settings_);
@@ -65202,7 +62761,7 @@ public final class TideChart {
               settingsBuilder_.dispose();
               settingsBuilder_ = null;
               settings_ = other.settings_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00001000);
               settingsBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSettingsFieldBuilder() : null;
@@ -65956,9 +63515,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartGraph> sheets_ =
         java.util.Collections.emptyList();
       private void ensureSheetsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000100) != 0)) {
           sheets_ = new java.util.ArrayList<TideChart.TideChartGraph>(sheets_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000100;
          }
       }
 
@@ -66152,7 +63711,7 @@ public final class TideChart {
       public Builder clearSheets() {
         if (sheetsBuilder_ == null) {
           sheets_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000100);
           onChanged();
         } else {
           sheetsBuilder_.clear();
@@ -66257,7 +63816,7 @@ public final class TideChart {
           sheetsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder>(
                   sheets_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
                   isClean());
           sheets_ = null;
@@ -66268,9 +63827,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> props_ =
         java.util.Collections.emptyList();
       private void ensurePropsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000200) != 0)) {
           props_ = new java.util.ArrayList<TideChart.TideChartProperty>(props_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000200;
          }
       }
 
@@ -66464,7 +64023,7 @@ public final class TideChart {
       public Builder clearProps() {
         if (propsBuilder_ == null) {
           props_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000200);
           onChanged();
         } else {
           propsBuilder_.clear();
@@ -66569,7 +64128,7 @@ public final class TideChart {
           propsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   props_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000200) != 0),
                   getParentForChildren(),
                   isClean());
           props_ = null;
@@ -66580,9 +64139,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartNote> notes_ =
         java.util.Collections.emptyList();
       private void ensureNotesIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000400) != 0)) {
           notes_ = new java.util.ArrayList<TideChart.TideChartNote>(notes_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000400;
          }
       }
 
@@ -66776,7 +64335,7 @@ public final class TideChart {
       public Builder clearNotes() {
         if (notesBuilder_ == null) {
           notes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000400);
           onChanged();
         } else {
           notesBuilder_.clear();
@@ -66881,7 +64440,7 @@ public final class TideChart {
           notesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartNote, TideChart.TideChartNote.Builder, TideChart.TideChartNoteOrBuilder>(
                   notes_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000400) != 0),
                   getParentForChildren(),
                   isClean());
           notes_ = null;
@@ -66892,9 +64451,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartLibrary> library_ =
         java.util.Collections.emptyList();
       private void ensureLibraryIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000800) != 0)) {
           library_ = new java.util.ArrayList<TideChart.TideChartLibrary>(library_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000800;
          }
       }
 
@@ -67088,7 +64647,7 @@ public final class TideChart {
       public Builder clearLibrary() {
         if (libraryBuilder_ == null) {
           library_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000800);
           onChanged();
         } else {
           libraryBuilder_.clear();
@@ -67193,7 +64752,7 @@ public final class TideChart {
           libraryBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartLibrary, TideChart.TideChartLibrary.Builder, TideChart.TideChartLibraryOrBuilder>(
                   library_,
-                  ((bitField0_ & 0x00000008) != 0),
+                  ((bitField0_ & 0x00000800) != 0),
                   getParentForChildren(),
                   isClean());
           library_ = null;
@@ -67204,9 +64763,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartProperty> settings_ =
         java.util.Collections.emptyList();
       private void ensureSettingsIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if (!((bitField0_ & 0x00001000) != 0)) {
           settings_ = new java.util.ArrayList<TideChart.TideChartProperty>(settings_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00001000;
          }
       }
 
@@ -67400,7 +64959,7 @@ public final class TideChart {
       public Builder clearSettings() {
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00001000);
           onChanged();
         } else {
           settingsBuilder_.clear();
@@ -67505,7 +65064,7 @@ public final class TideChart {
           settingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartProperty, TideChart.TideChartProperty.Builder, TideChart.TideChartPropertyOrBuilder>(
                   settings_,
-                  ((bitField0_ & 0x00000010) != 0),
+                  ((bitField0_ & 0x00001000) != 0),
                   getParentForChildren(),
                   isClean());
           settings_ = null;
@@ -67741,13 +65300,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartHeader();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -67760,6 +65312,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -69714,13 +67267,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartFile();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -69794,36 +67340,36 @@ public final class TideChart {
               break;
             }
             case 66: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
                 working_ = new java.util.ArrayList<TideChart.TideChartCommand>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000080;
               }
               working_.add(
                   input.readMessage(TideChart.TideChartCommand.parser(), extensionRegistry));
               break;
             }
             case 74: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
                 remote_ = new java.util.ArrayList<TideChart.TideChartCommand>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000100;
               }
               remote_.add(
                   input.readMessage(TideChart.TideChartCommand.parser(), extensionRegistry));
               break;
             }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
                 history_ = new java.util.ArrayList<TideChart.TideChartData>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000200;
               }
               history_.add(
                   input.readMessage(TideChart.TideChartData.parser(), extensionRegistry));
               break;
             }
             case 90: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
                 context_ = new java.util.ArrayList<TideChart.TideChartContext>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000400;
               }
               context_.add(
                   input.readMessage(TideChart.TideChartContext.parser(), extensionRegistry));
@@ -69844,16 +67390,16 @@ public final class TideChart {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
           working_ = java.util.Collections.unmodifiableList(working_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
           remote_ = java.util.Collections.unmodifiableList(remote_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000200) != 0)) {
           history_ = java.util.Collections.unmodifiableList(history_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000400) != 0)) {
           context_ = java.util.Collections.unmodifiableList(context_);
         }
         this.unknownFields = unknownFields.build();
@@ -69873,6 +67419,7 @@ public final class TideChart {
               TideChart.TideChartFile.class, TideChart.TideChartFile.Builder.class);
     }
 
+    private int bitField0_;
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
@@ -70712,25 +68259,25 @@ public final class TideChart {
         }
         if (workingBuilder_ == null) {
           working_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000080);
         } else {
           workingBuilder_.clear();
         }
         if (remoteBuilder_ == null) {
           remote_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000100);
         } else {
           remoteBuilder_.clear();
         }
         if (historyBuilder_ == null) {
           history_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000200);
         } else {
           historyBuilder_.clear();
         }
         if (contextBuilder_ == null) {
           context_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000400);
         } else {
           contextBuilder_.clear();
         }
@@ -70761,6 +68308,7 @@ public final class TideChart {
       public TideChart.TideChartFile buildPartial() {
         TideChart.TideChartFile result = new TideChart.TideChartFile(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.id_ = id_;
         result.name_ = name_;
         result.path_ = path_;
@@ -70773,41 +68321,42 @@ public final class TideChart {
           result.chart_ = chartBuilder_.build();
         }
         if (workingBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000080) != 0)) {
             working_ = java.util.Collections.unmodifiableList(working_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000080);
           }
           result.working_ = working_;
         } else {
           result.working_ = workingBuilder_.build();
         }
         if (remoteBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000100) != 0)) {
             remote_ = java.util.Collections.unmodifiableList(remote_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000100);
           }
           result.remote_ = remote_;
         } else {
           result.remote_ = remoteBuilder_.build();
         }
         if (historyBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000200) != 0)) {
             history_ = java.util.Collections.unmodifiableList(history_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000200);
           }
           result.history_ = history_;
         } else {
           result.history_ = historyBuilder_.build();
         }
         if (contextBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
+          if (((bitField0_ & 0x00000400) != 0)) {
             context_ = java.util.Collections.unmodifiableList(context_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000400);
           }
           result.context_ = context_;
         } else {
           result.context_ = contextBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -70887,7 +68436,7 @@ public final class TideChart {
           if (!other.working_.isEmpty()) {
             if (working_.isEmpty()) {
               working_ = other.working_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000080);
             } else {
               ensureWorkingIsMutable();
               working_.addAll(other.working_);
@@ -70900,7 +68449,7 @@ public final class TideChart {
               workingBuilder_.dispose();
               workingBuilder_ = null;
               working_ = other.working_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000080);
               workingBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getWorkingFieldBuilder() : null;
@@ -70913,7 +68462,7 @@ public final class TideChart {
           if (!other.remote_.isEmpty()) {
             if (remote_.isEmpty()) {
               remote_ = other.remote_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000100);
             } else {
               ensureRemoteIsMutable();
               remote_.addAll(other.remote_);
@@ -70926,7 +68475,7 @@ public final class TideChart {
               remoteBuilder_.dispose();
               remoteBuilder_ = null;
               remote_ = other.remote_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000100);
               remoteBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getRemoteFieldBuilder() : null;
@@ -70939,7 +68488,7 @@ public final class TideChart {
           if (!other.history_.isEmpty()) {
             if (history_.isEmpty()) {
               history_ = other.history_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000200);
             } else {
               ensureHistoryIsMutable();
               history_.addAll(other.history_);
@@ -70952,7 +68501,7 @@ public final class TideChart {
               historyBuilder_.dispose();
               historyBuilder_ = null;
               history_ = other.history_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000200);
               historyBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getHistoryFieldBuilder() : null;
@@ -70965,7 +68514,7 @@ public final class TideChart {
           if (!other.context_.isEmpty()) {
             if (context_.isEmpty()) {
               context_ = other.context_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000400);
             } else {
               ensureContextIsMutable();
               context_.addAll(other.context_);
@@ -70978,7 +68527,7 @@ public final class TideChart {
               contextBuilder_.dispose();
               contextBuilder_ = null;
               context_ = other.context_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000400);
               contextBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getContextFieldBuilder() : null;
@@ -71707,9 +69256,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartCommand> working_ =
         java.util.Collections.emptyList();
       private void ensureWorkingIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000080) != 0)) {
           working_ = new java.util.ArrayList<TideChart.TideChartCommand>(working_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000080;
          }
       }
 
@@ -71903,7 +69452,7 @@ public final class TideChart {
       public Builder clearWorking() {
         if (workingBuilder_ == null) {
           working_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000080);
           onChanged();
         } else {
           workingBuilder_.clear();
@@ -72008,7 +69557,7 @@ public final class TideChart {
           workingBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartCommand, TideChart.TideChartCommand.Builder, TideChart.TideChartCommandOrBuilder>(
                   working_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000080) != 0),
                   getParentForChildren(),
                   isClean());
           working_ = null;
@@ -72019,9 +69568,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartCommand> remote_ =
         java.util.Collections.emptyList();
       private void ensureRemoteIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000100) != 0)) {
           remote_ = new java.util.ArrayList<TideChart.TideChartCommand>(remote_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000100;
          }
       }
 
@@ -72215,7 +69764,7 @@ public final class TideChart {
       public Builder clearRemote() {
         if (remoteBuilder_ == null) {
           remote_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000100);
           onChanged();
         } else {
           remoteBuilder_.clear();
@@ -72320,7 +69869,7 @@ public final class TideChart {
           remoteBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartCommand, TideChart.TideChartCommand.Builder, TideChart.TideChartCommandOrBuilder>(
                   remote_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
                   isClean());
           remote_ = null;
@@ -72331,9 +69880,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartData> history_ =
         java.util.Collections.emptyList();
       private void ensureHistoryIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000200) != 0)) {
           history_ = new java.util.ArrayList<TideChart.TideChartData>(history_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000200;
          }
       }
 
@@ -72527,7 +70076,7 @@ public final class TideChart {
       public Builder clearHistory() {
         if (historyBuilder_ == null) {
           history_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000200);
           onChanged();
         } else {
           historyBuilder_.clear();
@@ -72632,7 +70181,7 @@ public final class TideChart {
           historyBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder>(
                   history_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000200) != 0),
                   getParentForChildren(),
                   isClean());
           history_ = null;
@@ -72643,9 +70192,9 @@ public final class TideChart {
       private java.util.List<TideChart.TideChartContext> context_ =
         java.util.Collections.emptyList();
       private void ensureContextIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000400) != 0)) {
           context_ = new java.util.ArrayList<TideChart.TideChartContext>(context_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000400;
          }
       }
 
@@ -72839,7 +70388,7 @@ public final class TideChart {
       public Builder clearContext() {
         if (contextBuilder_ == null) {
           context_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000400);
           onChanged();
         } else {
           contextBuilder_.clear();
@@ -72944,7 +70493,7 @@ public final class TideChart {
           contextBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               TideChart.TideChartContext, TideChart.TideChartContext.Builder, TideChart.TideChartContextOrBuilder>(
                   context_,
-                  ((bitField0_ & 0x00000008) != 0),
+                  ((bitField0_ & 0x00000400) != 0),
                   getParentForChildren(),
                   isClean());
           context_ = null;
@@ -73142,13 +70691,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartFileHeader();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -73161,6 +70703,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -74631,13 +72174,6 @@ public final class TideChart {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new TideChartFileCurrent();
-    }
-
-    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -74650,6 +72186,7 @@ public final class TideChart {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -76292,11 +73829,6 @@ public final class TideChart {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_TideChartNoteCommand_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_TideChartMethod_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_TideChartMethod_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_TideChartSource_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -76481,86 +74013,91 @@ public final class TideChart {
       "d\022\035\n\005notes\030\001 \003(\0132\016.TideChartNote\022)\n\004type" +
       "\030\002 \001(\0162\033.TideChartCommandUpdateType\022\016\n\004n" +
       "ode\030\003 \001(\tH\000\022\020\n\006region\030\004 \001(\tH\000\022\017\n\005graph\030\005" +
-      " \001(\tH\000B\010\n\006target\"\256\001\n\017TideChartMethod\022\n\n\002" +
-      "id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007extends\030\003 \001(\t\022" +
-      "\016\n\006script\030\004 \001(\t\022\037\n\007inports\030\005 \003(\0132\016.TideC" +
-      "hartPort\022 \n\010outports\030\006 \003(\0132\016.TideChartPo" +
-      "rt\022\035\n\005props\030\007 \003(\0132\016.TideChartPort\"\224\001\n\017Ti" +
-      "deChartSource\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022" +
-      "\014\n\004path\030\003 \001(\t\022\025\n\rmodifieddDate\030\005 \001(\t\022\022\n\n" +
-      "modifiedBy\030\006 \001(\t\022\021\n\007version\030\007 \001(\tH\000\022\020\n\006s" +
-      "cript\030\010 \001(\tH\000B\t\n\007content\"\255\001\n\020TideChartLi" +
-      "brary\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005title" +
-      "\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\016\n\006branch\030\005 \001(\t\022\014" +
-      "\n\004path\030\006 \001(\t\022\037\n\005files\030\007 \003(\0132\020.TideChartS" +
-      "ource\022!\n\007methods\030\010 \003(\0132\020.TideChartMethod" +
-      "\"\350\001\n\rTideChartSite\022\r\n\005index\030\001 \001(\003\022\035\n\005sta" +
-      "ck\030\002 \003(\0132\016.TideChartSite\022\014\n\004path\030\003 \001(\t\022\017" +
-      "\n\007trigger\030\004 \001(\t\022\r\n\005event\030\005 \001(\t\022\r\n\005scope\030" +
-      "\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022\r\n\005graph\030\010 \001(\t\022\016\n\006" +
-      "region\030\t \001(\t\022\014\n\004node\030\n \001(\t\022\014\n\004port\030\013 \001(\t" +
-      "\022!\n\005local\030\014 \003(\0132\022.TideChartProperty\"\211\002\n\020" +
-      "TideChartMessage\022\r\n\005index\030\001 \001(\003\022\021\n\ttimes" +
-      "tamp\030\002 \001(\003\022\016\n\006origin\030\004 \001(\003\022\020\n\010previous\030\005" +
-      " \001(\003\022\016\n\006source\030\007 \001(\003\022\016\n\006target\030\010 \001(\003\022\022\n\n" +
-      "delayUntil\030\t \001(\003\022\021\n\tholdToken\030\n \001(\003\022\023\n\013c" +
-      "ancelToken\030\013 \001(\003\022\014\n\004type\030\014 \001(\t\022\017\n\007versio" +
-      "n\030\r \001(\005\022\025\n\013jsonContent\030\016 \001(\tH\000\022\024\n\nmsgCon" +
-      "tent\030\017 \001(\014H\000B\t\n\007content\"k\n\026TideChartCont" +
-      "extChange\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp\030\002 " +
-      "\001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005props\030\004 \003(\0132\022.TideC" +
-      "hartProperty\"\270\001\n\021TideChartLogEntry\022\r\n\005in" +
-      "dex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006source\030\003" +
-      " \001(\003\022!\n\005level\030\004 \001(\0162\022.TideChartLogLevel\022" +
-      "\014\n\004tags\030\005 \003(\t\022\017\n\007message\030\006 \001(\t\022\014\n\004refs\030\007" +
-      " \003(\003\022!\n\005props\030\010 \003(\0132\022.TideChartProperty\"" +
-      "\355\002\n\020TideChartContext\022\n\n\002id\030\001 \001(\t\022\r\n\005inde" +
-      "x\030\002 \001(\003\022\021\n\ttimestamp\030\003 \001(\003\022\017\n\007version\030\004 " +
-      "\001(\t\022\035\n\005sites\030\005 \003(\0132\016.TideChartSite\022#\n\010me" +
-      "ssages\030\006 \003(\0132\021.TideChartMessage\022\"\n\006globa" +
-      "l\030\007 \003(\0132\022.TideChartProperty\022\021\n\tstartTime" +
-      "\030\010 \001(\003\022\022\n\nstartIndex\030\t \001(\003\022\016\n\006active\030\n \003" +
-      "(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 \003(\003\022\020\n\010d" +
-      "isabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027.TideChar" +
-      "tContextChange\022\037\n\003log\030\017 \003(\0132\022.TideChartL" +
-      "ogEntry\"\313\002\n\rTideChartData\022\017\n\007version\030\001 \001" +
-      "(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005me" +
-      "rge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitB" +
-      "y\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNot" +
-      "es\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideChartGrap" +
-      "h\022!\n\005props\030\n \003(\0132\022.TideChartProperty\022\035\n\005" +
-      "notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007library\030\014" +
-      " \003(\0132\021.TideChartLibrary\022$\n\010settings\030\026 \003(" +
-      "\0132\022.TideChartProperty\"\240\001\n\017TideChartHeade" +
-      "r\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006so" +
-      "urce\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030" +
-      "\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 " +
-      "\001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rTideChartFi" +
-      "le\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001" +
-      "(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t" +
-      "\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.Ti" +
-      "deChartData\022\"\n\007working\030\010 \003(\0132\021.TideChart" +
-      "Command\022!\n\006remote\030\t \003(\0132\021.TideChartComma" +
-      "nd\022\037\n\007history\030\n \003(\0132\016.TideChartData\022\"\n\007c" +
-      "ontext\030\013 \003(\0132\021.TideChartContext\"w\n\023TideC" +
-      "hartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t" +
-      "\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifi" +
-      "edDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227\001\n\024Tid" +
-      "eChartFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 " +
-      "\001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014mod" +
-      "ifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005c" +
-      "hart\030\007 \001(\0132\016.TideChartData*=\n\032TideChartC" +
-      "ommandUpdateType\022\007\n\003add\020\000\022\n\n\006remove\020\001\022\n\n" +
-      "\006update\020\002*\235\001\n\021TideChartLogLevel\022\010\n\004none\020" +
-      "\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texception\020\003\022\013" +
-      "\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006\022\t\n\005de" +
-      "bug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005trace\020\n" +
-      "\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
+      " \001(\tH\000B\010\n\006target\"\223\001\n\017TideChartSource\022\n\n\002" +
+      "id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\024\n\014" +
+      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021" +
+      "\n\007version\030\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007c" +
+      "ontent\"\321\001\n\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022" +
+      "\014\n\004name\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\n" +
+      " \001(\t\022\016\n\006branch\030\013 \001(\t\022\014\n\004path\030\014 \001(\t\022\037\n\005fi" +
+      "les\030\016 \003(\0132\020.TideChartSource\022\037\n\007methods\030\017" +
+      " \001(\0132\016.TideChartData\022$\n\010settings\030\020 \003(\0132\022" +
+      ".TideChartProperty\"\350\001\n\rTideChartSite\022\r\n\005" +
+      "index\030\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSi" +
+      "te\022\014\n\004path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005eve" +
+      "nt\030\005 \001(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022" +
+      "\r\n\005graph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n" +
+      " \001(\t\022\014\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.Tide" +
+      "ChartProperty\"\211\002\n\020TideChartMessage\022\r\n\005in" +
+      "dex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004" +
+      " \001(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016" +
+      "\n\006target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tho" +
+      "ldToken\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004ty" +
+      "pe\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent" +
+      "\030\016 \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007conten" +
+      "t\"k\n\026TideChartContextChange\022\r\n\005index\030\001 \001" +
+      "(\003\022\021\n\ttimestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005p" +
+      "rops\030\004 \003(\0132\022.TideChartProperty\"\270\001\n\021TideC" +
+      "hartLogEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp" +
+      "\030\002 \001(\003\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022." +
+      "TideChartLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007messa" +
+      "ge\030\006 \001(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022." +
+      "TideChartProperty\"\355\002\n\020TideChartContext\022\n" +
+      "\n\002id\030\001 \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003" +
+      " \001(\003\022\017\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.T" +
+      "ideChartSite\022#\n\010messages\030\006 \003(\0132\021.TideCha" +
+      "rtMessage\022\"\n\006global\030\007 \003(\0132\022.TideChartPro" +
+      "perty\022\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t" +
+      " \001(\003\022\016\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n" +
+      "\006paused\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006event" +
+      "s\030\016 \003(\0132\027.TideChartContextChange\022\037\n\003log\030" +
+      "\017 \003(\0132\022.TideChartLogEntry\"\313\002\n\rTideChartD" +
+      "ata\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006" +
+      "source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDat" +
+      "e\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030" +
+      "\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003" +
+      "(\0132\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.Tid" +
+      "eChartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideChar" +
+      "tNote\022\"\n\007library\030\014 \003(\0132\021.TideChartLibrar" +
+      "y\022$\n\010settings\030\026 \003(\0132\022.TideChartProperty\"" +
+      "\240\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006" +
+      "branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 " +
+      "\001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(" +
+      "\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001" +
+      "(\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
+      "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014" +
+      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035" +
+      "\n\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working" +
+      "\030\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(" +
+      "\0132\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016." +
+      "TideChartData\022\"\n\007context\030\013 \003(\0132\021.TideCha" +
+      "rtContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001" +
+      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006orig" +
+      "in\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifi" +
+      "edBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002i" +
+      "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006o" +
+      "rigin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmod" +
+      "ifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChart" +
+      "Data*=\n\032TideChartCommandUpdateType\022\007\n\003ad" +
+      "d\020\000\022\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChar" +
+      "tLogLevel\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020" +
+      "\002\022\r\n\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022" +
+      "\013\n\007message\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007ve" +
+      "rbose\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChart" +
+      "b\006proto3"
     };
-    descriptor = com.google.protobuf.Descriptors.FileDescriptor
+    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
+    com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-        });
+        }, assigner);
     internal_static_TideChartProperty_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_TideChartProperty_fieldAccessorTable = new
@@ -76687,80 +74224,74 @@ public final class TideChart {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartNoteCommand_descriptor,
         new java.lang.String[] { "Notes", "Type", "Node", "Region", "Graph", "Target", });
-    internal_static_TideChartMethod_descriptor =
-      getDescriptor().getMessageTypes().get(21);
-    internal_static_TideChartMethod_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_TideChartMethod_descriptor,
-        new java.lang.String[] { "Id", "Name", "Extends", "Script", "Inports", "Outports", "Props", });
     internal_static_TideChartSource_descriptor =
-      getDescriptor().getMessageTypes().get(22);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_TideChartSource_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartSource_descriptor,
-        new java.lang.String[] { "Id", "Name", "Path", "ModifieddDate", "ModifiedBy", "Version", "Script", "Content", });
+        new java.lang.String[] { "Id", "Name", "Path", "ModifiedDate", "ModifiedBy", "Version", "Script", "Content", });
     internal_static_TideChartLibrary_descriptor =
-      getDescriptor().getMessageTypes().get(23);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_TideChartLibrary_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartLibrary_descriptor,
-        new java.lang.String[] { "Id", "Name", "Title", "Origin", "Branch", "Path", "Files", "Methods", });
+        new java.lang.String[] { "Id", "Name", "Title", "Origin", "Branch", "Path", "Files", "Methods", "Settings", });
     internal_static_TideChartSite_descriptor =
-      getDescriptor().getMessageTypes().get(24);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_TideChartSite_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartSite_descriptor,
         new java.lang.String[] { "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port", "Local", });
     internal_static_TideChartMessage_descriptor =
-      getDescriptor().getMessageTypes().get(25);
+      getDescriptor().getMessageTypes().get(24);
     internal_static_TideChartMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartMessage_descriptor,
         new java.lang.String[] { "Index", "Timestamp", "Origin", "Previous", "Source", "Target", "DelayUntil", "HoldToken", "CancelToken", "Type", "Version", "JsonContent", "MsgContent", "Content", });
     internal_static_TideChartContextChange_descriptor =
-      getDescriptor().getMessageTypes().get(26);
+      getDescriptor().getMessageTypes().get(25);
     internal_static_TideChartContextChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartContextChange_descriptor,
         new java.lang.String[] { "Index", "Timestamp", "Type", "Props", });
     internal_static_TideChartLogEntry_descriptor =
-      getDescriptor().getMessageTypes().get(27);
+      getDescriptor().getMessageTypes().get(26);
     internal_static_TideChartLogEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartLogEntry_descriptor,
         new java.lang.String[] { "Index", "Timestamp", "Source", "Level", "Tags", "Message", "Refs", "Props", });
     internal_static_TideChartContext_descriptor =
-      getDescriptor().getMessageTypes().get(28);
+      getDescriptor().getMessageTypes().get(27);
     internal_static_TideChartContext_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartContext_descriptor,
         new java.lang.String[] { "Id", "Index", "Timestamp", "Version", "Sites", "Messages", "Global", "StartTime", "StartIndex", "Active", "Waiting", "Paused", "Disabled", "Events", "Log", });
     internal_static_TideChartData_descriptor =
-      getDescriptor().getMessageTypes().get(29);
+      getDescriptor().getMessageTypes().get(28);
     internal_static_TideChartData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartData_descriptor,
         new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings", });
     internal_static_TideChartHeader_descriptor =
-      getDescriptor().getMessageTypes().get(30);
+      getDescriptor().getMessageTypes().get(29);
     internal_static_TideChartHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartHeader_descriptor,
         new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", });
     internal_static_TideChartFile_descriptor =
-      getDescriptor().getMessageTypes().get(31);
+      getDescriptor().getMessageTypes().get(30);
     internal_static_TideChartFile_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFile_descriptor,
         new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", "Context", });
     internal_static_TideChartFileHeader_descriptor =
-      getDescriptor().getMessageTypes().get(32);
+      getDescriptor().getMessageTypes().get(31);
     internal_static_TideChartFileHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFileHeader_descriptor,
         new java.lang.String[] { "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", });
     internal_static_TideChartFileCurrent_descriptor =
-      getDescriptor().getMessageTypes().get(33);
+      getDescriptor().getMessageTypes().get(32);
     internal_static_TideChartFileCurrent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartFileCurrent_descriptor,
