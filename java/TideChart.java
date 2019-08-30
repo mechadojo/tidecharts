@@ -46289,28 +46289,28 @@ public final class TideChart {
 
     /**
      * <pre>
-     * a set of graphs (sub-library) and nodes (methods) that define method templates
+     * a graph with nodes that define the method templates of the library
      * </pre>
      *
-     * <code>.TideChartData methods = 15;</code>
+     * <code>.TideChartGraph methods = 15;</code>
      */
     boolean hasMethods();
     /**
      * <pre>
-     * a set of graphs (sub-library) and nodes (methods) that define method templates
+     * a graph with nodes that define the method templates of the library
      * </pre>
      *
-     * <code>.TideChartData methods = 15;</code>
+     * <code>.TideChartGraph methods = 15;</code>
      */
-    TideChart.TideChartData getMethods();
+    TideChart.TideChartGraph getMethods();
     /**
      * <pre>
-     * a set of graphs (sub-library) and nodes (methods) that define method templates
+     * a graph with nodes that define the method templates of the library
      * </pre>
      *
-     * <code>.TideChartData methods = 15;</code>
+     * <code>.TideChartGraph methods = 15;</code>
      */
-    TideChart.TideChartDataOrBuilder getMethodsOrBuilder();
+    TideChart.TideChartGraphOrBuilder getMethodsOrBuilder();
 
     /**
      * <pre>
@@ -46456,11 +46456,11 @@ public final class TideChart {
               break;
             }
             case 122: {
-              TideChart.TideChartData.Builder subBuilder = null;
+              TideChart.TideChartGraph.Builder subBuilder = null;
               if (methods_ != null) {
                 subBuilder = methods_.toBuilder();
               }
-              methods_ = input.readMessage(TideChart.TideChartData.parser(), extensionRegistry);
+              methods_ = input.readMessage(TideChart.TideChartGraph.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(methods_);
                 methods_ = subBuilder.buildPartial();
@@ -46823,35 +46823,35 @@ public final class TideChart {
     }
 
     public static final int METHODS_FIELD_NUMBER = 15;
-    private TideChart.TideChartData methods_;
+    private TideChart.TideChartGraph methods_;
     /**
      * <pre>
-     * a set of graphs (sub-library) and nodes (methods) that define method templates
+     * a graph with nodes that define the method templates of the library
      * </pre>
      *
-     * <code>.TideChartData methods = 15;</code>
+     * <code>.TideChartGraph methods = 15;</code>
      */
     public boolean hasMethods() {
       return methods_ != null;
     }
     /**
      * <pre>
-     * a set of graphs (sub-library) and nodes (methods) that define method templates
+     * a graph with nodes that define the method templates of the library
      * </pre>
      *
-     * <code>.TideChartData methods = 15;</code>
+     * <code>.TideChartGraph methods = 15;</code>
      */
-    public TideChart.TideChartData getMethods() {
-      return methods_ == null ? TideChart.TideChartData.getDefaultInstance() : methods_;
+    public TideChart.TideChartGraph getMethods() {
+      return methods_ == null ? TideChart.TideChartGraph.getDefaultInstance() : methods_;
     }
     /**
      * <pre>
-     * a set of graphs (sub-library) and nodes (methods) that define method templates
+     * a graph with nodes that define the method templates of the library
      * </pre>
      *
-     * <code>.TideChartData methods = 15;</code>
+     * <code>.TideChartGraph methods = 15;</code>
      */
-    public TideChart.TideChartDataOrBuilder getMethodsOrBuilder() {
+    public TideChart.TideChartGraphOrBuilder getMethodsOrBuilder() {
       return getMethods();
     }
 
@@ -48285,41 +48285,41 @@ public final class TideChart {
         return filesBuilder_;
       }
 
-      private TideChart.TideChartData methods_;
+      private TideChart.TideChartGraph methods_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder> methodsBuilder_;
+          TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder> methodsBuilder_;
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
       public boolean hasMethods() {
         return methodsBuilder_ != null || methods_ != null;
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
-      public TideChart.TideChartData getMethods() {
+      public TideChart.TideChartGraph getMethods() {
         if (methodsBuilder_ == null) {
-          return methods_ == null ? TideChart.TideChartData.getDefaultInstance() : methods_;
+          return methods_ == null ? TideChart.TideChartGraph.getDefaultInstance() : methods_;
         } else {
           return methodsBuilder_.getMessage();
         }
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
-      public Builder setMethods(TideChart.TideChartData value) {
+      public Builder setMethods(TideChart.TideChartGraph value) {
         if (methodsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -48334,13 +48334,13 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
       public Builder setMethods(
-          TideChart.TideChartData.Builder builderForValue) {
+          TideChart.TideChartGraph.Builder builderForValue) {
         if (methodsBuilder_ == null) {
           methods_ = builderForValue.build();
           onChanged();
@@ -48352,16 +48352,16 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
-      public Builder mergeMethods(TideChart.TideChartData value) {
+      public Builder mergeMethods(TideChart.TideChartGraph value) {
         if (methodsBuilder_ == null) {
           if (methods_ != null) {
             methods_ =
-              TideChart.TideChartData.newBuilder(methods_).mergeFrom(value).buildPartial();
+              TideChart.TideChartGraph.newBuilder(methods_).mergeFrom(value).buildPartial();
           } else {
             methods_ = value;
           }
@@ -48374,10 +48374,10 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
       public Builder clearMethods() {
         if (methodsBuilder_ == null) {
@@ -48392,44 +48392,44 @@ public final class TideChart {
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
-      public TideChart.TideChartData.Builder getMethodsBuilder() {
+      public TideChart.TideChartGraph.Builder getMethodsBuilder() {
         
         onChanged();
         return getMethodsFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
-      public TideChart.TideChartDataOrBuilder getMethodsOrBuilder() {
+      public TideChart.TideChartGraphOrBuilder getMethodsOrBuilder() {
         if (methodsBuilder_ != null) {
           return methodsBuilder_.getMessageOrBuilder();
         } else {
           return methods_ == null ?
-              TideChart.TideChartData.getDefaultInstance() : methods_;
+              TideChart.TideChartGraph.getDefaultInstance() : methods_;
         }
       }
       /**
        * <pre>
-       * a set of graphs (sub-library) and nodes (methods) that define method templates
+       * a graph with nodes that define the method templates of the library
        * </pre>
        *
-       * <code>.TideChartData methods = 15;</code>
+       * <code>.TideChartGraph methods = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder> 
+          TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder> 
           getMethodsFieldBuilder() {
         if (methodsBuilder_ == null) {
           methodsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              TideChart.TideChartData, TideChart.TideChartData.Builder, TideChart.TideChartDataOrBuilder>(
+              TideChart.TideChartGraph, TideChart.TideChartGraph.Builder, TideChart.TideChartGraphOrBuilder>(
                   getMethods(),
                   getParentForChildren(),
                   isClean());
@@ -74184,74 +74184,74 @@ public final class TideChart {
       "id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\024\n\014" +
       "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\021" +
       "\n\007version\030\007 \001(\tH\000\022\020\n\006script\030\010 \001(\tH\000B\t\n\007c" +
-      "ontent\"\321\001\n\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022" +
+      "ontent\"\322\001\n\020TideChartLibrary\022\n\n\002id\030\001 \001(\t\022" +
       "\014\n\004name\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\016\n\006origin\030\n" +
       " \001(\t\022\016\n\006branch\030\013 \001(\t\022\014\n\004path\030\014 \001(\t\022\037\n\005fi" +
-      "les\030\016 \003(\0132\020.TideChartSource\022\037\n\007methods\030\017" +
-      " \001(\0132\016.TideChartData\022$\n\010settings\030\020 \003(\0132\022" +
-      ".TideChartProperty\"\350\001\n\rTideChartSite\022\r\n\005" +
-      "index\030\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartSi" +
-      "te\022\014\n\004path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005eve" +
-      "nt\030\005 \001(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t\022" +
-      "\r\n\005graph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030\n" +
-      " \001(\t\022\014\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.Tide" +
-      "ChartProperty\"\211\002\n\020TideChartMessage\022\r\n\005in" +
-      "dex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030\004" +
-      " \001(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022\016" +
-      "\n\006target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\tho" +
-      "ldToken\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004ty" +
-      "pe\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonContent" +
-      "\030\016 \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007conten" +
-      "t\"k\n\026TideChartContextChange\022\r\n\005index\030\001 \001" +
-      "(\003\022\021\n\ttimestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005p" +
-      "rops\030\004 \003(\0132\022.TideChartProperty\"\270\001\n\021TideC" +
-      "hartLogEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestamp" +
-      "\030\002 \001(\003\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022." +
-      "TideChartLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007messa" +
-      "ge\030\006 \001(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022." +
-      "TideChartProperty\"\355\002\n\020TideChartContext\022\n" +
-      "\n\002id\030\001 \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030\003" +
-      " \001(\003\022\017\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016.T" +
-      "ideChartSite\022#\n\010messages\030\006 \003(\0132\021.TideCha" +
-      "rtMessage\022\"\n\006global\030\007 \003(\0132\022.TideChartPro" +
-      "perty\022\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030\t" +
-      " \001(\003\022\016\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n" +
-      "\006paused\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006event" +
-      "s\030\016 \003(\0132\027.TideChartContextChange\022\037\n\003log\030" +
-      "\017 \003(\0132\022.TideChartLogEntry\"\313\002\n\rTideChartD" +
-      "ata\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006" +
-      "source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDat" +
-      "e\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030" +
-      "\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003" +
-      "(\0132\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.Tid" +
-      "eChartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideChar" +
-      "tNote\022\"\n\007library\030\014 \003(\0132\021.TideChartLibrar" +
-      "y\022$\n\010settings\030\026 \003(\0132\022.TideChartProperty\"" +
-      "\240\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006" +
-      "branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 " +
-      "\001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(" +
-      "\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001" +
-      "(\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name" +
-      "\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014" +
-      "modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035" +
-      "\n\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working" +
-      "\030\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(" +
-      "\0132\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016." +
-      "TideChartData\022\"\n\007context\030\013 \003(\0132\021.TideCha" +
-      "rtContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001" +
-      " \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006orig" +
-      "in\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifi" +
-      "edBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002i" +
-      "d\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006o" +
-      "rigin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmod" +
-      "ifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChart" +
-      "Data*=\n\032TideChartCommandUpdateType\022\007\n\003ad" +
-      "d\020\000\022\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChar" +
-      "tLogLevel\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020" +
-      "\002\022\r\n\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022" +
-      "\013\n\007message\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007ve" +
-      "rbose\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChart" +
-      "b\006proto3"
+      "les\030\016 \003(\0132\020.TideChartSource\022 \n\007methods\030\017" +
+      " \001(\0132\017.TideChartGraph\022$\n\010settings\030\020 \003(\0132" +
+      "\022.TideChartProperty\"\350\001\n\rTideChartSite\022\r\n" +
+      "\005index\030\001 \001(\003\022\035\n\005stack\030\002 \003(\0132\016.TideChartS" +
+      "ite\022\014\n\004path\030\003 \001(\t\022\017\n\007trigger\030\004 \001(\t\022\r\n\005ev" +
+      "ent\030\005 \001(\t\022\r\n\005scope\030\006 \003(\t\022\016\n\006filter\030\007 \001(\t" +
+      "\022\r\n\005graph\030\010 \001(\t\022\016\n\006region\030\t \001(\t\022\014\n\004node\030" +
+      "\n \001(\t\022\014\n\004port\030\013 \001(\t\022!\n\005local\030\014 \003(\0132\022.Tid" +
+      "eChartProperty\"\211\002\n\020TideChartMessage\022\r\n\005i" +
+      "ndex\030\001 \001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\016\n\006origin\030" +
+      "\004 \001(\003\022\020\n\010previous\030\005 \001(\003\022\016\n\006source\030\007 \001(\003\022" +
+      "\016\n\006target\030\010 \001(\003\022\022\n\ndelayUntil\030\t \001(\003\022\021\n\th" +
+      "oldToken\030\n \001(\003\022\023\n\013cancelToken\030\013 \001(\003\022\014\n\004t" +
+      "ype\030\014 \001(\t\022\017\n\007version\030\r \001(\005\022\025\n\013jsonConten" +
+      "t\030\016 \001(\tH\000\022\024\n\nmsgContent\030\017 \001(\014H\000B\t\n\007conte" +
+      "nt\"k\n\026TideChartContextChange\022\r\n\005index\030\001 " +
+      "\001(\003\022\021\n\ttimestamp\030\002 \001(\003\022\014\n\004type\030\003 \001(\t\022!\n\005" +
+      "props\030\004 \003(\0132\022.TideChartProperty\"\270\001\n\021Tide" +
+      "ChartLogEntry\022\r\n\005index\030\001 \001(\003\022\021\n\ttimestam" +
+      "p\030\002 \001(\003\022\016\n\006source\030\003 \001(\003\022!\n\005level\030\004 \001(\0162\022" +
+      ".TideChartLogLevel\022\014\n\004tags\030\005 \003(\t\022\017\n\007mess" +
+      "age\030\006 \001(\t\022\014\n\004refs\030\007 \003(\003\022!\n\005props\030\010 \003(\0132\022" +
+      ".TideChartProperty\"\355\002\n\020TideChartContext\022" +
+      "\n\n\002id\030\001 \001(\t\022\r\n\005index\030\002 \001(\003\022\021\n\ttimestamp\030" +
+      "\003 \001(\003\022\017\n\007version\030\004 \001(\t\022\035\n\005sites\030\005 \003(\0132\016." +
+      "TideChartSite\022#\n\010messages\030\006 \003(\0132\021.TideCh" +
+      "artMessage\022\"\n\006global\030\007 \003(\0132\022.TideChartPr" +
+      "operty\022\021\n\tstartTime\030\010 \001(\003\022\022\n\nstartIndex\030" +
+      "\t \001(\003\022\016\n\006active\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016" +
+      "\n\006paused\030\014 \003(\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006even" +
+      "ts\030\016 \003(\0132\027.TideChartContextChange\022\037\n\003log" +
+      "\030\017 \003(\0132\022.TideChartLogEntry\"\313\002\n\rTideChart" +
+      "Data\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n" +
+      "\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDa" +
+      "te\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc" +
+      "\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets\030\t " +
+      "\003(\0132\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022.Ti" +
+      "deChartProperty\022\035\n\005notes\030\013 \003(\0132\016.TideCha" +
+      "rtNote\022\"\n\007library\030\014 \003(\0132\021.TideChartLibra" +
+      "ry\022$\n\010settings\030\026 \003(\0132\022.TideChartProperty" +
+      "\"\240\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n" +
+      "\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004" +
+      " \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001" +
+      "(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 " +
+      "\001(\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004nam" +
+      "e\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n" +
+      "\014modifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022" +
+      "\035\n\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007workin" +
+      "g\030\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003" +
+      "(\0132\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016" +
+      ".TideChartData\022\"\n\007context\030\013 \003(\0132\021.TideCh" +
+      "artContext\"w\n\023TideChartFileHeader\022\n\n\002id\030" +
+      "\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006ori" +
+      "gin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodif" +
+      "iedBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002" +
+      "id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006" +
+      "origin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmo" +
+      "difiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChar" +
+      "tData*=\n\032TideChartCommandUpdateType\022\007\n\003a" +
+      "dd\020\000\022\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideCha" +
+      "rtLogLevel\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error" +
+      "\020\002\022\r\n\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005" +
+      "\022\013\n\007message\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007v" +
+      "erbose\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChar" +
+      "tb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

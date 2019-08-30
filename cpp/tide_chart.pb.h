@@ -5350,13 +5350,13 @@ class TideChartLibrary :
   std::string* release_path();
   void set_allocated_path(std::string* path);
 
-  // .TideChartData methods = 15;
+  // .TideChartGraph methods = 15;
   bool has_methods() const;
   void clear_methods();
-  const ::TideChartData& methods() const;
-  ::TideChartData* release_methods();
-  ::TideChartData* mutable_methods();
-  void set_allocated_methods(::TideChartData* methods);
+  const ::TideChartGraph& methods() const;
+  ::TideChartGraph* release_methods();
+  ::TideChartGraph* mutable_methods();
+  void set_allocated_methods(::TideChartGraph* methods);
 
   // @@protoc_insertion_point(class_scope:TideChartLibrary)
  private:
@@ -5371,7 +5371,7 @@ class TideChartLibrary :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr origin_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr branch_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr path_;
-  ::TideChartData* methods_;
+  ::TideChartGraph* methods_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -15432,7 +15432,7 @@ TideChartLibrary::files() const {
   return files_;
 }
 
-// .TideChartData methods = 15;
+// .TideChartGraph methods = 15;
 inline bool TideChartLibrary::has_methods() const {
   return this != internal_default_instance() && methods_ != nullptr;
 }
@@ -15442,29 +15442,29 @@ inline void TideChartLibrary::clear_methods() {
   }
   methods_ = nullptr;
 }
-inline const ::TideChartData& TideChartLibrary::methods() const {
-  const ::TideChartData* p = methods_;
+inline const ::TideChartGraph& TideChartLibrary::methods() const {
+  const ::TideChartGraph* p = methods_;
   // @@protoc_insertion_point(field_get:TideChartLibrary.methods)
-  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartData*>(
-      &::_TideChartData_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::TideChartGraph*>(
+      &::_TideChartGraph_default_instance_);
 }
-inline ::TideChartData* TideChartLibrary::release_methods() {
+inline ::TideChartGraph* TideChartLibrary::release_methods() {
   // @@protoc_insertion_point(field_release:TideChartLibrary.methods)
   
-  ::TideChartData* temp = methods_;
+  ::TideChartGraph* temp = methods_;
   methods_ = nullptr;
   return temp;
 }
-inline ::TideChartData* TideChartLibrary::mutable_methods() {
+inline ::TideChartGraph* TideChartLibrary::mutable_methods() {
   
   if (methods_ == nullptr) {
-    auto* p = CreateMaybeMessage<::TideChartData>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::TideChartGraph>(GetArenaNoVirtual());
     methods_ = p;
   }
   // @@protoc_insertion_point(field_mutable:TideChartLibrary.methods)
   return methods_;
 }
-inline void TideChartLibrary::set_allocated_methods(::TideChartData* methods) {
+inline void TideChartLibrary::set_allocated_methods(::TideChartGraph* methods) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete methods_;

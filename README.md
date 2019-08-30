@@ -374,7 +374,7 @@ Read only the commit headers
 | branch | [string](#string) |  | branch containing referenced files |
 | path | [string](#string) |  | root path for files in the library |
 | files | [TideChartSource](#TideChartSource) | repeated | files that implement the method actions of the library |
-| methods | [TideChartData](#TideChartData) |  | a set of graphs (sub-library) and nodes (methods) that define method templates |
+| methods | [TideChartGraph](#TideChartGraph) |  | a graph with nodes that define the method templates of the library |
 | settings | [TideChartProperty](#TideChartProperty) | repeated | other settings associated with the library |
 
 

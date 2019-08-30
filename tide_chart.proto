@@ -326,7 +326,7 @@ message TideChartLibrary {
     string path = 12;                           // root path for files in the library
 
     repeated TideChartSource files = 14;        // files that implement the method actions of the library
-    TideChartData methods = 15;                 // a set of graphs (sub-library) and nodes (methods) that define method templates
+    TideChartGraph methods = 15;                // a graph with nodes that define the method templates of the library
 
     repeated TideChartProperty settings = 16;   // other settings associated with the library
 }

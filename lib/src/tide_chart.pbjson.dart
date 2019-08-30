@@ -375,7 +375,7 @@ const TideChartLibrary$json = const {
     const {'1': 'branch', '3': 11, '4': 1, '5': 9, '10': 'branch'},
     const {'1': 'path', '3': 12, '4': 1, '5': 9, '10': 'path'},
     const {'1': 'files', '3': 14, '4': 3, '5': 11, '6': '.TideChartSource', '10': 'files'},
-    const {'1': 'methods', '3': 15, '4': 1, '5': 11, '6': '.TideChartData', '10': 'methods'},
+    const {'1': 'methods', '3': 15, '4': 1, '5': 11, '6': '.TideChartGraph', '10': 'methods'},
     const {'1': 'settings', '3': 16, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
   ],
 };

@@ -1596,7 +1596,7 @@ class TideChartLibrary extends $pb.GeneratedMessage {
     ..aOS(11, 'branch')
     ..aOS(12, 'path')
     ..pc<TideChartSource>(14, 'files', $pb.PbFieldType.PM,TideChartSource.create)
-    ..a<TideChartData>(15, 'methods', $pb.PbFieldType.OM, TideChartData.getDefault, TideChartData.create)
+    ..a<TideChartGraph>(15, 'methods', $pb.PbFieldType.OM, TideChartGraph.getDefault, TideChartGraph.create)
     ..pc<TideChartProperty>(16, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
     ..hasRequiredFields = false
   ;
@@ -1647,8 +1647,8 @@ class TideChartLibrary extends $pb.GeneratedMessage {
 
   $core.List<TideChartSource> get files => $_getList(6);
 
-  TideChartData get methods => $_getN(7);
-  set methods(TideChartData v) { setField(15, v); }
+  TideChartGraph get methods => $_getN(7);
+  set methods(TideChartGraph v) { setField(15, v); }
   $core.bool hasMethods() => $_has(7);
   void clearMethods() => clearField(15);
 
