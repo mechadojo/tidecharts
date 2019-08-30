@@ -198,6 +198,7 @@
 | notes | [TideChartNote](#TideChartNote) | repeated | note discussion for the entire chart |
 | library | [TideChartLibrary](#TideChartLibrary) | repeated | source of node templates that can be added to graphs |
 | settings | [TideChartProperty](#TideChartProperty) | repeated | charts can have additional parameters related to layout, display or debugging |
+| imports | [TideChartSource](#TideChartSource) | repeated | charts can reference other charts to import to use as libraries and templates |
 
 
 
@@ -752,7 +753,10 @@ a recursive data type that provides configuration values for graphs, regions and
 | modifiedDate | [string](#string) |  | date file version was modified |
 | modifiedBy | [string](#string) |  | user that modified this file version |
 | version | [string](#string) |  | reference to the exact version of the file |
-| script | [string](#string) |  | contents of the file |
+| size | [int32](#int32) |  | size of the file |
+| script | [string](#string) |  | last contents of the text file |
+| chart | [TideChartData](#TideChartData) |  | last contents of the chart file |
+| data | [bytes](#bytes) |  | last contents of the binary file (image, etc) |
 
 
 
@@ -770,7 +774,8 @@ a recursive data type that provides configuration values for graphs, regions and
 | id | [string](#string) |  | unique id for the widget |
 | type | [string](#string) |  | type of widget |
 | title | [string](#string) |  | description title of the widget |
-| region | [string](#string) |  | comment boxes can be relative to a region or to the graph |
+| icon | [string](#string) |  | icon used for the widget in the library |
+| region | [string](#string) |  | widgets can be positioned relative to a region or to the graph |
 | posX | [sint32](#sint32) |  | X position of the comment box |
 | posY | [sint32](#sint32) |  | Y position of the comment box |
 | width | [int32](#int32) |  | width of comment box - 0 indicates autosize to fit content |
@@ -779,7 +784,13 @@ a recursive data type that provides configuration values for graphs, regions and
 | port | [string](#string) |  | port widget is associated with (&lt;node&gt;:&lt;port&gt;) |
 | node | [string](#string) |  | name of node widget is associated with |
 | props | [TideChartProperty](#TideChartProperty) | repeated | widgets can have configuration parameters |
+| isLogging | [bool](#bool) |  | flag indicating this widget will trace messages |
+| isDebugging | [bool](#bool) |  | flag indicating this widget is a debug breakpoint |
+| isPaused | [bool](#bool) |  | flag indicating this widget is paused (messages are queued) |
+| isDisabled | [bool](#bool) |  | flag indicating this widget is disabled (messages are dropped) |
 | settings | [TideChartProperty](#TideChartProperty) | repeated | widgets can have additional parameters related to layout, display or debugging |
+| resources | [TideChartSource](#TideChartSource) | repeated | widgets can have resource files |
+| internal | [TideChartGraph](#TideChartGraph) | repeated | widgets can procedurally generate internal graphs that implement runtime behavior |
 
 
 

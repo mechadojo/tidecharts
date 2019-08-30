@@ -33,102 +33,107 @@ public static partial class TideChartReflection {
           "ARIRCglmb250U3R5bGUYCyABKAkSEQoJYWxpZ25tZW50GAwgAygREg0KBWNv",
           "bG9yGA0gASgFEhIKCmJhY2tncm91bmQYDiABKAUSDgoGYm9yZGVyGA8gAygF",
           "EhAKCGlzUmFpc2VkGBAgASgIEhIKCmlzUmV2ZXJzZWQYESABKAhCCQoHY29u",
-          "dGVudCKIAgoPVGlkZUNoYXJ0V2lkZ2V0EgoKAmlkGAEgASgJEgwKBHR5cGUY",
-          "AiABKAkSDQoFdGl0bGUYAyABKAkSDgoGcmVnaW9uGAQgASgJEgwKBHBvc1gY",
-          "BSABKBESDAoEcG9zWRgGIAEoERINCgV3aWR0aBgHIAEoBRIOCgZoZWlnaHQY",
-          "CCABKAUSDgoEbGluaxgJIAEoCUgAEg4KBHBvcnQYCiABKAlIABIOCgRub2Rl",
-          "GAsgASgJSAASIQoFcHJvcHMYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIk",
-          "CghzZXR0aW5ncxgWIAMoCzISLlRpZGVDaGFydFByb3BlcnR5QggKBnRhcmdl",
-          "dCKHAgoNVGlkZUNoYXJ0UG9ydBIMCgR0eXBlGAEgASgJEgwKBG5vZGUYAiAB",
-          "KAkSDAoEbmFtZRgDIAEoCRIPCgdvcmRpbmFsGAQgASgFEhEKCWlzRGVmYXVs",
-          "dBgFIAEoCBISCgppc1JlcXVpcmVkGAYgASgIEg8KB2FsbG93ZWQYByADKAkS",
-          "DAoEaGludBgIIAEoCRINCgV2YWx1ZRgJIAEoCRIPCgd0cmlnZ2VyGAogASgJ",
-          "EgwKBGxpbmsYCyABKAkSDQoFZXZlbnQYDCABKAkSEQoJc3luY0dyb3VwGA0g",
-          "ASgJEhIKCmlzQmxvY2tpbmcYDiABKAgSEQoJaXNRdWV1aW5nGA8gASgIIssB",
-          "Cg1UaWRlQ2hhcnRMaW5rEg8KB291dE5vZGUYASABKAkSDwoHb3V0UG9ydBgC",
-          "IAEoCRIOCgZpbk5vZGUYAyABKAkSDgoGaW5Qb3J0GAQgASgJEg0KBWdyb3Vw",
-          "GAUgASgFEg0KBWRlbGF5GAYgASgFEgwKBGxpbmsYByABKAkSEQoJaXNMb2dn",
-          "aW5nGBAgASgIEhMKC2lzRGVidWdnaW5nGBEgASgIEhAKCGlzUGF1c2VkGBIg",
-          "ASgIEhIKCmlzRGlzYWJsZWQYEyABKAgidwoNVGlkZUNoYXJ0Tm90ZRIKCgJp",
-          "ZBgBIAEoCRIPCgdyZXBseVRvGAIgASgJEhAKCGNoYW5nZVRvGAMgASgJEg8K",
-          "B2NvbnRlbnQYBCABKAkSEQoJY3JlYXRlZEJ5GAUgASgJEhMKC2NyZWF0ZWRE",
-          "YXRlGAYgASgJIp0DCg1UaWRlQ2hhcnROb2RlEgwKBG5hbWUYASABKAkSDAoE",
-          "dHlwZRgCIAEoCRIMCgRwb3NYGAMgASgREgwKBHBvc1kYBCABKBESDQoFdGl0",
-          "bGUYBSABKAkSDAoEaWNvbhgGIAEoCRIPCgdsaWJyYXJ5GAcgASgJEg4KBm1l",
-          "dGhvZBgIIAEoCRINCgVkZWxheRgJIAEoBRIfCgdpbnBvcnRzGAogAygLMg4u",
-          "VGlkZUNoYXJ0UG9ydBIgCghvdXRwb3J0cxgLIAMoCzIOLlRpZGVDaGFydFBv",
-          "cnQSIQoFcHJvcHMYDCADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIRCglpc0xv",
-          "Z2dpbmcYECABKAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoIaXNQYXVzZWQY",
-          "EiABKAgSEgoKaXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgUIAMoCzIOLlRp",
-          "ZGVDaGFydE5vdGUSDgoGc2NyaXB0GBUgASgJEiQKCHNldHRpbmdzGBYgAygL",
-          "MhIuVGlkZUNoYXJ0UHJvcGVydHkioQIKD1RpZGVDaGFydFJlZ2lvbhIMCgRu",
-          "YW1lGAEgASgJEg0KBXRpdGxlGAIgASgJEg0KBW5vZGVzGAMgAygJEg0KBWdy",
-          "b3VwGAQgASgFEg0KBXNjb3BlGAUgASgJEiEKBXByb3BzGAYgAygLMhIuVGlk",
-          "ZUNoYXJ0UHJvcGVydHkSEQoJaXNMb2dnaW5nGBAgASgIEhMKC2lzRGVidWdn",
-          "aW5nGBEgASgIEhAKCGlzUGF1c2VkGBIgASgIEhIKCmlzRGlzYWJsZWQYEyAB",
-          "KAgSHQoFbm90ZXMYFCADKAsyDi5UaWRlQ2hhcnROb3RlEg4KBnNjcmlwdBgV",
-          "IAEoCRIkCghzZXR0aW5ncxgWIAMoCzISLlRpZGVDaGFydFByb3BlcnR5IowE",
-          "Cg5UaWRlQ2hhcnRHcmFwaBIKCgJpZBgBIAEoCRIMCgR0eXBlGAIgASgJEgwK",
-          "BG5hbWUYAyABKAkSDQoFdGl0bGUYBCABKAkSDAoEaWNvbhgFIAEoCRIPCgd2",
-          "ZXJzaW9uGAYgASgJEg4KBnNvdXJjZRgHIAEoCRIdCgVub2RlcxgIIAMoCzIO",
-          "LlRpZGVDaGFydE5vZGUSHQoFbGlua3MYCSADKAsyDi5UaWRlQ2hhcnRMaW5r",
-          "EiEKB3JlZ2lvbnMYCiADKAsyEC5UaWRlQ2hhcnRSZWdpb24SJgoIY29tbWVu",
-          "dHMYCyADKAsyFC5UaWRlQ2hhcnRDb21tZW50Qm94EiEKB3dpZGdldHMYDCAD",
-          "KAsyEC5UaWRlQ2hhcnRXaWRnZXQSIQoFcHJvcHMYDSADKAsyEi5UaWRlQ2hh",
-          "cnRQcm9wZXJ0eRIiCgdoaXN0b3J5GA4gAygLMhEuVGlkZUNoYXJ0Q29tbWFu",
-          "ZBIRCglpc0xvZ2dpbmcYECABKAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoI",
-          "aXNQYXVzZWQYEiABKAgSEgoKaXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgU",
-          "IAMoCzIOLlRpZGVDaGFydE5vdGUSDgoGc2NyaXB0GBUgASgJEiQKCHNldHRp",
-          "bmdzGBYgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkihQQKEFRpZGVDaGFydENv",
-          "bW1hbmQSDwoHdmVyc2lvbhgBIAEoCRIOCgZ0YXJnZXQYAiABKAkSJwoFZ3Jv",
-          "dXAYAyABKAsyFi5UaWRlQ2hhcnRHcm91cENvbW1hbmRIABIlCgRtb3ZlGAQg",
-          "ASgLMhUuVGlkZUNoYXJ0TW92ZUNvbW1hbmRIABIuCgdjb21tZW50GAUgASgL",
-          "MhsuVGlkZUNoYXJ0Q29tbWVudEJveENvbW1hbmRIABIpCgZ3aWRnZXQYBiAB",
-          "KAsyFy5UaWRlQ2hhcnRXaWRnZXRDb21tYW5kSAASJQoEcG9ydBgHIAEoCzIV",
-          "LlRpZGVDaGFydFBvcnRDb21tYW5kSAASJQoEbGluaxgIIAEoCzIVLlRpZGVD",
-          "aGFydExpbmtDb21tYW5kSAASJQoEbm9kZRgJIAEoCzIVLlRpZGVDaGFydE5v",
-          "ZGVDb21tYW5kSAASKQoGcmVnaW9uGAogASgLMhcuVGlkZUNoYXJ0UmVnaW9u",
-          "Q29tbWFuZEgAEicKBWdyYXBoGAsgASgLMhYuVGlkZUNoYXJ0R3JhcGhDb21t",
-          "YW5kSAASKgoFcHJvcHMYDCABKAsyGS5UaWRlQ2hhcnRQcm9wZXJ0eUNvbW1h",
-          "bmRIABIlCgRub3RlGA0gASgLMhUuVGlkZUNoYXJ0Tm90ZUNvbW1hbmRIAEIJ",
-          "Cgdjb21tYW5kIjwKFVRpZGVDaGFydEdyb3VwQ29tbWFuZBIjCghjb21tYW5k",
-          "cxgBIAMoCzIRLlRpZGVDaGFydENvbW1hbmQiaAoUVGlkZUNoYXJ0TW92ZUNv",
-          "bW1hbmQSDAoEbm9kZRgBIAEoCRIQCghmcm9tUG9zWBgCIAEoERIQCghmcm9t",
-          "UG9zWRgDIAEoERIOCgZ0b1Bvc1gYBCABKBESDgoGdG9Qb3NZGAUgASgRIpsB",
-          "ChpUaWRlQ2hhcnRDb21tZW50Qm94Q29tbWFuZBIpCgtmcm9tQ29tbWVudBgB",
-          "IAEoCzIULlRpZGVDaGFydENvbW1lbnRCb3gSJwoJdG9Db21tZW50GAIgASgL",
-          "MhQuVGlkZUNoYXJ0Q29tbWVudEJveBIpCgR0eXBlGAMgASgOMhsuVGlkZUNo",
-          "YXJ0Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFdpZGdldENvbW1h",
-          "bmQSJAoKZnJvbVdpZGdldBgBIAEoCzIQLlRpZGVDaGFydFdpZGdldBIiCgh0",
-          "b1dpZGdldBgCIAEoCzIQLlRpZGVDaGFydFdpZGdldBIpCgR0eXBlGAMgASgO",
-          "MhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUigwEKFFRpZGVDaGFydFBv",
-          "cnRDb21tYW5kEiAKCGZyb21Qb3J0GAEgASgLMg4uVGlkZUNoYXJ0UG9ydBIe",
-          "CgZ0b1BvcnQYAiABKAsyDi5UaWRlQ2hhcnRQb3J0EikKBHR5cGUYAyABKA4y",
-          "Gy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZSKDAQoUVGlkZUNoYXJ0TGlu",
-          "a0NvbW1hbmQSIAoIZnJvbUxpbmsYASABKAsyDi5UaWRlQ2hhcnRMaW5rEh4K",
-          "BnRvTGluaxgCIAEoCzIOLlRpZGVDaGFydExpbmsSKQoEdHlwZRgDIAEoDjIb",
-          "LlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIoMBChRUaWRlQ2hhcnROb2Rl",
-          "Q29tbWFuZBIgCghmcm9tTm9kZRgBIAEoCzIOLlRpZGVDaGFydE5vZGUSHgoG",
-          "dG9Ob2RlGAIgASgLMg4uVGlkZUNoYXJ0Tm9kZRIpCgR0eXBlGAMgASgOMhsu",
-          "VGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUijQEKFlRpZGVDaGFydFJlZ2lv",
-          "bkNvbW1hbmQSJAoKZnJvbVJlZ2lvbhgBIAEoCzIQLlRpZGVDaGFydFJlZ2lv",
-          "bhIiCgh0b1JlZ2lvbhgCIAEoCzIQLlRpZGVDaGFydFJlZ2lvbhIpCgR0eXBl",
-          "GAMgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUiiAEKFVRpZGVD",
-          "aGFydEdyYXBoQ29tbWFuZBIiCglmcm9tR3JhcGgYASABKAsyDy5UaWRlQ2hh",
-          "cnRHcmFwaBIgCgd0b0dyYXBoGAIgASgLMg8uVGlkZUNoYXJ0R3JhcGgSKQoE",
-          "dHlwZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlIuABChhU",
-          "aWRlQ2hhcnRQcm9wZXJ0eUNvbW1hbmQSJQoJZnJvbVByb3BzGAEgAygLMhIu",
-          "VGlkZUNoYXJ0UHJvcGVydHkSIwoHdG9Qcm9wcxgCIAMoCzISLlRpZGVDaGFy",
-          "dFByb3BlcnR5EikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5kVXBk",
-          "YXRlVHlwZRIOCgRub2RlGAUgASgJSAASEAoGcmVnaW9uGAYgASgJSAASEAoG",
-          "d2lkZ2V0GAcgASgJSAASDwoFZ3JhcGgYCCABKAlIAEIICgZ0YXJnZXQinQEK",
-          "FFRpZGVDaGFydE5vdGVDb21tYW5kEh0KBW5vdGVzGAEgAygLMg4uVGlkZUNo",
-          "YXJ0Tm90ZRIpCgR0eXBlGAIgASgOMhsuVGlkZUNoYXJ0Q29tbWFuZFVwZGF0",
-          "ZVR5cGUSDgoEbm9kZRgDIAEoCUgAEhAKBnJlZ2lvbhgEIAEoCUgAEg8KBWdy",
-          "YXBoGAUgASgJSABCCAoGdGFyZ2V0IpMBCg9UaWRlQ2hhcnRTb3VyY2USCgoC",
-          "aWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEhQKDG1vZGlm",
-          "aWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYgASgJEhEKB3ZlcnNpb24Y",
-          "ByABKAlIABIQCgZzY3JpcHQYCCABKAlIAEIJCgdjb250ZW50ItIBChBUaWRl",
+          "dGVudCKsAwoPVGlkZUNoYXJ0V2lkZ2V0EgoKAmlkGAEgASgJEgwKBHR5cGUY",
+          "AiABKAkSDQoFdGl0bGUYAyABKAkSDAoEaWNvbhgEIAEoCRIOCgZyZWdpb24Y",
+          "BSABKAkSDAoEcG9zWBgGIAEoERIMCgRwb3NZGAcgASgREg0KBXdpZHRoGAgg",
+          "ASgFEg4KBmhlaWdodBgJIAEoBRIOCgRsaW5rGAogASgJSAASDgoEcG9ydBgL",
+          "IAEoCUgAEg4KBG5vZGUYDCABKAlIABIhCgVwcm9wcxgNIAMoCzISLlRpZGVD",
+          "aGFydFByb3BlcnR5EhEKCWlzTG9nZ2luZxgQIAEoCBITCgtpc0RlYnVnZ2lu",
+          "ZxgRIAEoCBIQCghpc1BhdXNlZBgSIAEoCBISCgppc0Rpc2FibGVkGBMgASgI",
+          "EiQKCHNldHRpbmdzGBYgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkSIwoJcmVz",
+          "b3VyY2VzGBcgAygLMhAuVGlkZUNoYXJ0U291cmNlEiEKCGludGVybmFsGBgg",
+          "AygLMg8uVGlkZUNoYXJ0R3JhcGhCCAoGdGFyZ2V0IocCCg1UaWRlQ2hhcnRQ",
+          "b3J0EgwKBHR5cGUYASABKAkSDAoEbm9kZRgCIAEoCRIMCgRuYW1lGAMgASgJ",
+          "Eg8KB29yZGluYWwYBCABKAUSEQoJaXNEZWZhdWx0GAUgASgIEhIKCmlzUmVx",
+          "dWlyZWQYBiABKAgSDwoHYWxsb3dlZBgHIAMoCRIMCgRoaW50GAggASgJEg0K",
+          "BXZhbHVlGAkgASgJEg8KB3RyaWdnZXIYCiABKAkSDAoEbGluaxgLIAEoCRIN",
+          "CgVldmVudBgMIAEoCRIRCglzeW5jR3JvdXAYDSABKAkSEgoKaXNCbG9ja2lu",
+          "ZxgOIAEoCBIRCglpc1F1ZXVpbmcYDyABKAgiywEKDVRpZGVDaGFydExpbmsS",
+          "DwoHb3V0Tm9kZRgBIAEoCRIPCgdvdXRQb3J0GAIgASgJEg4KBmluTm9kZRgD",
+          "IAEoCRIOCgZpblBvcnQYBCABKAkSDQoFZ3JvdXAYBSABKAUSDQoFZGVsYXkY",
+          "BiABKAUSDAoEbGluaxgHIAEoCRIRCglpc0xvZ2dpbmcYECABKAgSEwoLaXNE",
+          "ZWJ1Z2dpbmcYESABKAgSEAoIaXNQYXVzZWQYEiABKAgSEgoKaXNEaXNhYmxl",
+          "ZBgTIAEoCCJ3Cg1UaWRlQ2hhcnROb3RlEgoKAmlkGAEgASgJEg8KB3JlcGx5",
+          "VG8YAiABKAkSEAoIY2hhbmdlVG8YAyABKAkSDwoHY29udGVudBgEIAEoCRIR",
+          "CgljcmVhdGVkQnkYBSABKAkSEwoLY3JlYXRlZERhdGUYBiABKAkinQMKDVRp",
+          "ZGVDaGFydE5vZGUSDAoEbmFtZRgBIAEoCRIMCgR0eXBlGAIgASgJEgwKBHBv",
+          "c1gYAyABKBESDAoEcG9zWRgEIAEoERINCgV0aXRsZRgFIAEoCRIMCgRpY29u",
+          "GAYgASgJEg8KB2xpYnJhcnkYByABKAkSDgoGbWV0aG9kGAggASgJEg0KBWRl",
+          "bGF5GAkgASgFEh8KB2lucG9ydHMYCiADKAsyDi5UaWRlQ2hhcnRQb3J0EiAK",
+          "CG91dHBvcnRzGAsgAygLMg4uVGlkZUNoYXJ0UG9ydBIhCgVwcm9wcxgMIAMo",
+          "CzISLlRpZGVDaGFydFByb3BlcnR5EhEKCWlzTG9nZ2luZxgQIAEoCBITCgtp",
+          "c0RlYnVnZ2luZxgRIAEoCBIQCghpc1BhdXNlZBgSIAEoCBISCgppc0Rpc2Fi",
+          "bGVkGBMgASgIEh0KBW5vdGVzGBQgAygLMg4uVGlkZUNoYXJ0Tm90ZRIOCgZz",
+          "Y3JpcHQYFSABKAkSJAoIc2V0dGluZ3MYFiADKAsyEi5UaWRlQ2hhcnRQcm9w",
+          "ZXJ0eSKhAgoPVGlkZUNoYXJ0UmVnaW9uEgwKBG5hbWUYASABKAkSDQoFdGl0",
+          "bGUYAiABKAkSDQoFbm9kZXMYAyADKAkSDQoFZ3JvdXAYBCABKAUSDQoFc2Nv",
+          "cGUYBSABKAkSIQoFcHJvcHMYBiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIR",
+          "Cglpc0xvZ2dpbmcYECABKAgSEwoLaXNEZWJ1Z2dpbmcYESABKAgSEAoIaXNQ",
+          "YXVzZWQYEiABKAgSEgoKaXNEaXNhYmxlZBgTIAEoCBIdCgVub3RlcxgUIAMo",
+          "CzIOLlRpZGVDaGFydE5vdGUSDgoGc2NyaXB0GBUgASgJEiQKCHNldHRpbmdz",
+          "GBYgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkijAQKDlRpZGVDaGFydEdyYXBo",
+          "EgoKAmlkGAEgASgJEgwKBHR5cGUYAiABKAkSDAoEbmFtZRgDIAEoCRINCgV0",
+          "aXRsZRgEIAEoCRIMCgRpY29uGAUgASgJEg8KB3ZlcnNpb24YBiABKAkSDgoG",
+          "c291cmNlGAcgASgJEh0KBW5vZGVzGAggAygLMg4uVGlkZUNoYXJ0Tm9kZRId",
+          "CgVsaW5rcxgJIAMoCzIOLlRpZGVDaGFydExpbmsSIQoHcmVnaW9ucxgKIAMo",
+          "CzIQLlRpZGVDaGFydFJlZ2lvbhImCghjb21tZW50cxgLIAMoCzIULlRpZGVD",
+          "aGFydENvbW1lbnRCb3gSIQoHd2lkZ2V0cxgMIAMoCzIQLlRpZGVDaGFydFdp",
+          "ZGdldBIhCgVwcm9wcxgNIAMoCzISLlRpZGVDaGFydFByb3BlcnR5EiIKB2hp",
+          "c3RvcnkYDiADKAsyES5UaWRlQ2hhcnRDb21tYW5kEhEKCWlzTG9nZ2luZxgQ",
+          "IAEoCBITCgtpc0RlYnVnZ2luZxgRIAEoCBIQCghpc1BhdXNlZBgSIAEoCBIS",
+          "Cgppc0Rpc2FibGVkGBMgASgIEh0KBW5vdGVzGBQgAygLMg4uVGlkZUNoYXJ0",
+          "Tm90ZRIOCgZzY3JpcHQYFSABKAkSJAoIc2V0dGluZ3MYFiADKAsyEi5UaWRl",
+          "Q2hhcnRQcm9wZXJ0eSKFBAoQVGlkZUNoYXJ0Q29tbWFuZBIPCgd2ZXJzaW9u",
+          "GAEgASgJEg4KBnRhcmdldBgCIAEoCRInCgVncm91cBgDIAEoCzIWLlRpZGVD",
+          "aGFydEdyb3VwQ29tbWFuZEgAEiUKBG1vdmUYBCABKAsyFS5UaWRlQ2hhcnRN",
+          "b3ZlQ29tbWFuZEgAEi4KB2NvbW1lbnQYBSABKAsyGy5UaWRlQ2hhcnRDb21t",
+          "ZW50Qm94Q29tbWFuZEgAEikKBndpZGdldBgGIAEoCzIXLlRpZGVDaGFydFdp",
+          "ZGdldENvbW1hbmRIABIlCgRwb3J0GAcgASgLMhUuVGlkZUNoYXJ0UG9ydENv",
+          "bW1hbmRIABIlCgRsaW5rGAggASgLMhUuVGlkZUNoYXJ0TGlua0NvbW1hbmRI",
+          "ABIlCgRub2RlGAkgASgLMhUuVGlkZUNoYXJ0Tm9kZUNvbW1hbmRIABIpCgZy",
+          "ZWdpb24YCiABKAsyFy5UaWRlQ2hhcnRSZWdpb25Db21tYW5kSAASJwoFZ3Jh",
+          "cGgYCyABKAsyFi5UaWRlQ2hhcnRHcmFwaENvbW1hbmRIABIqCgVwcm9wcxgM",
+          "IAEoCzIZLlRpZGVDaGFydFByb3BlcnR5Q29tbWFuZEgAEiUKBG5vdGUYDSAB",
+          "KAsyFS5UaWRlQ2hhcnROb3RlQ29tbWFuZEgAQgkKB2NvbW1hbmQiPAoVVGlk",
+          "ZUNoYXJ0R3JvdXBDb21tYW5kEiMKCGNvbW1hbmRzGAEgAygLMhEuVGlkZUNo",
+          "YXJ0Q29tbWFuZCJoChRUaWRlQ2hhcnRNb3ZlQ29tbWFuZBIMCgRub2RlGAEg",
+          "ASgJEhAKCGZyb21Qb3NYGAIgASgREhAKCGZyb21Qb3NZGAMgASgREg4KBnRv",
+          "UG9zWBgEIAEoERIOCgZ0b1Bvc1kYBSABKBEimwEKGlRpZGVDaGFydENvbW1l",
+          "bnRCb3hDb21tYW5kEikKC2Zyb21Db21tZW50GAEgASgLMhQuVGlkZUNoYXJ0",
+          "Q29tbWVudEJveBInCgl0b0NvbW1lbnQYAiABKAsyFC5UaWRlQ2hhcnRDb21t",
+          "ZW50Qm94EikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRl",
+          "VHlwZSKNAQoWVGlkZUNoYXJ0V2lkZ2V0Q29tbWFuZBIkCgpmcm9tV2lkZ2V0",
+          "GAEgASgLMhAuVGlkZUNoYXJ0V2lkZ2V0EiIKCHRvV2lkZ2V0GAIgASgLMhAu",
+          "VGlkZUNoYXJ0V2lkZ2V0EikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21t",
+          "YW5kVXBkYXRlVHlwZSKDAQoUVGlkZUNoYXJ0UG9ydENvbW1hbmQSIAoIZnJv",
+          "bVBvcnQYASABKAsyDi5UaWRlQ2hhcnRQb3J0Eh4KBnRvUG9ydBgCIAEoCzIO",
+          "LlRpZGVDaGFydFBvcnQSKQoEdHlwZRgDIAEoDjIbLlRpZGVDaGFydENvbW1h",
+          "bmRVcGRhdGVUeXBlIoMBChRUaWRlQ2hhcnRMaW5rQ29tbWFuZBIgCghmcm9t",
+          "TGluaxgBIAEoCzIOLlRpZGVDaGFydExpbmsSHgoGdG9MaW5rGAIgASgLMg4u",
+          "VGlkZUNoYXJ0TGluaxIpCgR0eXBlGAMgASgOMhsuVGlkZUNoYXJ0Q29tbWFu",
+          "ZFVwZGF0ZVR5cGUigwEKFFRpZGVDaGFydE5vZGVDb21tYW5kEiAKCGZyb21O",
+          "b2RlGAEgASgLMg4uVGlkZUNoYXJ0Tm9kZRIeCgZ0b05vZGUYAiABKAsyDi5U",
+          "aWRlQ2hhcnROb2RlEikKBHR5cGUYAyABKA4yGy5UaWRlQ2hhcnRDb21tYW5k",
+          "VXBkYXRlVHlwZSKNAQoWVGlkZUNoYXJ0UmVnaW9uQ29tbWFuZBIkCgpmcm9t",
+          "UmVnaW9uGAEgASgLMhAuVGlkZUNoYXJ0UmVnaW9uEiIKCHRvUmVnaW9uGAIg",
+          "ASgLMhAuVGlkZUNoYXJ0UmVnaW9uEikKBHR5cGUYAyABKA4yGy5UaWRlQ2hh",
+          "cnRDb21tYW5kVXBkYXRlVHlwZSKIAQoVVGlkZUNoYXJ0R3JhcGhDb21tYW5k",
+          "EiIKCWZyb21HcmFwaBgBIAEoCzIPLlRpZGVDaGFydEdyYXBoEiAKB3RvR3Jh",
+          "cGgYAiABKAsyDy5UaWRlQ2hhcnRHcmFwaBIpCgR0eXBlGAMgASgOMhsuVGlk",
+          "ZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUi4AEKGFRpZGVDaGFydFByb3BlcnR5",
+          "Q29tbWFuZBIlCglmcm9tUHJvcHMYASADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0",
+          "eRIjCgd0b1Byb3BzGAIgAygLMhIuVGlkZUNoYXJ0UHJvcGVydHkSKQoEdHlw",
+          "ZRgDIAEoDjIbLlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlEg4KBG5vZGUY",
+          "BSABKAlIABIQCgZyZWdpb24YBiABKAlIABIQCgZ3aWRnZXQYByABKAlIABIP",
+          "CgVncmFwaBgIIAEoCUgAQggKBnRhcmdldCKdAQoUVGlkZUNoYXJ0Tm90ZUNv",
+          "bW1hbmQSHQoFbm90ZXMYASADKAsyDi5UaWRlQ2hhcnROb3RlEikKBHR5cGUY",
+          "AiABKA4yGy5UaWRlQ2hhcnRDb21tYW5kVXBkYXRlVHlwZRIOCgRub2RlGAMg",
+          "ASgJSAASEAoGcmVnaW9uGAQgASgJSAASDwoFZ3JhcGgYBSABKAlIAEIICgZ0",
+          "YXJnZXQi0AEKD1RpZGVDaGFydFNvdXJjZRIKCgJpZBgBIAEoCRIMCgRuYW1l",
+          "GAIgASgJEgwKBHBhdGgYAyABKAkSFAoMbW9kaWZpZWREYXRlGAUgASgJEhIK",
+          "Cm1vZGlmaWVkQnkYBiABKAkSDwoHdmVyc2lvbhgHIAEoCRIMCgRzaXplGAgg",
+          "ASgFEhAKBnNjcmlwdBgJIAEoCUgAEh8KBWNoYXJ0GAogASgLMg4uVGlkZUNo",
+          "YXJ0RGF0YUgAEg4KBGRhdGEYCyABKAxIAEIJCgdjb250ZW50ItIBChBUaWRl",
           "Q2hhcnRMaWJyYXJ5EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDQoFdGl0",
           "bGUYAyABKAkSDgoGb3JpZ2luGAogASgJEg4KBmJyYW5jaBgLIAEoCRIMCgRw",
           "YXRoGAwgASgJEh8KBWZpbGVzGA4gAygLMhAuVGlkZUNoYXJ0U291cmNlEiAK",
@@ -159,42 +164,43 @@ public static partial class TideChartReflection {
           "dGFydEluZGV4GAkgASgDEg4KBmFjdGl2ZRgKIAMoAxIPCgd3YWl0aW5nGAsg",
           "AygDEg4KBnBhdXNlZBgMIAMoAxIQCghkaXNhYmxlZBgNIAMoAxInCgZldmVu",
           "dHMYDiADKAsyFy5UaWRlQ2hhcnRDb250ZXh0Q2hhbmdlEh8KA2xvZxgPIAMo",
-          "CzISLlRpZGVDaGFydExvZ0VudHJ5IssCCg1UaWRlQ2hhcnREYXRhEg8KB3Zl",
+          "CzISLlRpZGVDaGFydExvZ0VudHJ5Iu4CCg1UaWRlQ2hhcnREYXRhEg8KB3Zl",
           "cnNpb24YASABKAkSDgoGYnJhbmNoGAIgASgJEg4KBnNvdXJjZRgDIAEoCRIN",
           "CgVtZXJnZRgEIAEoCRISCgpjb21taXREYXRlGAUgASgJEhAKCGNvbW1pdEJ5",
           "GAYgASgJEhIKCmNvbW1pdERlc2MYByABKAkSEwoLY29tbWl0Tm90ZXMYCCAB",
           "KAkSHwoGc2hlZXRzGAkgAygLMg8uVGlkZUNoYXJ0R3JhcGgSIQoFcHJvcHMY",
           "CiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIdCgVub3RlcxgLIAMoCzIOLlRp",
           "ZGVDaGFydE5vdGUSIgoHbGlicmFyeRgMIAMoCzIRLlRpZGVDaGFydExpYnJh",
-          "cnkSJAoIc2V0dGluZ3MYFiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eSKgAQoP",
-          "VGlkZUNoYXJ0SGVhZGVyEg8KB3ZlcnNpb24YASABKAkSDgoGYnJhbmNoGAIg",
-          "ASgJEg4KBnNvdXJjZRgDIAEoCRINCgVtZXJnZRgEIAEoCRISCgpjb21taXRE",
-          "YXRlGAUgASgJEhAKCGNvbW1pdEJ5GAYgASgJEhIKCmNvbW1pdERlc2MYByAB",
-          "KAkSEwoLY29tbWl0Tm90ZXMYCCABKAkinAIKDVRpZGVDaGFydEZpbGUSCgoC",
+          "cnkSJAoIc2V0dGluZ3MYFiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIhCgdp",
+          "bXBvcnRzGBcgAygLMhAuVGlkZUNoYXJ0U291cmNlIqABCg9UaWRlQ2hhcnRI",
+          "ZWFkZXISDwoHdmVyc2lvbhgBIAEoCRIOCgZicmFuY2gYAiABKAkSDgoGc291",
+          "cmNlGAMgASgJEg0KBW1lcmdlGAQgASgJEhIKCmNvbW1pdERhdGUYBSABKAkS",
+          "EAoIY29tbWl0QnkYBiABKAkSEgoKY29tbWl0RGVzYxgHIAEoCRITCgtjb21t",
+          "aXROb3RlcxgIIAEoCSKcAgoNVGlkZUNoYXJ0RmlsZRIKCgJpZBgBIAEoCRIM",
+          "CgRuYW1lGAIgASgJEgwKBHBhdGgYAyABKAkSDgoGb3JpZ2luGAQgASgJEhQK",
+          "DG1vZGlmaWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYgASgJEh0KBWNo",
+          "YXJ0GAcgASgLMg4uVGlkZUNoYXJ0RGF0YRIiCgd3b3JraW5nGAggAygLMhEu",
+          "VGlkZUNoYXJ0Q29tbWFuZBIhCgZyZW1vdGUYCSADKAsyES5UaWRlQ2hhcnRD",
+          "b21tYW5kEh8KB2hpc3RvcnkYCiADKAsyDi5UaWRlQ2hhcnREYXRhEiIKB2Nv",
+          "bnRleHQYCyADKAsyES5UaWRlQ2hhcnRDb250ZXh0IncKE1RpZGVDaGFydEZp",
+          "bGVIZWFkZXISCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMg",
+          "ASgJEg4KBm9yaWdpbhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSABKAkSEgoK",
+          "bW9kaWZpZWRCeRgGIAEoCSKXAQoUVGlkZUNoYXJ0RmlsZUN1cnJlbnQSCgoC",
           "aWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4KBm9yaWdp",
           "bhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSABKAkSEgoKbW9kaWZpZWRCeRgG",
-          "IAEoCRIdCgVjaGFydBgHIAEoCzIOLlRpZGVDaGFydERhdGESIgoHd29ya2lu",
-          "ZxgIIAMoCzIRLlRpZGVDaGFydENvbW1hbmQSIQoGcmVtb3RlGAkgAygLMhEu",
-          "VGlkZUNoYXJ0Q29tbWFuZBIfCgdoaXN0b3J5GAogAygLMg4uVGlkZUNoYXJ0",
-          "RGF0YRIiCgdjb250ZXh0GAsgAygLMhEuVGlkZUNoYXJ0Q29udGV4dCJ3ChNU",
-          "aWRlQ2hhcnRGaWxlSGVhZGVyEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkS",
-          "DAoEcGF0aBgDIAEoCRIOCgZvcmlnaW4YBCABKAkSFAoMbW9kaWZpZWREYXRl",
-          "GAUgASgJEhIKCm1vZGlmaWVkQnkYBiABKAkilwEKFFRpZGVDaGFydEZpbGVD",
-          "dXJyZW50EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEcGF0aBgDIAEo",
-          "CRIOCgZvcmlnaW4YBCABKAkSFAoMbW9kaWZpZWREYXRlGAUgASgJEhIKCm1v",
-          "ZGlmaWVkQnkYBiABKAkSHQoFY2hhcnQYByABKAsyDi5UaWRlQ2hhcnREYXRh",
-          "Kj0KGlRpZGVDaGFydENvbW1hbmRVcGRhdGVUeXBlEgcKA2FkZBAAEgoKBnJl",
-          "bW92ZRABEgoKBnVwZGF0ZRACKp0BChFUaWRlQ2hhcnRMb2dMZXZlbBIICgRu",
-          "b25lEAASCQoFZmF0YWwQARIJCgVlcnJvchACEg0KCWV4Y2VwdGlvbhADEgsK",
-          "B3dhcm5pbmcQBBIICgRpbmZvEAUSCwoHbWVzc2FnZRAGEgkKBWRlYnVnEAcS",
-          "CQoFY2hlY2sQCBILCgd2ZXJib3NlEAkSCQoFdHJhY2UQChIHCgNhbGwQC0IL",
-          "QglUaWRlQ2hhcnRiBnByb3RvMw=="));
+          "IAEoCRIdCgVjaGFydBgHIAEoCzIOLlRpZGVDaGFydERhdGEqPQoaVGlkZUNo",
+          "YXJ0Q29tbWFuZFVwZGF0ZVR5cGUSBwoDYWRkEAASCgoGcmVtb3ZlEAESCgoG",
+          "dXBkYXRlEAIqnQEKEVRpZGVDaGFydExvZ0xldmVsEggKBG5vbmUQABIJCgVm",
+          "YXRhbBABEgkKBWVycm9yEAISDQoJZXhjZXB0aW9uEAMSCwoHd2FybmluZxAE",
+          "EggKBGluZm8QBRILCgdtZXNzYWdlEAYSCQoFZGVidWcQBxIJCgVjaGVjaxAI",
+          "EgsKB3ZlcmJvc2UQCRIJCgV0cmFjZRAKEgcKA2FsbBALQgtCCVRpZGVDaGFy",
+          "dGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartCommandUpdateType), typeof(global::TideChartLogLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartProperty), global::TideChartProperty.Parser, new[]{ "Name", "BoolValue", "StrValue", "LongValue", "DoubleValue", "Props" }, new[]{ "Value" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartCommentBox), global::TideChartCommentBox.Parser, new[]{ "Id", "Region", "PosX", "PosY", "Width", "Height", "Text", "Image", "Icon", "FontSize", "FontStyle", "Alignment", "Color", "Background", "Border", "IsRaised", "IsReversed" }, new[]{ "Content" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props", "Settings" }, new[]{ "Target" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartWidget), global::TideChartWidget.Parser, new[]{ "Id", "Type", "Title", "Icon", "Region", "PosX", "PosY", "Width", "Height", "Link", "Port", "Node", "Props", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled", "Settings", "Resources", "Internal" }, new[]{ "Target" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPort), global::TideChartPort.Parser, new[]{ "Type", "Node", "Name", "Ordinal", "IsDefault", "IsRequired", "Allowed", "Hint", "Value", "Trigger", "Link", "Event", "SyncGroup", "IsBlocking", "IsQueuing" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLink), global::TideChartLink.Parser, new[]{ "OutNode", "OutPort", "InNode", "InPort", "Group", "Delay", "Link", "IsLogging", "IsDebugging", "IsPaused", "IsDisabled" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNote), global::TideChartNote.Parser, new[]{ "Id", "ReplyTo", "ChangeTo", "Content", "CreatedBy", "CreatedDate" }, null, null, null, null),
@@ -213,14 +219,14 @@ public static partial class TideChartReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartGraphCommand), global::TideChartGraphCommand.Parser, new[]{ "FromGraph", "ToGraph", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartPropertyCommand), global::TideChartPropertyCommand.Parser, new[]{ "FromProps", "ToProps", "Type", "Node", "Region", "Widget", "Graph" }, new[]{ "Target" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartNoteCommand), global::TideChartNoteCommand.Parser, new[]{ "Notes", "Type", "Node", "Region", "Graph" }, new[]{ "Target" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSource), global::TideChartSource.Parser, new[]{ "Id", "Name", "Path", "ModifiedDate", "ModifiedBy", "Version", "Script" }, new[]{ "Content" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSource), global::TideChartSource.Parser, new[]{ "Id", "Name", "Path", "ModifiedDate", "ModifiedBy", "Version", "Size", "Script", "Chart", "Data" }, new[]{ "Content" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLibrary), global::TideChartLibrary.Parser, new[]{ "Id", "Name", "Title", "Origin", "Branch", "Path", "Files", "Methods", "Settings" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartSite), global::TideChartSite.Parser, new[]{ "Index", "Stack", "Path", "Trigger", "Event", "Scope", "Filter", "Graph", "Region", "Node", "Port", "Local" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartMessage), global::TideChartMessage.Parser, new[]{ "Index", "Timestamp", "Origin", "Previous", "Source", "Target", "DelayUntil", "HoldToken", "CancelToken", "Type", "Version", "JsonContent", "MsgContent" }, new[]{ "Content" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContextChange), global::TideChartContextChange.Parser, new[]{ "Index", "Timestamp", "Type", "Props" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLogEntry), global::TideChartLogEntry.Parser, new[]{ "Index", "Timestamp", "Source", "Level", "Tags", "Message", "Refs", "Props" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContext), global::TideChartContext.Parser, new[]{ "Id", "Index", "Timestamp", "Version", "Sites", "Messages", "Global", "StartTime", "StartIndex", "Active", "Waiting", "Paused", "Disabled", "Events", "Log" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings", "Imports" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartHeader), global::TideChartHeader.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFile), global::TideChartFile.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", "Context" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileHeader), global::TideChartFileHeader.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy" }, null, null, null, null),
@@ -1274,13 +1280,20 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     id_ = other.id_;
     type_ = other.type_;
     title_ = other.title_;
+    icon_ = other.icon_;
     region_ = other.region_;
     posX_ = other.posX_;
     posY_ = other.posY_;
     width_ = other.width_;
     height_ = other.height_;
     props_ = other.props_.Clone();
+    isLogging_ = other.isLogging_;
+    isDebugging_ = other.isDebugging_;
+    isPaused_ = other.isPaused_;
+    isDisabled_ = other.isDisabled_;
     settings_ = other.settings_.Clone();
+    resources_ = other.resources_.Clone();
+    internal_ = other.internal_.Clone();
     switch (other.TargetCase) {
       case TargetOneofCase.Link:
         Link = other.Link;
@@ -1343,11 +1356,25 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     }
   }
 
+  /// <summary>Field number for the "icon" field.</summary>
+  public const int IconFieldNumber = 4;
+  private string icon_ = "";
+  /// <summary>
+  /// icon used for the widget in the library
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Icon {
+    get { return icon_; }
+    set {
+      icon_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
   /// <summary>Field number for the "region" field.</summary>
-  public const int RegionFieldNumber = 4;
+  public const int RegionFieldNumber = 5;
   private string region_ = "";
   /// <summary>
-  /// comment boxes can be relative to a region or to the graph
+  /// widgets can be positioned relative to a region or to the graph
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Region {
@@ -1358,7 +1385,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "posX" field.</summary>
-  public const int PosXFieldNumber = 5;
+  public const int PosXFieldNumber = 6;
   private int posX_;
   /// <summary>
   /// X position of the comment box 
@@ -1372,7 +1399,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "posY" field.</summary>
-  public const int PosYFieldNumber = 6;
+  public const int PosYFieldNumber = 7;
   private int posY_;
   /// <summary>
   /// Y position of the comment box 
@@ -1386,7 +1413,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "width" field.</summary>
-  public const int WidthFieldNumber = 7;
+  public const int WidthFieldNumber = 8;
   private int width_;
   /// <summary>
   /// width of comment box - 0 indicates autosize to fit content
@@ -1400,7 +1427,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "height" field.</summary>
-  public const int HeightFieldNumber = 8;
+  public const int HeightFieldNumber = 9;
   private int height_;
   /// <summary>
   /// height of comment box - 0 indicates autosize to fit content 
@@ -1414,7 +1441,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "link" field.</summary>
-  public const int LinkFieldNumber = 9;
+  public const int LinkFieldNumber = 10;
   /// <summary>
   /// link widget is associated with (&lt;out-node>:&lt;out-port>->&lt;in-node>:&lt;in-port>)
   /// </summary>
@@ -1428,7 +1455,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "port" field.</summary>
-  public const int PortFieldNumber = 10;
+  public const int PortFieldNumber = 11;
   /// <summary>
   /// port widget is associated with (&lt;node>:&lt;port>)
   /// </summary>
@@ -1442,7 +1469,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "node" field.</summary>
-  public const int NodeFieldNumber = 11;
+  public const int NodeFieldNumber = 12;
   /// <summary>
   /// name of node widget is associated with
   /// </summary>
@@ -1456,9 +1483,9 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   }
 
   /// <summary>Field number for the "props" field.</summary>
-  public const int PropsFieldNumber = 12;
+  public const int PropsFieldNumber = 13;
   private static readonly pb::FieldCodec<global::TideChartProperty> _repeated_props_codec
-      = pb::FieldCodec.ForMessage(98, global::TideChartProperty.Parser);
+      = pb::FieldCodec.ForMessage(106, global::TideChartProperty.Parser);
   private readonly pbc::RepeatedField<global::TideChartProperty> props_ = new pbc::RepeatedField<global::TideChartProperty>();
   /// <summary>
   /// widgets can have configuration parameters
@@ -1466,6 +1493,62 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::TideChartProperty> Props {
     get { return props_; }
+  }
+
+  /// <summary>Field number for the "isLogging" field.</summary>
+  public const int IsLoggingFieldNumber = 16;
+  private bool isLogging_;
+  /// <summary>
+  /// flag indicating this widget will trace messages
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsLogging {
+    get { return isLogging_; }
+    set {
+      isLogging_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "isDebugging" field.</summary>
+  public const int IsDebuggingFieldNumber = 17;
+  private bool isDebugging_;
+  /// <summary>
+  /// flag indicating this widget is a debug breakpoint
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsDebugging {
+    get { return isDebugging_; }
+    set {
+      isDebugging_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "isPaused" field.</summary>
+  public const int IsPausedFieldNumber = 18;
+  private bool isPaused_;
+  /// <summary>
+  /// flag indicating this widget is paused (messages are queued)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsPaused {
+    get { return isPaused_; }
+    set {
+      isPaused_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "isDisabled" field.</summary>
+  public const int IsDisabledFieldNumber = 19;
+  private bool isDisabled_;
+  /// <summary>
+  /// flag indicating this widget is disabled (messages are dropped)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsDisabled {
+    get { return isDisabled_; }
+    set {
+      isDisabled_ = value;
+    }
   }
 
   /// <summary>Field number for the "settings" field.</summary>
@@ -1481,13 +1564,39 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     get { return settings_; }
   }
 
+  /// <summary>Field number for the "resources" field.</summary>
+  public const int ResourcesFieldNumber = 23;
+  private static readonly pb::FieldCodec<global::TideChartSource> _repeated_resources_codec
+      = pb::FieldCodec.ForMessage(186, global::TideChartSource.Parser);
+  private readonly pbc::RepeatedField<global::TideChartSource> resources_ = new pbc::RepeatedField<global::TideChartSource>();
+  /// <summary>
+  /// widgets can have resource files 
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartSource> Resources {
+    get { return resources_; }
+  }
+
+  /// <summary>Field number for the "internal" field.</summary>
+  public const int InternalFieldNumber = 24;
+  private static readonly pb::FieldCodec<global::TideChartGraph> _repeated_internal_codec
+      = pb::FieldCodec.ForMessage(194, global::TideChartGraph.Parser);
+  private readonly pbc::RepeatedField<global::TideChartGraph> internal_ = new pbc::RepeatedField<global::TideChartGraph>();
+  /// <summary>
+  /// widgets can procedurally generate internal graphs that implement runtime behavior
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartGraph> Internal {
+    get { return internal_; }
+  }
+
   private object target_;
   /// <summary>Enum of possible cases for the "target" oneof.</summary>
   public enum TargetOneofCase {
     None = 0,
-    Link = 9,
-    Port = 10,
-    Node = 11,
+    Link = 10,
+    Port = 11,
+    Node = 12,
   }
   private TargetOneofCase targetCase_ = TargetOneofCase.None;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1517,6 +1626,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     if (Id != other.Id) return false;
     if (Type != other.Type) return false;
     if (Title != other.Title) return false;
+    if (Icon != other.Icon) return false;
     if (Region != other.Region) return false;
     if (PosX != other.PosX) return false;
     if (PosY != other.PosY) return false;
@@ -1526,7 +1636,13 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     if (Port != other.Port) return false;
     if (Node != other.Node) return false;
     if(!props_.Equals(other.props_)) return false;
+    if (IsLogging != other.IsLogging) return false;
+    if (IsDebugging != other.IsDebugging) return false;
+    if (IsPaused != other.IsPaused) return false;
+    if (IsDisabled != other.IsDisabled) return false;
     if(!settings_.Equals(other.settings_)) return false;
+    if(!resources_.Equals(other.resources_)) return false;
+    if(!internal_.Equals(other.internal_)) return false;
     if (TargetCase != other.TargetCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1537,6 +1653,7 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     if (Id.Length != 0) hash ^= Id.GetHashCode();
     if (Type.Length != 0) hash ^= Type.GetHashCode();
     if (Title.Length != 0) hash ^= Title.GetHashCode();
+    if (Icon.Length != 0) hash ^= Icon.GetHashCode();
     if (Region.Length != 0) hash ^= Region.GetHashCode();
     if (PosX != 0) hash ^= PosX.GetHashCode();
     if (PosY != 0) hash ^= PosY.GetHashCode();
@@ -1546,7 +1663,13 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     if (targetCase_ == TargetOneofCase.Port) hash ^= Port.GetHashCode();
     if (targetCase_ == TargetOneofCase.Node) hash ^= Node.GetHashCode();
     hash ^= props_.GetHashCode();
+    if (IsLogging != false) hash ^= IsLogging.GetHashCode();
+    if (IsDebugging != false) hash ^= IsDebugging.GetHashCode();
+    if (IsPaused != false) hash ^= IsPaused.GetHashCode();
+    if (IsDisabled != false) hash ^= IsDisabled.GetHashCode();
     hash ^= settings_.GetHashCode();
+    hash ^= resources_.GetHashCode();
+    hash ^= internal_.GetHashCode();
     hash ^= (int) targetCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1573,40 +1696,62 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
       output.WriteRawTag(26);
       output.WriteString(Title);
     }
-    if (Region.Length != 0) {
+    if (Icon.Length != 0) {
       output.WriteRawTag(34);
+      output.WriteString(Icon);
+    }
+    if (Region.Length != 0) {
+      output.WriteRawTag(42);
       output.WriteString(Region);
     }
     if (PosX != 0) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(48);
       output.WriteSInt32(PosX);
     }
     if (PosY != 0) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteSInt32(PosY);
     }
     if (Width != 0) {
-      output.WriteRawTag(56);
+      output.WriteRawTag(64);
       output.WriteInt32(Width);
     }
     if (Height != 0) {
-      output.WriteRawTag(64);
+      output.WriteRawTag(72);
       output.WriteInt32(Height);
     }
     if (targetCase_ == TargetOneofCase.Link) {
-      output.WriteRawTag(74);
+      output.WriteRawTag(82);
       output.WriteString(Link);
     }
     if (targetCase_ == TargetOneofCase.Port) {
-      output.WriteRawTag(82);
+      output.WriteRawTag(90);
       output.WriteString(Port);
     }
     if (targetCase_ == TargetOneofCase.Node) {
-      output.WriteRawTag(90);
+      output.WriteRawTag(98);
       output.WriteString(Node);
     }
     props_.WriteTo(output, _repeated_props_codec);
+    if (IsLogging != false) {
+      output.WriteRawTag(128, 1);
+      output.WriteBool(IsLogging);
+    }
+    if (IsDebugging != false) {
+      output.WriteRawTag(136, 1);
+      output.WriteBool(IsDebugging);
+    }
+    if (IsPaused != false) {
+      output.WriteRawTag(144, 1);
+      output.WriteBool(IsPaused);
+    }
+    if (IsDisabled != false) {
+      output.WriteRawTag(152, 1);
+      output.WriteBool(IsDisabled);
+    }
     settings_.WriteTo(output, _repeated_settings_codec);
+    resources_.WriteTo(output, _repeated_resources_codec);
+    internal_.WriteTo(output, _repeated_internal_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1623,6 +1768,9 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     }
     if (Title.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
+    }
+    if (Icon.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Icon);
     }
     if (Region.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Region);
@@ -1649,7 +1797,21 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Node);
     }
     size += props_.CalculateSize(_repeated_props_codec);
+    if (IsLogging != false) {
+      size += 2 + 1;
+    }
+    if (IsDebugging != false) {
+      size += 2 + 1;
+    }
+    if (IsPaused != false) {
+      size += 2 + 1;
+    }
+    if (IsDisabled != false) {
+      size += 2 + 1;
+    }
     size += settings_.CalculateSize(_repeated_settings_codec);
+    size += resources_.CalculateSize(_repeated_resources_codec);
+    size += internal_.CalculateSize(_repeated_internal_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -1670,6 +1832,9 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
     if (other.Title.Length != 0) {
       Title = other.Title;
     }
+    if (other.Icon.Length != 0) {
+      Icon = other.Icon;
+    }
     if (other.Region.Length != 0) {
       Region = other.Region;
     }
@@ -1686,7 +1851,21 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
       Height = other.Height;
     }
     props_.Add(other.props_);
+    if (other.IsLogging != false) {
+      IsLogging = other.IsLogging;
+    }
+    if (other.IsDebugging != false) {
+      IsDebugging = other.IsDebugging;
+    }
+    if (other.IsPaused != false) {
+      IsPaused = other.IsPaused;
+    }
+    if (other.IsDisabled != false) {
+      IsDisabled = other.IsDisabled;
+    }
     settings_.Add(other.settings_);
+    resources_.Add(other.resources_);
+    internal_.Add(other.internal_);
     switch (other.TargetCase) {
       case TargetOneofCase.Link:
         Link = other.Link;
@@ -1723,43 +1902,71 @@ public sealed partial class TideChartWidget : pb::IMessage<TideChartWidget> {
           break;
         }
         case 34: {
+          Icon = input.ReadString();
+          break;
+        }
+        case 42: {
           Region = input.ReadString();
           break;
         }
-        case 40: {
+        case 48: {
           PosX = input.ReadSInt32();
           break;
         }
-        case 48: {
+        case 56: {
           PosY = input.ReadSInt32();
           break;
         }
-        case 56: {
+        case 64: {
           Width = input.ReadInt32();
           break;
         }
-        case 64: {
+        case 72: {
           Height = input.ReadInt32();
           break;
         }
-        case 74: {
+        case 82: {
           Link = input.ReadString();
           break;
         }
-        case 82: {
+        case 90: {
           Port = input.ReadString();
           break;
         }
-        case 90: {
+        case 98: {
           Node = input.ReadString();
           break;
         }
-        case 98: {
+        case 106: {
           props_.AddEntriesFrom(input, _repeated_props_codec);
+          break;
+        }
+        case 128: {
+          IsLogging = input.ReadBool();
+          break;
+        }
+        case 136: {
+          IsDebugging = input.ReadBool();
+          break;
+        }
+        case 144: {
+          IsPaused = input.ReadBool();
+          break;
+        }
+        case 152: {
+          IsDisabled = input.ReadBool();
           break;
         }
         case 178: {
           settings_.AddEntriesFrom(input, _repeated_settings_codec);
+          break;
+        }
+        case 186: {
+          resources_.AddEntriesFrom(input, _repeated_resources_codec);
+          break;
+        }
+        case 194: {
+          internal_.AddEntriesFrom(input, _repeated_internal_codec);
           break;
         }
       }
@@ -7947,12 +8154,17 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     path_ = other.path_;
     modifiedDate_ = other.modifiedDate_;
     modifiedBy_ = other.modifiedBy_;
+    version_ = other.version_;
+    size_ = other.size_;
     switch (other.ContentCase) {
-      case ContentOneofCase.Version:
-        Version = other.Version;
-        break;
       case ContentOneofCase.Script:
         Script = other.Script;
+        break;
+      case ContentOneofCase.Chart:
+        Chart = other.Chart.Clone();
+        break;
+      case ContentOneofCase.Data:
+        Data = other.Data;
         break;
     }
 
@@ -8036,22 +8248,36 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
 
   /// <summary>Field number for the "version" field.</summary>
   public const int VersionFieldNumber = 7;
+  private string version_ = "";
   /// <summary>
-  /// reference to the exact version of the file    
+  /// reference to the exact version of the file
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Version {
-    get { return contentCase_ == ContentOneofCase.Version ? (string) content_ : ""; }
+    get { return version_; }
     set {
-      content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      contentCase_ = ContentOneofCase.Version;
+      version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "size" field.</summary>
+  public const int SizeFieldNumber = 8;
+  private int size_;
+  /// <summary>
+  /// size of the file
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Size {
+    get { return size_; }
+    set {
+      size_ = value;
     }
   }
 
   /// <summary>Field number for the "script" field.</summary>
-  public const int ScriptFieldNumber = 8;
+  public const int ScriptFieldNumber = 9;
   /// <summary>
-  /// contents of the file
+  /// last contents of the text file
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Script {
@@ -8062,12 +8288,41 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     }
   }
 
+  /// <summary>Field number for the "chart" field.</summary>
+  public const int ChartFieldNumber = 10;
+  /// <summary>
+  /// last contents of the chart file
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::TideChartData Chart {
+    get { return contentCase_ == ContentOneofCase.Chart ? (global::TideChartData) content_ : null; }
+    set {
+      content_ = value;
+      contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.Chart;
+    }
+  }
+
+  /// <summary>Field number for the "data" field.</summary>
+  public const int DataFieldNumber = 11;
+  /// <summary>
+  /// last contents of the binary file (image, etc)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pb::ByteString Data {
+    get { return contentCase_ == ContentOneofCase.Data ? (pb::ByteString) content_ : pb::ByteString.Empty; }
+    set {
+      content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      contentCase_ = ContentOneofCase.Data;
+    }
+  }
+
   private object content_;
   /// <summary>Enum of possible cases for the "content" oneof.</summary>
   public enum ContentOneofCase {
     None = 0,
-    Version = 7,
-    Script = 8,
+    Script = 9,
+    Chart = 10,
+    Data = 11,
   }
   private ContentOneofCase contentCase_ = ContentOneofCase.None;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8100,7 +8355,10 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (ModifiedDate != other.ModifiedDate) return false;
     if (ModifiedBy != other.ModifiedBy) return false;
     if (Version != other.Version) return false;
+    if (Size != other.Size) return false;
     if (Script != other.Script) return false;
+    if (!object.Equals(Chart, other.Chart)) return false;
+    if (Data != other.Data) return false;
     if (ContentCase != other.ContentCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -8113,8 +8371,11 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (Path.Length != 0) hash ^= Path.GetHashCode();
     if (ModifiedDate.Length != 0) hash ^= ModifiedDate.GetHashCode();
     if (ModifiedBy.Length != 0) hash ^= ModifiedBy.GetHashCode();
-    if (contentCase_ == ContentOneofCase.Version) hash ^= Version.GetHashCode();
+    if (Version.Length != 0) hash ^= Version.GetHashCode();
+    if (Size != 0) hash ^= Size.GetHashCode();
     if (contentCase_ == ContentOneofCase.Script) hash ^= Script.GetHashCode();
+    if (contentCase_ == ContentOneofCase.Chart) hash ^= Chart.GetHashCode();
+    if (contentCase_ == ContentOneofCase.Data) hash ^= Data.GetHashCode();
     hash ^= (int) contentCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -8149,13 +8410,25 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
       output.WriteRawTag(50);
       output.WriteString(ModifiedBy);
     }
-    if (contentCase_ == ContentOneofCase.Version) {
+    if (Version.Length != 0) {
       output.WriteRawTag(58);
       output.WriteString(Version);
     }
+    if (Size != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(Size);
+    }
     if (contentCase_ == ContentOneofCase.Script) {
-      output.WriteRawTag(66);
+      output.WriteRawTag(74);
       output.WriteString(Script);
+    }
+    if (contentCase_ == ContentOneofCase.Chart) {
+      output.WriteRawTag(82);
+      output.WriteMessage(Chart);
+    }
+    if (contentCase_ == ContentOneofCase.Data) {
+      output.WriteRawTag(90);
+      output.WriteBytes(Data);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -8180,11 +8453,20 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (ModifiedBy.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(ModifiedBy);
     }
-    if (contentCase_ == ContentOneofCase.Version) {
+    if (Version.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Version);
+    }
+    if (Size != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Size);
     }
     if (contentCase_ == ContentOneofCase.Script) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Script);
+    }
+    if (contentCase_ == ContentOneofCase.Chart) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(Chart);
+    }
+    if (contentCase_ == ContentOneofCase.Data) {
+      size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -8212,12 +8494,24 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
     if (other.ModifiedBy.Length != 0) {
       ModifiedBy = other.ModifiedBy;
     }
+    if (other.Version.Length != 0) {
+      Version = other.Version;
+    }
+    if (other.Size != 0) {
+      Size = other.Size;
+    }
     switch (other.ContentCase) {
-      case ContentOneofCase.Version:
-        Version = other.Version;
-        break;
       case ContentOneofCase.Script:
         Script = other.Script;
+        break;
+      case ContentOneofCase.Chart:
+        if (Chart == null) {
+          Chart = new global::TideChartData();
+        }
+        Chart.MergeFrom(other.Chart);
+        break;
+      case ContentOneofCase.Data:
+        Data = other.Data;
         break;
     }
 
@@ -8256,8 +8550,25 @@ public sealed partial class TideChartSource : pb::IMessage<TideChartSource> {
           Version = input.ReadString();
           break;
         }
-        case 66: {
+        case 64: {
+          Size = input.ReadInt32();
+          break;
+        }
+        case 74: {
           Script = input.ReadString();
+          break;
+        }
+        case 82: {
+          global::TideChartData subBuilder = new global::TideChartData();
+          if (contentCase_ == ContentOneofCase.Chart) {
+            subBuilder.MergeFrom(Chart);
+          }
+          input.ReadMessage(subBuilder);
+          Chart = subBuilder;
+          break;
+        }
+        case 90: {
+          Data = input.ReadBytes();
           break;
         }
       }
@@ -10687,6 +10998,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     notes_ = other.notes_.Clone();
     library_ = other.library_.Clone();
     settings_ = other.settings_.Clone();
+    imports_ = other.imports_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -10872,6 +11184,19 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     get { return settings_; }
   }
 
+  /// <summary>Field number for the "imports" field.</summary>
+  public const int ImportsFieldNumber = 23;
+  private static readonly pb::FieldCodec<global::TideChartSource> _repeated_imports_codec
+      = pb::FieldCodec.ForMessage(186, global::TideChartSource.Parser);
+  private readonly pbc::RepeatedField<global::TideChartSource> imports_ = new pbc::RepeatedField<global::TideChartSource>();
+  /// <summary>
+  /// charts can reference other charts to import to use as libraries and templates
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TideChartSource> Imports {
+    get { return imports_; }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as TideChartData);
@@ -10898,6 +11223,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if(!notes_.Equals(other.notes_)) return false;
     if(!library_.Equals(other.library_)) return false;
     if(!settings_.Equals(other.settings_)) return false;
+    if(!imports_.Equals(other.imports_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -10917,6 +11243,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     hash ^= notes_.GetHashCode();
     hash ^= library_.GetHashCode();
     hash ^= settings_.GetHashCode();
+    hash ^= imports_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -10967,6 +11294,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     notes_.WriteTo(output, _repeated_notes_codec);
     library_.WriteTo(output, _repeated_library_codec);
     settings_.WriteTo(output, _repeated_settings_codec);
+    imports_.WriteTo(output, _repeated_imports_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -11004,6 +11332,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     size += notes_.CalculateSize(_repeated_notes_codec);
     size += library_.CalculateSize(_repeated_library_codec);
     size += settings_.CalculateSize(_repeated_settings_codec);
+    size += imports_.CalculateSize(_repeated_imports_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -11044,6 +11373,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     notes_.Add(other.notes_);
     library_.Add(other.library_);
     settings_.Add(other.settings_);
+    imports_.Add(other.imports_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -11105,6 +11435,10 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
         }
         case 178: {
           settings_.AddEntriesFrom(input, _repeated_settings_codec);
+          break;
+        }
+        case 186: {
+          imports_.AddEntriesFrom(input, _repeated_imports_codec);
           break;
         }
       }

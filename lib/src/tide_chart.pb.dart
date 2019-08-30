@@ -228,26 +228,33 @@ enum TideChartWidget_Target {
 
 class TideChartWidget extends $pb.GeneratedMessage {
   static const $core.Map<$core.int, TideChartWidget_Target> _TideChartWidget_TargetByTag = {
-    9 : TideChartWidget_Target.link,
-    10 : TideChartWidget_Target.port,
-    11 : TideChartWidget_Target.node,
+    10 : TideChartWidget_Target.link,
+    11 : TideChartWidget_Target.port,
+    12 : TideChartWidget_Target.node,
     0 : TideChartWidget_Target.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartWidget')
-    ..oo(0, [9, 10, 11])
+    ..oo(0, [10, 11, 12])
     ..aOS(1, 'id')
     ..aOS(2, 'type')
     ..aOS(3, 'title')
-    ..aOS(4, 'region')
-    ..a<$core.int>(5, 'posX', $pb.PbFieldType.OS3)
-    ..a<$core.int>(6, 'posY', $pb.PbFieldType.OS3)
-    ..a<$core.int>(7, 'width', $pb.PbFieldType.O3)
-    ..a<$core.int>(8, 'height', $pb.PbFieldType.O3)
-    ..aOS(9, 'link')
-    ..aOS(10, 'port')
-    ..aOS(11, 'node')
-    ..pc<TideChartProperty>(12, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..aOS(4, 'icon')
+    ..aOS(5, 'region')
+    ..a<$core.int>(6, 'posX', $pb.PbFieldType.OS3)
+    ..a<$core.int>(7, 'posY', $pb.PbFieldType.OS3)
+    ..a<$core.int>(8, 'width', $pb.PbFieldType.O3)
+    ..a<$core.int>(9, 'height', $pb.PbFieldType.O3)
+    ..aOS(10, 'link')
+    ..aOS(11, 'port')
+    ..aOS(12, 'node')
+    ..pc<TideChartProperty>(13, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..aOB(16, 'isLogging')
+    ..aOB(17, 'isDebugging')
+    ..aOB(18, 'isPaused')
+    ..aOB(19, 'isDisabled')
     ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..pc<TideChartSource>(23, 'resources', $pb.PbFieldType.PM,TideChartSource.create)
+    ..pc<TideChartGraph>(24, 'internal', $pb.PbFieldType.PM,TideChartGraph.create)
     ..hasRequiredFields = false
   ;
 
@@ -283,49 +290,78 @@ class TideChartWidget extends $pb.GeneratedMessage {
   $core.bool hasTitle() => $_has(2);
   void clearTitle() => clearField(3);
 
-  $core.String get region => $_getS(3, '');
-  set region($core.String v) { $_setString(3, v); }
-  $core.bool hasRegion() => $_has(3);
-  void clearRegion() => clearField(4);
+  $core.String get icon => $_getS(3, '');
+  set icon($core.String v) { $_setString(3, v); }
+  $core.bool hasIcon() => $_has(3);
+  void clearIcon() => clearField(4);
 
-  $core.int get posX => $_get(4, 0);
-  set posX($core.int v) { $_setSignedInt32(4, v); }
-  $core.bool hasPosX() => $_has(4);
-  void clearPosX() => clearField(5);
+  $core.String get region => $_getS(4, '');
+  set region($core.String v) { $_setString(4, v); }
+  $core.bool hasRegion() => $_has(4);
+  void clearRegion() => clearField(5);
 
-  $core.int get posY => $_get(5, 0);
-  set posY($core.int v) { $_setSignedInt32(5, v); }
-  $core.bool hasPosY() => $_has(5);
-  void clearPosY() => clearField(6);
+  $core.int get posX => $_get(5, 0);
+  set posX($core.int v) { $_setSignedInt32(5, v); }
+  $core.bool hasPosX() => $_has(5);
+  void clearPosX() => clearField(6);
 
-  $core.int get width => $_get(6, 0);
-  set width($core.int v) { $_setSignedInt32(6, v); }
-  $core.bool hasWidth() => $_has(6);
-  void clearWidth() => clearField(7);
+  $core.int get posY => $_get(6, 0);
+  set posY($core.int v) { $_setSignedInt32(6, v); }
+  $core.bool hasPosY() => $_has(6);
+  void clearPosY() => clearField(7);
 
-  $core.int get height => $_get(7, 0);
-  set height($core.int v) { $_setSignedInt32(7, v); }
-  $core.bool hasHeight() => $_has(7);
-  void clearHeight() => clearField(8);
+  $core.int get width => $_get(7, 0);
+  set width($core.int v) { $_setSignedInt32(7, v); }
+  $core.bool hasWidth() => $_has(7);
+  void clearWidth() => clearField(8);
 
-  $core.String get link => $_getS(8, '');
-  set link($core.String v) { $_setString(8, v); }
-  $core.bool hasLink() => $_has(8);
-  void clearLink() => clearField(9);
+  $core.int get height => $_get(8, 0);
+  set height($core.int v) { $_setSignedInt32(8, v); }
+  $core.bool hasHeight() => $_has(8);
+  void clearHeight() => clearField(9);
 
-  $core.String get port => $_getS(9, '');
-  set port($core.String v) { $_setString(9, v); }
-  $core.bool hasPort() => $_has(9);
-  void clearPort() => clearField(10);
+  $core.String get link => $_getS(9, '');
+  set link($core.String v) { $_setString(9, v); }
+  $core.bool hasLink() => $_has(9);
+  void clearLink() => clearField(10);
 
-  $core.String get node => $_getS(10, '');
-  set node($core.String v) { $_setString(10, v); }
-  $core.bool hasNode() => $_has(10);
-  void clearNode() => clearField(11);
+  $core.String get port => $_getS(10, '');
+  set port($core.String v) { $_setString(10, v); }
+  $core.bool hasPort() => $_has(10);
+  void clearPort() => clearField(11);
 
-  $core.List<TideChartProperty> get props => $_getList(11);
+  $core.String get node => $_getS(11, '');
+  set node($core.String v) { $_setString(11, v); }
+  $core.bool hasNode() => $_has(11);
+  void clearNode() => clearField(12);
 
-  $core.List<TideChartProperty> get settings => $_getList(12);
+  $core.List<TideChartProperty> get props => $_getList(12);
+
+  $core.bool get isLogging => $_get(13, false);
+  set isLogging($core.bool v) { $_setBool(13, v); }
+  $core.bool hasIsLogging() => $_has(13);
+  void clearIsLogging() => clearField(16);
+
+  $core.bool get isDebugging => $_get(14, false);
+  set isDebugging($core.bool v) { $_setBool(14, v); }
+  $core.bool hasIsDebugging() => $_has(14);
+  void clearIsDebugging() => clearField(17);
+
+  $core.bool get isPaused => $_get(15, false);
+  set isPaused($core.bool v) { $_setBool(15, v); }
+  $core.bool hasIsPaused() => $_has(15);
+  void clearIsPaused() => clearField(18);
+
+  $core.bool get isDisabled => $_get(16, false);
+  set isDisabled($core.bool v) { $_setBool(16, v); }
+  $core.bool hasIsDisabled() => $_has(16);
+  void clearIsDisabled() => clearField(19);
+
+  $core.List<TideChartProperty> get settings => $_getList(17);
+
+  $core.List<TideChartSource> get resources => $_getList(18);
+
+  $core.List<TideChartGraph> get internal => $_getList(19);
 }
 
 class TideChartPort extends $pb.GeneratedMessage {
@@ -1511,26 +1547,31 @@ class TideChartNoteCommand extends $pb.GeneratedMessage {
 }
 
 enum TideChartSource_Content {
-  version, 
   script, 
+  chart, 
+  data, 
   notSet
 }
 
 class TideChartSource extends $pb.GeneratedMessage {
   static const $core.Map<$core.int, TideChartSource_Content> _TideChartSource_ContentByTag = {
-    7 : TideChartSource_Content.version,
-    8 : TideChartSource_Content.script,
+    9 : TideChartSource_Content.script,
+    10 : TideChartSource_Content.chart,
+    11 : TideChartSource_Content.data,
     0 : TideChartSource_Content.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('TideChartSource')
-    ..oo(0, [7, 8])
+    ..oo(0, [9, 10, 11])
     ..aOS(1, 'id')
     ..aOS(2, 'name')
     ..aOS(3, 'path')
     ..aOS(5, 'modifiedDate')
     ..aOS(6, 'modifiedBy')
     ..aOS(7, 'version')
-    ..aOS(8, 'script')
+    ..a<$core.int>(8, 'size', $pb.PbFieldType.O3)
+    ..aOS(9, 'script')
+    ..a<TideChartData>(10, 'chart', $pb.PbFieldType.OM, TideChartData.getDefault, TideChartData.create)
+    ..a<$core.List<$core.int>>(11, 'data', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
 
@@ -1581,10 +1622,25 @@ class TideChartSource extends $pb.GeneratedMessage {
   $core.bool hasVersion() => $_has(5);
   void clearVersion() => clearField(7);
 
-  $core.String get script => $_getS(6, '');
-  set script($core.String v) { $_setString(6, v); }
-  $core.bool hasScript() => $_has(6);
-  void clearScript() => clearField(8);
+  $core.int get size => $_get(6, 0);
+  set size($core.int v) { $_setSignedInt32(6, v); }
+  $core.bool hasSize() => $_has(6);
+  void clearSize() => clearField(8);
+
+  $core.String get script => $_getS(7, '');
+  set script($core.String v) { $_setString(7, v); }
+  $core.bool hasScript() => $_has(7);
+  void clearScript() => clearField(9);
+
+  TideChartData get chart => $_getN(8);
+  set chart(TideChartData v) { setField(10, v); }
+  $core.bool hasChart() => $_has(8);
+  void clearChart() => clearField(10);
+
+  $core.List<$core.int> get data => $_getN(9);
+  set data($core.List<$core.int> v) { $_setBytes(9, v); }
+  $core.bool hasData() => $_has(9);
+  void clearData() => clearField(11);
 }
 
 class TideChartLibrary extends $pb.GeneratedMessage {
@@ -2049,6 +2105,7 @@ class TideChartData extends $pb.GeneratedMessage {
     ..pc<TideChartNote>(11, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..pc<TideChartLibrary>(12, 'library', $pb.PbFieldType.PM,TideChartLibrary.create)
     ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..pc<TideChartSource>(23, 'imports', $pb.PbFieldType.PM,TideChartSource.create)
     ..hasRequiredFields = false
   ;
 
@@ -2115,6 +2172,8 @@ class TideChartData extends $pb.GeneratedMessage {
   $core.List<TideChartLibrary> get library => $_getList(11);
 
   $core.List<TideChartProperty> get settings => $_getList(12);
+
+  $core.List<TideChartSource> get imports => $_getList(13);
 }
 
 class TideChartHeader extends $pb.GeneratedMessage {

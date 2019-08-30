@@ -40,29 +40,38 @@ message TideChartCommentBox {
     int32 color = 13;                           // color used to draw text / icon - default is black
     int32 background = 14;                      // color used to draw background - default is transparent
     repeated int32 border = 15;                 // style usedd to draw border as array [color (default=black), thickness (default=1), dash pattern (default=solid)]
-    bool isRaised = 16;                           // flag to indicate if a drop shadow should be used
-    bool isReversed = 17;                         // flag to indicate if the text requires left to right layout order
+    bool isRaised = 16;                         // flag to indicate if a drop shadow should be used
+    bool isReversed = 17;                       // flag to indicate if the text requires left to right layout order
 }
 
 message TideChartWidget {
     string id = 1;                              // unique id for the widget
     string type = 2;                            // type of widget
     string title = 3;                           // description title of the widget
-    
-    string region = 4;                          // comment boxes can be relative to a region or to the graph
-    sint32 posX = 5;                            // X position of the comment box 
-    sint32 posY = 6;                            // Y position of the comment box 
-    int32 width = 7;                            // width of comment box - 0 indicates autosize to fit content
-    int32 height = 8;                           // height of comment box - 0 indicates autosize to fit content 
+    string icon = 4;                            // icon used for the widget in the library
+
+    string region = 5;                          // widgets can be positioned relative to a region or to the graph
+    sint32 posX = 6;                            // X position of the comment box 
+    sint32 posY = 7;                            // Y position of the comment box 
+    int32 width = 8;                            // width of comment box - 0 indicates autosize to fit content
+    int32 height = 9;                           // height of comment box - 0 indicates autosize to fit content 
 
     oneof target {                              // widgets can be optionally be associated with specific graph elements
-        string link = 9;                        // link widget is associated with (<out-node>:<out-port>-><in-node>:<in-port>)
-        string port = 10;                       // port widget is associated with (<node>:<port>)
-        string node = 11;                       // name of node widget is associated with
+        string link = 10;                       // link widget is associated with (<out-node>:<out-port>-><in-node>:<in-port>)
+        string port = 11;                       // port widget is associated with (<node>:<port>)
+        string node = 12;                       // name of node widget is associated with
     }
 
-    repeated TideChartProperty props = 12;      // widgets can have configuration parameters
+    repeated TideChartProperty props = 13;      // widgets can have configuration parameters
+
+    bool isLogging = 16;                        // flag indicating this widget will trace messages
+    bool isDebugging = 17;                      // flag indicating this widget is a debug breakpoint
+    bool isPaused = 18;                         // flag indicating this widget is paused (messages are queued)
+    bool isDisabled = 19;                       // flag indicating this widget is disabled (messages are dropped)
+
     repeated TideChartProperty settings = 22;   // widgets can have additional parameters related to layout, display or debugging
+    repeated TideChartSource resources = 23;    // widgets can have resource files 
+    repeated TideChartGraph internal = 24;      // widgets can procedurally generate internal graphs that implement runtime behavior
 }
 
 message TideChartPort {
@@ -307,12 +316,16 @@ message TideChartSource {
     string name = 2;                    // name of the source file 
     string path = 3;                    // relative path of the source file 
 
-    string modifiedDate = 5;           // date file version was modified
+    string modifiedDate = 5;            // date file version was modified
     string modifiedBy = 6;              // user that modified this file version 
 
+    string version = 7;                 // reference to the exact version of the file
+    int32 size = 8;                     // size of the file
+
     oneof content {
-        string version = 7;             // reference to the exact version of the file    
-        string script = 8;              // contents of the file
+        string script = 9;              // last contents of the text file
+        TideChartData chart = 10;       // last contents of the chart file
+        bytes data = 11;                // last contents of the binary file (image, etc)
     }
 }
 
@@ -458,6 +471,7 @@ message TideChartData {
 
     repeated TideChartLibrary library = 12;     // source of node templates that can be added to graphs
     repeated TideChartProperty settings = 22;   // charts can have additional parameters related to layout, display or debugging
+    repeated TideChartSource imports = 23;      // charts can reference other charts to import to use as libraries and templates
 }
 
 // Read only the commit headers 
