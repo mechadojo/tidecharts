@@ -2987,6 +2987,7 @@ class TideChartCommand :
   enum : int {
     kVersionFieldNumber = 1,
     kTargetFieldNumber = 2,
+    kIsLockedFieldNumber = 16,
     kGroupFieldNumber = 3,
     kMoveFieldNumber = 4,
     kCommentFieldNumber = 5,
@@ -3020,6 +3021,11 @@ class TideChartCommand :
   std::string* mutable_target();
   std::string* release_target();
   void set_allocated_target(std::string* target);
+
+  // bool isLocked = 16;
+  void clear_islocked();
+  bool islocked() const;
+  void set_islocked(bool value);
 
   // .TideChartGroupCommand group = 3;
   bool has_group() const;
@@ -3132,6 +3138,7 @@ class TideChartCommand :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr version_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr target_;
+  bool islocked_;
   union CommandUnion {
     CommandUnion() {}
     ::TideChartGroupCommand* group_;
@@ -13153,6 +13160,20 @@ inline ::TideChartNoteCommand* TideChartCommand::mutable_note() {
   }
   // @@protoc_insertion_point(field_mutable:TideChartCommand.note)
   return command_.note_;
+}
+
+// bool isLocked = 16;
+inline void TideChartCommand::clear_islocked() {
+  islocked_ = false;
+}
+inline bool TideChartCommand::islocked() const {
+  // @@protoc_insertion_point(field_get:TideChartCommand.isLocked)
+  return islocked_;
+}
+inline void TideChartCommand::set_islocked(bool value) {
+  
+  islocked_ = value;
+  // @@protoc_insertion_point(field_set:TideChartCommand.isLocked)
 }
 
 inline bool TideChartCommand::has_command() const {

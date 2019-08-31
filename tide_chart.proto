@@ -218,6 +218,8 @@ message TideChartCommand {
         TideChartPropertyCommand props = 12;
         TideChartNoteCommand  note = 13;
     }
+
+    bool isLocked = 16;                     // a locked command can not be safely reversed. Happens when external changes require changes to the graph (ie. deleting or changing ports on a referenced behavior node)
 }
 
 enum TideChartCommandUpdateType {

@@ -239,6 +239,7 @@ const TideChartCommand$json = const {
     const {'1': 'graph', '3': 11, '4': 1, '5': 11, '6': '.TideChartGraphCommand', '9': 0, '10': 'graph'},
     const {'1': 'props', '3': 12, '4': 1, '5': 11, '6': '.TideChartPropertyCommand', '9': 0, '10': 'props'},
     const {'1': 'note', '3': 13, '4': 1, '5': 11, '6': '.TideChartNoteCommand', '9': 0, '10': 'note'},
+    const {'1': 'isLocked', '3': 16, '4': 1, '5': 8, '10': 'isLocked'},
   ],
   '8': const [
     const {'1': 'command'},

@@ -982,6 +982,7 @@ class TideChartCommand extends $pb.GeneratedMessage {
     ..a<TideChartGraphCommand>(11, 'graph', $pb.PbFieldType.OM, TideChartGraphCommand.getDefault, TideChartGraphCommand.create)
     ..a<TideChartPropertyCommand>(12, 'props', $pb.PbFieldType.OM, TideChartPropertyCommand.getDefault, TideChartPropertyCommand.create)
     ..a<TideChartNoteCommand>(13, 'note', $pb.PbFieldType.OM, TideChartNoteCommand.getDefault, TideChartNoteCommand.create)
+    ..aOB(16, 'isLocked')
     ..hasRequiredFields = false
   ;
 
@@ -1066,6 +1067,11 @@ class TideChartCommand extends $pb.GeneratedMessage {
   set note(TideChartNoteCommand v) { setField(13, v); }
   $core.bool hasNote() => $_has(12);
   void clearNote() => clearField(13);
+
+  $core.bool get isLocked => $_get(13, false);
+  set isLocked($core.bool v) { $_setBool(13, v); }
+  $core.bool hasIsLocked() => $_has(13);
+  void clearIsLocked() => clearField(16);
 }
 
 class TideChartGroupCommand extends $pb.GeneratedMessage {

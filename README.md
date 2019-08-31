@@ -76,6 +76,7 @@
 | graph | [TideChartGraphCommand](#TideChartGraphCommand) |  |  |
 | props | [TideChartPropertyCommand](#TideChartPropertyCommand) |  |  |
 | note | [TideChartNoteCommand](#TideChartNoteCommand) |  |  |
+| isLocked | [bool](#bool) |  | a locked command can not be safely reversed. Happens when external changes require changes to the graph (ie. deleting or changing ports on a referenced behavior node) |
 
 
 
