@@ -17,6 +17,7 @@ assets/fonts/SourceSansPro-RegularItalic.ttf
 assets/fonts/fa-brands-400.ttf
 assets/fonts/fa-regular-400.ttf
 assets/fonts/fa-solid-900.ttf
+charts/default.chart
 index.html
 main.dart.js
 packages/$sdk/_internal/ddc_sdk.sum
