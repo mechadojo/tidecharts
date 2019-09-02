@@ -122,7 +122,7 @@ message TideChartNote {
 
 message TideChartNode {
     string name = 1;                            // unique (graph scope) name for this node
-    string type = 2;                            // node type: action, behavior, inport, outport, trigger, event, filter, router, sequence, timeline, controller, navigation, gamepad, custom
+    string type = 2;                            // node type: action, behavior, inport, outport, trigger, event, widget
     sint32 posX = 3;                            // X position on the chart
     sint32 posY = 4;                            // Y position on the chart
 
@@ -138,6 +138,8 @@ message TideChartNode {
     repeated TideChartPort outports = 11;       // node outports to connect outbound links
     repeated TideChartProperty props = 12;      // configuration properties for this node (combines with graph properties and region properties)
     
+    string widget = 13;                         // node widget type: gamepad, sequence, timeline, controller, navigation, 
+
     bool isLogging = 16;                        // flag indicating this node will trace messages
     bool isDebugging = 17;                      // flag indicating this node is a debug breakpoint
     bool isPaused = 18;                         // flag indicating this node is paused (messages are queued)
@@ -146,6 +148,8 @@ message TideChartNode {
     repeated TideChartNote notes = 20;          // comments associated with this node
     string script = 21;                         // a user script of custom code to implement the node's action, filter or mux/demux operations
     repeated TideChartProperty settings = 22;   // nodes can have additional parameters related to layout, display or debugging
+    repeated TideChartSource resources = 23;    // widget nodes can have resource files 
+    repeated TideChartGraph internal = 24;      // widget nodes can internal graphs that configure runtime behavior
 }
 
 message TideChartRegion {

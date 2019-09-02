@@ -167,6 +167,7 @@ const TideChartNode$json = const {
     const {'1': 'inports', '3': 10, '4': 3, '5': 11, '6': '.TideChartPort', '10': 'inports'},
     const {'1': 'outports', '3': 11, '4': 3, '5': 11, '6': '.TideChartPort', '10': 'outports'},
     const {'1': 'props', '3': 12, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'props'},
+    const {'1': 'widget', '3': 13, '4': 1, '5': 9, '10': 'widget'},
     const {'1': 'isLogging', '3': 16, '4': 1, '5': 8, '10': 'isLogging'},
     const {'1': 'isDebugging', '3': 17, '4': 1, '5': 8, '10': 'isDebugging'},
     const {'1': 'isPaused', '3': 18, '4': 1, '5': 8, '10': 'isPaused'},
@@ -174,6 +175,8 @@ const TideChartNode$json = const {
     const {'1': 'notes', '3': 20, '4': 3, '5': 11, '6': '.TideChartNote', '10': 'notes'},
     const {'1': 'script', '3': 21, '4': 1, '5': 9, '10': 'script'},
     const {'1': 'settings', '3': 22, '4': 3, '5': 11, '6': '.TideChartProperty', '10': 'settings'},
+    const {'1': 'resources', '3': 23, '4': 3, '5': 11, '6': '.TideChartSource', '10': 'resources'},
+    const {'1': 'internal', '3': 24, '4': 3, '5': 11, '6': '.TideChartGraph', '10': 'internal'},
   ],
 };
 

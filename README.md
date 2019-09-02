@@ -503,7 +503,7 @@ Read only the commit headers
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | name | [string](#string) |  | unique (graph scope) name for this node |
-| type | [string](#string) |  | node type: action, behavior, inport, outport, trigger, event, filter, router, sequence, timeline, controller, navigation, gamepad, custom |
+| type | [string](#string) |  | node type: action, behavior, inport, outport, trigger, event, widget |
 | posX | [sint32](#sint32) |  | X position on the chart |
 | posY | [sint32](#sint32) |  | Y position on the chart |
 | title | [string](#string) |  | descriptive label for the name |
@@ -514,6 +514,7 @@ Read only the commit headers
 | inports | [TideChartPort](#TideChartPort) | repeated | node inports to connect inbound links |
 | outports | [TideChartPort](#TideChartPort) | repeated | node outports to connect outbound links |
 | props | [TideChartProperty](#TideChartProperty) | repeated | configuration properties for this node (combines with graph properties and region properties) |
+| widget | [string](#string) |  | node widget type: gamepad, sequence, timeline, controller, navigation, |
 | isLogging | [bool](#bool) |  | flag indicating this node will trace messages |
 | isDebugging | [bool](#bool) |  | flag indicating this node is a debug breakpoint |
 | isPaused | [bool](#bool) |  | flag indicating this node is paused (messages are queued) |
@@ -521,6 +522,8 @@ Read only the commit headers
 | notes | [TideChartNote](#TideChartNote) | repeated | comments associated with this node |
 | script | [string](#string) |  | a user script of custom code to implement the node&#39;s action, filter or mux/demux operations |
 | settings | [TideChartProperty](#TideChartProperty) | repeated | nodes can have additional parameters related to layout, display or debugging |
+| resources | [TideChartSource](#TideChartSource) | repeated | widget nodes can have resource files |
+| internal | [TideChartGraph](#TideChartGraph) | repeated | widget nodes can internal graphs that configure runtime behavior |
 
 
 

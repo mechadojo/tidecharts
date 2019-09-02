@@ -627,6 +627,7 @@ class TideChartNode extends $pb.GeneratedMessage {
     ..pc<TideChartPort>(10, 'inports', $pb.PbFieldType.PM,TideChartPort.create)
     ..pc<TideChartPort>(11, 'outports', $pb.PbFieldType.PM,TideChartPort.create)
     ..pc<TideChartProperty>(12, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..aOS(13, 'widget')
     ..aOB(16, 'isLogging')
     ..aOB(17, 'isDebugging')
     ..aOB(18, 'isPaused')
@@ -634,6 +635,8 @@ class TideChartNode extends $pb.GeneratedMessage {
     ..pc<TideChartNote>(20, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..aOS(21, 'script')
     ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
+    ..pc<TideChartSource>(23, 'resources', $pb.PbFieldType.PM,TideChartSource.create)
+    ..pc<TideChartGraph>(24, 'internal', $pb.PbFieldType.PM,TideChartGraph.create)
     ..hasRequiredFields = false
   ;
 
@@ -702,34 +705,43 @@ class TideChartNode extends $pb.GeneratedMessage {
 
   $core.List<TideChartProperty> get props => $_getList(11);
 
-  $core.bool get isLogging => $_get(12, false);
-  set isLogging($core.bool v) { $_setBool(12, v); }
-  $core.bool hasIsLogging() => $_has(12);
+  $core.String get widget => $_getS(12, '');
+  set widget($core.String v) { $_setString(12, v); }
+  $core.bool hasWidget() => $_has(12);
+  void clearWidget() => clearField(13);
+
+  $core.bool get isLogging => $_get(13, false);
+  set isLogging($core.bool v) { $_setBool(13, v); }
+  $core.bool hasIsLogging() => $_has(13);
   void clearIsLogging() => clearField(16);
 
-  $core.bool get isDebugging => $_get(13, false);
-  set isDebugging($core.bool v) { $_setBool(13, v); }
-  $core.bool hasIsDebugging() => $_has(13);
+  $core.bool get isDebugging => $_get(14, false);
+  set isDebugging($core.bool v) { $_setBool(14, v); }
+  $core.bool hasIsDebugging() => $_has(14);
   void clearIsDebugging() => clearField(17);
 
-  $core.bool get isPaused => $_get(14, false);
-  set isPaused($core.bool v) { $_setBool(14, v); }
-  $core.bool hasIsPaused() => $_has(14);
+  $core.bool get isPaused => $_get(15, false);
+  set isPaused($core.bool v) { $_setBool(15, v); }
+  $core.bool hasIsPaused() => $_has(15);
   void clearIsPaused() => clearField(18);
 
-  $core.bool get isDisabled => $_get(15, false);
-  set isDisabled($core.bool v) { $_setBool(15, v); }
-  $core.bool hasIsDisabled() => $_has(15);
+  $core.bool get isDisabled => $_get(16, false);
+  set isDisabled($core.bool v) { $_setBool(16, v); }
+  $core.bool hasIsDisabled() => $_has(16);
   void clearIsDisabled() => clearField(19);
 
-  $core.List<TideChartNote> get notes => $_getList(16);
+  $core.List<TideChartNote> get notes => $_getList(17);
 
-  $core.String get script => $_getS(17, '');
-  set script($core.String v) { $_setString(17, v); }
-  $core.bool hasScript() => $_has(17);
+  $core.String get script => $_getS(18, '');
+  set script($core.String v) { $_setString(18, v); }
+  $core.bool hasScript() => $_has(18);
   void clearScript() => clearField(21);
 
-  $core.List<TideChartProperty> get settings => $_getList(18);
+  $core.List<TideChartProperty> get settings => $_getList(19);
+
+  $core.List<TideChartSource> get resources => $_getList(20);
+
+  $core.List<TideChartGraph> get internal => $_getList(21);
 }
 
 class TideChartRegion extends $pb.GeneratedMessage {
