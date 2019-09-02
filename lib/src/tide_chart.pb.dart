@@ -381,6 +381,7 @@ class TideChartPort extends $pb.GeneratedMessage {
     ..aOS(13, 'syncGroup')
     ..aOB(14, 'isBlocking')
     ..aOB(15, 'isQueuing')
+    ..aOS(16, 'filter')
     ..hasRequiredFields = false
   ;
 
@@ -469,6 +470,11 @@ class TideChartPort extends $pb.GeneratedMessage {
   set isQueuing($core.bool v) { $_setBool(14, v); }
   $core.bool hasIsQueuing() => $_has(14);
   void clearIsQueuing() => clearField(15);
+
+  $core.String get filter => $_getS(15, '');
+  set filter($core.String v) { $_setString(15, v); }
+  $core.bool hasFilter() => $_has(15);
+  void clearFilter() => clearField(16);
 }
 
 class TideChartLink extends $pb.GeneratedMessage {

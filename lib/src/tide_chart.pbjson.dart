@@ -120,6 +120,7 @@ const TideChartPort$json = const {
     const {'1': 'syncGroup', '3': 13, '4': 1, '5': 9, '10': 'syncGroup'},
     const {'1': 'isBlocking', '3': 14, '4': 1, '5': 8, '10': 'isBlocking'},
     const {'1': 'isQueuing', '3': 15, '4': 1, '5': 8, '10': 'isQueuing'},
+    const {'1': 'filter', '3': 16, '4': 1, '5': 9, '10': 'filter'},
   ],
 };
 

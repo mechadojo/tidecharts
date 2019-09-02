@@ -609,6 +609,7 @@ Read only the commit headers
 | syncGroup | [string](#string) |  | creates a syncronizing group between ports |
 | isBlocking | [bool](#bool) |  | determines if the port will block to wait for the rest of the port group |
 | isQueuing | [bool](#bool) |  | determines if messages should queue while blocking or replace with latest received |
+| filter | [string](#string) |  | a filter expressiong assigned to the port (normally only used by widgets) |
 
 
 

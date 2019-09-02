@@ -93,6 +93,8 @@ message TideChartPort {
     string syncGroup = 13;                      // creates a syncronizing group between ports
     bool isBlocking = 14;                       // determines if the port will block to wait for the rest of the port group
     bool isQueuing = 15;                        // determines if messages should queue while blocking or replace with latest received
+
+    string filter = 16;                         // a filter expressiong assigned to the port (normally only used by widgets)
 }
 
 message TideChartLink {
