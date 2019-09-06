@@ -64429,6 +64429,24 @@ public final class TideChart {
 
     /**
      * <pre>
+     * this version before changes
+     * </pre>
+     *
+     * <code>string origin = 13;</code>
+     */
+    java.lang.String getOrigin();
+    /**
+     * <pre>
+     * this version before changes
+     * </pre>
+     *
+     * <code>string origin = 13;</code>
+     */
+    com.google.protobuf.ByteString
+        getOriginBytes();
+
+    /**
+     * <pre>
      * date version of the chart was committed
      * </pre>
      *
@@ -64780,6 +64798,7 @@ public final class TideChart {
       branch_ = "";
       source_ = "";
       merge_ = "";
+      origin_ = "";
       commitDate_ = "";
       commitBy_ = "";
       commitDesc_ = "";
@@ -64905,6 +64924,12 @@ public final class TideChart {
               }
               library_.add(
                   input.readMessage(TideChart.TideChartLibrary.parser(), extensionRegistry));
+              break;
+            }
+            case 106: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              origin_ = s;
               break;
             }
             case 178: {
@@ -65137,6 +65162,48 @@ public final class TideChart {
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         merge_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ORIGIN_FIELD_NUMBER = 13;
+    private volatile java.lang.Object origin_;
+    /**
+     * <pre>
+     * this version before changes
+     * </pre>
+     *
+     * <code>string origin = 13;</code>
+     */
+    public java.lang.String getOrigin() {
+      java.lang.Object ref = origin_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        origin_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * this version before changes
+     * </pre>
+     *
+     * <code>string origin = 13;</code>
+     */
+    public com.google.protobuf.ByteString
+        getOriginBytes() {
+      java.lang.Object ref = origin_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        origin_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -65691,6 +65758,9 @@ public final class TideChart {
       for (int i = 0; i < library_.size(); i++) {
         output.writeMessage(12, library_.get(i));
       }
+      if (!getOriginBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, origin_);
+      }
       for (int i = 0; i < settings_.size(); i++) {
         output.writeMessage(22, settings_.get(i));
       }
@@ -65746,6 +65816,9 @@ public final class TideChart {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, library_.get(i));
       }
+      if (!getOriginBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, origin_);
+      }
       for (int i = 0; i < settings_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(22, settings_.get(i));
@@ -65777,6 +65850,8 @@ public final class TideChart {
           .equals(other.getSource())) return false;
       if (!getMerge()
           .equals(other.getMerge())) return false;
+      if (!getOrigin()
+          .equals(other.getOrigin())) return false;
       if (!getCommitDate()
           .equals(other.getCommitDate())) return false;
       if (!getCommitBy()
@@ -65816,6 +65891,8 @@ public final class TideChart {
       hash = (53 * hash) + getSource().hashCode();
       hash = (37 * hash) + MERGE_FIELD_NUMBER;
       hash = (53 * hash) + getMerge().hashCode();
+      hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
+      hash = (53 * hash) + getOrigin().hashCode();
       hash = (37 * hash) + COMMITDATE_FIELD_NUMBER;
       hash = (53 * hash) + getCommitDate().hashCode();
       hash = (37 * hash) + COMMITBY_FIELD_NUMBER;
@@ -65995,6 +66072,8 @@ public final class TideChart {
 
         merge_ = "";
 
+        origin_ = "";
+
         commitDate_ = "";
 
         commitBy_ = "";
@@ -66070,6 +66149,7 @@ public final class TideChart {
         result.branch_ = branch_;
         result.source_ = source_;
         result.merge_ = merge_;
+        result.origin_ = origin_;
         result.commitDate_ = commitDate_;
         result.commitBy_ = commitBy_;
         result.commitDesc_ = commitDesc_;
@@ -66190,6 +66270,10 @@ public final class TideChart {
         }
         if (!other.getMerge().isEmpty()) {
           merge_ = other.merge_;
+          onChanged();
+        }
+        if (!other.getOrigin().isEmpty()) {
+          origin_ = other.origin_;
           onChanged();
         }
         if (!other.getCommitDate().isEmpty()) {
@@ -66746,6 +66830,95 @@ public final class TideChart {
   checkByteStringIsUtf8(value);
         
         merge_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object origin_ = "";
+      /**
+       * <pre>
+       * this version before changes
+       * </pre>
+       *
+       * <code>string origin = 13;</code>
+       */
+      public java.lang.String getOrigin() {
+        java.lang.Object ref = origin_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          origin_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * this version before changes
+       * </pre>
+       *
+       * <code>string origin = 13;</code>
+       */
+      public com.google.protobuf.ByteString
+          getOriginBytes() {
+        java.lang.Object ref = origin_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          origin_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * this version before changes
+       * </pre>
+       *
+       * <code>string origin = 13;</code>
+       */
+      public Builder setOrigin(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        origin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * this version before changes
+       * </pre>
+       *
+       * <code>string origin = 13;</code>
+       */
+      public Builder clearOrigin() {
+        
+        origin_ = getDefaultInstance().getOrigin();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * this version before changes
+       * </pre>
+       *
+       * <code>string origin = 13;</code>
+       */
+      public Builder setOriginBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        origin_ = value;
         onChanged();
         return this;
       }
@@ -77988,40 +78161,41 @@ public final class TideChart {
       "ve\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 \003(" +
       "\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027.Ti" +
       "deChartContextChange\022\037\n\003log\030\017 \003(\0132\022.Tide" +
-      "ChartLogEntry\"\356\002\n\rTideChartData\022\017\n\007versi" +
+      "ChartLogEntry\"\376\002\n\rTideChartData\022\017\n\007versi" +
       "on\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t" +
-      "\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010c" +
-      "ommitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013com" +
-      "mitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideCha" +
-      "rtGraph\022!\n\005props\030\n \003(\0132\022.TideChartProper" +
-      "ty\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007lib" +
-      "rary\030\014 \003(\0132\021.TideChartLibrary\022$\n\010setting" +
-      "s\030\026 \003(\0132\022.TideChartProperty\022!\n\007imports\030\027" +
-      " \003(\0132\020.TideChartSource\"\240\001\n\017TideChartHead" +
-      "er\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006s" +
-      "ource\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate" +
-      "\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007" +
-      " \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rTideChartF" +
-      "ile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 " +
-      "\001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(" +
-      "\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.T" +
-      "ideChartData\022\"\n\007working\030\010 \003(\0132\021.TideChar" +
-      "tCommand\022!\n\006remote\030\t \003(\0132\021.TideChartComm" +
-      "and\022\037\n\007history\030\n \003(\0132\016.TideChartData\022\"\n\007" +
-      "context\030\013 \003(\0132\021.TideChartContext\"w\n\023Tide" +
-      "ChartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(" +
-      "\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modif" +
-      "iedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227\001\n\024Ti" +
-      "deChartFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002" +
-      " \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014mo" +
-      "difiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005" +
-      "chart\030\007 \001(\0132\016.TideChartData*=\n\032TideChart" +
-      "CommandUpdateType\022\007\n\003add\020\000\022\n\n\006remove\020\001\022\n" +
-      "\n\006update\020\002*\235\001\n\021TideChartLogLevel\022\010\n\004none" +
-      "\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texception\020\003\022" +
-      "\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006\022\t\n\005d" +
-      "ebug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005trace\020" +
-      "\n\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
+      "\022\r\n\005merge\030\004 \001(\t\022\016\n\006origin\030\r \001(\t\022\022\n\ncommi" +
+      "tDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitD" +
+      "esc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets" +
+      "\030\t \003(\0132\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022" +
+      ".TideChartProperty\022\035\n\005notes\030\013 \003(\0132\016.Tide" +
+      "ChartNote\022\"\n\007library\030\014 \003(\0132\021.TideChartLi" +
+      "brary\022$\n\010settings\030\026 \003(\0132\022.TideChartPrope" +
+      "rty\022!\n\007imports\030\027 \003(\0132\020.TideChartSource\"\240" +
+      "\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006b" +
+      "ranch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001" +
+      "(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t" +
+      "\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(" +
+      "\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030" +
+      "\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014m" +
+      "odifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n" +
+      "\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working\030" +
+      "\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(\013" +
+      "2\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016.T" +
+      "ideChartData\022\"\n\007context\030\013 \003(\0132\021.TideChar" +
+      "tContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001 " +
+      "\001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origi" +
+      "n\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifie" +
+      "dBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002id" +
+      "\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006or" +
+      "igin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodi" +
+      "fiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartD" +
+      "ata*=\n\032TideChartCommandUpdateType\022\007\n\003add" +
+      "\020\000\022\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChart" +
+      "LogLevel\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002" +
+      "\022\r\n\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013" +
+      "\n\007message\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007ver" +
+      "bose\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChartb" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -78200,7 +78374,7 @@ public final class TideChart {
     internal_static_TideChartData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TideChartData_descriptor,
-        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings", "Imports", });
+        new java.lang.String[] { "Version", "Branch", "Source", "Merge", "Origin", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings", "Imports", });
     internal_static_TideChartHeader_descriptor =
       getDescriptor().getMessageTypes().get(29);
     internal_static_TideChartHeader_fieldAccessorTable = new

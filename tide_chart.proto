@@ -467,6 +467,7 @@ message TideChartData {
     string branch = 2;                          // branch this version is associated with
     string source = 3;                          // previous version
     string merge = 4;                           // last version id on branch merging into
+    string origin = 13;                         // this version before changes
 
     string commitDate = 5;                      // date version of the chart was committed
     string commitBy = 6;                        // user that committed latest version

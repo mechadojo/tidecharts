@@ -6873,6 +6873,7 @@ class TideChartData :
     kCommitByFieldNumber = 6,
     kCommitDescFieldNumber = 7,
     kCommitNotesFieldNumber = 8,
+    kOriginFieldNumber = 13,
   };
   // repeated .TideChartGraph sheets = 9;
   int sheets_size() const;
@@ -7028,6 +7029,17 @@ class TideChartData :
   std::string* release_commitnotes();
   void set_allocated_commitnotes(std::string* commitnotes);
 
+  // string origin = 13;
+  void clear_origin();
+  const std::string& origin() const;
+  void set_origin(const std::string& value);
+  void set_origin(std::string&& value);
+  void set_origin(const char* value);
+  void set_origin(const char* value, size_t size);
+  std::string* mutable_origin();
+  std::string* release_origin();
+  void set_allocated_origin(std::string* origin);
+
   // @@protoc_insertion_point(class_scope:TideChartData)
  private:
   class _Internal;
@@ -7047,6 +7059,7 @@ class TideChartData :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr commitby_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr commitdesc_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr commitnotes_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr origin_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_tide_5fchart_2eproto;
 };
@@ -18055,6 +18068,57 @@ inline void TideChartData::set_allocated_merge(std::string* merge) {
   }
   merge_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), merge);
   // @@protoc_insertion_point(field_set_allocated:TideChartData.merge)
+}
+
+// string origin = 13;
+inline void TideChartData::clear_origin() {
+  origin_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& TideChartData::origin() const {
+  // @@protoc_insertion_point(field_get:TideChartData.origin)
+  return origin_.GetNoArena();
+}
+inline void TideChartData::set_origin(const std::string& value) {
+  
+  origin_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:TideChartData.origin)
+}
+inline void TideChartData::set_origin(std::string&& value) {
+  
+  origin_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:TideChartData.origin)
+}
+inline void TideChartData::set_origin(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  origin_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:TideChartData.origin)
+}
+inline void TideChartData::set_origin(const char* value, size_t size) {
+  
+  origin_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:TideChartData.origin)
+}
+inline std::string* TideChartData::mutable_origin() {
+  
+  // @@protoc_insertion_point(field_mutable:TideChartData.origin)
+  return origin_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* TideChartData::release_origin() {
+  // @@protoc_insertion_point(field_release:TideChartData.origin)
+  
+  return origin_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void TideChartData::set_allocated_origin(std::string* origin) {
+  if (origin != nullptr) {
+    
+  } else {
+    
+  }
+  origin_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), origin);
+  // @@protoc_insertion_point(field_set_allocated:TideChartData.origin)
 }
 
 // string commitDate = 5;

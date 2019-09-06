@@ -1031,6 +1031,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tide_5fchart_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::TideChartData, branch_),
   PROTOBUF_FIELD_OFFSET(::TideChartData, source_),
   PROTOBUF_FIELD_OFFSET(::TideChartData, merge_),
+  PROTOBUF_FIELD_OFFSET(::TideChartData, origin_),
   PROTOBUF_FIELD_OFFSET(::TideChartData, commitdate_),
   PROTOBUF_FIELD_OFFSET(::TideChartData, commitby_),
   PROTOBUF_FIELD_OFFSET(::TideChartData, commitdesc_),
@@ -1124,10 +1125,10 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 371, -1, sizeof(::TideChartLogEntry)},
   { 384, -1, sizeof(::TideChartContext)},
   { 404, -1, sizeof(::TideChartData)},
-  { 423, -1, sizeof(::TideChartHeader)},
-  { 436, -1, sizeof(::TideChartFile)},
-  { 452, -1, sizeof(::TideChartFileHeader)},
-  { 463, -1, sizeof(::TideChartFileCurrent)},
+  { 424, -1, sizeof(::TideChartHeader)},
+  { 437, -1, sizeof(::TideChartFile)},
+  { 453, -1, sizeof(::TideChartFileHeader)},
+  { 464, -1, sizeof(::TideChartFileCurrent)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1330,40 +1331,41 @@ const char descriptor_table_protodef_tide_5fchart_2eproto[] PROTOBUF_SECTION_VAR
   "ve\030\n \003(\003\022\017\n\007waiting\030\013 \003(\003\022\016\n\006paused\030\014 \003("
   "\003\022\020\n\010disabled\030\r \003(\003\022\'\n\006events\030\016 \003(\0132\027.Ti"
   "deChartContextChange\022\037\n\003log\030\017 \003(\0132\022.Tide"
-  "ChartLogEntry\"\356\002\n\rTideChartData\022\017\n\007versi"
+  "ChartLogEntry\"\376\002\n\rTideChartData\022\017\n\007versi"
   "on\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t"
-  "\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010c"
-  "ommitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013com"
-  "mitNotes\030\010 \001(\t\022\037\n\006sheets\030\t \003(\0132\017.TideCha"
-  "rtGraph\022!\n\005props\030\n \003(\0132\022.TideChartProper"
-  "ty\022\035\n\005notes\030\013 \003(\0132\016.TideChartNote\022\"\n\007lib"
-  "rary\030\014 \003(\0132\021.TideChartLibrary\022$\n\010setting"
-  "s\030\026 \003(\0132\022.TideChartProperty\022!\n\007imports\030\027"
-  " \003(\0132\020.TideChartSource\"\240\001\n\017TideChartHead"
-  "er\022\017\n\007version\030\001 \001(\t\022\016\n\006branch\030\002 \001(\t\022\016\n\006s"
-  "ource\030\003 \001(\t\022\r\n\005merge\030\004 \001(\t\022\022\n\ncommitDate"
-  "\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitDesc\030\007"
-  " \001(\t\022\023\n\013commitNotes\030\010 \001(\t\"\234\002\n\rTideChartF"
-  "ile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 "
-  "\001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001("
-  "\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.T"
-  "ideChartData\022\"\n\007working\030\010 \003(\0132\021.TideChar"
-  "tCommand\022!\n\006remote\030\t \003(\0132\021.TideChartComm"
-  "and\022\037\n\007history\030\n \003(\0132\016.TideChartData\022\"\n\007"
-  "context\030\013 \003(\0132\021.TideChartContext\"w\n\023Tide"
-  "ChartFileHeader\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001("
-  "\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014modif"
-  "iedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\"\227\001\n\024Ti"
-  "deChartFileCurrent\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002"
-  " \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014mo"
-  "difiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n\005"
-  "chart\030\007 \001(\0132\016.TideChartData*=\n\032TideChart"
-  "CommandUpdateType\022\007\n\003add\020\000\022\n\n\006remove\020\001\022\n"
-  "\n\006update\020\002*\235\001\n\021TideChartLogLevel\022\010\n\004none"
-  "\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002\022\r\n\texception\020\003\022"
-  "\013\n\007warning\020\004\022\010\n\004info\020\005\022\013\n\007message\020\006\022\t\n\005d"
-  "ebug\020\007\022\t\n\005check\020\010\022\013\n\007verbose\020\t\022\t\n\005trace\020"
-  "\n\022\007\n\003all\020\013B\013B\tTideChartb\006proto3"
+  "\022\r\n\005merge\030\004 \001(\t\022\016\n\006origin\030\r \001(\t\022\022\n\ncommi"
+  "tDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t\022\022\n\ncommitD"
+  "esc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001(\t\022\037\n\006sheets"
+  "\030\t \003(\0132\017.TideChartGraph\022!\n\005props\030\n \003(\0132\022"
+  ".TideChartProperty\022\035\n\005notes\030\013 \003(\0132\016.Tide"
+  "ChartNote\022\"\n\007library\030\014 \003(\0132\021.TideChartLi"
+  "brary\022$\n\010settings\030\026 \003(\0132\022.TideChartPrope"
+  "rty\022!\n\007imports\030\027 \003(\0132\020.TideChartSource\"\240"
+  "\001\n\017TideChartHeader\022\017\n\007version\030\001 \001(\t\022\016\n\006b"
+  "ranch\030\002 \001(\t\022\016\n\006source\030\003 \001(\t\022\r\n\005merge\030\004 \001"
+  "(\t\022\022\n\ncommitDate\030\005 \001(\t\022\020\n\010commitBy\030\006 \001(\t"
+  "\022\022\n\ncommitDesc\030\007 \001(\t\022\023\n\013commitNotes\030\010 \001("
+  "\t\"\234\002\n\rTideChartFile\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030"
+  "\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origin\030\004 \001(\t\022\024\n\014m"
+  "odifiedDate\030\005 \001(\t\022\022\n\nmodifiedBy\030\006 \001(\t\022\035\n"
+  "\005chart\030\007 \001(\0132\016.TideChartData\022\"\n\007working\030"
+  "\010 \003(\0132\021.TideChartCommand\022!\n\006remote\030\t \003(\013"
+  "2\021.TideChartCommand\022\037\n\007history\030\n \003(\0132\016.T"
+  "ideChartData\022\"\n\007context\030\013 \003(\0132\021.TideChar"
+  "tContext\"w\n\023TideChartFileHeader\022\n\n\002id\030\001 "
+  "\001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006origi"
+  "n\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodifie"
+  "dBy\030\006 \001(\t\"\227\001\n\024TideChartFileCurrent\022\n\n\002id"
+  "\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004path\030\003 \001(\t\022\016\n\006or"
+  "igin\030\004 \001(\t\022\024\n\014modifiedDate\030\005 \001(\t\022\022\n\nmodi"
+  "fiedBy\030\006 \001(\t\022\035\n\005chart\030\007 \001(\0132\016.TideChartD"
+  "ata*=\n\032TideChartCommandUpdateType\022\007\n\003add"
+  "\020\000\022\n\n\006remove\020\001\022\n\n\006update\020\002*\235\001\n\021TideChart"
+  "LogLevel\022\010\n\004none\020\000\022\t\n\005fatal\020\001\022\t\n\005error\020\002"
+  "\022\r\n\texception\020\003\022\013\n\007warning\020\004\022\010\n\004info\020\005\022\013"
+  "\n\007message\020\006\022\t\n\005debug\020\007\022\t\n\005check\020\010\022\013\n\007ver"
+  "bose\020\t\022\t\n\005trace\020\n\022\007\n\003all\020\013B\013B\tTideChartb"
+  "\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_tide_5fchart_2eproto_deps[1] = {
 };
@@ -1395,7 +1397,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tid
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tide_5fchart_2eproto_once;
 static bool descriptor_table_tide_5fchart_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tide_5fchart_2eproto = {
-  &descriptor_table_tide_5fchart_2eproto_initialized, descriptor_table_protodef_tide_5fchart_2eproto, "tide_chart.proto", 7871,
+  &descriptor_table_tide_5fchart_2eproto_initialized, descriptor_table_protodef_tide_5fchart_2eproto, "tide_chart.proto", 7887,
   &descriptor_table_tide_5fchart_2eproto_once, descriptor_table_tide_5fchart_2eproto_sccs, descriptor_table_tide_5fchart_2eproto_deps, 23, 0,
   schemas, file_default_instances, TableStruct_tide_5fchart_2eproto::offsets,
   file_level_metadata_tide_5fchart_2eproto, 33, file_level_enum_descriptors_tide_5fchart_2eproto, file_level_service_descriptors_tide_5fchart_2eproto,
@@ -21735,6 +21737,10 @@ TideChartData::TideChartData(const TideChartData& from)
   if (!from.commitnotes().empty()) {
     commitnotes_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.commitnotes_);
   }
+  origin_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.origin().empty()) {
+    origin_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.origin_);
+  }
   // @@protoc_insertion_point(copy_constructor:TideChartData)
 }
 
@@ -21748,6 +21754,7 @@ void TideChartData::SharedCtor() {
   commitby_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   commitdesc_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   commitnotes_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  origin_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 TideChartData::~TideChartData() {
@@ -21764,6 +21771,7 @@ void TideChartData::SharedDtor() {
   commitby_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   commitdesc_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   commitnotes_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  origin_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void TideChartData::SetCachedSize(int size) const {
@@ -21795,6 +21803,7 @@ void TideChartData::Clear() {
   commitby_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   commitdesc_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   commitnotes_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  origin_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   _internal_metadata_.Clear();
 }
 
@@ -21908,6 +21917,13 @@ const char* TideChartData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 98);
+        } else goto handle_unusual;
+        continue;
+      // string origin = 13;
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_origin(), ptr, ctx, "TideChartData.origin");
+          CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // repeated .TideChartProperty settings = 22;
@@ -22128,6 +22144,21 @@ bool TideChartData::MergePartialFromCodedStream(
         break;
       }
 
+      // string origin = 13;
+      case 13: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (106 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_origin()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->origin().data(), static_cast<int>(this->origin().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "TideChartData.origin"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       // repeated .TideChartProperty settings = 22;
       case 22: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (178 & 0xFF)) {
@@ -22293,6 +22324,16 @@ void TideChartData::SerializeWithCachedSizes(
       output);
   }
 
+  // string origin = 13;
+  if (this->origin().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->origin().data(), static_cast<int>(this->origin().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartData.origin");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      13, this->origin(), output);
+  }
+
   // repeated .TideChartProperty settings = 22;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->settings_size()); i < n; i++) {
@@ -22442,6 +22483,17 @@ void TideChartData::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
         12, this->library(static_cast<int>(i)), target);
+  }
+
+  // string origin = 13;
+  if (this->origin().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->origin().data(), static_cast<int>(this->origin().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "TideChartData.origin");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        13, this->origin(), target);
   }
 
   // repeated .TideChartProperty settings = 22;
@@ -22603,6 +22655,13 @@ size_t TideChartData::ByteSizeLong() const {
         this->commitnotes());
   }
 
+  // string origin = 13;
+  if (this->origin().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->origin());
+  }
+
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -22668,6 +22727,10 @@ void TideChartData::MergeFrom(const TideChartData& from) {
 
     commitnotes_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.commitnotes_);
   }
+  if (from.origin().size() > 0) {
+
+    origin_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.origin_);
+  }
 }
 
 void TideChartData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -22712,6 +22775,8 @@ void TideChartData::InternalSwap(TideChartData* other) {
   commitdesc_.Swap(&other->commitdesc_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   commitnotes_.Swap(&other->commitnotes_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  origin_.Swap(&other->origin_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
 }
 

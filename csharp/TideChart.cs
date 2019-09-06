@@ -167,36 +167,37 @@ public static partial class TideChartReflection {
           "KAMSDgoGYWN0aXZlGAogAygDEg8KB3dhaXRpbmcYCyADKAMSDgoGcGF1c2Vk",
           "GAwgAygDEhAKCGRpc2FibGVkGA0gAygDEicKBmV2ZW50cxgOIAMoCzIXLlRp",
           "ZGVDaGFydENvbnRleHRDaGFuZ2USHwoDbG9nGA8gAygLMhIuVGlkZUNoYXJ0",
-          "TG9nRW50cnki7gIKDVRpZGVDaGFydERhdGESDwoHdmVyc2lvbhgBIAEoCRIO",
+          "TG9nRW50cnki/gIKDVRpZGVDaGFydERhdGESDwoHdmVyc2lvbhgBIAEoCRIO",
           "CgZicmFuY2gYAiABKAkSDgoGc291cmNlGAMgASgJEg0KBW1lcmdlGAQgASgJ",
-          "EhIKCmNvbW1pdERhdGUYBSABKAkSEAoIY29tbWl0QnkYBiABKAkSEgoKY29t",
-          "bWl0RGVzYxgHIAEoCRITCgtjb21taXROb3RlcxgIIAEoCRIfCgZzaGVldHMY",
-          "CSADKAsyDy5UaWRlQ2hhcnRHcmFwaBIhCgVwcm9wcxgKIAMoCzISLlRpZGVD",
-          "aGFydFByb3BlcnR5Eh0KBW5vdGVzGAsgAygLMg4uVGlkZUNoYXJ0Tm90ZRIi",
-          "CgdsaWJyYXJ5GAwgAygLMhEuVGlkZUNoYXJ0TGlicmFyeRIkCghzZXR0aW5n",
-          "cxgWIAMoCzISLlRpZGVDaGFydFByb3BlcnR5EiEKB2ltcG9ydHMYFyADKAsy",
-          "EC5UaWRlQ2hhcnRTb3VyY2UioAEKD1RpZGVDaGFydEhlYWRlchIPCgd2ZXJz",
-          "aW9uGAEgASgJEg4KBmJyYW5jaBgCIAEoCRIOCgZzb3VyY2UYAyABKAkSDQoF",
-          "bWVyZ2UYBCABKAkSEgoKY29tbWl0RGF0ZRgFIAEoCRIQCghjb21taXRCeRgG",
-          "IAEoCRISCgpjb21taXREZXNjGAcgASgJEhMKC2NvbW1pdE5vdGVzGAggASgJ",
-          "IpwCCg1UaWRlQ2hhcnRGaWxlEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkS",
-          "DAoEcGF0aBgDIAEoCRIOCgZvcmlnaW4YBCABKAkSFAoMbW9kaWZpZWREYXRl",
-          "GAUgASgJEhIKCm1vZGlmaWVkQnkYBiABKAkSHQoFY2hhcnQYByABKAsyDi5U",
-          "aWRlQ2hhcnREYXRhEiIKB3dvcmtpbmcYCCADKAsyES5UaWRlQ2hhcnRDb21t",
-          "YW5kEiEKBnJlbW90ZRgJIAMoCzIRLlRpZGVDaGFydENvbW1hbmQSHwoHaGlz",
-          "dG9yeRgKIAMoCzIOLlRpZGVDaGFydERhdGESIgoHY29udGV4dBgLIAMoCzIR",
-          "LlRpZGVDaGFydENvbnRleHQidwoTVGlkZUNoYXJ0RmlsZUhlYWRlchIKCgJp",
-          "ZBgBIAEoCRIMCgRuYW1lGAIgASgJEgwKBHBhdGgYAyABKAkSDgoGb3JpZ2lu",
-          "GAQgASgJEhQKDG1vZGlmaWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYg",
-          "ASgJIpcBChRUaWRlQ2hhcnRGaWxlQ3VycmVudBIKCgJpZBgBIAEoCRIMCgRu",
-          "YW1lGAIgASgJEgwKBHBhdGgYAyABKAkSDgoGb3JpZ2luGAQgASgJEhQKDG1v",
-          "ZGlmaWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYgASgJEh0KBWNoYXJ0",
-          "GAcgASgLMg4uVGlkZUNoYXJ0RGF0YSo9ChpUaWRlQ2hhcnRDb21tYW5kVXBk",
-          "YXRlVHlwZRIHCgNhZGQQABIKCgZyZW1vdmUQARIKCgZ1cGRhdGUQAiqdAQoR",
-          "VGlkZUNoYXJ0TG9nTGV2ZWwSCAoEbm9uZRAAEgkKBWZhdGFsEAESCQoFZXJy",
-          "b3IQAhINCglleGNlcHRpb24QAxILCgd3YXJuaW5nEAQSCAoEaW5mbxAFEgsK",
-          "B21lc3NhZ2UQBhIJCgVkZWJ1ZxAHEgkKBWNoZWNrEAgSCwoHdmVyYm9zZRAJ",
-          "EgkKBXRyYWNlEAoSBwoDYWxsEAtCC0IJVGlkZUNoYXJ0YgZwcm90bzM="));
+          "Eg4KBm9yaWdpbhgNIAEoCRISCgpjb21taXREYXRlGAUgASgJEhAKCGNvbW1p",
+          "dEJ5GAYgASgJEhIKCmNvbW1pdERlc2MYByABKAkSEwoLY29tbWl0Tm90ZXMY",
+          "CCABKAkSHwoGc2hlZXRzGAkgAygLMg8uVGlkZUNoYXJ0R3JhcGgSIQoFcHJv",
+          "cHMYCiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIdCgVub3RlcxgLIAMoCzIO",
+          "LlRpZGVDaGFydE5vdGUSIgoHbGlicmFyeRgMIAMoCzIRLlRpZGVDaGFydExp",
+          "YnJhcnkSJAoIc2V0dGluZ3MYFiADKAsyEi5UaWRlQ2hhcnRQcm9wZXJ0eRIh",
+          "CgdpbXBvcnRzGBcgAygLMhAuVGlkZUNoYXJ0U291cmNlIqABCg9UaWRlQ2hh",
+          "cnRIZWFkZXISDwoHdmVyc2lvbhgBIAEoCRIOCgZicmFuY2gYAiABKAkSDgoG",
+          "c291cmNlGAMgASgJEg0KBW1lcmdlGAQgASgJEhIKCmNvbW1pdERhdGUYBSAB",
+          "KAkSEAoIY29tbWl0QnkYBiABKAkSEgoKY29tbWl0RGVzYxgHIAEoCRITCgtj",
+          "b21taXROb3RlcxgIIAEoCSKcAgoNVGlkZUNoYXJ0RmlsZRIKCgJpZBgBIAEo",
+          "CRIMCgRuYW1lGAIgASgJEgwKBHBhdGgYAyABKAkSDgoGb3JpZ2luGAQgASgJ",
+          "EhQKDG1vZGlmaWVkRGF0ZRgFIAEoCRISCgptb2RpZmllZEJ5GAYgASgJEh0K",
+          "BWNoYXJ0GAcgASgLMg4uVGlkZUNoYXJ0RGF0YRIiCgd3b3JraW5nGAggAygL",
+          "MhEuVGlkZUNoYXJ0Q29tbWFuZBIhCgZyZW1vdGUYCSADKAsyES5UaWRlQ2hh",
+          "cnRDb21tYW5kEh8KB2hpc3RvcnkYCiADKAsyDi5UaWRlQ2hhcnREYXRhEiIK",
+          "B2NvbnRleHQYCyADKAsyES5UaWRlQ2hhcnRDb250ZXh0IncKE1RpZGVDaGFy",
+          "dEZpbGVIZWFkZXISCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRo",
+          "GAMgASgJEg4KBm9yaWdpbhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSABKAkS",
+          "EgoKbW9kaWZpZWRCeRgGIAEoCSKXAQoUVGlkZUNoYXJ0RmlsZUN1cnJlbnQS",
+          "CgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRIMCgRwYXRoGAMgASgJEg4KBm9y",
+          "aWdpbhgEIAEoCRIUCgxtb2RpZmllZERhdGUYBSABKAkSEgoKbW9kaWZpZWRC",
+          "eRgGIAEoCRIdCgVjaGFydBgHIAEoCzIOLlRpZGVDaGFydERhdGEqPQoaVGlk",
+          "ZUNoYXJ0Q29tbWFuZFVwZGF0ZVR5cGUSBwoDYWRkEAASCgoGcmVtb3ZlEAES",
+          "CgoGdXBkYXRlEAIqnQEKEVRpZGVDaGFydExvZ0xldmVsEggKBG5vbmUQABIJ",
+          "CgVmYXRhbBABEgkKBWVycm9yEAISDQoJZXhjZXB0aW9uEAMSCwoHd2Fybmlu",
+          "ZxAEEggKBGluZm8QBRILCgdtZXNzYWdlEAYSCQoFZGVidWcQBxIJCgVjaGVj",
+          "axAIEgsKB3ZlcmJvc2UQCRIJCgV0cmFjZRAKEgcKA2FsbBALQgtCCVRpZGVD",
+          "aGFydGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TideChartCommandUpdateType), typeof(global::TideChartLogLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -228,7 +229,7 @@ public static partial class TideChartReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContextChange), global::TideChartContextChange.Parser, new[]{ "Index", "Timestamp", "Type", "Props" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartLogEntry), global::TideChartLogEntry.Parser, new[]{ "Index", "Timestamp", "Source", "Level", "Tags", "Message", "Refs", "Props" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartContext), global::TideChartContext.Parser, new[]{ "Id", "Index", "Timestamp", "Version", "Sites", "Messages", "Global", "StartTime", "StartIndex", "Active", "Waiting", "Paused", "Disabled", "Events", "Log" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings", "Imports" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TideChartData), global::TideChartData.Parser, new[]{ "Version", "Branch", "Source", "Merge", "Origin", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes", "Sheets", "Props", "Notes", "Library", "Settings", "Imports" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartHeader), global::TideChartHeader.Parser, new[]{ "Version", "Branch", "Source", "Merge", "CommitDate", "CommitBy", "CommitDesc", "CommitNotes" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFile), global::TideChartFile.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy", "Chart", "Working", "Remote", "History", "Context" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::TideChartFileHeader), global::TideChartFileHeader.Parser, new[]{ "Id", "Name", "Path", "Origin", "ModifiedDate", "ModifiedBy" }, null, null, null, null),
@@ -11130,6 +11131,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     branch_ = other.branch_;
     source_ = other.source_;
     merge_ = other.merge_;
+    origin_ = other.origin_;
     commitDate_ = other.commitDate_;
     commitBy_ = other.commitBy_;
     commitDesc_ = other.commitDesc_;
@@ -11201,6 +11203,20 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     get { return merge_; }
     set {
       merge_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "origin" field.</summary>
+  public const int OriginFieldNumber = 13;
+  private string origin_ = "";
+  /// <summary>
+  /// this version before changes
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Origin {
+    get { return origin_; }
+    set {
+      origin_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -11355,6 +11371,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if (Branch != other.Branch) return false;
     if (Source != other.Source) return false;
     if (Merge != other.Merge) return false;
+    if (Origin != other.Origin) return false;
     if (CommitDate != other.CommitDate) return false;
     if (CommitBy != other.CommitBy) return false;
     if (CommitDesc != other.CommitDesc) return false;
@@ -11375,6 +11392,7 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     if (Branch.Length != 0) hash ^= Branch.GetHashCode();
     if (Source.Length != 0) hash ^= Source.GetHashCode();
     if (Merge.Length != 0) hash ^= Merge.GetHashCode();
+    if (Origin.Length != 0) hash ^= Origin.GetHashCode();
     if (CommitDate.Length != 0) hash ^= CommitDate.GetHashCode();
     if (CommitBy.Length != 0) hash ^= CommitBy.GetHashCode();
     if (CommitDesc.Length != 0) hash ^= CommitDesc.GetHashCode();
@@ -11434,6 +11452,10 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     props_.WriteTo(output, _repeated_props_codec);
     notes_.WriteTo(output, _repeated_notes_codec);
     library_.WriteTo(output, _repeated_library_codec);
+    if (Origin.Length != 0) {
+      output.WriteRawTag(106);
+      output.WriteString(Origin);
+    }
     settings_.WriteTo(output, _repeated_settings_codec);
     imports_.WriteTo(output, _repeated_imports_codec);
     if (_unknownFields != null) {
@@ -11455,6 +11477,9 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     }
     if (Merge.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Merge);
+    }
+    if (Origin.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Origin);
     }
     if (CommitDate.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(CommitDate);
@@ -11496,6 +11521,9 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
     }
     if (other.Merge.Length != 0) {
       Merge = other.Merge;
+    }
+    if (other.Origin.Length != 0) {
+      Origin = other.Origin;
     }
     if (other.CommitDate.Length != 0) {
       CommitDate = other.CommitDate;
@@ -11572,6 +11600,10 @@ public sealed partial class TideChartData : pb::IMessage<TideChartData> {
         }
         case 98: {
           library_.AddEntriesFrom(input, _repeated_library_codec);
+          break;
+        }
+        case 106: {
+          Origin = input.ReadString();
           break;
         }
         case 178: {

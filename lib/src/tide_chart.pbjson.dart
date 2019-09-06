@@ -487,6 +487,7 @@ const TideChartData$json = const {
     const {'1': 'branch', '3': 2, '4': 1, '5': 9, '10': 'branch'},
     const {'1': 'source', '3': 3, '4': 1, '5': 9, '10': 'source'},
     const {'1': 'merge', '3': 4, '4': 1, '5': 9, '10': 'merge'},
+    const {'1': 'origin', '3': 13, '4': 1, '5': 9, '10': 'origin'},
     const {'1': 'commitDate', '3': 5, '4': 1, '5': 9, '10': 'commitDate'},
     const {'1': 'commitBy', '3': 6, '4': 1, '5': 9, '10': 'commitBy'},
     const {'1': 'commitDesc', '3': 7, '4': 1, '5': 9, '10': 'commitDesc'},

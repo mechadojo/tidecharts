@@ -190,6 +190,7 @@
 | branch | [string](#string) |  | branch this version is associated with |
 | source | [string](#string) |  | previous version |
 | merge | [string](#string) |  | last version id on branch merging into |
+| origin | [string](#string) |  | this version before changes |
 | commitDate | [string](#string) |  | date version of the chart was committed |
 | commitBy | [string](#string) |  | user that committed latest version |
 | commitDesc | [string](#string) |  | short commit comment |

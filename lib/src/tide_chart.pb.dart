@@ -2128,6 +2128,7 @@ class TideChartData extends $pb.GeneratedMessage {
     ..pc<TideChartProperty>(10, 'props', $pb.PbFieldType.PM,TideChartProperty.create)
     ..pc<TideChartNote>(11, 'notes', $pb.PbFieldType.PM,TideChartNote.create)
     ..pc<TideChartLibrary>(12, 'library', $pb.PbFieldType.PM,TideChartLibrary.create)
+    ..aOS(13, 'origin')
     ..pc<TideChartProperty>(22, 'settings', $pb.PbFieldType.PM,TideChartProperty.create)
     ..pc<TideChartSource>(23, 'imports', $pb.PbFieldType.PM,TideChartSource.create)
     ..hasRequiredFields = false
@@ -2195,9 +2196,14 @@ class TideChartData extends $pb.GeneratedMessage {
 
   $core.List<TideChartLibrary> get library => $_getList(11);
 
-  $core.List<TideChartProperty> get settings => $_getList(12);
+  $core.String get origin => $_getS(12, '');
+  set origin($core.String v) { $_setString(12, v); }
+  $core.bool hasOrigin() => $_has(12);
+  void clearOrigin() => clearField(13);
 
-  $core.List<TideChartSource> get imports => $_getList(13);
+  $core.List<TideChartProperty> get settings => $_getList(13);
+
+  $core.List<TideChartSource> get imports => $_getList(14);
 }
 
 class TideChartHeader extends $pb.GeneratedMessage {
